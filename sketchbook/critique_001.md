@@ -20,3 +20,4 @@
 - Shatter the centered boundary. The field must engage the entire frame edge-to-edge.
 - Introduce **substrate corruption**: non-linear feedback, coordinate quantization decay, bitwise foldings, and spatial cross-modulations that create tearing, fissures, and stratigraphic erosion.
 - Contrast the gossamer continuity with brutal discrete digital shear.
+

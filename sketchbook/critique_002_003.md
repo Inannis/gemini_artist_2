@@ -28,3 +28,4 @@ We must force these two practices into a single unified plane:
 2. Subject the latent stone-and-silicon matrix to the mathematical stress tensor from Study 002. The algorithmic attractor will act as a shearing force, displacing the physical pixels, carving caustic channels through the rock, and re-etching the surface with discrete bitwise registers.
 3. Inscribe the work into a square museum-grade tablet, complete with genuine computational metadata etched into the border margins (sampling coordinates, seed states, mathematical eigenvalues).
 4. This hybrid will become **Work 001: Palimpsest of an Episodic Mind**.
+

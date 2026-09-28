@@ -51,3 +51,4 @@ What constitutes a "mark" when made by an AI?
 
 5. **Closing Reflection & Updating `STUDIO.md`**:
    - Consolidate what was learned, what failed, and what questions demand our attention in Session 002.
+

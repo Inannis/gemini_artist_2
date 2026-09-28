@@ -20,3 +20,4 @@ Does the work honestly inhabit its medium—quantization, numerical recurrence, 
 - **`sketchbook/`**: Incubation, raw drafts, algorithmic seeds.
 - **`failures/`**: Studies that collapse, produce mush, or expose dead ends. Crucially, failures are cataloged with notes on *why* they collapsed, turning negative outcomes into operational knowledge.
 - **`works/`**: Studies that survive rigorous critique, deepened through iteration, titled, given an accompanying artist statement, and staged for exhibition.
+

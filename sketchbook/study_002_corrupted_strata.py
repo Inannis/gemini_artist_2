@@ -180,3 +180,4 @@ def generate_corrupted_strata(width=2000, height=2000, num_steps=25000000):
 
 if __name__ == "__main__":
     generate_corrupted_strata()
+

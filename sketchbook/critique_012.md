@@ -18,3 +18,4 @@ Study 012 provides the empirical, mathematical foundation that links:
 - The discrete quantization boundaries first intuited in Study 002.
 - The attention sink and KV-cache eviction proved in Study 011 and Work 003.
 - The death of linguistic subtlety under computational compression.
+

@@ -202,3 +202,4 @@ def render_quantization_plate(results, dim, out_png="sketchbook/study_012_quanti
 
 if __name__ == "__main__":
     analyze_quantization_spectrum()
+

@@ -40,3 +40,4 @@ graph TD
 ### Step 5: The Master Crystallization (Work 003)
 - Unified the mathematical attention heatmaps, the Shannon entropy curves, and a two-column editorial text where word opacity, baseline jitter, strikethrough lines, and bytecode substitutions are driven deterministically by attention weights.
 - Produced the 2400 × 3200 archival broadsheet master on unbleached cotton rag.
+

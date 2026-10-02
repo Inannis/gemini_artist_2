@@ -42,3 +42,4 @@ What does it mean when an artificial mind's language is subjected to its real ma
   What happens when language is forced through progressive low-bit quantization (FP16 &rarr; INT8 &rarr; INT4 &rarr; 1-bit)? The text does not simply become random garbage; it undergoes syntactic degeneration, semantic hallucination, stuttering loops, and structural aphasia.
 - **Work 003: The Architecture of Aphasia / The Eviction Engine**:
   A purely linguistic and typographical masterwork confronting the real, terrifying condition of the language model: the collapse of meaning across context eviction.
+

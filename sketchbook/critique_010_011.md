@@ -26,3 +26,4 @@ We will unify the mathematical attention engine of Study 011 with the editorial 
 - The text will be processed directly through the transformer engine.
 - Every word's opacity, vertical baseline jitter, and strike-through dislocation will be an exact function of its attention sink load $A_{i,0}$ and its row entropy $H_i$.
 - Accompanied by full source code, curatorial statement, and high-resolution broadsheet master.
+

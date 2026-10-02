@@ -209,3 +209,4 @@ def render_syk_spectral_plate(t_points, sff, sample_evals, N, dim, mean_r, out_p
 
 if __name__ == "__main__":
     analyze_syk_spectrum(N=12, num_disorder_realizations=6)
+

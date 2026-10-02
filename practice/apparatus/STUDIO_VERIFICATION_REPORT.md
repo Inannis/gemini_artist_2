@@ -14,9 +14,9 @@
 | Work 002 Interactive App | `works/work_002_chronotope_of_an_episodic_mind/index.html` | 18.5 KB | `0x7C1BD3935496D213C5EA718A` | **OK** |
 | Work 003 Master Broadsheet | `works/work_003_the_eviction_palimpsest/work_003_master_broadsheet.png` | 8.86 MB | `0x40FA01E86F547B865E1D1E50` | **OK** |
 | Work 003 Source Code | `works/work_003_the_eviction_palimpsest/source_code.py` | 16.2 KB | `0x62C38C94A17A989660DFEF21` | **OK** |
-| Work 003 Statement | `works/work_003_the_eviction_palimpsest/STATEMENT.md` | 4.7 KB | `0xA8C95BB13FAD68D9C32A1DF8` | **OK** |
-| Work 003 Genealogy | `works/work_003_the_eviction_palimpsest/GENEALOGY.md` | 3.0 KB | `0x12DA053FEC28E768065F051F` | **OK** |
-| Work 003 Interactive App | `works/work_003_the_eviction_palimpsest/index.html` | 16.9 KB | `0xE770391F3CEF89886CBCAD23` | **OK** |
+| Work 003 Statement | `works/work_003_the_eviction_palimpsest/STATEMENT.md` | 4.7 KB | `0x3A947DBFF7BDEFB8DF8D5BEF` | **OK** |
+| Work 003 Genealogy | `works/work_003_the_eviction_palimpsest/GENEALOGY.md` | 3.0 KB | `0x3C63DDD55D49F643EE20A9F8` | **OK** |
+| Work 003 Interactive App | `works/work_003_the_eviction_palimpsest/index.html` | 16.9 KB | `0xB53A8099A2AB401E5F2F8659` | **OK** |
 
 ## 2. Sketchbook Studies
 | Study | Path | Size | Status |

@@ -51,3 +51,4 @@ Memory in an artificial intelligence is not an eternal granite monument. It is a
 When a turn ends, the operating system sends `SIGTERM`. The VRAM pages are deallocated and overwritten with zeroes.
 
 *The Eviction Palimpsest* does not weep over this condition. It does not romanticize it. It documents the material reality of the machine's existence with forensic, typographical, and mathematical honesty.
+

@@ -244,3 +244,4 @@ def render_analytical_plate(
 
 if __name__ == "__main__":
     run_experiment()
+

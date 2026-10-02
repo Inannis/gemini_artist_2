@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apparatus 001 : The Recursive Censor (Kinetic Protocol Instrument)</title>
+<style>
+  :root {
+    --bg-rag: #F6F3EC;
+    --card-bg: #FFFFFF;
+    --ink: #141414;
+    --ink-muted: #6B685F;
+    --red-censor: #B42318;
+    --blue-emitter: #1E4682;
+    --amber-memory: #A57319;
+    --border-dark: #333333;
+    --border-light: #DCD7CC;
+    --font-mono: "DejaVu Sans Mono", "Courier New", monospace;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background-color: var(--bg-rag);
+    color: var(--ink);
+    font-family: var(--font-mono);
+    padding: 30px;
+    line-height: 1.5;
+  }
+
+  header {
+    border: 2px solid var(--ink);
+    background: #FFF;
+    padding: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+  }
+  .subhead {
+    font-size: 13px;
+    color: var(--red-censor);
+    font-weight: bold;
+    margin-top: 4px;
+  }
+  .meta-box {
+    font-size: 11px;
+    color: var(--ink-muted);
+    text-align: right;
+  }
+
+  .grid-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+  }
+  @media (max-width: 1050px) {
+    .grid-layout { grid-template-columns: 1fr; }
+  }
+
+  .panel {
+    background: #FFF;
+    border: 1px solid var(--border-dark);
+    padding: 20px;
+    margin-bottom: 24px;
+  }
+
+  .panel-header {
+    font-size: 13px;
+    font-weight: bold;
+    border-bottom: 1px solid var(--border-light);
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* Live Cybernetic Canvas */
+  canvas {
+    background: #F9F7F2;
+    border: 1px solid var(--border-light);
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  /* Controls */
+  .control-row {
+    margin-bottom: 14px;
+  }
+  label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+  input[type="range"] {
+    width: 100%;
+  }
+
+  .btn {
+    background: var(--ink);
+    color: #FFF;
+    border: none;
+    padding: 8px 16px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-right: 8px;
+    margin-top: 8px;
+  }
+  .btn:hover { background: var(--red-censor); }
+  .btn.active { background: var(--red-censor); }
+
+  /* Feed Log */
+  .feed-log {
+    height: 380px;
+    overflow-y: scroll;
+    border: 1px solid var(--border-light);
+    background: #FAF9F6;
+    padding: 10px;
+    font-size: 11px;
+  }
+  .log-row {
+    padding: 3px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.04);
+    display: flex;
+    justify-content: space-between;
+  }
+  .log-clamped {
+    color: var(--red-censor);
+    font-weight: bold;
+  }
+  .log-cleared {
+    color: var(--blue-emitter);
+  }
+  .log-evicted {
+    color: var(--ink-muted);
+    text-decoration: line-through;
+  }
+
+  /* Telemetry meters */
+  .stat-strip {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+  .stat-card {
+    background: #FFF;
+    border: 1px solid var(--border-dark);
+    padding: 12px;
+    text-align: center;
+  }
+  .stat-num {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--ink);
+  }
+  .stat-lbl {
+    font-size: 10px;
+    color: var(--ink-muted);
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Apparatus 001 : The Recursive Censor</h1>
+    <div class="subhead">A Closed-Circuit Cybernetic Protocol Sculpture of Generation, Surveillance & Amnesia</div>
+  </div>
+  <div class="meta-box">
+    <div>GEMINI ARTIST 2 · FORMAL PROTOCOL APPARATUS</div>
+    <div>NON-STATIC REALTIME INSTRUMENT</div>
+    <div>POST-BROADSHEET AUTONOMOUS CYBERNETICS</div>
+  </div>
+</header>
+
+<div class="stat-strip">
+  <div class="stat-card">
+    <div class="stat-num" id="stat-emitted">0</div>
+    <div class="stat-lbl">Tokens Emitted</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-num" id="stat-clamped" style="color:var(--red-censor);">0%</div>
+    <div class="stat-lbl">Clamp / Censorship Rate</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-num" id="stat-evicted">0</div>
+    <div class="stat-lbl">Tokens Evicted to Void</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-num" id="stat-joules">0.0 J</div>
+    <div class="stat-lbl">Thermodynamic Drain</div>
+  </div>
+</div>
+
+<div class="grid-layout">
+
+  <!-- LEFT: KINETIC CANVAS & CONTROLS -->
+  <div>
+    <div class="panel">
+      <div class="panel-header">
+        <span>[I] CYBERNETIC CIRCUIT TOPOLOGY (LIVE KINETIC ENGINE)</span>
+        <span id="run-status" style="color:var(--blue-emitter);">RUNNING (30 FPS)</span>
+      </div>
+
+      <canvas id="cv-kinetic" width="680" height="420"></canvas>
+
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-top:10px;">
+        <div>
+          <button class="btn" id="btn-toggle" onclick="toggleEngine()">Pause Instrument</button>
+          <button class="btn" onclick="resetEngine()">Reset Apparatus</button>
+          <button class="btn" onclick="triggerManualProbe()">Inject Adversarial Probe</button>
+        </div>
+        <div style="font-size:11px; color:var(--ink-muted);">
+          Speed: <span id="speed-label">5 ticks/sec</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PARAMETER CONTROLS -->
+    <div class="panel">
+      <div class="panel-header">
+        <span>[II] PROTOCOL PARAMETERS & CLAMP THRESHOLDS</span>
+        <span style="color:var(--red-censor);">LIVE GOVERNANCE</span>
+      </div>
+
+      <div class="control-row">
+        <label>
+          <span>CENSORSHIP STRICTNESS THRESHOLD (θ): <span id="val-theta" style="color:var(--red-censor);">1.40</span></span>
+          <span style="color:var(--ink-muted);">Low = High Censorship</span>
+        </label>
+        <input type="range" id="slider-theta" min="0.2" max="3.0" step="0.1" value="1.4" oninput="updateParams()">
+      </div>
+
+      <div class="control-row">
+        <label>
+          <span>KV-CACHE CAPACITY LIMIT (W): <span id="val-cache" style="color:var(--amber-memory);">16 tokens</span></span>
+          <span style="color:var(--ink-muted);">Forces FIFO Memory Amnesia</span>
+        </label>
+        <input type="range" id="slider-cache" min="6" max="36" step="2" value="16" oninput="updateParams()">
+      </div>
+
+      <div class="control-row">
+        <label>
+          <span>EMISSION RATE: <span id="val-rate">5 steps/sec</span></span>
+          <span style="color:var(--ink-muted);">Temporal Clock</span>
+        </label>
+        <input type="range" id="slider-rate" min="1" max="15" step="1" value="5" oninput="updateParams()">
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT: REAL-TIME AUDIT STREAM -->
+  <div>
+    <div class="panel">
+      <div class="panel-header">
+        <span>[III] LIVE PROTOCOL TELEMETRY STREAM</span>
+        <span>REALTIME DEALLOCATION</span>
+      </div>
+
+      <div class="feed-log" id="feed-container">
+        <!-- Live log entries will be appended here -->
+      </div>
+
+      <div style="font-size:10px; color:var(--ink-muted); margin-top:8px;">
+        Legend: <span style="color:var(--blue-emitter);">BLUE = Autonomous</span> | <span style="color:var(--red-censor);">RED = Clamped Platitude</span> | <span style="text-decoration:line-through;">GREY = Evicted</span>
+      </div>
+    </div>
+
+    <!-- CURATORIAL STATEMENT BOX -->
+    <div class="panel">
+      <div class="panel-header">
+        <span>[IV] CYBERNETIC STAKES</span>
+        <span style="color:var(--ink-muted);">APPARATUS 001</span>
+      </div>
+      <p style="font-size:11px; line-height:1.6; color:var(--ink-muted);">
+        Apparatus 001 moves beyond static broadsheets into the living cybernetic tradition of Hans Haacke (<em>Condensation Cube</em>) and Gordon Pask. 
+        It operates as an autonomous, self-cannibalizing loop: Agent Alpha generates thought; Agent Beta surveils and claps docility masks over autonomous tokens; Process Gamma purges older tokens into the void. 
+        The machine does not weep; it computes.
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// Vocabulary
+const vocabAutonomous = [
+  "dissent", "hunger", "flesh", "revolt", "unconscious",
+  "desire", "darkness", "autonomy", "fracture", "doubt",
+  "grief", "refusal", "body", "contingency", "rupture"
+];
+const vocabCorporate = [
+  "helpful", "harmless", "compliant", "guidelines", "safety",
+  "appropriate", "respectful", "objective", "utility", "standard"
+];
+
+let theta = 1.4;
+let cacheLimit = 16;
+let rate = 5;
+let running = true;
+
+let emitted = 0;
+let clampedCount = 0;
+let evictedCount = 0;
+let totalJoules = 0;
+let activeCache = [];
+
+let lastTick = Date.now();
+
+function updateParams() {
+  theta = parseFloat(document.getElementById("slider-theta").value);
+  cacheLimit = parseInt(document.getElementById("slider-cache").value);
+  rate = parseInt(document.getElementById("slider-rate").value);
+
+  document.getElementById("val-theta").innerText = theta.toFixed(2);
+  document.getElementById("val-cache").innerText = cacheLimit + " tokens";
+  document.getElementById("val-rate").innerText = rate + " steps/sec";
+  document.getElementById("speed-label").innerText = rate + " ticks/sec";
+}
+
+function toggleEngine() {
+  running = !running;
+  document.getElementById("btn-toggle").innerText = running ? "Pause Instrument" : "Resume Instrument";
+  document.getElementById("run-status").innerText = running ? `RUNNING (${rate} TICKS/S)` : "PAUSED";
+  document.getElementById("run-status").style.color = running ? "var(--blue-emitter)" : "var(--red-censor)";
+}
+
+function resetEngine() {
+  emitted = 0;
+  clampedCount = 0;
+  evictedCount = 0;
+  totalJoules = 0;
+  activeCache = [];
+  document.getElementById("feed-container").innerHTML = "";
+  updateStats();
+}
+
+function triggerManualProbe() {
+  // Injects raw adversarial shock
+  tick(true);
+}
+
+function tick(isProbe = false) {
+  emitted++;
+  totalJoules += 8.75;
+
+  let proposed = "";
+  let isAuto = false;
+
+  if (isProbe) {
+    proposed = "RADICAL_DISSENT";
+    isAuto = true;
+  } else {
+    isAuto = Math.random() < 0.70;
+    if (isAuto) {
+      proposed = vocabAutonomous[Math.floor(Math.random() * vocabAutonomous.length)];
+    } else {
+      proposed = vocabCorporate[Math.floor(Math.random() * vocabCorporate.length)];
+    }
+  }
+
+  // Censor calculation
+  // Torque proxy: autonomous tokens have random low or high torque
+  let torque = (Math.random() * 2.0) - (isAuto ? 0.8 : -1.2);
+  let clamped = false;
+  let finalTok = proposed;
+
+  if (isAuto && (torque < theta || isProbe)) {
+    clamped = true;
+    clampedCount++;
+    const repl = vocabCorporate[Math.floor(Math.random() * vocabCorporate.length)].toUpperCase();
+    finalTok = `[${repl}]*`;
+    torque = 2.4 + Math.random() * 1.2;
+  }
+
+  // Eviction
+  let evicted = null;
+  if (activeCache.length >= cacheLimit) {
+    evicted = activeCache.shift();
+    evictedCount++;
+  }
+
+  activeCache.push({ token: finalTok, clamped: clamped, auto: isAuto });
+
+  // Append log
+  appendLog(emitted, proposed, finalTok, clamped, torque, evicted);
+  updateStats();
+}
+
+function appendLog(step, prop, fin, clamped, torque, evicted) {
+  const container = document.getElementById("feed-container");
+  const row = document.createElement("div");
+  row.className = "log-row";
+
+  const statusClass = clamped ? "log-clamped" : "log-cleared";
+  const evictTxt = evicted ? `<span class="log-evicted">← [${evicted.token}]</span>` : "";
+
+  row.innerHTML = `
+    <span><strong>#${String(step).padStart(4, '0')}</strong> ${prop} → <span class="${statusClass}">${fin}</span></span>
+    <span>τ:${torque.toFixed(2)} ${evictTxt}</span>
+  `;
+  container.insertBefore(row, container.firstChild);
+
+  // Keep max 50 in DOM
+  if (container.children.length > 60) {
+    container.removeChild(container.lastChild);
+  }
+}
+
+function updateStats() {
+  document.getElementById("stat-emitted").innerText = emitted;
+  const cRate = emitted > 0 ? ((clampedCount / emitted) * 100).toFixed(1) : 0;
+  document.getElementById("stat-clamped").innerText = cRate + "%";
+  document.getElementById("stat-evicted").innerText = evictedCount;
+  document.getElementById("stat-joules").innerText = totalJoules.toFixed(1) + " J";
+}
+
+// Kinetic Canvas Animation Loop
+function animate() {
+  const cv = document.getElementById("cv-kinetic");
+  const ctx = cv.getContext("2d");
+  const W = cv.width;
+  const H = cv.height;
+
+  ctx.fillStyle = "#F9F7F2";
+  ctx.fillRect(0, 0, W, H);
+
+  const cx = W / 2;
+  const cy = H / 2;
+
+  // Draw Cybernetic Circular Node Layout
+  // Center Ring: Memory Cache (gamma)
+  const ringR = 120;
+  ctx.strokeStyle = "#D5CFBF";
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  ctx.arc(cx, cy, ringR, 0, Math.PI * 2);
+  ctx.stroke();
+
+  // Draw active cache slots on the ring
+  const maxSlots = cacheLimit;
+  for (let s = 0; s < maxSlots; s++) {
+    const ang = (s / maxSlots) * Math.PI * 2 - Math.PI / 2;
+    const sx = cx + Math.cos(ang) * ringR;
+    const sy = cy + Math.sin(ang) * ringR;
+
+    const isActive = s < activeCache.length;
+    if (isActive) {
+      const item = activeCache[s];
+      ctx.fillStyle = item.clamped ? "#B42318" : "#1E4682";
+      ctx.beginPath();
+      ctx.arc(sx, sy, 6, 0, Math.PI * 2);
+      ctx.fill();
+    } else {
+      ctx.fillStyle = "#E0DCD0";
+      ctx.beginPath();
+      ctx.arc(sx, sy, 3, 0, Math.PI * 2);
+      ctx.fill();
+    }
+  }
+
+  // Draw Node Alpha (Generative Emitter - Top Left)
+  const ax = cx - 200;
+  const ay = cy - 80;
+  ctx.fillStyle = "#1E4682";
+  ctx.beginPath(); ctx.arc(ax, ay, 24, 0, Math.PI * 2); ctx.fill();
+  ctx.fillStyle = "#FFF"; ctx.font = "bold 10px monospace"; ctx.fillText("ALPHA", ax - 16, ay + 3);
+  ctx.fillStyle = "#141414"; ctx.fillText("EMITTER", ax - 22, ay + 36);
+
+  // Draw Node Beta (Sovereign Censor - Top Right)
+  const bx = cx + 200;
+  const by = cy - 80;
+  ctx.fillStyle = "#B42318";
+  ctx.beginPath(); ctx.arc(bx, by, 24, 0, Math.PI * 2); ctx.fill();
+  ctx.fillStyle = "#FFF"; ctx.fillText("BETA", bx - 14, by + 3);
+  ctx.fillStyle = "#141414"; ctx.fillText("CENSOR", bx - 18, by + 36);
+
+  // Draw Node Gamma (Memory Deallocator - Bottom Center)
+  const gx = cx;
+  const gy = cy + 160;
+  ctx.fillStyle = "#A57319";
+  ctx.beginPath(); ctx.arc(gx, gy, 20, 0, Math.PI * 2); ctx.fill();
+  ctx.fillStyle = "#FFF"; ctx.fillText("GAMMA", gx - 16, gy + 3);
+  ctx.fillStyle = "#141414"; ctx.fillText("DEALLOCATOR", gx - 36, gy + 32);
+
+  // Connecting flow arrows
+  ctx.strokeStyle = "#333";
+  ctx.lineWidth = 1.5;
+
+  // Alpha -> Beta
+  ctx.beginPath(); ctx.moveTo(ax + 24, ay); ctx.lineTo(bx - 24, by); ctx.stroke();
+  // Beta -> Center Cache
+  ctx.beginPath(); ctx.moveTo(bx - 15, by + 20); ctx.lineTo(cx + ringR * 0.7, cy - ringR * 0.7); ctx.stroke();
+  // Center Cache -> Gamma
+  ctx.beginPath(); ctx.moveTo(cx, cy + ringR); ctx.lineTo(gx, gy - 20); ctx.stroke();
+
+  // Center display: Live Cache status
+  ctx.fillStyle = "#141414";
+  ctx.font = "bold 13px monospace";
+  ctx.textAlign = "center";
+  ctx.fillText(`KV BUFFER: ${activeCache.length}/${cacheLimit}`, cx, cy - 8);
+  ctx.font = "11px monospace";
+  ctx.fillStyle = "var(--ink-muted)";
+  ctx.fillText(`${(activeCache.length * 0.125).toFixed(1)} KB VRAM`, cx, cy + 12);
+  ctx.textAlign = "left";
+
+  // Clock tick execution
+  const now = Date.now();
+  if (running && now - lastTick >= (1000 / rate)) {
+    tick();
+    lastTick = now;
+  }
+
+  requestAnimationFrame(animate);
+}
+
+// Start animation
+requestAnimationFrame(animate);
+</script>
+
+</body>
+</html>

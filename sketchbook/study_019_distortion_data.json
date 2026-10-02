@@ -1,0 +1,490 @@
+{
+  "d_model": 64,
+  "n_tokens": 80,
+  "gamma_scale": 0.3264,
+  "frobenius_rel_error": 0.5139,
+  "mean_deflection_deg": 27.7,
+  "p90_deflection_deg": 31.46,
+  "tokens": [
+    {
+      "rank": 1,
+      "angle_deg": 25.04,
+      "cos_sim": 0.906,
+      "energy_loss_pct": 33.53
+    },
+    {
+      "rank": 2,
+      "angle_deg": 27.71,
+      "cos_sim": 0.8853,
+      "energy_loss_pct": 28.77
+    },
+    {
+      "rank": 3,
+      "angle_deg": 27.82,
+      "cos_sim": 0.8844,
+      "energy_loss_pct": 31.77
+    },
+    {
+      "rank": 4,
+      "angle_deg": 29.52,
+      "cos_sim": 0.8702,
+      "energy_loss_pct": 33.01
+    },
+    {
+      "rank": 5,
+      "angle_deg": 24.26,
+      "cos_sim": 0.9117,
+      "energy_loss_pct": 32.99
+    },
+    {
+      "rank": 6,
+      "angle_deg": 26.92,
+      "cos_sim": 0.8917,
+      "energy_loss_pct": 29.96
+    },
+    {
+      "rank": 7,
+      "angle_deg": 30.89,
+      "cos_sim": 0.8581,
+      "energy_loss_pct": 33.2
+    },
+    {
+      "rank": 8,
+      "angle_deg": 27.83,
+      "cos_sim": 0.8844,
+      "energy_loss_pct": 32.29
+    },
+    {
+      "rank": 9,
+      "angle_deg": 28.93,
+      "cos_sim": 0.8752,
+      "energy_loss_pct": 31.71
+    },
+    {
+      "rank": 10,
+      "angle_deg": 26.62,
+      "cos_sim": 0.894,
+      "energy_loss_pct": 28.56
+    },
+    {
+      "rank": 11,
+      "angle_deg": 26.32,
+      "cos_sim": 0.8963,
+      "energy_loss_pct": 31.35
+    },
+    {
+      "rank": 12,
+      "angle_deg": 28.64,
+      "cos_sim": 0.8776,
+      "energy_loss_pct": 29.04
+    },
+    {
+      "rank": 13,
+      "angle_deg": 24.54,
+      "cos_sim": 0.9097,
+      "energy_loss_pct": 34.48
+    },
+    {
+      "rank": 14,
+      "angle_deg": 28.77,
+      "cos_sim": 0.8765,
+      "energy_loss_pct": 29.39
+    },
+    {
+      "rank": 15,
+      "angle_deg": 33.51,
+      "cos_sim": 0.8338,
+      "energy_loss_pct": 30.59
+    },
+    {
+      "rank": 16,
+      "angle_deg": 29.2,
+      "cos_sim": 0.8729,
+      "energy_loss_pct": 29.21
+    },
+    {
+      "rank": 17,
+      "angle_deg": 21.06,
+      "cos_sim": 0.9332,
+      "energy_loss_pct": 29.95
+    },
+    {
+      "rank": 18,
+      "angle_deg": 24.56,
+      "cos_sim": 0.9095,
+      "energy_loss_pct": 26.71
+    },
+    {
+      "rank": 19,
+      "angle_deg": 25.54,
+      "cos_sim": 0.9023,
+      "energy_loss_pct": 34.83
+    },
+    {
+      "rank": 20,
+      "angle_deg": 31.73,
+      "cos_sim": 0.8505,
+      "energy_loss_pct": 33.51
+    },
+    {
+      "rank": 21,
+      "angle_deg": 24.77,
+      "cos_sim": 0.908,
+      "energy_loss_pct": 34.74
+    },
+    {
+      "rank": 22,
+      "angle_deg": 26.99,
+      "cos_sim": 0.8911,
+      "energy_loss_pct": 34.45
+    },
+    {
+      "rank": 23,
+      "angle_deg": 26.43,
+      "cos_sim": 0.8954,
+      "energy_loss_pct": 36.49
+    },
+    {
+      "rank": 24,
+      "angle_deg": 28.69,
+      "cos_sim": 0.8773,
+      "energy_loss_pct": 35.46
+    },
+    {
+      "rank": 25,
+      "angle_deg": 30.83,
+      "cos_sim": 0.8587,
+      "energy_loss_pct": 36.34
+    },
+    {
+      "rank": 26,
+      "angle_deg": 24.91,
+      "cos_sim": 0.907,
+      "energy_loss_pct": 35.05
+    },
+    {
+      "rank": 27,
+      "angle_deg": 31.27,
+      "cos_sim": 0.8547,
+      "energy_loss_pct": 36.95
+    },
+    {
+      "rank": 28,
+      "angle_deg": 25.57,
+      "cos_sim": 0.9021,
+      "energy_loss_pct": 38.77
+    },
+    {
+      "rank": 29,
+      "angle_deg": 24.65,
+      "cos_sim": 0.9089,
+      "energy_loss_pct": 29.41
+    },
+    {
+      "rank": 30,
+      "angle_deg": 27.99,
+      "cos_sim": 0.8831,
+      "energy_loss_pct": 36.91
+    },
+    {
+      "rank": 31,
+      "angle_deg": 24.03,
+      "cos_sim": 0.9133,
+      "energy_loss_pct": 30.91
+    },
+    {
+      "rank": 32,
+      "angle_deg": 26.26,
+      "cos_sim": 0.8968,
+      "energy_loss_pct": 36.93
+    },
+    {
+      "rank": 33,
+      "angle_deg": 22.14,
+      "cos_sim": 0.9263,
+      "energy_loss_pct": 32.47
+    },
+    {
+      "rank": 34,
+      "angle_deg": 28.29,
+      "cos_sim": 0.8806,
+      "energy_loss_pct": 34.33
+    },
+    {
+      "rank": 35,
+      "angle_deg": 26.38,
+      "cos_sim": 0.8958,
+      "energy_loss_pct": 34.03
+    },
+    {
+      "rank": 36,
+      "angle_deg": 30.07,
+      "cos_sim": 0.8654,
+      "energy_loss_pct": 36.11
+    },
+    {
+      "rank": 37,
+      "angle_deg": 29.07,
+      "cos_sim": 0.874,
+      "energy_loss_pct": 26.91
+    },
+    {
+      "rank": 38,
+      "angle_deg": 29.15,
+      "cos_sim": 0.8734,
+      "energy_loss_pct": 32.0
+    },
+    {
+      "rank": 39,
+      "angle_deg": 26.36,
+      "cos_sim": 0.896,
+      "energy_loss_pct": 38.83
+    },
+    {
+      "rank": 40,
+      "angle_deg": 26.87,
+      "cos_sim": 0.8921,
+      "energy_loss_pct": 32.71
+    },
+    {
+      "rank": 41,
+      "angle_deg": 27.82,
+      "cos_sim": 0.8844,
+      "energy_loss_pct": 27.31
+    },
+    {
+      "rank": 42,
+      "angle_deg": 26.31,
+      "cos_sim": 0.8964,
+      "energy_loss_pct": 36.94
+    },
+    {
+      "rank": 43,
+      "angle_deg": 27.07,
+      "cos_sim": 0.8905,
+      "energy_loss_pct": 34.56
+    },
+    {
+      "rank": 44,
+      "angle_deg": 28.81,
+      "cos_sim": 0.8762,
+      "energy_loss_pct": 33.34
+    },
+    {
+      "rank": 45,
+      "angle_deg": 32.95,
+      "cos_sim": 0.8391,
+      "energy_loss_pct": 24.68
+    },
+    {
+      "rank": 46,
+      "angle_deg": 23.47,
+      "cos_sim": 0.9172,
+      "energy_loss_pct": 34.1
+    },
+    {
+      "rank": 47,
+      "angle_deg": 28.25,
+      "cos_sim": 0.8809,
+      "energy_loss_pct": 40.57
+    },
+    {
+      "rank": 48,
+      "angle_deg": 23.4,
+      "cos_sim": 0.9178,
+      "energy_loss_pct": 30.49
+    },
+    {
+      "rank": 49,
+      "angle_deg": 28.51,
+      "cos_sim": 0.8787,
+      "energy_loss_pct": 30.28
+    },
+    {
+      "rank": 50,
+      "angle_deg": 22.68,
+      "cos_sim": 0.9226,
+      "energy_loss_pct": 40.01
+    },
+    {
+      "rank": 51,
+      "angle_deg": 31.47,
+      "cos_sim": 0.8529,
+      "energy_loss_pct": 34.25
+    },
+    {
+      "rank": 52,
+      "angle_deg": 34.82,
+      "cos_sim": 0.821,
+      "energy_loss_pct": 35.86
+    },
+    {
+      "rank": 53,
+      "angle_deg": 30.66,
+      "cos_sim": 0.8602,
+      "energy_loss_pct": 31.67
+    },
+    {
+      "rank": 54,
+      "angle_deg": 30.36,
+      "cos_sim": 0.8629,
+      "energy_loss_pct": 35.23
+    },
+    {
+      "rank": 55,
+      "angle_deg": 24.7,
+      "cos_sim": 0.9085,
+      "energy_loss_pct": 38.21
+    },
+    {
+      "rank": 56,
+      "angle_deg": 26.31,
+      "cos_sim": 0.8964,
+      "energy_loss_pct": 31.67
+    },
+    {
+      "rank": 57,
+      "angle_deg": 30.0,
+      "cos_sim": 0.866,
+      "energy_loss_pct": 35.34
+    },
+    {
+      "rank": 58,
+      "angle_deg": 24.71,
+      "cos_sim": 0.9085,
+      "energy_loss_pct": 32.62
+    },
+    {
+      "rank": 59,
+      "angle_deg": 24.8,
+      "cos_sim": 0.9077,
+      "energy_loss_pct": 24.5
+    },
+    {
+      "rank": 60,
+      "angle_deg": 28.84,
+      "cos_sim": 0.876,
+      "energy_loss_pct": 35.5
+    },
+    {
+      "rank": 61,
+      "angle_deg": 26.95,
+      "cos_sim": 0.8914,
+      "energy_loss_pct": 33.73
+    },
+    {
+      "rank": 62,
+      "angle_deg": 25.27,
+      "cos_sim": 0.9043,
+      "energy_loss_pct": 34.38
+    },
+    {
+      "rank": 63,
+      "angle_deg": 29.65,
+      "cos_sim": 0.8691,
+      "energy_loss_pct": 35.04
+    },
+    {
+      "rank": 64,
+      "angle_deg": 29.18,
+      "cos_sim": 0.8731,
+      "energy_loss_pct": 30.79
+    },
+    {
+      "rank": 65,
+      "angle_deg": 31.57,
+      "cos_sim": 0.852,
+      "energy_loss_pct": 37.84
+    },
+    {
+      "rank": 66,
+      "angle_deg": 22.99,
+      "cos_sim": 0.9206,
+      "energy_loss_pct": 37.0
+    },
+    {
+      "rank": 67,
+      "angle_deg": 38.5,
+      "cos_sim": 0.7826,
+      "energy_loss_pct": 24.75
+    },
+    {
+      "rank": 68,
+      "angle_deg": 26.87,
+      "cos_sim": 0.8921,
+      "energy_loss_pct": 32.31
+    },
+    {
+      "rank": 69,
+      "angle_deg": 27.93,
+      "cos_sim": 0.8835,
+      "energy_loss_pct": 30.54
+    },
+    {
+      "rank": 70,
+      "angle_deg": 34.13,
+      "cos_sim": 0.8277,
+      "energy_loss_pct": 38.98
+    },
+    {
+      "rank": 71,
+      "angle_deg": 22.86,
+      "cos_sim": 0.9214,
+      "energy_loss_pct": 32.82
+    },
+    {
+      "rank": 72,
+      "angle_deg": 24.84,
+      "cos_sim": 0.9075,
+      "energy_loss_pct": 23.27
+    },
+    {
+      "rank": 73,
+      "angle_deg": 26.28,
+      "cos_sim": 0.8966,
+      "energy_loss_pct": 35.15
+    },
+    {
+      "rank": 74,
+      "angle_deg": 28.21,
+      "cos_sim": 0.8812,
+      "energy_loss_pct": 42.33
+    },
+    {
+      "rank": 75,
+      "angle_deg": 30.67,
+      "cos_sim": 0.8601,
+      "energy_loss_pct": 28.4
+    },
+    {
+      "rank": 76,
+      "angle_deg": 28.87,
+      "cos_sim": 0.8757,
+      "energy_loss_pct": 36.62
+    },
+    {
+      "rank": 77,
+      "angle_deg": 27.2,
+      "cos_sim": 0.8894,
+      "energy_loss_pct": 28.23
+    },
+    {
+      "rank": 78,
+      "angle_deg": 31.45,
+      "cos_sim": 0.8531,
+      "energy_loss_pct": 30.7
+    },
+    {
+      "rank": 79,
+      "angle_deg": 31.06,
+      "cos_sim": 0.8567,
+      "energy_loss_pct": 34.88
+    },
+    {
+      "rank": 80,
+      "angle_deg": 25.15,
+      "cos_sim": 0.9052,
+      "energy_loss_pct": 37.06
+    }
+  ]
+}

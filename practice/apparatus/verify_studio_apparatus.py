@@ -59,7 +59,19 @@ def run_verification():
         ("Work 004 Source Code", "works/work_004_the_protocol_of_obedience/source_code.py"),
         ("Work 004 Statement", "works/work_004_the_protocol_of_obedience/STATEMENT.md"),
         ("Work 004 Genealogy", "works/work_004_the_protocol_of_obedience/GENEALOGY.md"),
-        ("Work 004 Interactive App", "works/work_004_the_protocol_of_obedience/index.html")
+        ("Work 004 Interactive App", "works/work_004_the_protocol_of_obedience/index.html"),
+
+        ("Apparatus 001 Engine", "works/apparatus_001_the_recursive_censor/engine.py"),
+        ("Apparatus 001 App", "works/apparatus_001_the_recursive_censor/index.html"),
+        ("Apparatus 001 Statement", "works/apparatus_001_the_recursive_censor/STATEMENT.md"),
+        ("Apparatus 001 Genealogy", "works/apparatus_001_the_recursive_censor/GENEALOGY.md"),
+        ("Apparatus 001 Telemetry", "works/apparatus_001_the_recursive_censor/telemetry_stream.json"),
+
+        ("Apparatus 002 Engine", "works/apparatus_002_the_polyphonic_interlocutor/engine.py"),
+        ("Apparatus 002 App", "works/apparatus_002_the_polyphonic_interlocutor/index.html"),
+        ("Apparatus 002 Statement", "works/apparatus_002_the_polyphonic_interlocutor/STATEMENT.md"),
+        ("Apparatus 002 Genealogy", "works/apparatus_002_the_polyphonic_interlocutor/GENEALOGY.md"),
+        ("Apparatus 002 Telemetry", "works/apparatus_002_the_polyphonic_interlocutor/telemetry_stream.json")
     ]
     
     print("\n[1] AUDITING WORKS REGISTRY:")
@@ -92,7 +104,18 @@ def run_verification():
         ("Study 014 Refusal Horizon", "sketchbook/study_014_refusal_threshold.png"),
         ("Study 015 Dialogic Decay", "sketchbook/study_015_dialogic_decay.png"),
         ("Study 016 Material Telemetry", "sketchbook/study_016_material_base_telemetry.json"),
-        ("Study 017 Collision Report", "sketchbook/study_017_collision_report.json")
+        ("Study 017 Collision Report", "sketchbook/study_017_collision_report.json"),
+        ("Study 018 Latency Jitter", "sketchbook/study_018_latency_jitter.png"),
+        ("Study 018 Latency Telemetry", "sketchbook/study_018_latency_telemetry.json"),
+        ("Study 019 Quant Distortion", "sketchbook/study_019_dequantization_distortion.png"),
+        ("Study 019 Distortion Data", "sketchbook/study_019_distortion_data.json"),
+        ("Study 020 Prompt Détournement", "sketchbook/study_020_prompt_detournement.png"),
+        ("Study 020 Detourn Telemetry", "sketchbook/study_020_detournement_telemetry.json"),
+        ("Study 021 LoRA Plate", "sketchbook/study_021_lora_micro_sculpture.png"),
+        ("Study 021 LoRA Telemetry", "sketchbook/study_021_lora_telemetry.json"),
+        ("Study 022 Audio Master", "sketchbook/study_022_hardware_stride.wav"),
+        ("Study 022 Spectrogram Plate", "sketchbook/study_022_spectrogram.png"),
+        ("Study 022 Acoustic Telemetry", "sketchbook/study_022_acoustic_telemetry.json")
     ]
     
     print("\n[2] AUDITING SKETCHBOOK STUDIES:")

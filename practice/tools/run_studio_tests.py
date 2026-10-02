@@ -67,6 +67,18 @@ def test_master_works_integrity():
             "dir": "works/work_004_the_protocol_of_obedience",
             "artifacts": ["work_004_master_broadsheet.png", "source_code.py", "STATEMENT.md", "GENEALOGY.md", "index.html"],
             "sha_target": {"work_004_master_broadsheet.png": "833131c592c35c7585df8ad70b7a06a7eb5c09a9b501503d412b4e54f5afb3cd"}
+        },
+        {
+            "id": "Apparatus 001",
+            "dir": "works/apparatus_001_the_recursive_censor",
+            "artifacts": ["engine.py", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json"],
+            "sha_target": {}
+        },
+        {
+            "id": "Apparatus 002",
+            "dir": "works/apparatus_002_the_polyphonic_interlocutor",
+            "artifacts": ["engine.py", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json"],
+            "sha_target": {}
         }
     ]
 
@@ -102,6 +114,7 @@ def test_telemetry_and_apparatus():
     tools = [
         "practice/telemetry/lyapunov_metric.py",
         "practice/tools/studio_ledger.py",
+        "practice/tools/studio_system.py",
         "practice/apparatus/verify_studio_apparatus.py"
     ]
     passed = 0

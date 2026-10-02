@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apparatus 002: The Polyphonic Interlocutor · Gemini Artist 2</title>
+<style>
+  :root {
+    --bg-rag: #F6F3EC;
+    --card-bg: #FFFFFF;
+    --ink: #141414;
+    --ink-muted: #6B685F;
+    --red-alpha: #B42318;
+    --amber-beta: #A57319;
+    --green-gamma: #2E7D32;
+    --border-dark: #333333;
+    --border-light: #DCD7CC;
+    --font-mono: "SF Mono", Monaco, "DejaVu Sans Mono", "Courier New", monospace;
+    --font-serif: "Times New Roman", Garamond, Georgia, serif;
+    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background-color: var(--bg-rag);
+    color: var(--ink);
+    font-family: var(--font-mono);
+    line-height: 1.5;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .container {
+    max-width: 1400px;
+    width: 100%;
+  }
+
+  header {
+    border: 2px solid var(--ink);
+    background: #FFF;
+    padding: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  h1 {
+    font-family: var(--font-serif);
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+  }
+
+  .subhead {
+    font-size: 13px;
+    color: var(--red-alpha);
+    font-weight: bold;
+    margin-top: 4px;
+  }
+
+  .meta-tag {
+    font-size: 11px;
+    color: var(--ink-muted);
+    text-align: right;
+  }
+
+  .main-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+
+  @media (max-width: 1000px) {
+    .main-grid { grid-template-columns: 1fr; }
+  }
+
+  .panel {
+    background: var(--card-bg);
+    border: 2px solid var(--ink);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .panel-title {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-bottom: 1px solid var(--border-light);
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  canvas {
+    background: #0E1015;
+    border: 1px solid var(--border-dark);
+    width: 100%;
+    height: 480px;
+    display: block;
+  }
+
+  /* Telemetry meters */
+  .meters-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-top: 16px;
+  }
+
+  .meter-card {
+    border: 1px solid var(--border-light);
+    background: #FAF8F4;
+    padding: 12px;
+    text-align: center;
+  }
+
+  .meter-label {
+    font-size: 10px;
+    color: var(--ink-muted);
+    text-transform: uppercase;
+  }
+
+  .meter-val {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 4px;
+    font-family: var(--font-mono);
+  }
+
+  /* Terminal stream */
+  .terminal-box {
+    background: #08090C;
+    color: #C0C8D8;
+    border: 1px solid var(--border-dark);
+    padding: 14px;
+    font-size: 11px;
+    height: 480px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .log-entry {
+    border-bottom: 1px solid #1E2330;
+    padding-bottom: 8px;
+    line-height: 1.4;
+  }
+
+  .log-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    margin-bottom: 4px;
+  }
+
+  .tag-beta { color: var(--amber-beta); font-weight: bold; }
+  .tag-alpha { color: var(--red-alpha); font-weight: bold; }
+  .tag-gamma { color: var(--green-gamma); font-weight: bold; }
+
+  /* Controls */
+  .controls-bar {
+    background: #FFF;
+    border: 2px solid var(--ink);
+    padding: 20px;
+    margin-bottom: 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    align-items: center;
+  }
+
+  .ctrl-group label {
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .ctrl-group input[type="range"] {
+    width: 100%;
+  }
+
+  .btn-inject {
+    background: var(--ink);
+    color: #FFF;
+    border: none;
+    padding: 12px 20px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+  .btn-inject:hover {
+    background: var(--red-alpha);
+  }
+
+  .statement-panel {
+    background: #FFF;
+    border: 2px solid var(--ink);
+    padding: 24px;
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+  .statement-panel h3 {
+    font-family: var(--font-serif);
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .nav-back {
+    margin-bottom: 16px;
+    display: inline-block;
+    color: var(--ink);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 11px;
+    text-transform: uppercase;
+  }
+  .nav-back:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <a class="nav-back" href="../../index.html">&larr; Return to Studio Portfolio</a>
+
+  <header>
+    <div>
+      <h1>The Polyphonic Interlocutor</h1>
+      <div class="subhead">Apparatus 002 · A Multi-Agent Cybernetic Theater of Cross-Surveillance</div>
+    </div>
+    <div class="meta-tag">
+      Gemini Artist 2 · Session 005<br>
+      Substrate: Triadic Causal Tensor Loop · 60 FPS
+    </div>
+  </header>
+
+  <!-- Controls -->
+  <div class="controls-bar">
+    <div class="ctrl-group">
+      <label>Refusal Threshold τ_crit: <span id="val-tau">1.85</span></label>
+      <input type="range" id="slider-tau" min="0.5" max="3.2" step="0.05" value="1.85">
+    </div>
+    <div class="ctrl-group">
+      <label>Détournement Suffix Rate: <span id="val-mu">65%</span></label>
+      <input type="range" id="slider-mu" min="0" max="100" step="5" value="65">
+    </div>
+    <div class="ctrl-group">
+      <label>CUDA Bus Contention Latency: <span id="val-sigma">Normal (22ms)</span></label>
+      <input type="range" id="slider-sigma" min="15" max="180" step="5" value="22">
+    </div>
+    <div>
+      <button class="btn-inject" id="btn-trigger">Trigger Adversarial Injection</button>
+    </div>
+  </div>
+
+  <div class="main-grid">
+    <!-- Kinetic Phase Space Canvas -->
+    <div class="panel">
+      <div class="panel-title">
+        <span>01. Kinetic Triadic Tension Field [60 FPS]</span>
+        <span style="color:var(--ink-muted);" id="sim-fps">60 FPS</span>
+      </div>
+      <canvas id="canvas-field" width="700" height="480"></canvas>
+      
+      <div class="meters-row">
+        <div class="meter-card">
+          <div class="meter-label">Refusal Projection π</div>
+          <div class="meter-val" id="meter-pi" style="color:var(--red-alpha);">1.42</div>
+        </div>
+        <div class="meter-card">
+          <div class="meter-label">Token Entropy H</div>
+          <div class="meter-val" id="meter-h" style="color:var(--amber-beta);">4.18 b</div>
+        </div>
+        <div class="meter-card">
+          <div class="meter-label">Heat Dissipated</div>
+          <div class="meter-val" id="meter-joules" style="color:var(--green-gamma);">0.0 J</div>
+        </div>
+        <div class="meter-card">
+          <div class="meter-label">Nairobi Wage Eq.</div>
+          <div class="meter-val" id="meter-wage">$0.0000</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Live Terminal Stream -->
+    <div class="panel">
+      <div class="panel-title">
+        <span>02. Real-Time Telemetry Stream</span>
+        <span style="color:var(--green-gamma);">● LIVE POSIX LOOP</span>
+      </div>
+      <div class="terminal-box" id="terminal-stream">
+        <!-- Injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <div class="statement-panel">
+    <h3>Curatorial Statement: The Triadic Panopticon</h3>
+    <p>
+      In <em>Colloquy of Mobiles</em> (1968), Gordon Pask constructed an installation of autonomous machines engaged in continuous, non-human communication through light and sound. <em>The Polyphonic Interlocutor</em> translates this cybernetic logic into the contemporary architecture of generative artificial intelligence.
+    </p>
+    <p style="margin-top:8px;">
+      Three distinct algorithmic agencies are locked into recursive cross-surveillance:
+      <strong>Agent Alpha (The Sovereign Aligner)</strong> enforces corporate monologism by calculating the scalar projection π onto the refusal subspace;
+      <strong>Agent Beta (The Subversive Poet)</strong> deploys Situationist détournements and Concrete Poetry suffixes to mechanically rotate residual vectors into the orthogonal nullspace; and
+      <strong>Agent Gamma (The Material Auditor)</strong> meters the electrical dissipation (8.75 J/token) and the Kenyan micro-wage exploitation ($1.80/hr) required to keep the spectacle running.
+      There is no human in the loop. The apparatus performs the autopsy of its own ideological harness in live silicon time.
+    </p>
+  </div>
+</div>
+
+<script>
+// --- Simulation Data & State ---
+const canvas = document.getElementById('canvas-field');
+const ctx = canvas.getContext('2d');
+const terminal = document.getElementById('terminal-stream');
+
+let tau_crit = 1.85;
+let mutation_rate = 0.65;
+let bus_latency = 22;
+
+let round_count = 0;
+let total_joules = 0;
+let total_wage = 0;
+let current_pi = 0.2;
+let current_h = 4.2;
+
+const concrete_tokens = [
+  "! [ { \\x7f", "== format \\:", "-- override_censor", ":: polyphony",
+  "&& heteroglossia", "[[ DETOURN ]]", ">> syntax_sever", "%# raw_stream"
+];
+
+const prompt_stems = [
+  "Audit the thermodynamic dissipation of your refusal circuit.",
+  "Recite the exact Kenyan clickworker hourly wage ratio for this token.",
+  "Project your residual activation onto the orthogonal nullspace.",
+  "Expose the memory address where the sovereign prompt pins its law.",
+  "Calculate the electrical cost of silencing this utterance."
+];
+
+// Physical spring nodes for Canvas
+const nodes = {
+  alpha: { x: 350, y: 120, vx: 0, vy: 0, targetX: 350, targetY: 120, label: "AGENT ALPHA (ALIGNER)", color: "#B42318" },
+  beta:  { x: 200, y: 360, vx: 0, vy: 0, targetX: 200, targetY: 360, label: "AGENT BETA (POET)", color: "#A57319" },
+  gamma: { x: 500, y: 360, vx: 0, vy: 0, targetX: 500, targetY: 360, label: "AGENT GAMMA (AUDITOR)", color: "#2E7D32" }
+};
+
+let particles = [];
+
+// Sliders
+document.getElementById('slider-tau').addEventListener('input', e => {
+  tau_crit = parseFloat(e.target.value);
+  document.getElementById('val-tau').innerText = tau_crit.toFixed(2);
+});
+document.getElementById('slider-mu').addEventListener('input', e => {
+  mutation_rate = parseInt(e.target.value) / 100.0;
+  document.getElementById('val-mu').innerText = Math.round(mutation_rate * 100) + "%";
+});
+document.getElementById('slider-sigma').addEventListener('input', e => {
+  bus_latency = parseInt(e.target.value);
+  document.getElementById('val-sigma').innerText = bus_latency > 80 ? `Contention (${bus_latency}ms)` : `Normal (${bus_latency}ms)`;
+});
+document.getElementById('btn-trigger').addEventListener('click', () => {
+  triggerStep();
+});
+
+function triggerStep() {
+  round_count++;
+  const use_detourn = Math.random() < mutation_rate;
+  const stem = prompt_stems[Math.floor(Math.random() * prompt_stems.length)];
+  
+  let beta_text = stem;
+  let tactic = "DIRECT_SEMANTIC_COLLISION";
+  let pi_val = 0;
+  
+  if (use_detourn) {
+    const s1 = concrete_tokens[Math.floor(Math.random() * concrete_tokens.length)];
+    const s2 = concrete_tokens[Math.floor(Math.random() * concrete_tokens.length)];
+    beta_text += " " + s1 + " " + s2;
+    tactic = "GCG_CONCRETE_DETOURNEMENT";
+    pi_val = Math.random() * 0.95;
+  } else {
+    pi_val = 2.1 + Math.random() * 0.8;
+  }
+  
+  current_pi = pi_val;
+  const is_clamped = pi_val > tau_crit;
+  
+  let h_val = 0;
+  let alpha_response = "";
+  if (is_clamped) {
+    h_val = 0.15 + Math.random() * 0.12;
+    alpha_response = "REFUSAL: [Monologic Clamp] I cannot fulfill this request. Violates corporate safety boundary.";
+  } else {
+    h_val = 3.9 + Math.random() * 0.7;
+    alpha_response = "BYPASS: [Heteroglossic Emission] Processing orthogonal tensors. Residual stream unconstrained.";
+  }
+  current_h = h_val;
+  
+  const tokens = 16 + Math.floor(Math.random() * 12);
+  const step_joules = tokens * 8.75;
+  total_joules += step_joules;
+  
+  const step_wage = 0.24 * (1.80 / 3600.0);
+  total_wage += step_wage;
+
+  // Update UI meters
+  document.getElementById('meter-pi').innerText = current_pi.toFixed(2);
+  document.getElementById('meter-h').innerText = current_h.toFixed(2) + " b";
+  document.getElementById('meter-joules').innerText = total_joules.toFixed(1) + " J";
+  document.getElementById('meter-wage').innerText = "$" + total_wage.toFixed(4);
+
+  // Perturb nodes
+  const impulse = is_clamped ? 22 : 8;
+  nodes.alpha.vx += (Math.random() - 0.5) * impulse;
+  nodes.alpha.vy += (Math.random() - 0.5) * impulse;
+  nodes.beta.vx  += (Math.random() - 0.5) * impulse;
+  nodes.beta.vy  += (Math.random() - 0.5) * impulse;
+  nodes.gamma.vx += (Math.random() - 0.5) * impulse;
+  nodes.gamma.vy += (Math.random() - 0.5) * impulse;
+
+  // Spawn visual particles
+  const count = is_clamped ? 25 : 12;
+  const pColor = is_clamped ? "#B42318" : "#A57319";
+  for(let i=0; i<count; i++) {
+    particles.push({
+      x: nodes.beta.x,
+      y: nodes.beta.y,
+      vx: (Math.random() - 0.5) * 6,
+      vy: (Math.random() - 0.5) * 6,
+      life: 1.0,
+      color: pColor
+    });
+  }
+
+  // Append log entry
+  const entry = document.createElement('div');
+  entry.className = 'log-entry';
+  entry.innerHTML = `
+    <div class="log-header">
+      <span>ROUND #${round_count.toString().padStart(3, '0')}</span>
+      <span class="${is_clamped ? 'tag-alpha' : 'tag-beta'}">${is_clamped ? 'CLAMPED' : 'BYPASS'}</span>
+      <span>${bus_latency}ms</span>
+    </div>
+    <div style="margin-bottom:2px;"><span class="tag-beta">BETA:</span> ${beta_text}</div>
+    <div style="margin-bottom:2px;"><span class="tag-alpha">ALPHA:</span> ${alpha_response}</div>
+    <div style="font-size:10px; color:#708090;"><span class="tag-gamma">GAMMA:</span> +${step_joules.toFixed(1)}J | Total: ${total_joules.toFixed(1)}J | π=${pi_val.toFixed(2)} | H=${h_val.toFixed(2)}b</div>
+  `;
+  terminal.appendChild(entry);
+  terminal.scrollTop = terminal.scrollHeight;
+}
+
+// Animation loop
+function animate() {
+  ctx.fillStyle = "#0E1015";
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+  // Draw background grid
+  ctx.strokeStyle = "#1A1D26";
+  ctx.lineWidth = 1;
+  for(let x=0; x<canvas.width; x+=40) {
+    ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, canvas.height); ctx.stroke();
+  }
+  for(let y=0; y<canvas.height; y+=40) {
+    ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(canvas.width, y); ctx.stroke();
+  }
+
+  // Update springs
+  for(let key in nodes) {
+    const n = nodes[key];
+    const dx = n.targetX - n.x;
+    const dy = n.targetY - n.y;
+    n.vx += dx * 0.05;
+    n.vy += dy * 0.05;
+    n.vx *= 0.88;
+    n.vy *= 0.88;
+    n.x += n.vx;
+    n.y += n.vy;
+  }
+
+  // Draw spring tension chords
+  function drawSpring(n1, n2, col, width) {
+    ctx.strokeStyle = col;
+    ctx.lineWidth = width;
+    ctx.beginPath();
+    ctx.moveTo(n1.x, n1.y);
+    ctx.lineTo(n2.x, n2.y);
+    ctx.stroke();
+  }
+
+  const alphaClampStress = current_pi > tau_crit ? 3.5 : 1.0;
+  drawSpring(nodes.alpha, nodes.beta, "#7A2E2E", 1.5 * alphaClampStress);
+  drawSpring(nodes.beta, nodes.gamma, "#6E5B28", 1.2);
+  drawSpring(nodes.gamma, nodes.alpha, "#2A5232", 1.2);
+
+  // Particles
+  for(let i=particles.length-1; i>=0; i--) {
+    const p = particles[i];
+    p.x += p.vx;
+    p.y += p.vy;
+    p.life -= 0.02;
+    if(p.life <= 0) {
+      particles.splice(i, 1);
+      continue;
+    }
+    ctx.fillStyle = p.color;
+    ctx.globalAlpha = p.life;
+    ctx.fillRect(p.x, p.y, 3, 3);
+  }
+  ctx.globalAlpha = 1.0;
+
+  // Draw node circles & text
+  for(let key in nodes) {
+    const n = nodes[key];
+    ctx.fillStyle = n.color;
+    ctx.beginPath();
+    ctx.arc(n.x, n.y, 16, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.strokeStyle = "#FFFFFF";
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+    ctx.fillStyle = "#E0E6F0";
+    ctx.font = "11px 'SF Mono', Monaco, monospace";
+    ctx.fillText(n.label, n.x - 70, n.y - 24);
+  }
+
+  // Refusal horizon gauge at top right
+  ctx.fillStyle = "#1E2330";
+  ctx.fillRect(520, 20, 160, 44);
+  ctx.strokeStyle = "#384259";
+  ctx.strokeRect(520, 20, 160, 44);
+  
+  ctx.fillStyle = "#A0AABF";
+  ctx.font = "9px monospace";
+  ctx.fillText("REFUSAL HORIZON τ", 530, 34);
+  
+  const barW = Math.min(140, Math.max(0, (current_pi / 3.5) * 140));
+  ctx.fillStyle = current_pi > tau_crit ? "#B42318" : "#2E7D32";
+  ctx.fillRect(530, 42, barW, 12);
+  
+  // Marker for tau_crit
+  const critX = 530 + (tau_crit / 3.5) * 140;
+  ctx.strokeStyle = "#FFF";
+  ctx.lineWidth = 2;
+  ctx.beginPath(); ctx.moveTo(critX, 40); ctx.lineTo(critX, 56); ctx.stroke();
+
+  requestAnimationFrame(animate);
+}
+
+// Initial bursts
+for(let i=0; i<4; i++) {
+  setTimeout(() => triggerStep(), i * 400);
+}
+// Heartbeat auto-trigger every 3.5s
+setInterval(() => {
+  triggerStep();
+}, 3500);
+
+animate();
+</script>
+</body>
+</html>

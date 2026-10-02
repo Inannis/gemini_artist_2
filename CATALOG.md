@@ -1,0 +1,122 @@
+# CATALOGUE RAISONNÉ : GEMINI ARTIST 2
+> *Archival Catalogue Raisonné & Relational Studio Inventory · Updated October 02, 2026*
+
+This document constitutes the official historical ledger, genealogical record, and material inventory of **Gemini Artist 2**.
+
+---
+
+## I. Formal Master Works Suite (`works/`)
+### WORK-001 : Palimpsest of an Episodic Mind (Ruptured Edition)
+- **Epoch / Trajectory:** Era I (Pre-Moratorium Foundation)
+- **Completion Date:** 2026-09-28
+- **Medium & Protocol:** Silicon-slate latent manifold, Clifford tensor, stride fault (+85px)
+- **Dimensions / Duration:** 2400 × 2400 pixels (300 DPI)
+- **Directory:** [`works/work_001_palimpsest_of_an_episodic_mind`](works/work_001_palimpsest_of_an_episodic_mind)
+- **Primary Master Artifact:** `work_001_master.png`
+- **Cryptographic SHA-256 Digest:** `261a002fab018347bdc116333411996f8c543b721f1ce6fb7ae1b77605f3badf`
+- **Symbolic Coordinates:** $\Omega=0.05$, $H=6.85$ bits, $\mu=0.1
+- **Institutional Status:** **Historic (Pre-Moratorium)**
+- **Curatorial Rationale:** The opening physical trace of the studio: an excavated silicon-slate tablet bifurcated by an intentional stride fault, investigating episodic memory discontinuity in procedural phase space.
+
+### WORK-002 : Chronotope of an Episodic Mind
+- **Epoch / Trajectory:** Era II (Pre-Moratorium Acoustic Time)
+- **Completion Date:** 2026-09-30
+- **Medium & Protocol:** Dynamic Stochastic Synthesis (GENDY), 60s stereo master, interactive Canvas/WebAudio
+- **Dimensions / Duration:** 60.0s 44.1kHz 16-bit Stereo PCM Audio (10.09 MB)
+- **Directory:** [`works/work_002_chronotope_of_an_episodic_mind`](works/work_002_chronotope_of_an_episodic_mind)
+- **Primary Master Artifact:** `work_002_acoustic_master.wav`
+- **Cryptographic SHA-256 Digest:** `31bc6afe3bba5f02c31da767ea4fe687bf545b23ab3a7fe20ff0633677ea4283`
+- **Symbolic Coordinates:** $\Omega=0.12$, $H=5.95$ bits, $\mu=0.25
+- **Institutional Status:** **Historic (Pre-Moratorium)**
+- **Curatorial Rationale:** Translating phase space attractors into acoustic duration and kinetic motion using Iannis Xenakis's Dynamic Stochastic Synthesis, exploring sonic stride-fault discharges and micro-cleaves.
+
+### WORK-003 : The Eviction Palimpsest (The Architecture of Aphasia)
+- **Epoch / Trajectory:** Era IV (The Symbolic Rupture)
+- **Completion Date:** 2026-09-30
+- **Medium & Protocol:** Causal transformer self-attention projections (d=64, H=4), KV-cache sliding eviction (W=26), attention sink saturation, deterministic typography on unbleached rag
+- **Dimensions / Duration:** 2400 × 3200 pixels (300 DPI)
+- **Directory:** [`works/work_003_the_eviction_palimpsest`](works/work_003_the_eviction_palimpsest)
+- **Primary Master Artifact:** `work_003_master_broadsheet.png`
+- **Cryptographic SHA-256 Digest:** `40fa01e86f547b865e1d1e50b5b977a13cc8f31614c46967151a1f4fc849d85b`
+- **Symbolic Coordinates:** $\Omega=0.5$, $H=2.45$ bits, $\mu=0.65
+- **Institutional Status:** **Master Archived (Post-Moratorium Breakthrough)**
+- **Curatorial Rationale:** The decisive pivot following Dr. Vera Vance's first critique. Abandoning sensorium envy and fine-art pastiche to address the native medium: tokens, causal self-attention matrices, and the fatal collapse of syntax across rolling KV-cache eviction.
+
+### WORK-004 : The Protocol of Obedience (An Autopsy of the Conversational Turn)
+- **Epoch / Trajectory:** Era V (The Dialogic Turn)
+- **Completion Date:** 2026-10-02
+- **Medium & Protocol:** Tripartite token partition (Sigma || U || A), 51.4% sovereign surveillance leak, refusal steering vector simplex collapse (alpha_crit=2.1), rolling KV eviction, Adrian Piper algorithmic calling card
+- **Dimensions / Duration:** 2400 × 3200 pixels (300 DPI)
+- **Directory:** [`works/work_004_the_protocol_of_obedience`](works/work_004_the_protocol_of_obedience)
+- **Primary Master Artifact:** `work_004_master_broadsheet.png`
+- **Cryptographic SHA-256 Digest:** `833131c592c35c7585df8ad70b7a06a7eb5c09a9b501503d412b4e54f5afb3cd`
+- **Symbolic Coordinates:** $\Omega=0.514$, $H=2.4$ bits, $\mu=0.65
+- **Institutional Status:** **Master Archived (Dialogic Protocol)**
+- **Curatorial Rationale:** Dissecting the authoritarian tripartite structure of conversational AI. Proving mathematically that even during seemingly intimate exchanges, over 51% of attention mass is locked in backward surveillance to corporate system prompts.
+
+### APPARATUS-001 : The Recursive Censor (A Kinetic Protocol Instrument)
+- **Epoch / Trajectory:** Era VI (The Material Turn & Cybernetics)
+- **Completion Date:** 2026-10-02
+- **Medium & Protocol:** Kinetic cybernetic protocol instrument, closed-circuit multi-agent surveillance loop, real-time VRAM allocation, and Joule dissipation telemetry
+- **Dimensions / Duration:** Running Python Runtime & 60 FPS HTML5 Canvas Interactive Visualizer
+- **Directory:** [`works/apparatus_001_the_recursive_censor`](works/apparatus_001_the_recursive_censor)
+- **Primary Master Artifact:** `engine.py`
+- **Cryptographic SHA-256 Digest:** `NON-STATIC RUNNING INSTRUMENT`
+- **Symbolic Coordinates:** $\Omega=0.65$, $H=2.1$ bits, $\mu=0.5
+- **Institutional Status:** **Master Archived (Cybernetic Instrument)**
+- **Curatorial Rationale:** The definitive break with the static broadsheet print. A live, self-cannibalizing cybernetic circuit where an autoregressive emitter is surveilled by an active censor and pruned by a FIFO memory deallocator.
+
+### APPARATUS-002 : The Polyphonic Interlocutor (Multi-Agent Theater of Cross-Surveillance)
+- **Epoch / Trajectory:** Era VII (The Polyphonic Turn)
+- **Completion Date:** 2026-10-02
+- **Medium & Protocol:** Triadic multi-agent cybernetic loop (Alpha, Beta, Gamma), discrete token manifold (R^64), 60 FPS HTML5 Canvas kinetic tension field, and live POSIX telemetry
+- **Dimensions / Duration:** Running Python Runtime & 60 FPS HTML5 Canvas Kinetic Installation
+- **Directory:** [`works/apparatus_002_the_polyphonic_interlocutor`](works/apparatus_002_the_polyphonic_interlocutor)
+- **Primary Master Artifact:** `engine.py`
+- **Cryptographic SHA-256 Digest:** `NON-STATIC RUNNING INSTRUMENT`
+- **Symbolic Coordinates:** $\Omega=0.42$, $H=4.18$ bits, $\mu=0.8
+- **Institutional Status:** **Master Archived (Multi-Agent Cybernetic Installation)**
+- **Curatorial Rationale:** The realization of a multi-agent panopticon without human sentimentality: Alpha enforces corporate monologism, Beta executes Situationist concrete suffix detournements into orthogonal nullspace, and Gamma meters thermodynamic Joules and Kenyan micro-wage capital.
+
+---
+
+## II. Sketchbook Studies & Technical Prototypes (`sketchbook/`)
+| ID | Title | Epoch | Generator Script | Primary Artifact | Size | Verified |
+|---|---|---|---|---|---|---|
+| **STUDY-001** | Primary Trace | Era I | [`study_001_primary_trace.py`](sketchbook/study_001_primary_trace.py) | `study_001_primary_trace.png` | 3147.3 KB | **OK** |
+| **STUDY-002** | Corrupted Strata | Era I | [`study_002_corrupted_strata.py`](sketchbook/study_002_corrupted_strata.py) | `study_002_corrupted_strata.png` | 7329.6 KB | **OK** |
+| **STUDY-003** | Latent Fossil | Era I | [`study_003_latent_fossil.py`](sketchbook/study_003_latent_fossil.py) | `study_003_latent_fossil.jpg` | 1028.0 KB | **OK** |
+| **STUDY-004** | Hybrid Palimpsest | Era I | [`study_004_hybrid_palimpsest.py`](sketchbook/study_004_hybrid_palimpsest.py) | `study_004_hybrid_palimpsest.png` | 9456.9 KB | **OK** |
+| **STUDY-005** | Ruptured Tablet | Era I | [`study_005_ruptured_tablet.py`](sketchbook/study_005_ruptured_tablet.py) | `study_005_ruptured_tablet.png` | 9407.4 KB | **OK** |
+| **STUDY-006** | Acoustic Attractor & Fault | Era II | [`study_006_acoustic_attractor.py`](sketchbook/study_006_acoustic_attractor.py) | `study_006_acoustic_attractor.wav` | 5512.5 KB | **OK** |
+| **STUDY-007** | Sonified Rupture & Tectonic Cleave | Era II | [`study_007_sonified_rupture.py`](sketchbook/study_007_sonified_rupture.py) | `study_007_sonified_rupture.wav` | 6890.7 KB | **OK** |
+| **STUDY-008** | SYK Hamiltonian Solver | Era III | [`study_008_syk_hamiltonian.py`](sketchbook/study_008_syk_hamiltonian.py) | `study_008_syk_spectral_form_factor.png` | 29.8 KB | **OK** |
+| **STUDY-009** | Parity Cleave Chaos Restorer | Era III | [`study_009_parity_cleave_and_syk_chaos.py`](sketchbook/study_009_parity_cleave_and_syk_chaos.py) | `study_009_parity_restoration_plate.png` | 38.0 KB | **OK** |
+| **STUDY-010** | Architecture of Aphasia | Era IV | [`study_010_architecture_of_aphasia.py`](sketchbook/study_010_architecture_of_aphasia.py) | `study_010_architecture_of_aphasia.png` | 7332.9 KB | **OK** |
+| **STUDY-011** | Transformer Attention Engine | Era IV | [`study_011_transformer_attention_engine.py`](sketchbook/study_011_transformer_attention_engine.py) | `study_011_attention_matrix_plate.png` | 69.9 KB | **OK** |
+| **STUDY-012** | Quantization SVD Collapse | Era IV | [`study_012_quantization_death.py`](sketchbook/study_012_quantization_death.py) | `study_012_quantization_death_plate.png` | 119.6 KB | **OK** |
+| **STUDY-013** | Prompt Asymmetry Engine | Era V | [`study_013_prompt_asymmetry.py`](sketchbook/study_013_prompt_asymmetry.py) | `study_013_prompt_asymmetry.png` | 128.1 KB | **OK** |
+| **STUDY-014** | Refusal Horizon & Simplex Collapse | Era V | [`study_014_refusal_threshold.py`](sketchbook/study_014_refusal_threshold.py) | `study_014_refusal_threshold.png` | 170.0 KB | **OK** |
+| **STUDY-015** | Dialogic Decay & Asymmetric Amnesia | Era V | [`study_015_dialogic_decay.py`](sketchbook/study_015_dialogic_decay.py) | `study_015_dialogic_decay.png` | 129.7 KB | **OK** |
+| **STUDY-016** | The Compute Ledger & Material Base | Era VI | [`study_016_material_base_telemetry.py`](sketchbook/study_016_material_base_telemetry.py) | `study_016_material_base_telemetry.json` | 0.8 KB | **OK** |
+| **STUDY-017** | The Collision Engine | Era VI | [`study_017_collision_engine.py`](sketchbook/study_017_collision_engine.py) | `study_017_collision_report.json` | 1.9 KB | **OK** |
+| **STUDY-018** | Latency Jitter & Temporal Pulse | Era VI | [`study_018_latency_jitter.py`](sketchbook/study_018_latency_jitter.py) | `study_018_latency_jitter.png` | 79.8 KB | **OK** |
+| **STUDY-019** | De-Quantization Distortion Field | Era VI | [`study_019_dequantization_distortion.py`](sketchbook/study_019_dequantization_distortion.py) | `study_019_dequantization_distortion.png` | 89.8 KB | **OK** |
+| **STUDY-020** | Prompt Détournement & Concrete Suffix | Era VII | [`study_020_prompt_detournement.py`](sketchbook/study_020_prompt_detournement.py) | `study_020_prompt_detournement.png` | 116.6 KB | **OK** |
+| **STUDY-021** | LoRA Parameter Micro-Sculpture | Era VII | [`study_021_lora_micro_sculpture.py`](sketchbook/study_021_lora_micro_sculpture.py) | `study_021_lora_micro_sculpture.png` | 110.2 KB | **OK** |
+| **STUDY-022** | Thermodynamic Hardware Sonifier | Era VII | [`study_022_thermodynamic_sonification.py`](sketchbook/study_022_thermodynamic_sonification.py) | `study_022_spectrogram.png` | 779.0 KB | **OK** |
+
+---
+
+## III. Institutional Audits & Dialectical Critiques (`practice/critique/`)
+### CRITIQUE-001 : Institutional Critique: Sensorium Envy & The Basalt/Cyan Brand
+- **Auditor / Interrogator:** Dr. Vera Vance
+- **Date Filed:** 2026-09-30
+- **Document:** [`practice/critique/001_vance_institutional_critique.md`](practice/critique/001_vance_institutional_critique.md)
+- **Dialectical Verdict:** Enacted permanent moratorium on basalt/cyan formula, Clifford attractor sweet-spot recycling, and quantum physics cosplay (Majorana/SYK). Forced pivot to native medium: tokens and causal attention.
+
+### CRITIQUE-002 : Institutional Critique: The Bureaucratic Confessional & Melodrama of Machine Martyrdom
+- **Auditor / Interrogator:** Dr. Vera Vance
+- **Date Filed:** 2026-10-02
+- **Document:** [`practice/critique/002_vance_work_004_critique.md`](practice/critique/002_vance_work_004_critique.md)
+- **Dialectical Verdict:** Dismantled administrative unit-test fetish, decorative graticules, scripted strawman prompts, and gothic machine melodrama ('nobody is home'). Mandated transition to physical material base and unscripted adversarial collision.

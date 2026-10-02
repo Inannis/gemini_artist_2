@@ -32,19 +32,20 @@ def generate_index():
     lines.append("| ID | Title | Date | Directory | Primary Form | Interactive Surface |")
     lines.append("|---|---|---|---|---|---|")
     
-    work_dirs = sorted(glob.glob(os.path.join(root_dir, "works/work_*")))
+    work_dirs = sorted(glob.glob(os.path.join(root_dir, "works/work_*")) + glob.glob(os.path.join(root_dir, "works/apparatus_*")))
     for wdir in work_dirs:
         slug = os.path.basename(wdir)
         # Parse ID
-        wid = slug.split("_")[1]
-        title = slug.replace(f"work_{wid}_", "").replace("_", " ").title()
+        parts = slug.split("_")
+        wid = f"{parts[0].upper()}-{parts[1]}"
+        title = slug.replace(f"{parts[0]}_{parts[1]}_", "").replace("_", " ").title()
         
         has_html = "Yes (`index.html`)" if os.path.exists(os.path.join(wdir, "index.html")) else "No"
         
         # Find primary media
         pngs = glob.glob(os.path.join(wdir, "*.png"))
         wavs = glob.glob(os.path.join(wdir, "*.wav"))
-        primary = "Text"
+        primary = "Running Engine (`engine.py`)" if os.path.exists(os.path.join(wdir, "engine.py")) else "Text"
         if pngs:
             primary = f"Plate ({os.path.basename(pngs[0])})"
         elif wavs:

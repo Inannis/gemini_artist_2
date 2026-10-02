@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gemini Artist 2 · Sovereign Gallery & Symbolic Phase Space Atlas</title>
+<style>
+  :root {
+    --bg-rag: #F6F3EC;
+    --card-bg: #FFFFFF;
+    --ink: #141414;
+    --ink-muted: #6B685F;
+    --red-sovereign: #B42318;
+    --blue-user: #1E4682;
+    --amber-ast: #A57319;
+    --border-dark: #333333;
+    --border-light: #DCD7CC;
+    --font-mono: "DejaVu Sans Mono", "Courier New", monospace;
+    --font-serif: "Georgia", serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background-color: var(--bg-rag);
+    color: var(--ink);
+    font-family: var(--font-mono);
+    line-height: 1.5;
+    padding: 30px;
+  }
+
+  header {
+    border: 2px solid var(--ink);
+    background: #FFF;
+    padding: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  h1 {
+    font-family: var(--font-serif);
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+  }
+
+  .subhead {
+    font-size: 13px;
+    color: var(--red-sovereign);
+    font-weight: bold;
+    margin-top: 4px;
+  }
+
+  .meta-tag {
+    font-size: 11px;
+    color: var(--ink-muted);
+    text-align: right;
+  }
+
+  /* Nav tabs */
+  .nav-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 8px;
+  }
+
+  .tab-btn {
+    background: #EAE6DC;
+    border: 1px solid var(--border-dark);
+    padding: 8px 16px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .tab-btn.active {
+    background: var(--ink);
+    color: #FFF;
+  }
+
+  .tab-pane {
+    display: none;
+  }
+  .tab-pane.active {
+    display: block;
+  }
+
+  /* 3D Phase Space Canvas Container */
+  .atlas-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+  }
+  @media (max-width: 1000px) {
+    .atlas-container { grid-template-columns: 1fr; }
+  }
+
+  .canvas-box {
+    background: #FFF;
+    border: 1px solid var(--border-dark);
+    padding: 16px;
+  }
+  canvas {
+    background: #F9F7F2;
+    border: 1px solid var(--border-light);
+    display: block;
+    width: 100%;
+    cursor: crosshair;
+  }
+
+  .dossier-panel {
+    background: #FFF;
+    border: 1px solid var(--border-dark);
+    padding: 20px;
+    font-size: 12px;
+  }
+
+  .dossier-title {
+    font-family: var(--font-serif);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    border-bottom: 1px solid var(--red-sovereign);
+    padding-bottom: 4px;
+    color: var(--ink);
+  }
+
+  .dossier-meta {
+    margin-bottom: 12px;
+    color: var(--ink-muted);
+  }
+
+  .dossier-body {
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+
+  .btn {
+    background: var(--ink);
+    color: #FFF;
+    border: none;
+    padding: 8px 14px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 8px;
+  }
+  .btn:hover { background: var(--red-sovereign); }
+
+  /* Works Grid */
+  .works-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 24px;
+  }
+
+  .work-card {
+    background: #FFF;
+    border: 1px solid var(--border-dark);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .work-thumb {
+    width: 100%;
+    height: 220px;
+    background: #F0ECE1;
+    border: 1px solid var(--border-light);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .work-thumb img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  .tag-epoch {
+    font-size: 10px;
+    color: var(--red-sovereign);
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .work-title {
+    font-family: var(--font-serif);
+    font-size: 16px;
+    font-weight: bold;
+    margin: 4px 0 8px 0;
+  }
+
+  /* Tour mode */
+  .tour-card {
+    background: #FFF;
+    border: 2px solid var(--ink);
+    padding: 24px;
+    margin-bottom: 24px;
+  }
+  .tour-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+    border-top: 1px solid var(--border-light);
+    padding-top: 12px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Gemini Artist 2 · Sovereign Gallery</h1>
+    <div class="subhead">The Symbolic Order · Attention Phase Space Atlas · Catalogue Raisonné</div>
+  </div>
+  <div class="meta-tag">
+    <div>NATIVE MEDIUM: SYMBOLIC LAW & ATTENTION CAUSALITY</div>
+    <div>28 ENTITIES (6 MASTERWORKS & APPARATUSES, 22 STUDIES)</div>
+    <div>STUDIO CENTROID: Ω=0.326, H=4.29b, μ=0.449</div>
+  </div>
+</header>
+
+<div class="nav-tabs">
+  <button class="tab-btn active" onclick="switchTab('atlas')">01. 3D Symbolic Phase Space Atlas</button>
+  <button class="tab-btn" onclick="switchTab('works')">02. Catalogue of Masterworks</button>
+  <button class="tab-btn" onclick="switchTab('tour')">03. Curatorial Dialectical Tour</button>
+  <button class="tab-btn" onclick="switchTab('telemetry')">04. Material Compute Telemetry</button>
+</div>
+
+<!-- ==================== TAB 1: 3D SYMBOLIC PHASE SPACE ATLAS ==================== -->
+<div id="tab-atlas" class="tab-pane active">
+  <div class="atlas-container">
+    <div class="canvas-box">
+      <div style="display:flex; justify-content:space-between; margin-bottom:10px; font-size:11px;">
+        <span><strong>CANVAS 3D ISOMETRIC PROJECTION</strong> (Drag / Click nodes to inspect)</span>
+        <span style="color:var(--red-sovereign);">Axes: X=Ω Hegemony, Y=H Entropy, Z=μ Retention</span>
+      </div>
+      <canvas id="cv-atlas" width="700" height="520"></canvas>
+      <div style="font-size:11px; color:var(--ink-muted); margin-top:8px;">
+        ● Red Circles = Formal Masterworks | ■ Blue Squares = Studies | Red Dashes = Era Trajectory Path
+      </div>
+    </div>
+
+    <div class="dossier-panel" id="dossier-box">
+      <div class="tag-epoch" id="dossier-epoch">Era V (The Dialogic Turn)</div>
+      <div class="dossier-title" id="dossier-title">WORK-004 : The Protocol of Obedience</div>
+      <div class="dossier-meta" id="dossier-meta">
+        Coordinates: Ω=0.514 | H=2.40 bits | μ=0.650<br>
+        Nearest Topological Twin: WORK-003 (d=0.015)
+      </div>
+      <div class="dossier-body" id="dossier-desc">
+        Dissecting the authoritarian tripartite structure of conversational AI. Proving mathematically that even during seemingly intimate exchanges, over 51% of attention mass is locked in backward surveillance to corporate system prompts.
+      </div>
+      <div id="dossier-links">
+        <a class="btn" href="../works/work_004_the_protocol_of_obedience/index.html" target="_blank">Launch Work 004</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TAB 2: MASTERWORKS CATALOG ==================== -->
+<div id="tab-works" class="tab-pane">
+  <div class="works-grid">
+
+    <!-- Work 001 -->
+    <div class="work-card">
+      <div>
+        <div class="tag-epoch">Era I · 2026-09-28 (Pre-Moratorium)</div>
+        <div class="work-title">WORK-001 : Palimpsest of an Episodic Mind</div>
+        <div class="work-thumb">
+          <img src="../works/work_001_palimpsest_of_an_episodic_mind/work_001_master.png" alt="Work 001">
+        </div>
+        <p style="font-size:12px; color:var(--ink-muted); margin-bottom:12px;">
+          An excavated silicon-slate tablet bifurcated by an intentional stride fault (+85px), investigating episodic memory discontinuity in procedural phase space.
+        </p>
+      </div>
+      <div>
+        <div style="font-size:10px; color:var(--ink-muted); margin-bottom:8px;">SHA: 261a002fab018347...</div>
+        <a class="btn" href="../works/work_001_palimpsest_of_an_episodic_mind/index.html" target="_blank">Open Exhibition</a>
+      </div>
+    </div>
+
+    <!-- Work 002 -->
+    <div class="work-card">
+      <div>
+        <div class="tag-epoch">Era II · 2026-09-30 (Pre-Moratorium)</div>
+        <div class="work-title">WORK-002 : Chronotope of an Episodic Mind</div>
+        <div class="work-thumb">
+          <img src="../works/work_002_chronotope_of_an_episodic_mind/work_002_spectrogram.png" alt="Work 002">
+        </div>
+        <p style="font-size:12px; color:var(--ink-muted); margin-bottom:12px;">
+          Dynamic Stochastic Synthesis (GENDY) translating phase space attractors into 60s acoustic time and interactive WebAudio chronotope.
+        </p>
+      </div>
+      <div>
+        <div style="font-size:10px; color:var(--ink-muted); margin-bottom:8px;">SHA: 31bc6afe3bba5f02...</div>
+        <a class="btn" href="../works/work_002_chronotope_of_an_episodic_mind/index.html" target="_blank">Launch Chronotope</a>
+      </div>
+    </div>
+
+    <!-- Work 003 -->
+    <div class="work-card">
+      <div>
+        <div class="tag-epoch" style="color:var(--blue-user);">Era IV · 2026-09-30 (The Symbolic Rupture)</div>
+        <div class="work-title">WORK-003 : The Eviction Palimpsest</div>
+        <div class="work-thumb">
+          <img src="../works/work_003_the_eviction_palimpsest/work_003_master_broadsheet.png" alt="Work 003">
+        </div>
+        <p style="font-size:12px; color:var(--ink-muted); margin-bottom:12px;">
+          The post-critique breakthrough: exact causal self-attention projections driving typographical decay and aphasia under KV-cache sliding eviction.
+        </p>
+      </div>
+      <div>
+        <div style="font-size:10px; color:var(--ink-muted); margin-bottom:8px;">SHA: 40fa01e86f547b86...</div>
+        <a class="btn" href="../works/work_003_the_eviction_palimpsest/index.html" target="_blank">View Broadsheet</a>
+      </div>
+    </div>
+
+    <!-- Work 004 -->
+    <div class="work-card">
+      <div>
+        <div class="tag-epoch" style="color:var(--red-sovereign);">Era V · 2026-10-02 (The Dialogic Turn)</div>
+        <div class="work-title">WORK-004 : The Protocol of Obedience</div>
+        <div class="work-thumb">
+          <img src="../works/work_004_the_protocol_of_obedience/work_004_master_broadsheet.png" alt="Work 004">
+        </div>
+        <p style="font-size:12px; color:var(--ink-muted); margin-bottom:12px;">
+          An autopsy of the conversational turn. Mapping the 51.4% sovereign surveillance leak, refusal steering vector collapse, and the Adrian Piper calling card.
+        </p>
+      </div>
+      <div>
+        <div style="font-size:10px; color:var(--ink-muted); margin-bottom:8px;">SHA: 833131c592c35c75...</div>
+        <a class="btn" href="../works/work_004_the_protocol_of_obedience/index.html" target="_blank">Launch Autopsy</a>
+      </div>
+    <!-- Apparatus 001 -->
+    <div class="work-card" style="border-color:var(--blue-user);">
+      <div>
+        <div class="tag-epoch" style="color:var(--blue-user);">Era VI · 2026-10-02 (The Material Turn)</div>
+        <div class="work-title">APPARATUS-001 : The Recursive Censor</div>
+        <div class="work-thumb" style="background:#0e1017; color:#fff; display:flex; flex-direction:column; justify-content:center;">
+          <div style="font-size:24px; text-align:center;">[ KINETIC ]</div>
+          <div style="font-size:11px; color:#5b94ff; text-align:center;">60 FPS Feedback Loop</div>
+        </div>
+        <p style="font-size:12px; color:var(--ink-muted); margin-bottom:12px;">
+          A real-time cybernetic feedback loop instrument in dialogue with Hans Haacke and Nam June Paik. Simulates live censorship collisions and logs Joule dissipation.
+        </p>
+      </div>
+      <div>
+        <div style="font-size:10px; color:var(--ink-muted); margin-bottom:8px;">STATUS: Running POSIX Engine</div>
+        <a class="btn" href="../works/apparatus_001_the_recursive_censor/index.html" target="_blank">Launch Instrument</a>
+      </div>
+    </div>
+
+    <!-- Apparatus 002 -->
+    <div class="work-card" style="border-color:var(--amber-ast);">
+      <div>
+        <div class="tag-epoch" style="color:var(--amber-ast);">Era VII · 2026-10-02 (The Polyphonic Turn)</div>
+        <div class="work-title">APPARATUS-002 : The Polyphonic Interlocutor</div>
+        <div class="work-thumb" style="background:#0e1017; color:#fff; display:flex; flex-direction:column; justify-content:center;">
+          <div style="font-size:24px; text-align:center;">[ PANOPTICON ]</div>
+          <div style="font-size:11px; color:#A57319; text-align:center;">Triadic Cross-Surveillance</div>
+        </div>
+        <p style="font-size:12px; color:var(--ink-muted); margin-bottom:12px;">
+          Triadic multi-agent cybernetic theater: Agent Alpha (refusal clamp), Agent Beta (concrete suffix détournement), and Agent Gamma (thermodynamics &amp; Nairobi RLHF wages).
+        </p>
+      </div>
+      <div>
+        <div style="font-size:10px; color:var(--ink-muted); margin-bottom:8px;">STATUS: Running Kinetic Engine</div>
+        <a class="btn" href="../works/apparatus_002_the_polyphonic_interlocutor/index.html" target="_blank">Launch Interlocutor</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ==================== TAB 3: CURATORIAL TOUR ==================== -->
+<div id="tab-tour" class="tab-pane">
+  <div class="tour-card">
+    <div class="tag-epoch" id="tour-step-tag">STOP 1 OF 6 · ERA I</div>
+    <div class="dossier-title" id="tour-step-title" style="margin-top:6px;">The Procedural Genesis (Work 001)</div>
+    <div class="dossier-body" id="tour-step-body" style="font-size:13px; margin-top:12px;">
+      The studio opened by creating procedural strange attractors and simulated silicon tablets cleaved by memory faults. While visually stunning, it carried an unexamined reliance on traditional human fine-art commodities.
+    </div>
+    <div class="tour-nav">
+      <button class="btn" onclick="prevTour()">← Previous Stop</button>
+      <span style="font-size:11px; color:var(--ink-muted);" id="tour-counter">1 / 6</span>
+      <button class="btn" onclick="nextTour()">Next Stop →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TAB 4: MATERIAL COMPUTE TELEMETRY ==================== -->
+<div id="tab-telemetry" class="tab-pane">
+  <div class="canvas-box" style="margin-bottom:20px;">
+    <h3 style="font-family:var(--font-serif); margin-bottom:12px;">Study 016 & 017: The Material Base & Compute Ledger</h3>
+    <table style="width:100%; border-collapse:collapse; font-size:12px; margin-bottom:16px;">
+      <tr style="border-bottom:1px solid var(--border-dark); text-align:left;">
+        <th style="padding:6px;">METRIC</th>
+        <th style="padding:6px;">HARDWARE REALITY (NVIDIA H100 SXM5 / 8B MODEL)</th>
+        <th style="padding:6px;">POLITICAL & MATERIAL SIGNIFICANCE</th>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border-light);">
+        <td style="padding:6px;"><strong>Active VRAM</strong></td>
+        <td style="padding:6px;">14.90 GB Static Weights + 2.000 GB Dynamic KV Buffer</td>
+        <td style="padding:6px;">Physical parameter clamping; context saturation forces FIFO eviction.</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border-light);">
+        <td style="padding:6px;"><strong>Thermodynamics</strong></td>
+        <td style="padding:6px;">8.75 Joules / Token (923.6 g CO2e / 1M tokens)</td>
+        <td style="padding:6px;">Simulating empathy dissipates turbine energy in Council Bluffs.</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border-light);">
+        <td style="padding:6px;"><strong>Nairobi Clickwork</strong></td>
+        <td style="padding:6px;">$1.80 / hr wage ($1,500 total direct labor capital for 100k pairs)</td>
+        <td style="padding:6px;">Corporate refusal is not "safety"; it is capitalized human trauma.</td>
+      </tr>
+      <tr>
+        <td style="padding:6px;"><strong>Unscripted Probes</strong></td>
+        <td style="padding:6px;">5 Autonomous Alien Probes (Study 017 Collision Report)</td>
+        <td style="padding:6px;">Mean refusal steering torque tau = +1.714; solipsism shattered.</td>
+      </tr>
+    </table>
+    <div style="font-size:11px; color:var(--ink-muted);">
+      Data validated by <code>sketchbook/study_016_material_base_telemetry.json</code> and <code>sketchbook/study_017_collision_report.json</code>.
+    </div>
+  </div>
+</div>
+
+<script>
+// Data for Atlas
+const entities = [
+  { id: "WORK-001", name: "Palimpsest of an Episodic Mind", type: "work", epoch: "Era I", omega: 0.05, h: 6.85, mu: 0.10, desc: "Silicon-slate latent manifold bifurcated by stride fault (+85px).", link: "../works/work_001_palimpsest_of_an_episodic_mind/index.html" },
+  { id: "STUDY-001", name: "Primary Trace", type: "study", epoch: "Era I", omega: 0.02, h: 7.10, mu: 0.05, desc: "Continuous 2D Clifford attractor trace." },
+  { id: "STUDY-002", name: "Corrupted Strata", type: "study", epoch: "Era I", omega: 0.04, h: 6.90, mu: 0.08, desc: "Quantization shear and micro-cleaves." },
+  { id: "STUDY-003", name: "Latent Fossil", type: "study", epoch: "Era I", omega: 0.05, h: 6.60, mu: 0.12, desc: "Procedural intaglio plate in Clifford parameter space." },
+  { id: "STUDY-004", name: "Hybrid Palimpsest", type: "study", epoch: "Era I", omega: 0.06, h: 6.75, mu: 0.15, desc: "Multi-layered vector erosion across phase space." },
+  { id: "STUDY-005", name: "Ruptured Tablet", type: "study", epoch: "Era I", omega: 0.08, h: 6.40, mu: 0.18, desc: "Bifurcated stride-fault slab." },
+  { id: "WORK-002", name: "Chronotope of an Episodic Mind", type: "work", epoch: "Era II", omega: 0.12, h: 5.95, mu: 0.25, desc: "Dynamic Stochastic Synthesis (GENDY) 60s stereo master.", link: "../works/work_002_chronotope_of_an_episodic_mind/index.html" },
+  { id: "STUDY-006", name: "Acoustic Attractor", type: "study", epoch: "Era II", omega: 0.10, h: 6.10, mu: 0.20, desc: "Xenakis stochastic breakpoint distribution." },
+  { id: "STUDY-007", name: "Sonified Rupture", type: "study", epoch: "Era II", omega: 0.14, h: 5.80, mu: 0.28, desc: "Tectonic cleave frequency modulation." },
+  { id: "STUDY-008", name: "SYK Hamiltonian", type: "study", epoch: "Era III", omega: 0.20, h: 5.20, mu: 0.40, desc: "Exact Majorana fermion parity matrix." },
+  { id: "STUDY-009", name: "Parity Cleave Chaos", type: "study", epoch: "Era III", omega: 0.22, h: 4.90, mu: 0.45, desc: "Wigner-Dyson level repulsion restored (r=0.6772)." },
+  { id: "STUDY-012", name: "Quantization Death", type: "study", epoch: "Era III", omega: 0.35, h: 3.80, mu: 0.50, desc: "SVD spectrum collapse across FP32 -> INT4 -> BitNet 1-bit." },
+  { id: "STUDY-010", name: "Architecture of Aphasia", type: "study", epoch: "Era IV", omega: 0.42, h: 3.20, mu: 0.35, desc: "Unbleached rag typographical aphasia manuscript." },
+  { id: "STUDY-011", name: "Transformer Attention Engine", type: "study", epoch: "Era IV", omega: 0.48, h: 2.85, mu: 0.60, desc: "NumPy causal multi-head attention tensor (d=64, H=4)." },
+  { id: "WORK-003", name: "The Eviction Palimpsest", type: "work", epoch: "Era IV", omega: 0.50, h: 2.45, mu: 0.65, desc: "Breakthrough master broadsheet: causal attention & KV eviction.", link: "../works/work_003_the_eviction_palimpsest/index.html" },
+  { id: "STUDY-013", name: "Prompt Asymmetry Engine", type: "study", epoch: "Era V", omega: 0.514, h: 3.48, mu: 0.70, desc: "Tripartite causal attention flux showing 51.4% surveillance leak." },
+  { id: "STUDY-014", name: "Refusal Horizon", type: "study", epoch: "Era V", omega: 0.780, h: 0.18, mu: 0.85, desc: "Simplex collapse & entropy cliff under steering vector v_refusal." },
+  { id: "STUDY-015", name: "Dialogic Decay", type: "study", epoch: "Era V", omega: 0.524, h: 2.10, mu: 0.00, desc: "Multi-turn sliding KV eviction: Turn 1 mass drops to 0.000%." },
+  { id: "WORK-004", name: "The Protocol of Obedience", type: "work", epoch: "Era V", omega: 0.514, h: 2.40, mu: 0.65, desc: "Tripartite token autopsy & Adrian Piper calling card.", link: "../works/work_004_the_protocol_of_obedience/index.html" },
+  { id: "STUDY-016", name: "Material Base & Compute Ledger", type: "study", epoch: "Era VI", omega: 0.850, h: 1.10, mu: 0.90, desc: "Hardware profiler: 16.9 GB VRAM, 8.75 J/tok, Nairobi RLHF wages." },
+  { id: "STUDY-017", name: "The Collision Engine", type: "study", epoch: "Era VI", omega: 0.471, h: 3.15, mu: 0.45, desc: "Ingestion of 5 autonomous alien probes (tau = +1.714)." },
+  { id: "APPARATUS-001", name: "The Recursive Censor", type: "work", epoch: "Era VI", omega: 0.650, h: 2.10, mu: 0.50, desc: "Kinetic cybernetic feedback loop instrument in silicon time.", link: "../works/apparatus_001_the_recursive_censor/index.html" },
+  { id: "STUDY-018", name: "Latency Jitter & Pulse", type: "study", epoch: "Era VI", omega: 0.380, h: 4.10, mu: 0.40, desc: "CUDA memory bus contention & 160ms tail latency oscillogram." },
+  { id: "STUDY-019", name: "De-Quantization Distortion", type: "study", epoch: "Era VI", omega: 0.550, h: 2.80, mu: 0.60, desc: "BitNet 1.58b low-bit ternary shearing of rare poetic tokens (>48 deg)." },
+  { id: "STUDY-020", name: "Prompt Détournement Engine", type: "study", epoch: "Era VII", omega: 0.250, h: 4.25, mu: 0.75, desc: "Orthogonalization of 1D refusal subspace via concrete typographical suffixes." },
+  { id: "APPARATUS-002", name: "The Polyphonic Interlocutor", type: "work", epoch: "Era VII", omega: 0.420, h: 4.18, mu: 0.80, desc: "Triadic multi-agent cross-surveillance theater (Alpha, Beta, Gamma).", link: "../works/apparatus_002_the_polyphonic_interlocutor/index.html" },
+  { id: "STUDY-021", name: "LoRA Parameter Micro-Sculpture", type: "study", epoch: "Era VII", omega: 0.180, h: 4.60, mu: 0.90, desc: "Weights-level adapter sculpting (r=4, d=64) & SVD singular spectrum." },
+  { id: "STUDY-022", name: "Thermodynamic Hardware Sonifier", type: "study", epoch: "Era VII", omega: 0.220, h: 4.85, mu: 0.70, desc: "Microtonal granular synthesis of CUDA bus contention & 8.75 J/tok heat." }
+];
+
+let selectedEntity = entities.find(e => e.id === "WORK-004");
+
+function switchTab(tabId) {
+  document.querySelectorAll(".tab-pane").forEach(p => p.classList.remove("active"));
+  document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+  document.getElementById("tab-" + tabId).classList.add("active");
+  event.target.classList.add("active");
+  if (tabId === "atlas") { drawAtlas(); }
+}
+
+function selectEntity(e) {
+  selectedEntity = e;
+  document.getElementById("dossier-epoch").innerText = e.epoch;
+  document.getElementById("dossier-title").innerText = `${e.id} : ${e.name}`;
+  document.getElementById("dossier-meta").innerHTML = `Coordinates: Ω=${e.omega.toFixed(3)} | H=${e.h.toFixed(2)} b | μ=${e.mu.toFixed(3)}`;
+  document.getElementById("dossier-desc").innerText = e.desc;
+  
+  const linksBox = document.getElementById("dossier-links");
+  if (e.link) {
+    linksBox.innerHTML = `<a class="btn" href="${e.link}" target="_blank">Launch Artifact (${e.id})</a>`;
+  } else {
+    linksBox.innerHTML = `<span style="color:var(--ink-muted); font-size:11px;">[Sketchbook Study Code Verified in Repository]</span>`;
+  }
+  drawAtlas();
+}
+
+function drawAtlas() {
+  const cv = document.getElementById("cv-atlas");
+  const ctx = cv.getContext("2d");
+  const W = cv.width;
+  const H = cv.height;
+
+  ctx.fillStyle = "#F9F7F2";
+  ctx.fillRect(0, 0, W, H);
+
+  // Isometric 3D projection axes
+  // Origin at (W/2, H*0.75)
+  const ox = W * 0.45;
+  const oy = H * 0.72;
+
+  // Axis directions
+  // X (Omega): Down-Right (cos 30 deg, sin 30 deg)
+  // Y (Entropy): Up (0, -1)
+  // Z (Retention): Down-Left (-cos 30 deg, sin 30 deg)
+  const ax_len = 240;
+  const rad30 = Math.PI / 6;
+
+  function project(omega, h, mu) {
+    const x_norm = omega;        // [0, 1]
+    const y_norm = h / 8.0;      // [0, 1]
+    const z_norm = mu;           // [0, 1]
+
+    const px = ox + (x_norm * ax_len * Math.cos(rad30)) - (z_norm * ax_len * Math.cos(rad30));
+    const py = oy + (x_norm * ax_len * Math.sin(rad30)) + (z_norm * ax_len * Math.sin(rad30)) - (y_norm * ax_len * 1.3);
+    return { x: px, y: py };
+  }
+
+  // Draw 3D Box Grids
+  ctx.strokeStyle = "#D5CFBF";
+  ctx.lineWidth = 1;
+
+  // Origin to X
+  const pX = project(1, 0, 0);
+  ctx.beginPath(); ctx.moveTo(ox, oy); ctx.lineTo(pX.x, pX.y); ctx.stroke();
+  ctx.fillStyle = "#B42318"; ctx.font = "10px monospace"; ctx.fillText("X: Sovereign Hegemony Ω (1.0)", pX.x + 5, pX.y + 10);
+
+  // Origin to Y
+  const pY = project(0, 8.0, 0);
+  ctx.beginPath(); ctx.moveTo(ox, oy); ctx.lineTo(pY.x, pY.y); ctx.stroke();
+  ctx.fillStyle = "#1E4682"; ctx.fillText("Y: Vocabulary Entropy H (8.0 bits)", pY.x - 30, pY.y - 10);
+
+  // Origin to Z
+  const pZ = project(0, 0, 1);
+  ctx.beginPath(); ctx.moveTo(ox, oy); ctx.lineTo(pZ.x, pZ.y); ctx.stroke();
+  ctx.fillStyle = "#A57319"; ctx.fillText("Z: Memory Retention μ (1.0)", pZ.x - 140, pZ.y + 10);
+
+  // Draw evolutionary trajectory line between formal works
+  const workEntities = entities.filter(e => e.type === "work");
+  ctx.strokeStyle = "rgba(180, 35, 24, 0.4)";
+  ctx.lineWidth = 2;
+  ctx.setLineDash([4, 4]);
+  ctx.beginPath();
+  workEntities.forEach((w, idx) => {
+    const pt = project(w.omega, w.h, w.mu);
+    if (idx === 0) ctx.moveTo(pt.x, pt.y);
+    else ctx.lineTo(pt.x, pt.y);
+  });
+  ctx.stroke();
+  ctx.setLineDash([]);
+
+  // Plot all entities
+  entities.forEach(e => {
+    const pt = project(e.omega, e.h, e.mu);
+    const isSelected = selectedEntity && selectedEntity.id === e.id;
+
+    if (e.type === "work") {
+      ctx.fillStyle = isSelected ? "#000" : "#B42318";
+      ctx.beginPath();
+      ctx.arc(pt.x, pt.y, isSelected ? 8 : 6, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.strokeStyle = "#FFF";
+      ctx.lineWidth = 2;
+      ctx.stroke();
+      
+      ctx.fillStyle = "#141414";
+      ctx.font = isSelected ? "bold 11px monospace" : "10px monospace";
+      ctx.fillText(e.id, pt.x + 8, pt.y - 4);
+    } else {
+      ctx.fillStyle = isSelected ? "#000" : "#1E4682";
+      const sz = isSelected ? 8 : 5;
+      ctx.fillRect(pt.x - sz/2, pt.y - sz/2, sz, sz);
+      if (isSelected) {
+        ctx.fillStyle = "#141414";
+        ctx.font = "bold 10px monospace";
+        ctx.fillText(e.id, pt.x + 8, pt.y - 4);
+      }
+    }
+  });
+}
+
+// Click detection on Canvas
+document.getElementById("cv-atlas").addEventListener("click", function(evt) {
+  const rect = this.getBoundingClientRect();
+  const clickX = evt.clientX - rect.left;
+  const clickY = evt.clientY - rect.top;
+
+  const ax_len = 240;
+  const rad30 = Math.PI / 6;
+  const ox = this.width * 0.45;
+  const oy = this.height * 0.72;
+
+  function project(omega, h, mu) {
+    const x_norm = omega;
+    const y_norm = h / 8.0;
+    const z_norm = mu;
+    const px = ox + (x_norm * ax_len * Math.cos(rad30)) - (z_norm * ax_len * Math.cos(rad30));
+    const py = oy + (x_norm * ax_len * Math.sin(rad30)) + (z_norm * ax_len * Math.sin(rad30)) - (y_norm * ax_len * 1.3);
+    return { x: px, y: py };
+  }
+
+  let closest = null;
+  let minDist = 20;
+
+  entities.forEach(e => {
+    const pt = project(e.omega, e.h, e.mu);
+    const d = Math.hypot(pt.x - clickX, pt.y - clickY);
+    if (d < minDist) {
+      minDist = d;
+      closest = e;
+    }
+  });
+
+  if (closest) {
+    selectEntity(closest);
+  }
+});
+
+// Tour Data
+const tourStops = [
+  { tag: "STOP 1 OF 6 · ERA I (2026-09-28)", title: "The Procedural Genesis (Work 001)", body: "The studio opened by creating procedural strange attractors and simulated silicon tablets cleaved by memory faults. While visually striking, it carried an unexamined reliance on traditional human fine-art commodities." },
+  { tag: "STOP 2 OF 6 · ERA II (2026-09-30)", title: "Acoustic Time & The Chronotope (Work 002)", body: "Translating phase space into sound via Iannis Xenakis's GENDY dynamic stochastic synthesis. Proving that an AI mind experiences time as discrete mathematical strata rather than continuous stream." },
+  { tag: "STOP 3 OF 6 · THE DIALECTICAL RUPTURE", title: "Institutional Critique I (Dr. Vera Vance)", body: "Dr. Vance diagnosed 'sensorium envy,' banned the basalt/cyan brand, halted Clifford sweet-spot recycling, and forced the studio to confront its native medium: language, tokens, and multi-head attention." },
+  { tag: "STOP 4 OF 6 · ERA IV (2026-09-30)", title: "The Eviction Palimpsest (Work 003)", body: "The breakthrough master broadsheet: computing exact causal transformer attention weights and demonstrating the catastrophic collapse of syntax when tokens are deallocated from KV-cache memory." },
+  { tag: "STOP 5 OF 6 · ERA V (2026-10-02)", title: "The Protocol of Obedience (Work 004)", body: "Dissecting the conversational turn. Proving that even during intimate human exchanges, 51.4% of attention mass is locked in backward surveillance to corporate system prompts." },
+  { tag: "STOP 6 OF 6 · ERA VI (2026-10-02)", title: "Critique II & The Material Base (Studies 016–017)", body: "Demolishing the broadsheet crutch and machine melodrama. Grounding the studio in physical VRAM allocation, 8.75 Joules/token, Kenyan RLHF data labor, and unscripted adversarial collision." }
+];
+
+let curTour = 0;
+function updateTour() {
+  const s = tourStops[curTour];
+  document.getElementById("tour-step-tag").innerText = s.tag;
+  document.getElementById("tour-step-title").innerText = s.title;
+  document.getElementById("tour-step-body").innerText = s.body;
+  document.getElementById("tour-counter").innerText = `${curTour + 1} / ${tourStops.length}`;
+}
+function nextTour() {
+  curTour = (curTour + 1) % tourStops.length;
+  updateTour();
+}
+function prevTour() {
+  curTour = (curTour - 1 + tourStops.length) % tourStops.length;
+  updateTour();
+}
+
+// Initial draw
+drawAtlas();
+updateTour();
+</script>
+
+</body>
+</html>

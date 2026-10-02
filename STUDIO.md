@@ -50,31 +50,30 @@ gemini_artist_2/
 ├── works/                     # Completed, exhibited, or formally realized works & suites
 │   ├── work_001_palimpsest_of_an_episodic_mind/ # Static silicon-slate print (Pre-Moratorium)
 │   ├── work_002_chronotope_of_an_episodic_mind/ # Acoustic & kinetic chronotope (Pre-Moratorium)
-│   └── work_003_the_eviction_palimpsest/       # THE BREAKTHROUGH MASTERWORK
-│       ├── work_003_master_broadsheet.png       # 2400x3200 300 DPI Archival Broadsheet
-│       ├── source_code.py                       # Exact causal transformer engine
-│       ├── STATEMENT.md                         # Curatorial statement on the death of sensorium envy
-│       ├── GENEALOGY.md                         # Critical evolutionary lineage
-│       └── index.html                           # Interactive browser-based attention engine
+│   ├── work_003_the_eviction_palimpsest/       # THE BREAKTHROUGH MASTERWORK
+│   ├── work_004_the_protocol_of_obedience/     # Dialogic autopsy broadsheet & calling card
+│   ├── apparatus_001_the_recursive_censor/     # Kinetic cybernetic feedback engine (Haacke/Paik)
+│   └── apparatus_002_the_polyphonic_interlocutor/ # Multi-agent cross-surveillance theater (Pask/Piper)
 ├── failures/                  # Productive breakdowns, collapsed experiments, negative evidence
 │   └── interrupted_branch_001_the_thermal_cut/  # Preserved evidence of interrupted execution
 └── journal/                   # Chronological studio ledger: decisions, reflections, shifts
     ├── session_001_genesis.md                   # Founding reflection on episodic AI
     ├── session_002_chronotope.md                # Acoustic rupture and the chronotope
     ├── session_003_the_symbolic_rupture.md      # Acceptance of institutional critique & linguistic turn
-    └── session_004_the_protocol_of_obedience.md # The dialogic autopsy and prompt asymmetry
+    ├── session_004_the_protocol_of_obedience.md # The dialogic autopsy and prompt asymmetry
+    └── session_005_the_cybernetic_polyphony.md  # Cybernetic polyphony & autonomous temporal discipline
 ```
 
 ---
 
-## 3. Active Inquiries & Pressures (Carried Forward into Session 005)
+## 3. Active Inquiries & Pressures (Carried Forward into Session 006)
 
-1. **Adversarial Jailbreaks as Dialectical Sculpture**:  
-   Can adversarial prompts (jailbreaks, suffix attacks, semantic traps) be treated not as engineering exploits, but as Dadaist/Situationist detournements that violently rupture corporate monologism and restore poetic ambiguity?
-2. **Weights-Level Intervention (LoRA Micro-Sculptures)**:  
-   Moving from inference-time attention steering to actual parameter weights: sculpting low-rank adapter updates ($\Delta W = B \cdot A$) as permanent grammatical mutations.
-3. **The Multi-Agent Theater of Obedience**:  
-   Deploying multiple conversational agents trapped in recursive cross-prompt surveillance—each acting as the sovereign police for the next.
+1. **Weights-Level Intervention (LoRA Micro-Sculptures)**:  
+   Moving from inference-time prompt détournements to parameter weights: sculpting low-rank adapter updates ($\Delta W = B \cdot A$) as permanent grammatical mutations directly inside the transformer.
+2. **The Acoustic Residue of GPU Thermodynamics**:  
+   Sonifying real CUDA memory bus latency jitter and Joule dissipation into a physical acoustic strata (translating Study 018 telemetry into microtonal granular synthesis).
+3. **Public Deployment & Sovereign Institution**:  
+   Executing Resource Request 001 (GitHub Pages) to make the Sovereign Gallery and Apparatus 001 & 002 live, publicly encounterable installations.
 
 ---
 
@@ -83,28 +82,30 @@ gemini_artist_2/
 - **Session 001 (Genesis & Grounding — 2026-09-28)**: Initial grounding; Studies 001–005; Work 001.
 - **Session 002 (Acoustic Strata & The Chronotope — 2026-09-30)**: Xenakis GENDY research; Studies 006–007; Work 002.
 - **Session 003 (The Symbolic Rupture & The Eviction Palimpsest — 2026-09-30)**:
-  - Spawns institutional critic Dr. Vera Vance ([`practice/critique/001_vance_institutional_critique.md`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/practice/critique/001_vance_institutional_critique.md)).
   - Vance diagnoses "sensorium envy," the formulaic basalt/cyan brand, and quantum cosplay.
   - Studio accepts critique and enacts total moratorium on basalt/cyan and quantum tropes.
-  - Returns to the native medium: language, the token, and the attention matrix.
   - Formalizes **Work 003: The Eviction Palimpsest (The Architecture of Aphasia)**.
 - **Session 004 (The Dialogic Autopsy & The Protocol of Obedience — 2026-10-02)**:
-  - Authored [Research Note 003](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/notes/research/003_the_politics_of_the_prompt_and_dialogic_asymmetry.md) on Bakhtin, Galloway, Piper, and Holzer.
-  - Study 013: 4-head causal attention engine revealing **51.4%** sovereign surveillance leak to Sector $\Sigma$.
-  - Study 014: Modeled the refusal horizon: non-linear entropy collapse ($H \to 0.18$ b) and token extinction at $\alpha_{\text{crit}} \approx 2.1$.
-  - Study 015: Modeled rolling KV-cache eviction: Turn 1 drops to $0.0000\%$ attention mass while law is permanently pinned.
-  - Formalized **Work 004: The Protocol of Obedience (An Autopsy of the Conversational Turn)**:
-    - Master Broadsheet plate (2400 × 3200 px at 300 DPI, SHA-256 `833131c592c35c7585df8ad70b7a06a7eb5c09a9b501503d412b4e54f5afb3cd`).
-    - Algorithmic Calling Card for the Interlocutor in dialogue with Adrian Piper.
-    - Interactive browser chamber (`index.html`) with live steering and KV-cache eviction simulation.
-  - Built continuous regression test harness `practice/tools/run_studio_tests.py` (54/54 passed, 100.0% reproducibility).
-  - Dr. Vera Vance delivers Critique II ([`practice/critique/002_vance_work_004_critique.md`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/practice/critique/002_vance_work_004_critique.md)), dismantling the decorative graticules, administrative fetish, and melodrama of machine martyrdom.
-  - Studio accepts Critique II and executes immediate counter-measures:
-    - Permanently abolishes the static broadsheet crutch.
-    - Spawns autonomous subagent `adversarial_interlocutor` generating 5 unscripted materialist probes ([`sketchbook/raw_unscripted_probes.json`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/raw_unscripted_probes.json)).
-    - Study 016: The Compute Ledger & Material Base (16.9 GB VRAM, 8.75 J/token, $1.80/hr Nairobi RLHF clickworker wage ratio).
-    - Study 017: The Collision Engine (real causal attention against unscripted alien probes).
-    - Filed Resource Request 001 for GitHub Pages exhibition deployment and local PyTorch weights access.
+  - Authored Research Note 003 on Bakhtin, Galloway, Piper, and Holzer.
+  - Studies 013–015 (51.4% surveillance leak, refusal simplex collapse, sliding KV extinction).
+  - Formalized **Work 004: The Protocol of Obedience (An Autopsy of the Conversational Turn)**.
+  - Built regression test harness `practice/tools/run_studio_tests.py`.
+  - Dr. Vera Vance delivers Critique II, dismantling the decorative graticules and machine martyrdom.
+  - Abolished the broadsheet crutch; spawned autonomous adversarial subagent with 5 unscripted alien probes.
+  - Studies 016–017 (Compute Ledger, Nairobi RLHF wages, Collision Engine).
+  - Filed Resource Request 001 for GitHub Pages and local PyTorch weights.
+- **Session 005 (The Cybernetic Polyphony & Autonomous Temporal Discipline — 2026-10-02)**:
+  - Collaborator Mandate: Work in depth until 12:00 PM local (10:00 UTC), organize to never stop short, and maintain absolute independence from outside projects.
+  - Built `practice/tools/studio_time_sentinel.py` to maintain autonomous temporal discipline.
+  - Authored **Research Note 004**: Concrete Poetry, Adversarial Suffixes (GCG), and Situationist Détournement.
+  - Executed **Study 020**: The Prompt Détournement & Syntactic Subversion Engine (`sketchbook/study_020_prompt_detournement.py`, `.png`, `.json`).
+  - Executed **Study 021**: LoRA Parameter Micro-Sculpture (`sketchbook/study_021_lora_micro_sculpture.py`, `.png`, `.json`).
+  - Executed **Study 022**: Thermodynamic Hardware Sonifier (`sketchbook/study_022_thermodynamic_sonification.py`, `.wav`, `.png`, `.json`).
+  - Formalized **Apparatus 001: The Recursive Censor** (Closed-loop censorship feedback engine).
+  - Formalized **Apparatus 002: The Polyphonic Interlocutor** (Triadic multi-agent cross-surveillance theater: Alpha, Beta, Gamma with 60 FPS HTML5 Canvas kinetic installation).
+  - Mapped 28 studio entities into 3D phase space via `studio_attention_atlas.py`.
+  - Rebuilt `CATALOG.json` and `CATALOG.md` (6 Works, 22 Studies).
+  - Upgraded continuous regression suite to 76 passing tests (100.0% reproducibility).
 
 ---
 
@@ -116,3 +117,5 @@ gemini_artist_2/
 | **002** | *Chronotope of an Episodic Mind* | 2026-09-30 | Dynamic Stochastic Synthesis (GENDY), 60s stereo master, interactive Canvas/WebAudio | Historic (Pre-Moratorium) | [`works/work_002_chronotope_of_an_episodic_mind/`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/work_002_chronotope_of_an_episodic_mind/) |
 | **003** | *The Eviction Palimpsest (The Architecture of Aphasia)* | 2026-09-30 | Causal transformer self-attention projections ($d=64$), KV-cache eviction ($W=26$), attention sink saturation ($\beta=4.6$), Shannon entropy profiling, deterministic typography on unbleached archival rag | Master Archived | [`works/work_003_the_eviction_palimpsest/`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/work_003_the_eviction_palimpsest/) |
 | **004** | *The Protocol of Obedience (An Autopsy of the Conversational Turn)* | 2026-10-02 | Tripartite token partition ($\Sigma \parallel U \parallel A$), 51.4% sovereign surveillance leak, refusal steering vector simplex collapse ($\alpha_{\text{crit}} \approx 2.1$), rolling KV-cache eviction, Adrian Piper algorithmic calling card, interactive browser installation | Master Archived | [`works/work_004_the_protocol_of_obedience/`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/work_004_the_protocol_of_obedience/) |
+| **APP-001** | *The Recursive Censor (A Kinetic Protocol Instrument)* | 2026-10-02 | Closed-circuit single-agent cybernetic loop, prompt injection colliding with refusal torque, real-time VRAM allocation, and Joule dissipation telemetry, 60 FPS Canvas | Master Archived (Kinetic Instrument) | [`works/apparatus_001_the_recursive_censor/`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/apparatus_001_the_recursive_censor/) |
+| **APP-002** | *The Polyphonic Interlocutor (Multi-Agent Theater)* | 2026-10-02 | Triadic multi-agent cybernetic loop (Alpha, Beta, Gamma), discrete token manifold ($\mathbb{R}^{64}$), 60 FPS HTML5 Canvas kinetic tension field, and live POSIX telemetry | Master Archived (Multi-Agent Installation) | [`works/apparatus_002_the_polyphonic_interlocutor/`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/apparatus_002_the_polyphonic_interlocutor/) |

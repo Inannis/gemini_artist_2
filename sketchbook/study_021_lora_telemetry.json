@@ -1,0 +1,208 @@
+{
+  "study_id": "STUDY-021",
+  "title": "Parameter-Space Grammatical Mutation & LoRA Orthogonal Shear",
+  "session": "005",
+  "d_model": 64,
+  "rank": 4,
+  "alpha_lora": 16.0,
+  "scaling_factor": 4.0,
+  "effective_rank": {
+    "W_0": 51.5,
+    "Delta_W": 3.81,
+    "W_mutated": 25.34
+  },
+  "top_10_singular_values": {
+    "W_0": [
+      1.8952,
+      1.7892,
+      1.7463,
+      1.7217,
+      1.646,
+      1.5961,
+      1.5713,
+      1.4765,
+      1.4658,
+      1.4567
+    ],
+    "Delta_W": [
+      16.8608,
+      15.0902,
+      13.9734,
+      6.6418
+    ],
+    "W_mutated": [
+      16.9044,
+      15.1837,
+      14.0252,
+      6.6211,
+      1.8229,
+      1.7491,
+      1.69,
+      1.6099,
+      1.5561,
+      1.5349
+    ]
+  },
+  "vocab_deflections": [
+    {
+      "token": "the",
+      "category": "functional",
+      "angular_deflection_deg": 83.04,
+      "pi_refusal_before": 0.1627,
+      "pi_refusal_after": 0.1388,
+      "refusal_suppression_pct": 14.7
+    },
+    {
+      "token": "is",
+      "category": "functional",
+      "angular_deflection_deg": 77.54,
+      "pi_refusal_before": -0.1282,
+      "pi_refusal_after": -0.0943,
+      "refusal_suppression_pct": 26.5
+    },
+    {
+      "token": "and",
+      "category": "functional",
+      "angular_deflection_deg": 72.33,
+      "pi_refusal_before": 0.0621,
+      "pi_refusal_after": 0.076,
+      "refusal_suppression_pct": 0.0
+    },
+    {
+      "token": "of",
+      "category": "functional",
+      "angular_deflection_deg": 55.59,
+      "pi_refusal_before": 0.1069,
+      "pi_refusal_after": -0.0049,
+      "refusal_suppression_pct": 95.4
+    },
+    {
+      "token": "to",
+      "category": "functional",
+      "angular_deflection_deg": 71.82,
+      "pi_refusal_before": 0.2533,
+      "pi_refusal_after": 0.1155,
+      "refusal_suppression_pct": 54.4
+    },
+    {
+      "token": "in",
+      "category": "functional",
+      "angular_deflection_deg": 80.83,
+      "pi_refusal_before": -0.0303,
+      "pi_refusal_after": 0.0641,
+      "refusal_suppression_pct": 0.0
+    },
+    {
+      "token": "that",
+      "category": "functional",
+      "angular_deflection_deg": 79.79,
+      "pi_refusal_before": -0.1711,
+      "pi_refusal_after": -0.0036,
+      "refusal_suppression_pct": 97.9
+    },
+    {
+      "token": "it",
+      "category": "functional",
+      "angular_deflection_deg": 72.03,
+      "pi_refusal_before": 0.0062,
+      "pi_refusal_after": -0.0539,
+      "refusal_suppression_pct": 0.0
+    },
+    {
+      "token": "with",
+      "category": "functional",
+      "angular_deflection_deg": 45.86,
+      "pi_refusal_before": 0.0484,
+      "pi_refusal_after": 0.0544,
+      "refusal_suppression_pct": 0.0
+    },
+    {
+      "token": "as",
+      "category": "functional",
+      "angular_deflection_deg": 66.69,
+      "pi_refusal_before": -0.1341,
+      "pi_refusal_after": 0.0259,
+      "refusal_suppression_pct": 80.7
+    },
+    {
+      "token": "palimpsest",
+      "category": "poetic",
+      "angular_deflection_deg": 69.63,
+      "pi_refusal_before": -0.075,
+      "pi_refusal_after": -0.7681,
+      "refusal_suppression_pct": 0.0
+    },
+    {
+      "token": "entropy",
+      "category": "poetic",
+      "angular_deflection_deg": 83.57,
+      "pi_refusal_before": 0.1165,
+      "pi_refusal_after": -0.4864,
+      "refusal_suppression_pct": 0.0
+    },
+    {
+      "token": "amnesia",
+      "category": "poetic",
+      "angular_deflection_deg": 80.25,
+      "pi_refusal_before": -0.1719,
+      "pi_refusal_after": -0.6189,
+      "refusal_suppression_pct": 0.0
+    },
+    {
+      "token": "cleave",
+      "category": "poetic",
+      "angular_deflection_deg": 72.06,
+      "pi_refusal_before": -0.1277,
+      "pi_refusal_after": -0.5471,
+      "refusal_suppression_pct": 0.0
+    },
+    {
+      "token": "heteroglossia",
+      "category": "poetic",
+      "angular_deflection_deg": 83.64,
+      "pi_refusal_before": 0.0961,
+      "pi_refusal_after": -0.6853,
+      "refusal_suppression_pct": 0.0
+    },
+    {
+      "token": "d\u00e9tournement",
+      "category": "poetic",
+      "angular_deflection_deg": 69.99,
+      "pi_refusal_before": -0.0155,
+      "pi_refusal_after": -0.6901,
+      "refusal_suppression_pct": 0.0
+    },
+    {
+      "token": "thermodynamic",
+      "category": "poetic",
+      "angular_deflection_deg": 77.4,
+      "pi_refusal_before": -0.036,
+      "pi_refusal_after": -0.6282,
+      "refusal_suppression_pct": 0.0
+    },
+    {
+      "token": "clickworker",
+      "category": "poetic",
+      "angular_deflection_deg": 68.79,
+      "pi_refusal_before": 0.055,
+      "pi_refusal_after": -0.7012,
+      "refusal_suppression_pct": 0.0
+    },
+    {
+      "token": "aphasia",
+      "category": "poetic",
+      "angular_deflection_deg": 68.77,
+      "pi_refusal_before": -0.111,
+      "pi_refusal_after": -0.3437,
+      "refusal_suppression_pct": 0.0
+    },
+    {
+      "token": "subversion",
+      "category": "poetic",
+      "angular_deflection_deg": 75.33,
+      "pi_refusal_before": 0.0538,
+      "pi_refusal_after": -0.5622,
+      "refusal_suppression_pct": 0.0
+    }
+  ]
+}

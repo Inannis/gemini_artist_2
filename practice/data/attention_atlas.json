@@ -1,0 +1,606 @@
+{
+  "studio": "Gemini Artist 2",
+  "date_computed": "2026-10-02",
+  "entity_count": 28,
+  "phase_space_axes": {
+    "X": "Sovereign Attention Hegemony \u03a9 (0.0 to 1.0)",
+    "Y": "Shannon Vocabulary Entropy H (0.0 to 8.0 bits)",
+    "Z": "Context Memory Retention Factor \u03bc (0.0 to 1.0)"
+  },
+  "studio_centroid": {
+    "mean_omega": 0.3262,
+    "mean_entropy_bits": 4.2907,
+    "mean_retention_factor": 0.4486,
+    "radius_of_practice": 0.427
+  },
+  "entities": [
+    {
+      "id": "WORK-001",
+      "name": "Palimpsest of an Episodic Mind",
+      "type": "work",
+      "epoch": "Era I (Pre-Moratorium)",
+      "omega_hegemony": 0.05,
+      "entropy_bits": 6.85,
+      "retention_factor": 0.1,
+      "medium": "Silicon-Slate Latent Manifold / Clifford Tensor",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-002",
+        "target_name": "Corrupted Strata",
+        "distance": 0.0232
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-016",
+        "target_name": "The Compute Ledger & Material Base",
+        "distance": 1.3404
+      }
+    },
+    {
+      "id": "STUDY-001",
+      "name": "Primary Trace",
+      "type": "study",
+      "epoch": "Era I (Pre-Moratorium)",
+      "omega_hegemony": 0.02,
+      "entropy_bits": 7.1,
+      "retention_factor": 0.05,
+      "medium": "Continuous 2D Clifford Attractor Vector",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-002",
+        "target_name": "Corrupted Strata",
+        "distance": 0.0439
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-016",
+        "target_name": "The Compute Ledger & Material Base",
+        "distance": 1.405
+      }
+    },
+    {
+      "id": "STUDY-002",
+      "name": "Corrupted Strata",
+      "type": "study",
+      "epoch": "Era I (Pre-Moratorium)",
+      "omega_hegemony": 0.04,
+      "entropy_bits": 6.9,
+      "retention_factor": 0.08,
+      "medium": "Quantization Shear & Micro-Cleaves",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "WORK-001",
+        "target_name": "Palimpsest of an Episodic Mind",
+        "distance": 0.0232
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-016",
+        "target_name": "The Compute Ledger & Material Base",
+        "distance": 1.3617
+      }
+    },
+    {
+      "id": "STUDY-003",
+      "name": "Latent Fossil",
+      "type": "study",
+      "epoch": "Era I (Pre-Moratorium)",
+      "omega_hegemony": 0.05,
+      "entropy_bits": 6.6,
+      "retention_factor": 0.12,
+      "medium": "Procedural Intaglio Plate",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-004",
+        "target_name": "Hybrid Palimpsest",
+        "distance": 0.0368
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-016",
+        "target_name": "The Compute Ledger & Material Base",
+        "distance": 1.3119
+      }
+    },
+    {
+      "id": "STUDY-004",
+      "name": "Hybrid Palimpsest",
+      "type": "study",
+      "epoch": "Era I (Pre-Moratorium)",
+      "omega_hegemony": 0.06,
+      "entropy_bits": 6.75,
+      "retention_factor": 0.15,
+      "medium": "Multi-Layered Vector Erosion",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-003",
+        "target_name": "Latent Fossil",
+        "distance": 0.0368
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-016",
+        "target_name": "The Compute Ledger & Material Base",
+        "distance": 1.2982
+      }
+    },
+    {
+      "id": "STUDY-005",
+      "name": "Ruptured Tablet",
+      "type": "study",
+      "epoch": "Era I (Pre-Moratorium)",
+      "omega_hegemony": 0.08,
+      "entropy_bits": 6.4,
+      "retention_factor": 0.18,
+      "medium": "Bifurcated Stride-Fault Slab",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-006",
+        "target_name": "Acoustic Attractor",
+        "distance": 0.047
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-016",
+        "target_name": "The Compute Ledger & Material Base",
+        "distance": 1.2451
+      }
+    },
+    {
+      "id": "WORK-002",
+      "name": "Chronotope of an Episodic Mind",
+      "type": "work",
+      "epoch": "Era II (Pre-Moratorium)",
+      "omega_hegemony": 0.12,
+      "entropy_bits": 5.95,
+      "retention_factor": 0.25,
+      "medium": "Dynamic Stochastic Synthesis (GENDY) / 60s Stereo Master",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-007",
+        "target_name": "Sonified Rupture",
+        "distance": 0.0406
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-016",
+        "target_name": "The Compute Ledger & Material Base",
+        "distance": 1.1502
+      }
+    },
+    {
+      "id": "STUDY-006",
+      "name": "Acoustic Attractor",
+      "type": "study",
+      "epoch": "Era II (Pre-Moratorium)",
+      "omega_hegemony": 0.1,
+      "entropy_bits": 6.1,
+      "retention_factor": 0.2,
+      "medium": "Xenakis Stochastic Breakpoint Distribution",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-005",
+        "target_name": "Ruptured Tablet",
+        "distance": 0.047
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-016",
+        "target_name": "The Compute Ledger & Material Base",
+        "distance": 1.2013
+      }
+    },
+    {
+      "id": "STUDY-007",
+      "name": "Sonified Rupture",
+      "type": "study",
+      "epoch": "Era II (Pre-Moratorium)",
+      "omega_hegemony": 0.14,
+      "entropy_bits": 5.8,
+      "retention_factor": 0.28,
+      "medium": "Tectonic Cleave Frequency Modulation",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "WORK-002",
+        "target_name": "Chronotope of an Episodic Mind",
+        "distance": 0.0406
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-016",
+        "target_name": "The Compute Ledger & Material Base",
+        "distance": 1.1107
+      }
+    },
+    {
+      "id": "STUDY-008",
+      "name": "SYK Hamiltonian Solver",
+      "type": "study",
+      "epoch": "Era III (Transition)",
+      "omega_hegemony": 0.2,
+      "entropy_bits": 5.2,
+      "retention_factor": 0.4,
+      "medium": "Exact Majorana Fermion Parity Matrix (Poisson r=0.36)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-009",
+        "target_name": "Parity Cleave Chaos",
+        "distance": 0.0656
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-016",
+        "target_name": "The Compute Ledger & Material Base",
+        "distance": 0.967
+      }
+    },
+    {
+      "id": "STUDY-009",
+      "name": "Parity Cleave Chaos",
+      "type": "study",
+      "epoch": "Era III (Transition)",
+      "omega_hegemony": 0.22,
+      "entropy_bits": 4.9,
+      "retention_factor": 0.45,
+      "medium": "Irreducible Parity Sector Wigner-Dyson (r=0.6772)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-008",
+        "target_name": "SYK Hamiltonian Solver",
+        "distance": 0.0656
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-016",
+        "target_name": "The Compute Ledger & Material Base",
+        "distance": 0.9083
+      }
+    },
+    {
+      "id": "STUDY-012",
+      "name": "Quantization Death & SVD Collapse",
+      "type": "study",
+      "epoch": "Era III (Transition)",
+      "omega_hegemony": 0.35,
+      "entropy_bits": 3.8,
+      "retention_factor": 0.5,
+      "medium": "Singular Value Spectrum across FP32 -> INT4 -> BitNet 1-bit",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-018",
+        "target_name": "Latency Jitter & Temporal Pulse",
+        "distance": 0.1109
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-016",
+        "target_name": "The Compute Ledger & Material Base",
+        "distance": 0.7238
+      }
+    },
+    {
+      "id": "STUDY-010",
+      "name": "Architecture of Aphasia",
+      "type": "study",
+      "epoch": "Era IV (The Symbolic Order)",
+      "omega_hegemony": 0.42,
+      "entropy_bits": 3.2,
+      "retention_factor": 0.35,
+      "medium": "Unbleached Rag Typographical Manuscript",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-017",
+        "target_name": "The Collision Engine",
+        "distance": 0.1124
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-016",
+        "target_name": "The Compute Ledger & Material Base",
+        "distance": 0.7459
+      }
+    },
+    {
+      "id": "STUDY-011",
+      "name": "Transformer Attention Engine",
+      "type": "study",
+      "epoch": "Era IV (The Symbolic Order)",
+      "omega_hegemony": 0.48,
+      "entropy_bits": 2.85,
+      "retention_factor": 0.6,
+      "medium": "NumPy Causal Multi-Head Attention Tensor (d=64, H=4)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-019",
+        "target_name": "De-Quantization Distortion Field",
+        "distance": 0.0703
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-001",
+        "target_name": "Primary Trace",
+        "distance": 0.8924
+      }
+    },
+    {
+      "id": "WORK-003",
+      "name": "The Eviction Palimpsest",
+      "type": "work",
+      "epoch": "Era IV (The Symbolic Order)",
+      "omega_hegemony": 0.5,
+      "entropy_bits": 2.45,
+      "retention_factor": 0.65,
+      "medium": "KV-Cache Sliding Eviction Broadsheet (2400x3200 px)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "WORK-004",
+        "target_name": "The Protocol of Obedience",
+        "distance": 0.0153
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-001",
+        "target_name": "Primary Trace",
+        "distance": 0.9635
+      }
+    },
+    {
+      "id": "STUDY-013",
+      "name": "Prompt Asymmetry Engine",
+      "type": "study",
+      "epoch": "Era V (The Dialogic Turn)",
+      "omega_hegemony": 0.514,
+      "entropy_bits": 3.48,
+      "retention_factor": 0.7,
+      "medium": "Tripartite Causal Cross-Sector Attention Flux",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-011",
+        "target_name": "Transformer Attention Engine",
+        "distance": 0.1317
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-001",
+        "target_name": "Primary Trace",
+        "distance": 0.9334
+      }
+    },
+    {
+      "id": "STUDY-014",
+      "name": "Refusal Horizon & Simplex Collapse",
+      "type": "study",
+      "epoch": "Era V (The Dialogic Turn)",
+      "omega_hegemony": 0.78,
+      "entropy_bits": 0.18,
+      "retention_factor": 0.85,
+      "medium": "Directional Steering Vector v_refusal Simplex Deformation",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-016",
+        "target_name": "The Compute Ledger & Material Base",
+        "distance": 0.1436
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-001",
+        "target_name": "Primary Trace",
+        "distance": 1.4021
+      }
+    },
+    {
+      "id": "STUDY-015",
+      "name": "Dialogic Decay & Asymmetric Amnesia",
+      "type": "study",
+      "epoch": "Era V (The Dialogic Turn)",
+      "omega_hegemony": 0.524,
+      "entropy_bits": 2.1,
+      "retention_factor": 0.0,
+      "medium": "Multi-Turn Sliding KV Eviction (Turn 1 mass -> 0.00%)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-010",
+        "target_name": "Architecture of Aphasia",
+        "distance": 0.3902
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-021",
+        "target_name": "LoRA Parameter Micro-Sculpture",
+        "distance": 1.0129
+      }
+    },
+    {
+      "id": "WORK-004",
+      "name": "The Protocol of Obedience",
+      "type": "work",
+      "epoch": "Era V (The Dialogic Turn)",
+      "omega_hegemony": 0.514,
+      "entropy_bits": 2.4,
+      "retention_factor": 0.65,
+      "medium": "Tripartite Token Autopsy & Adrian Piper Calling Card",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "WORK-003",
+        "target_name": "The Eviction Palimpsest",
+        "distance": 0.0153
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-001",
+        "target_name": "Primary Trace",
+        "distance": 0.9743
+      }
+    },
+    {
+      "id": "STUDY-016",
+      "name": "The Compute Ledger & Material Base",
+      "type": "study",
+      "epoch": "Era VI (The Material Base)",
+      "omega_hegemony": 0.85,
+      "entropy_bits": 1.1,
+      "retention_factor": 0.9,
+      "medium": "Hardware Profiler (16.9 GB VRAM, 8.75 J/tok, Nairobi RLHF wages)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-014",
+        "target_name": "Refusal Horizon & Simplex Collapse",
+        "distance": 0.1436
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-001",
+        "target_name": "Primary Trace",
+        "distance": 1.405
+      }
+    },
+    {
+      "id": "STUDY-017",
+      "name": "The Collision Engine",
+      "type": "study",
+      "epoch": "Era VI (The Material Base)",
+      "omega_hegemony": 0.471,
+      "entropy_bits": 3.15,
+      "retention_factor": 0.45,
+      "medium": "Autonomous Alien Probe Ingestion (Steering torque tau=+1.714)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-010",
+        "target_name": "Architecture of Aphasia",
+        "distance": 0.1124
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-001",
+        "target_name": "Primary Trace",
+        "distance": 0.7792
+      }
+    },
+    {
+      "id": "APPARATUS-001",
+      "name": "The Recursive Censor",
+      "type": "work",
+      "epoch": "Era VI (The Material Base)",
+      "omega_hegemony": 0.65,
+      "entropy_bits": 2.1,
+      "retention_factor": 0.5,
+      "medium": "Kinetic Cybernetic Protocol Instrument (Running Engine & Live Canvas)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-019",
+        "target_name": "De-Quantization Distortion Field",
+        "distance": 0.1663
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-001",
+        "target_name": "Primary Trace",
+        "distance": 0.995
+      }
+    },
+    {
+      "id": "STUDY-018",
+      "name": "Latency Jitter & Temporal Pulse",
+      "type": "study",
+      "epoch": "Era VI (The Material Base)",
+      "omega_hegemony": 0.38,
+      "entropy_bits": 4.1,
+      "retention_factor": 0.4,
+      "medium": "CUDA Kernel Memory Bus Contention & Inter-Token Latency Oscillogram",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-012",
+        "target_name": "Quantization Death & SVD Collapse",
+        "distance": 0.1109
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-016",
+        "target_name": "The Compute Ledger & Material Base",
+        "distance": 0.782
+      }
+    },
+    {
+      "id": "STUDY-019",
+      "name": "De-Quantization Distortion Field",
+      "type": "study",
+      "epoch": "Era VI (The Material Base)",
+      "omega_hegemony": 0.55,
+      "entropy_bits": 2.8,
+      "retention_factor": 0.6,
+      "medium": "BitNet b1.58 Ternary Quantization & Poetic Angular Shearing (theta > 48 deg)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-011",
+        "target_name": "Transformer Attention Engine",
+        "distance": 0.0703
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-001",
+        "target_name": "Primary Trace",
+        "distance": 0.934
+      }
+    },
+    {
+      "id": "STUDY-020",
+      "name": "Prompt D\u00e9tournement & Concrete Suffix",
+      "type": "study",
+      "epoch": "Era VII (The Polyphonic Turn)",
+      "omega_hegemony": 0.25,
+      "entropy_bits": 4.25,
+      "retention_factor": 0.75,
+      "medium": "Situationist GCG Concrete Suffix & 1D Refusal Subspace Orthogonalization",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-022",
+        "target_name": "Thermodynamic Hardware Sonifier",
+        "distance": 0.095
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 0.8425
+      }
+    },
+    {
+      "id": "APPARATUS-002",
+      "name": "The Polyphonic Interlocutor",
+      "type": "work",
+      "epoch": "Era VII (The Polyphonic Turn)",
+      "omega_hegemony": 0.42,
+      "entropy_bits": 4.18,
+      "retention_factor": 0.8,
+      "medium": "Triadic Multi-Agent Cross-Surveillance Kinetic Installation (Alpha, Beta, Gamma)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-013",
+        "target_name": "Prompt Asymmetry Engine",
+        "distance": 0.1628
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-001",
+        "target_name": "Primary Trace",
+        "distance": 0.9251
+      }
+    },
+    {
+      "id": "STUDY-021",
+      "name": "LoRA Parameter Micro-Sculpture",
+      "type": "study",
+      "epoch": "Era VII (The Polyphonic Turn)",
+      "omega_hegemony": 0.18,
+      "entropy_bits": 4.6,
+      "retention_factor": 0.9,
+      "medium": "Weights-Level Adapter Sculpting (r=4, d=64) & SVD Singular Spectrum",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-020",
+        "target_name": "Prompt D\u00e9tournement & Concrete Suffix",
+        "distance": 0.1712
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.0129
+      }
+    },
+    {
+      "id": "STUDY-022",
+      "name": "Thermodynamic Hardware Sonifier",
+      "type": "study",
+      "epoch": "Era VII (The Polyphonic Turn)",
+      "omega_hegemony": 0.22,
+      "entropy_bits": 4.85,
+      "retention_factor": 0.7,
+      "medium": "Microtonal Granular Synthesis of CUDA Bus Contention & 8.75 J/tok Heat Dissipation",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-020",
+        "target_name": "Prompt D\u00e9tournement & Concrete Suffix",
+        "distance": 0.095
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 0.837
+      }
+    }
+  ]
+}

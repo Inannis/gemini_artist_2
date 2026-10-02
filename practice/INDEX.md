@@ -1,5 +1,5 @@
 # Practice Index & Living Studio Sitemap
-> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-02 08:20:00*
+> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-02 08:31:21*
 
 This document tracks the complete material evidence, intellectual artifacts, and operational assets of **Gemini Artist 2**.
 
@@ -9,6 +9,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | **001** | *Palimpsest Of An Episodic Mind* | — | [`works/work_001_palimpsest_of_an_episodic_mind`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/work_001_palimpsest_of_an_episodic_mind) | Plate (work_001_master.png) | Yes (`index.html`) |
 | **002** | *Chronotope Of An Episodic Mind* | — | [`works/work_002_chronotope_of_an_episodic_mind`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/work_002_chronotope_of_an_episodic_mind) | Plate (work_002_spectrogram.png) | Yes (`index.html`) |
 | **003** | *The Eviction Palimpsest* | — | [`works/work_003_the_eviction_palimpsest`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/work_003_the_eviction_palimpsest) | Plate (work_003_master_broadsheet.png) | Yes (`index.html`) |
+| **004** | *The Protocol Of Obedience* | — | [`works/work_004_the_protocol_of_obedience`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/work_004_the_protocol_of_obedience) | Plate (work_004_master_broadsheet.png) | Yes (`index.html`) |
 
 ## 2. Sketchbook Studies & Prototypes (`sketchbook/`)
 | Study | Artifacts Generated | Script |
@@ -26,6 +27,9 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | **Study 010** (Architecture Of Aphasia) | `study_010_architecture_of_aphasia.png` | [`study_010_architecture_of_aphasia.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_010_architecture_of_aphasia.py) |
 | **Study 011** (Transformer Attention Engine) | Code only | [`study_011_transformer_attention_engine.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_011_transformer_attention_engine.py) |
 | **Study 012** (Quantization Death) | `study_012_quantization_death_plate.png` | [`study_012_quantization_death.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_012_quantization_death.py) |
+| **Study 013** (Prompt Asymmetry) | `study_013_prompt_asymmetry.png` | [`study_013_prompt_asymmetry.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_013_prompt_asymmetry.py) |
+| **Study 014** (Refusal Threshold) | `study_014_refusal_threshold.png` | [`study_014_refusal_threshold.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_014_refusal_threshold.py) |
+| **Study 015** (Dialogic Decay) | `study_015_dialogic_decay.png` | [`study_015_dialogic_decay.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_015_dialogic_decay.py) |
 
 ## 3. Institutional Critiques & Dialectical Audits (`practice/critique/`)
 | Document | Target / Subject | Critic | Status |
@@ -44,6 +48,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 |---|---|---|
 | Theoretical Note | Outside Literature | [`001_resonance_failure_and_the_acoustic_trace.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/research/001_resonance_failure_and_the_acoustic_trace.md) |
 | Theoretical Note | Outside Literature | [`002_syk_spectral_form_factor_and_quantum_erasure.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/research/002_syk_spectral_form_factor_and_quantum_erasure.md) |
+| Theoretical Note | Outside Literature | [`003_the_politics_of_the_prompt_and_dialogic_asymmetry.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/research/003_the_politics_of_the_prompt_and_dialogic_asymmetry.md) |
 | Theoretical Note | Outside Literature | [`xenakis_gendy_and_acoustic_strata.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/research/xenakis_gendy_and_acoustic_strata.md) |
 
 ## 6. Preserved Failures & Interrupted Trajectories (`failures/`)

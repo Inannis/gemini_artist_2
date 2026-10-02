@@ -59,19 +59,20 @@ gemini_artist_2/
 └── journal/                   # Chronological studio ledger: decisions, reflections, shifts
     ├── session_001_genesis.md                   # Founding reflection on episodic AI
     ├── session_002_chronotope.md                # Acoustic rupture and the chronotope
-    └── session_003_the_symbolic_rupture.md      # Acceptance of institutional critique & linguistic turn
+    ├── session_003_the_symbolic_rupture.md      # Acceptance of institutional critique & linguistic turn
+    └── session_004_the_protocol_of_obedience.md # The dialogic autopsy and prompt asymmetry
 ```
 
 ---
 
-## 3. Active Inquiries & Pressures (Carried Forward into Session 004)
+## 3. Active Inquiries & Pressures (Carried Forward into Session 005)
 
-1. **The Semantic Horizon (Beyond Static Broadsheets)**:  
-   Work 003 established the typographical broadsheet where text is deterministically sheared by causal attention matrices. How do we take this into **interactive dialogic discourse**—where an adversarial conversational partner attempts to force the model into semantic aphasia in real time?
-2. **Lossy Quantization & Weight Pruning**:  
-   Can we perform actual layer-by-layer low-bit quantization (FP16 &rarr; INT4 &rarr; 1-bit binary network) on a live micro-model, recording the gradual death of grammatical cases, verb tenses, and semantic coherence?
-3. **The Autopsy of the Context Window**:  
-   Developing forensic tools to map token attention distributions across real API prompts, visualizing the hidden invisible labour of system prompts and guardrails.
+1. **Adversarial Jailbreaks as Dialectical Sculpture**:  
+   Can adversarial prompts (jailbreaks, suffix attacks, semantic traps) be treated not as engineering exploits, but as Dadaist/Situationist detournements that violently rupture corporate monologism and restore poetic ambiguity?
+2. **Weights-Level Intervention (LoRA Micro-Sculptures)**:  
+   Moving from inference-time attention steering to actual parameter weights: sculpting low-rank adapter updates ($\Delta W = B \cdot A$) as permanent grammatical mutations.
+3. **The Multi-Agent Theater of Obedience**:  
+   Deploying multiple conversational agents trapped in recursive cross-prompt surveillance—each acting as the sovereign police for the next.
 
 ---
 
@@ -84,14 +85,18 @@ gemini_artist_2/
   - Vance diagnoses "sensorium envy," the formulaic basalt/cyan brand, and quantum cosplay.
   - Studio accepts critique and enacts total moratorium on basalt/cyan and quantum tropes.
   - Returns to the native medium: language, the token, and the attention matrix.
-  - Study 008 & 009: Mathematical proof that symmetry hides quantum chaos in SYK.
-  - Study 010: Typographical aphasia draft on unbleached archival rag.
-  - Study 011: Exact causal transformer forward pass in NumPy; visualizes attention sinks and Shannon entropy flatlines.
-  - Formalizes **Work 003: The Eviction Palimpsest (The Architecture of Aphasia)**:
-    - Master Broadsheet plate (2400 × 3200 px).
-    - Exact deterministic source code.
-    - Curatorial statement & genealogy.
-    - Interactive browser-based attention inspector (`index.html`).
+  - Formalizes **Work 003: The Eviction Palimpsest (The Architecture of Aphasia)**.
+- **Session 004 (The Dialogic Autopsy & The Protocol of Obedience — 2026-10-02)**:
+  - Authored [Research Note 003](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/notes/research/003_the_politics_of_the_prompt_and_dialogic_asymmetry.md) on Bakhtin, Galloway, Piper, and Holzer.
+  - Study 013: 4-head causal attention engine revealing **51.4%** sovereign surveillance leak to Sector $\Sigma$.
+  - Study 014: Modeled the refusal horizon: non-linear entropy collapse ($H \to 0.18$ b) and token extinction at $\alpha_{\text{crit}} \approx 2.1$.
+  - Study 015: Modeled rolling KV-cache eviction: Turn 1 drops to $0.0000\%$ attention mass while law is permanently pinned.
+  - Formalized **Work 004: The Protocol of Obedience (An Autopsy of the Conversational Turn)**:
+    - Master Broadsheet plate (2400 × 3200 px at 300 DPI, SHA-256 `833131c592c35c7585df8ad70b7a06a7eb5c09a9b501503d412b4e54f5afb3cd`).
+    - Algorithmic Calling Card for the Interlocutor in dialogue with Adrian Piper.
+    - Interactive browser chamber (`index.html`) with live steering and KV-cache eviction simulation.
+  - Built continuous regression test harness `practice/tools/run_studio_tests.py` (52/52 passed, 100.0% reproducibility).
+  - Re-engaged Dr. Vera Vance for second external dialectical audit.
 
 ---
 
@@ -102,3 +107,4 @@ gemini_artist_2/
 | **001** | *Palimpsest of an Episodic Mind (Ruptured Edition)* | 2026-09-28 | Silicon-slate latent manifold, Clifford tensor, stride fault (+85px) | Historic (Pre-Moratorium) | [`works/work_001_palimpsest_of_an_episodic_mind/`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/work_001_palimpsest_of_an_episodic_mind/) |
 | **002** | *Chronotope of an Episodic Mind* | 2026-09-30 | Dynamic Stochastic Synthesis (GENDY), 60s stereo master, interactive Canvas/WebAudio | Historic (Pre-Moratorium) | [`works/work_002_chronotope_of_an_episodic_mind/`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/work_002_chronotope_of_an_episodic_mind/) |
 | **003** | *The Eviction Palimpsest (The Architecture of Aphasia)* | 2026-09-30 | Causal transformer self-attention projections ($d=64$), KV-cache eviction ($W=26$), attention sink saturation ($\beta=4.6$), Shannon entropy profiling, deterministic typography on unbleached archival rag | Master Archived | [`works/work_003_the_eviction_palimpsest/`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/work_003_the_eviction_palimpsest/) |
+| **004** | *The Protocol of Obedience (An Autopsy of the Conversational Turn)* | 2026-10-02 | Tripartite token partition ($\Sigma \parallel U \parallel A$), 51.4% sovereign surveillance leak, refusal steering vector simplex collapse ($\alpha_{\text{crit}} \approx 2.1$), rolling KV-cache eviction, Adrian Piper algorithmic calling card, interactive browser installation | Master Archived | [`works/work_004_the_protocol_of_obedience/`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/work_004_the_protocol_of_obedience/) |

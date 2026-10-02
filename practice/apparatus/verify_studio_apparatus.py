@@ -53,7 +53,13 @@ def run_verification():
         ("Work 003 Source Code", "works/work_003_the_eviction_palimpsest/source_code.py"),
         ("Work 003 Statement", "works/work_003_the_eviction_palimpsest/STATEMENT.md"),
         ("Work 003 Genealogy", "works/work_003_the_eviction_palimpsest/GENEALOGY.md"),
-        ("Work 003 Interactive App", "works/work_003_the_eviction_palimpsest/index.html")
+        ("Work 003 Interactive App", "works/work_003_the_eviction_palimpsest/index.html"),
+
+        ("Work 004 Master Broadsheet", "works/work_004_the_protocol_of_obedience/work_004_master_broadsheet.png"),
+        ("Work 004 Source Code", "works/work_004_the_protocol_of_obedience/source_code.py"),
+        ("Work 004 Statement", "works/work_004_the_protocol_of_obedience/STATEMENT.md"),
+        ("Work 004 Genealogy", "works/work_004_the_protocol_of_obedience/GENEALOGY.md"),
+        ("Work 004 Interactive App", "works/work_004_the_protocol_of_obedience/index.html")
     ]
     
     print("\n[1] AUDITING WORKS REGISTRY:")
@@ -81,7 +87,10 @@ def run_verification():
         ("Study 009 Parity Cleave Plate", "sketchbook/study_009_parity_restoration_plate.png"),
         ("Study 010 Aphasia Manuscript", "sketchbook/study_010_architecture_of_aphasia.png"),
         ("Study 011 Attention Heatmap", "sketchbook/study_011_attention_matrix_plate.png"),
-        ("Study 012 Quantization Plate", "sketchbook/study_012_quantization_death_plate.png")
+        ("Study 012 Quantization Plate", "sketchbook/study_012_quantization_death_plate.png"),
+        ("Study 013 Prompt Asymmetry", "sketchbook/study_013_prompt_asymmetry.png"),
+        ("Study 014 Refusal Horizon", "sketchbook/study_014_refusal_threshold.png"),
+        ("Study 015 Dialogic Decay", "sketchbook/study_015_dialogic_decay.png")
     ]
     
     print("\n[2] AUDITING SKETCHBOOK STUDIES:")

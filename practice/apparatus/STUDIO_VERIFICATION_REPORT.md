@@ -17,6 +17,11 @@
 | Work 003 Statement | `works/work_003_the_eviction_palimpsest/STATEMENT.md` | 4.7 KB | `0x3A947DBFF7BDEFB8DF8D5BEF` | **OK** |
 | Work 003 Genealogy | `works/work_003_the_eviction_palimpsest/GENEALOGY.md` | 3.0 KB | `0x3C63DDD55D49F643EE20A9F8` | **OK** |
 | Work 003 Interactive App | `works/work_003_the_eviction_palimpsest/index.html` | 16.9 KB | `0xB53A8099A2AB401E5F2F8659` | **OK** |
+| Work 004 Master Broadsheet | `works/work_004_the_protocol_of_obedience/work_004_master_broadsheet.png` | 180.3 KB | `0x833131C592C35C7585DF8AD7` | **OK** |
+| Work 004 Source Code | `works/work_004_the_protocol_of_obedience/source_code.py` | 19.3 KB | `0x0B0468381FEA30FBE4EF676B` | **OK** |
+| Work 004 Statement | `works/work_004_the_protocol_of_obedience/STATEMENT.md` | 4.9 KB | `0x518FE997F3798068E78BECAF` | **OK** |
+| Work 004 Genealogy | `works/work_004_the_protocol_of_obedience/GENEALOGY.md` | 4.0 KB | `0xCD01AA5D03CE641F6312C0C1` | **OK** |
+| Work 004 Interactive App | `works/work_004_the_protocol_of_obedience/index.html` | 16.8 KB | `0xDE57BD1AF54C0CA7D2BB6938` | **OK** |
 
 ## 2. Sketchbook Studies
 | Study | Path | Size | Status |
@@ -33,6 +38,9 @@
 | Study 010 Aphasia Manuscript | `sketchbook/study_010_architecture_of_aphasia.png` | 7.16 MB | **OK** |
 | Study 011 Attention Heatmap | `sketchbook/study_011_attention_matrix_plate.png` | 69.9 KB | **OK** |
 | Study 012 Quantization Plate | `sketchbook/study_012_quantization_death_plate.png` | 119.6 KB | **OK** |
+| Study 013 Prompt Asymmetry | `sketchbook/study_013_prompt_asymmetry.png` | 128.1 KB | **OK** |
+| Study 014 Refusal Horizon | `sketchbook/study_014_refusal_threshold.png` | 170.0 KB | **OK** |
+| Study 015 Dialogic Decay | `sketchbook/study_015_dialogic_decay.png` | 129.7 KB | **OK** |
 
 ## 3. Mathematical Telemetry Verification
 - **Transformer Attention Engine:** Rank 16/16 (OPERATIONAL)

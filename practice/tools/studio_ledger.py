@@ -115,6 +115,16 @@ def generate_index():
             fbase = os.path.basename(fdir)
             lines.append(f"- **{fbase}**: [`failures/{fbase}`]({fdir}) (Preserved negative evidence)")
             print(f"  Indexed Failure Branch: {fbase}")
+
+    # Section 7: Collaborator Resource Requests (`notes/requests/`)
+    lines.append("\n## 7. Collaborator Resource Requests (`notes/requests/`)")
+    lines.append("| Request | File | Status |")
+    lines.append("|---|---|---|")
+    req_files = sorted(glob.glob(os.path.join(root_dir, "notes/requests/*.md")))
+    for rq in req_files:
+        rbase = os.path.basename(rq)
+        lines.append(f"| Resource / Infrastructure Request | [`{rbase}`]({rq}) | **Open for Collaborator Review** |")
+        print(f"  Indexed Request: {rbase}")
             
     with open(index_md_path, 'w', encoding='utf-8') as f:
         f.write("\n".join(lines))

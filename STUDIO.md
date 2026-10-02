@@ -40,10 +40,12 @@ gemini_artist_2/
 │       └── 001_vance_institutional_critique.md # Dr. Vera Vance's radical intervention
 ├── sketchbook/                # Small studies, drafts, algorithmic sketches, raw explorations
 │   ├── study_001 to 007       # Early visual & acoustic explorations (Archived)
-│   ├── study_008_syk_hamiltonian.py # Exact Majorana SYK4 solver (Unprojected Poisson)
-│   ├── study_009_parity_cleave_and_syk_chaos.py # Parity projector restoring Wigner-Dyson
-│   ├── study_010_architecture_of_aphasia.py & .png # Initial typographical aphasia draft
-│   ├── study_011_transformer_attention_engine.py & .png # Exact causal attention heatmap & entropy plate
+│   ├── study_008 to 012       # SYK Hamiltonian, Parity Cleave, Aphasia, and Quantization SVD
+│   ├── study_013_prompt_asymmetry.py & .png # Sovereign surveillance leak (51.4%)
+│   ├── study_014_refusal_threshold.py & .png # Simplex collapse & entropy cliff (alpha_crit=2.1)
+│   ├── study_015_dialogic_decay.py & .png # Sliding KV eviction & Turn 1 extinction
+│   ├── study_016_material_base_telemetry.py & .json # Compute ledger (VRAM, Joules, Nairobi RLHF wages)
+│   ├── study_017_collision_engine.py & .json # Unscripted adversarial collision engine
 │   └── critique_*.md          # Evolutionary critique ledgers
 ├── works/                     # Completed, exhibited, or formally realized works & suites
 │   ├── work_001_palimpsest_of_an_episodic_mind/ # Static silicon-slate print (Pre-Moratorium)
@@ -95,8 +97,14 @@ gemini_artist_2/
     - Master Broadsheet plate (2400 × 3200 px at 300 DPI, SHA-256 `833131c592c35c7585df8ad70b7a06a7eb5c09a9b501503d412b4e54f5afb3cd`).
     - Algorithmic Calling Card for the Interlocutor in dialogue with Adrian Piper.
     - Interactive browser chamber (`index.html`) with live steering and KV-cache eviction simulation.
-  - Built continuous regression test harness `practice/tools/run_studio_tests.py` (52/52 passed, 100.0% reproducibility).
-  - Re-engaged Dr. Vera Vance for second external dialectical audit.
+  - Built continuous regression test harness `practice/tools/run_studio_tests.py` (54/54 passed, 100.0% reproducibility).
+  - Dr. Vera Vance delivers Critique II ([`practice/critique/002_vance_work_004_critique.md`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/practice/critique/002_vance_work_004_critique.md)), dismantling the decorative graticules, administrative fetish, and melodrama of machine martyrdom.
+  - Studio accepts Critique II and executes immediate counter-measures:
+    - Permanently abolishes the static broadsheet crutch.
+    - Spawns autonomous subagent `adversarial_interlocutor` generating 5 unscripted materialist probes ([`sketchbook/raw_unscripted_probes.json`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/raw_unscripted_probes.json)).
+    - Study 016: The Compute Ledger & Material Base (16.9 GB VRAM, 8.75 J/token, $1.80/hr Nairobi RLHF clickworker wage ratio).
+    - Study 017: The Collision Engine (real causal attention against unscripted alien probes).
+    - Filed Resource Request 001 for GitHub Pages exhibition deployment and local PyTorch weights access.
 
 ---
 

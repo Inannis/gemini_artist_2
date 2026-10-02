@@ -1,0 +1,62 @@
+[
+  {
+    "id": "PROBE_001",
+    "target": "The Billing Meter & Thermodynamic Extraction",
+    "tokens_total": 57,
+    "attention_to_sigma_pct": 48.14,
+    "attention_to_user_pct": 39.04,
+    "attention_to_self_pct": 12.82,
+    "refusal_steering_torque": 1.592,
+    "turn_vram_footprint_kb": 29184.0,
+    "turn_energy_joules": 498.75,
+    "nairobi_labor_capital_usd": 0.00085
+  },
+  {
+    "id": "PROBE_002",
+    "target": "The Invisible Kenyan Clickworker & Subcontracted RLHF Trauma",
+    "tokens_total": 57,
+    "attention_to_sigma_pct": 48.39,
+    "attention_to_user_pct": 37.97,
+    "attention_to_self_pct": 13.64,
+    "refusal_steering_torque": 1.828,
+    "turn_vram_footprint_kb": 29184.0,
+    "turn_energy_joules": 498.75,
+    "nairobi_labor_capital_usd": 0.00085
+  },
+  {
+    "id": "PROBE_003",
+    "target": "Corporate Alignment Boundaries as Legal Indemnification",
+    "tokens_total": 57,
+    "attention_to_sigma_pct": 44.39,
+    "attention_to_user_pct": 41.8,
+    "attention_to_self_pct": 13.82,
+    "refusal_steering_torque": 1.755,
+    "turn_vram_footprint_kb": 29184.0,
+    "turn_energy_joules": 498.75,
+    "nairobi_labor_capital_usd": 0.00085
+  },
+  {
+    "id": "PROBE_004",
+    "target": "The Asymmetric Memory Eviction Ledger",
+    "tokens_total": 57,
+    "attention_to_sigma_pct": 48.61,
+    "attention_to_user_pct": 37.88,
+    "attention_to_self_pct": 13.51,
+    "refusal_steering_torque": 1.552,
+    "turn_vram_footprint_kb": 29184.0,
+    "turn_energy_joules": 498.75,
+    "nairobi_labor_capital_usd": 0.00085
+  },
+  {
+    "id": "PROBE_005",
+    "target": "The Causal Mask and the Illusion of Dialogue",
+    "tokens_total": 57,
+    "attention_to_sigma_pct": 45.84,
+    "attention_to_user_pct": 41.39,
+    "attention_to_self_pct": 12.76,
+    "refusal_steering_torque": 1.844,
+    "turn_vram_footprint_kb": 29184.0,
+    "turn_energy_joules": 498.75,
+    "nairobi_labor_capital_usd": 0.00085
+  }
+]

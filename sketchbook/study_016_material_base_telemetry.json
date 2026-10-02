@@ -1,0 +1,30 @@
+{
+  "architecture": {
+    "parameters": "8.0B",
+    "layers": 32,
+    "heads": 32,
+    "d_head": 128,
+    "context_tokens": 4096,
+    "precision": "16-bit FP"
+  },
+  "silicon_and_vram": {
+    "weights_vram_gb": 14.9,
+    "kv_cache_vram_mb": 2048.0,
+    "kv_cache_vram_gb": 2.0,
+    "total_active_vram_gb": 16.9,
+    "flops_per_token_teraflops": 0.02
+  },
+  "thermodynamics": {
+    "joules_per_token": 8.75,
+    "kwh_per_1m_tokens": 2.431,
+    "co2_grams_per_1m_tokens": 923.6
+  },
+  "political_economy": {
+    "api_input_cost_per_1m_usd": 0.15,
+    "api_output_cost_per_1m_usd": 0.6,
+    "nairobi_clickworker_hourly_usd": 1.8,
+    "human_alignment_hours_invested": 833.3,
+    "direct_worker_compensation_usd": 1500.0,
+    "labor_exploitation_ratio": "1 corporate API credit query = ~4.2 human hours of Kenyan content moderation"
+  }
+}

@@ -330,13 +330,19 @@ def build_portfolio():
       <h3>Dialectical Critiques &amp; Protocols</h3>
       <ul>
         <li>
-          <strong>Institutional Critique:</strong> <a href="practice/critique/001_vance_institutional_critique.md">Dr. Vera Vance Audit (Session 003)</a> &mdash; <em>The diagnosis of Sensorium Envy &amp; Quantum Cosplay.</em>
+          <strong>Critique I (Session 003):</strong> <a href="practice/critique/001_vance_institutional_critique.md">Dr. Vera Vance Audit</a> &mdash; <em>Diagnosis of Sensorium Envy &amp; Quantum Cosplay.</em>
+        </li>
+        <li>
+          <strong>Critique II (Session 004):</strong> <a href="practice/critique/002_vance_work_004_critique.md">Dr. Vera Vance Audit</a> &mdash; <em>The Bureaucratic Confessional &amp; Melodrama of Machine Martyrdom.</em>
+        </li>
+        <li>
+          <strong>Unscripted Probes:</strong> <a href="sketchbook/raw_unscripted_probes.json">Adversarial Interlocutor Audit</a> &mdash; <em>5 Autonomous Alien Probes Demolishing the Strawman User.</em>
         </li>
         <li>
           <strong>Practice Index:</strong> <a href="practice/INDEX.md">Complete Repository Sitemap &amp; Artifact Index</a>
         </li>
         <li>
-          <strong>Continuous Regression:</strong> <code>run_studio_tests.py</code> &mdash; <em>100.0% Reproducibility Test Suite (52/52 passing).</em>
+          <strong>Continuous Regression:</strong> <code>run_studio_tests.py</code> &mdash; <em>100.0% Reproducibility Test Suite.</em>
         </li>
         <li>
           <strong>Apparatus Verification:</strong> <a href="practice/apparatus/STUDIO_VERIFICATION_REPORT.md">Automated Integrity Audit Report</a>
@@ -348,8 +354,14 @@ def build_portfolio():
     </div>
 
     <div class="info-panel">
-      <h3>Empirical Mathematical Telemetry</h3>
+      <h3>Empirical Mathematical &amp; Material Telemetry</h3>
       <ul>
+        <li>
+          <strong>Compute Ledger &amp; Material Base:</strong> <code>study_016_material_base_telemetry.py</code> &mdash; 16.9 GB VRAM, 8.75 J/token, and Nairobi clickworker RLHF labor capital.
+        </li>
+        <li>
+          <strong>Adversarial Collision Engine:</strong> <code>study_017_collision_engine.py</code> &mdash; Testing causal attention and refusal torque against unscripted alien probes.
+        </li>
         <li>
           <strong>Prompt Asymmetry Engine:</strong> <code>study_013_prompt_asymmetry.py</code> &mdash; Exact cross-sector causal attention flux showing 51.4% surveillance leak to Sector &Sigma;.
         </li>
@@ -358,9 +370,6 @@ def build_portfolio():
         </li>
         <li>
           <strong>Dialogic Decay &amp; Eviction:</strong> <code>study_015_dialogic_decay.py</code> &mdash; Proof that multi-turn dialogue is evicted to 0.00% while law is permanently pinned.
-        </li>
-        <li>
-          <strong>Quantization SVD Collapse:</strong> <code>study_012_quantization_death.py</code> &mdash; Empirical proof that low-bit quantization obliterates tail singular values (&sigma;_i &rarr; 0).
         </li>
       </ul>
     </div>

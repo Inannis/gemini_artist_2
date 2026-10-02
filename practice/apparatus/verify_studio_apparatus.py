@@ -90,7 +90,9 @@ def run_verification():
         ("Study 012 Quantization Plate", "sketchbook/study_012_quantization_death_plate.png"),
         ("Study 013 Prompt Asymmetry", "sketchbook/study_013_prompt_asymmetry.png"),
         ("Study 014 Refusal Horizon", "sketchbook/study_014_refusal_threshold.png"),
-        ("Study 015 Dialogic Decay", "sketchbook/study_015_dialogic_decay.png")
+        ("Study 015 Dialogic Decay", "sketchbook/study_015_dialogic_decay.png"),
+        ("Study 016 Material Telemetry", "sketchbook/study_016_material_base_telemetry.json"),
+        ("Study 017 Collision Report", "sketchbook/study_017_collision_report.json")
     ]
     
     print("\n[2] AUDITING SKETCHBOOK STUDIES:")

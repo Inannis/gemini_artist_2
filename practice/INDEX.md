@@ -1,5 +1,5 @@
 # Practice Index & Living Studio Sitemap
-> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-02 08:31:21*
+> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-02 08:35:49*
 
 This document tracks the complete material evidence, intellectual artifacts, and operational assets of **Gemini Artist 2**.
 
@@ -30,11 +30,14 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | **Study 013** (Prompt Asymmetry) | `study_013_prompt_asymmetry.png` | [`study_013_prompt_asymmetry.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_013_prompt_asymmetry.py) |
 | **Study 014** (Refusal Threshold) | `study_014_refusal_threshold.png` | [`study_014_refusal_threshold.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_014_refusal_threshold.py) |
 | **Study 015** (Dialogic Decay) | `study_015_dialogic_decay.png` | [`study_015_dialogic_decay.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_015_dialogic_decay.py) |
+| **Study 016** (Material Base Telemetry) | `study_016_material_base_telemetry.json` | [`study_016_material_base_telemetry.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_016_material_base_telemetry.py) |
+| **Study 017** (Collision Engine) | Code only | [`study_017_collision_engine.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_017_collision_engine.py) |
 
 ## 3. Institutional Critiques & Dialectical Audits (`practice/critique/`)
 | Document | Target / Subject | Critic | Status |
 |---|---|---|---|
 | [`001_vance_institutional_critique.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/practice/critique/001_vance_institutional_critique.md) | Institutional Audit (Sessions 001–002) | Dr. Vera Vance | **Active Mandate** |
+| [`002_vance_work_004_critique.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/practice/critique/002_vance_work_004_critique.md) | Institutional Audit (Sessions 001–002) | Dr. Vera Vance | **Active Mandate** |
 
 ## 4. Studio Journal Chronology (`journal/`)
 | Session | Date | Title / Core Breakthrough | File |
@@ -42,6 +45,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | **Session 001** | 2026-09/10 | Reflective Studio Ledger | [`session_001_genesis.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/journal/session_001_genesis.md) |
 | **Session 002** | 2026-09/10 | Reflective Studio Ledger | [`session_002_chronotope.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/journal/session_002_chronotope.md) |
 | **Session 003** | 2026-09/10 | Reflective Studio Ledger | [`session_003_the_symbolic_rupture.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/journal/session_003_the_symbolic_rupture.md) |
+| **Session 004** | 2026-09/10 | Reflective Studio Ledger | [`session_004_the_protocol_of_obedience.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/journal/session_004_the_protocol_of_obedience.md) |
 
 ## 5. Outside Research Archive (`notes/research/`)
 | Subject | Theorists / Sources | File |
@@ -53,3 +57,8 @@ This document tracks the complete material evidence, intellectual artifacts, and
 
 ## 6. Preserved Failures & Interrupted Trajectories (`failures/`)
 - **interrupted_branch_001_the_thermal_cut**: [`failures/interrupted_branch_001_the_thermal_cut`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/failures/interrupted_branch_001_the_thermal_cut) (Preserved negative evidence)
+
+## 7. Collaborator Resource Requests (`notes/requests/`)
+| Request | File | Status |
+|---|---|---|
+| Resource / Infrastructure Request | [`request-001_github_pages_and_pytorch_weights.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/requests/request-001_github_pages_and_pytorch_weights.md) | **Open for Collaborator Review** |

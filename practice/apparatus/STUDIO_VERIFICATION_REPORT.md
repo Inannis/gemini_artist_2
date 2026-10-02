@@ -41,6 +41,8 @@
 | Study 013 Prompt Asymmetry | `sketchbook/study_013_prompt_asymmetry.png` | 128.1 KB | **OK** |
 | Study 014 Refusal Horizon | `sketchbook/study_014_refusal_threshold.png` | 170.0 KB | **OK** |
 | Study 015 Dialogic Decay | `sketchbook/study_015_dialogic_decay.png` | 129.7 KB | **OK** |
+| Study 016 Material Telemetry | `sketchbook/study_016_material_base_telemetry.json` | 0.8 KB | **OK** |
+| Study 017 Collision Report | `sketchbook/study_017_collision_report.json` | 1.9 KB | **OK** |
 
 ## 3. Mathematical Telemetry Verification
 - **Transformer Attention Engine:** Rank 16/16 (OPERATIONAL)

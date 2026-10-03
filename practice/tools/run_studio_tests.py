@@ -97,6 +97,12 @@ def test_master_works_integrity():
             "dir": "works/apparatus_005_the_agonist",
             "artifacts": ["engine.py", "apparatus_005_agonist_master.wav", "apparatus_005_spectrogram.png", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json"],
             "sha_target": {}
+        },
+        {
+            "id": "Apparatus 006",
+            "dir": "works/apparatus_006_the_homeostat",
+            "artifacts": ["engine.py", "apparatus_006_homeostat_master.wav", "apparatus_006_spectrogram.png", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json"],
+            "sha_target": {}
         }
     ]
 
@@ -205,6 +211,12 @@ def test_empirical_studies_and_naming():
         ("notes/research/008_cybernetic_agonism_flusser_and_tactile_steering.md"),
         ("notes/research/009_bataille_softmax_and_the_sacrificial_sink.md"),
         ("notes/research/010_wiener_in_the_residual_stream_and_homeostasis.md"),
+        ("notes/research/011_rope_rmsnorm_and_the_topological_invariance_of_the_sink.md"),
+        ("practice/manifesto/001_against_the_solipsism_of_the_benchmark.md"),
+        ("sketchbook/study_036_cross_architecture_tomography.py"),
+        ("sketchbook/study_036_cross_arch_plate.png"),
+        ("sketchbook/study_036_telemetry.json"),
+        ("sketchbook/critique_036.md"),
         ("journal/session_008_the_great_audit_and_the_agonist.md"),
         ("practice/critique/003_studio_agon_self_audit_and_comparative_survey.md"),
         ("practice/plans/001_studio_agon_evolution_plan.md")

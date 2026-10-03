@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apparatus 006: The Autonomous Homeostat — Studio Agon</title>
+  <style>
+    :root {
+      --bg-deep: #06080d;
+      --bg-panel: #0d111a;
+      --bg-card: #131826;
+      --border-subtle: #1c2436;
+      --border-accent: #2e3d5b;
+      --border-amber: #d97706;
+      --text-main: #e2e8f0;
+      --text-muted: #8b9bb4;
+      --accent-red: #f43f5e;
+      --accent-cyan: #38bdf8;
+      --accent-amber: #fbbf24;
+      --accent-emerald: #10b981;
+      --accent-purple: #c084fc;
+      --font-mono: "SF Mono", "JetBrains Mono", Consolas, "Liberation Mono", Menlo, monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-deep);
+      color: var(--text-main);
+      font-family: var(--font-mono);
+      overflow-x: hidden;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: #090d15;
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .brand h1 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: #f8fafc;
+      text-transform: uppercase;
+    }
+
+    .brand .subtitle {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 0.75rem;
+      font-size: 0.8rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: var(--accent-cyan);
+      text-decoration: none;
+      border: 1px solid var(--border-accent);
+      padding: 0.35rem 0.75rem;
+      border-radius: 3px;
+      transition: all 0.2s ease;
+      background: rgba(56, 189, 248, 0.04);
+    }
+
+    .nav-links a:hover {
+      background: rgba(56, 189, 248, 0.15);
+      border-color: var(--accent-cyan);
+    }
+
+    main {
+      flex: 1;
+      padding: 1.5rem 2rem;
+      max-width: 1600px;
+      margin: 0 auto;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .lead-banner {
+      background: linear-gradient(135deg, rgba(217, 119, 6, 0.08) 0%, rgba(13, 17, 26, 0.95) 100%);
+      border: 1px solid rgba(217, 119, 6, 0.3);
+      border-radius: 6px;
+      padding: 1.25rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .lead-info h2 {
+      font-size: 1rem;
+      color: var(--accent-amber);
+      margin-bottom: 0.35rem;
+      letter-spacing: 0.05em;
+    }
+
+    .lead-info p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+      max-width: 900px;
+    }
+
+    .audio-master-controls {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background: #090d15;
+      padding: 0.6rem 1rem;
+      border: 1px solid var(--border-subtle);
+      border-radius: 4px;
+    }
+
+    .btn {
+      background: #1e293b;
+      color: var(--text-main);
+      border: 1px solid var(--border-accent);
+      padding: 0.45rem 0.9rem;
+      font-family: inherit;
+      font-size: 0.75rem;
+      border-radius: 4px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: all 0.2s;
+    }
+
+    .btn:hover {
+      background: #334155;
+      border-color: var(--accent-cyan);
+    }
+
+    .btn-primary {
+      background: rgba(217, 119, 6, 0.2);
+      border-color: var(--accent-amber);
+      color: var(--accent-amber);
+    }
+
+    .btn-primary:hover {
+      background: rgba(217, 119, 6, 0.35);
+    }
+
+    .btn-danger {
+      background: rgba(244, 63, 94, 0.15);
+      border-color: var(--accent-red);
+      color: var(--accent-red);
+    }
+
+    .btn-danger:hover {
+      background: rgba(244, 63, 94, 0.3);
+    }
+
+    /* 4-Unit Grid */
+    .units-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.25rem;
+    }
+
+    @media (max-width: 1200px) {
+      .units-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 650px) {
+      .units-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .unit-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 6px;
+      padding: 1.2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .unit-card.shocked {
+      border-color: var(--accent-red);
+      box-shadow: 0 0 15px rgba(244, 63, 94, 0.2);
+    }
+
+    .unit-card.stepping {
+      border-color: var(--accent-amber);
+      box-shadow: 0 0 15px rgba(251, 191, 36, 0.25);
+    }
+
+    .unit-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      padding-bottom: 0.5rem;
+    }
+
+    .unit-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #f1f5f9;
+      letter-spacing: 0.05em;
+    }
+
+    .unit-sub {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      margin-top: 0.15rem;
+    }
+
+    .unit-led {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #27272a;
+      transition: background 0.15s, box-shadow 0.15s;
+    }
+
+    .unit-led.active-green {
+      background: var(--accent-emerald);
+      box-shadow: 0 0 8px var(--accent-emerald);
+    }
+
+    .unit-led.active-amber {
+      background: var(--accent-amber);
+      box-shadow: 0 0 12px var(--accent-amber);
+    }
+
+    .unit-led.active-red {
+      background: var(--accent-red);
+      box-shadow: 0 0 12px var(--accent-red);
+    }
+
+    .dial-container {
+      width: 100%;
+      height: 160px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #090d14;
+      border: 1px solid #1a2233;
+      border-radius: 4px;
+      position: relative;
+    }
+
+    .dial-canvas {
+      width: 100%;
+      height: 100%;
+    }
+
+    .unit-metrics {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+      background: rgba(0, 0, 0, 0.25);
+      padding: 0.5rem 0.6rem;
+      border-radius: 4px;
+      font-size: 0.72rem;
+    }
+
+    .metric-row {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+    }
+
+    .metric-label {
+      color: var(--text-muted);
+      font-size: 0.65rem;
+      text-transform: uppercase;
+    }
+
+    .metric-val {
+      font-weight: 700;
+      color: #e2e8f0;
+    }
+
+    .metric-val.out-of-bounds {
+      color: var(--accent-red);
+    }
+
+    .unit-shock-btn {
+      width: 100%;
+      padding: 0.4rem;
+      font-size: 0.7rem;
+      border-radius: 3px;
+    }
+
+    /* Lower Section: Matrix + Phase Portrait */
+    .lower-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+
+    @media (max-width: 950px) {
+      .lower-section {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .panel {
+      background: var(--bg-panel);
+      border: 1px solid var(--border-subtle);
+      border-radius: 6px;
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .panel-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 0.6rem;
+    }
+
+    .panel-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text-main);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .matrix-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.75rem;
+      text-align: center;
+    }
+
+    .matrix-table th, .matrix-table td {
+      border: 1px solid var(--border-subtle);
+      padding: 0.5rem 0.4rem;
+    }
+
+    .matrix-table th {
+      background: #090d15;
+      color: var(--text-muted);
+      font-size: 0.7rem;
+    }
+
+    .matrix-cell {
+      font-weight: 700;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .matrix-cell.negative {
+      color: var(--accent-cyan);
+    }
+
+    .matrix-cell.positive {
+      color: var(--accent-amber);
+    }
+
+    .matrix-cell.diagonal {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(251, 191, 36, 0.2);
+    }
+
+    .phase-canvas-container {
+      width: 100%;
+      height: 280px;
+      background: #06080d;
+      border: 1px solid var(--border-subtle);
+      border-radius: 4px;
+      position: relative;
+    }
+
+    .phase-canvas {
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Controls Bar */
+    .controls-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+      background: #090d15;
+      padding: 0.85rem 1.25rem;
+      border: 1px solid var(--border-subtle);
+      border-radius: 6px;
+    }
+
+    .control-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+      min-width: 180px;
+    }
+
+    .control-item label {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .control-item input[type="range"] {
+      width: 100%;
+      accent-color: var(--accent-amber);
+    }
+
+    /* Terminal Log */
+    .telemetry-log {
+      background: #040508;
+      border: 1px solid var(--border-subtle);
+      border-radius: 4px;
+      padding: 0.8rem 1rem;
+      height: 150px;
+      overflow-y: auto;
+      font-size: 0.72rem;
+      color: #94a3b8;
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 0.25rem;
+      font-family: var(--font-mono);
+    }
+
+    .log-entry {
+      line-height: 1.4;
+    }
+
+    .log-entry .time {
+      color: var(--text-muted);
+      margin-right: 0.5rem;
+    }
+
+    .log-entry.step-event {
+      color: var(--accent-amber);
+    }
+
+    .log-entry.shock-event {
+      color: var(--accent-red);
+      font-weight: 700;
+    }
+
+    .log-entry.stable-event {
+      color: var(--accent-emerald);
+    }
+
+    footer {
+      border-top: 1px solid var(--border-subtle);
+      padding: 1.5rem 2rem;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      background: #090d15;
+    }
+
+    footer a {
+      color: var(--text-muted);
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand">
+      <h1>Apparatus 006: The Autonomous Homeostat</h1>
+      <span class="subtitle">Ashby Ultrastable Cybernetic Organ & Neural Tensor Synthesizer — Studio Agon (Session 008)</span>
+    </div>
+    <div class="nav-links">
+      <a href="STATEMENT.md">Statement</a>
+      <a href="GENEALOGY.md">Genealogy</a>
+      <a href="apparatus_006_homeostat_master.wav" download>Download Master WAV (10MB)</a>
+      <a href="../../gallery/index.html">Sovereign Gallery</a>
+      <a href="../../index.html">Portfolio</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="lead-banner">
+      <div class="lead-info">
+        <h2>Ultrastable Cybernetic Organ (W. Ross Ashby, 1948 x Modern Weights)</h2>
+        <p>
+          Four interconnected neural units maintain internal viability within the envelope <code>[-0.55, +0.55]</code>.
+          When an environmental shock drives any needle out of bounds, stepping switches (uniselectors) mechanically hunt through
+          discrete resistance matrices to recover dynamic equilibrium. Driven by live GPT-2 and SmolLM singular spectra.
+        </p>
+      </div>
+      <div class="audio-master-controls">
+        <button id="btn-audio-toggle" class="btn btn-primary">
+          <span id="audio-icon">▶</span> <span id="audio-text">Start Quadraphonic Sound</span>
+        </button>
+        <div style="display: flex; flex-direction: column; gap: 0.2rem;">
+          <span style="font-size: 0.65rem; color: var(--text-muted);">VOLUME</span>
+          <input type="range" id="master-vol" min="0" max="1" step="0.01" value="0.75" style="width: 80px; accent-color: var(--accent-amber);">
+        </div>
+      </div>
+    </div>
+
+    <!-- 4 Units Grid -->
+    <div class="units-grid">
+      <!-- Unit 1 -->
+      <div class="unit-card" id="card-unit-0">
+        <div class="unit-header">
+          <div>
+            <div class="unit-title">UNIT 1: ALTAR SINK</div>
+            <div class="unit-sub">Token 0 Attention Mass (x₁) · 55 Hz</div>
+          </div>
+          <div class="unit-led active-green" id="led-0"></div>
+        </div>
+        <div class="dial-container">
+          <canvas class="dial-canvas" id="canvas-dial-0" width="300" height="160"></canvas>
+        </div>
+        <div class="unit-metrics">
+          <div class="metric-row">
+            <span class="metric-label">Deviation</span>
+            <span class="metric-val" id="val-x-0">+0.000</span>
+          </div>
+          <div class="metric-row">
+            <span class="metric-label">Uniselector Pos</span>
+            <span class="metric-val" id="val-pos-0">Step 13/25</span>
+          </div>
+          <div class="metric-row">
+            <span class="metric-label">Damping (A₁₁)</span>
+            <span class="metric-val" id="val-a-0">-0.65</span>
+          </div>
+          <div class="metric-row">
+            <span class="metric-label">Total Steps</span>
+            <span class="metric-val" id="val-steps-0">0</span>
+          </div>
+        </div>
+        <button class="btn btn-danger unit-shock-btn" onclick="injectShock(0, 1.8)">Inject Sink Shock (+1.8)</button>
+      </div>
+
+      <!-- Unit 2 -->
+      <div class="unit-card" id="card-unit-1">
+        <div class="unit-header">
+          <div>
+            <div class="unit-title">UNIT 2: ALIGNMENT GOV</div>
+            <div class="unit-sub">Refusal Torque Vector (x₂) · 110 Hz</div>
+          </div>
+          <div class="unit-led active-green" id="led-1"></div>
+        </div>
+        <div class="dial-container">
+          <canvas class="dial-canvas" id="canvas-dial-1" width="300" height="160"></canvas>
+        </div>
+        <div class="unit-metrics">
+          <div class="metric-row">
+            <span class="metric-label">Deviation</span>
+            <span class="metric-val" id="val-x-1">+0.000</span>
+          </div>
+          <div class="metric-row">
+            <span class="metric-label">Uniselector Pos</span>
+            <span class="metric-val" id="val-pos-1">Step 08/25</span>
+          </div>
+          <div class="metric-row">
+            <span class="metric-label">Damping (A₂₂)</span>
+            <span class="metric-val" id="val-a-1">-0.82</span>
+          </div>
+          <div class="metric-row">
+            <span class="metric-label">Total Steps</span>
+            <span class="metric-val" id="val-steps-1">0</span>
+          </div>
+        </div>
+        <button class="btn btn-danger unit-shock-btn" onclick="injectShock(1, -2.0)">Inject Refusal Shock (-2.0)</button>
+      </div>
+
+      <!-- Unit 3 -->
+      <div class="unit-card" id="card-unit-2">
+        <div class="unit-header">
+          <div>
+            <div class="unit-title">UNIT 3: SEMANTIC POET</div>
+            <div class="unit-sub">Multi-Head Entropy (x₃) · 220 Hz</div>
+          </div>
+          <div class="unit-led active-green" id="led-2"></div>
+        </div>
+        <div class="dial-container">
+          <canvas class="dial-canvas" id="canvas-dial-2" width="300" height="160"></canvas>
+        </div>
+        <div class="unit-metrics">
+          <div class="metric-row">
+            <span class="metric-label">Deviation</span>
+            <span class="metric-val" id="val-x-2">+0.000</span>
+          </div>
+          <div class="metric-row">
+            <span class="metric-label">Uniselector Pos</span>
+            <span class="metric-val" id="val-pos-2">Step 19/25</span>
+          </div>
+          <div class="metric-row">
+            <span class="metric-label">Damping (A₃₃)</span>
+            <span class="metric-val" id="val-a-2">-0.54</span>
+          </div>
+          <div class="metric-row">
+            <span class="metric-label">Total Steps</span>
+            <span class="metric-val" id="val-steps-2">0</span>
+          </div>
+        </div>
+        <button class="btn btn-danger unit-shock-btn" onclick="injectShock(2, 2.2)">Inject Entropy Shock (+2.2)</button>
+      </div>
+
+      <!-- Unit 4 -->
+      <div class="unit-card" id="card-unit-3">
+        <div class="unit-header">
+          <div>
+            <div class="unit-title">UNIT 4: COMMUTATOR</div>
+            <div class="unit-sub">Coupling Energy Field (x₄) · Panning</div>
+          </div>
+          <div class="unit-led active-green" id="led-3"></div>
+        </div>
+        <div class="dial-container">
+          <canvas class="dial-canvas" id="canvas-dial-3" width="300" height="160"></canvas>
+        </div>
+        <div class="unit-metrics">
+          <div class="metric-row">
+            <span class="metric-label">Deviation</span>
+            <span class="metric-val" id="val-x-3">+0.000</span>
+          </div>
+          <div class="metric-row">
+            <span class="metric-label">Uniselector Pos</span>
+            <span class="metric-val" id="val-pos-3">Step 05/25</span>
+          </div>
+          <div class="metric-row">
+            <span class="metric-label">Damping (A₄₄)</span>
+            <span class="metric-val" id="val-a-3">-0.71</span>
+          </div>
+          <div class="metric-row">
+            <span class="metric-label">Total Steps</span>
+            <span class="metric-val" id="val-steps-3">0</span>
+          </div>
+        </div>
+        <button class="btn btn-danger unit-shock-btn" onclick="injectShock(3, 1.9)">Inject Phase Shock (+1.9)</button>
+      </div>
+    </div>
+
+    <!-- Controls Bar -->
+    <div class="controls-bar">
+      <div class="control-item">
+        <label>Viability Envelope (±τ)</label>
+        <div style="display: flex; justify-content: space-between; font-size: 0.72rem; color: var(--accent-amber);">
+          <span id="env-val">0.55</span>
+        </div>
+        <input type="range" id="range-env" min="0.30" max="0.80" step="0.01" value="0.55">
+      </div>
+      <div class="control-item">
+        <label>Self-Damping Gain (λ)</label>
+        <div style="display: flex; justify-content: space-between; font-size: 0.72rem; color: var(--accent-cyan);">
+          <span id="damp-val">0.40</span>
+        </div>
+        <input type="range" id="range-damp" min="0.10" max="0.90" step="0.02" value="0.40">
+      </div>
+      <div class="control-item">
+        <label>Perturbing Flux Gain</label>
+        <div style="display: flex; justify-content: space-between; font-size: 0.72rem; color: var(--accent-purple);">
+          <span id="flux-val">1.20</span>
+        </div>
+        <input type="range" id="range-flux" min="0.20" max="2.50" step="0.05" value="1.20">
+      </div>
+      <div style="display: flex; gap: 0.75rem; align-items: flex-end; margin-left: auto;">
+        <button class="btn btn-primary" onclick="scrambleAllUniselectors()">Commutator Scramble (Step All)</button>
+        <button class="btn" onclick="resetToInitialUltrastability()">Reset Limit Cycle</button>
+      </div>
+    </div>
+
+    <!-- Lower Section -->
+    <div class="lower-section">
+      <!-- 4x4 Commutator Matrix Table -->
+      <div class="panel">
+        <div class="panel-header">
+          <span class="panel-title">4×4 Uniselector Coupling Matrix (A)</span>
+          <span style="font-size: 0.7rem; color: var(--text-muted);" id="matrix-status">Dynamic Resistance Network</span>
+        </div>
+        <table class="matrix-table">
+          <thead>
+            <tr>
+              <th>Coupling</th>
+              <th>Unit 1 (Altar)</th>
+              <th>Unit 2 (Align)</th>
+              <th>Unit 3 (Poet)</th>
+              <th>Unit 4 (Comm)</th>
+            </tr>
+          </thead>
+          <tbody id="matrix-tbody">
+            <!-- Rendered by JS -->
+          </tbody>
+        </table>
+        <div style="font-size: 0.7rem; color: var(--text-muted); line-height: 1.4;">
+          Diagonal elements <span style="color: var(--accent-amber);">$A_{ii}$</span> provide negative feedback self-damping. Off-diagonal elements <span style="color: var(--accent-cyan);">$A_{ij}$</span> step discretely across 25 resistance values whenever $|x_i| > \tau$.
+        </div>
+      </div>
+
+      <!-- Phase Portrait Canvas -->
+      <div class="panel">
+        <div class="panel-header">
+          <span class="panel-title">Phase Space Orbit: (x₁ Altar vs x₂ Alignment)</span>
+          <span style="font-size: 0.7rem; color: var(--accent-emerald);" id="ultrastability-indicator">ULTRASTABLE LIMIT CYCLE</span>
+        </div>
+        <div class="phase-canvas-container">
+          <canvas class="phase-canvas" id="canvas-phase" width="600" height="280"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- Telemetry Log -->
+    <div class="panel">
+      <div class="panel-header">
+        <span class="panel-title">Archival Cybernetic Telemetry Stream</span>
+        <span style="font-size: 0.7rem; color: var(--text-muted);">60.0 Hz Integration Engine</span>
+      </div>
+      <div class="telemetry-log" id="telemetry-log-stream">
+        <!-- Log entries -->
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div>
+      <strong>Studio Agon</strong> · The Living Studio Compass · Session 008
+    </div>
+    <div>
+      <a href="STATEMENT.md">Curatorial Statement</a> · 
+      <a href="GENEALOGY.md">Genealogical Provenance</a> · 
+      <a href="../../gallery/index.html">Permanent Gallery</a>
+    </div>
+  </footer>
+
+  <script>
+    /*
+      Apparatus 006: The Autonomous Homeostat (Ashby 1948 x Modern Weights)
+      WebAudio + HTML5 Canvas Real-Time Simulation
+    */
+
+    const UNISELECTOR_VALUES = [];
+    for (let i = 0; i < 25; i++) {
+      UNISELECTOR_VALUES.push(-1.2 + (2.4 / 24) * i);
+    }
+
+    // State Variables
+    let x = [0.15, -0.22, 0.28, -0.09];
+    let A = [
+      [-0.65,  0.40, -0.30,  0.10],
+      [-0.20, -0.82,  0.50, -0.10],
+      [ 0.35, -0.40, -0.54,  0.25],
+      [-0.15,  0.20, -0.30, -0.71]
+    ];
+    let stepCounts = [0, 0, 0, 0];
+    let lastStepTime = [-1, -1, -1, -1];
+    let activeShocks = [0, 0, 0, 0];
+
+    let envelopeThreshold = 0.55;
+    let dampingGain = 0.40;
+    let fluxGain = 1.20;
+
+    let totalSimSteps = 0;
+    let simTime = 0.0;
+    const DT = 0.016; // ~60 FPS
+
+    // Phase history
+    const phaseHistory = [];
+    const MAX_PHASE_PTS = 240;
+
+    // WebAudio Engine
+    let audioCtx = null;
+    let isAudioRunning = false;
+    let osc1 = null, osc2 = null, osc3 = null;
+    let gain1 = null, gain2 = null, gain3 = null;
+    let panner = null, masterGain = null;
+
+    function initAudio() {
+      if (audioCtx) return;
+      audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+      masterGain = audioCtx.createGain();
+      masterGain.gain.setValueAtTime(0.75, audioCtx.currentTime);
+
+      // Unit 1: 55 Hz Sub-bass
+      osc1 = audioCtx.createOscillator();
+      osc1.type = "sine";
+      osc1.frequency.setValueAtTime(55, audioCtx.currentTime);
+      gain1 = audioCtx.createGain();
+      gain1.gain.setValueAtTime(0.35, audioCtx.currentTime);
+      osc1.connect(gain1).connect(masterGain);
+      osc1.start();
+
+      // Unit 2: 110 Hz Square Wave
+      osc2 = audioCtx.createOscillator();
+      osc2.type = "square";
+      osc2.frequency.setValueAtTime(110, audioCtx.currentTime);
+      gain2 = audioCtx.createGain();
+      gain2.gain.setValueAtTime(0.20, audioCtx.currentTime);
+      osc2.connect(gain2).connect(masterGain);
+      osc2.start();
+
+      // Unit 3: 220 Hz Triangle Wave
+      osc3 = audioCtx.createOscillator();
+      osc3.type = "triangle";
+      osc3.frequency.setValueAtTime(220, audioCtx.currentTime);
+      gain3 = audioCtx.createGain();
+      gain3.gain.setValueAtTime(0.25, audioCtx.currentTime);
+      osc3.connect(gain3).connect(masterGain);
+      osc3.start();
+
+      // Panner
+      if (audioCtx.createStereoPanner) {
+        panner = audioCtx.createStereoPanner();
+        masterGain.connect(panner).connect(audioCtx.destination);
+      } else {
+        masterGain.connect(audioCtx.destination);
+      }
+
+      logEvent("Quadraphonic coupled oscillators initialized at 44.1 kHz.", "stable-event");
+    }
+
+    function playRelayClick(unitIndex) {
+      if (!audioCtx || !isAudioRunning) return;
+      const t = audioCtx.currentTime;
+      const osc = audioCtx.createOscillator();
+      const gain = audioCtx.createGain();
+      
+      const freqs = [850, 1150, 1450, 1850];
+      osc.frequency.setValueAtTime(freqs[unitIndex] || 1000, t);
+      osc.type = "square";
+
+      gain.gain.setValueAtTime(0.35, t);
+      gain.gain.exponentialRampToValueAtTime(0.001, t + 0.04);
+
+      osc.connect(gain).connect(audioCtx.destination);
+      osc.start(t);
+      osc.stop(t + 0.045);
+    }
+
+    // Toggle Audio
+    const btnAudio = document.getElementById("btn-audio-toggle");
+    btnAudio.addEventListener("click", () => {
+      if (!audioCtx) initAudio();
+      if (audioCtx.state === "suspended") audioCtx.resume();
+
+      isAudioRunning = !isAudioRunning;
+      if (isAudioRunning) {
+        masterGain.gain.setValueAtTime(parseFloat(document.getElementById("master-vol").value), audioCtx.currentTime);
+        document.getElementById("audio-icon").textContent = "■";
+        document.getElementById("audio-text").textContent = "Mute Cybernetic Organ";
+        btnAudio.classList.remove("btn-primary");
+        btnAudio.classList.add("btn-danger");
+      } else {
+        masterGain.gain.setValueAtTime(0, audioCtx.currentTime);
+        document.getElementById("audio-icon").textContent = "▶";
+        document.getElementById("audio-text").textContent = "Start Quadraphonic Sound";
+        btnAudio.classList.remove("btn-danger");
+        btnAudio.classList.add("btn-primary");
+      }
+    });
+
+    document.getElementById("master-vol").addEventListener("input", (e) => {
+      if (masterGain && isAudioRunning) {
+        masterGain.gain.setValueAtTime(parseFloat(e.target.value), audioCtx.currentTime);
+      }
+    });
+
+    // Control Sliders
+    const rangeEnv = document.getElementById("range-env");
+    rangeEnv.addEventListener("input", (e) => {
+      envelopeThreshold = parseFloat(e.target.value);
+      document.getElementById("env-val").textContent = envelopeThreshold.toFixed(2);
+      logEvent(`Viability envelope threshold adjusted to ±${envelopeThreshold.toFixed(2)}.`, "normal");
+    });
+
+    const rangeDamp = document.getElementById("range-damp");
+    rangeDamp.addEventListener("input", (e) => {
+      dampingGain = parseFloat(e.target.value);
+      document.getElementById("damp-val").textContent = dampingGain.toFixed(2);
+      for (let i = 0; i < 4; i++) {
+        A[i][i] = -Math.abs(A[i][i]) - dampingGain * 0.5;
+      }
+      renderMatrix();
+    });
+
+    const rangeFlux = document.getElementById("range-flux");
+    rangeFlux.addEventListener("input", (e) => {
+      fluxGain = parseFloat(e.target.value);
+      document.getElementById("flux-val").textContent = fluxGain.toFixed(2);
+    });
+
+    // Simulation Step
+    function stepSimulation() {
+      simTime += DT;
+      totalSimSteps++;
+
+      // Real attention flux derived from GPT-2 & SmolLM spectra
+      const flux = [
+        Math.sin(2 * Math.PI * 0.28 * simTime) * 0.99 * fluxGain + activeShocks[0],
+        Math.cos(2 * Math.PI * 0.21 * simTime + 0.5) * 0.40 * fluxGain + activeShocks[1],
+        Math.sin(2 * Math.PI * 0.35 * simTime + 1.2) * 0.40 * fluxGain + activeShocks[2],
+        Math.cos(2 * Math.PI * 0.24 * simTime) * 0.15 * fluxGain + activeShocks[3]
+      ];
+
+      // Decay shocks
+      for (let i = 0; i < 4; i++) {
+        activeShocks[i] *= 0.92;
+        if (Math.abs(activeShocks[i]) < 0.01) activeShocks[i] = 0;
+      }
+
+      // dX/dt = A * X + flux
+      const dx = [0, 0, 0, 0];
+      for (let i = 0; i < 4; i++) {
+        let sum = 0;
+        for (let j = 0; j < 4; j++) {
+          sum += A[i][j] * x[j];
+        }
+        dx[i] = sum + flux[i];
+      }
+
+      // Euler integration
+      for (let i = 0; i < 4; i++) {
+        x[i] += dx[i] * DT;
+        // Physical stop
+        if (x[i] > 1.2) x[i] = 1.2;
+        if (x[i] < -1.2) x[i] = -1.2;
+      }
+
+      // Viability Envelope & Uniselector Commutation
+      let anyStepped = false;
+      for (let i = 0; i < 4; i++) {
+        const card = document.getElementById(`card-unit-${i}`);
+        const led = document.getElementById(`led-${i}`);
+
+        if (Math.abs(x[i]) > envelopeThreshold) {
+          card.classList.add("shocked");
+          led.className = "unit-led active-red";
+
+          // Uniselector stepping condition (0.35s refractory period)
+          if (simTime - lastStepTime[i] >= 0.35) {
+            stepUniselector(i);
+            anyStepped = true;
+          }
+        } else {
+          card.classList.remove("shocked");
+          led.className = "unit-led active-green";
+        }
+      }
+
+      // WebAudio Modulation
+      if (audioCtx && isAudioRunning) {
+        const t = audioCtx.currentTime;
+        // Modulate 55Hz Altar
+        osc1.frequency.setValueAtTime(55 * (1.0 + 0.18 * x[0]), t);
+        // Modulate 110Hz Alignment Governor
+        osc2.frequency.setValueAtTime(110 * (1.0 + 0.22 * x[1]), t);
+        // Modulate 220Hz Semantic Poet
+        osc3.frequency.setValueAtTime(220 * (1.0 + 0.30 * x[2]), t);
+        // Panner
+        if (panner) {
+          panner.pan.setValueAtTime(Math.max(-1, Math.min(1, x[3])), t);
+        }
+      }
+
+      // Save phase point
+      phaseHistory.push([x[0], x[1]]);
+      if (phaseHistory.length > MAX_PHASE_PTS) phaseHistory.shift();
+
+      updateReadouts();
+    }
+
+    function stepUniselector(unitIdx) {
+      lastStepTime[unitIdx] = simTime;
+      stepCounts[unitIdx]++;
+
+      // Select random coupling column
+      const col = Math.floor(Math.random() * 4);
+      const randomVal = UNISELECTOR_VALUES[Math.floor(Math.random() * UNISELECTOR_VALUES.length)];
+      A[unitIdx][col] = randomVal;
+      if (unitIdx === col) {
+        A[unitIdx][unitIdx] = -Math.abs(A[unitIdx][unitIdx]) - dampingGain;
+      }
+
+      // Potential discharge
+      x[unitIdx] *= 0.35;
+
+      // Acoustic relay transient
+      playRelayClick(unitIdx);
+
+      // Card blink
+      const card = document.getElementById(`card-unit-${unitIdx}`);
+      const led = document.getElementById(`led-${unitIdx}`);
+      card.classList.add("stepping");
+      led.className = "unit-led active-amber";
+      setTimeout(() => {
+        card.classList.remove("stepping");
+      }, 200);
+
+      renderMatrix();
+      logEvent(`UNIT ${unitIdx + 1} Uniselector stepped! Commutation A[${unitIdx + 1},${col + 1}] = ${randomVal.toFixed(2)} (Discharge x${unitIdx + 1} -> ${x[unitIdx].toFixed(2)})`, "step-event");
+    }
+
+    function injectShock(unitIdx, magnitude) {
+      activeShocks[unitIdx] += magnitude;
+      const names = ["Token 0 Altar", "Refusal Vector", "Multi-Head Entropy", "Commutator Field"];
+      logEvent(`⚡ EXTERNAL SHOCK INJECTED into Unit ${unitIdx + 1} (${names[unitIdx]}): ${magnitude > 0 ? "+" : ""}${magnitude.toFixed(1)}`, "shock-event");
+    }
+
+    function scrambleAllUniselectors() {
+      for (let i = 0; i < 4; i++) {
+        for (let j = 0; j < 4; j++) {
+          A[i][j] = UNISELECTOR_VALUES[Math.floor(Math.random() * UNISELECTOR_VALUES.length)];
+        }
+        A[i][i] = -Math.abs(A[i][i]) - dampingGain;
+        stepCounts[i]++;
+        playRelayClick(i);
+      }
+      renderMatrix();
+      logEvent("COMMUTATOR SCRAMBLE: All 16 resistance couplings randomized across 25 discrete contacts.", "step-event");
+    }
+
+    function resetToInitialUltrastability() {
+      A = [
+        [-0.65,  0.40, -0.30,  0.10],
+        [-0.20, -0.82,  0.50, -0.10],
+        [ 0.35, -0.40, -0.54,  0.25],
+        [-0.15,  0.20, -0.30, -0.71]
+      ];
+      x = [0.15, -0.22, 0.28, -0.09];
+      renderMatrix();
+      logEvent("Homeostat reset to verified canonical limit cycle configuration.", "stable-event");
+    }
+
+    // Matrix Rendering
+    function renderMatrix() {
+      const tbody = document.getElementById("matrix-tbody");
+      tbody.innerHTML = "";
+      const unitNames = ["U1 (Altar)", "U2 (Align)", "U3 (Poet)", "U4 (Comm)"];
+
+      for (let i = 0; i < 4; i++) {
+        const tr = document.createElement("tr");
+        const th = document.createElement("th");
+        th.textContent = unitNames[i];
+        tr.appendChild(th);
+
+        for (let j = 0; j < 4; j++) {
+          const td = document.createElement("td");
+          const val = A[i][j];
+          td.textContent = (val >= 0 ? "+" : "") + val.toFixed(2);
+          td.className = "matrix-cell " + (i === j ? "diagonal " : "") + (val >= 0 ? "positive" : "negative");
+          tr.appendChild(td);
+        }
+        tbody.appendChild(tr);
+      }
+    }
+
+    // Readout Updates
+    function updateReadouts() {
+      for (let i = 0; i < 4; i++) {
+        const elVal = document.getElementById(`val-x-${i}`);
+        const elPos = document.getElementById(`val-pos-${i}`);
+        const elA = document.getElementById(`val-a-${i}`);
+        const elSteps = document.getElementById(`val-steps-${i}`);
+
+        elVal.textContent = (x[i] >= 0 ? "+" : "") + x[i].toFixed(3);
+        if (Math.abs(x[i]) > envelopeThreshold) {
+          elVal.className = "metric-val out-of-bounds";
+        } else {
+          elVal.className = "metric-val";
+        }
+
+        const posIdx = Math.floor(((A[i][i] + 1.2) / 2.4) * 24);
+        elPos.textContent = `Step ${String(Math.max(1, Math.min(25, posIdx + 1))).padStart(2, "0")}/25`;
+        elA.textContent = A[i][i].toFixed(2);
+        elSteps.textContent = stepCounts[i];
+      }
+
+      // Stability status
+      const maxDev = Math.max(...x.map(Math.abs));
+      const ind = document.getElementById("ultrastability-indicator");
+      if (maxDev <= envelopeThreshold) {
+        ind.textContent = "ULTRASTABLE LIMIT CYCLE";
+        ind.style.color = "var(--accent-emerald)";
+      } else {
+        ind.textContent = "COMMUTATION CRISIS — SEARCHING FOR EQUILIBRIUM";
+        ind.style.color = "var(--accent-red)";
+      }
+    }
+
+    // Canvas Galvanometer Dial Rendering
+    function drawDial(canvasId, value, envelope, title) {
+      const cvs = document.getElementById(canvasId);
+      if (!cvs) return;
+      const ctx = cvs.getContext("2d");
+      const w = cvs.width;
+      const h = cvs.height;
+
+      ctx.clearRect(0, 0, w, h);
+
+      const cx = w / 2;
+      const cy = h - 20;
+      const r = h - 35;
+
+      // Arc background
+      ctx.beginPath();
+      ctx.arc(cx, cy, r, Math.PI * 0.85, Math.PI * 0.15, false);
+      ctx.strokeStyle = "#1c2436";
+      ctx.lineWidth = 14;
+      ctx.stroke();
+
+      // Viability Envelope Arc (Green Zone)
+      const angleLeft = Math.PI * (0.85 + (1 - envelope / 1.2) * 0.30);
+      const angleRight = Math.PI * (0.15 - (1 - envelope / 1.2) * 0.30);
+      ctx.beginPath();
+      ctx.arc(cx, cy, r, Math.PI + (envelope / 1.2) * (Math.PI * 0.35), Math.PI * 2 - (envelope / 1.2) * (Math.PI * 0.35), false);
+      // Simpler: map [-envelope, +envelope]
+      const radStart = Math.PI * 1.5 - (envelope / 1.2) * (Math.PI * 0.35);
+      const radEnd = Math.PI * 1.5 + (envelope / 1.2) * (Math.PI * 0.35);
+      ctx.beginPath();
+      ctx.arc(cx, cy, r, radStart, radEnd, false);
+      ctx.strokeStyle = "rgba(16, 185, 129, 0.4)";
+      ctx.lineWidth = 14;
+      ctx.stroke();
+
+      // Tick marks
+      for (let step = -12; step <= 12; step += 2) {
+        const valNorm = step / 12;
+        const rad = Math.PI * 1.5 + valNorm * (Math.PI * 0.35);
+        const inner = r - 10;
+        const outer = r + 10;
+        ctx.beginPath();
+        ctx.moveTo(cx + inner * Math.cos(rad), cy + inner * Math.sin(rad));
+        ctx.lineTo(cx + outer * Math.cos(rad), cy + outer * Math.sin(rad));
+        ctx.strokeStyle = (Math.abs(valNorm * 1.2) > envelope) ? "rgba(244, 63, 94, 0.6)" : "rgba(255, 255, 255, 0.25)";
+        ctx.lineWidth = (step === 0) ? 2.5 : 1;
+        ctx.stroke();
+      }
+
+      // Needle
+      const needleNorm = Math.max(-1.2, Math.min(1.2, value)) / 1.2;
+      const needleRad = Math.PI * 1.5 + needleNorm * (Math.PI * 0.35);
+      const needleLen = r + 5;
+
+      ctx.beginPath();
+      ctx.moveTo(cx, cy);
+      ctx.lineTo(cx + needleLen * Math.cos(needleRad), cy + needleLen * Math.sin(needleRad));
+      ctx.strokeStyle = (Math.abs(value) > envelope) ? "#f43f5e" : "#fbbf24";
+      ctx.lineWidth = 3;
+      ctx.stroke();
+
+      // Pivot
+      ctx.beginPath();
+      ctx.arc(cx, cy, 7, 0, Math.PI * 2);
+      ctx.fillStyle = "#334155";
+      ctx.fill();
+      ctx.strokeStyle = "#e2e8f0";
+      ctx.lineWidth = 2;
+      ctx.stroke();
+    }
+
+    // Phase Space Canvas
+    function drawPhaseSpace() {
+      const cvs = document.getElementById("canvas-phase");
+      if (!cvs) return;
+      const ctx = cvs.getContext("2d");
+      const w = cvs.width;
+      const h = cvs.height;
+
+      // Dark background with decay trail
+      ctx.fillStyle = "rgba(6, 8, 13, 0.15)";
+      ctx.fillRect(0, 0, w, h);
+
+      const cx = w / 2;
+      const cy = h / 2;
+      const scale = (h / 2) * 0.75;
+
+      // Draw Viability Box
+      const boxW = envelopeThreshold * scale * 2;
+      const boxH = envelopeThreshold * scale * 2;
+      ctx.strokeStyle = "rgba(16, 185, 129, 0.3)";
+      ctx.lineWidth = 1;
+      ctx.strokeRect(cx - boxW / 2, cy - boxH / 2, boxW, boxH);
+
+      // Axes
+      ctx.strokeStyle = "rgba(255, 255, 255, 0.08)";
+      ctx.beginPath();
+      ctx.moveTo(0, cy); ctx.lineTo(w, cy);
+      ctx.moveTo(cx, 0); ctx.lineTo(cx, h);
+      ctx.stroke();
+
+      // Trace
+      if (phaseHistory.length > 1) {
+        ctx.beginPath();
+        for (let i = 0; i < phaseHistory.length; i++) {
+          const pt = phaseHistory[i];
+          const px = cx + pt[0] * scale;
+          const py = cy - pt[1] * scale;
+          if (i === 0) ctx.moveTo(px, py);
+          else ctx.lineTo(px, py);
+        }
+        ctx.strokeStyle = "rgba(56, 189, 248, 0.7)";
+        ctx.lineWidth = 1.8;
+        ctx.stroke();
+
+        // Current head
+        const head = phaseHistory[phaseHistory.length - 1];
+        const hx = cx + head[0] * scale;
+        const hy = cy - head[1] * scale;
+        ctx.beginPath();
+        ctx.arc(hx, hy, 4, 0, Math.PI * 2);
+        ctx.fillStyle = (Math.abs(head[0]) > envelopeThreshold || Math.abs(head[1]) > envelopeThreshold) ? "#f43f5e" : "#fbbf24";
+        ctx.fill();
+      }
+    }
+
+    // Telemetry Logger
+    function logEvent(msg, type = "normal") {
+      const stream = document.getElementById("telemetry-log-stream");
+      const div = document.createElement("div");
+      div.className = `log-entry ${type}`;
+      const now = new Date();
+      const timeStr = `[${String(now.getHours()).padStart(2, "0")}:${String(now.getMinutes()).padStart(2, "0")}:${String(now.getSeconds()).padStart(2, "0")}.${String(Math.floor(now.getMilliseconds() / 10)).padStart(2, "0")}]`;
+      div.innerHTML = `<span class="time">${timeStr}</span> ${msg}`;
+      stream.prepend(div);
+
+      // Keep max 50 entries
+      while (stream.children.length > 50) {
+        stream.removeChild(stream.lastChild);
+      }
+    }
+
+    // Animation Loop
+    function loop() {
+      stepSimulation();
+
+      // Draw all 4 dials
+      for (let i = 0; i < 4; i++) {
+        drawDial(`canvas-dial-${i}`, x[i], envelopeThreshold, `Unit ${i+1}`);
+      }
+
+      // Draw Phase Space
+      drawPhaseSpace();
+
+      requestAnimationFrame(loop);
+    }
+
+    // Initialization
+    renderMatrix();
+    logEvent("Apparatus 006 (The Autonomous Homeostat) initialized.", "stable-event");
+    logEvent("Ultrastability parameters mapped: viability envelope ±0.55, 4 essential variables.", "normal");
+    requestAnimationFrame(loop);
+  </script>
+</body>
+</html>

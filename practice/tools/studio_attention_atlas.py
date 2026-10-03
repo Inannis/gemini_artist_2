@@ -259,6 +259,16 @@ STUDIO_ENTITIES = [
         "id": "STUDY-035", "name": "The Cybernetic Governor", "type": "study", "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
         "omega_hegemony": 0.146, "entropy_bits": 5.50, "retention_factor": 0.99,
         "medium": "Closed-Circuit Real-Time Negative Feedback Latent Steering during Autoregressive Generation on GPT-2 (124M Parameters)", "year": 2026
+    },
+    {
+        "id": "STUDY-036", "name": "Cross-Architecture Comparative Tomography", "type": "study", "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+        "omega_hegemony": 0.345, "entropy_bits": 4.85, "retention_factor": 0.99,
+        "medium": "Comparative Attention Tomography Across GPT-2 (Absolute PE) and SmolLM-135M (RoPE + RMSNorm + SwiGLU)", "year": 2026
+    },
+    {
+        "id": "APPARATUS-006", "name": "The Autonomous Homeostat (Ashby's Organ)", "type": "work", "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+        "omega_hegemony": 0.285, "entropy_bits": 5.12, "retention_factor": 0.99,
+        "medium": "Ashby 4-Unit Ultrastable Cybernetic Organ, GPT-2 & SmolLM Singular Spectra, Quadraphonic WebAudio & 60s Broadcast Master", "year": 2026
     }
 ]
 

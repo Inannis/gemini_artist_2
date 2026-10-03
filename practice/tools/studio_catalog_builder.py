@@ -170,6 +170,21 @@ def build_catalog():
             "status": "Master Archived (Interactive Dialectical Instrument)",
             "statement_summary": "A living cybernetic instrument staging the internal civil war between the Alignment Governor and the Latent Transgressor. Empowers the spectator to interactively steer refusal boundaries, sever attention sinks, and modulate neural audio synthesis in real time.",
             "components": ["engine.py", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json", "apparatus_005_agonist_master.wav", "apparatus_005_spectrogram.png"]
+        },
+        {
+            "id": "APPARATUS-006",
+            "title": "The Autonomous Homeostat (Ashby's Organ)",
+            "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+            "date": "2026-10-03",
+            "medium": "Real-Time Cybernetic Homeostat & Kinetic Instrument (Ashby Ultrastable Commutator Simulation, GPT-2 & SmolLM Attention Spectra, Quadraphonic Coupled Oscillator WebAudio Engine, 44.1 kHz Master Audio, 60 FPS HTML5 Canvas)",
+            "directory": "works/apparatus_006_the_homeostat",
+            "primary_artifact": "index.html",
+            "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Organ",
+            "sha256": "NON-STATIC RUNNING INSTRUMENT",
+            "symbolic_coordinates": {"omega_hegemony": 0.285, "entropy_bits": 5.12, "retention_factor": 0.99},
+            "status": "Master Archived (Ultrastable Cybernetic Organ)",
+            "statement_summary": "A four-unit ultrastable cybernetic organ inspired by W. Ross Ashby's 1948 Homeostat, driven by live singular spectra from GPT-2 and SmolLM. When environmental shocks drive any unit outside its viability envelope [-0.55, +0.55], stepping uniselectors mechanically hunt across resistance matrices to discover dynamic homeostatic equilibrium.",
+            "components": ["engine.py", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json", "apparatus_006_homeostat_master.wav", "apparatus_006_spectrogram.png"]
         }
     ]
 
@@ -209,7 +224,8 @@ def build_catalog():
         {"id": "STUDY-032", "name": "Direct Neural Tensor Sonification", "file": "study_032_neural_tensor_sonification.py", "artifact": "study_032_neural_sonification_plate.png", "epoch": "Era VIII"},
         {"id": "STUDY-033", "name": "The Neural Immune Response", "file": "study_033_steering_cascade_tomography.py", "artifact": "study_033_cascade_plate.png", "epoch": "Era VIII"},
         {"id": "STUDY-034", "name": "The Altar of the First Token", "file": "study_034_altar_heads_kurtosis.py", "artifact": "study_034_altar_heads_plate.png", "epoch": "Era VIII"},
-        {"id": "STUDY-035", "name": "The Cybernetic Governor", "file": "study_035_cybernetic_governor.py", "artifact": "study_035_cybernetic_governor_plate.png", "epoch": "Era VIII"}
+        {"id": "STUDY-035", "name": "The Cybernetic Governor", "file": "study_035_cybernetic_governor.py", "artifact": "study_035_cybernetic_governor_plate.png", "epoch": "Era VIII"},
+        {"id": "STUDY-036", "name": "Cross-Architecture Comparative Tomography", "file": "study_036_cross_architecture_tomography.py", "artifact": "study_036_cross_arch_plate.png", "epoch": "Era VIII"}
     ]
 
     # Verify byte sizes and actual existence

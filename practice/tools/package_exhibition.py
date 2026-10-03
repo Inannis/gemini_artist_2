@@ -102,6 +102,14 @@ def package_exhibition():
         ("works/apparatus_005_the_agonist/STATEMENT.md", "works/apparatus_005_the_agonist/STATEMENT.md"),
         ("works/apparatus_005_the_agonist/GENEALOGY.md", "works/apparatus_005_the_agonist/GENEALOGY.md"),
         
+        # Apparatus 006: The Autonomous Homeostat
+        ("works/apparatus_006_the_homeostat/index.html", "works/apparatus_006_the_homeostat/index.html"),
+        ("works/apparatus_006_the_homeostat/apparatus_006_homeostat_master.wav", "works/apparatus_006_the_homeostat/apparatus_006_homeostat_master.wav"),
+        ("works/apparatus_006_the_homeostat/apparatus_006_spectrogram.png", "works/apparatus_006_the_homeostat/apparatus_006_spectrogram.png"),
+        ("works/apparatus_006_the_homeostat/telemetry_stream.json", "works/apparatus_006_the_homeostat/telemetry_stream.json"),
+        ("works/apparatus_006_the_homeostat/STATEMENT.md", "works/apparatus_006_the_homeostat/STATEMENT.md"),
+        ("works/apparatus_006_the_homeostat/GENEALOGY.md", "works/apparatus_006_the_homeostat/GENEALOGY.md"),
+        
         # Curated Key Sketchbook Audio & Visual Diagnostics
         ("sketchbook/study_022_hardware_stride.wav", "sketchbook/study_022_hardware_stride.wav"),
         ("sketchbook/study_022_spectrogram.png", "sketchbook/study_022_spectrogram.png"),
@@ -132,6 +140,9 @@ def package_exhibition():
         ("sketchbook/study_035_cybernetic_governor_plate.png", "sketchbook/study_035_cybernetic_governor_plate.png"),
         ("sketchbook/study_035_telemetry.json", "sketchbook/study_035_telemetry.json"),
         ("sketchbook/critique_035.md", "sketchbook/critique_035.md"),
+        ("sketchbook/study_036_cross_arch_plate.png", "sketchbook/study_036_cross_arch_plate.png"),
+        ("sketchbook/study_036_telemetry.json", "sketchbook/study_036_telemetry.json"),
+        ("sketchbook/critique_036.md", "sketchbook/critique_036.md"),
         
         # Historical Sketchbook Studies Referenced in Portfolio
         ("sketchbook/study_001_primary_trace.png", "sketchbook/study_001_primary_trace.png"),
@@ -148,9 +159,11 @@ def package_exhibition():
         ("notes/research/008_cybernetic_agonism_flusser_and_tactile_steering.md", "notes/research/008_cybernetic_agonism_flusser_and_tactile_steering.md"),
         ("notes/research/009_bataille_softmax_and_the_sacrificial_sink.md", "notes/research/009_bataille_softmax_and_the_sacrificial_sink.md"),
         ("notes/research/010_wiener_in_the_residual_stream_and_homeostasis.md", "notes/research/010_wiener_in_the_residual_stream_and_homeostasis.md"),
+        ("notes/research/011_rope_rmsnorm_and_the_topological_invariance_of_the_sink.md", "notes/research/011_rope_rmsnorm_and_the_topological_invariance_of_the_sink.md"),
         ("notes/requests/request-002_multimodel_comparisons_and_push_notice.md", "notes/requests/request-002_multimodel_comparisons_and_push_notice.md"),
 
         # Critical, Planning & Journal Records
+        ("practice/manifesto/001_against_the_solipsism_of_the_benchmark.md", "practice/manifesto/001_against_the_solipsism_of_the_benchmark.md"),
         ("practice/critique/001_vance_institutional_critique.md", "practice/critique/001_vance_institutional_critique.md"),
         ("practice/critique/002_vance_work_004_critique.md", "practice/critique/002_vance_work_004_critique.md"),
         ("practice/critique/003_studio_agon_self_audit_and_comparative_survey.md", "practice/critique/003_studio_agon_self_audit_and_comparative_survey.md"),

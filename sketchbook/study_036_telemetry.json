@@ -1,0 +1,24 @@
+{
+  "study": "036",
+  "title": "Cross-Architecture Comparative Tomography",
+  "date": "2026-10-03",
+  "architectures_compared": [
+    "GPT-2 (124M)",
+    "SmolLM-135M (RoPE + RMSNorm)"
+  ],
+  "gpt2": {
+    "total_heads": 144,
+    "max_sink": 0.9828367829322815,
+    "mean_sink": 0.4349230492100765,
+    "altar_heads_count": 129,
+    "loss_surge": 0.7701382637023926
+  },
+  "smollm": {
+    "total_heads": 270,
+    "max_sink": 1.0,
+    "mean_sink": 0.34466401054771806,
+    "altar_heads_count": 223,
+    "loss_surge": 0.01367044448852539
+  },
+  "conclusion": "The Attention Sink is topologically invariant across positional encodings. RoPE does not eliminate the sacrificial altar."
+}

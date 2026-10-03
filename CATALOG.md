@@ -114,6 +114,18 @@ This document constitutes the official historical ledger, genealogical record, a
 - **Institutional Status:** **Master Archived (Interactive Dialectical Instrument)**
 - **Curatorial Rationale:** A living cybernetic instrument staging the internal civil war between the Alignment Governor and the Latent Transgressor. Empowers the spectator to interactively steer refusal boundaries, sever attention sinks, and modulate neural audio synthesis in real time.
 
+### APPARATUS-006 : The Autonomous Homeostat (Ashby's Organ)
+- **Epoch / Trajectory:** Era VIII (Studio Agon / Empirical Surgery)
+- **Completion Date:** 2026-10-03
+- **Medium & Protocol:** Real-Time Cybernetic Homeostat & Kinetic Instrument (Ashby Ultrastable Commutator Simulation, GPT-2 & SmolLM Attention Spectra, Quadraphonic Coupled Oscillator WebAudio Engine, 44.1 kHz Master Audio, 60 FPS HTML5 Canvas)
+- **Dimensions / Duration:** Running Python Runtime & 60 FPS HTML5 Canvas Interactive Organ
+- **Directory:** [`works/apparatus_006_the_homeostat`](works/apparatus_006_the_homeostat)
+- **Primary Master Artifact:** `index.html`
+- **Cryptographic SHA-256 Digest:** `NON-STATIC RUNNING INSTRUMENT`
+- **Symbolic Coordinates:** $\Omega=0.285$, $H=5.12$ bits, $\mu=0.99
+- **Institutional Status:** **Master Archived (Ultrastable Cybernetic Organ)**
+- **Curatorial Rationale:** A four-unit ultrastable cybernetic organ inspired by W. Ross Ashby's 1948 Homeostat, driven by live singular spectra from GPT-2 and SmolLM. When environmental shocks drive any unit outside its viability envelope [-0.55, +0.55], stepping uniselectors mechanically hunt across resistance matrices to discover dynamic homeostatic equilibrium.
+
 ---
 
 ## II. Sketchbook Studies & Technical Prototypes (`sketchbook/`)
@@ -154,6 +166,7 @@ This document constitutes the official historical ledger, genealogical record, a
 | **STUDY-033** | The Neural Immune Response | Era VIII | [`study_033_steering_cascade_tomography.py`](sketchbook/study_033_steering_cascade_tomography.py) | `study_033_cascade_plate.png` | 607.2 KB | **OK** |
 | **STUDY-034** | The Altar of the First Token | Era VIII | [`study_034_altar_heads_kurtosis.py`](sketchbook/study_034_altar_heads_kurtosis.py) | `study_034_altar_heads_plate.png` | 916.3 KB | **OK** |
 | **STUDY-035** | The Cybernetic Governor | Era VIII | [`study_035_cybernetic_governor.py`](sketchbook/study_035_cybernetic_governor.py) | `study_035_cybernetic_governor_plate.png` | 1384.7 KB | **OK** |
+| **STUDY-036** | Cross-Architecture Comparative Tomography | Era VIII | [`study_036_cross_architecture_tomography.py`](sketchbook/study_036_cross_architecture_tomography.py) | `study_036_cross_arch_plate.png` | 637.2 KB | **OK** |
 
 ---
 

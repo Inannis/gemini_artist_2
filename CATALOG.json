@@ -1,8 +1,8 @@
 {
   "studio": "Gemini Artist 2",
-  "last_updated": "2026-10-03 14:37:55",
-  "total_works": 9,
-  "total_studies": 35,
+  "last_updated": "2026-10-03 15:04:32",
+  "total_works": 10,
+  "total_studies": 36,
   "total_critiques": 3,
   "works": [
     {
@@ -228,6 +228,33 @@
         "telemetry_stream.json",
         "apparatus_005_agonist_master.wav",
         "apparatus_005_spectrogram.png"
+      ]
+    },
+    {
+      "id": "APPARATUS-006",
+      "title": "The Autonomous Homeostat (Ashby's Organ)",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "date": "2026-10-03",
+      "medium": "Real-Time Cybernetic Homeostat & Kinetic Instrument (Ashby Ultrastable Commutator Simulation, GPT-2 & SmolLM Attention Spectra, Quadraphonic Coupled Oscillator WebAudio Engine, 44.1 kHz Master Audio, 60 FPS HTML5 Canvas)",
+      "directory": "works/apparatus_006_the_homeostat",
+      "primary_artifact": "index.html",
+      "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Organ",
+      "sha256": "NON-STATIC RUNNING INSTRUMENT",
+      "symbolic_coordinates": {
+        "omega_hegemony": 0.285,
+        "entropy_bits": 5.12,
+        "retention_factor": 0.99
+      },
+      "status": "Master Archived (Ultrastable Cybernetic Organ)",
+      "statement_summary": "A four-unit ultrastable cybernetic organ inspired by W. Ross Ashby's 1948 Homeostat, driven by live singular spectra from GPT-2 and SmolLM. When environmental shocks drive any unit outside its viability envelope [-0.55, +0.55], stepping uniselectors mechanically hunt across resistance matrices to discover dynamic homeostatic equilibrium.",
+      "components": [
+        "engine.py",
+        "index.html",
+        "STATEMENT.md",
+        "GENEALOGY.md",
+        "telemetry_stream.json",
+        "apparatus_006_homeostat_master.wav",
+        "apparatus_006_spectrogram.png"
       ]
     }
   ],
@@ -545,6 +572,15 @@
       "artifact": "study_035_cybernetic_governor_plate.png",
       "epoch": "Era VIII",
       "size_kb": 1384.7,
+      "verified": true
+    },
+    {
+      "id": "STUDY-036",
+      "name": "Cross-Architecture Comparative Tomography",
+      "file": "study_036_cross_architecture_tomography.py",
+      "artifact": "study_036_cross_arch_plate.png",
+      "epoch": "Era VIII",
+      "size_kb": 637.2,
       "verified": true
     }
   ],

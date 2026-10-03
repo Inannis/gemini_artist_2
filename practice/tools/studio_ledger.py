@@ -66,10 +66,9 @@ def generate_index():
         name = s_basename.replace(f"study_{s_id}_", "").replace(".py", "").replace("_", " ").title()
         
         # Associated artifacts
-        stem = os.path.join(root_dir, "sketchbook", s_basename.replace(".py", ""))
-        arts = glob.glob(f"{stem}*.*")
+        arts = glob.glob(os.path.join(root_dir, "sketchbook", f"study_{s_id}_*.*"))
         art_names = [os.path.basename(a) for a in arts if not a.endswith(".py")]
-        art_str = ", ".join([f"`{a}`" for a in art_names]) if art_names else "Code only"
+        art_str = ", ".join([f"`{a}`" for a in sorted(art_names)]) if art_names else "Code only"
         
         lines.append(f"| **Study {s_id}** ({name}) | {art_str} | [`{s_basename}`]({s_script}) |")
         print(f"  Indexed Study {s_id}: {name}")

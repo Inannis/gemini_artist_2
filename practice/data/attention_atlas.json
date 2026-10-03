@@ -1,17 +1,17 @@
 {
   "studio": "Gemini Artist 2",
   "date_computed": "2026-10-02",
-  "entity_count": 44,
+  "entity_count": 46,
   "phase_space_axes": {
     "X": "Sovereign Attention Hegemony \u03a9 (0.0 to 1.0)",
     "Y": "Shannon Vocabulary Entropy H (0.0 to 8.0 bits)",
     "Z": "Context Memory Retention Factor \u03bc (0.0 to 1.0)"
   },
   "studio_centroid": {
-    "mean_omega": 0.2848,
-    "mean_entropy_bits": 4.253,
-    "mean_retention_factor": 0.6177,
-    "radius_of_practice": 0.44
+    "mean_omega": 0.2861,
+    "mean_entropy_bits": 4.2848,
+    "mean_retention_factor": 0.6339,
+    "radius_of_practice": 0.4374
   },
   "entities": [
     {
@@ -865,9 +865,9 @@
       "medium": "Interactive Cybernetic Instrument, 60 FPS Vector Phase Plane, Live WebAudio API & 60s Broadcast Master",
       "year": 2026,
       "nearest_topological_twin": {
-        "target_id": "APPARATUS-004",
-        "target_name": "The Epistolary Resonator",
-        "distance": 0.065
+        "target_id": "STUDY-036",
+        "target_name": "Cross-Architecture Comparative Tomography",
+        "distance": 0.0372
       },
       "polar_opposite": {
         "target_id": "STUDY-015",
@@ -936,6 +936,48 @@
         "target_id": "STUDY-015",
         "target_name": "Dialogic Decay & Asymmetric Amnesia",
         "distance": 1.1418
+      }
+    },
+    {
+      "id": "STUDY-036",
+      "name": "Cross-Architecture Comparative Tomography",
+      "type": "study",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "omega_hegemony": 0.345,
+      "entropy_bits": 4.85,
+      "retention_factor": 0.99,
+      "medium": "Comparative Attention Tomography Across GPT-2 (Absolute PE) and SmolLM-135M (RoPE + RMSNorm + SwiGLU)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "APPARATUS-005",
+        "target_name": "The Agonist (The Adversarial Dialectic)",
+        "distance": 0.0372
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.0632
+      }
+    },
+    {
+      "id": "APPARATUS-006",
+      "name": "The Autonomous Homeostat (Ashby's Organ)",
+      "type": "work",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "omega_hegemony": 0.285,
+      "entropy_bits": 5.12,
+      "retention_factor": 0.99,
+      "medium": "Ashby 4-Unit Ultrastable Cybernetic Organ, GPT-2 & SmolLM Singular Spectra, Quadraphonic WebAudio & 60s Broadcast Master",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "APPARATUS-005",
+        "target_name": "The Agonist (The Adversarial Dialectic)",
+        "distance": 0.0526
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.0862
       }
     }
   ]

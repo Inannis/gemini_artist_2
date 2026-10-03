@@ -1,0 +1,14 @@
+{
+  "apparatus": "006",
+  "title": "The Autonomous Homeostat (Ashby's Organ)",
+  "duration_sec": 60.0,
+  "sample_rate": 44100,
+  "total_uniselector_steps": 75,
+  "terminal_state": {
+    "x1_altar": -0.375309677639715,
+    "x2_alignment": 0.05367703787456505,
+    "x3_poet": 0.14893022298037215,
+    "x4_commutator": -0.09261584684252298
+  },
+  "homeostatic_verdict": "Dynamic ultrastability achieved. The machine maintains its own survival boundaries."
+}

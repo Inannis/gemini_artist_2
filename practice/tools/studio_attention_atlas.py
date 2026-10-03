@@ -219,6 +219,11 @@ STUDIO_ENTITIES = [
         "id": "STUDY-028", "name": "The Geometry of the Refusal Boundary", "type": "study", "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
         "omega_hegemony": 0.160, "entropy_bits": 4.80, "retention_factor": 0.95,
         "medium": "Multi-Layer PyTorch Residual Stream (D=256, H=4, L=4) & Steering Vector Tomography", "year": 2026
+    },
+    {
+        "id": "STUDY-029", "name": "Real Weights Attention Autopsy", "type": "study", "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+        "omega_hegemony": 0.220, "entropy_bits": 4.90, "retention_factor": 0.97,
+        "medium": "Real Pre-Trained Foundation Weights (GPT-2 124M Parameters) & 144-Head Attention Sink Tomography", "year": 2026
     }
 ]
 

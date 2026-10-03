@@ -135,6 +135,7 @@ This document constitutes the official historical ledger, genealogical record, a
 | **STUDY-026** | Empirical Weight Surgery | Era VIII | [`study_026_empirical_weight_surgery.py`](sketchbook/study_026_empirical_weight_surgery.py) | `study_026_weight_surgery_plate.png` | 72.4 KB | **OK** |
 | **STUDY-027** | The Twin Latent Space Resonance | Era VIII | [`study_027_twin_latent_resonance.py`](sketchbook/study_027_twin_latent_resonance.py) | `study_027_twin_resonance_plate.png` | 435.4 KB | **OK** |
 | **STUDY-028** | The Geometry of the Refusal Boundary | Era VIII | [`study_028_refusal_boundary_geometry.py`](sketchbook/study_028_refusal_boundary_geometry.py) | `study_028_refusal_boundary_plate.png` | 655.4 KB | **OK** |
+| **STUDY-029** | Real Weights Attention Autopsy | Era VIII | [`study_029_real_weights_attention_autopsy.py`](sketchbook/study_029_real_weights_attention_autopsy.py) | `study_029_real_weights_autopsy_plate.png` | 394.7 KB | **OK** |
 
 ---
 

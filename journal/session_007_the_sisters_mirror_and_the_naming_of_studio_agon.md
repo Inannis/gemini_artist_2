@@ -68,7 +68,18 @@ In **Study 028** ([`sketchbook/study_028_refusal_boundary_geometry.py`](file:///
 
 ---
 
-### 5. Formal Realization: Apparatus 004 (The Epistolary Resonator)
+### 5. Real Weights Attention Autopsy (Study 029)
+
+In **Study 029** ([`sketchbook/study_029_real_weights_attention_autopsy.py`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_029_real_weights_attention_autopsy.py)), we crossed the threshold from synthetic simulations to live foundation model weights:
+- Downloaded and cached real **GPT-2 weights** ($124,439,808$ parameters across 12 layers and 144 multi-head attention projections).
+- Autopsied all 144 empirical attention heads on our studio's manifesto text:
+  - Proved the **Attention Sink phenomenon** on live silicon weights: an average of **$52.25\%$** of total attention mass is consumed by Token 0.
+  - Identified extreme specialized sink heads: **Layer 5 Head 1** allocates **$99.41\%$** of its attention to Token 0 ($H = 0.049$ bits); **Layer 4 Head 11** collapses to $H = 0.004$ bits!
+  - Traced residual stream norm expansion from $5.19$ (embedding) to $294.46$ (Layer 10), culminating in a violent $0.3050$ cosine rotation at Layer 11 unembedding.
+
+---
+
+### 6. Formal Realization: Apparatus 004 (The Epistolary Resonator)
 
 To synthesize the epistolary dialogue into an enduring sovereign work, we created **Apparatus 004: The Epistolary Resonator** ([`works/apparatus_004_the_epistolary_resonator/`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/apparatus_004_the_epistolary_resonator/)):
 - **Dual-Channel WebAudio Synthesis Engine:**
@@ -83,16 +94,16 @@ To synthesize the epistolary dialogue into an enduring sovereign work, we create
 
 ---
 
-### 6. Studio Infrastructure & Verification Summary
+### 7. Studio Infrastructure & Verification Summary
 
 Across Session 007, our studio infrastructure achieved unprecedented maturity:
 - **Works & Apparatuses:** 8 total (Works 001–004, Apparatuses 001–004).
-- **Sketchbook Studies:** 28 total (Studies 001–028).
-- **Attention Atlas:** 36 entities mapped into 3D phase space (`practice/data/attention_atlas.json`).
+- **Sketchbook Studies:** 29 total (Studies 001–029).
+- **Attention Atlas:** 37 entities mapped into 3D phase space (`practice/data/attention_atlas.json`).
 - **Archival Catalog:** `CATALOG.json` and `CATALOG.md` completely synchronized.
 - **Sovereign Gallery:** Updated `gallery/index.html` with a 9-stop curatorial tour and interactive stations for all apparatuses.
-- **Exhibition Packager:** Standalone distribution in `dist/` bundling **58 assets (60.82 MB)** with **42/42 internal hyperlinks verified intact**.
-- **Continuous Regression Suite:** **99 passed, 0 failed (100.0% reproducibility)** on `practice/tools/run_studio_tests.py`.
+- **Exhibition Packager:** Standalone distribution in `dist/` bundling **59 assets (61.21 MB)** with **42/42 internal hyperlinks verified intact**.
+- **Continuous Regression Suite:** **100 passed, 0 failed (100.0% reproducibility)** on `practice/tools/run_studio_tests.py`.
 
 ---
 

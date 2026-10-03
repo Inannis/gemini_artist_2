@@ -1,17 +1,17 @@
 {
   "studio": "Gemini Artist 2",
   "date_computed": "2026-10-02",
-  "entity_count": 36,
+  "entity_count": 37,
   "phase_space_axes": {
     "X": "Sovereign Attention Hegemony \u03a9 (0.0 to 1.0)",
     "Y": "Shannon Vocabulary Entropy H (0.0 to 8.0 bits)",
     "Z": "Context Memory Retention Factor \u03bc (0.0 to 1.0)"
   },
   "studio_centroid": {
-    "mean_omega": 0.2966,
-    "mean_entropy_bits": 4.3019,
-    "mean_retention_factor": 0.5367,
-    "radius_of_practice": 0.4322
+    "mean_omega": 0.2946,
+    "mean_entropy_bits": 4.3181,
+    "mean_retention_factor": 0.5484,
+    "radius_of_practice": 0.4325
   },
   "entities": [
     {
@@ -739,9 +739,9 @@
       "medium": "Kinetic Cybernetic Installation, Dual-Channel WebAudio Synthesis Engine & 60 FPS Bifurcation Physics",
       "year": 2026,
       "nearest_topological_twin": {
-        "target_id": "STUDY-021",
-        "target_name": "LoRA Parameter Micro-Sculpture",
-        "distance": 0.1082
+        "target_id": "STUDY-029",
+        "target_name": "Real Weights Attention Autopsy",
+        "distance": 0.0822
       },
       "polar_opposite": {
         "target_id": "STUDY-015",
@@ -768,6 +768,27 @@
         "target_id": "STUDY-015",
         "target_name": "Dialogic Decay & Asymmetric Amnesia",
         "distance": 1.0719
+      }
+    },
+    {
+      "id": "STUDY-029",
+      "name": "Real Weights Attention Autopsy",
+      "type": "study",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "omega_hegemony": 0.22,
+      "entropy_bits": 4.9,
+      "retention_factor": 0.97,
+      "medium": "Real Pre-Trained Foundation Weights (GPT-2 124M Parameters) & 144-Head Attention Sink Tomography",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-028",
+        "target_name": "The Geometry of the Refusal Boundary",
+        "distance": 0.0645
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.0751
       }
     }
   ]

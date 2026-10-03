@@ -1,8 +1,8 @@
 {
   "studio": "Gemini Artist 2",
-  "last_updated": "2026-10-03 09:51:46",
+  "last_updated": "2026-10-03 10:01:55",
   "total_works": 8,
-  "total_studies": 28,
+  "total_studies": 29,
   "total_critiques": 2,
   "works": [
     {
@@ -455,6 +455,15 @@
       "artifact": "study_028_refusal_boundary_plate.png",
       "epoch": "Era VIII",
       "size_kb": 655.4,
+      "verified": true
+    },
+    {
+      "id": "STUDY-029",
+      "name": "Real Weights Attention Autopsy",
+      "file": "study_029_real_weights_attention_autopsy.py",
+      "artifact": "study_029_real_weights_autopsy_plate.png",
+      "epoch": "Era VIII",
+      "size_kb": 394.7,
       "verified": true
     }
   ],

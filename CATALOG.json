@@ -1,8 +1,8 @@
 {
   "studio": "Gemini Artist 2",
-  "last_updated": "2026-10-03 19:58:27",
+  "last_updated": "2026-10-03 20:02:26",
   "total_works": 12,
-  "total_studies": 40,
+  "total_studies": 41,
   "total_critiques": 4,
   "works": [
     {
@@ -671,6 +671,15 @@
       "artifact": "study_040_graphic_score.png",
       "epoch": "Era VIII",
       "size_kb": 2485.8,
+      "verified": true
+    },
+    {
+      "id": "STUDY-041",
+      "name": "The Cross-Architectural Machine Remainder",
+      "file": "study_041_cross_architectural_remainder.py",
+      "artifact": "study_041_cross_arch_remainder_plate.png",
+      "epoch": "Era VIII",
+      "size_kb": 1081.5,
       "verified": true
     }
   ],

@@ -299,6 +299,11 @@ STUDIO_ENTITIES = [
         "id": "APPARATUS-008", "name": "The Graphic Polytope (The Score of the Uninterpretable)", "type": "work", "epoch": "Era VIII (Studio Agon / Aesthetic Synthesis)",
         "omega_hegemony": 0.160, "entropy_bits": 6.05, "retention_factor": 0.99,
         "medium": "Interactive UPIC & Cardew Graphic Polytope Synthesizer, 13-Voice Real-Time WebAudio & 60s Broadcast Master", "year": 2026
+    },
+    {
+        "id": "STUDY-041", "name": "The Cross-Architectural Machine Remainder", "type": "study", "epoch": "Era VIII (Studio Agon / Aesthetic Synthesis)",
+        "omega_hegemony": 0.165, "entropy_bits": 6.12, "retention_factor": 0.99,
+        "medium": "Comparative Residual SVD & Binaural Remainder Transduction across GPT-2 and SmolLM-135M", "year": 2026
     }
 ]
 

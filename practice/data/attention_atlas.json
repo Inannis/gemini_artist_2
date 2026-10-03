@@ -1,17 +1,17 @@
 {
   "studio": "Gemini Artist 2",
   "date_computed": "2026-10-02",
-  "entity_count": 52,
+  "entity_count": 53,
   "phase_space_axes": {
     "X": "Sovereign Attention Hegemony \u03a9 (0.0 to 1.0)",
     "Y": "Shannon Vocabulary Entropy H (0.0 to 8.0 bits)",
     "Z": "Context Memory Retention Factor \u03bc (0.0 to 1.0)"
   },
   "studio_centroid": {
-    "mean_omega": 0.2755,
-    "mean_entropy_bits": 4.4552,
-    "mean_retention_factor": 0.675,
-    "radius_of_practice": 0.4321
+    "mean_omega": 0.2734,
+    "mean_entropy_bits": 4.4866,
+    "mean_retention_factor": 0.6809,
+    "radius_of_practice": 0.4313
   },
   "entities": [
     {
@@ -387,9 +387,9 @@
         "distance": 0.3902
       },
       "polar_opposite": {
-        "target_id": "APPARATUS-008",
-        "target_name": "The Graphic Polytope (The Score of the Uninterpretable)",
-        "distance": 1.1646
+        "target_id": "STUDY-041",
+        "target_name": "The Cross-Architectural Machine Remainder",
+        "distance": 1.1668
       }
     },
     {
@@ -1096,14 +1096,35 @@
       "medium": "Interactive UPIC & Cardew Graphic Polytope Synthesizer, 13-Voice Real-Time WebAudio & 60s Broadcast Master",
       "year": 2026,
       "nearest_topological_twin": {
-        "target_id": "STUDY-040",
-        "target_name": "The Machine Remainder (Generative Graphic Score)",
-        "distance": 0.0221
+        "target_id": "STUDY-041",
+        "target_name": "The Cross-Architectural Machine Remainder",
+        "distance": 0.0101
       },
       "polar_opposite": {
         "target_id": "STUDY-015",
         "target_name": "Dialogic Decay & Asymmetric Amnesia",
         "distance": 1.1646
+      }
+    },
+    {
+      "id": "STUDY-041",
+      "name": "The Cross-Architectural Machine Remainder",
+      "type": "study",
+      "epoch": "Era VIII (Studio Agon / Aesthetic Synthesis)",
+      "omega_hegemony": 0.165,
+      "entropy_bits": 6.12,
+      "retention_factor": 0.99,
+      "medium": "Comparative Residual SVD & Binaural Remainder Transduction across GPT-2 and SmolLM-135M",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "APPARATUS-008",
+        "target_name": "The Graphic Polytope (The Score of the Uninterpretable)",
+        "distance": 0.0101
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1668
       }
     }
   ]

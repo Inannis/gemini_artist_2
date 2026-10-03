@@ -259,7 +259,8 @@ def build_catalog():
         {"id": "STUDY-037", "name": "The Inter-Architectural Dialectic", "file": "study_037_inter_architectural_dialectic.py", "artifact": "study_037_inter_arch_dialectic_plate.png", "epoch": "Era VIII"},
         {"id": "STUDY-038", "name": "The Lyapunov Spectrum of Neural Dialogue", "file": "study_038_lyapunov_neural_dialogue.py", "artifact": "study_038_lyapunov_plate.png", "epoch": "Era VIII"},
         {"id": "STUDY-039", "name": "The Neural Control Voltage & MIDI Transducer", "file": "study_039_neural_midi_cv_transduction.py", "artifact": "study_039_midi_cv_plate.png", "epoch": "Era VIII"},
-        {"id": "STUDY-040", "name": "The Machine Remainder (Generative Graphic Score)", "file": "study_040_machine_remainder_graphic_score.py", "artifact": "study_040_graphic_score.png", "epoch": "Era VIII"}
+        {"id": "STUDY-040", "name": "The Machine Remainder (Generative Graphic Score)", "file": "study_040_machine_remainder_graphic_score.py", "artifact": "study_040_graphic_score.png", "epoch": "Era VIII"},
+        {"id": "STUDY-041", "name": "The Cross-Architectural Machine Remainder", "file": "study_041_cross_architectural_remainder.py", "artifact": "study_041_cross_arch_remainder_plate.png", "epoch": "Era VIII"}
     ]
 
     # Verify byte sizes and actual existence

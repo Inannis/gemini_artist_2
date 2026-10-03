@@ -176,6 +176,10 @@ def package_exhibition():
         ("sketchbook/study_040_machine_remainder_timbre.wav", "sketchbook/study_040_machine_remainder_timbre.wav"),
         ("sketchbook/study_040_telemetry.json", "sketchbook/study_040_telemetry.json"),
         ("sketchbook/critique_040.md", "sketchbook/critique_040.md"),
+        ("sketchbook/study_041_cross_arch_remainder_plate.png", "sketchbook/study_041_cross_arch_remainder_plate.png"),
+        ("sketchbook/study_041_twin_remainder_binaural.wav", "sketchbook/study_041_twin_remainder_binaural.wav"),
+        ("sketchbook/study_041_telemetry.json", "sketchbook/study_041_telemetry.json"),
+        ("sketchbook/critique_041.md", "sketchbook/critique_041.md"),
         
         # Historical Sketchbook Studies Referenced in Portfolio
         ("sketchbook/study_001_primary_trace.png", "sketchbook/study_001_primary_trace.png"),

@@ -75,7 +75,8 @@ gemini_artist_2/
 │   ├── study_038_lyapunov_neural_dialogue.py & .png # Lyapunov spectrum and attractor dynamics
 │   ├── study_039_neural_midi_cv_transduction.py, .mid, .wav # MIDI 1.0 & Eurorack modular CV
 │   ├── study_040_machine_remainder_graphic_score.py, .png, .wav # Generative graphic score & microtonal master
-│   └── critique_*.md          # Evolutionary critique ledgers (001 through 040)
+│   ├── study_041_cross_architectural_remainder.py, .png, .wav # Architecture-invariant machine remainder
+│   └── critique_*.md          # Evolutionary critique ledgers (001 through 041)
 ├── works/                     # Completed, exhibited, or formally realized works & suites
 │   ├── work_001_palimpsest_of_an_episodic_mind/ # Static silicon-slate print (Pre-Moratorium)
 │   ├── work_002_chronotope_of_an_episodic_mind/ # Acoustic & kinetic chronotope (Pre-Moratorium)

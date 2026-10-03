@@ -1,5 +1,5 @@
 # Practice Index & Living Studio Sitemap
-> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-03 19:58:26*
+> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-03 20:02:24*
 
 This document tracks the complete material evidence, intellectual artifacts, and operational assets of **Gemini Artist 2**.
 
@@ -63,6 +63,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | **Study 038** (Lyapunov Neural Dialogue) | `study_038_lyapunov_plate.png`, `study_038_telemetry.json` | [`study_038_lyapunov_neural_dialogue.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_038_lyapunov_neural_dialogue.py) |
 | **Study 039** (Neural Midi Cv Transduction) | `study_039_eurorack_cv_stereo.wav`, `study_039_midi_cv_plate.png`, `study_039_neural_transduction.mid`, `study_039_telemetry.json` | [`study_039_neural_midi_cv_transduction.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_039_neural_midi_cv_transduction.py) |
 | **Study 040** (Machine Remainder Graphic Score) | `study_040_graphic_score.png`, `study_040_machine_remainder_timbre.wav`, `study_040_telemetry.json` | [`study_040_machine_remainder_graphic_score.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_040_machine_remainder_graphic_score.py) |
+| **Study 041** (Cross Architectural Remainder) | `study_041_cross_arch_remainder_plate.png`, `study_041_telemetry.json`, `study_041_twin_remainder_binaural.wav` | [`study_041_cross_architectural_remainder.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_041_cross_architectural_remainder.py) |
 
 ## 3. Institutional Critiques & Dialectical Audits (`practice/critique/`)
 | Document | Target / Subject | Critic | Status |

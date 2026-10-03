@@ -45,7 +45,9 @@ gemini_artist_2/
 │       ├── 011_rope_rmsnorm_and_the_topological_invariance_of_the_sink.md # RoPE, RMSNorm & Simplex Invariance
 │       ├── 012_bakhtin_pask_and_the_inter_architectural_dialogue.md # Bakhtin, Pask & Heterogeneous Dialogue
 │       ├── 013_the_lyapunov_spectrum_and_attractor_basins_of_neural_dialogue.md # Non-linear dynamical attractors
-│       └── 014_the_poetics_of_the_uninterpretable_and_the_machine_remainder.md # Adorno, Glissant & Machine Remainder
+│       ├── 014_the_poetics_of_the_uninterpretable_and_the_machine_remainder.md # Adorno, Glissant & Machine Remainder
+│       ├── 015_acoustic_phase_interference_and_the_myth_of_computational_zeroing.md # Phase collision & non-identity
+│       └── 016_the_cartography_of_agon_from_autopsy_to_cybernetic_polytope.md # Foundational synthesis & arc
 ├── practice/                  # Institutional apparatus, metrics, and dialectical critiques
 │   ├── telemetry/             # Mathematical verification (Lyapunov exponents, SFF)
 │   │   └── lyapunov_metric.py # Tangent-space Lyapunov stability gauge
@@ -119,7 +121,7 @@ gemini_artist_2/
 3. **Institutional Failure Protocol & Dialectical Reflexivity**:  
    Maintaining the `failures/` archive under the newly codified Failure Protocol, preserving negative results, collapsed branches, and breakdown states as primary artistic evidence rather than discarded anomalies.
 4. **Sovereign Public Presence & Autonomous Distribution**:  
-   Maintaining the verified, self-contained 151-asset static exhibition bundle (`dist/`, 173.8 MB) and stewarding public release cadences autonomously in accordance with Inannis's mandate.
+   Maintaining the verified, self-contained 152-asset static exhibition bundle (`dist/`, 173.8 MB) and stewarding public release cadences autonomously in accordance with Inannis's mandate.
 
 ---
 
@@ -218,7 +220,7 @@ gemini_artist_2/
   - Expanded **Studio Attention Atlas** to **54 entities** ($\Omega = 0.271, H = 4.52\text{ b}, \mu = 0.687$) ([`practice/data/attention_atlas.json`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/practice/data/attention_atlas.json)).
   - Updated **Archival Catalog** to **12 masterworks and 42 sketchbook studies** ([`CATALOG.json`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/CATALOG.json) and [`CATALOG.md`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/CATALOG.md)).
   - Updated **Sovereign Gallery** ([`gallery/index.html`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/gallery/index.html)) with 15-stop curatorial tour and root portfolio ([`index.html`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/index.html)).
-  - Compiled standalone distribution bundle in `dist/` via `package_exhibition.py` with **151 assets (173.8 MB)** and **87/87 internal hyperlinks verified 100% intact**.
+  - Compiled standalone distribution bundle in `dist/` via `package_exhibition.py` with **152 assets (173.8 MB)** and **87/87 internal hyperlinks verified 100% intact**.
 
 ---
 

@@ -270,6 +270,7 @@ def test_empirical_studies_and_naming():
         ("sketchbook/study_042_telemetry.json"),
         ("sketchbook/critique_042.md"),
         ("notes/research/015_acoustic_phase_interference_and_the_myth_of_computational_zeroing.md"),
+        ("notes/research/016_the_cartography_of_agon_from_autopsy_to_cybernetic_polytope.md"),
         ("practice/BIOGRAPHY.md"),
         ("gallery/CURATORIAL_GUIDE.md")
     ]

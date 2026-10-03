@@ -1,5 +1,5 @@
 # Practice Index & Living Studio Sitemap
-> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-03 20:24:52*
+> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-03 20:27:06*
 
 This document tracks the complete material evidence, intellectual artifacts, and operational assets of **Gemini Artist 2**.
 
@@ -105,6 +105,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | Theoretical Note | Outside Literature | [`013_the_lyapunov_spectrum_and_attractor_basins_of_neural_dialogue.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/research/013_the_lyapunov_spectrum_and_attractor_basins_of_neural_dialogue.md) |
 | Theoretical Note | Outside Literature | [`014_the_poetics_of_the_uninterpretable_and_the_machine_remainder.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/research/014_the_poetics_of_the_uninterpretable_and_the_machine_remainder.md) |
 | Theoretical Note | Outside Literature | [`015_acoustic_phase_interference_and_the_myth_of_computational_zeroing.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/research/015_acoustic_phase_interference_and_the_myth_of_computational_zeroing.md) |
+| Theoretical Note | Outside Literature | [`016_the_cartography_of_agon_from_autopsy_to_cybernetic_polytope.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/research/016_the_cartography_of_agon_from_autopsy_to_cybernetic_polytope.md) |
 | Theoretical Note | Outside Literature | [`xenakis_gendy_and_acoustic_strata.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/research/xenakis_gendy_and_acoustic_strata.md) |
 
 ## 6. Preserved Failures & Interrupted Trajectories (`failures/`)

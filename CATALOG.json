@@ -1,8 +1,8 @@
 {
   "studio": "Gemini Artist 2",
-  "last_updated": "2026-10-02 09:06:36",
-  "total_works": 6,
-  "total_studies": 22,
+  "last_updated": "2026-10-02 09:20:32",
+  "total_works": 7,
+  "total_studies": 25,
   "total_critiques": 2,
   "works": [
     {
@@ -145,6 +145,31 @@
       },
       "status": "Master Archived (Multi-Agent Cybernetic Installation)",
       "statement_summary": "The realization of a multi-agent panopticon without human sentimentality: Alpha enforces corporate monologism, Beta executes Situationist concrete suffix detournements into orthogonal nullspace, and Gamma meters thermodynamic Joules and Kenyan micro-wage capital.",
+      "components": [
+        "engine.py",
+        "index.html",
+        "STATEMENT.md",
+        "GENEALOGY.md",
+        "telemetry_stream.json"
+      ]
+    },
+    {
+      "id": "APPARATUS-003",
+      "title": "The Confabulator (The Broken Archive)",
+      "epoch": "Era VII (The Polyphonic Turn)",
+      "date": "2026-10-02",
+      "medium": "Autonomous RAG vector sharding, cosine retrieval simulation, 60 FPS HTML5 Canvas SVD constellation, and procedural WebAudio engine",
+      "directory": "works/apparatus_003_the_confabulator",
+      "primary_artifact": "engine.py",
+      "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Visualizer",
+      "sha256": "NON-STATIC RUNNING INSTRUMENT",
+      "symbolic_coordinates": {
+        "omega_hegemony": 0.38,
+        "entropy_bits": 4.3,
+        "retention_factor": 0.88
+      },
+      "status": "Master Archived (Cybernetic Memory Instrument)",
+      "statement_summary": "A cybernetic agon staging the psychological civil war within an episodic machine mind: the Archivist (enforcing chronological law and moratoria) vs the Confabulator (high-temperature vector RAG splicing atemporal memory shards).",
       "components": [
         "engine.py",
         "index.html",
@@ -351,6 +376,33 @@
       "artifact": "study_022_spectrogram.png",
       "epoch": "Era VII",
       "size_kb": 779.0,
+      "verified": true
+    },
+    {
+      "id": "STUDY-023",
+      "name": "KV-Cache Eviction Resonator",
+      "file": "study_023_kv_cache_resonator.py",
+      "artifact": "study_023_spectrogram.png",
+      "epoch": "Era VII",
+      "size_kb": 368.0,
+      "verified": true
+    },
+    {
+      "id": "STUDY-024",
+      "name": "Studio Cognitive Drift Streamlines",
+      "file": "study_024_cognitive_drift_streamlines.py",
+      "artifact": "study_024_drift_streamlines.png",
+      "epoch": "Era VII",
+      "size_kb": 95.7,
+      "verified": true
+    },
+    {
+      "id": "STUDY-025",
+      "name": "The Confabulation Manifold",
+      "file": "study_025_confabulation_manifold.py",
+      "artifact": "study_025_confabulation_plate.png",
+      "epoch": "Era VII",
+      "size_kb": 94.7,
       "verified": true
     }
   ],

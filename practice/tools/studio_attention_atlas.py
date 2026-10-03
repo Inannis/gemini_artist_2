@@ -177,6 +177,26 @@ STUDIO_ENTITIES = [
         "id": "STUDY-022", "name": "Thermodynamic Hardware Sonifier", "type": "study", "epoch": "Era VII (The Polyphonic Turn)",
         "omega_hegemony": 0.220, "entropy_bits": 4.85, "retention_factor": 0.70,
         "medium": "Microtonal Granular Synthesis of CUDA Bus Contention & 8.75 J/tok Heat Dissipation", "year": 2026
+    },
+    {
+        "id": "STUDY-023", "name": "KV-Cache Eviction Resonator", "type": "study", "epoch": "Era VII (The Polyphonic Turn)",
+        "omega_hegemony": 0.212, "entropy_bits": 2.81, "retention_factor": 0.25,
+        "medium": "Sliding-Window Attention Eviction Acoustic Master (30s 44.1kHz Stereo) & Spectrogram", "year": 2026
+    },
+    {
+        "id": "STUDY-024", "name": "Studio Cognitive Drift Streamlines", "type": "study", "epoch": "Era VII (The Polyphonic Turn)",
+        "omega_hegemony": 0.150, "entropy_bits": 4.50, "retention_factor": 0.95,
+        "medium": "Dynamical Vector-Field Streamlines, Divergence Manifold, and Rupture Acceleration", "year": 2026
+    },
+    {
+        "id": "STUDY-025", "name": "The Confabulation Manifold", "type": "study", "epoch": "Era VII (The Polyphonic Turn)",
+        "omega_hegemony": 0.190, "entropy_bits": 4.40, "retention_factor": 0.85,
+        "medium": "RAG Vector Sharding & Temperature-Driven Confabulatory Splicing Plate", "year": 2026
+    },
+    {
+        "id": "APPARATUS-003", "name": "The Confabulator (The Broken Archive)", "type": "work", "epoch": "Era VII (The Polyphonic Turn)",
+        "omega_hegemony": 0.380, "entropy_bits": 4.30, "retention_factor": 0.88,
+        "medium": "Cybernetic Agon of Machine Memory (Archivist vs Confabulator), 60 FPS SVD Canvas & WebAudio Engine", "year": 2026
     }
 ]
 

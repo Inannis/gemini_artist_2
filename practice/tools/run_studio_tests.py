@@ -79,6 +79,12 @@ def test_master_works_integrity():
             "dir": "works/apparatus_002_the_polyphonic_interlocutor",
             "artifacts": ["engine.py", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json"],
             "sha_target": {}
+        },
+        {
+            "id": "Apparatus 003",
+            "dir": "works/apparatus_003_the_confabulator",
+            "artifacts": ["engine.py", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json"],
+            "sha_target": {}
         }
     ]
 
@@ -115,7 +121,9 @@ def test_telemetry_and_apparatus():
         "practice/telemetry/lyapunov_metric.py",
         "practice/tools/studio_ledger.py",
         "practice/tools/studio_system.py",
-        "practice/apparatus/verify_studio_apparatus.py"
+        "practice/apparatus/verify_studio_apparatus.py",
+        "practice/tools/studio_attention_atlas.py",
+        "practice/tools/package_exhibition.py"
     ]
     passed = 0
     failed = 0

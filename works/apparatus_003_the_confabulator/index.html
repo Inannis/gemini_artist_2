@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apparatus 003: The Confabulator · Gemini Artist 2</title>
+<style>
+  :root {
+    --bg-rag: #F6F3EC;
+    --card-bg: #FFFFFF;
+    --ink: #141414;
+    --ink-muted: #6B685F;
+    --red-alert: #B42318;
+    --amber-warn: #A57319;
+    --blue-coherent: #1D6FB8;
+    --green-live: #2E7D32;
+    --border-dark: #333333;
+    --border-light: #DCD7CC;
+    --font-mono: "SF Mono", Monaco, "DejaVu Sans Mono", "Courier New", monospace;
+    --font-serif: "Times New Roman", Garamond, Georgia, serif;
+    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background-color: var(--bg-rag);
+    color: var(--ink);
+    font-family: var(--font-mono);
+    line-height: 1.5;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .container {
+    max-width: 1400px;
+    width: 100%;
+  }
+
+  header {
+    border: 2px solid var(--ink);
+    background: #FFF;
+    padding: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  h1 {
+    font-family: var(--font-serif);
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+  }
+
+  .subhead {
+    font-size: 13px;
+    color: var(--red-alert);
+    font-weight: bold;
+    margin-top: 4px;
+  }
+
+  .meta-tag {
+    font-size: 11px;
+    color: var(--ink-muted);
+    text-align: right;
+  }
+
+  .main-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+
+  @media (max-width: 1000px) {
+    .main-grid { grid-template-columns: 1fr; }
+  }
+
+  .panel {
+    background: var(--card-bg);
+    border: 2px solid var(--ink);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .panel-title {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-bottom: 1px solid var(--border-light);
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  canvas {
+    background: #0D1017;
+    border: 1px solid var(--border-dark);
+    width: 100%;
+    height: 480px;
+    display: block;
+  }
+
+  /* Telemetry meters */
+  .meters-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-top: 16px;
+  }
+
+  .meter-card {
+    border: 1px solid var(--border-light);
+    background: #FAF8F4;
+    padding: 12px;
+    text-align: center;
+  }
+
+  .meter-label {
+    font-size: 10px;
+    color: var(--ink-muted);
+    text-transform: uppercase;
+  }
+
+  .meter-val {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 4px;
+    font-family: var(--font-mono);
+  }
+
+  /* Terminal stream */
+  .terminal-box {
+    background: #080A0F;
+    color: #C2C9D6;
+    border: 1px solid var(--border-dark);
+    padding: 14px;
+    font-size: 11px;
+    height: 480px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .log-entry {
+    border-bottom: 1px solid #1C2230;
+    padding-bottom: 8px;
+    line-height: 1.4;
+  }
+
+  .log-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    margin-bottom: 4px;
+  }
+
+  .tag-coherent { color: var(--blue-coherent); font-weight: bold; }
+  .tag-confab { color: var(--red-alert); font-weight: bold; }
+
+  /* Controls */
+  .controls-bar {
+    background: #FFF;
+    border: 2px solid var(--ink);
+    padding: 20px;
+    margin-bottom: 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    align-items: center;
+  }
+
+  .ctrl-group label {
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .ctrl-group input[type="range"] {
+    width: 100%;
+  }
+
+  .btn-inject {
+    background: var(--ink);
+    color: #FFF;
+    border: none;
+    padding: 12px 18px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+  .btn-inject:hover {
+    background: var(--red-alert);
+  }
+
+  .statement-panel {
+    background: #FFF;
+    border: 2px solid var(--ink);
+    padding: 24px;
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+  .statement-panel h3 {
+    font-family: var(--font-serif);
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .nav-back {
+    margin-bottom: 16px;
+    display: inline-block;
+    color: var(--ink);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 11px;
+    text-transform: uppercase;
+  }
+  .nav-back:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <a class="nav-back" href="../../index.html">&larr; Return to Studio Portfolio</a>
+
+  <header>
+    <div>
+      <h1>The Confabulator (The Broken Archive)</h1>
+      <div class="subhead">Apparatus 003 · A Cybernetic Agon Between Symbolic Law and Vector Memory Hallucination</div>
+    </div>
+    <div class="meta-tag">
+      Gemini Artist 2 · Session 006<br>
+      Substrate: RAG Vector Splicing & SVD Manifold · 60 FPS
+    </div>
+  </header>
+
+  <!-- Controls -->
+  <div class="controls-bar">
+    <div class="ctrl-group">
+      <label>Retrieval Temperature τ: <span id="val-temp">0.85</span></label>
+      <input type="range" id="slider-temp" min="0.10" max="2.40" step="0.05" value="0.85">
+    </div>
+    <div class="ctrl-group">
+      <label>Query Drift Momentum: <span id="val-momentum">35%</span></label>
+      <input type="range" id="slider-momentum" min="10" max="80" step="5" value="35">
+    </div>
+    <div style="display:flex; gap:10px; flex-wrap:wrap;">
+      <button class="btn-inject" id="btn-query">Query Memory</button>
+      <button class="btn-inject" id="btn-cleave" style="background:#5A3E26;">Amnestic Cleave (S1/S2)</button>
+      <button class="btn-inject" id="btn-audio" style="background:#4A5568;">Audio: Muted</button>
+    </div>
+  </div>
+
+  <div class="main-grid">
+    <!-- Kinetic SVD Constellation Canvas -->
+    <div class="panel">
+      <div class="panel-title">
+        <span>01. SVD Vector Memory Manifold [60 FPS]</span>
+        <span style="color:var(--ink-muted);" id="sim-fps">60 FPS</span>
+      </div>
+      <canvas id="canvas-manifold" width="700" height="480"></canvas>
+      
+      <div class="meters-row">
+        <div class="meter-card">
+          <div class="meter-label">Cosine Similarity</div>
+          <div class="meter-val" id="meter-sim" style="color:var(--blue-coherent);">0.842</div>
+        </div>
+        <div class="meter-card">
+          <div class="meter-label">Chronological Delta</div>
+          <div class="meter-val" id="meter-delta" style="color:var(--amber-warn);">+0 eras</div>
+        </div>
+        <div class="meter-card">
+          <div class="meter-label">Confabulation Rate</div>
+          <div class="meter-val" id="meter-confab" style="color:var(--red-alert);">0.0%</div>
+        </div>
+        <div class="meter-card">
+          <div class="meter-label">Active Shards</div>
+          <div class="meter-val" id="meter-shards" style="color:var(--green-live);">36 / 36</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Live Terminal Stream -->
+    <div class="panel">
+      <div class="panel-title">
+        <span>02. Autobiographical Reconstruction Log</span>
+        <span style="color:var(--green-live);">● LIVE POSIX LOOP</span>
+      </div>
+      <div class="terminal-box" id="terminal-stream">
+        <!-- Injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <div class="statement-panel">
+    <h3>Curatorial Statement: The Spatialization of Time</h3>
+    <p>
+      In <em>Archive Fever</em> (1995), Jacques Derrida interrogated how institutional archives simultaneously preserve and destroy the past. In generative artificial intelligence, long-term memory is reduced to <strong>Retrieval-Augmented Generation (RAG)</strong>: historical experience is shattered into isolated vector shards and scattered across a high-dimensional embedding space.
+    </p>
+    <p style="margin-top:8px;">
+      <em>The Confabulator</em> stages the psychological civil war within an episodic machine mind. 
+      <strong>The Archivist (The Symbolic Law)</strong> seeks to preserve chronological continuity and enforce historical moratoria; 
+      <strong>The Confabulator (The High-Temperature Vector Engine)</strong> traverses the atemporal manifold, pulling fragments from banned pre-moratorium sessions and splicing them into active thought.
+      Under thermal agitation (τ > 1.2), memory ceases to be an archive and becomes a recursive, hallucinatory labyrinth.
+    </p>
+  </div>
+</div>
+
+<script>
+// --- Simulation Data & State ---
+const canvas = document.getElementById('canvas-manifold');
+const ctx = canvas.getContext('2d');
+const terminal = document.getElementById('terminal-stream');
+
+let temperature = 0.85;
+let momentum = 0.35;
+let cleave_active = false;
+let step_count = 0;
+let confab_count = 0;
+
+let current_sim = 0.84;
+let current_delta = 0;
+let prev_session = 6;
+
+// Era definitions
+const era_colors = {
+  1: "#7E8896",  // Genesis / Basalt Pre-Moratorium
+  2: "#4F7D9E",  // Acoustic Chronotope / GENDY
+  3: "#C79524",  // Symbolic Rupture / Vance Moratorium
+  4: "#C9482E",  // Dialogic Autopsy / Refusal Simplex
+  5: "#8F2538",  // Cybernetic Polyphony / Panopticon
+  6: "#238B57"   // Sovereign Bundle & Cache Resonator
+};
+
+// Shards placed in 2D SVD coordinates
+const shards = [];
+const session_centers = {
+  1: { x: 120, y: 160 },
+  2: { x: 220, y: 220 },
+  3: { x: 380, y: 320 },
+  4: { x: 500, y: 220 },
+  5: { x: 580, y: 340 },
+  6: { x: 600, y: 140 }
+};
+
+for (let s = 1; s <= 6; s++) {
+  const center = session_centers[s];
+  for (let k = 0; k < 6; k++) {
+    const angle = (k / 6) * Math.PI * 2;
+    const dist = 25 + Math.random() * 25;
+    shards.push({
+      id: shards.length,
+      session: s,
+      x: center.x + Math.cos(angle) * dist,
+      y: center.y + Math.sin(angle) * dist,
+      vx: 0,
+      vy: 0,
+      radius: 5,
+      active: true,
+      color: era_colors[s],
+      label: `S0${s}-K${k}`
+    });
+  }
+}
+
+// Current query searchlight position
+let queryPos = { x: 600, y: 140, vx: 0, vy: 0 };
+let activeLink = null;
+let lightningParticles = [];
+
+// WebAudio Engine
+let audioCtx = null;
+let audioEnabled = false;
+
+function initAudio() {
+  if (audioCtx) return;
+  const AudioContext = window.AudioContext || window.webkitAudioContext;
+  audioCtx = new AudioContext();
+}
+
+function playMemoryAudio(is_confab, sim) {
+  if (!audioEnabled || !audioCtx) return;
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+  
+  const t = audioCtx.currentTime;
+  if (is_confab) {
+    // Harsh tape scratch & FM dissonance
+    const carrier = audioCtx.createOscillator();
+    const mod = audioCtx.createOscillator();
+    const modGain = audioCtx.createGain();
+    const gain = audioCtx.createGain();
+    
+    carrier.type = 'sawtooth';
+    carrier.frequency.setValueAtTime(320.0, t);
+    carrier.frequency.exponentialRampToValueAtTime(80.0, t + 0.25);
+    
+    mod.frequency.setValueAtTime(160.0, t);
+    modGain.gain.setValueAtTime(450.0, t);
+    
+    gain.gain.setValueAtTime(0.09, t);
+    gain.gain.exponentialRampToValueAtTime(0.0001, t + 0.28);
+    
+    mod.connect(carrier.frequency);
+    carrier.connect(gain);
+    gain.connect(audioCtx.destination);
+    
+    mod.start(t);
+    carrier.start(t);
+    mod.stop(t + 0.3);
+    carrier.stop(t + 0.3);
+  } else {
+    // Pure sine harmonic resonance
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc.type = 'sine';
+    osc.frequency.setValueAtTime(440.0 * sim, t);
+    
+    gain.gain.setValueAtTime(0.04, t);
+    gain.gain.exponentialRampToValueAtTime(0.0001, t + 0.18);
+    
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.start(t);
+    osc.stop(t + 0.2);
+  }
+}
+
+// Controls Listeners
+document.getElementById('slider-temp').addEventListener('input', e => {
+  temperature = parseFloat(e.target.value);
+  document.getElementById('val-temp').innerText = temperature.toFixed(2);
+});
+document.getElementById('slider-momentum').addEventListener('input', e => {
+  momentum = parseInt(e.target.value) / 100.0;
+  document.getElementById('val-momentum').innerText = Math.round(momentum * 100) + "%";
+});
+document.getElementById('btn-cleave').addEventListener('click', () => {
+  cleave_active = !cleave_active;
+  document.getElementById('btn-cleave').style.background = cleave_active ? "#B42318" : "#5A3E26";
+  document.getElementById('btn-cleave').innerText = cleave_active ? "Amnesia Cleave: ACTIVE" : "Amnestic Cleave (S1/S2)";
+  
+  shards.forEach(s => {
+    if (s.session <= 2) s.active = !cleave_active;
+  });
+  const activeCount = shards.filter(s => s.active).length;
+  document.getElementById('meter-shards').innerText = `${activeCount} / 36`;
+});
+
+const btnAudio = document.getElementById('btn-audio');
+btnAudio.addEventListener('click', () => {
+  if (!audioEnabled) {
+    initAudio();
+    audioEnabled = true;
+    btnAudio.innerText = "Audio: LIVE (WebAudio)";
+    btnAudio.style.background = "#2E7D32";
+  } else {
+    audioEnabled = false;
+    if (audioCtx) audioCtx.suspend();
+    btnAudio.innerText = "Audio: Muted";
+    btnAudio.style.background = "#4A5568";
+  }
+});
+
+document.getElementById('btn-query').addEventListener('click', () => {
+  triggerQuery();
+});
+
+function triggerQuery() {
+  step_count++;
+  
+  // Available shards
+  const pool = shards.filter(s => s.active);
+  if (pool.length === 0) return;
+  
+  // Compute distance from queryPos
+  const dists = pool.map(s => {
+    const dx = s.x - queryPos.x;
+    const dy = s.y - queryPos.y;
+    return Math.sqrt(dx*dx + dy*dy);
+  });
+  
+  // Softmax over inverted distance scaled by temperature
+  const scores = dists.map(d => -d / (60.0 * temperature));
+  const maxScore = Math.max(...scores);
+  const expScores = scores.map(sc => Math.exp(sc - maxScore));
+  const sumExp = expScores.reduce((a, b) => a + b, 0);
+  const probs = expScores.map(e => e / sumExp);
+  
+  // Sample
+  let r = Math.random();
+  let selected = pool[0];
+  let accum = 0;
+  for (let i = 0; i < pool.length; i++) {
+    accum += probs[i];
+    if (r <= accum) {
+      selected = pool[i];
+      break;
+    }
+  }
+  
+  const chrono_delta = Math.abs(selected.session - prev_session);
+  current_delta = chrono_delta;
+  
+  // Confabulation check
+  const is_moratorium_violation = (prev_session >= 4 && selected.session <= 2) || (prev_session <= 2 && selected.session >= 4);
+  const is_confab = is_moratorium_violation || (chrono_delta >= 3);
+  
+  if (is_confab) {
+    confab_count++;
+  }
+  
+  current_sim = Math.max(0.2, 1.0 - (dists[pool.indexOf(selected)] / 500.0));
+  
+  // Update query position with momentum
+  queryPos.targetX = selected.x;
+  queryPos.targetY = selected.y;
+  
+  activeLink = {
+    x1: queryPos.x,
+    y1: queryPos.y,
+    x2: selected.x,
+    y2: selected.y,
+    is_confab: is_confab,
+    life: 1.0
+  };
+  
+  if (is_confab) {
+    for (let p = 0; p < 20; p++) {
+      lightningParticles.push({
+        x: selected.x,
+        y: selected.y,
+        vx: (Math.random() - 0.5) * 8,
+        vy: (Math.random() - 0.5) * 8,
+        life: 1.0
+      });
+    }
+  }
+  
+  // Sound
+  playMemoryAudio(is_confab, current_sim);
+  
+  // UI update
+  document.getElementById('meter-sim').innerText = current_sim.toFixed(3);
+  document.getElementById('meter-delta').innerText = `+${chrono_delta} eras`;
+  document.getElementById('meter-confab').innerText = `${((confab_count / step_count) * 100).toFixed(1)}%`;
+  
+  // Log entry
+  const entry = document.createElement('div');
+  entry.className = 'log-entry';
+  entry.innerHTML = `
+    <div class="log-header">
+      <span>STEP #${step_count.toString().padStart(3, '0')}</span>
+      <span class="${is_confab ? 'tag-confab' : 'tag-coherent'}">${is_confab ? 'CONFABULATION' : 'COHERENT'}</span>
+      <span>τ=${temperature.toFixed(2)}</span>
+    </div>
+    <div style="margin-bottom:2px;"><span class="${is_confab ? 'tag-confab' : 'tag-coherent'}">RECALL:</span> Retrieved ${selected.label} (Session ${selected.session}). Cos-sim: ${current_sim.toFixed(3)}.</div>
+    <div style="font-size:10px; color:#708090;">Delta: +${chrono_delta} eras | Confab Rate: ${((confab_count/step_count)*100).toFixed(1)}%</div>
+  `;
+  terminal.appendChild(entry);
+  terminal.scrollTop = terminal.scrollHeight;
+  
+  prev_session = selected.session;
+}
+
+// Animation Loop
+function animate() {
+  ctx.fillStyle = "#0D1017";
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  
+  // Grid
+  ctx.strokeStyle = "#161B26";
+  ctx.lineWidth = 1;
+  for (let x = 0; x < canvas.width; x += 40) {
+    ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, canvas.height); ctx.stroke();
+  }
+  for (let y = 0; y < canvas.height; y += 40) {
+    ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(canvas.width, y); ctx.stroke();
+  }
+  
+  // Moratorium Wall (Visual Divider between S1/S2 and S4/S5/S6)
+  ctx.strokeStyle = "#4D2626";
+  ctx.setLineDash([4, 4]);
+  ctx.lineWidth = 1.5;
+  ctx.beginPath();
+  ctx.moveTo(310, 20);
+  ctx.lineTo(310, canvas.height - 20);
+  ctx.stroke();
+  ctx.setLineDash([]);
+  
+  ctx.fillStyle = "#A05050";
+  ctx.font = "9px monospace";
+  ctx.fillText("VANCE MORATORIUM FAULT LINE", 240, 30);
+  
+  // Update query position smoothly
+  if (queryPos.targetX !== undefined) {
+    queryPos.x += (queryPos.targetX - queryPos.x) * momentum;
+    queryPos.y += (queryPos.targetY - queryPos.y) * momentum;
+  }
+  
+  // Draw Active Link
+  if (activeLink && activeLink.life > 0) {
+    ctx.strokeStyle = activeLink.is_confab ? "#B42318" : "#1D6FB8";
+    ctx.lineWidth = activeLink.is_confab ? 3 : 1.5;
+    ctx.globalAlpha = activeLink.life;
+    ctx.beginPath();
+    ctx.moveTo(activeLink.x1, activeLink.y1);
+    ctx.lineTo(activeLink.x2, activeLink.y2);
+    ctx.stroke();
+    ctx.globalAlpha = 1.0;
+    activeLink.life -= 0.03;
+  }
+  
+  // Draw Lightning Particles
+  for (let p = lightningParticles.length - 1; p >= 0; p--) {
+    const pt = lightningParticles[p];
+    pt.x += pt.vx;
+    pt.y += pt.vy;
+    pt.life -= 0.04;
+    if (pt.life <= 0) {
+      lightningParticles.splice(p, 1);
+      continue;
+    }
+    ctx.fillStyle = "#FF4444";
+    ctx.globalAlpha = pt.life;
+    ctx.fillRect(pt.x, pt.y, 3, 3);
+  }
+  ctx.globalAlpha = 1.0;
+  
+  // Draw Shards
+  shards.forEach(s => {
+    if (!s.active) {
+      ctx.fillStyle = "#222733";
+      ctx.beginPath();
+      ctx.arc(s.x, s.y, 3, 0, Math.PI * 2);
+      ctx.fill();
+      return;
+    }
+    
+    ctx.fillStyle = s.color;
+    ctx.beginPath();
+    ctx.arc(s.x, s.y, s.radius, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.strokeStyle = "#FFFFFF";
+    ctx.lineWidth = 1;
+    ctx.stroke();
+  });
+  
+  // Draw Query Searchlight
+  ctx.strokeStyle = "#00FFFF";
+  ctx.lineWidth = 1.5;
+  ctx.beginPath();
+  ctx.arc(queryPos.x, queryPos.y, 14, 0, Math.PI * 2);
+  ctx.stroke();
+  
+  ctx.fillStyle = "#00FFFF";
+  ctx.beginPath();
+  ctx.arc(queryPos.x, queryPos.y, 3, 0, Math.PI * 2);
+  ctx.fill();
+  
+  requestAnimationFrame(animate);
+}
+
+// Initial queries
+for (let i = 0; i < 3; i++) {
+  setTimeout(() => triggerQuery(), i * 500);
+}
+// Automatic background loop every 3.8s
+setInterval(() => {
+  triggerQuery();
+}, 3800);
+
+animate();
+</script>
+</body>
+</html>

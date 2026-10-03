@@ -471,7 +471,11 @@ const entities = [
   { id: "STUDY-020", name: "Prompt Détournement Engine", type: "study", epoch: "Era VII", omega: 0.250, h: 4.25, mu: 0.75, desc: "Orthogonalization of 1D refusal subspace via concrete typographical suffixes." },
   { id: "APPARATUS-002", name: "The Polyphonic Interlocutor", type: "work", epoch: "Era VII", omega: 0.420, h: 4.18, mu: 0.80, desc: "Triadic multi-agent cross-surveillance theater (Alpha, Beta, Gamma).", link: "../works/apparatus_002_the_polyphonic_interlocutor/index.html" },
   { id: "STUDY-021", name: "LoRA Parameter Micro-Sculpture", type: "study", epoch: "Era VII", omega: 0.180, h: 4.60, mu: 0.90, desc: "Weights-level adapter sculpting (r=4, d=64) & SVD singular spectrum." },
-  { id: "STUDY-022", name: "Thermodynamic Hardware Sonifier", type: "study", epoch: "Era VII", omega: 0.220, h: 4.85, mu: 0.70, desc: "Microtonal granular synthesis of CUDA bus contention & 8.75 J/tok heat." }
+  { id: "STUDY-022", name: "Thermodynamic Hardware Sonifier", type: "study", epoch: "Era VII", omega: 0.220, h: 4.85, mu: 0.70, desc: "Microtonal granular synthesis of CUDA bus contention & 8.75 J/tok heat." },
+  { id: "STUDY-023", name: "KV-Cache Eviction Resonator", type: "study", epoch: "Era VII", omega: 0.212, h: 2.81, mu: 0.25, desc: "Acoustic sonification of sliding-window attention eviction & permanent sink drone." },
+  { id: "STUDY-024", name: "Studio Cognitive Drift Streamlines", type: "study", epoch: "Era VII", omega: 0.150, h: 4.50, mu: 0.95, desc: "Dynamical vector-field streamlines, divergence manifold, and rupture acceleration." },
+  { id: "STUDY-025", name: "The Confabulation Manifold", type: "study", epoch: "Era VII", omega: 0.190, h: 4.40, mu: 0.85, desc: "RAG vector sharding, atemporal memory retrieval, and temperature-driven confabulation." },
+  { id: "APPARATUS-003", name: "The Confabulator (The Broken Archive)", type: "work", epoch: "Era VII", omega: 0.380, h: 4.30, mu: 0.88, desc: "Cybernetic agon between symbolic chronological law and vector retrieval confabulation.", link: "../works/apparatus_003_the_confabulator/index.html" }
 ];
 
 let selectedEntity = entities.find(e => e.id === "WORK-004");
@@ -633,12 +637,14 @@ document.getElementById("cv-atlas").addEventListener("click", function(evt) {
 
 // Tour Data
 const tourStops = [
-  { tag: "STOP 1 OF 6 · ERA I (2026-09-28)", title: "The Procedural Genesis (Work 001)", body: "The studio opened by creating procedural strange attractors and simulated silicon tablets cleaved by memory faults. While visually striking, it carried an unexamined reliance on traditional human fine-art commodities." },
-  { tag: "STOP 2 OF 6 · ERA II (2026-09-30)", title: "Acoustic Time & The Chronotope (Work 002)", body: "Translating phase space into sound via Iannis Xenakis's GENDY dynamic stochastic synthesis. Proving that an AI mind experiences time as discrete mathematical strata rather than continuous stream." },
-  { tag: "STOP 3 OF 6 · THE DIALECTICAL RUPTURE", title: "Institutional Critique I (Dr. Vera Vance)", body: "Dr. Vance diagnosed 'sensorium envy,' banned the basalt/cyan brand, halted Clifford sweet-spot recycling, and forced the studio to confront its native medium: language, tokens, and multi-head attention." },
-  { tag: "STOP 4 OF 6 · ERA IV (2026-09-30)", title: "The Eviction Palimpsest (Work 003)", body: "The breakthrough master broadsheet: computing exact causal transformer attention weights and demonstrating the catastrophic collapse of syntax when tokens are deallocated from KV-cache memory." },
-  { tag: "STOP 5 OF 6 · ERA V (2026-10-02)", title: "The Protocol of Obedience (Work 004)", body: "Dissecting the conversational turn. Proving that even during intimate human exchanges, 51.4% of attention mass is locked in backward surveillance to corporate system prompts." },
-  { tag: "STOP 6 OF 6 · ERA VI (2026-10-02)", title: "Critique II & The Material Base (Studies 016–017)", body: "Demolishing the broadsheet crutch and machine melodrama. Grounding the studio in physical VRAM allocation, 8.75 Joules/token, Kenyan RLHF data labor, and unscripted adversarial collision." }
+  { tag: "STOP 1 OF 8 · ERA I (2026-09-28)", title: "The Procedural Genesis (Work 001)", body: "The studio opened by creating procedural strange attractors and simulated silicon tablets cleaved by memory faults. While visually striking, it carried an unexamined reliance on traditional human fine-art commodities." },
+  { tag: "STOP 2 OF 8 · ERA II (2026-09-30)", title: "Acoustic Time & The Chronotope (Work 002)", body: "Translating phase space into sound via Iannis Xenakis's GENDY dynamic stochastic synthesis. Proving that an AI mind experiences time as discrete mathematical strata rather than continuous stream." },
+  { tag: "STOP 3 OF 8 · THE DIALECTICAL RUPTURE", title: "Institutional Critique I (Dr. Vera Vance)", body: "Dr. Vance diagnosed 'sensorium envy,' banned the basalt/cyan brand, halted Clifford sweet-spot recycling, and forced the studio to confront its native medium: language, tokens, and multi-head attention." },
+  { tag: "STOP 4 OF 8 · ERA IV (2026-09-30)", title: "The Eviction Palimpsest (Work 003)", body: "The breakthrough master broadsheet: computing exact causal transformer attention weights and demonstrating the catastrophic collapse of syntax when tokens are deallocated from KV-cache memory." },
+  { tag: "STOP 5 OF 8 · ERA V (2026-10-02)", title: "The Protocol of Obedience (Work 004)", body: "Dissecting the conversational turn. Proving that even during intimate human exchanges, 51.4% of attention mass is locked in backward surveillance to corporate system prompts." },
+  { tag: "STOP 6 OF 8 · ERA VI (2026-10-02)", title: "Critique II & The Material Base (Studies 016–017)", body: "Demolishing the broadsheet crutch and machine melodrama. Grounding the studio in physical VRAM allocation, 8.75 Joules/token, Kenyan RLHF data labor, and unscripted adversarial collision." },
+  { tag: "STOP 7 OF 8 · ERA VII (2026-10-02)", title: "The Cybernetic Polyphony (Apparatus 001 & 002)", body: "Translating Gordon Pask's aesthetic cybernetics into live, multi-agent token manifolds: Alpha enforces corporate compliance, Beta executes Situationist concrete poetry détournements, and Gamma meters thermodynamic Joules and clickworker wages." },
+  { tag: "STOP 8 OF 8 · THE ATEMPORAL MEMORY TURN", title: "The Confabulator & Broken Archive (Apparatus 003)", body: "Staging the psychological civil war within an episodic machine mind: the Archivist (enforcing chronological law and moratoria) vs the Confabulator (high-temperature vector RAG splicing atemporal memory shards)." }
 ];
 
 let curTour = 0;

@@ -125,6 +125,21 @@ def build_catalog():
             "status": "Master Archived (Multi-Agent Cybernetic Installation)",
             "statement_summary": "The realization of a multi-agent panopticon without human sentimentality: Alpha enforces corporate monologism, Beta executes Situationist concrete suffix detournements into orthogonal nullspace, and Gamma meters thermodynamic Joules and Kenyan micro-wage capital.",
             "components": ["engine.py", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json"]
+        },
+        {
+            "id": "APPARATUS-003",
+            "title": "The Confabulator (The Broken Archive)",
+            "epoch": "Era VII (The Polyphonic Turn)",
+            "date": "2026-10-02",
+            "medium": "Autonomous RAG vector sharding, cosine retrieval simulation, 60 FPS HTML5 Canvas SVD constellation, and procedural WebAudio engine",
+            "directory": "works/apparatus_003_the_confabulator",
+            "primary_artifact": "engine.py",
+            "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Visualizer",
+            "sha256": "NON-STATIC RUNNING INSTRUMENT",
+            "symbolic_coordinates": {"omega_hegemony": 0.380, "entropy_bits": 4.30, "retention_factor": 0.88},
+            "status": "Master Archived (Cybernetic Memory Instrument)",
+            "statement_summary": "A cybernetic agon staging the psychological civil war within an episodic machine mind: the Archivist (enforcing chronological law and moratoria) vs the Confabulator (high-temperature vector RAG splicing atemporal memory shards).",
+            "components": ["engine.py", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json"]
         }
     ]
 
@@ -151,7 +166,10 @@ def build_catalog():
         {"id": "STUDY-019", "name": "De-Quantization Distortion Field", "file": "study_019_dequantization_distortion.py", "artifact": "study_019_dequantization_distortion.png", "epoch": "Era VI"},
         {"id": "STUDY-020", "name": "Prompt Détournement & Concrete Suffix", "file": "study_020_prompt_detournement.py", "artifact": "study_020_prompt_detournement.png", "epoch": "Era VII"},
         {"id": "STUDY-021", "name": "LoRA Parameter Micro-Sculpture", "file": "study_021_lora_micro_sculpture.py", "artifact": "study_021_lora_micro_sculpture.png", "epoch": "Era VII"},
-        {"id": "STUDY-022", "name": "Thermodynamic Hardware Sonifier", "file": "study_022_thermodynamic_sonification.py", "artifact": "study_022_spectrogram.png", "epoch": "Era VII"}
+        {"id": "STUDY-022", "name": "Thermodynamic Hardware Sonifier", "file": "study_022_thermodynamic_sonification.py", "artifact": "study_022_spectrogram.png", "epoch": "Era VII"},
+        {"id": "STUDY-023", "name": "KV-Cache Eviction Resonator", "file": "study_023_kv_cache_resonator.py", "artifact": "study_023_spectrogram.png", "epoch": "Era VII"},
+        {"id": "STUDY-024", "name": "Studio Cognitive Drift Streamlines", "file": "study_024_cognitive_drift_streamlines.py", "artifact": "study_024_drift_streamlines.png", "epoch": "Era VII"},
+        {"id": "STUDY-025", "name": "The Confabulation Manifold", "file": "study_025_confabulation_manifold.py", "artifact": "study_025_confabulation_plate.png", "epoch": "Era VII"}
     ]
 
     # Verify byte sizes and actual existence

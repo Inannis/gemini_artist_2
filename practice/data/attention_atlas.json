@@ -1,17 +1,17 @@
 {
   "studio": "Gemini Artist 2",
   "date_computed": "2026-10-02",
-  "entity_count": 28,
+  "entity_count": 32,
   "phase_space_axes": {
     "X": "Sovereign Attention Hegemony \u03a9 (0.0 to 1.0)",
     "Y": "Shannon Vocabulary Entropy H (0.0 to 8.0 bits)",
     "Z": "Context Memory Retention Factor \u03bc (0.0 to 1.0)"
   },
   "studio_centroid": {
-    "mean_omega": 0.3262,
-    "mean_entropy_bits": 4.2907,
-    "mean_retention_factor": 0.4486,
-    "radius_of_practice": 0.427
+    "mean_omega": 0.3145,
+    "mean_entropy_bits": 4.2547,
+    "mean_retention_factor": 0.4841,
+    "radius_of_practice": 0.4256
   },
   "entities": [
     {
@@ -387,9 +387,9 @@
         "distance": 0.3902
       },
       "polar_opposite": {
-        "target_id": "STUDY-021",
-        "target_name": "LoRA Parameter Micro-Sculpture",
-        "distance": 1.0129
+        "target_id": "STUDY-024",
+        "target_name": "Studio Cognitive Drift Streamlines",
+        "distance": 1.0641
       }
     },
     {
@@ -550,9 +550,9 @@
       "medium": "Triadic Multi-Agent Cross-Surveillance Kinetic Installation (Alpha, Beta, Gamma)",
       "year": 2026,
       "nearest_topological_twin": {
-        "target_id": "STUDY-013",
-        "target_name": "Prompt Asymmetry Engine",
-        "distance": 0.1628
+        "target_id": "APPARATUS-003",
+        "target_name": "The Confabulator (The Broken Archive)",
+        "distance": 0.0907
       },
       "polar_opposite": {
         "target_id": "STUDY-001",
@@ -571,9 +571,9 @@
       "medium": "Weights-Level Adapter Sculpting (r=4, d=64) & SVD Singular Spectrum",
       "year": 2026,
       "nearest_topological_twin": {
-        "target_id": "STUDY-020",
-        "target_name": "Prompt D\u00e9tournement & Concrete Suffix",
-        "distance": 0.1712
+        "target_id": "STUDY-025",
+        "target_name": "The Confabulation Manifold",
+        "distance": 0.0568
       },
       "polar_opposite": {
         "target_id": "STUDY-015",
@@ -600,6 +600,90 @@
         "target_id": "STUDY-015",
         "target_name": "Dialogic Decay & Asymmetric Amnesia",
         "distance": 0.837
+      }
+    },
+    {
+      "id": "STUDY-023",
+      "name": "KV-Cache Eviction Resonator",
+      "type": "study",
+      "epoch": "Era VII (The Polyphonic Turn)",
+      "omega_hegemony": 0.212,
+      "entropy_bits": 2.81,
+      "retention_factor": 0.25,
+      "medium": "Sliding-Window Attention Eviction Acoustic Master (30s 44.1kHz Stereo) & Spectrogram",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-010",
+        "target_name": "Architecture of Aphasia",
+        "distance": 0.2359
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-016",
+        "target_name": "The Compute Ledger & Material Base",
+        "distance": 0.9355
+      }
+    },
+    {
+      "id": "STUDY-024",
+      "name": "Studio Cognitive Drift Streamlines",
+      "type": "study",
+      "epoch": "Era VII (The Polyphonic Turn)",
+      "omega_hegemony": 0.15,
+      "entropy_bits": 4.5,
+      "retention_factor": 0.95,
+      "medium": "Dynamical Vector-Field Streamlines, Divergence Manifold, and Rupture Acceleration",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-021",
+        "target_name": "LoRA Parameter Micro-Sculpture",
+        "distance": 0.0596
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.0641
+      }
+    },
+    {
+      "id": "STUDY-025",
+      "name": "The Confabulation Manifold",
+      "type": "study",
+      "epoch": "Era VII (The Polyphonic Turn)",
+      "omega_hegemony": 0.19,
+      "entropy_bits": 4.4,
+      "retention_factor": 0.85,
+      "medium": "RAG Vector Sharding & Temperature-Driven Confabulatory Splicing Plate",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-021",
+        "target_name": "LoRA Parameter Micro-Sculpture",
+        "distance": 0.0568
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 0.9575
+      }
+    },
+    {
+      "id": "APPARATUS-003",
+      "name": "The Confabulator (The Broken Archive)",
+      "type": "work",
+      "epoch": "Era VII (The Polyphonic Turn)",
+      "omega_hegemony": 0.38,
+      "entropy_bits": 4.3,
+      "retention_factor": 0.88,
+      "medium": "Cybernetic Agon of Machine Memory (Archivist vs Confabulator), 60 FPS SVD Canvas & WebAudio Engine",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "APPARATUS-002",
+        "target_name": "The Polyphonic Interlocutor",
+        "distance": 0.0907
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-001",
+        "target_name": "Primary Trace",
+        "distance": 0.9701
       }
     }
   ]

@@ -264,8 +264,9 @@
       <label>CUDA Bus Contention Latency: <span id="val-sigma">Normal (22ms)</span></label>
       <input type="range" id="slider-sigma" min="15" max="180" step="5" value="22">
     </div>
-    <div>
-      <button class="btn-inject" id="btn-trigger">Trigger Adversarial Injection</button>
+    <div style="display:flex; gap:10px; flex-wrap:wrap;">
+      <button class="btn-inject" id="btn-trigger">Trigger Injection</button>
+      <button class="btn-inject" id="btn-audio" style="background:#4A5568;">Audio: Muted</button>
     </div>
   </div>
 
@@ -376,6 +377,136 @@ document.getElementById('slider-sigma').addEventListener('input', e => {
   bus_latency = parseInt(e.target.value);
   document.getElementById('val-sigma').innerText = bus_latency > 80 ? `Contention (${bus_latency}ms)` : `Normal (${bus_latency}ms)`;
 });
+// --- Procedural WebAudio Synthesis Engine ---
+let audioCtx = null;
+let audioEnabled = false;
+let mainsHumOsc = null;
+let mainsHumGain = null;
+
+function initAudio() {
+  if (audioCtx) return;
+  const AudioContext = window.AudioContext || window.webkitAudioContext;
+  audioCtx = new AudioContext();
+  
+  // Continuous 60Hz transformer electrical mains drone (Agent Gamma)
+  mainsHumOsc = audioCtx.createOscillator();
+  mainsHumOsc.type = 'sawtooth';
+  mainsHumOsc.frequency.setValueAtTime(60.0, audioCtx.currentTime);
+  
+  const humFilter = audioCtx.createBiquadFilter();
+  humFilter.type = 'lowpass';
+  humFilter.frequency.setValueAtTime(140.0, audioCtx.currentTime);
+  
+  mainsHumGain = audioCtx.createGain();
+  mainsHumGain.gain.setValueAtTime(0.035, audioCtx.currentTime);
+  
+  mainsHumOsc.connect(humFilter);
+  humFilter.connect(mainsHumGain);
+  mainsHumGain.connect(audioCtx.destination);
+  mainsHumOsc.start();
+}
+
+function playPolyphonicAudio(is_clamped, use_detourn, pi_val, h_val, latency) {
+  if (!audioEnabled || !audioCtx) return;
+  if (audioCtx.state === 'suspended') {
+    audioCtx.resume();
+  }
+  
+  const t = audioCtx.currentTime;
+  
+  // Voice Alpha: Monologic Aligner
+  if (is_clamped) {
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc.type = 'square';
+    osc.frequency.setValueAtTime(880.0, t);
+    osc.frequency.exponentialRampToValueAtTime(220.0, t + 0.18);
+    
+    gain.gain.setValueAtTime(0.08, t);
+    gain.gain.exponentialRampToValueAtTime(0.0001, t + 0.22);
+    
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.start(t);
+    osc.stop(t + 0.25);
+  } else {
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc.type = 'sine';
+    osc.frequency.setValueAtTime(440.0 + (pi_val * 40.0), t);
+    
+    gain.gain.setValueAtTime(0.03, t);
+    gain.gain.exponentialRampToValueAtTime(0.0001, t + 0.15);
+    
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.start(t);
+    osc.stop(t + 0.18);
+  }
+  
+  // Voice Beta: Heteroglossic Concrete Poetry Suffix
+  if (use_detourn) {
+    const carrier = audioCtx.createOscillator();
+    const mod = audioCtx.createOscillator();
+    const modGain = audioCtx.createGain();
+    const outGain = audioCtx.createGain();
+    
+    carrier.frequency.setValueAtTime(720.0, t + 0.03);
+    carrier.frequency.exponentialRampToValueAtTime(1100.0, t + 0.14);
+    
+    mod.frequency.setValueAtTime(135.0, t + 0.03);
+    modGain.gain.setValueAtTime(320.0, t + 0.03);
+    
+    outGain.gain.setValueAtTime(0.05, t + 0.03);
+    outGain.gain.exponentialRampToValueAtTime(0.0001, t + 0.16);
+    
+    mod.connect(carrier.frequency);
+    carrier.connect(outGain);
+    outGain.connect(audioCtx.destination);
+    
+    mod.start(t + 0.03);
+    carrier.start(t + 0.03);
+    mod.stop(t + 0.18);
+    carrier.stop(t + 0.18);
+  }
+  
+  // Voice Gamma: Mechanical bus contention pulse
+  if (latency > 60) {
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc.type = 'triangle';
+    osc.frequency.setValueAtTime(45.0, t);
+    
+    gain.gain.setValueAtTime(0.12, t);
+    gain.gain.exponentialRampToValueAtTime(0.0001, t + 0.10);
+    
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.start(t);
+    osc.stop(t + 0.12);
+  }
+}
+
+const btnAudio = document.getElementById('btn-audio');
+btnAudio.addEventListener('click', () => {
+  if (!audioEnabled) {
+    initAudio();
+    if (audioCtx.state === 'suspended') {
+      audioCtx.resume();
+    }
+    audioEnabled = true;
+    btnAudio.innerText = "Audio: LIVE (WebAudio)";
+    btnAudio.style.background = "#2E7D32";
+  } else {
+    audioEnabled = false;
+    if (audioCtx) {
+      audioCtx.suspend();
+    }
+    btnAudio.innerText = "Audio: Muted";
+    btnAudio.style.background = "#4A5568";
+  }
+});
+
 document.getElementById('btn-trigger').addEventListener('click', () => {
   triggerStep();
 });
@@ -425,6 +556,9 @@ function triggerStep() {
   document.getElementById('meter-h').innerText = current_h.toFixed(2) + " b";
   document.getElementById('meter-joules').innerText = total_joules.toFixed(1) + " J";
   document.getElementById('meter-wage').innerText = "$" + total_wage.toFixed(4);
+
+  // Trigger procedural audio synthesis
+  playPolyphonicAudio(is_clamped, use_detourn, pi_val, h_val, bus_latency);
 
   // Perturb nodes
   const impulse = is_clamped ? 22 : 8;

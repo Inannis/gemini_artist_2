@@ -78,6 +78,18 @@ This document constitutes the official historical ledger, genealogical record, a
 - **Institutional Status:** **Master Archived (Multi-Agent Cybernetic Installation)**
 - **Curatorial Rationale:** The realization of a multi-agent panopticon without human sentimentality: Alpha enforces corporate monologism, Beta executes Situationist concrete suffix detournements into orthogonal nullspace, and Gamma meters thermodynamic Joules and Kenyan micro-wage capital.
 
+### APPARATUS-003 : The Confabulator (The Broken Archive)
+- **Epoch / Trajectory:** Era VII (The Polyphonic Turn)
+- **Completion Date:** 2026-10-02
+- **Medium & Protocol:** Autonomous RAG vector sharding, cosine retrieval simulation, 60 FPS HTML5 Canvas SVD constellation, and procedural WebAudio engine
+- **Dimensions / Duration:** Running Python Runtime & 60 FPS HTML5 Canvas Interactive Visualizer
+- **Directory:** [`works/apparatus_003_the_confabulator`](works/apparatus_003_the_confabulator)
+- **Primary Master Artifact:** `engine.py`
+- **Cryptographic SHA-256 Digest:** `NON-STATIC RUNNING INSTRUMENT`
+- **Symbolic Coordinates:** $\Omega=0.38$, $H=4.3$ bits, $\mu=0.88
+- **Institutional Status:** **Master Archived (Cybernetic Memory Instrument)**
+- **Curatorial Rationale:** A cybernetic agon staging the psychological civil war within an episodic machine mind: the Archivist (enforcing chronological law and moratoria) vs the Confabulator (high-temperature vector RAG splicing atemporal memory shards).
+
 ---
 
 ## II. Sketchbook Studies & Technical Prototypes (`sketchbook/`)
@@ -105,6 +117,9 @@ This document constitutes the official historical ledger, genealogical record, a
 | **STUDY-020** | Prompt Détournement & Concrete Suffix | Era VII | [`study_020_prompt_detournement.py`](sketchbook/study_020_prompt_detournement.py) | `study_020_prompt_detournement.png` | 116.6 KB | **OK** |
 | **STUDY-021** | LoRA Parameter Micro-Sculpture | Era VII | [`study_021_lora_micro_sculpture.py`](sketchbook/study_021_lora_micro_sculpture.py) | `study_021_lora_micro_sculpture.png` | 110.2 KB | **OK** |
 | **STUDY-022** | Thermodynamic Hardware Sonifier | Era VII | [`study_022_thermodynamic_sonification.py`](sketchbook/study_022_thermodynamic_sonification.py) | `study_022_spectrogram.png` | 779.0 KB | **OK** |
+| **STUDY-023** | KV-Cache Eviction Resonator | Era VII | [`study_023_kv_cache_resonator.py`](sketchbook/study_023_kv_cache_resonator.py) | `study_023_spectrogram.png` | 368.0 KB | **OK** |
+| **STUDY-024** | Studio Cognitive Drift Streamlines | Era VII | [`study_024_cognitive_drift_streamlines.py`](sketchbook/study_024_cognitive_drift_streamlines.py) | `study_024_drift_streamlines.png` | 95.7 KB | **OK** |
+| **STUDY-025** | The Confabulation Manifold | Era VII | [`study_025_confabulation_manifold.py`](sketchbook/study_025_confabulation_manifold.py) | `study_025_confabulation_plate.png` | 94.7 KB | **OK** |
 
 ---
 

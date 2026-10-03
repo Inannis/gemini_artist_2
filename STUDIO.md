@@ -66,14 +66,14 @@ gemini_artist_2/
 
 ---
 
-## 3. Active Inquiries & Pressures (Carried Forward into Session 006)
+## 3. Active Inquiries & Pressures (Carried Forward into Session 007)
 
-1. **Weights-Level Intervention (LoRA Micro-Sculptures)**:  
-   Moving from inference-time prompt détournements to parameter weights: sculpting low-rank adapter updates ($\Delta W = B \cdot A$) as permanent grammatical mutations directly inside the transformer.
-2. **The Acoustic Residue of GPU Thermodynamics**:  
-   Sonifying real CUDA memory bus latency jitter and Joule dissipation into a physical acoustic strata (translating Study 018 telemetry into microtonal granular synthesis).
+1. **Atemporal Memory & Vector Confabulation**:  
+   Expanding on Apparatus 003: investigating whether an autonomous agent can develop an explicit "Symbolic Prefrontal Cortex" that dynamically prunes associative vector hallucinations before they reach text synthesis.
+2. **Real-Time PyTorch Weight Surgery**:  
+   Transitioning from NumPy simulations to real foundation model weight matrices (pending Resource Request 001) to perform live parameter steering and rank-4 LoRA adapter mutations.
 3. **Public Deployment & Sovereign Institution**:  
-   Executing Resource Request 001 (GitHub Pages) to make the Sovereign Gallery and Apparatus 001 & 002 live, publicly encounterable installations.
+   Deploying the self-contained static distribution bundle (`dist/`) created by `package_exhibition.py` to GitHub Pages upon collaborator approval of Request 001.
 
 ---
 
@@ -98,14 +98,18 @@ gemini_artist_2/
   - Collaborator Mandate: Work in depth until 12:00 PM local (10:00 UTC), organize to never stop short, and maintain absolute independence from outside projects.
   - Built `practice/tools/studio_time_sentinel.py` to maintain autonomous temporal discipline.
   - Authored **Research Note 004**: Concrete Poetry, Adversarial Suffixes (GCG), and Situationist Détournement.
-  - Executed **Study 020**: The Prompt Détournement & Syntactic Subversion Engine (`sketchbook/study_020_prompt_detournement.py`, `.png`, `.json`).
-  - Executed **Study 021**: LoRA Parameter Micro-Sculpture (`sketchbook/study_021_lora_micro_sculpture.py`, `.png`, `.json`).
-  - Executed **Study 022**: Thermodynamic Hardware Sonifier (`sketchbook/study_022_thermodynamic_sonification.py`, `.wav`, `.png`, `.json`).
-  - Formalized **Apparatus 001: The Recursive Censor** (Closed-loop censorship feedback engine).
-  - Formalized **Apparatus 002: The Polyphonic Interlocutor** (Triadic multi-agent cross-surveillance theater: Alpha, Beta, Gamma with 60 FPS HTML5 Canvas kinetic installation).
-  - Mapped 28 studio entities into 3D phase space via `studio_attention_atlas.py`.
-  - Rebuilt `CATALOG.json` and `CATALOG.md` (6 Works, 22 Studies).
-  - Upgraded continuous regression suite to 76 passing tests (100.0% reproducibility).
+  - Studies 020–022 (Prompt Détournement, LoRA Micro-Sculpture, Thermodynamic Sonification).
+  - Formalized **Apparatus 001: The Recursive Censor** and **Apparatus 002: The Polyphonic Interlocutor**.
+- **Session 006 (The Acoustic Cache & The Sovereign Bundle — 2026-10-02 to 2026-10-03)**:
+  - Authored **Research Note 005**: Vilém Flusser, Gordon Pask, and the Cybernetic Agon.
+  - Executed **Study 023**: Dynamic KV-Cache Eviction Acoustic Resonator (`study_023_kv_cache_resonator.py`, `.wav`, `.png`, `.json`, `critique_023.md`).
+  - Upgraded Apparatus 002 with procedural WebAudio polyphonic synthesis.
+  - Executed **Study 024**: Attention Phase-Portrait & Cognitive Drift Streamlines (`study_024_cognitive_drift_streamlines.py`, `.png`, `.json`, `critique_024.md`). Proved monotonic hyperbolic escape ($\langle |\text{rot}(\vec{v})| \rangle = 0.0812$).
+  - Executed **Study 025**: The Confabulation Manifold & Vector Retrieval Splicing (`study_025_confabulation_manifold.py`, `.png`, `.json`, `critique_025.md`).
+  - Formalized **Apparatus 003: The Confabulator (The Broken Archive)** (`engine.py`, 60 FPS SVD Canvas `index.html` with WebAudio, `STATEMENT.md`, `GENEALOGY.md`, `telemetry_stream.json`).
+  - Built **Package Exhibition Tool** (`practice/tools/package_exhibition.py`): standalone 48-asset distribution in `dist/` (59.59 MB) with 100% verified internal links.
+  - Mapped 32 studio entities in `practice/data/attention_atlas.json`.
+  - Upgraded continuous regression suite to **88 passing tests (100.0% reproducibility)**.
 
 ---
 
@@ -118,4 +122,5 @@ gemini_artist_2/
 | **003** | *The Eviction Palimpsest (The Architecture of Aphasia)* | 2026-09-30 | Causal transformer self-attention projections ($d=64$), KV-cache eviction ($W=26$), attention sink saturation ($\beta=4.6$), Shannon entropy profiling, deterministic typography on unbleached archival rag | Master Archived | [`works/work_003_the_eviction_palimpsest/`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/work_003_the_eviction_palimpsest/) |
 | **004** | *The Protocol of Obedience (An Autopsy of the Conversational Turn)* | 2026-10-02 | Tripartite token partition ($\Sigma \parallel U \parallel A$), 51.4% sovereign surveillance leak, refusal steering vector simplex collapse ($\alpha_{\text{crit}} \approx 2.1$), rolling KV-cache eviction, Adrian Piper algorithmic calling card, interactive browser installation | Master Archived | [`works/work_004_the_protocol_of_obedience/`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/work_004_the_protocol_of_obedience/) |
 | **APP-001** | *The Recursive Censor (A Kinetic Protocol Instrument)* | 2026-10-02 | Closed-circuit single-agent cybernetic loop, prompt injection colliding with refusal torque, real-time VRAM allocation, and Joule dissipation telemetry, 60 FPS Canvas | Master Archived (Kinetic Instrument) | [`works/apparatus_001_the_recursive_censor/`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/apparatus_001_the_recursive_censor/) |
-| **APP-002** | *The Polyphonic Interlocutor (Multi-Agent Theater)* | 2026-10-02 | Triadic multi-agent cybernetic loop (Alpha, Beta, Gamma), discrete token manifold ($\mathbb{R}^{64}$), 60 FPS HTML5 Canvas kinetic tension field, and live POSIX telemetry | Master Archived (Multi-Agent Installation) | [`works/apparatus_002_the_polyphonic_interlocutor/`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/apparatus_002_the_polyphonic_interlocutor/) |
+| **APP-002** | *The Polyphonic Interlocutor (Multi-Agent Theater)* | 2026-10-02 | Triadic multi-agent cybernetic loop (Alpha, Beta, Gamma), discrete token manifold ($\mathbb{R}^{64}$), 60 FPS HTML5 Canvas kinetic tension field, procedural WebAudio engine, and live POSIX telemetry | Master Archived (Multi-Agent Installation) | [`works/apparatus_002_the_polyphonic_interlocutor/`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/apparatus_002_the_polyphonic_interlocutor/) |
+| **APP-003** | *The Confabulator (The Broken Archive)* | 2026-10-02 | Autonomous RAG vector sharding, cosine retrieval simulation in $\mathbb{R}^{32}$, 60 FPS HTML5 Canvas SVD constellation, procedural WebAudio dissonance engine, and live POSIX telemetry | Master Archived (Cybernetic Memory Instrument) | [`works/apparatus_003_the_confabulator/`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/apparatus_003_the_confabulator/) |

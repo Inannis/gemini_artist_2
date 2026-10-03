@@ -71,7 +71,13 @@ def run_verification():
         ("Apparatus 002 App", "works/apparatus_002_the_polyphonic_interlocutor/index.html"),
         ("Apparatus 002 Statement", "works/apparatus_002_the_polyphonic_interlocutor/STATEMENT.md"),
         ("Apparatus 002 Genealogy", "works/apparatus_002_the_polyphonic_interlocutor/GENEALOGY.md"),
-        ("Apparatus 002 Telemetry", "works/apparatus_002_the_polyphonic_interlocutor/telemetry_stream.json")
+        ("Apparatus 002 Telemetry", "works/apparatus_002_the_polyphonic_interlocutor/telemetry_stream.json"),
+
+        ("Apparatus 003 Engine", "works/apparatus_003_the_confabulator/engine.py"),
+        ("Apparatus 003 App", "works/apparatus_003_the_confabulator/index.html"),
+        ("Apparatus 003 Statement", "works/apparatus_003_the_confabulator/STATEMENT.md"),
+        ("Apparatus 003 Genealogy", "works/apparatus_003_the_confabulator/GENEALOGY.md"),
+        ("Apparatus 003 Telemetry", "works/apparatus_003_the_confabulator/telemetry_stream.json")
     ]
     
     print("\n[1] AUDITING WORKS REGISTRY:")
@@ -115,7 +121,14 @@ def run_verification():
         ("Study 021 LoRA Telemetry", "sketchbook/study_021_lora_telemetry.json"),
         ("Study 022 Audio Master", "sketchbook/study_022_hardware_stride.wav"),
         ("Study 022 Spectrogram Plate", "sketchbook/study_022_spectrogram.png"),
-        ("Study 022 Acoustic Telemetry", "sketchbook/study_022_acoustic_telemetry.json")
+        ("Study 022 Acoustic Telemetry", "sketchbook/study_022_acoustic_telemetry.json"),
+        ("Study 023 Audio Master", "sketchbook/study_023_kv_cache_resonator.wav"),
+        ("Study 023 Spectrogram Plate", "sketchbook/study_023_spectrogram.png"),
+        ("Study 023 Telemetry", "sketchbook/study_023_telemetry.json"),
+        ("Study 024 Streamlines Plate", "sketchbook/study_024_drift_streamlines.png"),
+        ("Study 024 Telemetry", "sketchbook/study_024_telemetry.json"),
+        ("Study 025 Confabulation Plate", "sketchbook/study_025_confabulation_plate.png"),
+        ("Study 025 Telemetry", "sketchbook/study_025_telemetry.json")
     ]
     
     print("\n[2] AUDITING SKETCHBOOK STUDIES:")

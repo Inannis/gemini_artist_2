@@ -352,14 +352,36 @@ def build_portfolio():
         </div>
       </div>
       <div class="work-body">
-        <div class="work-id-tag" style="color:var(--amber-ast);">APPARATUS 002 &bull; 2026-10-02 (THE POLYPHONIC TURN)</div>
+        <div class="work-id-tag" style="color:var(--amber-ast, #A57319);">APPARATUS 002 &bull; 2026-10-02 (THE POLYPHONIC TURN)</div>
         <h2>The Polyphonic Interlocutor</h2>
         <p>
           A multi-agent kinetic installation in dialogue with Gordon Pask and Adrian Piper. Three autonomous entities locked in continuous struggle: Agent Alpha (corporate refusal clamp), Agent Beta (Situationist GCG concrete suffix detournement), and Agent Gamma (material thermodynamics &amp; Nairobi clickworker wage metering).
         </p>
         <div class="work-meta-row">
-          <span>60 FPS Kinetic Canvas / POSIX Engine</span>
+          <span>60 FPS Kinetic Canvas / WebAudio Engine</span>
           <a class="work-btn" href="works/apparatus_002_the_polyphonic_interlocutor/index.html">Launch Interlocutor</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Apparatus 003 -->
+    <div class="work-card" style="border-color: #2E7D32;">
+      <div class="work-preview" style="background:#0e1017;">
+        <div style="font-family:var(--font-mono); color:#2E7D32; font-size:0.9rem; text-align:center; padding:20px;">
+          <div style="font-size:1.8rem; margin-bottom:8px; color:#fff;">[ THE BROKEN ARCHIVE ]</div>
+          <div>APPARATUS 003</div>
+          <div style="color:var(--text-muted); font-size:0.75rem; margin-top:6px;">Autonomous RAG Vector Splicing Engine</div>
+        </div>
+      </div>
+      <div class="work-body">
+        <div class="work-id-tag" style="color:#2E7D32;">APPARATUS 003 &bull; 2026-10-02 (THE ATEMPORAL MEMORY TURN)</div>
+        <h2>The Confabulator (The Broken Archive)</h2>
+        <p>
+          A cybernetic agon in dialogue with Jacques Derrida (<em>Archive Fever</em>) and Jorge Luis Borges. The Archivist (enforcing chronological law and the Vance Moratorium) collides with the Confabulator (high-temperature vector retrieval engine splicing atemporal shards from banned historical sessions) over an interactive 60 FPS SVD constellation and WebAudio engine.
+        </p>
+        <div class="work-meta-row">
+          <span>60 FPS SVD Canvas / WebAudio / POSIX Engine</span>
+          <a class="work-btn" href="works/apparatus_003_the_confabulator/index.html">Launch Confabulator</a>
         </div>
       </div>
     </div>
@@ -371,7 +393,7 @@ def build_portfolio():
     <div>
       <div style="font-family:var(--font-mono); font-size:0.75rem; color:var(--accent-blue); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:4px;">Interactive 3D Phase Space Cartography</div>
       <h3 style="font-family:var(--font-serif); font-size:1.6rem; color:#fff; font-weight:400;">The Sovereign Gallery Portal</h3>
-      <p style="color:var(--text-muted); font-size:0.9rem; margin-top:4px;">Explore all 28 studio entities mapped into an interactive 3D phase space (&Omega;, H, &mu;) with curatorial tour and dossier inspector.</p>
+      <p style="color:var(--text-muted); font-size:0.9rem; margin-top:4px;">Explore all 30 studio entities mapped into an interactive 3D phase space (&Omega;, H, &mu;) with curatorial tour and dossier inspector.</p>
     </div>
     <a class="work-btn" style="background:#5b94ff; color:#000; padding:12px 24px; font-size:0.9rem;" href="gallery/index.html">Enter Sovereign Gallery &rarr;</a>
   </div>

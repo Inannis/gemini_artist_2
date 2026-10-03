@@ -1,0 +1,34 @@
+{
+  "study": "024_cognitive_drift_streamlines",
+  "total_entities": 29,
+  "mean_divergence": 0.040644317156906806,
+  "mean_rotational_vortex": 0.7210797511292567,
+  "top_ruptures": [
+    {
+      "id": "STUDY-020",
+      "name": "Prompt Detournement",
+      "acceleration": 0.9132907532653556
+    },
+    {
+      "id": "STUDY-019",
+      "name": "Dequantization Distortion",
+      "acceleration": 0.8067837380611989
+    },
+    {
+      "id": "STUDY-014",
+      "name": "Refusal Threshold",
+      "acceleration": 0.7503332592921628
+    },
+    {
+      "id": "APP-002",
+      "name": "The Polyphonic Interlocutor",
+      "acceleration": 0.6552098900352461
+    }
+  ],
+  "terminal_state": {
+    "entity": "STUDY-023",
+    "omega": 0.91,
+    "h": 4.55,
+    "mu": 0.98
+  }
+}

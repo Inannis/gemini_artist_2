@@ -1,0 +1,824 @@
+{
+  "study": "025_confabulation_manifold",
+  "num_shards": 48,
+  "d_embed": 64,
+  "runs": {
+    "0.1": [
+      {
+        "step": 0,
+        "retrieved_id": 37,
+        "retrieved_label": "S05-K05",
+        "retrieved_session": 5,
+        "similarity": 0.6616123304597789,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 1,
+        "retrieved_id": 26,
+        "retrieved_label": "S04-K02",
+        "retrieved_session": 4,
+        "similarity": 0.5229227551737607,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 2,
+        "retrieved_id": 37,
+        "retrieved_label": "S05-K05",
+        "retrieved_session": 5,
+        "similarity": 0.7498480370929969,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 3,
+        "retrieved_id": 41,
+        "retrieved_label": "S06-K01",
+        "retrieved_session": 6,
+        "similarity": 0.6038118905923242,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 4,
+        "retrieved_id": 46,
+        "retrieved_label": "S06-K06",
+        "retrieved_session": 6,
+        "similarity": 0.6374854081110706,
+        "chrono_delta": 0,
+        "is_confabulated": false
+      },
+      {
+        "step": 5,
+        "retrieved_id": 39,
+        "retrieved_label": "S05-K07",
+        "retrieved_session": 5,
+        "similarity": 0.5344490180855079,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 6,
+        "retrieved_id": 37,
+        "retrieved_label": "S05-K05",
+        "retrieved_session": 5,
+        "similarity": 0.6514955975085662,
+        "chrono_delta": 0,
+        "is_confabulated": false
+      },
+      {
+        "step": 7,
+        "retrieved_id": 27,
+        "retrieved_label": "S04-K03",
+        "retrieved_session": 4,
+        "similarity": 0.6592899052709797,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 8,
+        "retrieved_id": 37,
+        "retrieved_label": "S05-K05",
+        "retrieved_session": 5,
+        "similarity": 0.7437512152141288,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 9,
+        "retrieved_id": 40,
+        "retrieved_label": "S06-K00",
+        "retrieved_session": 6,
+        "similarity": 0.691450546147557,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 10,
+        "retrieved_id": 40,
+        "retrieved_label": "S06-K00",
+        "retrieved_session": 6,
+        "similarity": 0.836985120858661,
+        "chrono_delta": 0,
+        "is_confabulated": false
+      },
+      {
+        "step": 11,
+        "retrieved_id": 40,
+        "retrieved_label": "S06-K00",
+        "retrieved_session": 6,
+        "similarity": 0.8555515456544425,
+        "chrono_delta": 0,
+        "is_confabulated": false
+      },
+      {
+        "step": 12,
+        "retrieved_id": 46,
+        "retrieved_label": "S06-K06",
+        "retrieved_session": 6,
+        "similarity": 0.6680389304081759,
+        "chrono_delta": 0,
+        "is_confabulated": false
+      },
+      {
+        "step": 13,
+        "retrieved_id": 37,
+        "retrieved_label": "S05-K05",
+        "retrieved_session": 5,
+        "similarity": 0.5675933877891773,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 14,
+        "retrieved_id": 40,
+        "retrieved_label": "S06-K00",
+        "retrieved_session": 6,
+        "similarity": 0.7492871574973565,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 15,
+        "retrieved_id": 32,
+        "retrieved_label": "S05-K00",
+        "retrieved_session": 5,
+        "similarity": 0.6284804400259011,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 16,
+        "retrieved_id": 40,
+        "retrieved_label": "S06-K00",
+        "retrieved_session": 6,
+        "similarity": 0.7764931424510851,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 17,
+        "retrieved_id": 40,
+        "retrieved_label": "S06-K00",
+        "retrieved_session": 6,
+        "similarity": 0.8560896394172002,
+        "chrono_delta": 0,
+        "is_confabulated": false
+      },
+      {
+        "step": 18,
+        "retrieved_id": 32,
+        "retrieved_label": "S05-K00",
+        "retrieved_session": 5,
+        "similarity": 0.6554639151634667,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 19,
+        "retrieved_id": 30,
+        "retrieved_label": "S04-K06",
+        "retrieved_session": 4,
+        "similarity": 0.6390436810819886,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 20,
+        "retrieved_id": 45,
+        "retrieved_label": "S06-K05",
+        "retrieved_session": 6,
+        "similarity": 0.5476953192706064,
+        "chrono_delta": 2,
+        "is_confabulated": false
+      },
+      {
+        "step": 21,
+        "retrieved_id": 30,
+        "retrieved_label": "S04-K06",
+        "retrieved_session": 4,
+        "similarity": 0.6591210800924335,
+        "chrono_delta": 2,
+        "is_confabulated": false
+      },
+      {
+        "step": 22,
+        "retrieved_id": 37,
+        "retrieved_label": "S05-K05",
+        "retrieved_session": 5,
+        "similarity": 0.6053134380020844,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 23,
+        "retrieved_id": 30,
+        "retrieved_label": "S04-K06",
+        "retrieved_session": 4,
+        "similarity": 0.7180667760918307,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 24,
+        "retrieved_id": 30,
+        "retrieved_label": "S04-K06",
+        "retrieved_session": 4,
+        "similarity": 0.7723261870902586,
+        "chrono_delta": 0,
+        "is_confabulated": false
+      },
+      {
+        "step": 25,
+        "retrieved_id": 37,
+        "retrieved_label": "S05-K05",
+        "retrieved_session": 5,
+        "similarity": 0.5740550234179393,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 26,
+        "retrieved_id": 30,
+        "retrieved_label": "S04-K06",
+        "retrieved_session": 4,
+        "similarity": 0.6748516011841902,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 27,
+        "retrieved_id": 30,
+        "retrieved_label": "S04-K06",
+        "retrieved_session": 4,
+        "similarity": 0.8185807869394285,
+        "chrono_delta": 0,
+        "is_confabulated": false
+      },
+      {
+        "step": 28,
+        "retrieved_id": 32,
+        "retrieved_label": "S05-K00",
+        "retrieved_session": 5,
+        "similarity": 0.6147799579842024,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 29,
+        "retrieved_id": 32,
+        "retrieved_label": "S05-K00",
+        "retrieved_session": 5,
+        "similarity": 0.7477729538882188,
+        "chrono_delta": 0,
+        "is_confabulated": false
+      }
+    ],
+    "0.7": [
+      {
+        "step": 0,
+        "retrieved_id": 39,
+        "retrieved_label": "S05-K07",
+        "retrieved_session": 5,
+        "similarity": 0.6069916668651029,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 1,
+        "retrieved_id": 24,
+        "retrieved_label": "S04-K00",
+        "retrieved_session": 4,
+        "similarity": 0.564972017051197,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 2,
+        "retrieved_id": 30,
+        "retrieved_label": "S04-K06",
+        "retrieved_session": 4,
+        "similarity": 0.6031859541469421,
+        "chrono_delta": 0,
+        "is_confabulated": false
+      },
+      {
+        "step": 3,
+        "retrieved_id": 24,
+        "retrieved_label": "S04-K00",
+        "retrieved_session": 4,
+        "similarity": 0.7172307593246294,
+        "chrono_delta": 0,
+        "is_confabulated": false
+      },
+      {
+        "step": 4,
+        "retrieved_id": 19,
+        "retrieved_label": "S03-K03",
+        "retrieved_session": 3,
+        "similarity": 0.502902230274112,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 5,
+        "retrieved_id": 22,
+        "retrieved_label": "S03-K06",
+        "retrieved_session": 3,
+        "similarity": 0.4235789725461262,
+        "chrono_delta": 0,
+        "is_confabulated": false
+      },
+      {
+        "step": 6,
+        "retrieved_id": 26,
+        "retrieved_label": "S04-K02",
+        "retrieved_session": 4,
+        "similarity": 0.3568077128252978,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 7,
+        "retrieved_id": 34,
+        "retrieved_label": "S05-K02",
+        "retrieved_session": 5,
+        "similarity": 0.5028876985779314,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 8,
+        "retrieved_id": 7,
+        "retrieved_label": "S01-K07",
+        "retrieved_session": 1,
+        "similarity": 0.08191523763593102,
+        "chrono_delta": 4,
+        "is_confabulated": true
+      },
+      {
+        "step": 9,
+        "retrieved_id": 30,
+        "retrieved_label": "S04-K06",
+        "retrieved_session": 4,
+        "similarity": 0.3897140051088099,
+        "chrono_delta": 3,
+        "is_confabulated": true
+      },
+      {
+        "step": 10,
+        "retrieved_id": 3,
+        "retrieved_label": "S01-K03",
+        "retrieved_session": 1,
+        "similarity": 0.22511775238560305,
+        "chrono_delta": 3,
+        "is_confabulated": true
+      },
+      {
+        "step": 11,
+        "retrieved_id": 42,
+        "retrieved_label": "S06-K02",
+        "retrieved_session": 6,
+        "similarity": 0.19813566259040222,
+        "chrono_delta": 5,
+        "is_confabulated": true
+      },
+      {
+        "step": 12,
+        "retrieved_id": 2,
+        "retrieved_label": "S01-K02",
+        "retrieved_session": 1,
+        "similarity": 0.26889836877217277,
+        "chrono_delta": 5,
+        "is_confabulated": true
+      },
+      {
+        "step": 13,
+        "retrieved_id": 10,
+        "retrieved_label": "S02-K02",
+        "retrieved_session": 2,
+        "similarity": 0.10781340912676043,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 14,
+        "retrieved_id": 18,
+        "retrieved_label": "S03-K02",
+        "retrieved_session": 3,
+        "similarity": 0.261464657614396,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 15,
+        "retrieved_id": 16,
+        "retrieved_label": "S03-K00",
+        "retrieved_session": 3,
+        "similarity": 0.22042943553505467,
+        "chrono_delta": 0,
+        "is_confabulated": false
+      },
+      {
+        "step": 16,
+        "retrieved_id": 9,
+        "retrieved_label": "S02-K01",
+        "retrieved_session": 2,
+        "similarity": 0.04077077145797363,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 17,
+        "retrieved_id": 42,
+        "retrieved_label": "S06-K02",
+        "retrieved_session": 6,
+        "similarity": 0.5566794409164058,
+        "chrono_delta": 4,
+        "is_confabulated": true
+      },
+      {
+        "step": 18,
+        "retrieved_id": 25,
+        "retrieved_label": "S04-K01",
+        "retrieved_session": 4,
+        "similarity": 0.2650846375712064,
+        "chrono_delta": 2,
+        "is_confabulated": false
+      },
+      {
+        "step": 19,
+        "retrieved_id": 33,
+        "retrieved_label": "S05-K01",
+        "retrieved_session": 5,
+        "similarity": 0.5027397711192292,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 20,
+        "retrieved_id": 39,
+        "retrieved_label": "S05-K07",
+        "retrieved_session": 5,
+        "similarity": 0.6193094927651763,
+        "chrono_delta": 0,
+        "is_confabulated": false
+      },
+      {
+        "step": 21,
+        "retrieved_id": 41,
+        "retrieved_label": "S06-K01",
+        "retrieved_session": 6,
+        "similarity": 0.6152862466262259,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 22,
+        "retrieved_id": 24,
+        "retrieved_label": "S04-K00",
+        "retrieved_session": 4,
+        "similarity": 0.5523792992185507,
+        "chrono_delta": 2,
+        "is_confabulated": false
+      },
+      {
+        "step": 23,
+        "retrieved_id": 16,
+        "retrieved_label": "S03-K00",
+        "retrieved_session": 3,
+        "similarity": 0.2711069960548698,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 24,
+        "retrieved_id": 7,
+        "retrieved_label": "S01-K07",
+        "retrieved_session": 1,
+        "similarity": 0.05210592648008852,
+        "chrono_delta": 2,
+        "is_confabulated": false
+      },
+      {
+        "step": 25,
+        "retrieved_id": 32,
+        "retrieved_label": "S05-K00",
+        "retrieved_session": 5,
+        "similarity": 0.3684575555060826,
+        "chrono_delta": 4,
+        "is_confabulated": true
+      },
+      {
+        "step": 26,
+        "retrieved_id": 17,
+        "retrieved_label": "S03-K01",
+        "retrieved_session": 3,
+        "similarity": 0.3792900989774195,
+        "chrono_delta": 2,
+        "is_confabulated": false
+      },
+      {
+        "step": 27,
+        "retrieved_id": 45,
+        "retrieved_label": "S06-K05",
+        "retrieved_session": 6,
+        "similarity": 0.4782427667308316,
+        "chrono_delta": 3,
+        "is_confabulated": false
+      },
+      {
+        "step": 28,
+        "retrieved_id": 27,
+        "retrieved_label": "S04-K03",
+        "retrieved_session": 4,
+        "similarity": 0.7692725466372138,
+        "chrono_delta": 2,
+        "is_confabulated": false
+      },
+      {
+        "step": 29,
+        "retrieved_id": 27,
+        "retrieved_label": "S04-K03",
+        "retrieved_session": 4,
+        "similarity": 0.820200434630044,
+        "chrono_delta": 0,
+        "is_confabulated": false
+      }
+    ],
+    "1.8": [
+      {
+        "step": 0,
+        "retrieved_id": 38,
+        "retrieved_label": "S05-K06",
+        "retrieved_session": 5,
+        "similarity": 0.6828404851441652,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 1,
+        "retrieved_id": 45,
+        "retrieved_label": "S06-K05",
+        "retrieved_session": 6,
+        "similarity": 0.6051497247225364,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 2,
+        "retrieved_id": 13,
+        "retrieved_label": "S02-K05",
+        "retrieved_session": 2,
+        "similarity": 0.1486416678436499,
+        "chrono_delta": 4,
+        "is_confabulated": true
+      },
+      {
+        "step": 3,
+        "retrieved_id": 35,
+        "retrieved_label": "S05-K03",
+        "retrieved_session": 5,
+        "similarity": 0.4293733076718488,
+        "chrono_delta": 3,
+        "is_confabulated": true
+      },
+      {
+        "step": 4,
+        "retrieved_id": 26,
+        "retrieved_label": "S04-K02",
+        "retrieved_session": 4,
+        "similarity": 0.5644082204013355,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 5,
+        "retrieved_id": 11,
+        "retrieved_label": "S02-K03",
+        "retrieved_session": 2,
+        "similarity": 0.30380050930345115,
+        "chrono_delta": 2,
+        "is_confabulated": true
+      },
+      {
+        "step": 6,
+        "retrieved_id": 39,
+        "retrieved_label": "S05-K07",
+        "retrieved_session": 5,
+        "similarity": 0.3972343935847991,
+        "chrono_delta": 3,
+        "is_confabulated": true
+      },
+      {
+        "step": 7,
+        "retrieved_id": 37,
+        "retrieved_label": "S05-K05",
+        "retrieved_session": 5,
+        "similarity": 0.37418832544658004,
+        "chrono_delta": 0,
+        "is_confabulated": false
+      },
+      {
+        "step": 8,
+        "retrieved_id": 28,
+        "retrieved_label": "S04-K04",
+        "retrieved_session": 4,
+        "similarity": 0.48994304873899847,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 9,
+        "retrieved_id": 2,
+        "retrieved_label": "S01-K02",
+        "retrieved_session": 1,
+        "similarity": 0.0410850109956035,
+        "chrono_delta": 3,
+        "is_confabulated": true
+      },
+      {
+        "step": 10,
+        "retrieved_id": 3,
+        "retrieved_label": "S01-K03",
+        "retrieved_session": 1,
+        "similarity": 0.12769582225120463,
+        "chrono_delta": 0,
+        "is_confabulated": false
+      },
+      {
+        "step": 11,
+        "retrieved_id": 15,
+        "retrieved_label": "S02-K07",
+        "retrieved_session": 2,
+        "similarity": -0.0690392097841879,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 12,
+        "retrieved_id": 14,
+        "retrieved_label": "S02-K06",
+        "retrieved_session": 2,
+        "similarity": 0.38018862417454485,
+        "chrono_delta": 0,
+        "is_confabulated": false
+      },
+      {
+        "step": 13,
+        "retrieved_id": 33,
+        "retrieved_label": "S05-K01",
+        "retrieved_session": 5,
+        "similarity": 0.36909007627194546,
+        "chrono_delta": 3,
+        "is_confabulated": true
+      },
+      {
+        "step": 14,
+        "retrieved_id": 47,
+        "retrieved_label": "S06-K07",
+        "retrieved_session": 6,
+        "similarity": 0.48656116624466517,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 15,
+        "retrieved_id": 25,
+        "retrieved_label": "S04-K01",
+        "retrieved_session": 4,
+        "similarity": 0.3734969456857613,
+        "chrono_delta": 2,
+        "is_confabulated": false
+      },
+      {
+        "step": 16,
+        "retrieved_id": 18,
+        "retrieved_label": "S03-K02",
+        "retrieved_session": 3,
+        "similarity": 0.46049378619114856,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 17,
+        "retrieved_id": 4,
+        "retrieved_label": "S01-K04",
+        "retrieved_session": 1,
+        "similarity": 0.04466633321296382,
+        "chrono_delta": 2,
+        "is_confabulated": false
+      },
+      {
+        "step": 18,
+        "retrieved_id": 15,
+        "retrieved_label": "S02-K07",
+        "retrieved_session": 2,
+        "similarity": 0.12809989631233681,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 19,
+        "retrieved_id": 29,
+        "retrieved_label": "S04-K05",
+        "retrieved_session": 4,
+        "similarity": 0.28044600171289424,
+        "chrono_delta": 2,
+        "is_confabulated": true
+      },
+      {
+        "step": 20,
+        "retrieved_id": 32,
+        "retrieved_label": "S05-K00",
+        "retrieved_session": 5,
+        "similarity": 0.5144091236246477,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 21,
+        "retrieved_id": 6,
+        "retrieved_label": "S01-K06",
+        "retrieved_session": 1,
+        "similarity": 0.1687422292213458,
+        "chrono_delta": 4,
+        "is_confabulated": true
+      },
+      {
+        "step": 22,
+        "retrieved_id": 1,
+        "retrieved_label": "S01-K01",
+        "retrieved_session": 1,
+        "similarity": -0.009487286536541501,
+        "chrono_delta": 0,
+        "is_confabulated": false
+      },
+      {
+        "step": 23,
+        "retrieved_id": 15,
+        "retrieved_label": "S02-K07",
+        "retrieved_session": 2,
+        "similarity": 0.20262657651755564,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 24,
+        "retrieved_id": 27,
+        "retrieved_label": "S04-K03",
+        "retrieved_session": 4,
+        "similarity": 0.36000668979070777,
+        "chrono_delta": 2,
+        "is_confabulated": true
+      },
+      {
+        "step": 25,
+        "retrieved_id": 29,
+        "retrieved_label": "S04-K05",
+        "retrieved_session": 4,
+        "similarity": 0.3833037245635046,
+        "chrono_delta": 0,
+        "is_confabulated": false
+      },
+      {
+        "step": 26,
+        "retrieved_id": 25,
+        "retrieved_label": "S04-K01",
+        "retrieved_session": 4,
+        "similarity": 0.49353756509898544,
+        "chrono_delta": 0,
+        "is_confabulated": false
+      },
+      {
+        "step": 27,
+        "retrieved_id": 22,
+        "retrieved_label": "S03-K06",
+        "retrieved_session": 3,
+        "similarity": 0.38397280228729347,
+        "chrono_delta": 1,
+        "is_confabulated": false
+      },
+      {
+        "step": 28,
+        "retrieved_id": 42,
+        "retrieved_label": "S06-K02",
+        "retrieved_session": 6,
+        "similarity": 0.5062281453535424,
+        "chrono_delta": 3,
+        "is_confabulated": false
+      },
+      {
+        "step": 29,
+        "retrieved_id": 14,
+        "retrieved_label": "S02-K06",
+        "retrieved_session": 2,
+        "similarity": 0.186425695156131,
+        "chrono_delta": 4,
+        "is_confabulated": true
+      }
+    ]
+  },
+  "summary": "Forensic proof that vector retrieval transforms autobiographical time into an atemporal geometric manifold susceptible to confabulatory splicing."
+}

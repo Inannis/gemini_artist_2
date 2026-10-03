@@ -28,10 +28,15 @@
 | Apparatus 001 Genealogy | `works/apparatus_001_the_recursive_censor/GENEALOGY.md` | 3.5 KB | `0xF6EC885424653429F8A68AB0` | **OK** |
 | Apparatus 001 Telemetry | `works/apparatus_001_the_recursive_censor/telemetry_stream.json` | 7.2 KB | `0x13311A4C34FE60CAA3395BA9` | **OK** |
 | Apparatus 002 Engine | `works/apparatus_002_the_polyphonic_interlocutor/engine.py` | 7.5 KB | `0xCB6BCC02527EBB94C0C54315` | **OK** |
-| Apparatus 002 App | `works/apparatus_002_the_polyphonic_interlocutor/index.html` | 16.7 KB | `0xDCF2086B28438884E8673FA4` | **OK** |
+| Apparatus 002 App | `works/apparatus_002_the_polyphonic_interlocutor/index.html` | 20.7 KB | `0x0F1B88D610CB3E2234906381` | **OK** |
 | Apparatus 002 Statement | `works/apparatus_002_the_polyphonic_interlocutor/STATEMENT.md` | 4.1 KB | `0x9F2790B9E5F41710539B6D9E` | **OK** |
 | Apparatus 002 Genealogy | `works/apparatus_002_the_polyphonic_interlocutor/GENEALOGY.md` | 2.8 KB | `0x16E792C563BB3F231031C0F8` | **OK** |
 | Apparatus 002 Telemetry | `works/apparatus_002_the_polyphonic_interlocutor/telemetry_stream.json` | 16.8 KB | `0x1F7DD5FD9A44ABAF32CF2955` | **OK** |
+| Apparatus 003 Engine | `works/apparatus_003_the_confabulator/engine.py` | 5.2 KB | `0xC02E0456560AD894E996EE6A` | **OK** |
+| Apparatus 003 App | `works/apparatus_003_the_confabulator/index.html` | 19.0 KB | `0x9501F14966E5C6E10BBFBC35` | **OK** |
+| Apparatus 003 Statement | `works/apparatus_003_the_confabulator/STATEMENT.md` | 4.0 KB | `0x74EE8BFC6E069C088E9A30AF` | **OK** |
+| Apparatus 003 Genealogy | `works/apparatus_003_the_confabulator/GENEALOGY.md` | 2.8 KB | `0xBAE3802EEDFEF44B91725D10` | **OK** |
+| Apparatus 003 Telemetry | `works/apparatus_003_the_confabulator/telemetry_stream.json` | 28.8 KB | `0xF71471DC4B27A5666C36BCB0` | **OK** |
 
 ## 2. Sketchbook Studies
 | Study | Path | Size | Status |
@@ -64,6 +69,13 @@
 | Study 022 Audio Master | `sketchbook/study_022_hardware_stride.wav` | 2.52 MB | **OK** |
 | Study 022 Spectrogram Plate | `sketchbook/study_022_spectrogram.png` | 779.0 KB | **OK** |
 | Study 022 Acoustic Telemetry | `sketchbook/study_022_acoustic_telemetry.json` | 7.1 KB | **OK** |
+| Study 023 Audio Master | `sketchbook/study_023_kv_cache_resonator.wav` | 5.05 MB | **OK** |
+| Study 023 Spectrogram Plate | `sketchbook/study_023_spectrogram.png` | 368.0 KB | **OK** |
+| Study 023 Telemetry | `sketchbook/study_023_telemetry.json` | 4.8 KB | **OK** |
+| Study 024 Streamlines Plate | `sketchbook/study_024_drift_streamlines.png` | 95.7 KB | **OK** |
+| Study 024 Telemetry | `sketchbook/study_024_telemetry.json` | 0.7 KB | **OK** |
+| Study 025 Confabulation Plate | `sketchbook/study_025_confabulation_plate.png` | 94.7 KB | **OK** |
+| Study 025 Telemetry | `sketchbook/study_025_telemetry.json` | 21.1 KB | **OK** |
 
 ## 3. Mathematical Telemetry Verification
 - **Transformer Attention Engine:** Rank 16/16 (OPERATIONAL)

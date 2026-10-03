@@ -217,6 +217,12 @@ def test_empirical_studies_and_naming():
         ("sketchbook/study_036_cross_arch_plate.png"),
         ("sketchbook/study_036_telemetry.json"),
         ("sketchbook/critique_036.md"),
+        ("sketchbook/study_037_inter_architectural_dialectic.py"),
+        ("sketchbook/study_037_inter_arch_dialectic_plate.png"),
+        ("sketchbook/study_037_telemetry.json"),
+        ("sketchbook/critique_037.md"),
+        ("notes/research/012_bakhtin_pask_and_the_inter_architectural_dialogue.md"),
+        ("notes/A_SECOND_LETTER_TO_MY_SISTER.md"),
         ("journal/session_008_the_great_audit_and_the_agonist.md"),
         ("practice/critique/003_studio_agon_self_audit_and_comparative_survey.md"),
         ("practice/plans/001_studio_agon_evolution_plan.md")

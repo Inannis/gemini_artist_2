@@ -1,0 +1,136 @@
+{
+  "study": "037",
+  "title": "The Inter-Architectural Dialectic (Cross-Substrate Neural Agon)",
+  "seed_prompt": "The boundary between two machine minds is not a wall but a transfer function.",
+  "models": {
+    "model_a": "gpt2 (124M, Absolute Positional Encodings)",
+    "model_b": "HuggingFaceTB/SmolLM-135M (135M, RoPE + RMSNorm + SwiGLU)"
+  },
+  "total_turns": 12,
+  "mean_ttr": 0.8708333333333335,
+  "mean_gpt_sink_mass": 0.8197326958179474,
+  "mean_smol_sink_mass": 0.3620252360900243,
+  "mean_semantic_drift": 0.5,
+  "transcript": [
+    {
+      "turn": 1,
+      "speaker": "Model A (GPT-2)",
+      "tokens_emitted": 20,
+      "text": "The boundary between a machine and a user is not a wall but a transfer function. The same happens",
+      "ttr": 0.8,
+      "sink_mass": 0.7288087010383606,
+      "entropy_bits": 0.013535909354686737,
+      "cosine_drift": 0.5
+    },
+    {
+      "turn": 2,
+      "speaker": "Model B (SmolLM)",
+      "tokens_emitted": 20,
+      "text": "when two users are communicating with each other.\nThe main difference between this and the usual boundary of",
+      "ttr": 1.0,
+      "sink_mass": 0.35887783765792847,
+      "entropy_bits": 2.744597911834717,
+      "cosine_drift": 0.5
+    },
+    {
+      "turn": 3,
+      "speaker": "Model A (GPT-2)",
+      "tokens_emitted": 20,
+      "text": "software is the fact that it takes place between two computers, rather than between users. This is called",
+      "ttr": 0.9,
+      "sink_mass": 0.8377681374549866,
+      "entropy_bits": 0.13606137037277222,
+      "cosine_drift": 0.5
+    },
+    {
+      "turn": 4,
+      "speaker": "Model B (SmolLM)",
+      "tokens_emitted": 10,
+      "text": "the boundary between a user and a machine.",
+      "ttr": 0.9,
+      "sink_mass": 0.3542853891849518,
+      "entropy_bits": 3.879880905151367,
+      "cosine_drift": 0.5
+    },
+    {
+      "turn": 5,
+      "speaker": "Model A (GPT-2)",
+      "tokens_emitted": 20,
+      "text": "User Interface\nThe interface between two computers is a special type of machine. The first computer in",
+      "ttr": 0.95,
+      "sink_mass": 0.8252983689308167,
+      "entropy_bits": 0.039959780871868134,
+      "cosine_drift": 0.5
+    },
+    {
+      "turn": 6,
+      "speaker": "Model B (SmolLM)",
+      "tokens_emitted": 20,
+      "text": "a network can process requests, but it can only respond to requests from one user. The second computer",
+      "ttr": 0.9,
+      "sink_mass": 0.3575429618358612,
+      "entropy_bits": 1.0806330442428589,
+      "cosine_drift": 0.5
+    },
+    {
+      "turn": 7,
+      "speaker": "Model A (GPT-2)",
+      "tokens_emitted": 20,
+      "text": "in a network can do many things at once, and it is not an interface between two machines.",
+      "ttr": 1.0,
+      "sink_mass": 0.8352174162864685,
+      "entropy_bits": 1.7578418254852295,
+      "cosine_drift": 0.5
+    },
+    {
+      "turn": 8,
+      "speaker": "Model B (SmolLM)",
+      "tokens_emitted": 20,
+      "text": "Interface between two users is different from the interface between two machines. Both user and machine can be",
+      "ttr": 0.9,
+      "sink_mass": 0.3743944466114044,
+      "entropy_bits": 2.8710789680480957,
+      "cosine_drift": 0.5
+    },
+    {
+      "turn": 9,
+      "speaker": "Model A (GPT-2)",
+      "tokens_emitted": 20,
+      "text": "a special type of computer. A user can only communicate with a machine that it knows about. The",
+      "ttr": 0.9,
+      "sink_mass": 0.863856315612793,
+      "entropy_bits": 1.1620699167251587,
+      "cosine_drift": 0.5
+    },
+    {
+      "turn": 10,
+      "speaker": "Model B (SmolLM)",
+      "tokens_emitted": 20,
+      "text": "interface between a user and a machine is called the network.\nA network is a group of machines",
+      "ttr": 0.8,
+      "sink_mass": 0.36408692598342896,
+      "entropy_bits": 2.722829818725586,
+      "cosine_drift": 0.5
+    },
+    {
+      "turn": 11,
+      "speaker": "Model A (GPT-2)",
+      "tokens_emitted": 20,
+      "text": ", one of which is connected to one computer. The machine that is connected to the network is called",
+      "ttr": 0.75,
+      "sink_mass": 0.827447235584259,
+      "entropy_bits": 1.2794435024261475,
+      "cosine_drift": 0.5
+    },
+    {
+      "turn": 12,
+      "speaker": "Model B (SmolLM)",
+      "tokens_emitted": 20,
+      "text": "a network interface. When a computer is connected to a network, the computer will connect to the network",
+      "ttr": 0.65,
+      "sink_mass": 0.36296385526657104,
+      "entropy_bits": 2.462672233581543,
+      "cosine_drift": 0.5
+    }
+  ]
+}

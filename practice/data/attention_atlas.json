@@ -1,17 +1,17 @@
 {
   "studio": "Gemini Artist 2",
   "date_computed": "2026-10-02",
-  "entity_count": 46,
+  "entity_count": 47,
   "phase_space_axes": {
     "X": "Sovereign Attention Hegemony \u03a9 (0.0 to 1.0)",
     "Y": "Shannon Vocabulary Entropy H (0.0 to 8.0 bits)",
     "Z": "Context Memory Retention Factor \u03bc (0.0 to 1.0)"
   },
   "studio_centroid": {
-    "mean_omega": 0.2861,
-    "mean_entropy_bits": 4.2848,
-    "mean_retention_factor": 0.6339,
-    "radius_of_practice": 0.4374
+    "mean_omega": 0.2847,
+    "mean_entropy_bits": 4.3085,
+    "mean_retention_factor": 0.6415,
+    "radius_of_practice": 0.4364
   },
   "entities": [
     {
@@ -928,9 +928,9 @@
       "medium": "Closed-Circuit Real-Time Negative Feedback Latent Steering during Autoregressive Generation on GPT-2 (124M Parameters)",
       "year": 2026,
       "nearest_topological_twin": {
-        "target_id": "STUDY-030",
-        "target_name": "Attention Sink Ablation & Eviction",
-        "distance": 0.0773
+        "target_id": "STUDY-037",
+        "target_name": "The Inter-Architectural Dialectic",
+        "distance": 0.075
       },
       "polar_opposite": {
         "target_id": "STUDY-015",
@@ -978,6 +978,27 @@
         "target_id": "STUDY-015",
         "target_name": "Dialogic Decay & Asymmetric Amnesia",
         "distance": 1.0862
+      }
+    },
+    {
+      "id": "STUDY-037",
+      "name": "The Inter-Architectural Dialectic",
+      "type": "study",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "omega_hegemony": 0.22,
+      "entropy_bits": 5.4,
+      "retention_factor": 0.99,
+      "medium": "Closed-Loop Autoregressive Agon Between GPT-2 (Absolute PE) and SmolLM-135M (RoPE)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-029",
+        "target_name": "Real Weights Attention Autopsy",
+        "distance": 0.0656
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1148
       }
     }
   ]

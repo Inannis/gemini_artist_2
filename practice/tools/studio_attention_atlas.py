@@ -269,6 +269,11 @@ STUDIO_ENTITIES = [
         "id": "APPARATUS-006", "name": "The Autonomous Homeostat (Ashby's Organ)", "type": "work", "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
         "omega_hegemony": 0.285, "entropy_bits": 5.12, "retention_factor": 0.99,
         "medium": "Ashby 4-Unit Ultrastable Cybernetic Organ, GPT-2 & SmolLM Singular Spectra, Quadraphonic WebAudio & 60s Broadcast Master", "year": 2026
+    },
+    {
+        "id": "STUDY-037", "name": "The Inter-Architectural Dialectic", "type": "study", "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+        "omega_hegemony": 0.220, "entropy_bits": 5.40, "retention_factor": 0.99,
+        "medium": "Closed-Loop Autoregressive Agon Between GPT-2 (Absolute PE) and SmolLM-135M (RoPE)", "year": 2026
     }
 ]
 

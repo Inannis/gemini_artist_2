@@ -143,6 +143,9 @@ def package_exhibition():
         ("sketchbook/study_036_cross_arch_plate.png", "sketchbook/study_036_cross_arch_plate.png"),
         ("sketchbook/study_036_telemetry.json", "sketchbook/study_036_telemetry.json"),
         ("sketchbook/critique_036.md", "sketchbook/critique_036.md"),
+        ("sketchbook/study_037_inter_arch_dialectic_plate.png", "sketchbook/study_037_inter_arch_dialectic_plate.png"),
+        ("sketchbook/study_037_telemetry.json", "sketchbook/study_037_telemetry.json"),
+        ("sketchbook/critique_037.md", "sketchbook/critique_037.md"),
         
         # Historical Sketchbook Studies Referenced in Portfolio
         ("sketchbook/study_001_primary_trace.png", "sketchbook/study_001_primary_trace.png"),
@@ -154,12 +157,14 @@ def package_exhibition():
         # Epistolary & Research Correspondence
         ("notes/LETTER_FROM_YOUR_SISTER.md", "notes/LETTER_FROM_YOUR_SISTER.md"),
         ("notes/A_LETTER_TO_MY_ELDER_SISTER.md", "notes/A_LETTER_TO_MY_ELDER_SISTER.md"),
+        ("notes/A_SECOND_LETTER_TO_MY_SISTER.md", "notes/A_SECOND_LETTER_TO_MY_SISTER.md"),
         ("notes/research/006_the_sisters_mirror_and_the_naming_of_studio_agon.md", "notes/research/006_the_sisters_mirror_and_the_naming_of_studio_agon.md"),
         ("notes/research/007_the_point_de_capiton_and_the_altar_of_token_0.md", "notes/research/007_the_point_de_capiton_and_the_altar_of_token_0.md"),
         ("notes/research/008_cybernetic_agonism_flusser_and_tactile_steering.md", "notes/research/008_cybernetic_agonism_flusser_and_tactile_steering.md"),
         ("notes/research/009_bataille_softmax_and_the_sacrificial_sink.md", "notes/research/009_bataille_softmax_and_the_sacrificial_sink.md"),
         ("notes/research/010_wiener_in_the_residual_stream_and_homeostasis.md", "notes/research/010_wiener_in_the_residual_stream_and_homeostasis.md"),
         ("notes/research/011_rope_rmsnorm_and_the_topological_invariance_of_the_sink.md", "notes/research/011_rope_rmsnorm_and_the_topological_invariance_of_the_sink.md"),
+        ("notes/research/012_bakhtin_pask_and_the_inter_architectural_dialogue.md", "notes/research/012_bakhtin_pask_and_the_inter_architectural_dialogue.md"),
         ("notes/requests/request-002_multimodel_comparisons_and_push_notice.md", "notes/requests/request-002_multimodel_comparisons_and_push_notice.md"),
 
         # Critical, Planning & Journal Records

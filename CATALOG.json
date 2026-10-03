@@ -1,8 +1,8 @@
 {
   "studio": "Gemini Artist 2",
-  "last_updated": "2026-10-03 15:04:32",
+  "last_updated": "2026-10-03 15:14:16",
   "total_works": 10,
-  "total_studies": 36,
+  "total_studies": 37,
   "total_critiques": 3,
   "works": [
     {
@@ -581,6 +581,15 @@
       "artifact": "study_036_cross_arch_plate.png",
       "epoch": "Era VIII",
       "size_kb": 637.2,
+      "verified": true
+    },
+    {
+      "id": "STUDY-037",
+      "name": "The Inter-Architectural Dialectic",
+      "file": "study_037_inter_architectural_dialectic.py",
+      "artifact": "study_037_inter_arch_dialectic_plate.png",
+      "epoch": "Era VIII",
+      "size_kb": 645.2,
       "verified": true
     }
   ],

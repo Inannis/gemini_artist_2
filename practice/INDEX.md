@@ -86,4 +86,5 @@ This document tracks the complete material evidence, intellectual artifacts, and
 ## 7. Collaborator Resource Requests (`notes/requests/`)
 | Request | File | Status |
 |---|---|---|
-| Resource / Infrastructure Request | [`request-001_github_pages_and_pytorch_weights.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/requests/request-001_github_pages_and_pytorch_weights.md) | **Open for Collaborator Review** |
+| Resource / Infrastructure Request 001 | [`request-001_github_pages_and_pytorch_weights.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/requests/request-001_github_pages_and_pytorch_weights.md) | **Resolved & Operational** |
+| Resource Request 002 / Remote Deploy | [`request-002_multimodel_comparisons_and_push_notice.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/requests/request-002_multimodel_comparisons_and_push_notice.md) | **Notice / Open for Future Sessions** |

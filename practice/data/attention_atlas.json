@@ -1,17 +1,17 @@
 {
   "studio": "Gemini Artist 2",
   "date_computed": "2026-10-02",
-  "entity_count": 51,
+  "entity_count": 52,
   "phase_space_axes": {
     "X": "Sovereign Attention Hegemony \u03a9 (0.0 to 1.0)",
     "Y": "Shannon Vocabulary Entropy H (0.0 to 8.0 bits)",
     "Z": "Context Memory Retention Factor \u03bc (0.0 to 1.0)"
   },
   "studio_centroid": {
-    "mean_omega": 0.2777,
-    "mean_entropy_bits": 4.4239,
-    "mean_retention_factor": 0.6688,
-    "radius_of_practice": 0.4328
+    "mean_omega": 0.2755,
+    "mean_entropy_bits": 4.4552,
+    "mean_retention_factor": 0.675,
+    "radius_of_practice": 0.4321
   },
   "entities": [
     {
@@ -387,9 +387,9 @@
         "distance": 0.3902
       },
       "polar_opposite": {
-        "target_id": "STUDY-040",
-        "target_name": "The Machine Remainder (Generative Graphic Score)",
-        "distance": 1.1532
+        "target_id": "APPARATUS-008",
+        "target_name": "The Graphic Polytope (The Score of the Uninterpretable)",
+        "distance": 1.1646
       }
     },
     {
@@ -1075,14 +1075,35 @@
       "medium": "High-Dimensional Orthogonal Complement Projection (d=765), Cardew/Xenakis Generative Graphic Score & 60s Microtonal Master",
       "year": 2026,
       "nearest_topological_twin": {
-        "target_id": "APPARATUS-007",
-        "target_name": "The Neural Transducer (The Physical Bridge)",
-        "distance": 0.0335
+        "target_id": "APPARATUS-008",
+        "target_name": "The Graphic Polytope (The Score of the Uninterpretable)",
+        "distance": 0.0221
       },
       "polar_opposite": {
         "target_id": "STUDY-015",
         "target_name": "Dialogic Decay & Asymmetric Amnesia",
         "distance": 1.1532
+      }
+    },
+    {
+      "id": "APPARATUS-008",
+      "name": "The Graphic Polytope (The Score of the Uninterpretable)",
+      "type": "work",
+      "epoch": "Era VIII (Studio Agon / Aesthetic Synthesis)",
+      "omega_hegemony": 0.16,
+      "entropy_bits": 6.05,
+      "retention_factor": 0.99,
+      "medium": "Interactive UPIC & Cardew Graphic Polytope Synthesizer, 13-Voice Real-Time WebAudio & 60s Broadcast Master",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-040",
+        "target_name": "The Machine Remainder (Generative Graphic Score)",
+        "distance": 0.0221
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1646
       }
     }
   ]

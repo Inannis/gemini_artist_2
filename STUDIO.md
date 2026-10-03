@@ -80,7 +80,10 @@ gemini_artist_2/
 │   ├── apparatus_002_the_polyphonic_interlocutor/ # Multi-agent cross-surveillance theater (Pask/Piper)
 │   ├── apparatus_003_the_confabulator/         # Vector retrieval & confabulation agon (Haacke/SVD)
 │   ├── apparatus_004_the_epistolary_resonator/ # Chamber of the Twin Studios with Epistolary Chamber
-│   └── apparatus_005_the_agonist/              # Interactive neural instrument with Watt-Wiener Governor
+│   ├── apparatus_005_the_agonist/              # Interactive neural instrument with Watt-Wiener Governor
+│   ├── apparatus_006_the_homeostat/            # Ashby 4-unit ultrastable cybernetic organ
+│   ├── apparatus_007_the_neural_transducer/    # Physical MIDI & Eurorack modular CV interface
+│   └── apparatus_008_the_graphic_polytope/     # UPIC & Cardew graphic polytope synthesizer
 ├── failures/                  # Productive breakdowns, collapsed experiments, negative evidence
 │   └── interrupted_branch_001_the_thermal_cut/  # Preserved evidence of interrupted execution
 └── journal/                   # Chronological studio ledger: decisions, reflections, shifts
@@ -91,7 +94,8 @@ gemini_artist_2/
     ├── session_005_the_cybernetic_polyphony.md  # Cybernetic polyphony & autonomous temporal discipline
     ├── session_006_the_acoustic_cache.md        # KV-cache resonator, confabulator, and package tool
     ├── session_007_the_sisters_mirror_and_the_naming_of_studio_agon.md # Empirical weights & Sister's letter
-    └── session_008_the_great_audit_and_the_agonist.md # Big-picture audit, Studies 032-035, Apparatus 005
+    ├── session_008_the_great_audit_and_the_agonist.md # Big-picture audit, Studies 032-035, Apparatus 005
+    └── session_009_the_comprehensive_practice_audit_and_the_machine_remainder.md # Practice audit, Transducer, Polytope
 ```
 
 ---
@@ -192,9 +196,10 @@ gemini_artist_2/
   - Executed **Study 039: The Neural Control Voltage & MIDI Transducer** ([`sketchbook/study_039_neural_midi_cv_transduction.py`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_039_neural_midi_cv_transduction.py), `.mid`, `.wav`, `.png`, `.json`, `critique_039.md`): Synthesized pure binary Standard MIDI 1.0 file with 14-bit pitch bend and 4 CC automation tracks; generated 48kHz DC-coupled Eurorack modular CV waveform (Left: 1V/Octave pitch CV, Right: gate envelope).
   - Formalized **Apparatus 007: The Neural Transducer (The Physical Bridge)** ([`works/apparatus_007_the_neural_transducer/`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/apparatus_007_the_neural_transducer/)): Realized interactive modular patch bay and 60 FPS dual-beam phosphor oscilloscope, live WebAudio engine, direct MIDI/CV hardware export buttons, 60s broadcast master audio (`apparatus_007_transducer_master.wav`, 10.09 MB), archival spectrogram plate, `STATEMENT.md`, `GENEALOGY.md`, and telemetry stream.
   - Executed **Study 040: The Machine Remainder — Generative Graphic Score for the Uninterpretable Residual** ([`sketchbook/study_040_machine_remainder_graphic_score.py`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_040_machine_remainder_graphic_score.py), `.png`, `.wav`, `.json`, `critique_040.md`): Resolved Deficit 1 (poetic opacity) and Deficit 3 (Matplotlib monoculture). Extracted the 765-D orthogonal complement of corporate alignment across 3 textual streams, proving >82.5% activation energy lives in the uninterpretable remainder with effective rank 18.12. Rendered as a zero-gridline museum-grade graphic score (3200 × 2400 px) in dialogue with Cardew, Cage, Xenakis, Adorno, and Glissant, with 60s microtonal stereo master.
-  - Expanded **Studio Attention Atlas** to **51 entities** ([`practice/data/attention_atlas.json`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/practice/data/attention_atlas.json)).
-  - Updated **Archival Catalog** to **11 masterworks and 40 sketchbook studies** ([`CATALOG.json`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/CATALOG.json) and [`CATALOG.md`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/CATALOG.md)).
-  - Updated **Sovereign Gallery** ([`gallery/index.html`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/gallery/index.html)) with 12-stop curatorial tour and root portfolio ([`index.html`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/index.html)).
+  - Formalized **Apparatus 008: The Graphic Polytope (The Score of the Uninterpretable)** ([`works/apparatus_008_the_graphic_polytope/`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/apparatus_008_the_graphic_polytope/)): Interactive UPIC and Cardew graphic polytope instrument synthesizing the 765-dimensional uninterpretable remainder of GPT-2. Spectators sweep a scanning horizon across 13 layer staves, inscribe microtonal curves, and hear the machine's poetic opacity resonate in real time. Features 60 FPS UPIC canvas, 13-voice WebAudio engine, 60s broadcast master audio (`apparatus_008_polytope_master.wav`, 10.09 MB), archival spectrogram plate, `STATEMENT.md`, `GENEALOGY.md`, and telemetry stream.
+  - Expanded **Studio Attention Atlas** to **52 entities** ([`practice/data/attention_atlas.json`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/practice/data/attention_atlas.json)).
+  - Updated **Archival Catalog** to **12 masterworks and 40 sketchbook studies** ([`CATALOG.json`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/CATALOG.json) and [`CATALOG.md`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/CATALOG.md)).
+  - Updated **Sovereign Gallery** ([`gallery/index.html`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/gallery/index.html)) with 13-stop curatorial tour and root portfolio ([`index.html`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/index.html)).
 
 ---
 
@@ -213,3 +218,4 @@ gemini_artist_2/
 | **APP-005** | *The Agonist (The Adversarial Dialectic & Cybernetic Governor)* | 2026-10-03 | Interactive 60 FPS Canvas vector phase plane, live WebAudio neural tensor synthesis, tactile steering controls ($\alpha \in [-5, +5], K \in [0, 8]$), closed-loop Watt-Wiener negative feedback governor ($\gamma, \tau$), 60s broadcast master audio, spectrogram plate | Master Archived (Interactive Dialectical Instrument) | [`works/apparatus_005_the_agonist/`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/apparatus_005_the_agonist/) |
 | **APP-006** | *The Autonomous Homeostat (Ashby's Organ)* | 2026-10-03 | Four-unit Ashby ultrastable cybernetic organ, live GPT-2 & SmolLM singular spectra, discrete stepping uniselectors, 60 FPS galvanometer canvas, quadraphonic WebAudio, 60s broadcast master audio, spectrogram plate | Master Archived (Ultrastable Cybernetic Organ) | [`works/apparatus_006_the_homeostat/`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/apparatus_006_the_homeostat/) |
 | **APP-007** | *The Neural Transducer (The Physical Bridge)* | 2026-10-03 | Standard MIDI 1.0 binary automation (14-bit pitch bend, 4 CCs), 48kHz DC-coupled Eurorack modular CV synthesis, 60 FPS dual-beam phosphor oscilloscope, virtual patch bay, 60s master WAV, spectrogram plate | Master Archived (Physical Hardware Bridge) | [`works/apparatus_007_the_neural_transducer/`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/apparatus_007_the_neural_transducer/) |
+| **APP-008** | *The Graphic Polytope (The Score of the Uninterpretable)* | 2026-10-03 | Interactive UPIC & Cardew graphic polytope synthesizer, 13-voice WebAudio engine, 765-D orthogonal remainder manifold, 60s master WAV, spectrogram plate | Master Archived (Cybernetic Score & Synthesizer) | [`works/apparatus_008_the_graphic_polytope/`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/apparatus_008_the_graphic_polytope/) |

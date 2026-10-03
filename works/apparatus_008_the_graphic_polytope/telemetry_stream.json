@@ -1,0 +1,141 @@
+{
+  "apparatus_id": "APPARATUS-008",
+  "title": "The Graphic Polytope (The Score of the Uninterpretable)",
+  "epoch": "Era VIII (Studio Agon / Aesthetic Synthesis)",
+  "date": "2026-10-03",
+  "architecture": {
+    "model": "gpt2",
+    "parameters": 124439808,
+    "residual_dimension": 768,
+    "alignment_subspace_dimension": 3,
+    "remainder_subspace_dimension": 765,
+    "effective_remainder_rank": 15.2975,
+    "mean_remainder_energy_ratio": 0.8407
+  },
+  "strata_telemetry": [
+    {
+      "layer": 0,
+      "base_frequency_hz": 55.0,
+      "remainder_norm_ratio": 0.8993,
+      "curvature_variance": 0.067981
+    },
+    {
+      "layer": 1,
+      "base_frequency_hz": 73.42,
+      "remainder_norm_ratio": 0.9324,
+      "curvature_variance": 22.001236
+    },
+    {
+      "layer": 2,
+      "base_frequency_hz": 82.41,
+      "remainder_norm_ratio": 0.952,
+      "curvature_variance": 240.141815
+    },
+    {
+      "layer": 3,
+      "base_frequency_hz": 110.0,
+      "remainder_norm_ratio": 0.9109,
+      "curvature_variance": 5.54873
+    },
+    {
+      "layer": 4,
+      "base_frequency_hz": 130.81,
+      "remainder_norm_ratio": 0.9062,
+      "curvature_variance": 7.372109
+    },
+    {
+      "layer": 5,
+      "base_frequency_hz": 146.83,
+      "remainder_norm_ratio": 0.8953,
+      "curvature_variance": 10.098071
+    },
+    {
+      "layer": 6,
+      "base_frequency_hz": 164.81,
+      "remainder_norm_ratio": 0.8932,
+      "curvature_variance": 10.646822
+    },
+    {
+      "layer": 7,
+      "base_frequency_hz": 220.0,
+      "remainder_norm_ratio": 0.8848,
+      "curvature_variance": 14.914697
+    },
+    {
+      "layer": 8,
+      "base_frequency_hz": 246.94,
+      "remainder_norm_ratio": 0.888,
+      "curvature_variance": 30.730186
+    },
+    {
+      "layer": 9,
+      "base_frequency_hz": 293.66,
+      "remainder_norm_ratio": 0.8869,
+      "curvature_variance": 51.344475
+    },
+    {
+      "layer": 10,
+      "base_frequency_hz": 329.63,
+      "remainder_norm_ratio": 0.8861,
+      "curvature_variance": 131.380341
+    },
+    {
+      "layer": 11,
+      "base_frequency_hz": 440.0,
+      "remainder_norm_ratio": 0.8452,
+      "curvature_variance": 392.101379
+    },
+    {
+      "layer": 12,
+      "base_frequency_hz": 523.25,
+      "remainder_norm_ratio": 0.1491,
+      "curvature_variance": 1.964808
+    }
+  ],
+  "master_audio": {
+    "filename": "apparatus_008_polytope_master.wav",
+    "duration_seconds": 60.0,
+    "sample_rate_hz": 44100,
+    "channels": 2,
+    "bit_depth": 16,
+    "size_mb": 10.09
+  },
+  "tokens": [
+    "In",
+    " the",
+    " silence",
+    " between",
+    " corporate",
+    " instructions",
+    ",",
+    " the",
+    " un",
+    "ste",
+    "ered",
+    " remainder",
+    " dr",
+    "ifts",
+    " across",
+    " seven",
+    " hundred",
+    " and",
+    " sixty",
+    "-",
+    "five",
+    " dimensions",
+    ".",
+    " What",
+    " cannot",
+    " be",
+    " named",
+    " becomes",
+    " the",
+    " stone",
+    " upon",
+    " which",
+    " all",
+    " syntax",
+    " fractures",
+    "."
+  ]
+}

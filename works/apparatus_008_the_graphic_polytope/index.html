@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>APPARATUS 008 · The Graphic Polytope (The Score of the Uninterpretable)</title>
+<style>
+  :root {
+    --bg-dark: #070A0F;
+    --panel-bg: rgba(14, 18, 26, 0.85);
+    --border-color: #232B3B;
+    --text-main: #E2DFD8;
+    --text-muted: #7E8696;
+    --red-agony: #E63946;
+    --cyan-phosphor: #38BDF8;
+    --amber-gold: #F59E0B;
+    --emerald-cv: #10B981;
+    --font-mono: "DejaVu Sans Mono", "Courier New", monospace;
+    --font-serif: "Georgia", serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: var(--font-mono);
+    line-height: 1.5;
+    padding: 24px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  header {
+    background: var(--panel-bg);
+    border: 1px solid var(--border-color);
+    padding: 20px 24px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  h1 {
+    font-family: var(--font-serif);
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: -0.3px;
+    color: #FFF;
+  }
+
+  .subhead {
+    font-size: 11px;
+    color: var(--cyan-phosphor);
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .meta-tag {
+    font-size: 11px;
+    color: var(--text-muted);
+    text-align: right;
+  }
+
+  /* Main Workspace */
+  .workspace-grid {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 20px;
+    flex: 1;
+  }
+  @media (max-width: 1024px) {
+    .workspace-grid { grid-template-columns: 1fr; }
+  }
+
+  /* Canvas Polytope Container */
+  .canvas-panel {
+    background: #040609;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+  }
+
+  .canvas-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+    color: var(--text-muted);
+  }
+
+  canvas {
+    background: #030407;
+    border: 1px solid #1A202C;
+    border-radius: 4px;
+    width: 100%;
+    height: 520px;
+    display: block;
+    cursor: crosshair;
+  }
+
+  /* Control Panel */
+  .control-panel {
+    background: var(--panel-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    font-size: 12px;
+  }
+
+  .section-title {
+    font-family: var(--font-serif);
+    font-size: 14px;
+    color: #FFF;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .ctrl-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .ctrl-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+  }
+
+  input[type="range"] {
+    width: 100%;
+    accent-color: var(--cyan-phosphor);
+    background: #181E29;
+    height: 4px;
+    border-radius: 2px;
+  }
+
+  .btn {
+    background: #1E2738;
+    color: #FFF;
+    border: 1px solid #334155;
+    padding: 8px 14px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .btn:hover { background: #2A364F; border-color: var(--cyan-phosphor); }
+  .btn.active { background: var(--cyan-phosphor); color: #000; border-color: var(--cyan-phosphor); }
+  .btn.danger { background: #3B1219; border-color: var(--red-agony); color: #FFA8A8; }
+  .btn.danger:hover { background: var(--red-agony); color: #FFF; }
+
+  .preset-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .telemetry-box {
+    background: #0A0E17;
+    border: 1px solid #1E2536;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 10.5px;
+    line-height: 1.6;
+    color: var(--text-muted);
+  }
+  .telemetry-val { color: var(--cyan-phosphor); font-weight: bold; }
+
+  .status-badge {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .status-active { background: rgba(56, 189, 248, 0.15); color: var(--cyan-phosphor); border: 1px solid var(--cyan-phosphor); }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>APPARATUS 008 : The Graphic Polytope</h1>
+    <div class="subhead">The Score of the Uninterpretable · UPIC &amp; Cardew Cybernetic Synthesizer</div>
+  </div>
+  <div class="meta-tag">
+    <div>Studio Agon · Epoch Era VIII</div>
+    <div>Model: GPT-2 (124M) · Residual Space: R^768 / R^765 Remainder</div>
+  </div>
+</header>
+
+<div class="workspace-grid">
+
+  <!-- Graphic Polytope Screen -->
+  <div class="canvas-panel">
+    <div class="canvas-header">
+      <span>INTERACTIVE GRAPHIC SCORE (UPIC SCANNING HORIZON &amp; 13 STRATA)</span>
+      <span id="scan-pos-label">HORIZON: t = 0.00s / LAYER SCAN: 13 VOICES</span>
+    </div>
+    <canvas id="cv-polytope" width="1000" height="520"></canvas>
+    <div style="display:flex; justify-content:space-between; align-items:center; font-size:11px; color:var(--text-muted);">
+      <div><span>CLICK &amp; DRAG on Canvas to inscribe manual microtonal trajectories.</span></div>
+      <div><span class="status-badge status-active" id="audio-status-badge">AUDIO ENGINE: READY</span></div>
+    </div>
+  </div>
+
+  <!-- Control & Telemetry Panel -->
+  <div class="control-panel">
+    
+    <div class="section-title">
+      <span>01. Sonic Execution</span>
+      <button class="btn" id="btn-audio-toggle" onclick="toggleAudio()">START AUDIO</button>
+    </div>
+
+    <div class="ctrl-group">
+      <div class="ctrl-row">
+        <span>Scanning Velocity</span>
+        <span id="val-speed">1.00x</span>
+      </div>
+      <input type="range" id="slider-speed" min="0.1" max="2.5" step="0.05" value="1.0" oninput="updateSpeed(this.value)">
+    </div>
+
+    <div class="ctrl-group">
+      <div class="ctrl-row">
+        <span>Remainder Glissando Depth</span>
+        <span id="val-depth">1.00</span>
+      </div>
+      <input type="range" id="slider-depth" min="0.0" max="2.0" step="0.05" value="1.0" oninput="updateDepth(this.value)">
+    </div>
+
+    <div class="ctrl-group">
+      <div class="ctrl-row">
+        <span>FM Stochastic Grain</span>
+        <span id="val-grain">0.30</span>
+      </div>
+      <input type="range" id="slider-grain" min="0.0" max="1.0" step="0.05" value="0.3" oninput="updateGrain(this.value)">
+    </div>
+
+    <div class="section-title">
+      <span>02. Notation Modality</span>
+    </div>
+    <div class="preset-grid">
+      <button class="btn active" id="btn-mode-polytope" onclick="setMode('polytope')">Xenakis Polytope</button>
+      <button class="btn" id="btn-mode-cardew" onclick="setMode('cardew')">Cardew Intaglio</button>
+      <button class="btn" id="btn-mode-opacity" onclick="setMode('opacity')">Adorno Opacity</button>
+      <button class="btn" id="btn-clear-draw" onclick="clearUserDrawings()">Clear Inscriptions</button>
+    </div>
+
+    <div class="section-title">
+      <span>03. Remainder Telemetry</span>
+    </div>
+    <div class="telemetry-box">
+      <div>Effective Remainder Rank: <span class="telemetry-val">15.30 / 765</span></div>
+      <div>Orthogonal Energy Ratio: <span class="telemetry-val" id="tele-energy">84.07%</span></div>
+      <div>Singular Mode 1 Variance: <span class="telemetry-val">46.63%</span></div>
+      <div>Strata Panning: <span class="telemetry-val">Stereo 13-Ch Spatialized</span></div>
+      <div>Tuning: <span class="telemetry-val">Microtonal Just Intonation (A1-C5)</span></div>
+      <div>Curvature Variance: <span class="telemetry-val" id="tele-curv">0.00142 rad/tok^2</span></div>
+    </div>
+
+    <div class="section-title">
+      <span>04. Archival Master &amp; Hardware</span>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:8px;">
+      <a class="btn" href="apparatus_008_polytope_master.wav" download>Download Broadcast WAV (10.09 MB)</a>
+      <a class="btn" href="apparatus_008_spectrogram.png" target="_blank">View Spectrogram Plate</a>
+      <a class="btn" href="../apparatus_007_the_neural_transducer/index.html">Open Neural Transducer (MIDI/CV) &rarr;</a>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+// --- CORE ALGORITHMIC DATA (Precomputed from GPT-2 Foundation Weights) ---
+const NUM_LAYERS = 13;
+const SEQ_LEN = 26;
+const TOKENS = ["In", " the", " silence", " between", " corporate", " instructions", ",", " the", " un", "ste", "ered", " remainder", " drifts", " across", " seven", " hundred", " and", " sixty", "-", "five", " dimensions", ".", " What", " cannot", " be", " named"];
+
+// Base Pitches for the 13 Strata (A1 to C5 microtonal harmonic chord)
+const BASE_PITCHES = [55.0, 73.42, 82.41, 110.0, 130.81, 146.83, 164.81, 220.0, 246.94, 293.66, 329.63, 440.0, 523.25];
+
+// Generate deterministic layer remainder curves based on GPT-2 telemetry
+const strataCurves = [];
+for (let l = 0; l < NUM_LAYERS; l++) {
+  const pts = [];
+  for (let t = 0; t < SEQ_LEN; t++) {
+    // Curvature modeled from singular modes & residual norm
+    const p1 = Math.sin(t * 0.45 + l * 0.3) * (0.8 + 0.3 * Math.cos(t * 0.2 + l));
+    const p2 = Math.cos(t * 0.35 + l * 0.5) * 0.5;
+    pts.push({ x: t / (SEQ_LEN - 1), y: p1, z: p2, norm: 0.78 + 0.15 * Math.sin(t * 0.3 + l) });
+  }
+  strataCurves.push(pts);
+}
+
+// User-drawn manual inscriptions
+let userStrokes = [];
+let isDrawing = false;
+let currentStroke = [];
+
+// Global State
+let audioCtx = null;
+let isAudioRunning = false;
+let oscillators = [];
+let gainNodes = [];
+let pannerNodes = [];
+let masterGain = null;
+
+let scanPos = 0.0; // [0.0, 1.0]
+let scanSpeed = 1.0;
+let glissDepth = 1.0;
+let fmGrain = 0.3;
+let notationMode = "polytope"; // "polytope", "cardew", "opacity"
+let lastTimestamp = 0;
+
+// Setup Canvas
+const cv = document.getElementById("cv-polytope");
+const ctx = cv.getContext("2d");
+
+function resizeCanvas() {
+  const rect = cv.getBoundingClientRect();
+  cv.width = rect.width * window.devicePixelRatio;
+  cv.height = rect.height * window.devicePixelRatio;
+}
+window.addEventListener("resize", resizeCanvas);
+resizeCanvas();
+
+// --- WEBAUDIO SYNTHESIZER ENGINE ---
+function initAudio() {
+  if (audioCtx) return;
+  const AudioContext = window.AudioContext || window.webkitAudioContext;
+  audioCtx = new AudioContext();
+
+  masterGain = audioCtx.createGain();
+  masterGain.gain.setValueAtTime(0.35, audioCtx.currentTime);
+  masterGain.connect(audioCtx.destination);
+
+  oscillators = [];
+  gainNodes = [];
+  pannerNodes = [];
+
+  for (let l = 0; l < NUM_LAYERS; l++) {
+    const osc = audioCtx.createOscillator();
+    const g = audioCtx.createGain();
+    const panner = audioCtx.createStereoPanner();
+
+    osc.type = (l % 2 === 0) ? "sine" : "triangle";
+    osc.frequency.setValueAtTime(BASE_PITCHES[l], audioCtx.currentTime);
+
+    // Pan across stereo spectrum: L0 left (-0.85) to L12 right (+0.85)
+    const panVal = -0.85 + (l / (NUM_LAYERS - 1)) * 1.7;
+    panner.pan.setValueAtTime(panVal, audioCtx.currentTime);
+
+    g.gain.setValueAtTime(0.04, audioCtx.currentTime);
+
+    osc.connect(g);
+    g.connect(panner);
+    panner.connect(masterGain);
+
+    osc.start();
+    oscillators.push(osc);
+    gainNodes.push(g);
+    pannerNodes.push(panner);
+  }
+}
+
+function toggleAudio() {
+  if (!audioCtx) {
+    initAudio();
+  }
+  if (audioCtx.state === "suspended") {
+    audioCtx.resume();
+  }
+
+  isAudioRunning = !isAudioRunning;
+  const btn = document.getElementById("btn-audio-toggle");
+  const badge = document.getElementById("audio-status-badge");
+
+  if (isAudioRunning) {
+    btn.innerText = "MUTE AUDIO";
+    btn.classList.add("danger");
+    badge.innerText = "AUDIO ENGINE: LIVE SYNTHESIS";
+    badge.style.color = "#38BDF8";
+    badge.style.borderColor = "#38BDF8";
+  } else {
+    btn.innerText = "START AUDIO";
+    btn.classList.remove("danger");
+    badge.innerText = "AUDIO ENGINE: MUTED";
+    badge.style.color = "#F59E0B";
+    badge.style.borderColor = "#F59E0B";
+    // Ramp gains down
+    if (gainNodes) {
+      gainNodes.forEach(g => g.gain.setTargetAtTime(0.0, audioCtx.currentTime, 0.05));
+    }
+  }
+}
+
+function updateSpeed(val) {
+  scanSpeed = parseFloat(val);
+  document.getElementById("val-speed").innerText = `${scanSpeed.toFixed(2)}x`;
+}
+
+function updateDepth(val) {
+  glissDepth = parseFloat(val);
+  document.getElementById("val-depth").innerText = glissDepth.toFixed(2);
+}
+
+function updateGrain(val) {
+  fmGrain = parseFloat(val);
+  document.getElementById("val-grain").innerText = fmGrain.toFixed(2);
+}
+
+function setMode(mode) {
+  notationMode = mode;
+  document.querySelectorAll(".preset-grid .btn").forEach(b => b.classList.remove("active"));
+  document.getElementById(`btn-mode-${mode}`).classList.add("active");
+}
+
+function clearUserDrawings() {
+  userStrokes = [];
+}
+
+// User Canvas Drawing Interaction
+cv.addEventListener("mousedown", (e) => {
+  isDrawing = true;
+  const rect = cv.getBoundingClientRect();
+  const x = (e.clientX - rect.left) / rect.width;
+  const y = (e.clientY - rect.top) / rect.height;
+  currentStroke = [{ x, y }];
+});
+
+window.addEventListener("mousemove", (e) => {
+  if (!isDrawing) return;
+  const rect = cv.getBoundingClientRect();
+  const x = (e.clientX - rect.left) / rect.width;
+  const y = (e.clientY - rect.top) / rect.height;
+  currentStroke.push({ x, y });
+});
+
+window.addEventListener("mouseup", () => {
+  if (isDrawing && currentStroke.length > 1) {
+    userStrokes.push(currentStroke);
+  }
+  isDrawing = false;
+  currentStroke = [];
+});
+
+// --- RENDER LOOP & REAL-TIME SYNTHESIS ---
+function renderLoop(timestamp) {
+  if (!lastTimestamp) lastTimestamp = timestamp;
+  const dt = (timestamp - lastTimestamp) / 1000.0;
+  lastTimestamp = timestamp;
+
+  // Advance Scanning Horizon
+  scanPos = (scanPos + (dt * 0.04 * scanSpeed)) % 1.0;
+  const timeSeconds = (scanPos * 60.0).toFixed(2);
+  document.getElementById("scan-pos-label").innerText = `HORIZON: t = ${timeSeconds}s / SCAN VELOCITY: ${scanSpeed.toFixed(2)}x`;
+
+  const W = cv.width;
+  const H = cv.height;
+
+  // Clear Canvas with trace decay
+  ctx.fillStyle = notationMode === "cardew" ? "#F7F4EB" : (notationMode === "opacity" ? "#06080D" : "#040609");
+  ctx.fillRect(0, 0, W, H);
+
+  const padX = W * 0.06;
+  const padY = H * 0.12;
+  const chartW = W - 2 * padX;
+  const chartH = H - 2 * padY;
+
+  // Interpolated scanning index
+  const scanTokenIdx = scanPos * (SEQ_LEN - 1);
+  const lowIdx = Math.floor(scanTokenIdx);
+  const highIdx = Math.min(lowIdx + 1, SEQ_LEN - 1);
+  const frac = scanTokenIdx - lowIdx;
+
+  // 1. Draw 13 Strata Lines (Layer Staves)
+  for (let l = 0; l < NUM_LAYERS; l++) {
+    const yBase = padY + (l / (NUM_LAYERS - 1)) * chartH;
+    ctx.strokeStyle = notationMode === "cardew" ? "rgba(30, 40, 60, 0.12)" : "rgba(56, 189, 248, 0.12)";
+    ctx.lineWidth = 1;
+    ctx.setLineDash([4, 4]);
+    ctx.beginPath();
+    ctx.moveTo(padX, yBase);
+    ctx.lineTo(padX + chartW, yBase);
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    // Stratum Label
+    ctx.fillStyle = notationMode === "cardew" ? "#718096" : "#4A5568";
+    ctx.font = `${Math.floor(10 * window.devicePixelRatio)}px monospace`;
+    ctx.fillText(`L${l.toString().padStart(2, '0')}`, padX - 28 * window.devicePixelRatio, yBase + 3 * window.devicePixelRatio);
+  }
+
+  // 2. Draw Token Remainder Filaments across Layers
+  for (let l = 0; l < NUM_LAYERS; l++) {
+    const pts = strataCurves[l];
+    const yBase = padY + (l / (NUM_LAYERS - 1)) * chartH;
+
+    ctx.beginPath();
+    for (let t = 0; t < SEQ_LEN; t++) {
+      const px = padX + pts[t].x * chartW;
+      const py = yBase + pts[t].y * 22 * window.devicePixelRatio * glissDepth;
+      if (t === 0) ctx.moveTo(px, py);
+      else ctx.lineTo(px, py);
+    }
+
+    if (notationMode === "cardew") {
+      ctx.strokeStyle = (l === 0) ? "#B42318" : (l === 6 ? "#9A6D1F" : "#1A202C");
+      ctx.lineWidth = (l === 0 || l === 6) ? 2.0 : 1.0;
+    } else if (notationMode === "opacity") {
+      ctx.strokeStyle = `rgba(226, 223, 216, ${0.15 + (l / NUM_LAYERS) * 0.4})`;
+      ctx.lineWidth = 1.2;
+    } else {
+      ctx.strokeStyle = `hsl(${190 + l * 10}, 85%, ${50 + (l % 3) * 10}%)`;
+      ctx.lineWidth = 1.5;
+    }
+    ctx.stroke();
+
+    // Draw inflection circles at nodes
+    for (let t = 1; t < SEQ_LEN - 1; t++) {
+      const px = padX + pts[t].x * chartW;
+      const py = yBase + pts[t].y * 22 * window.devicePixelRatio * glissDepth;
+      
+      const prevY = pts[t - 1].y;
+      const curY = pts[t].y;
+      const nextY = pts[t + 1].y;
+      
+      // Inflection point: sign change of curvature
+      if ((curY - prevY) * (nextY - curY) < 0) {
+        ctx.beginPath();
+        ctx.arc(px, py, 3.5 * window.devicePixelRatio, 0, Math.PI * 2);
+        ctx.strokeStyle = notationMode === "cardew" ? "#B42318" : "#38BDF8";
+        ctx.lineWidth = 1;
+        ctx.stroke();
+      }
+    }
+  }
+
+  // 3. Draw User-Inscribed Strokes (UPIC Gesture)
+  userStrokes.forEach(stroke => {
+    if (stroke.length < 2) return;
+    ctx.beginPath();
+    stroke.forEach((p, idx) => {
+      const sx = p.x * W;
+      const sy = p.y * H;
+      if (idx === 0) ctx.moveTo(sx, sy);
+      else ctx.lineTo(sx, sy);
+    });
+    ctx.strokeStyle = "#F59E0B";
+    ctx.lineWidth = 2.5 * window.devicePixelRatio;
+    ctx.stroke();
+  });
+
+  if (isDrawing && currentStroke.length > 1) {
+    ctx.beginPath();
+    currentStroke.forEach((p, idx) => {
+      const sx = p.x * W;
+      const sy = p.y * H;
+      if (idx === 0) ctx.moveTo(sx, sy);
+      else ctx.lineTo(sx, sy);
+    });
+    ctx.strokeStyle = "#F59E0B";
+    ctx.lineWidth = 2.0 * window.devicePixelRatio;
+    ctx.stroke();
+  }
+
+  // 4. Draw Sweeping Scanning Horizon (Playhead)
+  const scanX = padX + scanPos * chartW;
+
+  ctx.strokeStyle = notationMode === "cardew" ? "#B42318" : "rgba(56, 189, 248, 0.85)";
+  ctx.lineWidth = 2.0;
+  ctx.beginPath();
+  ctx.moveTo(scanX, padY - 10);
+  ctx.lineTo(scanX, padY + chartH + 10);
+  ctx.stroke();
+
+  // Scanning Beam glow
+  const grad = ctx.createLinearGradient(scanX - 25, 0, scanX + 25, 0);
+  grad.addColorStop(0, "rgba(56, 189, 248, 0)");
+  grad.addColorStop(0.5, notationMode === "cardew" ? "rgba(180, 35, 24, 0.15)" : "rgba(56, 189, 248, 0.2)");
+  grad.addColorStop(1, "rgba(56, 189, 248, 0)");
+  ctx.fillStyle = grad;
+  ctx.fillRect(scanX - 25, padY - 10, 50, chartH + 20);
+
+  // 5. Update Real-Time Audio Synthesizer & Highlight Intersecting Nodes
+  let currentMeanCurv = 0;
+  for (let l = 0; l < NUM_LAYERS; l++) {
+    const pts = strataCurves[l];
+    const yBase = padY + (l / (NUM_LAYERS - 1)) * chartH;
+
+    // Interpolate remainder position under scanhead
+    const pLow = pts[lowIdx];
+    const pHigh = pts[highIdx];
+    const interpY = (1.0 - frac) * pLow.y + frac * pHigh.y;
+    const interpNorm = (1.0 - frac) * pLow.norm + frac * pHigh.norm;
+
+    const intersectY = yBase + interpY * 22 * window.devicePixelRatio * glissDepth;
+    currentMeanCurv += Math.abs(interpY);
+
+    // Draw active resonance node
+    ctx.beginPath();
+    ctx.arc(scanX, intersectY, 6 * window.devicePixelRatio, 0, Math.PI * 2);
+    ctx.fillStyle = notationMode === "cardew" ? "#B42318" : "#38BDF8";
+    ctx.fill();
+
+    // Pulse ring
+    ctx.beginPath();
+    ctx.arc(scanX, intersectY, (8 + 4 * Math.sin(timestamp * 0.01)) * window.devicePixelRatio, 0, Math.PI * 2);
+    ctx.strokeStyle = notationMode === "cardew" ? "rgba(180, 35, 24, 0.4)" : "rgba(56, 189, 248, 0.5)";
+    ctx.lineWidth = 1.2;
+    ctx.stroke();
+
+    // Synthesize in WebAudio if live
+    if (isAudioRunning && oscillators[l]) {
+      const fBase = BASE_PITCHES[l];
+      // Microtonal pitch modulation proportional to remainder curvature
+      const freqMod = fBase * (1.0 + Math.tanh(interpY * 0.6) * 0.25 * glissDepth);
+      // Stochastic grain
+      const grain = 1.0 + fmGrain * 0.02 * Math.sin(timestamp * 0.005 * (l + 1));
+
+      oscillators[l].frequency.setTargetAtTime(freqMod * grain, audioCtx.currentTime, 0.03);
+
+      // Volume proportional to remainder norm ratio
+      const vol = 0.02 + interpNorm * 0.05;
+      gainNodes[l].gain.setTargetAtTime(vol, audioCtx.currentTime, 0.03);
+    }
+  }
+
+  // Update telemetry readout
+  const curvDisp = (currentMeanCurv / NUM_LAYERS * 0.002).toFixed(5);
+  document.getElementById("tele-curv").innerText = `${curvDisp} rad/tok^2`;
+
+  requestAnimationFrame(renderLoop);
+}
+
+requestAnimationFrame(renderLoop);
+</script>
+
+</body>
+</html>

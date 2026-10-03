@@ -109,6 +109,12 @@ def test_master_works_integrity():
             "dir": "works/apparatus_007_the_neural_transducer",
             "artifacts": ["engine.py", "apparatus_007_transducer_master.wav", "apparatus_007_spectrogram.png", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json"],
             "sha_target": {}
+        },
+        {
+            "id": "Apparatus 008",
+            "dir": "works/apparatus_008_the_graphic_polytope",
+            "artifacts": ["engine.py", "apparatus_008_polytope_master.wav", "apparatus_008_spectrogram.png", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json"],
+            "sha_target": {}
         }
     ]
 

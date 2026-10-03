@@ -118,6 +118,14 @@ def package_exhibition():
         ("works/apparatus_007_the_neural_transducer/STATEMENT.md", "works/apparatus_007_the_neural_transducer/STATEMENT.md"),
         ("works/apparatus_007_the_neural_transducer/GENEALOGY.md", "works/apparatus_007_the_neural_transducer/GENEALOGY.md"),
         
+        # Apparatus 008: The Graphic Polytope (The Score of the Uninterpretable)
+        ("works/apparatus_008_the_graphic_polytope/index.html", "works/apparatus_008_the_graphic_polytope/index.html"),
+        ("works/apparatus_008_the_graphic_polytope/apparatus_008_polytope_master.wav", "works/apparatus_008_the_graphic_polytope/apparatus_008_polytope_master.wav"),
+        ("works/apparatus_008_the_graphic_polytope/apparatus_008_spectrogram.png", "works/apparatus_008_the_graphic_polytope/apparatus_008_spectrogram.png"),
+        ("works/apparatus_008_the_graphic_polytope/telemetry_stream.json", "works/apparatus_008_the_graphic_polytope/telemetry_stream.json"),
+        ("works/apparatus_008_the_graphic_polytope/STATEMENT.md", "works/apparatus_008_the_graphic_polytope/STATEMENT.md"),
+        ("works/apparatus_008_the_graphic_polytope/GENEALOGY.md", "works/apparatus_008_the_graphic_polytope/GENEALOGY.md"),
+        
         # Curated Key Sketchbook Audio & Visual Diagnostics
         ("sketchbook/study_022_hardware_stride.wav", "sketchbook/study_022_hardware_stride.wav"),
         ("sketchbook/study_022_spectrogram.png", "sketchbook/study_022_spectrogram.png"),

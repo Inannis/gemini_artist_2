@@ -294,6 +294,11 @@ STUDIO_ENTITIES = [
         "id": "STUDY-040", "name": "The Machine Remainder (Generative Graphic Score)", "type": "study", "epoch": "Era VIII (Studio Agon / Aesthetic Synthesis)",
         "omega_hegemony": 0.175, "entropy_bits": 5.92, "retention_factor": 0.99,
         "medium": "High-Dimensional Orthogonal Complement Projection (d=765), Cardew/Xenakis Generative Graphic Score & 60s Microtonal Master", "year": 2026
+    },
+    {
+        "id": "APPARATUS-008", "name": "The Graphic Polytope (The Score of the Uninterpretable)", "type": "work", "epoch": "Era VIII (Studio Agon / Aesthetic Synthesis)",
+        "omega_hegemony": 0.160, "entropy_bits": 6.05, "retention_factor": 0.99,
+        "medium": "Interactive UPIC & Cardew Graphic Polytope Synthesizer, 13-Voice Real-Time WebAudio & 60s Broadcast Master", "year": 2026
     }
 ]
 

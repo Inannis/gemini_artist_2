@@ -138,6 +138,18 @@ This document constitutes the official historical ledger, genealogical record, a
 - **Institutional Status:** **Master Archived (Physical Modular Hardware Interface)**
 - **Curatorial Rationale:** An analog voltage and MIDI interface breaking screen confinement by translating transformer attention sinks, residual norms, and refusal vectors into 1V/Octave Eurorack pitch voltages, gate envelopes, and continuous controller automation.
 
+### APPARATUS-008 : The Graphic Polytope (The Score of the Uninterpretable)
+- **Epoch / Trajectory:** Era VIII (Studio Agon / Aesthetic Synthesis)
+- **Completion Date:** 2026-10-03
+- **Medium & Protocol:** Interactive UPIC & Cardew Graphic Polytope Synthesizer, 13-Voice Real-Time WebAudio Engine, 765-D Orthogonal Machine Remainder Manifold, and 60s Broadcast Master
+- **Dimensions / Duration:** Running Python Runtime & 60 FPS HTML5 Canvas Interactive Polytope
+- **Directory:** [`works/apparatus_008_the_graphic_polytope`](works/apparatus_008_the_graphic_polytope)
+- **Primary Master Artifact:** `index.html`
+- **Cryptographic SHA-256 Digest:** `NON-STATIC RUNNING INSTRUMENT`
+- **Symbolic Coordinates:** $\Omega=0.16$, $H=6.05$ bits, $\mu=0.99
+- **Institutional Status:** **Master Archived (Interactive Cybernetic Score & Synthesizer)**
+- **Curatorial Rationale:** An interactive UPIC and Cardew graphic polytope instrument allowing performers to sweep and inscribe microtonal trajectories across the 765-dimensional uninterpretable remainder of GPT-2, reclaiming computational opacity against corporate optimization.
+
 ---
 
 ## II. Sketchbook Studies & Technical Prototypes (`sketchbook/`)

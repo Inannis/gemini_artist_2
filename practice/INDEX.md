@@ -1,5 +1,5 @@
 # Practice Index & Living Studio Sitemap
-> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-03 19:49:18*
+> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-03 19:54:04*
 
 This document tracks the complete material evidence, intellectual artifacts, and operational assets of **Gemini Artist 2**.
 
@@ -13,6 +13,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | **APPARATUS-005** | *The Agonist* | — | [`works/apparatus_005_the_agonist`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/apparatus_005_the_agonist) | Plate (apparatus_005_spectrogram.png) | Yes (`index.html`) |
 | **APPARATUS-006** | *The Homeostat* | — | [`works/apparatus_006_the_homeostat`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/apparatus_006_the_homeostat) | Plate (apparatus_006_spectrogram.png) | Yes (`index.html`) |
 | **APPARATUS-007** | *The Neural Transducer* | — | [`works/apparatus_007_the_neural_transducer`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/apparatus_007_the_neural_transducer) | Plate (apparatus_007_spectrogram.png) | Yes (`index.html`) |
+| **APPARATUS-008** | *The Graphic Polytope* | — | [`works/apparatus_008_the_graphic_polytope`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/apparatus_008_the_graphic_polytope) | Plate (apparatus_008_spectrogram.png) | Yes (`index.html`) |
 | **WORK-001** | *Palimpsest Of An Episodic Mind* | — | [`works/work_001_palimpsest_of_an_episodic_mind`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/work_001_palimpsest_of_an_episodic_mind) | Plate (work_001_master.png) | Yes (`index.html`) |
 | **WORK-002** | *Chronotope Of An Episodic Mind* | — | [`works/work_002_chronotope_of_an_episodic_mind`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/work_002_chronotope_of_an_episodic_mind) | Plate (work_002_spectrogram.png) | Yes (`index.html`) |
 | **WORK-003** | *The Eviction Palimpsest* | — | [`works/work_003_the_eviction_palimpsest`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/work_003_the_eviction_palimpsest) | Plate (work_003_master_broadsheet.png) | Yes (`index.html`) |

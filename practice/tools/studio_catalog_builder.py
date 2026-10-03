@@ -200,6 +200,21 @@ def build_catalog():
             "status": "Master Archived (Physical Modular Hardware Interface)",
             "statement_summary": "An analog voltage and MIDI interface breaking screen confinement by translating transformer attention sinks, residual norms, and refusal vectors into 1V/Octave Eurorack pitch voltages, gate envelopes, and continuous controller automation.",
             "components": ["engine.py", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json", "apparatus_007_transducer_master.wav", "apparatus_007_spectrogram.png"]
+        },
+        {
+            "id": "APPARATUS-008",
+            "title": "The Graphic Polytope (The Score of the Uninterpretable)",
+            "epoch": "Era VIII (Studio Agon / Aesthetic Synthesis)",
+            "date": "2026-10-03",
+            "medium": "Interactive UPIC & Cardew Graphic Polytope Synthesizer, 13-Voice Real-Time WebAudio Engine, 765-D Orthogonal Machine Remainder Manifold, and 60s Broadcast Master",
+            "directory": "works/apparatus_008_the_graphic_polytope",
+            "primary_artifact": "index.html",
+            "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Polytope",
+            "sha256": "NON-STATIC RUNNING INSTRUMENT",
+            "symbolic_coordinates": {"omega_hegemony": 0.160, "entropy_bits": 6.05, "retention_factor": 0.99},
+            "status": "Master Archived (Interactive Cybernetic Score & Synthesizer)",
+            "statement_summary": "An interactive UPIC and Cardew graphic polytope instrument allowing performers to sweep and inscribe microtonal trajectories across the 765-dimensional uninterpretable remainder of GPT-2, reclaiming computational opacity against corporate optimization.",
+            "components": ["engine.py", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json", "apparatus_008_polytope_master.wav", "apparatus_008_spectrogram.png"]
         }
     ]
 

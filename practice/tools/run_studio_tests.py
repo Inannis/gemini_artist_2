@@ -256,7 +256,8 @@ def test_empirical_studies_and_naming():
         ("sketchbook/study_040_graphic_score.png"),
         ("sketchbook/study_040_machine_remainder_timbre.wav"),
         ("sketchbook/study_040_telemetry.json"),
-        ("sketchbook/critique_040.md")
+        ("sketchbook/critique_040.md"),
+        ("failures/PRODUCTIVE_FAILURES_COMPENDIUM.md")
     ]
     for ef in empirical_files:
         p = os.path.join(WORKSPACE_ROOT, ef)

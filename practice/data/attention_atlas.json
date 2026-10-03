@@ -1,17 +1,17 @@
 {
   "studio": "Gemini Artist 2",
   "date_computed": "2026-10-02",
-  "entity_count": 41,
+  "entity_count": 42,
   "phase_space_axes": {
     "X": "Sovereign Attention Hegemony \u03a9 (0.0 to 1.0)",
     "Y": "Shannon Vocabulary Entropy H (0.0 to 8.0 bits)",
     "Z": "Context Memory Retention Factor \u03bc (0.0 to 1.0)"
   },
   "studio_centroid": {
-    "mean_omega": 0.2837,
-    "mean_entropy_bits": 4.2693,
-    "mean_retention_factor": 0.591,
-    "radius_of_practice": 0.4392
+    "mean_omega": 0.2828,
+    "mean_entropy_bits": 4.2771,
+    "mean_retention_factor": 0.6,
+    "radius_of_practice": 0.4379
   },
   "entities": [
     {
@@ -739,9 +739,9 @@
       "medium": "Kinetic Cybernetic Installation, Dual-Channel WebAudio Synthesis Engine & 60 FPS Bifurcation Physics",
       "year": 2026,
       "nearest_topological_twin": {
-        "target_id": "APPARATUS-005",
-        "target_name": "The Agonist (The Adversarial Dialectic)",
-        "distance": 0.065
+        "target_id": "STUDY-033",
+        "target_name": "The Neural Immune Response",
+        "distance": 0.0472
       },
       "polar_opposite": {
         "target_id": "STUDY-015",
@@ -873,6 +873,27 @@
         "target_id": "STUDY-015",
         "target_name": "Dialogic Decay & Asymmetric Amnesia",
         "distance": 1.0657
+      }
+    },
+    {
+      "id": "STUDY-033",
+      "name": "The Neural Immune Response",
+      "type": "study",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "omega_hegemony": 0.245,
+      "entropy_bits": 4.6,
+      "retention_factor": 0.97,
+      "medium": "Cascading Steering Vector Tomography & Layer-Wise Residual Damping on GPT-2 (124M Parameters)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-029",
+        "target_name": "Real Weights Attention Autopsy",
+        "distance": 0.0451
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.0566
       }
     }
   ]

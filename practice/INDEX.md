@@ -1,5 +1,5 @@
 # Practice Index & Living Studio Sitemap
-> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-03 11:34:14*
+> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-03 11:37:35*
 
 This document tracks the complete material evidence, intellectual artifacts, and operational assets of **Gemini Artist 2**.
 
@@ -52,6 +52,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | **Study 030** (Attention Sink Ablation) | Code only | [`study_030_attention_sink_ablation.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_030_attention_sink_ablation.py) |
 | **Study 031** (Severed Sink Glossolalia) | `study_031_severed_sink_glossolalia_plate.png` | [`study_031_severed_sink_glossolalia.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_031_severed_sink_glossolalia.py) |
 | **Study 032** (Neural Tensor Sonification) | Code only | [`study_032_neural_tensor_sonification.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_032_neural_tensor_sonification.py) |
+| **Study 033** (Steering Cascade Tomography) | Code only | [`study_033_steering_cascade_tomography.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_033_steering_cascade_tomography.py) |
 
 ## 3. Institutional Critiques & Dialectical Audits (`practice/critique/`)
 | Document | Target / Subject | Critic | Status |

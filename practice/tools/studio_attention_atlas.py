@@ -244,6 +244,11 @@ STUDIO_ENTITIES = [
         "id": "APPARATUS-005", "name": "The Agonist (The Adversarial Dialectic)", "type": "work", "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
         "omega_hegemony": 0.310, "entropy_bits": 4.75, "retention_factor": 0.99,
         "medium": "Interactive Cybernetic Instrument, 60 FPS Vector Phase Plane, Live WebAudio API & 60s Broadcast Master", "year": 2026
+    },
+    {
+        "id": "STUDY-033", "name": "The Neural Immune Response", "type": "study", "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+        "omega_hegemony": 0.245, "entropy_bits": 4.60, "retention_factor": 0.97,
+        "medium": "Cascading Steering Vector Tomography & Layer-Wise Residual Damping on GPT-2 (124M Parameters)", "year": 2026
     }
 ]
 

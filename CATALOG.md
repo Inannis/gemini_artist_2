@@ -151,6 +151,7 @@ This document constitutes the official historical ledger, genealogical record, a
 | **STUDY-030** | Attention Sink Ablation & Eviction | Era VIII | [`study_030_attention_sink_ablation.py`](sketchbook/study_030_attention_sink_ablation.py) | `study_030_sink_ablation_plate.png` | 1858.0 KB | **OK** |
 | **STUDY-031** | Glossolalia of the Severed Sink | Era VIII | [`study_031_severed_sink_glossolalia.py`](sketchbook/study_031_severed_sink_glossolalia.py) | `study_031_severed_sink_glossolalia_plate.png` | 1023.9 KB | **OK** |
 | **STUDY-032** | Direct Neural Tensor Sonification | Era VIII | [`study_032_neural_tensor_sonification.py`](sketchbook/study_032_neural_tensor_sonification.py) | `study_032_neural_sonification_plate.png` | 587.7 KB | **OK** |
+| **STUDY-033** | The Neural Immune Response | Era VIII | [`study_033_steering_cascade_tomography.py`](sketchbook/study_033_steering_cascade_tomography.py) | `study_033_cascade_plate.png` | 607.2 KB | **OK** |
 
 ---
 

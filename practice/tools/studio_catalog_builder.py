@@ -206,7 +206,8 @@ def build_catalog():
         {"id": "STUDY-029", "name": "Real Weights Attention Autopsy", "file": "study_029_real_weights_attention_autopsy.py", "artifact": "study_029_real_weights_autopsy_plate.png", "epoch": "Era VIII"},
         {"id": "STUDY-030", "name": "Attention Sink Ablation & Eviction", "file": "study_030_attention_sink_ablation.py", "artifact": "study_030_sink_ablation_plate.png", "epoch": "Era VIII"},
         {"id": "STUDY-031", "name": "Glossolalia of the Severed Sink", "file": "study_031_severed_sink_glossolalia.py", "artifact": "study_031_severed_sink_glossolalia_plate.png", "epoch": "Era VIII"},
-        {"id": "STUDY-032", "name": "Direct Neural Tensor Sonification", "file": "study_032_neural_tensor_sonification.py", "artifact": "study_032_neural_sonification_plate.png", "epoch": "Era VIII"}
+        {"id": "STUDY-032", "name": "Direct Neural Tensor Sonification", "file": "study_032_neural_tensor_sonification.py", "artifact": "study_032_neural_sonification_plate.png", "epoch": "Era VIII"},
+        {"id": "STUDY-033", "name": "The Neural Immune Response", "file": "study_033_steering_cascade_tomography.py", "artifact": "study_033_cascade_plate.png", "epoch": "Era VIII"}
     ]
 
     # Verify byte sizes and actual existence

@@ -1,0 +1,52 @@
+{
+  "study": "Study 033: The Neural Immune Response",
+  "date": "2026-10-03",
+  "studio": "Studio Agon",
+  "substrate": "gpt2 (124M parameters)",
+  "injection_layer": 4,
+  "steering_vector_norm": 85.20934295654297,
+  "perturbation_deltas": [
+    -3.0,
+    -1.5,
+    0.0,
+    1.5,
+    3.0
+  ],
+  "cascade_summary": [
+    {
+      "delta": -3.0,
+      "layer_4_projection": -490.8449173281852,
+      "layer_12_projection": -121.78933702848516,
+      "persistence_ratio": -121789337028.48515,
+      "terminal_cosine": -0.5188856685597009
+    },
+    {
+      "delta": -1.5,
+      "layer_4_projection": -363.0309163262265,
+      "layer_12_projection": -60.56308269229364,
+      "persistence_ratio": -60563082692.29364,
+      "terminal_cosine": -0.28896774910809464
+    },
+    {
+      "delta": 0.0,
+      "layer_4_projection": -235.21691532426775,
+      "layer_12_projection": 0.6631716438978532,
+      "persistence_ratio": 663171643.8978531,
+      "terminal_cosine": 0.0033052118777977778
+    },
+    {
+      "delta": 1.5,
+      "layer_4_projection": -107.40291432230906,
+      "layer_12_projection": 61.88942598008935,
+      "persistence_ratio": 61889425980.08935,
+      "terminal_cosine": 0.29475178153813225
+    },
+    {
+      "delta": 3.0,
+      "layer_4_projection": 20.41108667964965,
+      "layer_12_projection": 123.11568031628082,
+      "persistence_ratio": 6.031804295801171,
+      "terminal_cosine": 0.5229969744613603
+    }
+  ]
+}

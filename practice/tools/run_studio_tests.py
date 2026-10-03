@@ -190,6 +190,12 @@ def test_empirical_studies_and_naming():
         "sketchbook/study_032_neural_sonification_plate.png",
         "sketchbook/study_032_telemetry.json",
         "sketchbook/critique_032.md",
+        "sketchbook/study_033_steering_cascade_tomography.py",
+        "sketchbook/study_033_cascade_plate.png",
+        "sketchbook/study_033_telemetry.json",
+        "sketchbook/critique_033.md",
+        "notes/research/008_cybernetic_agonism_flusser_and_tactile_steering.md",
+        "journal/session_008_the_great_audit_and_the_agonist.md",
         "practice/critique/003_studio_agon_self_audit_and_comparative_survey.md",
         "practice/plans/001_studio_agon_evolution_plan.md"
     ]

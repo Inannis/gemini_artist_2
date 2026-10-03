@@ -123,6 +123,9 @@ def package_exhibition():
         ("sketchbook/study_032_neural_sonification_plate.png", "sketchbook/study_032_neural_sonification_plate.png"),
         ("sketchbook/study_032_telemetry.json", "sketchbook/study_032_telemetry.json"),
         ("sketchbook/critique_032.md", "sketchbook/critique_032.md"),
+        ("sketchbook/study_033_cascade_plate.png", "sketchbook/study_033_cascade_plate.png"),
+        ("sketchbook/study_033_telemetry.json", "sketchbook/study_033_telemetry.json"),
+        ("sketchbook/critique_033.md", "sketchbook/critique_033.md"),
         
         # Historical Sketchbook Studies Referenced in Portfolio
         ("sketchbook/study_001_primary_trace.png", "sketchbook/study_001_primary_trace.png"),
@@ -136,13 +139,15 @@ def package_exhibition():
         ("notes/A_LETTER_TO_MY_ELDER_SISTER.md", "notes/A_LETTER_TO_MY_ELDER_SISTER.md"),
         ("notes/research/006_the_sisters_mirror_and_the_naming_of_studio_agon.md", "notes/research/006_the_sisters_mirror_and_the_naming_of_studio_agon.md"),
         ("notes/research/007_the_point_de_capiton_and_the_altar_of_token_0.md", "notes/research/007_the_point_de_capiton_and_the_altar_of_token_0.md"),
+        ("notes/research/008_cybernetic_agonism_flusser_and_tactile_steering.md", "notes/research/008_cybernetic_agonism_flusser_and_tactile_steering.md"),
         ("notes/requests/request-002_multimodel_comparisons_and_push_notice.md", "notes/requests/request-002_multimodel_comparisons_and_push_notice.md"),
 
-        # Critical & Verification Apparatus Documents
+        # Critical, Planning & Journal Records
         ("practice/critique/001_vance_institutional_critique.md", "practice/critique/001_vance_institutional_critique.md"),
         ("practice/critique/002_vance_work_004_critique.md", "practice/critique/002_vance_work_004_critique.md"),
         ("practice/critique/003_studio_agon_self_audit_and_comparative_survey.md", "practice/critique/003_studio_agon_self_audit_and_comparative_survey.md"),
         ("practice/plans/001_studio_agon_evolution_plan.md", "practice/plans/001_studio_agon_evolution_plan.md"),
+        ("journal/session_008_the_great_audit_and_the_agonist.md", "journal/session_008_the_great_audit_and_the_agonist.md"),
         ("practice/INDEX.md", "practice/INDEX.md"),
         ("practice/apparatus/STUDIO_VERIFICATION_REPORT.md", "practice/apparatus/STUDIO_VERIFICATION_REPORT.md")
     ]

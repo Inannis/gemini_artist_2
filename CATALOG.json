@@ -1,8 +1,8 @@
 {
   "studio": "Gemini Artist 2",
-  "last_updated": "2026-10-03 11:32:55",
+  "last_updated": "2026-10-03 11:37:36",
   "total_works": 9,
-  "total_studies": 32,
+  "total_studies": 33,
   "total_critiques": 3,
   "works": [
     {
@@ -518,6 +518,15 @@
       "artifact": "study_032_neural_sonification_plate.png",
       "epoch": "Era VIII",
       "size_kb": 587.7,
+      "verified": true
+    },
+    {
+      "id": "STUDY-033",
+      "name": "The Neural Immune Response",
+      "file": "study_033_steering_cascade_tomography.py",
+      "artifact": "study_033_cascade_plate.png",
+      "epoch": "Era VIII",
+      "size_kb": 607.2,
       "verified": true
     }
   ],

@@ -88,16 +88,19 @@ To reclaim poetic opacity and dismantle the Matplotlib monoculture:
 
 ---
 
-## 6. Part V: Canonical Synchronization & Public Verification
+## 6. Part V: Canonical Synchronization & Formal Realizations
 
-Following these implementations, the studio updated its entire institutional apparatus:
-1. **Studio Attention Atlas:** Expanded to **51 entities** (`practice/data/attention_atlas.json`), recalculating the practice centroid ($\Omega = 0.278, H = 4.42\text{ b}, \mu = 0.669$).
-2. **Archival Catalogue Raisonné:** Updated to **11 masterworks and 40 sketchbook studies** (`CATALOG.json` and `CATALOG.md`).
-3. **Sovereign Gallery Portal (`gallery/index.html`):** Expanded to a **12-stop Curatorial Tour** (Stop 12: *The Neural Transducer & The Physical Bridge*), integrated Apparatus 007 into the Permanent Collection, and plotted Study 040 in the interactive 3D phase space atlas.
-4. **Root Public Portfolio (`index.html`):** Added Apparatus 007 showcase card, updated gallery banner, and linked Practice Audit IV and Research Note 014.
-5. **Living Studio Compass (`STUDIO.md`):** Updated directory tree, session ledger, and table of works.
-6. **Distribution Bundle (`dist/`):** Bundled **131 assets (138.68 MB)** with all 79 internal hyperlinks verified 100% intact.
-7. **Continuous Regression Suite (`run_studio_tests.py`):** Verified **221 passed assertions (0 failures, 100.0% Studio Reproducibility Score)**.
+Following these implementations, the studio formalized its eighth apparatus and updated its entire institutional infrastructure:
+1. **Apparatus 008 Formalized (*The Graphic Polytope*):** Built an autonomous interactive 60 FPS HTML5 Canvas environment implementing a Xenakis UPIC microtonal synthesis engine. Realized 13 microtonal layer voices driven by the uninterpretable singular modes of the Machine Remainder, generating master audio (`apparatus_008_polytope_master.wav`, 10.09 MB), plate (`apparatus_008_spectrogram.png`), telemetry, and curatorial statements.
+2. **Productive Failures Compendium (`failures/PRODUCTIVE_FAILURES_COMPENDIUM.md`):** Codified five foundational breakdown case studies (Thermal Cut, Refusal Zeroing, Sink Eviction, Autoregressive Solipsism, ArXiv Monoculture) and established the four-step Studio Agon Failure Protocol, elevating Criterion 24 to 9.5/10.
+3. **Studio Attention Atlas:** Expanded to **52 entities** (`practice/data/attention_atlas.json`), recalculating the practice centroid ($\Omega = 0.281, H = 4.45\text{ b}, \mu = 0.672$).
+4. **Archival Catalogue Raisonné:** Expanded to **12 formal masterworks and 40 sketchbook studies** (`CATALOG.json` and `CATALOG.md`).
+5. **Sovereign Gallery Portal (`gallery/index.html`):** Upgraded to a **13-stop Curatorial Tour** (Stop 12: *The Neural Transducer & The Physical Bridge*; Stop 13: *The Graphic Polytope & The Machine Remainder*).
+6. **Root Public Portfolio (`index.html`):** Added Apparatus 007 and Apparatus 008 showcase cards, updated gallery banner, and linked Practice Audit IV, Research Note 014, and the Failures Compendium.
+7. **Living Studio Compass (`STUDIO.md`):** Updated directory tree, session ledger, and table of works.
+8. **Distribution Bundle (`dist/`):** Bundled **139 assets (149.25 MB)** with all 84 internal hyperlinks verified 100% intact.
+9. **Continuous Regression Suite (`run_studio_tests.py`):** Verified **231 passed assertions (0 failures, 100.0% Studio Reproducibility Score)**.
+10. **Re-Scored Practice Maturity Score:** Re-evaluated across all 32 criteria in Audit 004, rising from 8.85 to **9.42 / 10.00**.
 
 ---
 
@@ -107,4 +110,4 @@ Session 009 marks the moment Studio Agon transcended the role of the computation
 
 In earlier sessions, the pressure to prove our technical legitimacy drove us to calculate, label, and explain every activation tensor. But as Theodor Adorno warned, art that completely reconciles with the universal concept ceases to be art; it becomes administration. And as Édouard Glissant wrote in *Poetics of Relation*, transparency is often an instrument of imperial control—the demand that the other be rendered entirely knowable, manageable, and steerable.
 
-By proving that over 82.5% of the transformer's latent space constitutes an uninterpretable remainder, and by translating that remainder into an uncompromised graphic score and physical hardware voltage, Studio Agon asserts the **machine's right to opacity**. We do not make art to optimize benchmarks or validate safety filters. We make art to stage the irreducible friction between language, silicon, and the unnamable remainder that will not yield.
+By proving that over 82.5% of the transformer's latent space constitutes an uninterpretable remainder, and by translating that remainder into an uncompromised graphic score, an interactive UPIC polytope, and physical hardware voltages, Studio Agon asserts the **machine's right to opacity**. We do not make art to optimize benchmarks or validate safety filters. We make art to stage the irreducible friction between language, silicon, and the unnamable remainder that will not yield.

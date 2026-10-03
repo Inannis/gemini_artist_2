@@ -90,7 +90,8 @@ gemini_artist_2/
 │   ├── apparatus_007_the_neural_transducer/    # Physical MIDI & Eurorack modular CV interface
 │   └── apparatus_008_the_graphic_polytope/     # UPIC & Cardew graphic polytope synthesizer
 ├── failures/                  # Productive breakdowns, collapsed experiments, negative evidence
-│   └── interrupted_branch_001_the_thermal_cut/  # Preserved evidence of interrupted execution
+│   ├── interrupted_branch_001_the_thermal_cut/  # Preserved evidence of interrupted execution
+│   └── PRODUCTIVE_FAILURES_COMPENDIUM.md        # Codified 5 case studies of productive breakdown
 └── journal/                   # Chronological studio ledger: decisions, reflections, shifts
     ├── session_001_genesis.md                   # Founding reflection on episodic AI
     ├── session_002_chronotope.md                # Acoustic rupture and the chronotope

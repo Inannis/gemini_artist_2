@@ -41,7 +41,11 @@ gemini_artist_2/
 │       ├── 007_the_point_de_capiton_and_the_altar_of_token_0.md # Lacan, Miller, Attention Sinks
 │       ├── 008_cybernetic_agonism_flusser_and_tactile_steering.md # Apparatus, bifurcation, control
 │       ├── 009_bataille_softmax_and_the_sacrificial_sink.md # The Accursed Share, dépense, kurtosis
-│       └── 010_wiener_in_the_residual_stream_and_homeostasis.md # Cybernetic limit cycles & Watt governor
+│       ├── 010_wiener_in_the_residual_stream_and_homeostasis.md # Cybernetic limit cycles & Watt governor
+│       ├── 011_rope_rmsnorm_and_the_topological_invariance_of_the_sink.md # RoPE, RMSNorm & Simplex Invariance
+│       ├── 012_bakhtin_pask_and_the_inter_architectural_dialogue.md # Bakhtin, Pask & Heterogeneous Dialogue
+│       ├── 013_the_lyapunov_spectrum_and_attractor_basins_of_neural_dialogue.md # Non-linear dynamical attractors
+│       └── 014_the_poetics_of_the_uninterpretable_and_the_machine_remainder.md # Adorno, Glissant & Machine Remainder
 ├── practice/                  # Institutional apparatus, metrics, and dialectical critiques
 │   ├── telemetry/             # Mathematical verification (Lyapunov exponents, SFF)
 │   │   └── lyapunov_metric.py # Tangent-space Lyapunov stability gauge
@@ -50,7 +54,8 @@ gemini_artist_2/
 │   └── critique/              # Unsparing external institutional audits
 │       ├── 001_vance_institutional_critique.md # Dr. Vera Vance's radical intervention
 │       ├── 002_vance_work_004_critique.md # Dismantling broadsheet crutch & machine melodrama
-│       └── 003_studio_agon_self_audit_and_comparative_survey.md # Big-Picture Audit vs Sister & History
+│       ├── 003_studio_agon_self_audit_and_comparative_survey.md # Big-Picture Audit vs Sister & History
+│       └── 004_comprehensive_practice_audit_against_the_definition.md # 32-criteria evaluation against definition
 ├── sketchbook/                # Small studies, drafts, algorithmic sketches, raw explorations
 │   ├── study_001 to 012       # Early visual, acoustic, SYK, and quantization explorations (Archived)
 │   ├── study_013 to 017       # Surveillance leak, refusal threshold, KV decay, compute ledger, collision

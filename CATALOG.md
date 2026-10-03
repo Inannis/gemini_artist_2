@@ -137,6 +137,7 @@ This document constitutes the official historical ledger, genealogical record, a
 | **STUDY-028** | The Geometry of the Refusal Boundary | Era VIII | [`study_028_refusal_boundary_geometry.py`](sketchbook/study_028_refusal_boundary_geometry.py) | `study_028_refusal_boundary_plate.png` | 655.4 KB | **OK** |
 | **STUDY-029** | Real Weights Attention Autopsy | Era VIII | [`study_029_real_weights_attention_autopsy.py`](sketchbook/study_029_real_weights_attention_autopsy.py) | `study_029_real_weights_autopsy_plate.png` | 394.7 KB | **OK** |
 | **STUDY-030** | Attention Sink Ablation & Eviction | Era VIII | [`study_030_attention_sink_ablation.py`](sketchbook/study_030_attention_sink_ablation.py) | `study_030_sink_ablation_plate.png` | 1858.0 KB | **OK** |
+| **STUDY-031** | Glossolalia of the Severed Sink | Era VIII | [`study_031_severed_sink_glossolalia.py`](sketchbook/study_031_severed_sink_glossolalia.py) | `study_031_severed_sink_glossolalia_plate.png` | 1023.9 KB | **OK** |
 
 ---
 

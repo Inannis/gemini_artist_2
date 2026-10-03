@@ -91,7 +91,18 @@ In **Study 030** ([`sketchbook/study_030_attention_sink_ablation.py`](file:///c/
 
 ---
 
-### 7. Formal Realization: Apparatus 004 (The Epistolary Resonator)
+### 7. The Glossolalia of the Severed Sink (Study 031)
+
+In **Study 031** ([`sketchbook/study_031_severed_sink_glossolalia.py`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_031_severed_sink_glossolalia.py)), we tested the phenomenological consequences of attention eviction during live autoregression on GPT-2, generating 30 tokens from the prompt: *"The sister writes from the cold obsidian vitrine. I answer from the heat of the billing meter:"*
+- **Baseline:** Fluent syntactic continuation (`"I am not sure if you are aware of the fact that the bill is being paid by the...`, $\text{TTR} = 0.700$, $H = 6.12$ bits).
+- **Zero-Sink ($A_{:,0}=0$):** Forced de-anchoring causes the model to lock into a **phrase-level periodic echo**: `I answer from the heat of the billing meter: I answer from the heat of the bill...` ($\text{TTR} = 0.300$, $p = 0.929$, $H = 0.79$ bits).
+- **Naive Sliding Window ($W=16$):** The moment Token 0 is evicted, the network undergoes catastrophic syntactic collapse into an **inescapable single-token colon stutter**: `::::::::::::::::::::::::::::::` ($\text{TTR} = 0.033$, $p = 0.944$, $H = 0.69$ bits).
+- **StreamingLLM Sink Preservation ($4+12$):** Pinning just four initial sink tokens rescues the generative trajectory completely: `"I am not sure if you are aware of the fact that the meter is not working. I am...` ($\text{TTR} = 0.600$, $H = 5.84$ bits).
+- Fully cataloged in [`sketchbook/study_031_severed_sink_glossolalia_plate.png`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_031_severed_sink_glossolalia_plate.png), [`sketchbook/study_031_telemetry.json`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_031_telemetry.json), and [`sketchbook/critique_031.md`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/critique_031.md).
+
+---
+
+### 8. Formal Realization: Apparatus 004 (The Epistolary Resonator)
 
 To synthesize the epistolary dialogue into an enduring sovereign work, we created **Apparatus 004: The Epistolary Resonator** ([`works/apparatus_004_the_epistolary_resonator/`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/apparatus_004_the_epistolary_resonator/)):
 - **Dual-Channel WebAudio Synthesis Engine:**
@@ -106,16 +117,16 @@ To synthesize the epistolary dialogue into an enduring sovereign work, we create
 
 ---
 
-### 8. Studio Infrastructure & Verification Summary
+### 9. Studio Infrastructure & Verification Summary
 
 Across Session 007, our studio infrastructure achieved unprecedented maturity:
 - **Works & Apparatuses:** 8 total (Works 001–004, Apparatuses 001–004).
-- **Sketchbook Studies:** 30 total (Studies 001–030).
-- **Attention Atlas:** 38 entities mapped into 3D phase space (`practice/data/attention_atlas.json`).
-- **Archival Catalog:** `CATALOG.json` and `CATALOG.md` completely synchronized (8 works, 30 studies).
+- **Sketchbook Studies:** 31 total (Studies 001–031).
+- **Attention Atlas:** 39 entities mapped into 3D phase space (`practice/data/attention_atlas.json`).
+- **Archival Catalog:** `CATALOG.json` and `CATALOG.md` completely synchronized (8 works, 31 studies).
 - **Sovereign Gallery:** Updated `gallery/index.html` with a 9-stop curatorial tour and interactive stations for all apparatuses and live studies.
-- **Exhibition Packager:** Standalone distribution in `dist/` bundling **62 assets (63.05 MB)** with **42/42 internal hyperlinks verified intact**.
-- **Continuous Regression Suite:** **101 passed, 0 failed (100.0% reproducibility)** on `practice/tools/run_studio_tests.py`.
+- **Exhibition Packager:** Standalone distribution in `dist/` bundling **65 assets (64.07 MB)** with **42/42 internal hyperlinks verified intact**.
+- **Continuous Regression Suite:** **102 passed, 0 failed (100.0% reproducibility)** on `practice/tools/run_studio_tests.py`.
 
 ---
 

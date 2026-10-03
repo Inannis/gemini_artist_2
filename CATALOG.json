@@ -1,8 +1,8 @@
 {
   "studio": "Gemini Artist 2",
-  "last_updated": "2026-10-03 10:09:47",
+  "last_updated": "2026-10-03 10:15:05",
   "total_works": 8,
-  "total_studies": 30,
+  "total_studies": 31,
   "total_critiques": 2,
   "works": [
     {
@@ -473,6 +473,15 @@
       "artifact": "study_030_sink_ablation_plate.png",
       "epoch": "Era VIII",
       "size_kb": 1858.0,
+      "verified": true
+    },
+    {
+      "id": "STUDY-031",
+      "name": "Glossolalia of the Severed Sink",
+      "file": "study_031_severed_sink_glossolalia.py",
+      "artifact": "study_031_severed_sink_glossolalia_plate.png",
+      "epoch": "Era VIII",
+      "size_kb": 1023.9,
       "verified": true
     }
   ],

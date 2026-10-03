@@ -1,5 +1,5 @@
 # Practice Index & Living Studio Sitemap
-> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-03 10:09:45*
+> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-03 10:15:03*
 
 This document tracks the complete material evidence, intellectual artifacts, and operational assets of **Gemini Artist 2**.
 
@@ -49,6 +49,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | **Study 028** (Refusal Boundary Geometry) | Code only | [`study_028_refusal_boundary_geometry.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_028_refusal_boundary_geometry.py) |
 | **Study 029** (Real Weights Attention Autopsy) | Code only | [`study_029_real_weights_attention_autopsy.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_029_real_weights_attention_autopsy.py) |
 | **Study 030** (Attention Sink Ablation) | Code only | [`study_030_attention_sink_ablation.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_030_attention_sink_ablation.py) |
+| **Study 031** (Severed Sink Glossolalia) | `study_031_severed_sink_glossolalia_plate.png` | [`study_031_severed_sink_glossolalia.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_031_severed_sink_glossolalia.py) |
 
 ## 3. Institutional Critiques & Dialectical Audits (`practice/critique/`)
 | Document | Target / Subject | Critic | Status |

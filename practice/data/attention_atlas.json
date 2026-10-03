@@ -1,17 +1,17 @@
 {
   "studio": "Gemini Artist 2",
   "date_computed": "2026-10-02",
-  "entity_count": 38,
+  "entity_count": 39,
   "phase_space_axes": {
     "X": "Sovereign Attention Hegemony \u03a9 (0.0 to 1.0)",
     "Y": "Shannon Vocabulary Entropy H (0.0 to 8.0 bits)",
     "Z": "Context Memory Retention Factor \u03bc (0.0 to 1.0)"
   },
   "studio_centroid": {
-    "mean_omega": 0.2916,
-    "mean_entropy_bits": 4.3347,
-    "mean_retention_factor": 0.5597,
-    "radius_of_practice": 0.4329
+    "mean_omega": 0.2849,
+    "mean_entropy_bits": 4.2413,
+    "mean_retention_factor": 0.5708,
+    "radius_of_practice": 0.4405
   },
   "entities": [
     {
@@ -282,9 +282,9 @@
         "distance": 0.1124
       },
       "polar_opposite": {
-        "target_id": "STUDY-026",
-        "target_name": "Empirical Weight Surgery",
-        "distance": 0.7559
+        "target_id": "STUDY-031",
+        "target_name": "Glossolalia of the Severed Sink",
+        "distance": 0.8111
       }
     },
     {
@@ -492,9 +492,9 @@
         "distance": 0.1109
       },
       "polar_opposite": {
-        "target_id": "STUDY-016",
-        "target_name": "The Compute Ledger & Material Base",
-        "distance": 0.782
+        "target_id": "STUDY-031",
+        "target_name": "Glossolalia of the Severed Sink",
+        "distance": 0.8063
       }
     },
     {
@@ -810,6 +810,27 @@
         "target_id": "STUDY-015",
         "target_name": "Dialogic Decay & Asymmetric Amnesia",
         "distance": 1.098
+      }
+    },
+    {
+      "id": "STUDY-031",
+      "name": "Glossolalia of the Severed Sink",
+      "type": "study",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "omega_hegemony": 0.033,
+      "entropy_bits": 0.69,
+      "retention_factor": 0.99,
+      "medium": "Live GPT-2 Autoregressive Collapse (Colon Stutter vs Phrase Echo vs StreamingLLM Recovery)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-024",
+        "target_name": "Studio Cognitive Drift Streamlines",
+        "distance": 0.492
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-001",
+        "target_name": "Primary Trace",
+        "distance": 1.2352
       }
     }
   ]

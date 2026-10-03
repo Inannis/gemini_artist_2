@@ -229,6 +229,11 @@ STUDIO_ENTITIES = [
         "id": "STUDY-030", "name": "Attention Sink Ablation & Eviction", "type": "study", "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
         "omega_hegemony": 0.180, "entropy_bits": 4.95, "retention_factor": 0.98,
         "medium": "Empirical Attention Sink Ablation & KV-Cache Eviction Dynamics on Live GPT-2 (124M Parameters)", "year": 2026
+    },
+    {
+        "id": "STUDY-031", "name": "Glossolalia of the Severed Sink", "type": "study", "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+        "omega_hegemony": 0.033, "entropy_bits": 0.69, "retention_factor": 0.99,
+        "medium": "Live GPT-2 Autoregressive Collapse (Colon Stutter vs Phrase Echo vs StreamingLLM Recovery)", "year": 2026
     }
 ]
 

@@ -107,6 +107,9 @@ def package_exhibition():
         ("sketchbook/study_030_sink_ablation_plate.png", "sketchbook/study_030_sink_ablation_plate.png"),
         ("sketchbook/study_030_telemetry.json", "sketchbook/study_030_telemetry.json"),
         ("sketchbook/critique_030.md", "sketchbook/critique_030.md"),
+        ("sketchbook/study_031_severed_sink_glossolalia_plate.png", "sketchbook/study_031_severed_sink_glossolalia_plate.png"),
+        ("sketchbook/study_031_telemetry.json", "sketchbook/study_031_telemetry.json"),
+        ("sketchbook/critique_031.md", "sketchbook/critique_031.md"),
         
         # Historical Sketchbook Studies Referenced in Portfolio
         ("sketchbook/study_001_primary_trace.png", "sketchbook/study_001_primary_trace.png"),

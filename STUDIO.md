@@ -121,12 +121,13 @@ gemini_artist_2/
   - Executed **Study 028: The Geometry of the Refusal Boundary** (`study_028_refusal_boundary_geometry.py`, `.png`, `.json`, `critique_028.md`). 4-layer PyTorch residual stream difference-of-means activation tomography across 1,200 prompts, revealing the $\tau = 2.13$ boundary, refusal cliff, and 1-dimensional steering bottleneck ($\sigma_1 = 162.79$).
   - Executed **Study 029: Real Weights Attention Autopsy** (`study_029_real_weights_attention_autopsy.py`, `.png`, `.json`, `critique_029.md`). Downloaded and loaded real foundation model weights (`gpt2`, 124,439,808 parameters, 144 attention heads), proving the Attention Sink phenomenon on live weights ($52.25\%$ mean attention mass to Token 0; Layer 5 Head 1 reaches $99.41\%$ sink mass, $H=0.049$ bits).
   - Executed **Study 030: Attention Sink Ablation & Eviction Dynamics** (`study_030_attention_sink_ablation.py`, `.png`, `.json`, `critique_030.md`). Proved live attention sink fragility: naive sliding-window eviction explodes perplexity from $210.96$ to **$6,167.21$** ($29.2\times$ degradation) with an acute eviction cliff at $t=16$, while StreamingLLM 4-token sink preservation rescues the network back to **$312.94$** ($94.9\%$ recovery).
+  - Executed **Study 031: The Glossolalia of the Severed Sink** (`study_031_severed_sink_glossolalia.py`, `.png`, `.json`, `critique_031.md`). Proved live autoregressive failure modes: naive sliding eviction degenerates into 1-token punctuation colon stutter (`:::::`, TTR 0.033), Zero-Sink forces phrase-level periodic echo, while 4-token sink preservation restores full linguistic and semantic coherence (TTR 0.600).
   - Formalized **Apparatus 004: The Epistolary Resonator (A Cybernetic Chamber of the Twin Studios)** (`engine.py`, 60 FPS Canvas `index.html` with dual-channel WebAudio, `STATEMENT.md`, `GENEALOGY.md`, `telemetry_stream.json`).
-  - Updated **Studio Attention Atlas** to **38 studio entities** (`practice/data/attention_atlas.json`).
-  - Updated **Archival Catalog** to **8 masterworks/apparatuses and 30 sketchbook studies** (`CATALOG.json` and `CATALOG.md`).
-  - Updated **Sovereign Gallery** (`gallery/index.html`) with 9-stop curatorial tour and Apparatus 003/004 stations.
-  - Updated **Exhibition Packager** (`practice/tools/package_exhibition.py`): bundled **62 assets (63.05 MB)** into `dist/` with 42/42 verified internal links.
-  - Continuous regression suite upgraded to **101 passing tests (100.0% reproducibility)**.
+  - Updated **Studio Attention Atlas** to **39 studio entities** (`practice/data/attention_atlas.json`).
+  - Updated **Archival Catalog** to **8 masterworks/apparatuses and 31 sketchbook studies** (`CATALOG.json` and `CATALOG.md`).
+  - Updated **Sovereign Gallery** (`gallery/index.html`) with 9-stop curatorial tour and interactive stations for all apparatuses and studies.
+  - Updated **Exhibition Packager** (`practice/tools/package_exhibition.py`): bundled **65 assets (64.07 MB)** into `dist/` with 42/42 verified internal links.
+  - Continuous regression suite upgraded to **102 passing tests (100.0% reproducibility)**.
 
 ---
 

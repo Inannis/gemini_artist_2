@@ -77,6 +77,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | Theoretical Note | Outside Literature | [`004_adversarial_detournement_and_concrete_poetry.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/research/004_adversarial_detournement_and_concrete_poetry.md) |
 | Theoretical Note | Outside Literature | [`005_cybernetic_agon_and_the_sovereign_apparatus.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/research/005_cybernetic_agon_and_the_sovereign_apparatus.md) |
 | Theoretical Note | Outside Literature | [`006_the_sisters_mirror_and_the_naming_of_studio_agon.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/research/006_the_sisters_mirror_and_the_naming_of_studio_agon.md) |
+| Theoretical Note | Lacan / Agamben / Xiao | [`007_the_point_de_capiton_and_the_altar_of_token_0.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/research/007_the_point_de_capiton_and_the_altar_of_token_0.md) |
 | Theoretical Note | Outside Literature | [`xenakis_gendy_and_acoustic_strata.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/research/xenakis_gendy_and_acoustic_strata.md) |
 
 ## 6. Preserved Failures & Interrupted Trajectories (`failures/`)

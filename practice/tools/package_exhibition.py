@@ -50,6 +50,7 @@ def package_exhibition():
         
         # Sovereign Gallery
         ("gallery/index.html", "gallery/index.html"),
+        ("gallery/CURATORIAL_GUIDE.md", "gallery/CURATORIAL_GUIDE.md"),
         ("practice/data/attention_atlas.json", "gallery/data/attention_atlas.json"),
         ("CATALOG.json", "gallery/data/CATALOG.json"),
         

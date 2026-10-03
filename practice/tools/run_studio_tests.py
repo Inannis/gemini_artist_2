@@ -270,7 +270,8 @@ def test_empirical_studies_and_naming():
         ("sketchbook/study_042_telemetry.json"),
         ("sketchbook/critique_042.md"),
         ("notes/research/015_acoustic_phase_interference_and_the_myth_of_computational_zeroing.md"),
-        ("practice/BIOGRAPHY.md")
+        ("practice/BIOGRAPHY.md"),
+        ("gallery/CURATORIAL_GUIDE.md")
     ]
     for ef in empirical_files:
         p = os.path.join(WORKSPACE_ROOT, ef)

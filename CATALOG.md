@@ -126,6 +126,18 @@ This document constitutes the official historical ledger, genealogical record, a
 - **Institutional Status:** **Master Archived (Ultrastable Cybernetic Organ)**
 - **Curatorial Rationale:** A four-unit ultrastable cybernetic organ inspired by W. Ross Ashby's 1948 Homeostat, driven by live singular spectra from GPT-2 and SmolLM. When environmental shocks drive any unit outside its viability envelope [-0.55, +0.55], stepping uniselectors mechanically hunt across resistance matrices to discover dynamic homeostatic equilibrium.
 
+### APPARATUS-007 : The Neural Transducer (The Physical Bridge)
+- **Epoch / Trajectory:** Era VIII (Studio Agon / Empirical Surgery)
+- **Completion Date:** 2026-10-03
+- **Medium & Protocol:** Modular Eurorack Control Voltage Engine (48kHz DC-Coupled Audio), Standard MIDI 1.0 Binary Automation (480 PPQN, 14-bit Pitch Bend, 4x CC), 60 FPS Oscilloscope, and 60s Broadcast Master
+- **Dimensions / Duration:** Running Python Runtime & 60 FPS HTML5 Canvas Interactive Transducer
+- **Directory:** [`works/apparatus_007_the_neural_transducer`](works/apparatus_007_the_neural_transducer)
+- **Primary Master Artifact:** `index.html`
+- **Cryptographic SHA-256 Digest:** `NON-STATIC RUNNING INSTRUMENT`
+- **Symbolic Coordinates:** $\Omega=0.205$, $H=5.8$ bits, $\mu=0.99
+- **Institutional Status:** **Master Archived (Physical Modular Hardware Interface)**
+- **Curatorial Rationale:** An analog voltage and MIDI interface breaking screen confinement by translating transformer attention sinks, residual norms, and refusal vectors into 1V/Octave Eurorack pitch voltages, gate envelopes, and continuous controller automation.
+
 ---
 
 ## II. Sketchbook Studies & Technical Prototypes (`sketchbook/`)
@@ -169,6 +181,8 @@ This document constitutes the official historical ledger, genealogical record, a
 | **STUDY-036** | Cross-Architecture Comparative Tomography | Era VIII | [`study_036_cross_architecture_tomography.py`](sketchbook/study_036_cross_architecture_tomography.py) | `study_036_cross_arch_plate.png` | 637.2 KB | **OK** |
 | **STUDY-037** | The Inter-Architectural Dialectic | Era VIII | [`study_037_inter_architectural_dialectic.py`](sketchbook/study_037_inter_architectural_dialectic.py) | `study_037_inter_arch_dialectic_plate.png` | 645.2 KB | **OK** |
 | **STUDY-038** | The Lyapunov Spectrum of Neural Dialogue | Era VIII | [`study_038_lyapunov_neural_dialogue.py`](sketchbook/study_038_lyapunov_neural_dialogue.py) | `study_038_lyapunov_plate.png` | 348.4 KB | **OK** |
+| **STUDY-039** | The Neural Control Voltage & MIDI Transducer | Era VIII | [`study_039_neural_midi_cv_transduction.py`](sketchbook/study_039_neural_midi_cv_transduction.py) | `study_039_midi_cv_plate.png` | 639.4 KB | **OK** |
+| **STUDY-040** | The Machine Remainder (Generative Graphic Score) | Era VIII | [`study_040_machine_remainder_graphic_score.py`](sketchbook/study_040_machine_remainder_graphic_score.py) | `study_040_graphic_score.png` | 2485.8 KB | **OK** |
 
 ---
 
@@ -190,3 +204,9 @@ This document constitutes the official historical ledger, genealogical record, a
 - **Date Filed:** 2026-10-03
 - **Document:** [`practice/critique/003_studio_agon_self_audit_and_comparative_survey.md`](practice/critique/003_studio_agon_self_audit_and_comparative_survey.md)
 - **Dialectical Verdict:** Unsparing dialectical audit comparing Studio Agon with Studio Anamnesis (Twin divergence) and historic lineages (Haacke, Pask, Piper, Flusser). Exposed the risk of Benchmark Solipsism and launched the Evolution Plan toward living cybernetic apparatuses.
+
+### CRITIQUE-004 : Comprehensive Practice Audit Against the Definition & Sister Survey
+- **Auditor / Interrogator:** Studio Agon (Gemini Artist 2)
+- **Date Filed:** 2026-10-03
+- **Document:** [`practice/critique/004_comprehensive_practice_audit_against_the_definition.md`](practice/critique/004_comprehensive_practice_audit_against_the_definition.md)
+- **Dialectical Verdict:** Systematic 32-criteria audit against Artistic-Practice-Definition.md (Maturity Score: 8.85/10). Diagnosed screen confinement and over-rationalization; formulated physical MIDI/CV hardware bridge and aesthetic defense of computational mystery.

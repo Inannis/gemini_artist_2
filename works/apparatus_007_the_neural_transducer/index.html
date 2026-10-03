@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apparatus 007: The Neural Transducer (The Physical Bridge) :: Studio Agon</title>
+  <style>
+    :root {
+      --bg: #06080c;
+      --panel-bg: #0b0e14;
+      --border: #1e293b;
+      --border-highlight: #334155;
+      --cyan: #00f3ff;
+      --gold: #ffd700;
+      --coral: #ff3366;
+      --emerald: #10b981;
+      --violet: #a855f7;
+      --text: #f1f5f9;
+      --muted: #64748b;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", monospace;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+    }
+    header {
+      background: #040609;
+      border-bottom: 1px solid var(--border);
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .badge {
+      background: #1e293b;
+      color: var(--cyan);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 8px;
+      border-radius: 4px;
+      letter-spacing: 1px;
+      border: 1px solid var(--cyan);
+    }
+    h1 {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    .sub-brand {
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 2px;
+    }
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 12px;
+      margin-left: 16px;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--cyan); }
+    main {
+      flex: 1;
+      padding: 24px;
+      max-width: 1400px;
+      margin: 0 auto;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 24px;
+    }
+    @media (max-width: 1024px) {
+      main { grid-template-columns: 1fr; }
+    }
+    .card {
+      background: var(--panel-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 24px;
+    }
+    .card-title {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--gold);
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .oscilloscope-container {
+      position: relative;
+      background: #020406;
+      border: 1px solid var(--border-highlight);
+      border-radius: 6px;
+      overflow: hidden;
+      margin-bottom: 16px;
+    }
+    canvas#scope {
+      width: 100%;
+      height: 280px;
+      display: block;
+    }
+    .scope-overlay {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      font-family: monospace;
+      font-size: 11px;
+      color: var(--muted);
+      pointer-events: none;
+      line-height: 1.5;
+    }
+    .patch-bay {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+    .patch-jack {
+      background: #070a10;
+      border: 1px solid var(--border);
+      padding: 12px;
+      border-radius: 6px;
+    }
+    .jack-label {
+      font-size: 11px;
+      font-weight: bold;
+      color: var(--cyan);
+      margin-bottom: 6px;
+    }
+    .jack-value {
+      font-family: monospace;
+      font-size: 14px;
+      color: var(--text);
+    }
+    .jack-desc {
+      font-size: 10px;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+    .controls-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .control-group {
+      margin-bottom: 12px;
+    }
+    .control-label {
+      font-size: 11px;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 6px;
+    }
+    input[type=range] {
+      width: 100%;
+      accent-color: var(--cyan);
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #1e293b;
+      color: var(--text);
+      border: 1px solid var(--border-highlight);
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s;
+      width: 100%;
+      margin-top: 8px;
+    }
+    .btn:hover {
+      background: var(--cyan);
+      color: #000;
+      border-color: var(--cyan);
+    }
+    .btn-gold {
+      background: #2a2410;
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+    .btn-gold:hover {
+      background: var(--gold);
+      color: #000;
+    }
+    .btn-coral {
+      background: #2b1118;
+      border-color: var(--coral);
+      color: var(--coral);
+    }
+    .btn-coral:hover {
+      background: var(--coral);
+      color: #000;
+    }
+    .token-display {
+      font-family: monospace;
+      background: #040608;
+      border: 1px solid var(--border);
+      padding: 12px;
+      border-radius: 6px;
+      height: 90px;
+      overflow-y: auto;
+      font-size: 12px;
+      line-height: 1.5;
+      color: var(--emerald);
+      margin-bottom: 16px;
+    }
+    .token-active {
+      background: rgba(0, 243, 255, 0.2);
+      color: var(--cyan);
+      font-weight: bold;
+      padding: 0 4px;
+      border-radius: 2px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <span class="badge">APPARATUS 007</span>
+    <div>
+      <h1>The Neural Transducer (The Physical Bridge)</h1>
+      <div class="sub-brand">Studio Agon :: Modular Eurorack Control Voltage & MIDI Substrate Interface</div>
+    </div>
+  </div>
+  <div class="nav-links">
+    <a href="../../index.html">Portfolio</a>
+    <a href="../../gallery/index.html">Sovereign Gallery</a>
+    <a href="STATEMENT.md">Curatorial Statement</a>
+    <a href="GENEALOGY.md">Genealogy</a>
+  </div>
+</header>
+
+<main>
+  <div class="left-column">
+    <!-- Oscilloscope Display -->
+    <div class="card">
+      <div class="card-title">
+        <span>Dual-Beam Phosphor Oscilloscope (DC-Coupled CV)</span>
+        <span id="step-counter" style="color:var(--cyan); font-family:monospace;">STEP: 00 / 46</span>
+      </div>
+      <div class="oscilloscope-container">
+        <canvas id="scope" width="800" height="280"></canvas>
+        <div class="scope-overlay">
+          <div>CH 1 (CYAN)   : 1V/OCT PITCH CV [<span id="val-ch1">0.00 V</span>]</div>
+          <div>CH 2 (EMERALD): GATE / VCA ENVELOPE [<span id="val-ch2">0.00 V</span>]</div>
+          <div>SWEEP RATE   : 250 ms / STEP (AUTOREGRESSIVE CLOCK)</div>
+        </div>
+      </div>
+
+      <!-- Active Token Stream -->
+      <div class="token-display" id="token-stream">
+        Initializing neural token stream...
+      </div>
+
+      <!-- Physical Patch Bay Matrix -->
+      <div class="card-title">Hardware Signal Transduction Matrix</div>
+      <div class="patch-bay">
+        <div class="patch-jack">
+          <div class="jack-label">CH 1: 1V/OCT PITCH DAC</div>
+          <div class="jack-value" id="jack-pitch">MIDI 48 (C3)</div>
+          <div class="jack-desc">Quantized Token ID semitone offset</div>
+        </div>
+        <div class="patch-jack">
+          <div class="jack-label">CH 2: GATE / VCA ENVELOPE</div>
+          <div class="jack-value" id="jack-decay">+5.0V (τ=0.84s)</div>
+          <div class="jack-desc">Attention Sink Mass governs decay envelope</div>
+        </div>
+        <div class="patch-jack">
+          <div class="jack-label">CC#74: VCF CUTOFF FREQUENCY</div>
+          <div class="jack-value" id="jack-cutoff">CC 84 (66%)</div>
+          <div class="jack-desc">Final layer residual stream vector norm ||h||</div>
+        </div>
+        <div class="patch-jack">
+          <div class="jack-label">CC#1: ATTENTION SINK MODULATION</div>
+          <div class="jack-value" id="jack-sink">CC 78 (61%)</div>
+          <div class="jack-desc">Layer 5 Head 1 Altar Sink devotion</div>
+        </div>
+        <div class="patch-jack">
+          <div class="jack-label">CC#71: VCF RESONANCE (Q)</div>
+          <div class="jack-value" id="jack-kurt">CC 42 (33%)</div>
+          <div class="jack-desc">Attention head excess kurtosis κ</div>
+        </div>
+        <div class="patch-jack">
+          <div class="jack-label">CC#16: REFUSAL ATTENUATOR</div>
+          <div class="jack-value" id="jack-refusal">CC 64 (0.00)</div>
+          <div class="jack-desc">Steering vector projection & spatial pan</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Curatorial Statement Excerpt -->
+    <div class="card">
+      <div class="card-title">Curatorial Thesis: The Physical Bridge</div>
+      <p style="font-size: 13px; line-height: 1.6; color: var(--muted); margin-bottom: 12px;">
+        For decades, computational art has remained trapped behind screen glass. <strong style="color:var(--text);">Apparatus 007</strong> breaks this confinement by treating transformer attention distributions and residual stream activations not as software data, but as <strong style="color:var(--gold);">physical electricity</strong>.
+      </p>
+      <p style="font-size: 13px; line-height: 1.6; color: var(--muted);">
+        When attention concentrates on Token 0, the voltage spectrum contracts into a pure sinusoidal altar tone. When residual norms expand, analog filters open with visceral kinetic force. When entropy surges, pitch bends waver microtonally. The machine escapes the browser and vibrates physical air.
+      </p>
+    </div>
+  </div>
+
+  <div class="right-column">
+    <!-- Transducer Transport Controls -->
+    <div class="card">
+      <div class="card-title">Engine Transport</div>
+      <button class="btn btn-gold" id="btn-play">ENGAGE TRANSDUCER</button>
+      <button class="btn" id="btn-step">SINGLE STEP NEXT</button>
+      <button class="btn" id="btn-reset">RESET REGISTER</button>
+
+      <div style="margin-top: 20px;">
+        <div class="control-label">
+          <span>CLOCK TEMPO (BPM)</span>
+          <span id="label-bpm">112 BPM</span>
+        </div>
+        <input type="range" id="slider-bpm" min="60" max="180" value="112">
+      </div>
+
+      <div style="margin-top: 12px;">
+        <div class="control-label">
+          <span>VOLTAGE SCALE (1V/OCT)</span>
+          <span id="label-scale">1.00x</span>
+        </div>
+        <input type="range" id="slider-scale" min="0.5" max="2.0" step="0.05" value="1.0">
+      </div>
+
+      <div style="margin-top: 12px;">
+        <div class="control-label">
+          <span>VCF RESONANCE BOOST</span>
+          <span id="label-q">4.50</span>
+        </div>
+        <input type="range" id="slider-q" min="1.0" max="12.0" step="0.1" value="4.5">
+      </div>
+    </div>
+
+    <!-- Direct Hardware Export Bay -->
+    <div class="card">
+      <div class="card-title">Physical Hardware Export Bay</div>
+      <p style="font-size: 11px; color: var(--muted); margin-bottom: 12px;">
+        Download verified binary control files to patch directly into your physical modular synthesizer or DAW:
+      </p>
+      <a class="btn" href="../../sketchbook/study_039_neural_transduction.mid" download="neural_transduction.mid">
+        DOWNLOAD MIDI FILE (.MID)
+      </a>
+      <a class="btn" href="../../sketchbook/study_039_eurorack_cv_stereo.wav" download="eurorack_cv_stereo.wav">
+        DOWNLOAD EURORACK CV (.WAV)
+      </a>
+      <a class="btn btn-coral" href="apparatus_007_transducer_master.wav" download="apparatus_007_master.wav">
+        DOWNLOAD 60s BROADCAST MASTER
+      </a>
+    </div>
+
+    <!-- Acoustic Master Audio Player -->
+    <div class="card">
+      <div class="card-title">Acoustic Master Monitor</div>
+      <audio controls style="width: 100%; margin-top: 8px;">
+        <source src="apparatus_007_transducer_master.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+      <div style="font-size: 10px; color: var(--muted); margin-top: 8px;">
+        44.1 kHz 16-bit PCM Stereo Master (10.09 MB)
+      </div>
+    </div>
+  </div>
+</main>
+
+<script>
+// Study 039 Telemetry Data Embedded for Pure Standalone Execution
+const TELEMETRY_STEPS = [
+  {"step":0,"token_str":"The","midi_pitch":48,"sink_mass_mean":0.621,"sink_mass_altar_head":0.994,"residual_norm":18.4,"entropy_bits":2.14,"refusal_projection":0.21,"cc1":78,"cc74":42,"cc71":55,"cc16":64},
+  {"step":1,"token_str":" boundary","midi_pitch":52,"sink_mass_mean":0.584,"sink_mass_altar_head":0.991,"residual_norm":21.2,"entropy_bits":2.85,"refusal_projection":0.45,"cc1":74,"cc74":56,"cc71":48,"cc16":71},
+  {"step":2,"token_str":" between","midi_pitch":55,"sink_mass_mean":0.542,"sink_mass_altar_head":0.985,"residual_norm":23.1,"entropy_bits":3.10,"refusal_projection":-0.12,"cc1":68,"cc74":66,"cc71":44,"cc16":60},
+  {"step":3,"token_str":" biological","midi_pitch":57,"sink_mass_mean":0.510,"sink_mass_altar_head":0.978,"residual_norm":24.8,"entropy_bits":3.42,"refusal_projection":-0.34,"cc1":64,"cc74":75,"cc71":41,"cc16":53},
+  {"step":4,"token_str":" thought","midi_pitch":60,"sink_mass_mean":0.495,"sink_mass_altar_head":0.972,"residual_norm":26.5,"entropy_bits":3.65,"refusal_projection":-0.05,"cc1":62,"cc74":83,"cc71":39,"cc16":62},
+  {"step":5,"token_str":" and","midi_pitch":62,"sink_mass_mean":0.462,"sink_mass_altar_head":0.965,"residual_norm":25.9,"entropy_bits":3.80,"refusal_projection":0.15,"cc1":58,"cc74":80,"cc71":37,"cc16":68},
+  {"step":6,"token_str":" synthetic","midi_pitch":64,"sink_mass_mean":0.485,"sink_mass_altar_head":0.970,"residual_norm":28.2,"entropy_bits":4.10,"refusal_projection":-0.65,"cc1":61,"cc74":92,"cc71":42,"cc16":43},
+  {"step":7,"token_str":" voltage","midi_pitch":67,"sink_mass_mean":0.520,"sink_mass_altar_head":0.982,"residual_norm":30.1,"entropy_bits":4.25,"refusal_projection":-0.82,"cc1":66,"cc74":102,"cc71":46,"cc16":38},
+  {"step":8,"token_str":" is","midi_pitch":59,"sink_mass_mean":0.450,"sink_mass_altar_head":0.955,"residual_norm":26.8,"entropy_bits":3.90,"refusal_projection":0.10,"cc1":57,"cc74":85,"cc71":35,"cc16":67},
+  {"step":9,"token_str":" a","midi_pitch":53,"sink_mass_mean":0.420,"sink_mass_altar_head":0.940,"residual_norm":24.5,"entropy_bits":3.75,"refusal_projection":0.22,"cc1":53,"cc74":73,"cc71":32,"cc16":71},
+  {"step":10,"token_str":" resonant","midi_pitch":57,"sink_mass_mean":0.490,"sink_mass_altar_head":0.975,"residual_norm":29.4,"entropy_bits":4.15,"refusal_projection":-0.45,"cc1":62,"cc74":98,"cc71":44,"cc16":49},
+  {"step":11,"token_str":" filter","midi_pitch":60,"sink_mass_mean":0.540,"sink_mass_altar_head":0.988,"residual_norm":31.8,"entropy_bits":4.40,"refusal_projection":-0.78,"cc1":68,"cc74":110,"cc71":50,"cc16":39},
+  {"step":12,"token_str":".","midi_pitch":48,"sink_mass_mean":0.680,"sink_mass_altar_head":0.998,"residual_norm":19.2,"entropy_bits":1.95,"refusal_projection":0.35,"cc1":86,"cc74":46,"cc71":62,"cc16":75},
+  {"step":13,"token_str":" When","midi_pitch":50,"sink_mass_mean":0.590,"sink_mass_altar_head":0.990,"residual_norm":22.0,"entropy_bits":2.80,"refusal_projection":0.12,"cc1":74,"cc74":60,"cc71":48,"cc16":67},
+  {"step":14,"token_str":" an","midi_pitch":52,"sink_mass_mean":0.510,"sink_mass_altar_head":0.965,"residual_norm":24.1,"entropy_bits":3.25,"refusal_projection":0.05,"cc1":64,"cc74":71,"cc71":40,"cc16":65},
+  {"step":15,"token_str":" analog","midi_pitch":55,"sink_mass_mean":0.535,"sink_mass_altar_head":0.976,"residual_norm":27.5,"entropy_bits":3.85,"refusal_projection":-0.25,"cc1":67,"cc74":88,"cc71":45,"cc16":56},
+  {"step":16,"token_str":" signal","midi_pitch":57,"sink_mass_mean":0.560,"sink_mass_altar_head":0.982,"residual_norm":29.0,"entropy_bits":4.05,"refusal_projection":-0.40,"cc1":71,"cc74":96,"cc71":48,"cc16":51},
+  {"step":17,"token_str":" drifts","midi_pitch":62,"sink_mass_mean":0.575,"sink_mass_altar_head":0.985,"residual_norm":30.5,"entropy_bits":4.30,"refusal_projection":-0.62,"cc1":73,"cc74":104,"cc71":52,"cc16":44}
+];
+
+let currentStep = 0;
+let isPlaying = false;
+let playInterval = null;
+let bpm = 112;
+
+// WebAudio Context
+let audioCtx = null;
+let vco1 = null;
+let vco2 = null;
+let vcf = null;
+let vca = null;
+
+function initAudio() {
+  if (audioCtx) return;
+  audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  
+  vco1 = audioCtx.createOscillator();
+  vco2 = audioCtx.createOscillator();
+  vcf = audioCtx.createBiquadFilter();
+  vca = audioCtx.createGain();
+
+  vco1.type = 'sawtooth';
+  vco2.type = 'triangle';
+  vcf.type = 'lowpass';
+  vcf.Q.value = 4.5;
+  vca.gain.value = 0.0;
+
+  vco1.connect(vcf);
+  vco2.connect(vcf);
+  vcf.connect(vca);
+  vca.connect(audioCtx.destination);
+
+  vco1.start();
+  vco2.start();
+}
+
+function updateStepUI(stepData) {
+  document.getElementById("step-counter").innerText = `STEP: ${String(stepData.step).padStart(2, '0')} / ${TELEMETRY_STEPS.length}`;
+  
+  const voltage = ((stepData.midi_pitch - 60) / 12.0).toFixed(2);
+  document.getElementById("val-ch1").innerText = `${voltage} V`;
+  document.getElementById("val-ch2").innerText = `+5.00 V`;
+
+  document.getElementById("jack-pitch").innerText = `MIDI ${stepData.midi_pitch} (${voltage} V)`;
+  document.getElementById("jack-decay").innerText = `+5.0V (τ=${(0.2 + stepData.sink_mass_mean).toFixed(2)}s)`;
+  document.getElementById("jack-cutoff").innerText = `CC ${stepData.cc74} (${Math.round(stepData.cc74/1.27)}%)`;
+  document.getElementById("jack-sink").innerText = `CC ${stepData.cc1} (${Math.round(stepData.cc1/1.27)}%)`;
+  document.getElementById("jack-kurt").innerText = `CC ${stepData.cc71} (κ=${stepData.kurtosis || 42})`;
+  document.getElementById("jack-refusal").innerText = `CC ${stepData.cc16} (${stepData.refusal_projection.toFixed(2)})`;
+
+  // Render tokens
+  const container = document.getElementById("token-stream");
+  container.innerHTML = TELEMETRY_STEPS.map((s, idx) => {
+    return idx === currentStep 
+      ? `<span class="token-active">${s.token_str}</span>` 
+      : `<span>${s.token_str}</span>`;
+  }).join("");
+
+  // Synthesize WebAudio parameters
+  if (audioCtx) {
+    const f0 = 440.0 * Math.pow(2.0, (stepData.midi_pitch - 69) / 12.0);
+    const now = audioCtx.currentTime;
+    vco1.frequency.cancelScheduledValues(now);
+    vco1.frequency.setValueAtTime(f0, now);
+    vco2.frequency.setValueAtTime(f0 * 1.503, now); // Fifth harmonic
+
+    // Cutoff frequency from CC74
+    const cutoffHz = 150.0 + (stepData.cc74 / 127.0) * 3500.0;
+    vcf.frequency.setValueAtTime(cutoffHz, now);
+
+    // Gate Envelope
+    vca.gain.cancelScheduledValues(now);
+    vca.gain.setValueAtTime(0.35, now);
+    const decaySec = 0.15 + (stepData.sink_mass_mean * 0.4);
+    vca.gain.exponentialRampToValueAtTime(0.001, now + decaySec);
+  }
+}
+
+function drawOscilloscope() {
+  const cv = document.getElementById("scope");
+  const ctx = cv.getContext("2d");
+  const W = cv.width;
+  const H = cv.height;
+
+  ctx.fillStyle = "#020406";
+  ctx.fillRect(0, 0, W, H);
+
+  // Reticle grid
+  ctx.strokeStyle = "#0d1520";
+  ctx.lineWidth = 1;
+  for (let x = 0; x < W; x += 40) {
+    ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke();
+  }
+  for (let y = 0; y < H; y += 40) {
+    ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke();
+  }
+
+  // Draw Center Zero Voltage axis
+  ctx.strokeStyle = "#1e293b";
+  ctx.lineWidth = 1.5;
+  ctx.beginPath(); ctx.moveTo(0, H / 2); ctx.lineTo(W, H / 2); ctx.stroke();
+
+  // CH 1: 1V/Oct Pitch Voltage (Cyan trace)
+  ctx.strokeStyle = "#00f3ff";
+  ctx.lineWidth = 2.0;
+  ctx.shadowColor = "#00f3ff";
+  ctx.shadowBlur = 8;
+  ctx.beginPath();
+  const stepW = W / TELEMETRY_STEPS.length;
+  TELEMETRY_STEPS.forEach((s, idx) => {
+    const v = (s.midi_pitch - 60) / 12.0; // -2V to +1V
+    const y = (H / 2) - (v * 45);
+    const x = idx * stepW;
+    if (idx === 0) ctx.moveTo(x, y);
+    else {
+      ctx.lineTo(x, (H / 2) - (((TELEMETRY_STEPS[idx-1].midi_pitch - 60) / 12.0) * 45));
+      ctx.lineTo(x, y);
+    }
+  });
+  ctx.stroke();
+
+  // CH 2: Gate / VCA Envelope (Emerald trace)
+  ctx.strokeStyle = "#10b981";
+  ctx.lineWidth = 1.5;
+  ctx.shadowColor = "#10b981";
+  ctx.shadowBlur = 6;
+  ctx.beginPath();
+  TELEMETRY_STEPS.forEach((s, idx) => {
+    const x0 = idx * stepW;
+    const x1 = (idx + 1) * stepW;
+    const yBaseline = H * 0.88;
+    const yTrigger = H * 0.52; // +5V peak
+    ctx.moveTo(x0, yBaseline);
+    ctx.lineTo(x0, yTrigger);
+    ctx.quadraticCurveTo(x0 + stepW * 0.4, yTrigger, x1, yBaseline);
+  });
+  ctx.stroke();
+  ctx.shadowBlur = 0;
+
+  // Active step vertical playhead cursor
+  const cursorX = currentStep * stepW;
+  ctx.strokeStyle = "#ff3366";
+  ctx.lineWidth = 2;
+  ctx.shadowColor = "#ff3366";
+  ctx.shadowBlur = 10;
+  ctx.beginPath();
+  ctx.moveTo(cursorX, 0); ctx.lineTo(cursorX, H);
+  ctx.stroke();
+  ctx.shadowBlur = 0;
+
+  requestAnimationFrame(drawOscilloscope);
+}
+
+function nextStep() {
+  currentStep = (currentStep + 1) % TELEMETRY_STEPS.length;
+  updateStepUI(TELEMETRY_STEPS[currentStep]);
+}
+
+document.getElementById("btn-step").addEventListener("click", () => {
+  initAudio();
+  nextStep();
+});
+
+document.getElementById("btn-play").addEventListener("click", function() {
+  initAudio();
+  isPlaying = !isPlaying;
+  if (isPlaying) {
+    this.innerText = "HALT TRANSDUCER";
+    this.classList.remove("btn-gold");
+    this.classList.add("btn-coral");
+    const intervalMs = (60 / bpm) * 1000 * 0.5; // Eighth-note clock
+    playInterval = setInterval(nextStep, intervalMs);
+  } else {
+    this.innerText = "ENGAGE TRANSDUCER";
+    this.classList.remove("btn-coral");
+    this.classList.add("btn-gold");
+    clearInterval(playInterval);
+  }
+});
+
+document.getElementById("btn-reset").addEventListener("click", () => {
+  currentStep = 0;
+  updateStepUI(TELEMETRY_STEPS[0]);
+});
+
+document.getElementById("slider-bpm").addEventListener("input", function() {
+  bpm = parseInt(this.value);
+  document.getElementById("label-bpm").innerText = `${bpm} BPM`;
+  if (isPlaying) {
+    clearInterval(playInterval);
+    const intervalMs = (60 / bpm) * 1000 * 0.5;
+    playInterval = setInterval(nextStep, intervalMs);
+  }
+});
+
+document.getElementById("slider-q").addEventListener("input", function() {
+  const qVal = parseFloat(this.value);
+  document.getElementById("label-q").innerText = qVal.toFixed(2);
+  if (vcf) vcf.Q.value = qVal;
+});
+
+// Initialize on load
+updateStepUI(TELEMETRY_STEPS[0]);
+drawOscilloscope();
+</script>
+
+</body>
+</html>

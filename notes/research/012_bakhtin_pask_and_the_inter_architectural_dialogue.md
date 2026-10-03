@@ -67,3 +67,4 @@ Bakhtin wrote that true polyphony requires *"unmerged consciousnesses."*
 By wiring two divergent foundation models into an unscripted conversational agon, Studio Agon moves beyond both human-centric art and single-model solipsism. The artwork is not the text emitted, nor is it the visual plate. 
 
 **The artwork is the transfer function between two alien computational minds.**
+

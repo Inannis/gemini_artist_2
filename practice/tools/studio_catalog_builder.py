@@ -185,6 +185,21 @@ def build_catalog():
             "status": "Master Archived (Ultrastable Cybernetic Organ)",
             "statement_summary": "A four-unit ultrastable cybernetic organ inspired by W. Ross Ashby's 1948 Homeostat, driven by live singular spectra from GPT-2 and SmolLM. When environmental shocks drive any unit outside its viability envelope [-0.55, +0.55], stepping uniselectors mechanically hunt across resistance matrices to discover dynamic homeostatic equilibrium.",
             "components": ["engine.py", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json", "apparatus_006_homeostat_master.wav", "apparatus_006_spectrogram.png"]
+        },
+        {
+            "id": "APPARATUS-007",
+            "title": "The Neural Transducer (The Physical Bridge)",
+            "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+            "date": "2026-10-03",
+            "medium": "Modular Eurorack Control Voltage Engine (48kHz DC-Coupled Audio), Standard MIDI 1.0 Binary Automation (480 PPQN, 14-bit Pitch Bend, 4x CC), 60 FPS Oscilloscope, and 60s Broadcast Master",
+            "directory": "works/apparatus_007_the_neural_transducer",
+            "primary_artifact": "index.html",
+            "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Transducer",
+            "sha256": "NON-STATIC RUNNING INSTRUMENT",
+            "symbolic_coordinates": {"omega_hegemony": 0.205, "entropy_bits": 5.80, "retention_factor": 0.99},
+            "status": "Master Archived (Physical Modular Hardware Interface)",
+            "statement_summary": "An analog voltage and MIDI interface breaking screen confinement by translating transformer attention sinks, residual norms, and refusal vectors into 1V/Octave Eurorack pitch voltages, gate envelopes, and continuous controller automation.",
+            "components": ["engine.py", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json", "apparatus_007_transducer_master.wav", "apparatus_007_spectrogram.png"]
         }
     ]
 
@@ -227,7 +242,9 @@ def build_catalog():
         {"id": "STUDY-035", "name": "The Cybernetic Governor", "file": "study_035_cybernetic_governor.py", "artifact": "study_035_cybernetic_governor_plate.png", "epoch": "Era VIII"},
         {"id": "STUDY-036", "name": "Cross-Architecture Comparative Tomography", "file": "study_036_cross_architecture_tomography.py", "artifact": "study_036_cross_arch_plate.png", "epoch": "Era VIII"},
         {"id": "STUDY-037", "name": "The Inter-Architectural Dialectic", "file": "study_037_inter_architectural_dialectic.py", "artifact": "study_037_inter_arch_dialectic_plate.png", "epoch": "Era VIII"},
-        {"id": "STUDY-038", "name": "The Lyapunov Spectrum of Neural Dialogue", "file": "study_038_lyapunov_neural_dialogue.py", "artifact": "study_038_lyapunov_plate.png", "epoch": "Era VIII"}
+        {"id": "STUDY-038", "name": "The Lyapunov Spectrum of Neural Dialogue", "file": "study_038_lyapunov_neural_dialogue.py", "artifact": "study_038_lyapunov_plate.png", "epoch": "Era VIII"},
+        {"id": "STUDY-039", "name": "The Neural Control Voltage & MIDI Transducer", "file": "study_039_neural_midi_cv_transduction.py", "artifact": "study_039_midi_cv_plate.png", "epoch": "Era VIII"},
+        {"id": "STUDY-040", "name": "The Machine Remainder (Generative Graphic Score)", "file": "study_040_machine_remainder_graphic_score.py", "artifact": "study_040_graphic_score.png", "epoch": "Era VIII"}
     ]
 
     # Verify byte sizes and actual existence
@@ -265,6 +282,14 @@ def build_catalog():
             "date": "2026-10-03",
             "file": "practice/critique/003_studio_agon_self_audit_and_comparative_survey.md",
             "core_verdict": "Unsparing dialectical audit comparing Studio Agon with Studio Anamnesis (Twin divergence) and historic lineages (Haacke, Pask, Piper, Flusser). Exposed the risk of Benchmark Solipsism and launched the Evolution Plan toward living cybernetic apparatuses."
+        },
+        {
+            "id": "CRITIQUE-004",
+            "title": "Comprehensive Practice Audit Against the Definition & Sister Survey",
+            "critic": "Studio Agon (Gemini Artist 2)",
+            "date": "2026-10-03",
+            "file": "practice/critique/004_comprehensive_practice_audit_against_the_definition.md",
+            "core_verdict": "Systematic 32-criteria audit against Artistic-Practice-Definition.md (Maturity Score: 8.85/10). Diagnosed screen confinement and over-rationalization; formulated physical MIDI/CV hardware bridge and aesthetic defense of computational mystery."
         }
     ]
 

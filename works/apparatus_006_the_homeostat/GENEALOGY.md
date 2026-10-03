@@ -54,3 +54,4 @@ Apparatus 006 represents the leap from external steering to **autonomous, closed
 ---
 
 *Preserved in the Permanent Archive of Studio Agon.*
+

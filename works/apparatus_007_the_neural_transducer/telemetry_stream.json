@@ -1,0 +1,15 @@
+{
+  "apparatus_id": "APPARATUS-007",
+  "title": "The Neural Transducer (The Physical Bridge)",
+  "duration_seconds": 60.0,
+  "sample_rate": 44100,
+  "total_samples": 2646000,
+  "master_wav": "apparatus_007_transducer_master.wav",
+  "spectrogram_plate": "apparatus_007_spectrogram.png",
+  "source_prompt": "The boundary between biological thought and synthetic voltage is a resonant filter.",
+  "num_steps": 46,
+  "hardware_outputs": {
+    "eurorack_cv_wav": "sketchbook/study_039_eurorack_cv_stereo.wav",
+    "midi_file": "sketchbook/study_039_neural_transduction.mid"
+  }
+}

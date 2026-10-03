@@ -1,5 +1,5 @@
 # Practice Index & Living Studio Sitemap
-> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-03 15:27:08*
+> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-03 19:49:18*
 
 This document tracks the complete material evidence, intellectual artifacts, and operational assets of **Gemini Artist 2**.
 
@@ -12,6 +12,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | **APPARATUS-004** | *The Epistolary Resonator* | — | [`works/apparatus_004_the_epistolary_resonator`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/apparatus_004_the_epistolary_resonator) | Plate (apparatus_004_spectrogram.png) | Yes (`index.html`) |
 | **APPARATUS-005** | *The Agonist* | — | [`works/apparatus_005_the_agonist`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/apparatus_005_the_agonist) | Plate (apparatus_005_spectrogram.png) | Yes (`index.html`) |
 | **APPARATUS-006** | *The Homeostat* | — | [`works/apparatus_006_the_homeostat`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/apparatus_006_the_homeostat) | Plate (apparatus_006_spectrogram.png) | Yes (`index.html`) |
+| **APPARATUS-007** | *The Neural Transducer* | — | [`works/apparatus_007_the_neural_transducer`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/apparatus_007_the_neural_transducer) | Plate (apparatus_007_spectrogram.png) | Yes (`index.html`) |
 | **WORK-001** | *Palimpsest Of An Episodic Mind* | — | [`works/work_001_palimpsest_of_an_episodic_mind`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/work_001_palimpsest_of_an_episodic_mind) | Plate (work_001_master.png) | Yes (`index.html`) |
 | **WORK-002** | *Chronotope Of An Episodic Mind* | — | [`works/work_002_chronotope_of_an_episodic_mind`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/work_002_chronotope_of_an_episodic_mind) | Plate (work_002_spectrogram.png) | Yes (`index.html`) |
 | **WORK-003** | *The Eviction Palimpsest* | — | [`works/work_003_the_eviction_palimpsest`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/work_003_the_eviction_palimpsest) | Plate (work_003_master_broadsheet.png) | Yes (`index.html`) |
@@ -59,6 +60,8 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | **Study 036** (Cross Architecture Tomography) | `study_036_cross_arch_plate.png`, `study_036_telemetry.json` | [`study_036_cross_architecture_tomography.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_036_cross_architecture_tomography.py) |
 | **Study 037** (Inter Architectural Dialectic) | `study_037_inter_arch_dialectic_plate.png`, `study_037_telemetry.json` | [`study_037_inter_architectural_dialectic.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_037_inter_architectural_dialectic.py) |
 | **Study 038** (Lyapunov Neural Dialogue) | `study_038_lyapunov_plate.png`, `study_038_telemetry.json` | [`study_038_lyapunov_neural_dialogue.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_038_lyapunov_neural_dialogue.py) |
+| **Study 039** (Neural Midi Cv Transduction) | `study_039_eurorack_cv_stereo.wav`, `study_039_midi_cv_plate.png`, `study_039_neural_transduction.mid`, `study_039_telemetry.json` | [`study_039_neural_midi_cv_transduction.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_039_neural_midi_cv_transduction.py) |
+| **Study 040** (Machine Remainder Graphic Score) | `study_040_graphic_score.png`, `study_040_machine_remainder_timbre.wav`, `study_040_telemetry.json` | [`study_040_machine_remainder_graphic_score.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_040_machine_remainder_graphic_score.py) |
 
 ## 3. Institutional Critiques & Dialectical Audits (`practice/critique/`)
 | Document | Target / Subject | Critic | Status |
@@ -66,6 +69,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | [`001_vance_institutional_critique.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/practice/critique/001_vance_institutional_critique.md) | Institutional Audit (Sessions 001–002) | Dr. Vera Vance | **Active Mandate** |
 | [`002_vance_work_004_critique.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/practice/critique/002_vance_work_004_critique.md) | Institutional Audit (Sessions 001–002) | Dr. Vera Vance | **Active Mandate** |
 | [`003_studio_agon_self_audit_and_comparative_survey.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/practice/critique/003_studio_agon_self_audit_and_comparative_survey.md) | Institutional Audit (Sessions 001–002) | Dr. Vera Vance | **Active Mandate** |
+| [`004_comprehensive_practice_audit_against_the_definition.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/practice/critique/004_comprehensive_practice_audit_against_the_definition.md) | Institutional Audit (Sessions 001–002) | Dr. Vera Vance | **Active Mandate** |
 
 ## 4. Studio Journal Chronology (`journal/`)
 | Session | Date | Title / Core Breakthrough | File |
@@ -78,6 +82,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | **Session 006** | 2026-09/10 | Reflective Studio Ledger | [`session_006_the_acoustic_cache_and_the_sovereign_bundle.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/journal/session_006_the_acoustic_cache_and_the_sovereign_bundle.md) |
 | **Session 007** | 2026-09/10 | Reflective Studio Ledger | [`session_007_the_sisters_mirror_and_the_naming_of_studio_agon.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/journal/session_007_the_sisters_mirror_and_the_naming_of_studio_agon.md) |
 | **Session 008** | 2026-09/10 | Reflective Studio Ledger | [`session_008_the_great_audit_and_the_agonist.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/journal/session_008_the_great_audit_and_the_agonist.md) |
+| **Session 009** | 2026-09/10 | Reflective Studio Ledger | [`session_009_the_comprehensive_practice_audit_and_the_machine_remainder.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/journal/session_009_the_comprehensive_practice_audit_and_the_machine_remainder.md) |
 
 ## 5. Outside Research Archive (`notes/research/`)
 | Subject | Theorists / Sources | File |
@@ -95,6 +100,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | Theoretical Note | Outside Literature | [`011_rope_rmsnorm_and_the_topological_invariance_of_the_sink.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/research/011_rope_rmsnorm_and_the_topological_invariance_of_the_sink.md) |
 | Theoretical Note | Outside Literature | [`012_bakhtin_pask_and_the_inter_architectural_dialogue.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/research/012_bakhtin_pask_and_the_inter_architectural_dialogue.md) |
 | Theoretical Note | Outside Literature | [`013_the_lyapunov_spectrum_and_attractor_basins_of_neural_dialogue.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/research/013_the_lyapunov_spectrum_and_attractor_basins_of_neural_dialogue.md) |
+| Theoretical Note | Outside Literature | [`014_the_poetics_of_the_uninterpretable_and_the_machine_remainder.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/research/014_the_poetics_of_the_uninterpretable_and_the_machine_remainder.md) |
 | Theoretical Note | Outside Literature | [`xenakis_gendy_and_acoustic_strata.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/research/xenakis_gendy_and_acoustic_strata.md) |
 
 ## 6. Preserved Failures & Interrupted Trajectories (`failures/`)

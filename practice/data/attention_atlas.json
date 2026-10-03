@@ -1,17 +1,17 @@
 {
   "studio": "Gemini Artist 2",
   "date_computed": "2026-10-02",
-  "entity_count": 48,
+  "entity_count": 51,
   "phase_space_axes": {
     "X": "Sovereign Attention Hegemony \u03a9 (0.0 to 1.0)",
     "Y": "Shannon Vocabulary Entropy H (0.0 to 8.0 bits)",
     "Z": "Context Memory Retention Factor \u03bc (0.0 to 1.0)"
   },
   "studio_centroid": {
-    "mean_omega": 0.2828,
-    "mean_entropy_bits": 4.3365,
-    "mean_retention_factor": 0.6488,
-    "radius_of_practice": 0.4355
+    "mean_omega": 0.2777,
+    "mean_entropy_bits": 4.4239,
+    "mean_retention_factor": 0.6688,
+    "radius_of_practice": 0.4328
   },
   "entities": [
     {
@@ -387,9 +387,9 @@
         "distance": 0.3902
       },
       "polar_opposite": {
-        "target_id": "STUDY-035",
-        "target_name": "The Cybernetic Governor",
-        "distance": 1.1418
+        "target_id": "STUDY-040",
+        "target_name": "The Machine Remainder (Generative Graphic Score)",
+        "distance": 1.1532
       }
     },
     {
@@ -1012,14 +1012,77 @@
       "medium": "Empirical Lyapunov Proxy and Attractor Dynamics of Homogeneous vs. Heterogeneous Autoregressive Coupling",
       "year": 2026,
       "nearest_topological_twin": {
-        "target_id": "STUDY-037",
-        "target_name": "The Inter-Architectural Dialectic",
-        "distance": 0.04
+        "target_id": "STUDY-039",
+        "target_name": "The Neural Control Voltage & MIDI Transducer",
+        "distance": 0.0195
       },
       "polar_opposite": {
         "target_id": "STUDY-015",
         "target_name": "Dialogic Decay & Asymmetric Amnesia",
         "distance": 1.1337
+      }
+    },
+    {
+      "id": "STUDY-039",
+      "name": "The Neural Control Voltage & MIDI Transducer",
+      "type": "study",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "omega_hegemony": 0.21,
+      "entropy_bits": 5.75,
+      "retention_factor": 0.99,
+      "medium": "Zero-Dependency Standard MIDI 1.0 Binary Automation & 48kHz DC-Coupled Modular Eurorack CV Synthesis",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "APPARATUS-007",
+        "target_name": "The Neural Transducer (The Physical Bridge)",
+        "distance": 0.008
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1344
+      }
+    },
+    {
+      "id": "APPARATUS-007",
+      "name": "The Neural Transducer (The Physical Bridge)",
+      "type": "work",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "omega_hegemony": 0.205,
+      "entropy_bits": 5.8,
+      "retention_factor": 0.99,
+      "medium": "Physical Modular CV & MIDI Hardware Interface, 60 FPS Dual-Beam Oscilloscope, Virtual Patch Bay & 60s Broadcast Master",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-039",
+        "target_name": "The Neural Control Voltage & MIDI Transducer",
+        "distance": 0.008
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1383
+      }
+    },
+    {
+      "id": "STUDY-040",
+      "name": "The Machine Remainder (Generative Graphic Score)",
+      "type": "study",
+      "epoch": "Era VIII (Studio Agon / Aesthetic Synthesis)",
+      "omega_hegemony": 0.175,
+      "entropy_bits": 5.92,
+      "retention_factor": 0.99,
+      "medium": "High-Dimensional Orthogonal Complement Projection (d=765), Cardew/Xenakis Generative Graphic Score & 60s Microtonal Master",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "APPARATUS-007",
+        "target_name": "The Neural Transducer (The Physical Bridge)",
+        "distance": 0.0335
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1532
       }
     }
   ]

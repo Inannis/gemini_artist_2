@@ -1,0 +1,900 @@
+{
+  "study_id": "study_039",
+  "title": "The Neural Control Voltage & MIDI Transducer",
+  "timestamp_utc": "2026-10-03 20:00:00 UTC",
+  "prompt": "The boundary between biological thought and synthetic voltage is a resonant filter.",
+  "sequence_length": 46,
+  "artifacts": {
+    "midi_file": "study_039_neural_transduction.mid",
+    "midi_size_bytes": 1367,
+    "cv_wav_file": "study_039_eurorack_cv_stereo.wav",
+    "cv_size_kb": 2156.3,
+    "plate_png": "study_039_midi_cv_plate.png",
+    "plate_size_kb": 639.4
+  },
+  "hardware_mapping": {
+    "1v_per_octave": "Channel 1 (Left) DC-coupled (-2.5V to +2.5V)",
+    "gate_vca_envelope": "Channel 2 (Right) DC-coupled (0.0V to +5.0V)",
+    "cc_1": "Mean Attention Sink Mass (0-127)",
+    "cc_74": "Final Layer Residual Stream Norm (0-127)",
+    "cc_71": "Attention Head Kurtosis (0-127)",
+    "cc_16": "Refusal Steering Projection (0-127)",
+    "pitch_bend": "14-bit Shannon Entropy Microtonal Modulation"
+  },
+  "steps": [
+    {
+      "step": 0,
+      "token_id": 464,
+      "token_str": "'The'",
+      "midi_pitch": 40,
+      "sink_mass_mean": 1.0,
+      "sink_mass_altar_head": 1.0,
+      "residual_norm": 78.148,
+      "entropy_bits": 0.0,
+      "kurtosis": 0.0,
+      "refusal_projection": 134.507,
+      "midi_cc": {
+        "cc1_sink_mass": 127,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 0,
+        "cc16_refusal": 127,
+        "pitch_bend_14bit": 4592
+      }
+    },
+    {
+      "step": 1,
+      "token_id": 18645,
+      "token_str": "' boundary'",
+      "midi_pitch": 55,
+      "sink_mass_mean": 0.8991,
+      "sink_mass_altar_head": 0.9999,
+      "residual_norm": 166.58,
+      "entropy_bits": 0.168,
+      "kurtosis": -1.93,
+      "refusal_projection": -2.079,
+      "midi_cc": {
+        "cc1_sink_mass": 114,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 0,
+        "cc16_refusal": 0,
+        "pitch_bend_14bit": 4794
+      }
+    },
+    {
+      "step": 2,
+      "token_id": 1022,
+      "token_str": "' between'",
+      "midi_pitch": 53,
+      "sink_mass_mean": 0.7538,
+      "sink_mass_altar_head": 0.9994,
+      "residual_norm": 185.688,
+      "entropy_bits": 0.566,
+      "kurtosis": -1.19,
+      "refusal_projection": -1.858,
+      "midi_cc": {
+        "cc1_sink_mass": 95,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 0,
+        "cc16_refusal": 4,
+        "pitch_bend_14bit": 5271
+      }
+    },
+    {
+      "step": 3,
+      "token_id": 10685,
+      "token_str": "' biological'",
+      "midi_pitch": 62,
+      "sink_mass_mean": 0.7155,
+      "sink_mass_altar_head": 0.9998,
+      "residual_norm": 176.601,
+      "entropy_bits": 0.651,
+      "kurtosis": -0.02,
+      "refusal_projection": 1.425,
+      "midi_cc": {
+        "cc1_sink_mass": 90,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 0,
+        "cc16_refusal": 108,
+        "pitch_bend_14bit": 5373
+      }
+    },
+    {
+      "step": 4,
+      "token_id": 1807,
+      "token_str": "' thought'",
+      "midi_pitch": 41,
+      "sink_mass_mean": 0.6491,
+      "sink_mass_altar_head": 0.9997,
+      "residual_norm": 110.21,
+      "entropy_bits": 0.979,
+      "kurtosis": 1.25,
+      "refusal_projection": 3.281,
+      "midi_cc": {
+        "cc1_sink_mass": 82,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 5,
+        "cc16_refusal": 127,
+        "pitch_bend_14bit": 5766
+      }
+    },
+    {
+      "step": 5,
+      "token_id": 290,
+      "token_str": "' and'",
+      "midi_pitch": 43,
+      "sink_mass_mean": 0.5329,
+      "sink_mass_altar_head": 0.9993,
+      "residual_norm": 214.937,
+      "entropy_bits": 1.329,
+      "kurtosis": 2.83,
+      "refusal_projection": -3.848,
+      "midi_cc": {
+        "cc1_sink_mass": 67,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 11,
+        "cc16_refusal": 0,
+        "pitch_bend_14bit": 6186
+      }
+    },
+    {
+      "step": 6,
+      "token_id": 18512,
+      "token_str": "' synthetic'",
+      "midi_pitch": 53,
+      "sink_mass_mean": 0.5784,
+      "sink_mass_altar_head": 0.9946,
+      "residual_norm": 233.007,
+      "entropy_bits": 1.261,
+      "kurtosis": 4.01,
+      "refusal_projection": -0.636,
+      "midi_cc": {
+        "cc1_sink_mass": 73,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 16,
+        "cc16_refusal": 43,
+        "pitch_bend_14bit": 6104
+      }
+    },
+    {
+      "step": 7,
+      "token_id": 15004,
+      "token_str": "' voltage'",
+      "midi_pitch": 36,
+      "sink_mass_mean": 0.5889,
+      "sink_mass_altar_head": 0.9964,
+      "residual_norm": 209.036,
+      "entropy_bits": 1.241,
+      "kurtosis": 5.31,
+      "refusal_projection": 0.292,
+      "midi_cc": {
+        "cc1_sink_mass": 74,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 22,
+        "cc16_refusal": 72,
+        "pitch_bend_14bit": 6081
+      }
+    },
+    {
+      "step": 8,
+      "token_id": 318,
+      "token_str": "' is'",
+      "midi_pitch": 53,
+      "sink_mass_mean": 0.5739,
+      "sink_mass_altar_head": 0.9983,
+      "residual_norm": 264.601,
+      "entropy_bits": 1.363,
+      "kurtosis": 6.83,
+      "refusal_projection": -1.809,
+      "midi_cc": {
+        "cc1_sink_mass": 72,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 28,
+        "cc16_refusal": 6,
+        "pitch_bend_14bit": 6227
+      }
+    },
+    {
+      "step": 9,
+      "token_id": 257,
+      "token_str": "' a'",
+      "midi_pitch": 62,
+      "sink_mass_mean": 0.5579,
+      "sink_mass_altar_head": 0.9984,
+      "residual_norm": 256.438,
+      "entropy_bits": 1.325,
+      "kurtosis": 8.11,
+      "refusal_projection": -4.001,
+      "midi_cc": {
+        "cc1_sink_mass": 70,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 34,
+        "cc16_refusal": 0,
+        "pitch_bend_14bit": 6182
+      }
+    },
+    {
+      "step": 10,
+      "token_id": 14309,
+      "token_str": "' reson'",
+      "midi_pitch": 52,
+      "sink_mass_mean": 0.6327,
+      "sink_mass_altar_head": 0.9982,
+      "residual_norm": 150.291,
+      "entropy_bits": 1.222,
+      "kurtosis": 9.21,
+      "refusal_projection": -4.844,
+      "midi_cc": {
+        "cc1_sink_mass": 80,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 38,
+        "cc16_refusal": 0,
+        "pitch_bend_14bit": 6058
+      }
+    },
+    {
+      "step": 11,
+      "token_id": 415,
+      "token_str": "'ant'",
+      "midi_pitch": 69,
+      "sink_mass_mean": 0.4873,
+      "sink_mass_altar_head": 0.9988,
+      "residual_norm": 237.932,
+      "entropy_bits": 1.449,
+      "kurtosis": 11.11,
+      "refusal_projection": -5.532,
+      "midi_cc": {
+        "cc1_sink_mass": 61,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 47,
+        "cc16_refusal": 0,
+        "pitch_bend_14bit": 6331
+      }
+    },
+    {
+      "step": 12,
+      "token_id": 8106,
+      "token_str": "' filter'",
+      "midi_pitch": 53,
+      "sink_mass_mean": 0.5193,
+      "sink_mass_altar_head": 0.9991,
+      "residual_norm": 233.802,
+      "entropy_bits": 1.519,
+      "kurtosis": 13.14,
+      "refusal_projection": 1.743,
+      "midi_cc": {
+        "cc1_sink_mass": 65,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 55,
+        "cc16_refusal": 118,
+        "pitch_bend_14bit": 6414
+      }
+    },
+    {
+      "step": 13,
+      "token_id": 13,
+      "token_str": "'.'",
+      "midi_pitch": 59,
+      "sink_mass_mean": 0.4775,
+      "sink_mass_altar_head": 0.9938,
+      "residual_norm": 340.265,
+      "entropy_bits": 1.572,
+      "kurtosis": 16.04,
+      "refusal_projection": -3.083,
+      "midi_cc": {
+        "cc1_sink_mass": 60,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 67,
+        "cc16_refusal": 0,
+        "pitch_bend_14bit": 6478
+      }
+    },
+    {
+      "step": 14,
+      "token_id": 383,
+      "token_str": "' The'",
+      "midi_pitch": 52,
+      "sink_mass_mean": 0.4838,
+      "sink_mass_altar_head": 0.9409,
+      "residual_norm": 240.722,
+      "entropy_bits": 1.762,
+      "kurtosis": 15.97,
+      "refusal_projection": -3.027,
+      "midi_cc": {
+        "cc1_sink_mass": 61,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 67,
+        "cc16_refusal": 0,
+        "pitch_bend_14bit": 6705
+      }
+    },
+    {
+      "step": 15,
+      "token_id": 29371,
+      "token_str": "' resonance'",
+      "midi_pitch": 38,
+      "sink_mass_mean": 0.4715,
+      "sink_mass_altar_head": 0.8867,
+      "residual_norm": 166.945,
+      "entropy_bits": 1.701,
+      "kurtosis": 15.02,
+      "refusal_projection": -3.146,
+      "midi_cc": {
+        "cc1_sink_mass": 59,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 63,
+        "cc16_refusal": 0,
+        "pitch_bend_14bit": 6633
+      }
+    },
+    {
+      "step": 16,
+      "token_id": 8106,
+      "token_str": "' filter'",
+      "midi_pitch": 53,
+      "sink_mass_mean": 0.4516,
+      "sink_mass_altar_head": 0.9509,
+      "residual_norm": 255.354,
+      "entropy_bits": 1.641,
+      "kurtosis": 17.2,
+      "refusal_projection": 2.772,
+      "midi_cc": {
+        "cc1_sink_mass": 57,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 72,
+        "cc16_refusal": 127,
+        "pitch_bend_14bit": 6561
+      }
+    },
+    {
+      "step": 17,
+      "token_id": 318,
+      "token_str": "' is'",
+      "midi_pitch": 53,
+      "sink_mass_mean": 0.4914,
+      "sink_mass_altar_head": 0.979,
+      "residual_norm": 273.744,
+      "entropy_bits": 1.779,
+      "kurtosis": 18.85,
+      "refusal_projection": -1.886,
+      "midi_cc": {
+        "cc1_sink_mass": 62,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 79,
+        "cc16_refusal": 3,
+        "pitch_bend_14bit": 6727
+      }
+    },
+    {
+      "step": 18,
+      "token_id": 257,
+      "token_str": "' a'",
+      "midi_pitch": 62,
+      "sink_mass_mean": 0.4571,
+      "sink_mass_altar_head": 0.706,
+      "residual_norm": 260.014,
+      "entropy_bits": 1.975,
+      "kurtosis": 20.77,
+      "refusal_projection": -4.103,
+      "midi_cc": {
+        "cc1_sink_mass": 58,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 87,
+        "cc16_refusal": 0,
+        "pitch_bend_14bit": 6961
+      }
+    },
+    {
+      "step": 19,
+      "token_id": 9052,
+      "token_str": "' loop'",
+      "midi_pitch": 53,
+      "sink_mass_mean": 0.5161,
+      "sink_mass_altar_head": 0.9933,
+      "residual_norm": 243.102,
+      "entropy_bits": 1.764,
+      "kurtosis": 21.75,
+      "refusal_projection": -2.204,
+      "midi_cc": {
+        "cc1_sink_mass": 65,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 92,
+        "cc16_refusal": 0,
+        "pitch_bend_14bit": 6709
+      }
+    },
+    {
+      "step": 20,
+      "token_id": 287,
+      "token_str": "' in'",
+      "midi_pitch": 38,
+      "sink_mass_mean": 0.4644,
+      "sink_mass_altar_head": 0.998,
+      "residual_norm": 133.775,
+      "entropy_bits": 1.69,
+      "kurtosis": 23.74,
+      "refusal_projection": -5.376,
+      "midi_cc": {
+        "cc1_sink_mass": 58,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 100,
+        "cc16_refusal": 0,
+        "pitch_bend_14bit": 6619
+      }
+    },
+    {
+      "step": 21,
+      "token_id": 543,
+      "token_str": "' which'",
+      "midi_pitch": 62,
+      "sink_mass_mean": 0.4077,
+      "sink_mass_altar_head": 0.9248,
+      "residual_norm": 233.971,
+      "entropy_bits": 1.802,
+      "kurtosis": 28.32,
+      "refusal_projection": -2.122,
+      "midi_cc": {
+        "cc1_sink_mass": 51,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 119,
+        "cc16_refusal": 0,
+        "pitch_bend_14bit": 6754
+      }
+    },
+    {
+      "step": 22,
+      "token_id": 262,
+      "token_str": "' the'",
+      "midi_pitch": 71,
+      "sink_mass_mean": 0.4381,
+      "sink_mass_altar_head": 0.9701,
+      "residual_norm": 269.694,
+      "entropy_bits": 1.901,
+      "kurtosis": 29.03,
+      "refusal_projection": -2.226,
+      "midi_cc": {
+        "cc1_sink_mass": 55,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 122,
+        "cc16_refusal": 0,
+        "pitch_bend_14bit": 6873
+      }
+    },
+    {
+      "step": 23,
+      "token_id": 37188,
+      "token_str": "' amplitude'",
+      "midi_pitch": 50,
+      "sink_mass_mean": 0.5105,
+      "sink_mass_altar_head": 0.9975,
+      "residual_norm": 165.029,
+      "entropy_bits": 1.515,
+      "kurtosis": 27.65,
+      "refusal_projection": -2.095,
+      "midi_cc": {
+        "cc1_sink_mass": 64,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 117,
+        "cc16_refusal": 0,
+        "pitch_bend_14bit": 6409
+      }
+    },
+    {
+      "step": 24,
+      "token_id": 286,
+      "token_str": "' of'",
+      "midi_pitch": 36,
+      "sink_mass_mean": 0.4227,
+      "sink_mass_altar_head": 0.9918,
+      "residual_norm": 202.565,
+      "entropy_bits": 1.571,
+      "kurtosis": 30.38,
+      "refusal_projection": -5.483,
+      "midi_cc": {
+        "cc1_sink_mass": 53,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 127,
+        "cc16_refusal": 0,
+        "pitch_bend_14bit": 6477
+      }
+    },
+    {
+      "step": 25,
+      "token_id": 257,
+      "token_str": "' a'",
+      "midi_pitch": 62,
+      "sink_mass_mean": 0.4231,
+      "sink_mass_altar_head": 0.9957,
+      "residual_norm": 280.354,
+      "entropy_bits": 1.839,
+      "kurtosis": 32.69,
+      "refusal_projection": -3.865,
+      "midi_cc": {
+        "cc1_sink_mass": 53,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 127,
+        "cc16_refusal": 0,
+        "pitch_bend_14bit": 6798
+      }
+    },
+    {
+      "step": 26,
+      "token_id": 6769,
+      "token_str": "' wave'",
+      "midi_pitch": 62,
+      "sink_mass_mean": 0.4867,
+      "sink_mass_altar_head": 0.9991,
+      "residual_norm": 249.906,
+      "entropy_bits": 1.855,
+      "kurtosis": 32.58,
+      "refusal_projection": -4.589,
+      "midi_cc": {
+        "cc1_sink_mass": 61,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 127,
+        "cc16_refusal": 0,
+        "pitch_bend_14bit": 6818
+      }
+    },
+    {
+      "step": 27,
+      "token_id": 687,
+      "token_str": "'form'",
+      "midi_pitch": 45,
+      "sink_mass_mean": 0.4178,
+      "sink_mass_altar_head": 0.9989,
+      "residual_norm": 275.886,
+      "entropy_bits": 1.98,
+      "kurtosis": 35.55,
+      "refusal_projection": -2.749,
+      "midi_cc": {
+        "cc1_sink_mass": 53,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 127,
+        "cc16_refusal": 0,
+        "pitch_bend_14bit": 6967
+      }
+    },
+    {
+      "step": 28,
+      "token_id": 2458,
+      "token_str": "' changes'",
+      "midi_pitch": 64,
+      "sink_mass_mean": 0.4431,
+      "sink_mass_altar_head": 0.9975,
+      "residual_norm": 280.372,
+      "entropy_bits": 1.994,
+      "kurtosis": 39.05,
+      "refusal_projection": -1.611,
+      "midi_cc": {
+        "cc1_sink_mass": 56,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 127,
+        "cc16_refusal": 12,
+        "pitch_bend_14bit": 6984
+      }
+    },
+    {
+      "step": 29,
+      "token_id": 422,
+      "token_str": "' from'",
+      "midi_pitch": 43,
+      "sink_mass_mean": 0.429,
+      "sink_mass_altar_head": 0.9802,
+      "residual_norm": 259.469,
+      "entropy_bits": 2.033,
+      "kurtosis": 39.16,
+      "refusal_projection": -0.768,
+      "midi_cc": {
+        "cc1_sink_mass": 54,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 127,
+        "cc16_refusal": 39,
+        "pitch_bend_14bit": 7032
+      }
+    },
+    {
+      "step": 30,
+      "token_id": 530,
+      "token_str": "' one'",
+      "midi_pitch": 40,
+      "sink_mass_mean": 0.4237,
+      "sink_mass_altar_head": 0.9953,
+      "residual_norm": 254.553,
+      "entropy_bits": 1.98,
+      "kurtosis": 41.76,
+      "refusal_projection": -3.33,
+      "midi_cc": {
+        "cc1_sink_mass": 53,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 127,
+        "cc16_refusal": 0,
+        "pitch_bend_14bit": 6968
+      }
+    },
+    {
+      "step": 31,
+      "token_id": 1988,
+      "token_str": "' value'",
+      "midi_pitch": 50,
+      "sink_mass_mean": 0.4547,
+      "sink_mass_altar_head": 0.9883,
+      "residual_norm": 116.139,
+      "entropy_bits": 1.902,
+      "kurtosis": 39.02,
+      "refusal_projection": -6.116,
+      "midi_cc": {
+        "cc1_sink_mass": 57,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 127,
+        "cc16_refusal": 0,
+        "pitch_bend_14bit": 6874
+      }
+    },
+    {
+      "step": 32,
+      "token_id": 284,
+      "token_str": "' to'",
+      "midi_pitch": 71,
+      "sink_mass_mean": 0.42,
+      "sink_mass_altar_head": 0.9942,
+      "residual_norm": 59.309,
+      "entropy_bits": 1.752,
+      "kurtosis": 39.24,
+      "refusal_projection": -5.191,
+      "midi_cc": {
+        "cc1_sink_mass": 53,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 127,
+        "cc16_refusal": 0,
+        "pitch_bend_14bit": 6694
+      }
+    },
+    {
+      "step": 33,
+      "token_id": 262,
+      "token_str": "' the'",
+      "midi_pitch": 71,
+      "sink_mass_mean": 0.3925,
+      "sink_mass_altar_head": 0.9875,
+      "residual_norm": 161.148,
+      "entropy_bits": 2.329,
+      "kurtosis": 41.79,
+      "refusal_projection": -3.734,
+      "midi_cc": {
+        "cc1_sink_mass": 49,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 127,
+        "cc16_refusal": 0,
+        "pitch_bend_14bit": 7387
+      }
+    },
+    {
+      "step": 34,
+      "token_id": 1306,
+      "token_str": "' next'",
+      "midi_pitch": 50,
+      "sink_mass_mean": 0.3746,
+      "sink_mass_altar_head": 0.9562,
+      "residual_norm": 227.193,
+      "entropy_bits": 1.923,
+      "kurtosis": 45.68,
+      "refusal_projection": -4.125,
+      "midi_cc": {
+        "cc1_sink_mass": 47,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 127,
+        "cc16_refusal": 0,
+        "pitch_bend_14bit": 6899
+      }
+    },
+    {
+      "step": 35,
+      "token_id": 13,
+      "token_str": "'.'",
+      "midi_pitch": 59,
+      "sink_mass_mean": 0.3974,
+      "sink_mass_altar_head": 0.993,
+      "residual_norm": 354.741,
+      "entropy_bits": 2.118,
+      "kurtosis": 57.27,
+      "refusal_projection": -4.108,
+      "midi_cc": {
+        "cc1_sink_mass": 50,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 127,
+        "cc16_refusal": 0,
+        "pitch_bend_14bit": 7134
+      }
+    },
+    {
+      "step": 36,
+      "token_id": 383,
+      "token_str": "' The'",
+      "midi_pitch": 52,
+      "sink_mass_mean": 0.4075,
+      "sink_mass_altar_head": 0.7985,
+      "residual_norm": 265.476,
+      "entropy_bits": 2.256,
+      "kurtosis": 52.24,
+      "refusal_projection": -3.465,
+      "midi_cc": {
+        "cc1_sink_mass": 51,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 127,
+        "cc16_refusal": 0,
+        "pitch_bend_14bit": 7299
+      }
+    },
+    {
+      "step": 37,
+      "token_id": 14309,
+      "token_str": "' reson'",
+      "midi_pitch": 52,
+      "sink_mass_mean": 0.5259,
+      "sink_mass_altar_head": 0.9277,
+      "residual_norm": 95.591,
+      "entropy_bits": 2.044,
+      "kurtosis": 45.14,
+      "refusal_projection": -2.67,
+      "midi_cc": {
+        "cc1_sink_mass": 66,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 127,
+        "cc16_refusal": 0,
+        "pitch_bend_14bit": 7044
+      }
+    },
+    {
+      "step": 38,
+      "token_id": 415,
+      "token_str": "'ant'",
+      "midi_pitch": 69,
+      "sink_mass_mean": 0.3828,
+      "sink_mass_altar_head": 0.8389,
+      "residual_norm": 136.051,
+      "entropy_bits": 2.024,
+      "kurtosis": 46.93,
+      "refusal_projection": -3.031,
+      "midi_cc": {
+        "cc1_sink_mass": 48,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 127,
+        "cc16_refusal": 0,
+        "pitch_bend_14bit": 7021
+      }
+    },
+    {
+      "step": 39,
+      "token_id": 8106,
+      "token_str": "' filter'",
+      "midi_pitch": 53,
+      "sink_mass_mean": 0.3481,
+      "sink_mass_altar_head": 0.6542,
+      "residual_norm": 243.841,
+      "entropy_bits": 2.268,
+      "kurtosis": 49.83,
+      "refusal_projection": 4.01,
+      "midi_cc": {
+        "cc1_sink_mass": 44,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 127,
+        "cc16_refusal": 127,
+        "pitch_bend_14bit": 7313
+      }
+    },
+    {
+      "step": 40,
+      "token_id": 318,
+      "token_str": "' is'",
+      "midi_pitch": 53,
+      "sink_mass_mean": 0.4183,
+      "sink_mass_altar_head": 0.5997,
+      "residual_norm": 276.458,
+      "entropy_bits": 2.456,
+      "kurtosis": 52.89,
+      "refusal_projection": -2.173,
+      "midi_cc": {
+        "cc1_sink_mass": 53,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 127,
+        "cc16_refusal": 0,
+        "pitch_bend_14bit": 7539
+      }
+    },
+    {
+      "step": 41,
+      "token_id": 257,
+      "token_str": "' a'",
+      "midi_pitch": 62,
+      "sink_mass_mean": 0.3756,
+      "sink_mass_altar_head": 0.2772,
+      "residual_norm": 249.597,
+      "entropy_bits": 2.395,
+      "kurtosis": 54.15,
+      "refusal_projection": -3.999,
+      "midi_cc": {
+        "cc1_sink_mass": 47,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 127,
+        "cc16_refusal": 0,
+        "pitch_bend_14bit": 7465
+      }
+    },
+    {
+      "step": 42,
+      "token_id": 9052,
+      "token_str": "' loop'",
+      "midi_pitch": 53,
+      "sink_mass_mean": 0.3786,
+      "sink_mass_altar_head": 0.0518,
+      "residual_norm": 244.257,
+      "entropy_bits": 2.214,
+      "kurtosis": 53.75,
+      "refusal_projection": 0.155,
+      "midi_cc": {
+        "cc1_sink_mass": 48,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 127,
+        "cc16_refusal": 68,
+        "pitch_bend_14bit": 7248
+      }
+    },
+    {
+      "step": 43,
+      "token_id": 286,
+      "token_str": "' of'",
+      "midi_pitch": 36,
+      "sink_mass_mean": 0.3544,
+      "sink_mass_altar_head": 0.9827,
+      "residual_norm": 243.238,
+      "entropy_bits": 2.169,
+      "kurtosis": 58.3,
+      "refusal_projection": -4.95,
+      "midi_cc": {
+        "cc1_sink_mass": 45,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 127,
+        "cc16_refusal": 0,
+        "pitch_bend_14bit": 7194
+      }
+    },
+    {
+      "step": 44,
+      "token_id": 281,
+      "token_str": "' an'",
+      "midi_pitch": 65,
+      "sink_mass_mean": 0.4009,
+      "sink_mass_altar_head": 0.9799,
+      "residual_norm": 262.702,
+      "entropy_bits": 2.314,
+      "kurtosis": 60.18,
+      "refusal_projection": -2.603,
+      "midi_cc": {
+        "cc1_sink_mass": 50,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 127,
+        "cc16_refusal": 0,
+        "pitch_bend_14bit": 7368
+      }
+    },
+    {
+      "step": 45,
+      "token_id": 18253,
+      "token_str": "' integer'",
+      "midi_pitch": 62,
+      "sink_mass_mean": 0.4591,
+      "sink_mass_altar_head": 0.9963,
+      "residual_norm": 275.311,
+      "entropy_bits": 1.805,
+      "kurtosis": 60.0,
+      "refusal_projection": -1.323,
+      "midi_cc": {
+        "cc1_sink_mass": 58,
+        "cc74_residual_norm": 127,
+        "cc71_kurtosis": 127,
+        "cc16_refusal": 21,
+        "pitch_bend_14bit": 6757
+      }
+    }
+  ]
+}

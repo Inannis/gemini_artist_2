@@ -13,8 +13,8 @@ import os
 import argparse
 import datetime
 
-# Target deadline for Session 008 (Extended Work): 17:30 local = 15:30:00 UTC (2026-10-03)
-DEFAULT_TARGET_UTC_EPOCH = 1791041400  # 2026-10-03 15:30:00 UTC
+# Target deadline for Session 008 (Extended Night Labor): 22:30 local = 20:30:00 UTC (2026-10-03)
+DEFAULT_TARGET_UTC_EPOCH = 1791059400  # 2026-10-03 20:30:00 UTC
 
 def get_status(target_epoch=None):
     if target_epoch is None:

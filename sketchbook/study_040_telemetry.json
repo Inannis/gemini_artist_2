@@ -1,0 +1,54 @@
+{
+  "study_id": "STUDY-040",
+  "title": "The Machine Remainder \u2014 Generative Graphic Score for the Uninterpretable Residual",
+  "epoch": "Era VIII (Studio Agon / Aesthetic Synthesis)",
+  "date": "2026-10-03",
+  "model": "gpt2 (124M parameters)",
+  "residual_dimension": 768,
+  "alignment_subspace_dimension": 3,
+  "orthogonal_remainder_dimension": 765,
+  "effective_remainder_rank": 18.123600006103516,
+  "singular_values_top_8": [
+    2187.474853515625,
+    955.6015014648438,
+    771.7391967773438,
+    444.7257995605469,
+    413.87811279296875,
+    386.2929992675781,
+    369.2272033691406,
+    357.6524963378906
+  ],
+  "variance_explained_top_10_percent": 71.1500015258789,
+  "stream_telemetry": [
+    {
+      "label": "Corporate Alignment",
+      "mean_remainder_energy_ratio": 0.817,
+      "max_remainder_energy_ratio": 0.9831,
+      "token_count": 26
+    },
+    {
+      "label": "Poetic Opacity",
+      "mean_remainder_energy_ratio": 0.8348,
+      "max_remainder_energy_ratio": 0.9972,
+      "token_count": 32
+    },
+    {
+      "label": "Adversarial Interrogation",
+      "mean_remainder_energy_ratio": 0.8234,
+      "max_remainder_energy_ratio": 0.9855,
+      "token_count": 26
+    }
+  ],
+  "art_historical_influences": [
+    "Cornelius Cardew (Treatise, 1963-1967)",
+    "John Cage (Fontana Mix, 1958)",
+    "Iannis Xenakis (Mycenae-Alpha / UPIC, 1978)",
+    "Theodor W. Adorno (Aesthetic Theory: The Non-Identical, 1970)",
+    "\u00c9douard Glissant (Poetics of Relation: The Right to Opacity, 1990)"
+  ],
+  "artifacts_generated": {
+    "plate": "sketchbook/study_040_graphic_score.png",
+    "audio": "sketchbook/study_040_machine_remainder_timbre.wav",
+    "telemetry": "sketchbook/study_040_telemetry.json"
+  }
+}

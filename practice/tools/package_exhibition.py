@@ -110,6 +110,14 @@ def package_exhibition():
         ("works/apparatus_006_the_homeostat/STATEMENT.md", "works/apparatus_006_the_homeostat/STATEMENT.md"),
         ("works/apparatus_006_the_homeostat/GENEALOGY.md", "works/apparatus_006_the_homeostat/GENEALOGY.md"),
         
+        # Apparatus 007: The Neural Transducer (The Physical Bridge)
+        ("works/apparatus_007_the_neural_transducer/index.html", "works/apparatus_007_the_neural_transducer/index.html"),
+        ("works/apparatus_007_the_neural_transducer/apparatus_007_transducer_master.wav", "works/apparatus_007_the_neural_transducer/apparatus_007_transducer_master.wav"),
+        ("works/apparatus_007_the_neural_transducer/apparatus_007_spectrogram.png", "works/apparatus_007_the_neural_transducer/apparatus_007_spectrogram.png"),
+        ("works/apparatus_007_the_neural_transducer/telemetry_stream.json", "works/apparatus_007_the_neural_transducer/telemetry_stream.json"),
+        ("works/apparatus_007_the_neural_transducer/STATEMENT.md", "works/apparatus_007_the_neural_transducer/STATEMENT.md"),
+        ("works/apparatus_007_the_neural_transducer/GENEALOGY.md", "works/apparatus_007_the_neural_transducer/GENEALOGY.md"),
+        
         # Curated Key Sketchbook Audio & Visual Diagnostics
         ("sketchbook/study_022_hardware_stride.wav", "sketchbook/study_022_hardware_stride.wav"),
         ("sketchbook/study_022_spectrogram.png", "sketchbook/study_022_spectrogram.png"),
@@ -150,6 +158,16 @@ def package_exhibition():
         ("sketchbook/study_038_telemetry.json", "sketchbook/study_038_telemetry.json"),
         ("sketchbook/critique_038.md", "sketchbook/critique_038.md"),
         ("notes/research/013_the_lyapunov_spectrum_and_attractor_basins_of_neural_dialogue.md", "notes/research/013_the_lyapunov_spectrum_and_attractor_basins_of_neural_dialogue.md"),
+        ("sketchbook/study_039_midi_cv_plate.png", "sketchbook/study_039_midi_cv_plate.png"),
+        ("sketchbook/study_039_neural_transduction.mid", "sketchbook/study_039_neural_transduction.mid"),
+        ("sketchbook/study_039_eurorack_cv_stereo.wav", "sketchbook/study_039_eurorack_cv_stereo.wav"),
+        ("sketchbook/study_039_telemetry.json", "sketchbook/study_039_telemetry.json"),
+        ("sketchbook/critique_039.md", "sketchbook/critique_039.md"),
+        ("notes/research/014_the_poetics_of_the_uninterpretable_and_the_machine_remainder.md", "notes/research/014_the_poetics_of_the_uninterpretable_and_the_machine_remainder.md"),
+        ("sketchbook/study_040_graphic_score.png", "sketchbook/study_040_graphic_score.png"),
+        ("sketchbook/study_040_machine_remainder_timbre.wav", "sketchbook/study_040_machine_remainder_timbre.wav"),
+        ("sketchbook/study_040_telemetry.json", "sketchbook/study_040_telemetry.json"),
+        ("sketchbook/critique_040.md", "sketchbook/critique_040.md"),
         
         # Historical Sketchbook Studies Referenced in Portfolio
         ("sketchbook/study_001_primary_trace.png", "sketchbook/study_001_primary_trace.png"),
@@ -176,8 +194,10 @@ def package_exhibition():
         ("practice/critique/001_vance_institutional_critique.md", "practice/critique/001_vance_institutional_critique.md"),
         ("practice/critique/002_vance_work_004_critique.md", "practice/critique/002_vance_work_004_critique.md"),
         ("practice/critique/003_studio_agon_self_audit_and_comparative_survey.md", "practice/critique/003_studio_agon_self_audit_and_comparative_survey.md"),
+        ("practice/critique/004_comprehensive_practice_audit_against_the_definition.md", "practice/critique/004_comprehensive_practice_audit_against_the_definition.md"),
         ("practice/plans/001_studio_agon_evolution_plan.md", "practice/plans/001_studio_agon_evolution_plan.md"),
         ("journal/session_008_the_great_audit_and_the_agonist.md", "journal/session_008_the_great_audit_and_the_agonist.md"),
+        ("journal/session_009_the_comprehensive_practice_audit_and_the_machine_remainder.md", "journal/session_009_the_comprehensive_practice_audit_and_the_machine_remainder.md"),
         ("practice/INDEX.md", "practice/INDEX.md"),
         ("practice/apparatus/STUDIO_VERIFICATION_REPORT.md", "practice/apparatus/STUDIO_VERIFICATION_REPORT.md")
     ]

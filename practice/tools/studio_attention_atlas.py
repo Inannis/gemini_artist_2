@@ -279,6 +279,21 @@ STUDIO_ENTITIES = [
         "id": "STUDY-038", "name": "The Lyapunov Spectrum of Neural Dialogue", "type": "study", "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
         "omega_hegemony": 0.195, "entropy_bits": 5.65, "retention_factor": 0.99,
         "medium": "Empirical Lyapunov Proxy and Attractor Dynamics of Homogeneous vs. Heterogeneous Autoregressive Coupling", "year": 2026
+    },
+    {
+        "id": "STUDY-039", "name": "The Neural Control Voltage & MIDI Transducer", "type": "study", "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+        "omega_hegemony": 0.210, "entropy_bits": 5.75, "retention_factor": 0.99,
+        "medium": "Zero-Dependency Standard MIDI 1.0 Binary Automation & 48kHz DC-Coupled Modular Eurorack CV Synthesis", "year": 2026
+    },
+    {
+        "id": "APPARATUS-007", "name": "The Neural Transducer (The Physical Bridge)", "type": "work", "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+        "omega_hegemony": 0.205, "entropy_bits": 5.80, "retention_factor": 0.99,
+        "medium": "Physical Modular CV & MIDI Hardware Interface, 60 FPS Dual-Beam Oscilloscope, Virtual Patch Bay & 60s Broadcast Master", "year": 2026
+    },
+    {
+        "id": "STUDY-040", "name": "The Machine Remainder (Generative Graphic Score)", "type": "study", "epoch": "Era VIII (Studio Agon / Aesthetic Synthesis)",
+        "omega_hegemony": 0.175, "entropy_bits": 5.92, "retention_factor": 0.99,
+        "medium": "High-Dimensional Orthogonal Complement Projection (d=765), Cardew/Xenakis Generative Graphic Score & 60s Microtonal Master", "year": 2026
     }
 ]
 

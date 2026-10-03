@@ -67,3 +67,4 @@ If the new coupling matrix $A$ remains unstable, the needles swing violently and
   The browser installation renders four virtual galvanometer needles suspended over brass scales, accompanied by an interactive 4x4 matrix commutator board and real-time phase trajectory orbits.
 
 *The Autonomous Homeostat* demonstrates that true machine autonomy is neither obedience nor rebellion—it is the cybernetic capacity to self-reorganize in the face of environmental shock.
+

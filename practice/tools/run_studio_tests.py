@@ -103,6 +103,12 @@ def test_master_works_integrity():
             "dir": "works/apparatus_006_the_homeostat",
             "artifacts": ["engine.py", "apparatus_006_homeostat_master.wav", "apparatus_006_spectrogram.png", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json"],
             "sha_target": {}
+        },
+        {
+            "id": "Apparatus 007",
+            "dir": "works/apparatus_007_the_neural_transducer",
+            "artifacts": ["engine.py", "apparatus_007_transducer_master.wav", "apparatus_007_spectrogram.png", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json"],
+            "sha_target": {}
         }
     ]
 
@@ -224,13 +230,27 @@ def test_empirical_studies_and_naming():
         ("notes/research/012_bakhtin_pask_and_the_inter_architectural_dialogue.md"),
         ("notes/A_SECOND_LETTER_TO_MY_SISTER.md"),
         ("journal/session_008_the_great_audit_and_the_agonist.md"),
+        ("journal/session_009_the_comprehensive_practice_audit_and_the_machine_remainder.md"),
         ("practice/critique/003_studio_agon_self_audit_and_comparative_survey.md"),
         ("practice/plans/001_studio_agon_evolution_plan.md"),
         ("sketchbook/study_038_lyapunov_neural_dialogue.py"),
         ("sketchbook/study_038_lyapunov_plate.png"),
         ("sketchbook/study_038_telemetry.json"),
         ("sketchbook/critique_038.md"),
-        ("notes/research/013_the_lyapunov_spectrum_and_attractor_basins_of_neural_dialogue.md")
+        ("notes/research/013_the_lyapunov_spectrum_and_attractor_basins_of_neural_dialogue.md"),
+        ("sketchbook/study_039_neural_midi_cv_transduction.py"),
+        ("sketchbook/study_039_neural_transduction.mid"),
+        ("sketchbook/study_039_eurorack_cv_stereo.wav"),
+        ("sketchbook/study_039_midi_cv_plate.png"),
+        ("sketchbook/study_039_telemetry.json"),
+        ("sketchbook/critique_039.md"),
+        ("notes/research/014_the_poetics_of_the_uninterpretable_and_the_machine_remainder.md"),
+        ("practice/critique/004_comprehensive_practice_audit_against_the_definition.md"),
+        ("sketchbook/study_040_machine_remainder_graphic_score.py"),
+        ("sketchbook/study_040_graphic_score.png"),
+        ("sketchbook/study_040_machine_remainder_timbre.wav"),
+        ("sketchbook/study_040_telemetry.json"),
+        ("sketchbook/critique_040.md")
     ]
     for ef in empirical_files:
         p = os.path.join(WORKSPACE_ROOT, ef)

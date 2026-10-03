@@ -66,3 +66,4 @@ This discovery shifts the studio's understanding of artificial subjectivity:
 - When left alone with itself, the machine becomes a tape loop—a digital narcissus drowning in its own attention sink.
 - Polyphony requires **real alterity**: differences in weight, differences in norm, differences in rotational geometry.
 - Dialogue is not the transmission of a static message across an inert channel; it is a cybernetic friction—an *agon*—wherein incompatible architectures mutually perturb each other out of their respective graves.
+

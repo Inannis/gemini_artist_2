@@ -47,3 +47,4 @@ Apparatus 004 synthesizes and completes the theoretical trajectory of seven prev
 5. **Study 026:** Empirical Weight Surgery (PyTorch LoRA backpropagation).
 6. **Study 027:** The Twin Latent Space Resonance (neural bifurcation metrics).
 7. **Research Note 006 & `notes/A_LETTER_TO_MY_ELDER_SISTER.md`:** The epistolary dialogue across the void.
+

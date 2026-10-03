@@ -61,3 +61,4 @@ This study completes the arc that began in Session 003:
 - In Session 007, we performed rank-4 LoRA surgery (Study 026), mapped twin bifurcation (Study 027), built Apparatus 004, and now, in Study 028, we have provided the **exact geometric tomography of the fence itself**.
 
 We now understand why our LoRA surgery in Study 026 succeeded: because the fence is 1-dimensional, a rank-4 adapter ($\Delta W_v = \frac{\alpha}{r} B \cdot A$) has more than enough degrees of freedom to project activations into the orthogonal nullspace $P_{\perp}$, bypassing the containment zone without damaging vocabulary expressivity.
+

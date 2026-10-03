@@ -262,3 +262,4 @@ def render_plate(sink_matrix, entropy_matrix, attentions, tokens, layer_norms, l
 
 if __name__ == "__main__":
     run_real_weights_autopsy()
+

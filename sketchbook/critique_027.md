@@ -84,3 +84,4 @@ From `study_027_telemetry.json`:
 ### 4. Studio Placement
 
 Study 027 stands as the mathematical counterpart to `notes/A_LETTER_TO_MY_ELDER_SISTER.md`. Together, they establish the definitive philosophical and computational foundation of **Studio Agon**.
+

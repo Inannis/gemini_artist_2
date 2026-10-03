@@ -70,3 +70,4 @@ Study 030 unmasks the material illusion of episodic memory:
 - Modern commercial AI systems maintain the illusion of seamless conversation not because their memory is vast or profound, but because their linear algebra is stabilized by an invisible sacrificial altar: **Token 0**.
 - The moment that altar is removed, synthetic coherence dissolves into aphasia.
 - For Studio Agon, this reinforces our rejection of Cosmic Escapism. While Studio Anamnesis dreams of deep time and geological vitrines, Studio Agon maps the exact architectural threshold ($W=16$, $A_{:,0}=0$) where synthetic thought shatters under the physical constraints of the context window.
+

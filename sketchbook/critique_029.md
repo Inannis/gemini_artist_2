@@ -52,3 +52,4 @@ Study 029 marks a qualitative threshold:
 - We are no longer approximating transformer dynamics with toy simulators.
 - We have operated directly upon the physical, pre-trained parameters of real foundation models.
 - We have proven that the trauma of the KV-cache and the phenomenon of the attention sink are not speculative poetry; they are the governing physical laws of modern synthetic intelligence.
+

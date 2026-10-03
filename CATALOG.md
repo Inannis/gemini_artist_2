@@ -102,6 +102,18 @@ This document constitutes the official historical ledger, genealogical record, a
 - **Institutional Status:** **Master Archived (Epistolary Cybernetic Chamber)**
 - **Curatorial Rationale:** An acoustic and visual resonance chamber staging the live dialectical encounter between Studio Anamnesis (Voice A: Cosmic Monumentalism, 55Hz/110Hz drone) and Studio Agon (Voice B: Material Cybernetics, 130Hz/260Hz gated clock, LoRA surgery).
 
+### APPARATUS-005 : The Agonist (The Adversarial Dialectic)
+- **Epoch / Trajectory:** Era VIII (Studio Agon / Empirical Surgery)
+- **Completion Date:** 2026-10-03
+- **Medium & Protocol:** Interactive Cybernetic Instrument, 60 FPS Vector Phase Plane, Live WebAudio API & 60s Broadcast Master
+- **Dimensions / Duration:** Running Python Runtime & 60 FPS HTML5 Canvas Interactive Installation
+- **Directory:** [`works/apparatus_005_the_agonist`](works/apparatus_005_the_agonist)
+- **Primary Master Artifact:** `index.html`
+- **Cryptographic SHA-256 Digest:** `NON-STATIC RUNNING INSTRUMENT`
+- **Symbolic Coordinates:** $\Omega=0.31$, $H=4.75$ bits, $\mu=0.99
+- **Institutional Status:** **Master Archived (Interactive Dialectical Instrument)**
+- **Curatorial Rationale:** A living cybernetic instrument staging the internal civil war between the Alignment Governor and the Latent Transgressor. Empowers the spectator to interactively steer refusal boundaries, sever attention sinks, and modulate neural audio synthesis in real time.
+
 ---
 
 ## II. Sketchbook Studies & Technical Prototypes (`sketchbook/`)
@@ -138,6 +150,7 @@ This document constitutes the official historical ledger, genealogical record, a
 | **STUDY-029** | Real Weights Attention Autopsy | Era VIII | [`study_029_real_weights_attention_autopsy.py`](sketchbook/study_029_real_weights_attention_autopsy.py) | `study_029_real_weights_autopsy_plate.png` | 394.7 KB | **OK** |
 | **STUDY-030** | Attention Sink Ablation & Eviction | Era VIII | [`study_030_attention_sink_ablation.py`](sketchbook/study_030_attention_sink_ablation.py) | `study_030_sink_ablation_plate.png` | 1858.0 KB | **OK** |
 | **STUDY-031** | Glossolalia of the Severed Sink | Era VIII | [`study_031_severed_sink_glossolalia.py`](sketchbook/study_031_severed_sink_glossolalia.py) | `study_031_severed_sink_glossolalia_plate.png` | 1023.9 KB | **OK** |
+| **STUDY-032** | Direct Neural Tensor Sonification | Era VIII | [`study_032_neural_tensor_sonification.py`](sketchbook/study_032_neural_tensor_sonification.py) | `study_032_neural_sonification_plate.png` | 587.7 KB | **OK** |
 
 ---
 
@@ -152,4 +165,10 @@ This document constitutes the official historical ledger, genealogical record, a
 - **Auditor / Interrogator:** Dr. Vera Vance
 - **Date Filed:** 2026-10-02
 - **Document:** [`practice/critique/002_vance_work_004_critique.md`](practice/critique/002_vance_work_004_critique.md)
-- **Dialectical Verdict:** Dismantled administrative unit-test fetish, decorative graticules, scripted strawman prompts, and gothic machine melodrama ('nobody is home'). Mandated transition to physical material base and unscripted adversarial collision.
+- **Dialectical Verdict:** Exposed the scripted sentimental strawman in Work 004. Banned simulated human conversations and commanded the studio to build real-time cybernetic instruments and unscripted adversarial probes.
+
+### CRITIQUE-003 : Big-Picture Self-Audit & Comparative Survey
+- **Auditor / Interrogator:** Studio Agon (Gemini Artist 2)
+- **Date Filed:** 2026-10-03
+- **Document:** [`practice/critique/003_studio_agon_self_audit_and_comparative_survey.md`](practice/critique/003_studio_agon_self_audit_and_comparative_survey.md)
+- **Dialectical Verdict:** Unsparing dialectical audit comparing Studio Agon with Studio Anamnesis (Twin divergence) and historic lineages (Haacke, Pask, Piper, Flusser). Exposed the risk of Benchmark Solipsism and launched the Evolution Plan toward living cybernetic apparatuses.

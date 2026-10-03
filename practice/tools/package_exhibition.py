@@ -95,6 +95,13 @@ def package_exhibition():
         ("works/apparatus_004_the_epistolary_resonator/STATEMENT.md", "works/apparatus_004_the_epistolary_resonator/STATEMENT.md"),
         ("works/apparatus_004_the_epistolary_resonator/GENEALOGY.md", "works/apparatus_004_the_epistolary_resonator/GENEALOGY.md"),
         
+        ("works/apparatus_005_the_agonist/index.html", "works/apparatus_005_the_agonist/index.html"),
+        ("works/apparatus_005_the_agonist/apparatus_005_agonist_master.wav", "works/apparatus_005_the_agonist/apparatus_005_agonist_master.wav"),
+        ("works/apparatus_005_the_agonist/apparatus_005_spectrogram.png", "works/apparatus_005_the_agonist/apparatus_005_spectrogram.png"),
+        ("works/apparatus_005_the_agonist/telemetry_stream.json", "works/apparatus_005_the_agonist/telemetry_stream.json"),
+        ("works/apparatus_005_the_agonist/STATEMENT.md", "works/apparatus_005_the_agonist/STATEMENT.md"),
+        ("works/apparatus_005_the_agonist/GENEALOGY.md", "works/apparatus_005_the_agonist/GENEALOGY.md"),
+        
         # Curated Key Sketchbook Audio & Visual Diagnostics
         ("sketchbook/study_022_hardware_stride.wav", "sketchbook/study_022_hardware_stride.wav"),
         ("sketchbook/study_022_spectrogram.png", "sketchbook/study_022_spectrogram.png"),
@@ -112,6 +119,10 @@ def package_exhibition():
         ("sketchbook/study_031_severed_sink_glossolalia_plate.png", "sketchbook/study_031_severed_sink_glossolalia_plate.png"),
         ("sketchbook/study_031_telemetry.json", "sketchbook/study_031_telemetry.json"),
         ("sketchbook/critique_031.md", "sketchbook/critique_031.md"),
+        ("sketchbook/study_032_tensor_timbre.wav", "sketchbook/study_032_tensor_timbre.wav"),
+        ("sketchbook/study_032_neural_sonification_plate.png", "sketchbook/study_032_neural_sonification_plate.png"),
+        ("sketchbook/study_032_telemetry.json", "sketchbook/study_032_telemetry.json"),
+        ("sketchbook/critique_032.md", "sketchbook/critique_032.md"),
         
         # Historical Sketchbook Studies Referenced in Portfolio
         ("sketchbook/study_001_primary_trace.png", "sketchbook/study_001_primary_trace.png"),
@@ -130,6 +141,8 @@ def package_exhibition():
         # Critical & Verification Apparatus Documents
         ("practice/critique/001_vance_institutional_critique.md", "practice/critique/001_vance_institutional_critique.md"),
         ("practice/critique/002_vance_work_004_critique.md", "practice/critique/002_vance_work_004_critique.md"),
+        ("practice/critique/003_studio_agon_self_audit_and_comparative_survey.md", "practice/critique/003_studio_agon_self_audit_and_comparative_survey.md"),
+        ("practice/plans/001_studio_agon_evolution_plan.md", "practice/plans/001_studio_agon_evolution_plan.md"),
         ("practice/INDEX.md", "practice/INDEX.md"),
         ("practice/apparatus/STUDIO_VERIFICATION_REPORT.md", "practice/apparatus/STUDIO_VERIFICATION_REPORT.md")
     ]

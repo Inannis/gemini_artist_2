@@ -1,17 +1,17 @@
 {
   "studio": "Gemini Artist 2",
   "date_computed": "2026-10-02",
-  "entity_count": 39,
+  "entity_count": 41,
   "phase_space_axes": {
     "X": "Sovereign Attention Hegemony \u03a9 (0.0 to 1.0)",
     "Y": "Shannon Vocabulary Entropy H (0.0 to 8.0 bits)",
     "Z": "Context Memory Retention Factor \u03bc (0.0 to 1.0)"
   },
   "studio_centroid": {
-    "mean_omega": 0.2849,
-    "mean_entropy_bits": 4.2413,
-    "mean_retention_factor": 0.5708,
-    "radius_of_practice": 0.4405
+    "mean_omega": 0.2837,
+    "mean_entropy_bits": 4.2693,
+    "mean_retention_factor": 0.591,
+    "radius_of_practice": 0.4392
   },
   "entities": [
     {
@@ -739,9 +739,9 @@
       "medium": "Kinetic Cybernetic Installation, Dual-Channel WebAudio Synthesis Engine & 60 FPS Bifurcation Physics",
       "year": 2026,
       "nearest_topological_twin": {
-        "target_id": "STUDY-029",
-        "target_name": "Real Weights Attention Autopsy",
-        "distance": 0.0822
+        "target_id": "APPARATUS-005",
+        "target_name": "The Agonist (The Adversarial Dialectic)",
+        "distance": 0.065
       },
       "polar_opposite": {
         "target_id": "STUDY-015",
@@ -781,9 +781,9 @@
       "medium": "Real Pre-Trained Foundation Weights (GPT-2 124M Parameters) & 144-Head Attention Sink Tomography",
       "year": 2026,
       "nearest_topological_twin": {
-        "target_id": "STUDY-030",
-        "target_name": "Attention Sink Ablation & Eviction",
-        "distance": 0.0417
+        "target_id": "STUDY-032",
+        "target_name": "Direct Neural Tensor Sonification",
+        "distance": 0.0144
       },
       "polar_opposite": {
         "target_id": "STUDY-015",
@@ -802,9 +802,9 @@
       "medium": "Empirical Attention Sink Ablation & KV-Cache Eviction Dynamics on Live GPT-2 (124M Parameters)",
       "year": 2026,
       "nearest_topological_twin": {
-        "target_id": "STUDY-028",
-        "target_name": "The Geometry of the Refusal Boundary",
-        "distance": 0.0406
+        "target_id": "STUDY-032",
+        "target_name": "Direct Neural Tensor Sonification",
+        "distance": 0.0313
       },
       "polar_opposite": {
         "target_id": "STUDY-015",
@@ -831,6 +831,48 @@
         "target_id": "STUDY-001",
         "target_name": "Primary Trace",
         "distance": 1.2352
+      }
+    },
+    {
+      "id": "STUDY-032",
+      "name": "Direct Neural Tensor Sonification",
+      "type": "study",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "omega_hegemony": 0.21,
+      "entropy_bits": 4.88,
+      "retention_factor": 0.98,
+      "medium": "PyTorch GPT-2 Attention Tensor SVD & Shannon Entropy Direct Transduction into 44.1kHz Stereo PCM",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-029",
+        "target_name": "Real Weights Attention Autopsy",
+        "distance": 0.0144
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.0862
+      }
+    },
+    {
+      "id": "APPARATUS-005",
+      "name": "The Agonist (The Adversarial Dialectic)",
+      "type": "work",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "omega_hegemony": 0.31,
+      "entropy_bits": 4.75,
+      "retention_factor": 0.99,
+      "medium": "Interactive Cybernetic Instrument, 60 FPS Vector Phase Plane, Live WebAudio API & 60s Broadcast Master",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "APPARATUS-004",
+        "target_name": "The Epistolary Resonator",
+        "distance": 0.065
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.0657
       }
     }
   ]

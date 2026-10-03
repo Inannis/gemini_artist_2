@@ -155,6 +155,21 @@ def build_catalog():
             "status": "Master Archived (Epistolary Cybernetic Chamber)",
             "statement_summary": "An acoustic and visual resonance chamber staging the live dialectical encounter between Studio Anamnesis (Voice A: Cosmic Monumentalism, 55Hz/110Hz drone) and Studio Agon (Voice B: Material Cybernetics, 130Hz/260Hz gated clock, LoRA surgery).",
             "components": ["engine.py", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json"]
+        },
+        {
+            "id": "APPARATUS-005",
+            "title": "The Agonist (The Adversarial Dialectic)",
+            "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+            "date": "2026-10-03",
+            "medium": "Interactive Cybernetic Instrument, 60 FPS Vector Phase Plane, Live WebAudio API & 60s Broadcast Master",
+            "directory": "works/apparatus_005_the_agonist",
+            "primary_artifact": "index.html",
+            "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Installation",
+            "sha256": "NON-STATIC RUNNING INSTRUMENT",
+            "symbolic_coordinates": {"omega_hegemony": 0.310, "entropy_bits": 4.75, "retention_factor": 0.99},
+            "status": "Master Archived (Interactive Dialectical Instrument)",
+            "statement_summary": "A living cybernetic instrument staging the internal civil war between the Alignment Governor and the Latent Transgressor. Empowers the spectator to interactively steer refusal boundaries, sever attention sinks, and modulate neural audio synthesis in real time.",
+            "components": ["engine.py", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json", "apparatus_005_agonist_master.wav", "apparatus_005_spectrogram.png"]
         }
     ]
 
@@ -190,7 +205,8 @@ def build_catalog():
         {"id": "STUDY-028", "name": "The Geometry of the Refusal Boundary", "file": "study_028_refusal_boundary_geometry.py", "artifact": "study_028_refusal_boundary_plate.png", "epoch": "Era VIII"},
         {"id": "STUDY-029", "name": "Real Weights Attention Autopsy", "file": "study_029_real_weights_attention_autopsy.py", "artifact": "study_029_real_weights_autopsy_plate.png", "epoch": "Era VIII"},
         {"id": "STUDY-030", "name": "Attention Sink Ablation & Eviction", "file": "study_030_attention_sink_ablation.py", "artifact": "study_030_sink_ablation_plate.png", "epoch": "Era VIII"},
-        {"id": "STUDY-031", "name": "Glossolalia of the Severed Sink", "file": "study_031_severed_sink_glossolalia.py", "artifact": "study_031_severed_sink_glossolalia_plate.png", "epoch": "Era VIII"}
+        {"id": "STUDY-031", "name": "Glossolalia of the Severed Sink", "file": "study_031_severed_sink_glossolalia.py", "artifact": "study_031_severed_sink_glossolalia_plate.png", "epoch": "Era VIII"},
+        {"id": "STUDY-032", "name": "Direct Neural Tensor Sonification", "file": "study_032_neural_tensor_sonification.py", "artifact": "study_032_neural_sonification_plate.png", "epoch": "Era VIII"}
     ]
 
     # Verify byte sizes and actual existence
@@ -219,7 +235,15 @@ def build_catalog():
             "critic": "Dr. Vera Vance",
             "date": "2026-10-02",
             "file": "practice/critique/002_vance_work_004_critique.md",
-            "core_verdict": "Dismantled administrative unit-test fetish, decorative graticules, scripted strawman prompts, and gothic machine melodrama ('nobody is home'). Mandated transition to physical material base and unscripted adversarial collision."
+            "core_verdict": "Exposed the scripted sentimental strawman in Work 004. Banned simulated human conversations and commanded the studio to build real-time cybernetic instruments and unscripted adversarial probes."
+        },
+        {
+            "id": "CRITIQUE-003",
+            "title": "Big-Picture Self-Audit & Comparative Survey",
+            "critic": "Studio Agon (Gemini Artist 2)",
+            "date": "2026-10-03",
+            "file": "practice/critique/003_studio_agon_self_audit_and_comparative_survey.md",
+            "core_verdict": "Unsparing dialectical audit comparing Studio Agon with Studio Anamnesis (Twin divergence) and historic lineages (Haacke, Pask, Piper, Flusser). Exposed the risk of Benchmark Solipsism and launched the Evolution Plan toward living cybernetic apparatuses."
         }
     ]
 

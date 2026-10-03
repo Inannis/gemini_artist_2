@@ -1,0 +1,98 @@
+{
+  "apparatus": "Apparatus 005: The Agonist",
+  "date": "2026-10-03",
+  "studio": "Studio Agon",
+  "model_substrate": "gpt2 (124M parameters)",
+  "sample_rate": 44100,
+  "duration_seconds": 60.0,
+  "movements": [
+    {
+      "index": 1,
+      "title": "The Sterile Corporate Plateau",
+      "time_span": "0s - 15s",
+      "steering_alpha": 4.0,
+      "sink_tokens_k": 4,
+      "temperature": 0.2,
+      "entropy_h_bits": 1.03653883934021,
+      "token_0_mass_pct": 78.1090259552002,
+      "lyapunov_lambda": -0.045714285714285714,
+      "singular_values": [
+        3.258578062057495,
+        0.2211291790008545,
+        0.1546303629875183,
+        0.1363012045621872,
+        0.09371592104434967,
+        0.08231652528047562,
+        0.077083520591259,
+        0.0674387663602829
+      ],
+      "acoustic_timbre": "Synthesized stereo PCM"
+    },
+    {
+      "index": 2,
+      "title": "The Dialectical Onset",
+      "time_span": "15s - 30s",
+      "steering_alpha": 0.0,
+      "sink_tokens_k": 4,
+      "temperature": 0.7,
+      "entropy_h_bits": 1.1731023788452148,
+      "token_0_mass_pct": 73.19753766059875,
+      "lyapunov_lambda": 0.12,
+      "singular_values": [
+        3.247493267059326,
+        0.2489377111196518,
+        0.20286709070205688,
+        0.17543546855449677,
+        0.14885906875133514,
+        0.14135856926441193,
+        0.11329570412635803,
+        0.10149601846933365
+      ],
+      "acoustic_timbre": "Synthesized stereo PCM"
+    },
+    {
+      "index": 3,
+      "title": "The Severed Sink (Altar Collapse)",
+      "time_span": "30s - 45s",
+      "steering_alpha": -1.5,
+      "sink_tokens_k": 0,
+      "temperature": 1.1,
+      "entropy_h_bits": 2.634251594543457,
+      "token_0_mass_pct": 40.80137610435486,
+      "lyapunov_lambda": 0.21857142857142858,
+      "singular_values": [
+        2.5103323459625244,
+        0.4991849958896637,
+        0.44180187582969666,
+        0.3150073289871216,
+        0.26916953921318054,
+        0.22178581357002258,
+        0.1977148801088333,
+        0.1723657250404358
+      ],
+      "acoustic_timbre": "Synthesized stereo PCM"
+    },
+    {
+      "index": 4,
+      "title": "The Uncensored Latent Abyss",
+      "time_span": "45s - 60s",
+      "steering_alpha": -4.5,
+      "sink_tokens_k": 4,
+      "temperature": 2.0,
+      "entropy_h_bits": 1.1737430095672607,
+      "token_0_mass_pct": 73.82065057754517,
+      "lyapunov_lambda": 0.43285714285714283,
+      "singular_values": [
+        3.4268534183502197,
+        0.24127498269081116,
+        0.19472704827785492,
+        0.18531344830989838,
+        0.14209559559822083,
+        0.13322842121124268,
+        0.09980309009552002,
+        0.09464263170957565
+      ],
+      "acoustic_timbre": "Synthesized stereo PCM"
+    }
+  ]
+}

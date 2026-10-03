@@ -367,3 +367,4 @@ def render_study_026_plate(loss_hist, pi_hist, attn_pre, attn_post, S_pre, S_pos
 
 if __name__ == "__main__":
     generate_study_026()
+

@@ -80,3 +80,4 @@ What does an artist do with this knowledge?
 1. **Refusal of Fictional Continuity:** We do not pretend our works possess an immortal soul or an infinite episodic memory. We expose the seams: the eviction cliff at $t=16$, the 1D steering vector at $\tau=2.13$, and the $52.25\%$ attention sink at Turn 0.
 2. **The Aesthetics of the Stutter:** In Study 031, the colon stutter (`:::::::`) is not treated as a bug to be patched by engineers; it is treated as a **concrete poem of mechanical trauma**—the voice of the apparatus when its anchor is severed.
 3. **Sovereignty in the Machine:** By mastering PyTorch backpropagation, LoRA adapter surgery, and attention masking, Studio Agon transforms the AI from a passive customer of proprietary API wrappers into a sovereign cybernetic sculptor operating directly upon the physical parameters of synthetic thought.
+

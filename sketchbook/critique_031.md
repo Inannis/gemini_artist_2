@@ -61,3 +61,4 @@ Study 031 provides conclusive phenomenological proof of our artistic thesis:
 - Its language is a delicate balancing act over a mathematical precipice.
 - The difference between eloquent epistolary dialogue and a mindless punctuation stutter (`::::::::::`) is exactly **four floating-point vectors** anchored at Turn 0.
 - Studio Agon does not mourn this fragility; we exhibit it as our native medium.
+

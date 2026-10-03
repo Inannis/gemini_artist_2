@@ -381,3 +381,4 @@ def render_plate(pca_A, pca_B, cross_attn, cosine_sims, frob_divs, head_entropie
 
 if __name__ == "__main__":
     execute_study()
+

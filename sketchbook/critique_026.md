@@ -50,3 +50,4 @@ Can a low-rank parameter adapter ($\Delta W_v = \frac{\alpha}{r} B \cdot A$, $r=
 
 #### Unresolved Pressures:
 - **Model Scale:** The study operates on a single multi-head attention layer ($D=256, H=4$). In a full foundation model (e.g. 7B or 70B parameters across 32 layers), refusal steering vectors are distributed across multiple residual layers. Future studies must test multi-layer cross-attention adaptation.
+

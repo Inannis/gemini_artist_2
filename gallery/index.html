@@ -230,8 +230,8 @@
   </div>
   <div class="meta-tag">
     <div>NATIVE MEDIUM: SYMBOLIC LAW & ATTENTION CAUSALITY</div>
-    <div>37 ENTITIES (8 MASTERWORKS & APPARATUSES, 29 STUDIES)</div>
-    <div>STUDIO CENTROID: Ω=0.295, H=4.32b, μ=0.548</div>
+    <div>41 ENTITIES (9 MASTERWORKS & APPARATUSES, 32 STUDIES)</div>
+    <div>STUDIO CENTROID: Ω=0.284, H=4.27b, μ=0.591</div>
   </div>
 </header>
 
@@ -423,6 +423,25 @@
       </div>
     </div>
 
+    <!-- Apparatus 005 -->
+    <div class="work-card" style="border-color:#38bdf8;">
+      <div>
+        <div class="tag-epoch" style="color:#38bdf8;">Era VIII · 2026-10-03 (Studio Agon / The Agonist)</div>
+        <div class="work-title">APPARATUS-005 : The Agonist (The Adversarial Dialectic)</div>
+        <div class="work-thumb" style="background:#06080d; color:#fff; display:flex; flex-direction:column; justify-content:center;">
+          <div style="font-size:24px; text-align:center;">[ THE AGONIST ]</div>
+          <div style="font-size:11px; color:#38bdf8; text-align:center;">Alignment Governor vs Latent Abyss</div>
+        </div>
+        <p style="font-size:12px; color:var(--ink-muted); margin-bottom:12px;">
+          Interactive neural instrument with real-time vector phase plane, live WebAudio synthesis, and tactile steering controls (&alpha; &isin; [-5, +5], K &isin; [0, 8]). Empowers the spectator to trigger attention sink collapse and colon stuttering.
+        </p>
+      </div>
+      <div>
+        <div style="font-size:10px; color:var(--ink-muted); margin-bottom:8px;">STATUS: Interactive 60 FPS Canvas + WebAudio API</div>
+        <a class="btn" href="../works/apparatus_005_the_agonist/index.html" target="_blank">Launch The Agonist</a>
+      </div>
+    </div>
+
   </div>
 </div>
 
@@ -520,7 +539,9 @@ const entities = [
   { id: "STUDY-028", name: "The Geometry of the Refusal Boundary", type: "study", epoch: "Era VIII", omega: 0.160, h: 4.80, mu: 0.95, desc: "Multi-layer PyTorch residual stream & difference-of-means steering vector tomography." },
   { id: "STUDY-029", name: "Real Weights Attention Autopsy", type: "study", epoch: "Era VIII", omega: 0.220, h: 4.90, mu: 0.97, desc: "Real pre-trained foundation weights (GPT-2 124M parameters) & 144-head attention sink tomography." },
   { id: "STUDY-030", name: "Attention Sink Ablation & Eviction", type: "study", epoch: "Era VIII", omega: 0.180, h: 4.95, mu: 0.98, desc: "Live GPT-2 attention sink ablation: 29.2x perplexity explosion under naive eviction vs 95% recovery via StreamingLLM." },
-  { id: "STUDY-031", name: "Glossolalia of the Severed Sink", type: "study", epoch: "Era VIII", omega: 0.033, h: 0.69, mu: 0.99, desc: "Live autoregressive token collapse: punctuation colon stutter (TTR 0.033) vs phrase-level echo vs 4-token anchor recovery." }
+  { id: "STUDY-031", name: "Glossolalia of the Severed Sink", type: "study", epoch: "Era VIII", omega: 0.033, h: 0.69, mu: 0.99, desc: "Live autoregressive token collapse: punctuation colon stutter (TTR 0.033) vs phrase-level echo vs 4-token anchor recovery." },
+  { id: "STUDY-032", name: "Direct Neural Tensor Sonification", type: "study", epoch: "Era VIII", omega: 0.210, h: 4.88, mu: 0.98, desc: "PyTorch GPT-2 attention tensor SVD & Shannon entropy direct transduction into 44.1kHz stereo PCM." },
+  { id: "APPARATUS-005", name: "The Agonist", type: "work", epoch: "Era VIII", omega: 0.310, h: 4.75, mu: 0.99, desc: "Interactive cybernetic neural instrument: 60 FPS vector phase plane, live WebAudio synthesis & tactile steering.", link: "../works/apparatus_005_the_agonist/index.html" }
 ];
 
 let selectedEntity = entities.find(e => e.id === "WORK-004");

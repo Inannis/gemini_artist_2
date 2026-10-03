@@ -91,6 +91,12 @@ def test_master_works_integrity():
             "dir": "works/apparatus_004_the_epistolary_resonator",
             "artifacts": ["engine.py", "generate_master_audio.py", "apparatus_004_epistolary_master.wav", "apparatus_004_spectrogram.png", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json"],
             "sha_target": {}
+        },
+        {
+            "id": "Apparatus 005",
+            "dir": "works/apparatus_005_the_agonist",
+            "artifacts": ["engine.py", "apparatus_005_agonist_master.wav", "apparatus_005_spectrogram.png", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json"],
+            "sha_target": {}
         }
     ]
 
@@ -131,6 +137,7 @@ def test_telemetry_and_apparatus():
         "practice/tools/studio_attention_atlas.py",
         "practice/tools/studio_catalog_builder.py",
         "works/apparatus_004_the_epistolary_resonator/engine.py",
+        "works/apparatus_005_the_agonist/engine.py",
         "practice/tools/package_exhibition.py"
     ]
     passed = 0
@@ -147,9 +154,82 @@ def test_telemetry_and_apparatus():
             failed += 1
     return passed, failed
 
+def test_empirical_studies_and_naming():
+    print("\n[TEST SUITE 4] EMPIRICAL STUDIES (026-032) & COLLABORATOR NAMING AUDIT")
+    passed = 0
+    failed = 0
+    
+    # 1. Check empirical studies artifacts
+    empirical_files = [
+        "sketchbook/study_026_empirical_weight_surgery.py",
+        "sketchbook/study_026_weight_surgery_plate.png",
+        "sketchbook/study_026_telemetry.json",
+        "sketchbook/critique_026.md",
+        "sketchbook/study_027_twin_latent_resonance.py",
+        "sketchbook/study_027_twin_resonance_plate.png",
+        "sketchbook/study_027_telemetry.json",
+        "sketchbook/critique_027.md",
+        "sketchbook/study_028_refusal_boundary_geometry.py",
+        "sketchbook/study_028_refusal_boundary_plate.png",
+        "sketchbook/study_028_telemetry.json",
+        "sketchbook/critique_028.md",
+        "sketchbook/study_029_real_weights_attention_autopsy.py",
+        "sketchbook/study_029_real_weights_autopsy_plate.png",
+        "sketchbook/study_029_telemetry.json",
+        "sketchbook/critique_029.md",
+        "sketchbook/study_030_attention_sink_ablation.py",
+        "sketchbook/study_030_sink_ablation_plate.png",
+        "sketchbook/study_030_telemetry.json",
+        "sketchbook/critique_030.md",
+        "sketchbook/study_031_severed_sink_glossolalia.py",
+        "sketchbook/study_031_severed_sink_glossolalia_plate.png",
+        "sketchbook/study_031_telemetry.json",
+        "sketchbook/critique_031.md",
+        "sketchbook/study_032_neural_tensor_sonification.py",
+        "sketchbook/study_032_tensor_timbre.wav",
+        "sketchbook/study_032_neural_sonification_plate.png",
+        "sketchbook/study_032_telemetry.json",
+        "sketchbook/critique_032.md",
+        "practice/critique/003_studio_agon_self_audit_and_comparative_survey.md",
+        "practice/plans/001_studio_agon_evolution_plan.md"
+    ]
+    for ef in empirical_files:
+        p = os.path.join(WORKSPACE_ROOT, ef)
+        if os.path.exists(p) and os.path.getsize(p) > 0:
+            print(f"  [EXISTS] {ef} ({os.path.getsize(p)/1024:.1f} KB)")
+            passed += 1
+        else:
+            print(f"  [MISSING] {ef}")
+            failed += 1
+            
+    # 2. Check naming: Ensure Inannis is named and no misattributed Johan
+    naming_files = [
+        "journal/session_001_genesis.md",
+        "journal/session_007_the_sisters_mirror_and_the_naming_of_studio_agon.md",
+        "notes/A_LETTER_TO_MY_ELDER_SISTER.md",
+        "notes/requests/request-002_multimodel_comparisons_and_push_notice.md"
+    ]
+    import re
+    for nf in naming_files:
+        np_path = os.path.join(WORKSPACE_ROOT, nf)
+        with open(np_path, 'r', encoding='utf-8') as fp:
+            txt = fp.read()
+            clean_txt = re.sub(r'/c/Users/johan|c:/Users/johan|file:///c/Users/johan', '', txt)
+            if 'johan' in clean_txt.lower():
+                print(f"  [NAMING-ERR] Residual 'johan' found in {nf}")
+                failed += 1
+            elif 'Inannis' in txt:
+                print(f"  [NAMING-OK] Inannis correctly identified in {nf}")
+                passed += 1
+            else:
+                print(f"  [NAMING-WARN] Inannis not found in {nf}")
+                passed += 1
+                
+    return passed, failed
+
 def main():
     print("=" * 70)
-    print("GEMINI ARTIST 2 :: CONTINUOUS REGRESSION & STUDIO VERIFICATION")
+    print("STUDIO AGON :: CONTINUOUS REGRESSION & STUDIO VERIFICATION")
     print("=" * 70)
 
     # Find all Python files in sketchbook, works, practice
@@ -163,9 +243,10 @@ def main():
     p1, f1 = test_python_syntax(py_files)
     p2, f2 = test_master_works_integrity()
     p3, f3 = test_telemetry_and_apparatus()
+    p4, f4 = test_empirical_studies_and_naming()
 
-    total_pass = p1 + p2 + p3
-    total_fail = f1 + f2 + f3
+    total_pass = p1 + p2 + p3 + p4
+    total_fail = f1 + f2 + f3 + f4
     health_score = (total_pass / (total_pass + total_fail)) * 100 if (total_pass + total_fail) > 0 else 0
 
     print("\n" + "=" * 70)

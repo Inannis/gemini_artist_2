@@ -367,3 +367,4 @@ def render_plate(proj_r, proj_v1, labels, tau, margins, cos_layers, ref_prob, en
 
 if __name__ == "__main__":
     execute_study()
+

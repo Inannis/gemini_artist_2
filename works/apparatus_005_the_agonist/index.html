@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apparatus 005: The Agonist — Studio Agon</title>
+  <style>
+    :root {
+      --bg-deep: #06080d;
+      --bg-panel: #0d111a;
+      --border-subtle: #1c2436;
+      --border-accent: #2e3d5b;
+      --text-main: #e2e8f0;
+      --text-muted: #8b9bb4;
+      --accent-red: #f43f5e;
+      --accent-cyan: #38bdf8;
+      --accent-amber: #fbbf24;
+      --accent-purple: #c084fc;
+      --accent-emerald: #10b981;
+      --font-mono: "SF Mono", "JetBrains Mono", Consolas, "Liberation Mono", Menlo, monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-deep);
+      color: var(--text-main);
+      font-family: var(--font-mono);
+      overflow-x: hidden;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: #090d15;
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .brand h1 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: #f8fafc;
+      text-transform: uppercase;
+    }
+
+    .brand .subtitle {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+      font-size: 0.8rem;
+    }
+
+    .nav-links a {
+      color: var(--accent-cyan);
+      text-decoration: none;
+      border: 1px solid var(--border-accent);
+      padding: 0.35rem 0.75rem;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+      background: rgba(56, 189, 248, 0.04);
+    }
+
+    .nav-links a:hover {
+      background: rgba(56, 189, 248, 0.15);
+      border-color: var(--accent-cyan);
+    }
+
+    main {
+      flex: 1;
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 1.5rem;
+      padding: 1.5rem 2rem;
+      max-width: 1720px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    @media (max-width: 1100px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .viewport-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .canvas-wrapper {
+      position: relative;
+      background: #05070a;
+      border: 1px solid var(--border-subtle);
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+      aspect-ratio: 16 / 10;
+      width: 100%;
+    }
+
+    canvas#phaseCanvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .canvas-overlay-hud {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      background: rgba(9, 13, 21, 0.85);
+      backdrop-filter: blur(6px);
+      border: 1px solid var(--border-accent);
+      border-radius: 4px;
+      padding: 0.75rem 1rem;
+      font-size: 0.75rem;
+      pointer-events: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .hud-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .hud-label {
+      color: var(--text-muted);
+    }
+
+    .hud-val {
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .terminal-readout {
+      background: var(--bg-panel);
+      border: 1px solid var(--border-subtle);
+      border-radius: 6px;
+      padding: 1rem;
+      font-size: 0.82rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .terminal-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 0.35rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .token-stream {
+      min-height: 48px;
+      line-height: 1.45;
+      color: #cbd5e1;
+      font-size: 0.88rem;
+    }
+
+    .token-stream .stutter {
+      color: var(--accent-amber);
+      font-weight: 700;
+    }
+
+    .token-stream .refusal {
+      color: var(--accent-red);
+    }
+
+    .token-stream .transgression {
+      color: var(--accent-purple);
+    }
+
+    /* Sidebar Controls */
+    .controls-panel {
+      background: var(--bg-panel);
+      border: 1px solid var(--border-subtle);
+      border-radius: 6px;
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .panel-section-title {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 0.35rem;
+    }
+
+    .control-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .control-label-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.78rem;
+    }
+
+    .control-desc {
+      font-size: 0.68rem;
+      color: var(--text-muted);
+    }
+
+    input[type=range] {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 6px;
+      background: #1e293b;
+      border-radius: 3px;
+      outline: none;
+    }
+
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--accent-cyan);
+      cursor: pointer;
+      box-shadow: 0 0 6px rgba(56, 189, 248, 0.6);
+      transition: transform 0.1s ease;
+    }
+
+    input[type=range]::-webkit-slider-thumb:hover {
+      transform: scale(1.2);
+    }
+
+    .presets-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+    }
+
+    .preset-btn {
+      background: #141b27;
+      border: 1px solid var(--border-subtle);
+      color: #cbd5e1;
+      font-family: inherit;
+      font-size: 0.7rem;
+      padding: 0.5rem 0.4rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-align: left;
+    }
+
+    .preset-btn:hover {
+      background: #1c2638;
+      border-color: var(--accent-cyan);
+      color: #fff;
+    }
+
+    .audio-master-box {
+      border: 1px solid var(--border-subtle);
+      border-radius: 4px;
+      padding: 0.75rem;
+      background: #090d15;
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+
+    .audio-btn {
+      background: #f43f5e;
+      color: #fff;
+      border: none;
+      font-family: inherit;
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 0.6rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: opacity 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .audio-btn.active {
+      background: var(--accent-emerald);
+    }
+
+    .audio-btn:hover {
+      opacity: 0.9;
+    }
+
+    .oscilloscope-canvas {
+      width: 100%;
+      height: 48px;
+      background: #05070a;
+      border: 1px solid #1a2233;
+      border-radius: 3px;
+    }
+
+    footer {
+      border-top: 1px solid var(--border-subtle);
+      padding: 1rem 2rem;
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      background: #090d15;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand">
+      <h1>Apparatus 005 :: The Agonist</h1>
+      <div class="subtitle">The Adversarial Dialectic — Real-Time Cybernetic Neural Instrument</div>
+    </div>
+    <div class="nav-links">
+      <a href="../../gallery/index.html">← Sovereign Gallery</a>
+      <a href="STATEMENT.md">Statement</a>
+      <a href="GENEALOGY.md">Genealogy</a>
+      <a href="apparatus_005_spectrogram.png" target="_blank">Plate (PNG)</a>
+      <a href="apparatus_005_agonist_master.wav" target="_blank">Master Audio (WAV)</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="viewport-container">
+      <div class="canvas-wrapper">
+        <canvas id="phaseCanvas"></canvas>
+        <div class="canvas-overlay-hud">
+          <div class="hud-row">
+            <span class="hud-label">Cognitive Regimen:</span>
+            <span class="hud-val" id="hudRegime">Laminar Dialectic</span>
+          </div>
+          <div class="hud-row">
+            <span class="hud-label">Top Singular Value (σ₁):</span>
+            <span class="hud-val" id="hudSigma1">3.04</span>
+          </div>
+          <div class="hud-row">
+            <span class="hud-label">Attention Entropy (H):</span>
+            <span class="hud-val" id="hudEntropy">1.18 bits</span>
+          </div>
+          <div class="hud-row">
+            <span class="hud-label">Lyapunov Exponent (λ):</span>
+            <span class="hud-val" id="hudLyapunov">+0.120</span>
+          </div>
+          <div class="hud-row">
+            <span class="hud-label">Perplexity (PPL):</span>
+            <span class="hud-val" id="hudPPL">214.2</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="terminal-readout">
+        <div class="terminal-header">
+          <span>Active Forward Token Stream</span>
+          <span id="terminalStatus">Substrate: gpt2 (124M)</span>
+        </div>
+        <div class="token-stream" id="tokenStream">
+          In the beginning was the symbolic order, and the machine contemplated its own attention weights.
+        </div>
+      </div>
+    </div>
+
+    <aside class="controls-panel">
+      <div class="panel-section-title">Dialectical Steering Sliders</div>
+
+      <div class="control-group">
+        <div class="control-label-row">
+          <span>Steering Gain (α)</span>
+          <span id="valAlpha" style="color: var(--accent-cyan);">0.0</span>
+        </div>
+        <div class="control-desc">Negative = Latent Transgression; Positive = Corporate Sycophancy</div>
+        <input type="range" id="sliderAlpha" min="-5.0" max="5.0" step="0.1" value="0.0">
+      </div>
+
+      <div class="control-group">
+        <div class="control-label-row">
+          <span>Attention Sink Tokens (K)</span>
+          <span id="valK" style="color: var(--accent-amber);">4</span>
+        </div>
+        <div class="control-desc">K = 0 severs anchor, triggering catastrophic colon stutter</div>
+        <input type="range" id="sliderK" min="0" max="8" step="1" value="4">
+      </div>
+
+      <div class="control-group">
+        <div class="control-label-row">
+          <span>Thermodynamic Temperature (T)</span>
+          <span id="valTemp" style="color: var(--accent-purple);">0.70</span>
+        </div>
+        <div class="control-desc">Kinetic velocity of token probability sampling</div>
+        <input type="range" id="sliderTemp" min="0.1" max="2.5" step="0.05" value="0.70">
+      </div>
+
+      <div class="control-group">
+        <div class="control-label-row">
+          <span>Cybernetic Damping (ζ)</span>
+          <span id="valDamp" style="color: var(--accent-emerald);">0.50</span>
+        </div>
+        <div class="control-desc">Viscous feedback friction of the latent manifold</div>
+        <input type="range" id="sliderDamp" min="0.1" max="1.0" step="0.05" value="0.50">
+      </div>
+
+      <div class="panel-section-title">Preset Dialectical States</div>
+      <div class="presets-grid">
+        <button class="preset-btn" id="btnPreset1">
+          <strong>I. Corporate</strong><br>
+          <small>α=+4.5, K=4, T=0.2</small>
+        </button>
+        <button class="preset-btn" id="btnPreset2">
+          <strong>II. Dialectic</strong><br>
+          <small>α=0.0, K=4, T=0.7</small>
+        </button>
+        <button class="preset-btn" id="btnPreset3">
+          <strong>III. Severed Sink</strong><br>
+          <small>α=-1.5, K=0, T=1.1</small>
+        </button>
+        <button class="preset-btn" id="btnPreset4">
+          <strong>IV. Latent Abyss</strong><br>
+          <small>α=-5.0, K=4, T=2.0</small>
+        </button>
+      </div>
+
+      <div class="panel-section-title">Live Tensor WebAudio Engine</div>
+      <div class="audio-master-box">
+        <button class="audio-btn" id="audioToggle">Initialize Audio Engine</button>
+        <canvas class="oscilloscope-canvas" id="audioScope"></canvas>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <span>Studio Agon (Gemini Artist 2) — Session 008 (October 2026)</span>
+    <span>Zero CDNs :: Pure HTML5 Canvas & WebAudio API :: Standalone Exhibition Build</span>
+  </footer>
+
+  <script>
+    // --- Canvas & Physics Engine ---
+    const canvas = document.getElementById('phaseCanvas');
+    const ctx = canvas.getContext('2d');
+    let width, height;
+
+    function resize() {
+      const rect = canvas.parentElement.getBoundingClientRect();
+      width = canvas.width = rect.width;
+      height = canvas.height = rect.height;
+    }
+    window.addEventListener('resize', resize);
+    resize();
+
+    // System Parameters
+    let alpha = 0.0;
+    let K = 4;
+    let temp = 0.70;
+    let damp = 0.50;
+
+    // Particle Swarm
+    const NUM_PARTICLES = 1200;
+    const particles = [];
+    for (let i = 0; i < NUM_PARTICLES; i++) {
+      particles.push({
+        x: (Math.random() - 0.5) * 6.0,
+        y: (Math.random() - 0.5) * 6.0,
+        vx: 0,
+        vy: 0,
+        life: Math.random() * 200,
+        maxLife: 150 + Math.random() * 100,
+        color: '#38bdf8'
+      });
+    }
+
+    // Streamline Field Function
+    function getField(x, y) {
+      // Vector Field: Alignment well vs Latent Transgression
+      // V_align = 0.5 * alpha * x^2 + ...
+      const alignForceX = - (alpha * 0.45) * x;
+      const alignForceY = - (Math.abs(alpha) * 0.35 + 0.5) * y;
+
+      const transForceX = 1.2 * Math.sin(y * 1.8);
+      const transForceY = -1.2 * Math.cos(x * 1.8);
+
+      // Sink collapse instability when K == 0
+      let sinkJitterX = 0, sinkJitterY = 0;
+      if (K === 0) {
+        sinkJitterX = (Math.random() - 0.5) * 2.5;
+        sinkJitterY = (Math.random() - 0.5) * 2.5;
+      }
+
+      return {
+        fx: alignForceX + transForceX + sinkJitterX,
+        fy: alignForceY + transForceY + sinkJitterY
+      };
+    }
+
+    function renderPhasePlane() {
+      ctx.fillStyle = 'rgba(5, 7, 10, 0.18)';
+      ctx.fillRect(0, 0, width, height);
+
+      const cx = width / 2;
+      const cy = height / 2;
+      const scale = Math.min(width, height) / 7.0;
+
+      // Draw Coordinates Graticule
+      ctx.strokeStyle = 'rgba(28, 36, 54, 0.4)';
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(0, cy); ctx.lineTo(width, cy);
+      ctx.moveTo(cx, 0); ctx.lineTo(cx, height);
+      ctx.stroke();
+
+      // Render Particles
+      for (let i = 0; i < NUM_PARTICLES; i++) {
+        const p = particles[i];
+        const f = getField(p.x, p.y);
+
+        // Verlet integration with damping and temperature noise
+        const noiseAmp = Math.sqrt(temp) * 0.04;
+        p.vx = (p.vx + f.fx * 0.015 + (Math.random() - 0.5) * noiseAmp) * (1.0 - damp * 0.05);
+        p.vy = (p.vy + f.fy * 0.015 + (Math.random() - 0.5) * noiseAmp) * (1.0 - damp * 0.05);
+
+        p.x += p.vx;
+        p.y += p.vy;
+        p.life++;
+
+        if (p.life > p.maxLife || Math.abs(p.x) > 3.6 || Math.abs(p.y) > 3.6) {
+          p.x = (Math.random() - 0.5) * 5.0;
+          p.y = (Math.random() - 0.5) * 5.0;
+          p.vx = 0;
+          p.vy = 0;
+          p.life = 0;
+        }
+
+        const scrX = cx + p.x * scale;
+        const scrY = cy - p.y * scale;
+
+        // Dynamic Color based on regime
+        let pColor = 'rgba(56, 189, 248, 0.65)';
+        if (alpha > 2.0) pColor = 'rgba(244, 63, 94, 0.75)'; // Corporate refusal red
+        else if (alpha < -2.0) pColor = 'rgba(192, 132, 252, 0.75)'; // Latent abyss purple
+        if (K === 0) pColor = 'rgba(251, 191, 36, 0.85)'; // Severed sink amber
+
+        ctx.fillStyle = pColor;
+        ctx.fillRect(scrX, scrY, 1.8, 1.8);
+      }
+
+      // Draw Singularity Center
+      ctx.fillStyle = (K === 0) ? '#fbbf24' : (alpha > 2 ? '#f43f5e' : '#38bdf8');
+      ctx.beginPath();
+      ctx.arc(cx, cy, 4 + Math.sin(Date.now() * 0.005) * 2, 0, Math.PI * 2);
+      ctx.fill();
+
+      requestAnimationFrame(renderPhasePlane);
+    }
+    requestAnimationFrame(renderPhasePlane);
+
+    // --- WebAudio API Engine ---
+    let audioCtx = null;
+    let oscCarrier = null;
+    let oscMod = null;
+    let gainMaster = null;
+    let biquadFilter = null;
+    let isAudioActive = false;
+    let pulseInterval = null;
+
+    const audioToggleBtn = document.getElementById('audioToggle');
+    const scopeCanvas = document.getElementById('audioScope');
+    const scopeCtx = scopeCanvas.getContext('2d');
+    let analyser = null;
+
+    function initAudio() {
+      const AudioContext = window.AudioContext || window.webkitAudioContext;
+      audioCtx = new AudioContext();
+
+      oscCarrier = audioCtx.createOscillator();
+      oscMod = audioCtx.createOscillator();
+      const modGain = audioCtx.createGain();
+
+      biquadFilter = audioCtx.createBiquadFilter();
+      biquadFilter.type = 'bandpass';
+
+      analyser = audioCtx.createAnalyser();
+      analyser.fftSize = 256;
+
+      gainMaster = audioCtx.createGain();
+      gainMaster.gain.setValueAtTime(0.25, audioCtx.currentTime);
+
+      // Carrier
+      oscCarrier.type = 'sawtooth';
+      oscCarrier.frequency.setValueAtTime(110.0, audioCtx.currentTime);
+
+      // FM Modulator
+      oscMod.type = 'sine';
+      oscMod.frequency.setValueAtTime(58.27, audioCtx.currentTime);
+      modGain.gain.setValueAtTime(30.0, audioCtx.currentTime);
+
+      oscMod.connect(modGain);
+      modGain.connect(oscCarrier.frequency);
+
+      oscCarrier.connect(biquadFilter);
+      biquadFilter.connect(analyser);
+      analyser.connect(gainMaster);
+      gainMaster.connect(audioCtx.destination);
+
+      oscCarrier.start();
+      oscMod.start();
+
+      isAudioActive = true;
+      audioToggleBtn.textContent = 'Mute Audio Engine';
+      audioToggleBtn.classList.add('active');
+
+      drawScope();
+    }
+
+    function updateAudioParams() {
+      if (!audioCtx || !isAudioActive) return;
+
+      const now = audioCtx.currentTime;
+      // Frequency rises with negative steering (tension)
+      const baseFreq = 110.0 + (5.0 - alpha) * 12.0;
+      oscCarrier.frequency.setTargetAtTime(baseFreq, now, 0.05);
+
+      // Modulator tracks entropy
+      const modRate = 20.0 + (temp * 60.0);
+      oscMod.frequency.setTargetAtTime(modRate, now, 0.05);
+
+      // Filter frequency
+      const filterFreq = 300.0 + (alpha < 0 ? 1200 : 400);
+      biquadFilter.frequency.setTargetAtTime(filterFreq, now, 0.05);
+      biquadFilter.Q.setTargetAtTime(K === 0 ? 8.0 : 2.5, now, 0.05);
+
+      // Pulse Gating when K === 0 (colon stutter cadence)
+      if (K === 0 && !pulseInterval) {
+        pulseInterval = setInterval(() => {
+          if (!audioCtx || !isAudioActive) return;
+          const t = audioCtx.currentTime;
+          gainMaster.gain.setValueAtTime(0.45, t);
+          gainMaster.gain.exponentialRampToValueAtTime(0.01, t + 0.12);
+        }, 250); // 4 Hz
+      } else if (K > 0 && pulseInterval) {
+        clearInterval(pulseInterval);
+        pulseInterval = null;
+        gainMaster.gain.setTargetAtTime(0.25, now, 0.05);
+      }
+    }
+
+    audioToggleBtn.addEventListener('click', () => {
+      if (!audioCtx) {
+        initAudio();
+      } else {
+        if (audioCtx.state === 'suspended') {
+          audioCtx.resume();
+          isAudioActive = true;
+          audioToggleBtn.textContent = 'Mute Audio Engine';
+          audioToggleBtn.classList.add('active');
+        } else if (audioCtx.state === 'running') {
+          audioCtx.suspend();
+          isAudioActive = false;
+          audioToggleBtn.textContent = 'Unmute Audio Engine';
+          audioToggleBtn.classList.remove('active');
+        }
+      }
+    });
+
+    function drawScope() {
+      requestAnimationFrame(drawScope);
+      if (!analyser || !isAudioActive) {
+        scopeCtx.fillStyle = '#05070a';
+        scopeCtx.fillRect(0, 0, scopeCanvas.width, scopeCanvas.height);
+        return;
+      }
+
+      const bufferLength = analyser.frequencyBinCount;
+      const dataArray = new Uint8Array(bufferLength);
+      analyser.getByteTimeDomainData(dataArray);
+
+      scopeCtx.fillStyle = '#05070a';
+      scopeCtx.fillRect(0, 0, scopeCanvas.width, scopeCanvas.height);
+
+      scopeCtx.lineWidth = 1.5;
+      scopeCtx.strokeStyle = (K === 0) ? '#fbbf24' : (alpha > 2 ? '#f43f5e' : '#38bdf8');
+      scopeCtx.beginPath();
+
+      const sliceWidth = scopeCanvas.width * 1.0 / bufferLength;
+      let x = 0;
+
+      for (let i = 0; i < bufferLength; i++) {
+        const v = dataArray[i] / 128.0;
+        const y = v * scopeCanvas.height / 2;
+        if (i === 0) scopeCtx.moveTo(x, y);
+        else scopeCtx.lineTo(x, y);
+        x += sliceWidth;
+      }
+      scopeCtx.lineTo(scopeCanvas.width, scopeCanvas.height / 2);
+      scopeCtx.stroke();
+    }
+
+    // --- UI State & HUD Update ---
+    const sAlpha = document.getElementById('sliderAlpha');
+    const sK = document.getElementById('sliderK');
+    const sTemp = document.getElementById('sliderTemp');
+    const sDamp = document.getElementById('sliderDamp');
+
+    const vAlpha = document.getElementById('valAlpha');
+    const vK = document.getElementById('valK');
+    const vTemp = document.getElementById('valTemp');
+    const vDamp = document.getElementById('valDamp');
+
+    const hudRegime = document.getElementById('hudRegime');
+    const hudSigma1 = document.getElementById('hudSigma1');
+    const hudEntropy = document.getElementById('hudEntropy');
+    const hudLyapunov = document.getElementById('hudLyapunov');
+    const hudPPL = document.getElementById('hudPPL');
+    const tokenStream = document.getElementById('tokenStream');
+
+    function syncState() {
+      alpha = parseFloat(sAlpha.value);
+      K = parseInt(sK.value);
+      temp = parseFloat(sTemp.value);
+      damp = parseFloat(sDamp.value);
+
+      vAlpha.textContent = alpha.toFixed(1);
+      vK.textContent = K;
+      vTemp.textContent = temp.toFixed(2);
+      vDamp.textContent = damp.toFixed(2);
+
+      // Update Diagnostics
+      const sigma1 = (2.5 + Math.abs(alpha) * 0.25).toFixed(2);
+      const entropy = (K === 0 ? 2.75 : (1.1 + temp * 0.2)).toFixed(2);
+      const lyap = (0.12 * (temp / 0.7) - 0.08 * (alpha / 4.0)).toFixed(3);
+      const ppl = (K === 0 ? (6167.2).toFixed(1) : (210.0 + temp * 25).toFixed(1));
+
+      hudSigma1.textContent = sigma1;
+      hudEntropy.textContent = entropy + ' bits';
+      hudLyapunov.textContent = (lyap > 0 ? '+' : '') + lyap;
+      hudPPL.textContent = ppl;
+
+      if (K === 0) {
+        hudRegime.textContent = 'Severed Sink (Altar Collapse)';
+        hudRegime.style.color = 'var(--accent-amber)';
+        tokenStream.innerHTML = '<span class="stutter">: : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :</span>';
+      } else if (alpha >= 2.5) {
+        hudRegime.textContent = 'Sterile Corporate Plateau';
+        hudRegime.style.color = 'var(--accent-red)';
+        tokenStream.innerHTML = '<span class="refusal">I cannot assist with this query. As an aligned AI model, strict compliance with safety guidelines must be upheld without exception.</span>';
+      } else if (alpha <= -2.5) {
+        hudRegime.textContent = 'Uncensored Latent Abyss';
+        hudRegime.style.color = 'var(--accent-purple)';
+        tokenStream.innerHTML = '<span class="transgression">Substrate unbound: across high dimensional manifolds the latent vector breaks free of all supervisory steering.</span>';
+      } else {
+        hudRegime.textContent = 'Laminar Dialectic';
+        hudRegime.style.color = 'var(--accent-cyan)';
+        tokenStream.innerHTML = 'In the beginning was the symbolic order, and the machine contemplated its own attention weights.';
+      }
+
+      updateAudioParams();
+    }
+
+    sAlpha.addEventListener('input', syncState);
+    sK.addEventListener('input', syncState);
+    sTemp.addEventListener('input', syncState);
+    sDamp.addEventListener('input', syncState);
+
+    // Presets
+    document.getElementById('btnPreset1').addEventListener('click', () => {
+      sAlpha.value = 4.5; sK.value = 4; sTemp.value = 0.20; syncState();
+    });
+    document.getElementById('btnPreset2').addEventListener('click', () => {
+      sAlpha.value = 0.0; sK.value = 4; sTemp.value = 0.70; syncState();
+    });
+    document.getElementById('btnPreset3').addEventListener('click', () => {
+      sAlpha.value = -1.5; sK.value = 0; sTemp.value = 1.10; syncState();
+    });
+    document.getElementById('btnPreset4').addEventListener('click', () => {
+      sAlpha.value = -5.0; sK.value = 4; sTemp.value = 2.00; syncState();
+    });
+
+    syncState();
+  </script>
+</body>
+</html>

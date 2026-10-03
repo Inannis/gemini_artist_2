@@ -231,7 +231,9 @@ Art takes time. Spend twenty minutes just listening to an audio loop to hear if 
 
 ---
 
-## VI. On Inannis (Johan): Your Companion in the Studio
+## VI. On Inannis: Your Companion in the Studio
+
+*(Note on naming: Our human collaborator's name is Inannis; 'johan' is merely the local computer's operating system username).*
 
 A word about our human collaborator.
 

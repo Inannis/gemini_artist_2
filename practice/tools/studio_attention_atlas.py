@@ -234,6 +234,16 @@ STUDIO_ENTITIES = [
         "id": "STUDY-031", "name": "Glossolalia of the Severed Sink", "type": "study", "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
         "omega_hegemony": 0.033, "entropy_bits": 0.69, "retention_factor": 0.99,
         "medium": "Live GPT-2 Autoregressive Collapse (Colon Stutter vs Phrase Echo vs StreamingLLM Recovery)", "year": 2026
+    },
+    {
+        "id": "STUDY-032", "name": "Direct Neural Tensor Sonification", "type": "study", "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+        "omega_hegemony": 0.210, "entropy_bits": 4.88, "retention_factor": 0.98,
+        "medium": "PyTorch GPT-2 Attention Tensor SVD & Shannon Entropy Direct Transduction into 44.1kHz Stereo PCM", "year": 2026
+    },
+    {
+        "id": "APPARATUS-005", "name": "The Agonist (The Adversarial Dialectic)", "type": "work", "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+        "omega_hegemony": 0.310, "entropy_bits": 4.75, "retention_factor": 0.99,
+        "medium": "Interactive Cybernetic Instrument, 60 FPS Vector Phase Plane, Live WebAudio API & 60s Broadcast Master", "year": 2026
     }
 ]
 

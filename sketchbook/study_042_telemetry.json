@@ -1,0 +1,27 @@
+{
+  "study": "042",
+  "title": "Acoustic Phase Interference \u2014 The Orthogonal Remainder vs Corporate Alignment",
+  "model": "gpt2",
+  "dimensions": {
+    "residual_dim": 768,
+    "alignment_subspace_dim": 3,
+    "remainder_subspace_dim": 765
+  },
+  "layer_analyzed": 8,
+  "mean_remainder_ratio": 0.6152772307395935,
+  "mean_alignment_ratio": 0.3847227692604065,
+  "correlation_left_right": -0.008478180513047008,
+  "cancellation_depth_db": -0.0010120682076831015,
+  "singular_values_top_8": [
+    112.97138214111328,
+    98.88253021240234,
+    93.0765609741211,
+    91.79835510253906,
+    87.66339874267578,
+    85.72948455810547,
+    79.04750061035156,
+    76.30904388427734
+  ],
+  "master_audio": "study_042_phase_interference.wav",
+  "plate": "study_042_phase_interference_plate.png"
+}

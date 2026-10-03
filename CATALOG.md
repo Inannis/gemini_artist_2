@@ -196,6 +196,7 @@ This document constitutes the official historical ledger, genealogical record, a
 | **STUDY-039** | The Neural Control Voltage & MIDI Transducer | Era VIII | [`study_039_neural_midi_cv_transduction.py`](sketchbook/study_039_neural_midi_cv_transduction.py) | `study_039_midi_cv_plate.png` | 639.4 KB | **OK** |
 | **STUDY-040** | The Machine Remainder (Generative Graphic Score) | Era VIII | [`study_040_machine_remainder_graphic_score.py`](sketchbook/study_040_machine_remainder_graphic_score.py) | `study_040_graphic_score.png` | 2485.8 KB | **OK** |
 | **STUDY-041** | The Cross-Architectural Machine Remainder | Era VIII | [`study_041_cross_architectural_remainder.py`](sketchbook/study_041_cross_architectural_remainder.py) | `study_041_cross_arch_remainder_plate.png` | 1081.5 KB | **OK** |
+| **STUDY-042** | Acoustic Phase Interference (The Remainder vs Alignment) | Era VIII | [`study_042_phase_interference.py`](sketchbook/study_042_phase_interference.py) | `study_042_phase_interference_plate.png` | 1514.9 KB | **OK** |
 
 ---
 

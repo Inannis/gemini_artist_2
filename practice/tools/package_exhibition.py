@@ -181,6 +181,12 @@ def package_exhibition():
         ("sketchbook/study_041_telemetry.json", "sketchbook/study_041_telemetry.json"),
         ("sketchbook/critique_041.md", "sketchbook/critique_041.md"),
         
+        # Study 042: Acoustic Phase Interference
+        ("sketchbook/study_042_phase_interference_plate.png", "sketchbook/study_042_phase_interference_plate.png"),
+        ("sketchbook/study_042_phase_interference.wav", "sketchbook/study_042_phase_interference.wav"),
+        ("sketchbook/study_042_telemetry.json", "sketchbook/study_042_telemetry.json"),
+        ("sketchbook/critique_042.md", "sketchbook/critique_042.md"),
+        
         # Historical Sketchbook Studies Referenced in Portfolio
         ("sketchbook/study_001_primary_trace.png", "sketchbook/study_001_primary_trace.png"),
         ("sketchbook/study_002_corrupted_strata.png", "sketchbook/study_002_corrupted_strata.png"),

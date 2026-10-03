@@ -1,17 +1,17 @@
 {
   "studio": "Gemini Artist 2",
   "date_computed": "2026-10-02",
-  "entity_count": 53,
+  "entity_count": 54,
   "phase_space_axes": {
     "X": "Sovereign Attention Hegemony \u03a9 (0.0 to 1.0)",
     "Y": "Shannon Vocabulary Entropy H (0.0 to 8.0 bits)",
     "Z": "Context Memory Retention Factor \u03bc (0.0 to 1.0)"
   },
   "studio_centroid": {
-    "mean_omega": 0.2734,
-    "mean_entropy_bits": 4.4866,
-    "mean_retention_factor": 0.6809,
-    "radius_of_practice": 0.4313
+    "mean_omega": 0.2712,
+    "mean_entropy_bits": 4.518,
+    "mean_retention_factor": 0.6867,
+    "radius_of_practice": 0.4306
   },
   "entities": [
     {
@@ -387,9 +387,9 @@
         "distance": 0.3902
       },
       "polar_opposite": {
-        "target_id": "STUDY-041",
-        "target_name": "The Cross-Architectural Machine Remainder",
-        "distance": 1.1668
+        "target_id": "STUDY-042",
+        "target_name": "Acoustic Phase Interference (The Remainder vs Alignment)",
+        "distance": 1.1732
       }
     },
     {
@@ -1125,6 +1125,27 @@
         "target_id": "STUDY-015",
         "target_name": "Dialogic Decay & Asymmetric Amnesia",
         "distance": 1.1668
+      }
+    },
+    {
+      "id": "STUDY-042",
+      "name": "Acoustic Phase Interference (The Remainder vs Alignment)",
+      "type": "study",
+      "epoch": "Era VIII (Studio Agon / Aesthetic Synthesis)",
+      "omega_hegemony": 0.155,
+      "entropy_bits": 6.18,
+      "retention_factor": 0.99,
+      "medium": "Acoustic Phase Interference & Destructive Mid/Side Analysis between Alignment (R^3) and Remainder (R^765)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-041",
+        "target_name": "The Cross-Architectural Machine Remainder",
+        "distance": 0.0125
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1732
       }
     }
   ]

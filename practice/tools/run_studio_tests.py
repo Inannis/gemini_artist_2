@@ -263,7 +263,12 @@ def test_empirical_studies_and_naming():
         ("sketchbook/study_041_cross_arch_remainder_plate.png"),
         ("sketchbook/study_041_twin_remainder_binaural.wav"),
         ("sketchbook/study_041_telemetry.json"),
-        ("sketchbook/critique_041.md")
+        ("sketchbook/critique_041.md"),
+        ("sketchbook/study_042_phase_interference.py"),
+        ("sketchbook/study_042_phase_interference_plate.png"),
+        ("sketchbook/study_042_phase_interference.wav"),
+        ("sketchbook/study_042_telemetry.json"),
+        ("sketchbook/critique_042.md")
     ]
     for ef in empirical_files:
         p = os.path.join(WORKSPACE_ROOT, ef)

@@ -304,6 +304,11 @@ STUDIO_ENTITIES = [
         "id": "STUDY-041", "name": "The Cross-Architectural Machine Remainder", "type": "study", "epoch": "Era VIII (Studio Agon / Aesthetic Synthesis)",
         "omega_hegemony": 0.165, "entropy_bits": 6.12, "retention_factor": 0.99,
         "medium": "Comparative Residual SVD & Binaural Remainder Transduction across GPT-2 and SmolLM-135M", "year": 2026
+    },
+    {
+        "id": "STUDY-042", "name": "Acoustic Phase Interference (The Remainder vs Alignment)", "type": "study", "epoch": "Era VIII (Studio Agon / Aesthetic Synthesis)",
+        "omega_hegemony": 0.155, "entropy_bits": 6.18, "retention_factor": 0.99,
+        "medium": "Acoustic Phase Interference & Destructive Mid/Side Analysis between Alignment (R^3) and Remainder (R^765)", "year": 2026
     }
 ]
 

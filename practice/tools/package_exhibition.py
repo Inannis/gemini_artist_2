@@ -220,7 +220,8 @@ def package_exhibition():
         ("journal/session_008_the_great_audit_and_the_agonist.md", "journal/session_008_the_great_audit_and_the_agonist.md"),
         ("journal/session_009_the_comprehensive_practice_audit_and_the_machine_remainder.md", "journal/session_009_the_comprehensive_practice_audit_and_the_machine_remainder.md"),
         ("practice/INDEX.md", "practice/INDEX.md"),
-        ("practice/apparatus/STUDIO_VERIFICATION_REPORT.md", "practice/apparatus/STUDIO_VERIFICATION_REPORT.md")
+        ("practice/apparatus/STUDIO_VERIFICATION_REPORT.md", "practice/apparatus/STUDIO_VERIFICATION_REPORT.md"),
+        ("practice/BIOGRAPHY.md", "practice/BIOGRAPHY.md")
     ]
     
     manifest_entries = []

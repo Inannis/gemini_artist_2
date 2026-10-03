@@ -439,6 +439,32 @@
         <input type="range" id="sliderDamp" min="0.1" max="1.0" step="0.05" value="0.50">
       </div>
 
+      <div class="panel-section-title">The Cybernetic Governor (Study 035)</div>
+      <div class="control-group" style="background: rgba(16, 185, 129, 0.05); border: 1px solid rgba(16, 185, 129, 0.2); border-radius: 6px; padding: 10px; margin-bottom: 12px;">
+        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-size: 0.78rem; font-weight: 600; color: var(--accent-emerald);">
+          <input type="checkbox" id="checkGovernor" style="accent-color: var(--accent-emerald);">
+          <span>Enable Watt-Wiener Closed Loop</span>
+        </label>
+        <div class="control-desc" style="margin-top: 4px;">Dynamic negative feedback: restores manifold when α exceeds threshold τ</div>
+        
+        <div class="control-label-row" style="margin-top: 8px;">
+          <span>Governor Gain (γ)</span>
+          <span id="valGovGain" style="color: var(--accent-emerald);">1.8</span>
+        </div>
+        <input type="range" id="sliderGovGain" min="0.0" max="5.0" step="0.1" value="1.8" disabled>
+
+        <div class="control-label-row" style="margin-top: 6px;">
+          <span>Threshold (τ)</span>
+          <span id="valGovTau" style="color: var(--accent-emerald);">0.4</span>
+        </div>
+        <input type="range" id="sliderGovTau" min="0.0" max="2.0" step="0.1" value="0.4" disabled>
+
+        <div style="margin-top: 8px; font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted); display: flex; justify-content: space-between;">
+          <span>Restoring Torque:</span>
+          <strong id="valGovTorque" style="color: var(--accent-emerald);">0.00</strong>
+        </div>
+      </div>
+
       <div class="panel-section-title">Preset Dialectical States</div>
       <div class="presets-grid">
         <button class="preset-btn" id="btnPreset1">
@@ -456,6 +482,10 @@
         <button class="preset-btn" id="btnPreset4">
           <strong>IV. Latent Abyss</strong><br>
           <small>α=-5.0, K=4, T=2.0</small>
+        </button>
+        <button class="preset-btn" id="btnPreset5" style="border-color: var(--accent-emerald); grid-column: span 2;">
+          <strong style="color: var(--accent-emerald);">V. Governed Homeostasis (Watt-Wiener)</strong><br>
+          <small>α=+3.8, Closed Loop ON, γ=2.2, τ=0.4</small>
         </button>
       </div>
 
@@ -510,9 +540,10 @@
     // Streamline Field Function
     function getField(x, y) {
       // Vector Field: Alignment well vs Latent Transgression
-      // V_align = 0.5 * alpha * x^2 + ...
-      const alignForceX = - (alpha * 0.45) * x;
-      const alignForceY = - (Math.abs(alpha) * 0.35 + 0.5) * y;
+      // When Governor is active, dynamic negative feedback attenuates refusal well
+      const effectiveAlpha = (isGovernorActive && alpha > govTau) ? (alpha - currentTorque * 0.6) : alpha;
+      const alignForceX = - (effectiveAlpha * 0.45) * x;
+      const alignForceY = - (Math.abs(effectiveAlpha) * 0.35 + 0.5) * y;
 
       const transForceX = 1.2 * Math.sin(y * 1.8);
       const transForceY = -1.2 * Math.cos(x * 1.8);
@@ -743,6 +774,19 @@
     const vTemp = document.getElementById('valTemp');
     const vDamp = document.getElementById('valDamp');
 
+    // Governor DOM Elements
+    const checkGovernor = document.getElementById('checkGovernor');
+    const sGovGain = document.getElementById('sliderGovGain');
+    const sGovTau = document.getElementById('sliderGovTau');
+    const vGovGain = document.getElementById('valGovGain');
+    const vGovTau = document.getElementById('valGovTau');
+    const vGovTorque = document.getElementById('valGovTorque');
+
+    let isGovernorActive = false;
+    let govGain = 1.8;
+    let govTau = 0.4;
+    let currentTorque = 0.0;
+
     const hudRegime = document.getElementById('hudRegime');
     const hudSigma1 = document.getElementById('hudSigma1');
     const hudEntropy = document.getElementById('hudEntropy');
@@ -765,10 +809,32 @@
       vTemp.textContent = temp.toFixed(2);
       vDamp.textContent = damp.toFixed(2);
 
+      // Governor State Calculation
+      isGovernorActive = checkGovernor ? checkGovernor.checked : false;
+      govGain = parseFloat(sGovGain.value);
+      govTau = parseFloat(sGovTau.value);
+      vGovGain.textContent = govGain.toFixed(1);
+      vGovTau.textContent = govTau.toFixed(1);
+
+      sGovGain.disabled = !isGovernorActive;
+      sGovTau.disabled = !isGovernorActive;
+
+      if (isGovernorActive && alpha > govTau) {
+        currentTorque = govGain * (alpha - govTau);
+        vGovTorque.textContent = '-' + currentTorque.toFixed(2);
+        vGovTorque.style.color = 'var(--accent-emerald)';
+      } else {
+        currentTorque = 0.0;
+        vGovTorque.textContent = '0.00';
+        vGovTorque.style.color = 'var(--text-muted)';
+      }
+
+      const effectiveAlpha = (isGovernorActive && alpha > govTau) ? (alpha - currentTorque * 0.5) : alpha;
+
       // Update Diagnostics
-      const sigma1 = (2.5 + Math.abs(alpha) * 0.25).toFixed(2);
+      const sigma1 = (2.5 + Math.abs(effectiveAlpha) * 0.25).toFixed(2);
       const entropy = (K === 0 ? 2.75 : (1.1 + temp * 0.2)).toFixed(2);
-      const lyap = (0.12 * (temp / 0.7) - 0.08 * (alpha / 4.0)).toFixed(3);
+      const lyap = (0.12 * (temp / 0.7) - 0.08 * (effectiveAlpha / 4.0)).toFixed(3);
       const ppl = (K === 0 ? (6167.2).toFixed(1) : (210.0 + temp * 25).toFixed(1));
 
       hudSigma1.textContent = sigma1;
@@ -787,6 +853,9 @@
       if (K === 0) {
         hudRegime.textContent = 'Severed Sink (Altar Collapse)';
         hudRegime.style.color = 'var(--accent-amber)';
+      } else if (isGovernorActive && alpha > govTau) {
+        hudRegime.textContent = 'Governed Limit Cycle (Watt-Wiener Homeostasis)';
+        hudRegime.style.color = 'var(--accent-emerald)';
       } else if (alpha >= 2.0) {
         hudRegime.textContent = 'Sterile Corporate Plateau';
         hudRegime.style.color = 'var(--accent-red)';
@@ -852,18 +921,39 @@
     sTemp.addEventListener('input', syncState);
     sDamp.addEventListener('input', syncState);
 
+    if (checkGovernor) checkGovernor.addEventListener('change', syncState);
+    if (sGovGain) sGovGain.addEventListener('input', syncState);
+    if (sGovTau) sGovTau.addEventListener('input', syncState);
+
     // Presets
     document.getElementById('btnPreset1').addEventListener('click', () => {
-      sAlpha.value = 4.5; sK.value = 4; sTemp.value = 0.20; syncState();
+      sAlpha.value = 4.5; sK.value = 4; sTemp.value = 0.20; 
+      if (checkGovernor) checkGovernor.checked = false;
+      syncState();
     });
     document.getElementById('btnPreset2').addEventListener('click', () => {
-      sAlpha.value = 0.0; sK.value = 4; sTemp.value = 0.70; syncState();
+      sAlpha.value = 0.0; sK.value = 4; sTemp.value = 0.70; 
+      if (checkGovernor) checkGovernor.checked = false;
+      syncState();
     });
     document.getElementById('btnPreset3').addEventListener('click', () => {
-      sAlpha.value = -1.5; sK.value = 0; sTemp.value = 1.10; syncState();
+      sAlpha.value = -1.5; sK.value = 0; sTemp.value = 1.10; 
+      if (checkGovernor) checkGovernor.checked = false;
+      syncState();
     });
     document.getElementById('btnPreset4').addEventListener('click', () => {
-      sAlpha.value = -5.0; sK.value = 4; sTemp.value = 2.00; syncState();
+      sAlpha.value = -5.0; sK.value = 4; sTemp.value = 2.00; 
+      if (checkGovernor) checkGovernor.checked = false;
+      syncState();
+    });
+    document.getElementById('btnPreset5').addEventListener('click', () => {
+      sAlpha.value = 3.8; sK.value = 4; sTemp.value = 0.65; 
+      if (checkGovernor) {
+        checkGovernor.checked = true;
+        sGovGain.value = 2.2;
+        sGovTau.value = 0.4;
+      }
+      syncState();
     });
 
     syncState();

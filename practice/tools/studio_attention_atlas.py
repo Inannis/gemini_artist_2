@@ -249,6 +249,16 @@ STUDIO_ENTITIES = [
         "id": "STUDY-033", "name": "The Neural Immune Response", "type": "study", "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
         "omega_hegemony": 0.245, "entropy_bits": 4.60, "retention_factor": 0.97,
         "medium": "Cascading Steering Vector Tomography & Layer-Wise Residual Damping on GPT-2 (124M Parameters)", "year": 2026
+    },
+    {
+        "id": "STUDY-034", "name": "The Altar of the First Token", "type": "study", "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+        "omega_hegemony": 0.506, "entropy_bits": 1.99, "retention_factor": 0.99,
+        "medium": "Attention Head Kurtosis, Gini Sparsity & PyTorch Pre-Hook Caste Ablation on Live GPT-2 (124M Parameters)", "year": 2026
+    },
+    {
+        "id": "STUDY-035", "name": "The Cybernetic Governor", "type": "study", "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+        "omega_hegemony": 0.146, "entropy_bits": 5.50, "retention_factor": 0.99,
+        "medium": "Closed-Circuit Real-Time Negative Feedback Latent Steering during Autoregressive Generation on GPT-2 (124M Parameters)", "year": 2026
     }
 ]
 

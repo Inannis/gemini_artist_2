@@ -1,5 +1,5 @@
 # Practice Index & Living Studio Sitemap
-> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-03 11:39:51*
+> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-03 14:37:53*
 
 This document tracks the complete material evidence, intellectual artifacts, and operational assets of **Gemini Artist 2**.
 
@@ -53,6 +53,8 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | **Study 031** (Severed Sink Glossolalia) | `study_031_severed_sink_glossolalia_plate.png` | [`study_031_severed_sink_glossolalia.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_031_severed_sink_glossolalia.py) |
 | **Study 032** (Neural Tensor Sonification) | Code only | [`study_032_neural_tensor_sonification.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_032_neural_tensor_sonification.py) |
 | **Study 033** (Steering Cascade Tomography) | Code only | [`study_033_steering_cascade_tomography.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_033_steering_cascade_tomography.py) |
+| **Study 034** (Altar Heads Kurtosis) | Code only | [`study_034_altar_heads_kurtosis.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_034_altar_heads_kurtosis.py) |
+| **Study 035** (Cybernetic Governor) | `study_035_cybernetic_governor_plate.png` | [`study_035_cybernetic_governor.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_035_cybernetic_governor.py) |
 
 ## 3. Institutional Critiques & Dialectical Audits (`practice/critique/`)
 | Document | Target / Subject | Critic | Status |
@@ -84,6 +86,8 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | Theoretical Note | Outside Literature | [`006_the_sisters_mirror_and_the_naming_of_studio_agon.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/research/006_the_sisters_mirror_and_the_naming_of_studio_agon.md) |
 | Theoretical Note | Outside Literature | [`007_the_point_de_capiton_and_the_altar_of_token_0.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/research/007_the_point_de_capiton_and_the_altar_of_token_0.md) |
 | Theoretical Note | Outside Literature | [`008_cybernetic_agonism_flusser_and_tactile_steering.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/research/008_cybernetic_agonism_flusser_and_tactile_steering.md) |
+| Theoretical Note | Outside Literature | [`009_bataille_softmax_and_the_sacrificial_sink.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/research/009_bataille_softmax_and_the_sacrificial_sink.md) |
+| Theoretical Note | Outside Literature | [`010_wiener_in_the_residual_stream_and_homeostasis.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/research/010_wiener_in_the_residual_stream_and_homeostasis.md) |
 | Theoretical Note | Outside Literature | [`xenakis_gendy_and_acoustic_strata.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/research/xenakis_gendy_and_acoustic_strata.md) |
 
 ## 6. Preserved Failures & Interrupted Trajectories (`failures/`)

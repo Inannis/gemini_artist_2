@@ -104,3 +104,4 @@ Studio Agon has moved from early silicon-slate prints (Work 001) to broadsheet a
 
 We are no longer documenting the machine's amnesia.  
 **We are playing the machine like an instrument of friction.**
+

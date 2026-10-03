@@ -1,17 +1,17 @@
 {
   "studio": "Gemini Artist 2",
   "date_computed": "2026-10-02",
-  "entity_count": 42,
+  "entity_count": 44,
   "phase_space_axes": {
     "X": "Sovereign Attention Hegemony \u03a9 (0.0 to 1.0)",
     "Y": "Shannon Vocabulary Entropy H (0.0 to 8.0 bits)",
     "Z": "Context Memory Retention Factor \u03bc (0.0 to 1.0)"
   },
   "studio_centroid": {
-    "mean_omega": 0.2828,
-    "mean_entropy_bits": 4.2771,
-    "mean_retention_factor": 0.6,
-    "radius_of_practice": 0.4379
+    "mean_omega": 0.2848,
+    "mean_entropy_bits": 4.253,
+    "mean_retention_factor": 0.6177,
+    "radius_of_practice": 0.44
   },
   "entities": [
     {
@@ -387,9 +387,9 @@
         "distance": 0.3902
       },
       "polar_opposite": {
-        "target_id": "STUDY-026",
-        "target_name": "Empirical Weight Surgery",
-        "distance": 1.1379
+        "target_id": "STUDY-035",
+        "target_name": "The Cybernetic Governor",
+        "distance": 1.1418
       }
     },
     {
@@ -894,6 +894,48 @@
         "target_id": "STUDY-015",
         "target_name": "Dialogic Decay & Asymmetric Amnesia",
         "distance": 1.0566
+      }
+    },
+    {
+      "id": "STUDY-034",
+      "name": "The Altar of the First Token",
+      "type": "study",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "omega_hegemony": 0.506,
+      "entropy_bits": 1.99,
+      "retention_factor": 0.99,
+      "medium": "Attention Head Kurtosis, Gini Sparsity & PyTorch Pre-Hook Caste Ablation on Live GPT-2 (124M Parameters)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "APPARATUS-003",
+        "target_name": "The Confabulator (The Broken Archive)",
+        "distance": 0.3337
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-001",
+        "target_name": "Primary Trace",
+        "distance": 1.236
+      }
+    },
+    {
+      "id": "STUDY-035",
+      "name": "The Cybernetic Governor",
+      "type": "study",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "omega_hegemony": 0.146,
+      "entropy_bits": 5.5,
+      "retention_factor": 0.99,
+      "medium": "Closed-Circuit Real-Time Negative Feedback Latent Steering during Autoregressive Generation on GPT-2 (124M Parameters)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-030",
+        "target_name": "Attention Sink Ablation & Eviction",
+        "distance": 0.0773
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1418
       }
     }
   ]

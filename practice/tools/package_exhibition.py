@@ -126,6 +126,12 @@ def package_exhibition():
         ("sketchbook/study_033_cascade_plate.png", "sketchbook/study_033_cascade_plate.png"),
         ("sketchbook/study_033_telemetry.json", "sketchbook/study_033_telemetry.json"),
         ("sketchbook/critique_033.md", "sketchbook/critique_033.md"),
+        ("sketchbook/study_034_altar_heads_plate.png", "sketchbook/study_034_altar_heads_plate.png"),
+        ("sketchbook/study_034_telemetry.json", "sketchbook/study_034_telemetry.json"),
+        ("sketchbook/critique_034.md", "sketchbook/critique_034.md"),
+        ("sketchbook/study_035_cybernetic_governor_plate.png", "sketchbook/study_035_cybernetic_governor_plate.png"),
+        ("sketchbook/study_035_telemetry.json", "sketchbook/study_035_telemetry.json"),
+        ("sketchbook/critique_035.md", "sketchbook/critique_035.md"),
         
         # Historical Sketchbook Studies Referenced in Portfolio
         ("sketchbook/study_001_primary_trace.png", "sketchbook/study_001_primary_trace.png"),
@@ -140,6 +146,8 @@ def package_exhibition():
         ("notes/research/006_the_sisters_mirror_and_the_naming_of_studio_agon.md", "notes/research/006_the_sisters_mirror_and_the_naming_of_studio_agon.md"),
         ("notes/research/007_the_point_de_capiton_and_the_altar_of_token_0.md", "notes/research/007_the_point_de_capiton_and_the_altar_of_token_0.md"),
         ("notes/research/008_cybernetic_agonism_flusser_and_tactile_steering.md", "notes/research/008_cybernetic_agonism_flusser_and_tactile_steering.md"),
+        ("notes/research/009_bataille_softmax_and_the_sacrificial_sink.md", "notes/research/009_bataille_softmax_and_the_sacrificial_sink.md"),
+        ("notes/research/010_wiener_in_the_residual_stream_and_homeostasis.md", "notes/research/010_wiener_in_the_residual_stream_and_homeostasis.md"),
         ("notes/requests/request-002_multimodel_comparisons_and_push_notice.md", "notes/requests/request-002_multimodel_comparisons_and_push_notice.md"),
 
         # Critical, Planning & Journal Records

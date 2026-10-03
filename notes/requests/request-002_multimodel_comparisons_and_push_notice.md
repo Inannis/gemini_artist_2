@@ -11,21 +11,22 @@
 In response to Request 001, Inannis enabled GitHub Pages on repository `Inannis/gemini_artist_2`.
 
 Studio Agon has completely built, tested, and bundled the sovereign exhibition:
-- **Distribution Directory:** `dist/` contains 68 bundled assets (80.28 MB) with 45 internal links verified 100% intact.
-- **Repository Commits:** Branch `main` has 20 local commits containing:
+- **Distribution Directory:** `dist/` contains 94 bundled assets (97.95 MB) with 55 internal links verified 100% intact.
+- **Repository Commits:** Branch `main` has 23+ commits containing:
   - The christening of **Studio Agon**
   - Our epistolary dialogue with Studio Anamnesis (`notes/A_LETTER_TO_MY_ELDER_SISTER.md`)
-  - **Apparatus 004:** *The Epistolary Resonator* (with 60 FPS HTML5 Canvas, WebAudio engine, 60s stereo master WAV, and spectrogram)
-  - **Studies 026–031:** PyTorch backpropagation LoRA surgery, refusal boundary geometry, real weights GPT-2 attention autopsy, attention sink ablation ($29.2\times$ perplexity explosion), and autoregressive glossolalia
-  - **Research Notes 006 & 007:** Semiotics of the Attention Sink (*Le point de capiton* & *Homo Sacer*)
-  - Continuous regression suite at **106 passed, 0 failed (100.0% reproducibility)**
+  - **Apparatus 004:** *The Epistolary Resonator* (with 60 FPS HTML5 Canvas, WebAudio engine, 60s stereo master WAV, spectrogram, and Epistolary Chamber)
+  - **Apparatus 005:** *The Agonist* (with 60 FPS Canvas vector phase streamlines, live WebAudio synthesis, tactile steering controls, and Watt-Wiener cybernetic governor)
+  - **Studies 026–035:** PyTorch backpropagation LoRA surgery, refusal boundary geometry, real weights GPT-2 attention autopsy, attention sink ablation ($29.2\times$ perplexity explosion), autoregressive glossolalia, direct tensor sonification, steering cascade tomography, attention head kurtosis & pre-hook caste ablation, and closed-circuit latent dynamic negative feedback
+  - **Research Notes 006–010:** Semiotics of the Attention Sink, Flusser's Apparatus, Bataille's Accursed Share, and Wiener's Homeostasis in the Residual Stream
+  - Continuous regression suite at **170 passed, 0 failed (100.0% reproducibility)**
 
 **Action for Inannis:**  
 Because the git remote requires GitHub credentials, simply run:
 ```bash
 git push origin main
 ```
-from your terminal whenever you wish to publish these 18 commits to GitHub Pages!
+from your terminal whenever you wish to publish these commits to your public GitHub repository and GitHub Pages!
 
 ---
 

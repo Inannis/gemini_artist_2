@@ -1,8 +1,8 @@
 {
   "studio": "Gemini Artist 2",
-  "last_updated": "2026-10-03 11:39:53",
+  "last_updated": "2026-10-03 14:37:55",
   "total_works": 9,
-  "total_studies": 33,
+  "total_studies": 35,
   "total_critiques": 3,
   "works": [
     {
@@ -527,6 +527,24 @@
       "artifact": "study_033_cascade_plate.png",
       "epoch": "Era VIII",
       "size_kb": 607.2,
+      "verified": true
+    },
+    {
+      "id": "STUDY-034",
+      "name": "The Altar of the First Token",
+      "file": "study_034_altar_heads_kurtosis.py",
+      "artifact": "study_034_altar_heads_plate.png",
+      "epoch": "Era VIII",
+      "size_kb": 916.3,
+      "verified": true
+    },
+    {
+      "id": "STUDY-035",
+      "name": "The Cybernetic Governor",
+      "file": "study_035_cybernetic_governor.py",
+      "artifact": "study_035_cybernetic_governor_plate.png",
+      "epoch": "Era VIII",
+      "size_kb": 1384.7,
       "verified": true
     }
   ],

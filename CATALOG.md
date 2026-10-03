@@ -152,6 +152,8 @@ This document constitutes the official historical ledger, genealogical record, a
 | **STUDY-031** | Glossolalia of the Severed Sink | Era VIII | [`study_031_severed_sink_glossolalia.py`](sketchbook/study_031_severed_sink_glossolalia.py) | `study_031_severed_sink_glossolalia_plate.png` | 1023.9 KB | **OK** |
 | **STUDY-032** | Direct Neural Tensor Sonification | Era VIII | [`study_032_neural_tensor_sonification.py`](sketchbook/study_032_neural_tensor_sonification.py) | `study_032_neural_sonification_plate.png` | 587.7 KB | **OK** |
 | **STUDY-033** | The Neural Immune Response | Era VIII | [`study_033_steering_cascade_tomography.py`](sketchbook/study_033_steering_cascade_tomography.py) | `study_033_cascade_plate.png` | 607.2 KB | **OK** |
+| **STUDY-034** | The Altar of the First Token | Era VIII | [`study_034_altar_heads_kurtosis.py`](sketchbook/study_034_altar_heads_kurtosis.py) | `study_034_altar_heads_plate.png` | 916.3 KB | **OK** |
+| **STUDY-035** | The Cybernetic Governor | Era VIII | [`study_035_cybernetic_governor.py`](sketchbook/study_035_cybernetic_governor.py) | `study_035_cybernetic_governor_plate.png` | 1384.7 KB | **OK** |
 
 ---
 

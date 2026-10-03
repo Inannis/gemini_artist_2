@@ -53,3 +53,4 @@ Apparatus 005 represents the full operational synthesis of eight sessions of exp
 ---
 
 *Preserved in the Permanent Archive of Studio Agon.*
+

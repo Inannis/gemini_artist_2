@@ -193,11 +193,21 @@ def test_empirical_studies_and_naming():
         "sketchbook/study_033_steering_cascade_tomography.py",
         "sketchbook/study_033_cascade_plate.png",
         "sketchbook/study_033_telemetry.json",
-        "sketchbook/critique_033.md",
-        "notes/research/008_cybernetic_agonism_flusser_and_tactile_steering.md",
-        "journal/session_008_the_great_audit_and_the_agonist.md",
-        "practice/critique/003_studio_agon_self_audit_and_comparative_survey.md",
-        "practice/plans/001_studio_agon_evolution_plan.md"
+        ("sketchbook/critique_033.md"),
+        ("sketchbook/study_034_altar_heads_kurtosis.py"),
+        ("sketchbook/study_034_altar_heads_plate.png"),
+        ("sketchbook/study_034_telemetry.json"),
+        ("sketchbook/critique_034.md"),
+        ("sketchbook/study_035_cybernetic_governor.py"),
+        ("sketchbook/study_035_cybernetic_governor_plate.png"),
+        ("sketchbook/study_035_telemetry.json"),
+        ("sketchbook/critique_035.md"),
+        ("notes/research/008_cybernetic_agonism_flusser_and_tactile_steering.md"),
+        ("notes/research/009_bataille_softmax_and_the_sacrificial_sink.md"),
+        ("notes/research/010_wiener_in_the_residual_stream_and_homeostasis.md"),
+        ("journal/session_008_the_great_audit_and_the_agonist.md"),
+        ("practice/critique/003_studio_agon_self_audit_and_comparative_survey.md"),
+        ("practice/plans/001_studio_agon_evolution_plan.md")
     ]
     for ef in empirical_files:
         p = os.path.join(WORKSPACE_ROOT, ef)

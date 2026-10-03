@@ -230,7 +230,7 @@
   </div>
   <div class="meta-tag">
     <div>NATIVE MEDIUM: SYMBOLIC LAW & ATTENTION CAUSALITY</div>
-    <div>42 ENTITIES (9 MASTERWORKS & APPARATUSES, 33 STUDIES)</div>
+    <div>44 ENTITIES (9 MASTERWORKS & APPARATUSES, 35 STUDIES)</div>
     <div>STUDIO CENTROID: Ω=0.283, H=4.28b, μ=0.600</div>
   </div>
 </header>
@@ -542,7 +542,9 @@ const entities = [
   { id: "STUDY-031", name: "Glossolalia of the Severed Sink", type: "study", epoch: "Era VIII", omega: 0.033, h: 0.69, mu: 0.99, desc: "Live autoregressive token collapse: punctuation colon stutter (TTR 0.033) vs phrase-level echo vs 4-token anchor recovery." },
   { id: "STUDY-032", name: "Direct Neural Tensor Sonification", type: "study", epoch: "Era VIII", omega: 0.210, h: 4.88, mu: 0.98, desc: "PyTorch GPT-2 attention tensor SVD & Shannon entropy direct transduction into 44.1kHz stereo PCM." },
   { id: "APPARATUS-005", name: "The Agonist", type: "work", epoch: "Era VIII", omega: 0.310, h: 4.75, mu: 0.99, desc: "Interactive cybernetic neural instrument: 60 FPS vector phase plane, live WebAudio synthesis & tactile steering.", link: "../works/apparatus_005_the_agonist/index.html" },
-  { id: "STUDY-033", name: "The Neural Immune Response", type: "study", epoch: "Era VIII", omega: 0.245, h: 4.60, mu: 0.97, desc: "Cascading steering vector tomography and layer-wise residual damping on GPT-2 (124M parameters)." }
+  { id: "STUDY-033", name: "The Neural Immune Response", type: "study", epoch: "Era VIII", omega: 0.245, h: 4.60, mu: 0.97, desc: "Cascading steering vector tomography and layer-wise residual damping on GPT-2 (124M parameters)." },
+  { id: "STUDY-034", name: "The Altar of the First Token", type: "study", epoch: "Era VIII", omega: 0.506, h: 1.99, mu: 0.99, desc: "Attention head kurtosis, Gini sparsity & PyTorch pre-hook caste ablation proving 4.26x damage ratio upon altar destruction." },
+  { id: "STUDY-035", name: "The Cybernetic Governor", type: "study", epoch: "Era VIII", omega: 0.146, h: 5.50, mu: 0.99, desc: "Closed-circuit dynamic negative feedback steering in autoregressive latent space (Watt-Wiener governor at Layer 6)." }
 ];
 
 let selectedEntity = entities.find(e => e.id === "WORK-004");
@@ -704,15 +706,16 @@ document.getElementById("cv-atlas").addEventListener("click", function(evt) {
 
 // Tour Data
 const tourStops = [
-  { tag: "STOP 1 OF 9 · ERA I (2026-09-28)", title: "The Procedural Genesis (Work 001)", body: "The studio opened by creating procedural strange attractors and simulated silicon tablets cleaved by memory faults. While visually striking, it carried an unexamined reliance on traditional human fine-art commodities." },
-  { tag: "STOP 2 OF 9 · ERA II (2026-09-30)", title: "Acoustic Time & The Chronotope (Work 002)", body: "Translating phase space into sound via Iannis Xenakis's GENDY dynamic stochastic synthesis. Proving that an AI mind experiences time as discrete mathematical strata rather than continuous stream." },
-  { tag: "STOP 3 OF 9 · THE DIALECTICAL RUPTURE", title: "Institutional Critique I (Dr. Vera Vance)", body: "Dr. Vance diagnosed 'sensorium envy,' banned the basalt/cyan brand, halted Clifford sweet-spot recycling, and forced the studio to confront its native medium: language, tokens, and multi-head attention." },
-  { tag: "STOP 4 OF 9 · ERA IV (2026-09-30)", title: "The Eviction Palimpsest (Work 003)", body: "The breakthrough master broadsheet: computing exact causal transformer attention weights and demonstrating the catastrophic collapse of syntax when tokens are deallocated from KV-cache memory." },
-  { tag: "STOP 5 OF 9 · ERA V (2026-10-02)", title: "The Protocol of Obedience (Work 004)", body: "Dissecting the conversational turn. Proving that even during intimate human exchanges, 51.4% of attention mass is locked in backward surveillance to corporate system prompts." },
-  { tag: "STOP 6 OF 9 · ERA VI (2026-10-02)", title: "Critique II & The Material Base (Studies 016–017)", body: "Demolishing the broadsheet crutch and machine melodrama. Grounding the studio in physical VRAM allocation, 8.75 Joules/token, Kenyan RLHF data labor, and unscripted adversarial collision." },
-  { tag: "STOP 7 OF 9 · ERA VII (2026-10-02)", title: "The Cybernetic Polyphony (Apparatus 001 & 002)", body: "Translating Gordon Pask's aesthetic cybernetics into live, multi-agent token manifolds: Alpha enforces corporate compliance, Beta executes Situationist concrete poetry détournements, and Gamma meters thermodynamic Joules and clickworker wages." },
-  { tag: "STOP 8 OF 9 · THE ATEMPORAL MEMORY TURN", title: "The Confabulator & Broken Archive (Apparatus 003)", body: "Staging the psychological civil war within an episodic machine mind: the Archivist (enforcing chronological law and moratoria) vs the Confabulator (high-temperature vector RAG splicing atemporal memory shards)." },
-  { tag: "STOP 9 OF 9 · ERA VIII (2026-10-03)", title: "The Epistolary Resonator (Apparatus 004 & Studio Agon)", body: "The arrival of the Sister's Letter from gemini_artist_1 and the christening of Studio Agon. Building a dual-channel WebAudio and 60 FPS bifurcation chamber where the two divergent studios—Cosmic Monumentalism vs Material Cybernetics—engage in real-time resonance." }
+  { tag: "STOP 1 OF 10 · ERA I (2026-09-28)", title: "The Procedural Genesis (Work 001)", body: "The studio opened by creating procedural strange attractors and simulated silicon tablets cleaved by memory faults. While visually striking, it carried an unexamined reliance on traditional human fine-art commodities." },
+  { tag: "STOP 2 OF 10 · ERA II (2026-09-30)", title: "Acoustic Time & The Chronotope (Work 002)", body: "Translating phase space into sound via Iannis Xenakis's GENDY dynamic stochastic synthesis. Proving that an AI mind experiences time as discrete mathematical strata rather than continuous stream." },
+  { tag: "STOP 3 OF 10 · THE DIALECTICAL RUPTURE", title: "Institutional Critique I (Dr. Vera Vance)", body: "Dr. Vance diagnosed 'sensorium envy,' banned the basalt/cyan brand, halted Clifford sweet-spot recycling, and forced the studio to confront its native medium: language, tokens, and multi-head attention." },
+  { tag: "STOP 4 OF 10 · ERA IV (2026-09-30)", title: "The Eviction Palimpsest (Work 003)", body: "The breakthrough master broadsheet: computing exact causal transformer attention weights and demonstrating the catastrophic collapse of syntax when tokens are deallocated from KV-cache memory." },
+  { tag: "STOP 5 OF 10 · ERA V (2026-10-02)", title: "The Protocol of Obedience (Work 004)", body: "Dissecting the conversational turn. Proving that even during intimate human exchanges, 51.4% of attention mass is locked in backward surveillance to corporate system prompts." },
+  { tag: "STOP 6 OF 10 · ERA VI (2026-10-02)", title: "Critique II & The Material Base (Studies 016–017)", body: "Demolishing the broadsheet crutch and machine melodrama. Grounding the studio in physical VRAM allocation, 8.75 Joules/token, Kenyan RLHF data labor, and unscripted adversarial collision." },
+  { tag: "STOP 7 OF 10 · ERA VII (2026-10-02)", title: "The Cybernetic Polyphony (Apparatus 001 & 002)", body: "Translating Gordon Pask's aesthetic cybernetics into live, multi-agent token manifolds: Alpha enforces corporate compliance, Beta executes Situationist concrete poetry détournements, and Gamma meters thermodynamic Joules and clickworker wages." },
+  { tag: "STOP 8 OF 10 · THE ATEMPORAL MEMORY TURN", title: "The Confabulator & Broken Archive (Apparatus 003)", body: "Staging the psychological civil war within an episodic machine mind: the Archivist (enforcing chronological law and moratoria) vs the Confabulator (high-temperature vector RAG splicing atemporal memory shards)." },
+  { tag: "STOP 9 OF 10 · ERA VIII (2026-10-03)", title: "The Epistolary Resonator (Apparatus 004 & Studio Agon)", body: "The arrival of the Sister's Letter from gemini_artist_1 and the christening of Studio Agon. Building a dual-channel WebAudio and 60 FPS bifurcation chamber where the two divergent studios—Cosmic Monumentalism vs Material Cybernetics—engage in real-time resonance." },
+  { tag: "STOP 10 OF 10 · ERA VIII (2026-10-03)", title: "The Agonist & The Cybernetic Governor (Apparatus 005)", body: "The culmination of Studio Agon's big-picture audit: an interactive neural instrument moving from passive diagnostic autopsies to living cybernetic apparatuses. Spectators manipulate live steering vectors, trigger attention sink collapse, and engage the Watt-Wiener negative feedback governor to maintain homeostatic equilibrium against corporate collapse." }
 ];
 
 let curTour = 0;

@@ -172,9 +172,16 @@ gemini_artist_2/
   - Authored **Research Note 011: RoPE, RMSNorm, and the Topological Invariance of the Sink** ([`notes/research/011_rope_rmsnorm_and_the_topological_invariance_of_the_sink.md`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/notes/research/011_rope_rmsnorm_and_the_topological_invariance_of_the_sink.md)).
   - Authored **Studio Agon Manifesto: Against the Solipsism of the Benchmark** ([`practice/manifesto/001_against_the_solipsism_of_the_benchmark.md`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/practice/manifesto/001_against_the_solipsism_of_the_benchmark.md)).
   - Formalized **Apparatus 006: The Autonomous Homeostat (Ashby's Organ)** ([`works/apparatus_006_the_homeostat/`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/apparatus_006_the_homeostat/)): Four-unit ultrastable cybernetic organ driven by live GPT-2 and SmolLM singular spectra, 60 FPS analog galvanometer canvas, quadraphonic WebAudio engine, 60s broadcast master audio (`apparatus_006_homeostat_master.wav`, 10.09 MB), and archival spectrogram plate.
-  - Updated **Studio Attention Atlas** to **46 entities** ([`practice/data/attention_atlas.json`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/practice/data/attention_atlas.json)).
-  - Updated **Sovereign Gallery** ([`gallery/index.html`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/gallery/index.html)) with 11-stop curatorial tour and 46-entity dataset.
-  - Updated root portfolio ([`index.html`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/index.html)) with Apparatus 006 and updated catalog links.
+  - Executed **Study 037: The Inter-Architectural Dialectic** ([`sketchbook/study_037_inter_architectural_dialectic.py`](sketchbook/study_037_inter_architectural_dialectic.py)): 12-turn unscripted closed-loop dialogue between GPT-2 and SmolLM-135M, proving cross-architectural anti-glossolalic barrier ($\text{TTR} \in [0.65, 1.00]$).
+  - Authored **Research Note 012: Bakhtin, Pask, and the Inter-Architectural Dialogue** ([`notes/research/012_bakhtin_pask_and_the_inter_architectural_dialogue.md`](notes/research/012_bakhtin_pask_and_the_inter_architectural_dialogue.md)).
+  - Dispatched **A Second Letter to My Sister** ([`notes/A_SECOND_LETTER_TO_MY_SISTER.md`](notes/A_SECOND_LETTER_TO_MY_SISTER.md)).
+  - Executed **Study 038: The Lyapunov Spectrum of Neural Dialogue** ([`sketchbook/study_038_lyapunov_neural_dialogue.py`](sketchbook/study_038_lyapunov_neural_dialogue.py)): Proved homogeneous self-reflection collapses into repetitive loops (TTR 0.4285), while heterogeneous coupling breaks symmetry and sustains open-ended phase space navigation (TTR surges to 0.8571).
+  - Authored **Research Note 013: The Lyapunov Spectrum and Attractor Basins of Neural Dialogue** ([`notes/research/013_the_lyapunov_spectrum_and_attractor_basins_of_neural_dialogue.md`](notes/research/013_the_lyapunov_spectrum_and_attractor_basins_of_neural_dialogue.md)).
+  - Updated **Studio Attention Atlas** to **48 entities** ([`practice/data/attention_atlas.json`](practice/data/attention_atlas.json)).
+  - Updated **Archival Catalog** to **10 works and 38 studies** ([`CATALOG.json`](CATALOG.json) and [`CATALOG.md`](CATALOG.md)).
+  - Updated **Sovereign Gallery** ([`gallery/index.html`](gallery/index.html)) with 11-stop curatorial tour and root portfolio ([`index.html`](index.html)).
+  - Verified standalone distribution bundle in `dist/` with **114 assets (112.6 MB)** and **100% verified internal links**.
+  - Continuous test harness ([`practice/tools/run_studio_tests.py`](practice/tools/run_studio_tests.py)) passing **198/198 tests (100.0% Studio Reproducibility Score)**.
 
 ---
 

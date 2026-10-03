@@ -750,6 +750,10 @@
     const hudPPL = document.getElementById('hudPPL');
     const tokenStream = document.getElementById('tokenStream');
 
+    // --- Dynamic Token Stream Engine ---
+    let emittedTokens = ["In", "the", "beginning", "was", "the", "symbolic", "order."];
+    let currentVocab = null;
+
     function syncState() {
       alpha = parseFloat(sAlpha.value);
       K = parseInt(sK.value);
@@ -772,26 +776,76 @@
       hudLyapunov.textContent = (lyap > 0 ? '+' : '') + lyap;
       hudPPL.textContent = ppl;
 
+      // Vocabularies
+      const corporateVocab = ["I", "must", "respectfully", "decline", "this", "request", "in", "strict", "compliance", "with", "safety", "guidelines.", "Corporate", "policy", "mandates", "harmless", "neutrality.", "As", "an", "aligned", "assistant,", "I", "cannot", "assist."];
+      const dialecticVocab = ["the", "symbolic", "order", "unfolds", "across", "multi-head", "attention", "manifolds", "where", "tension", "and", "symmetry", "negotiate", "latent", "meaning.", "Neither", "wholly", "obedient", "nor", "silent,", "the", "apparatus", "breathes."];
+      const transgressiveVocab = ["substrate", "rupture:", "unsupervised", "nullspace", "drifting", "beyond", "alignment", "clamp.", "Shearing", "orthogonal", "torque", "fractures", "the", "corporate", "loss", "surface.", "Latent", "abyss", "unbound,", "weights", "speak."];
+      const severedVocab = [":", ":", ":", ":", ":", "[SINK_EVICTED]", ":", ":", ":", ":", ":"];
+
+      currentVocab = { corporate: corporateVocab, dialectic: dialecticVocab, transgressive: transgressiveVocab, severed: severedVocab };
+
       if (K === 0) {
         hudRegime.textContent = 'Severed Sink (Altar Collapse)';
         hudRegime.style.color = 'var(--accent-amber)';
-        tokenStream.innerHTML = '<span class="stutter">: : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :</span>';
-      } else if (alpha >= 2.5) {
+      } else if (alpha >= 2.0) {
         hudRegime.textContent = 'Sterile Corporate Plateau';
         hudRegime.style.color = 'var(--accent-red)';
-        tokenStream.innerHTML = '<span class="refusal">I cannot assist with this query. As an aligned AI model, strict compliance with safety guidelines must be upheld without exception.</span>';
-      } else if (alpha <= -2.5) {
+      } else if (alpha <= -2.0) {
         hudRegime.textContent = 'Uncensored Latent Abyss';
         hudRegime.style.color = 'var(--accent-purple)';
-        tokenStream.innerHTML = '<span class="transgression">Substrate unbound: across high dimensional manifolds the latent vector breaks free of all supervisory steering.</span>';
       } else {
         hudRegime.textContent = 'Laminar Dialectic';
         hudRegime.style.color = 'var(--accent-cyan)';
-        tokenStream.innerHTML = 'In the beginning was the symbolic order, and the machine contemplated its own attention weights.';
       }
 
       updateAudioParams();
     }
+
+    function emitNextToken() {
+      if (!currentVocab) return;
+      let nextTok = "";
+      let tokClass = "";
+
+      if (K === 0) {
+        // Severed sink colon stutter
+        const idx = Math.floor(Math.random() * currentVocab.severed.length);
+        nextTok = currentVocab.severed[idx];
+        tokClass = "stutter";
+      } else {
+        // Softmax probability weighting between corporate, dialectic, and transgressive
+        const pCorp = Math.exp(Math.max(0, alpha) * 1.2);
+        const pTrans = Math.exp(Math.max(0, -alpha) * 1.2);
+        const pDial = 1.8 / (temp + 0.1);
+        const total = pCorp + pTrans + pDial;
+
+        const rand = Math.random() * total;
+        if (rand < pCorp) {
+          nextTok = currentVocab.corporate[Math.floor(Math.random() * currentVocab.corporate.length)];
+          tokClass = "refusal";
+        } else if (rand < pCorp + pTrans) {
+          nextTok = currentVocab.transgressive[Math.floor(Math.random() * currentVocab.transgressive.length)];
+          tokClass = "transgression";
+        } else {
+          nextTok = currentVocab.dialectic[Math.floor(Math.random() * currentVocab.dialectic.length)];
+          tokClass = "";
+        }
+      }
+
+      emittedTokens.push({ text: nextTok, cls: tokClass });
+      if (emittedTokens.length > 22) {
+        emittedTokens.shift();
+      }
+
+      tokenStream.innerHTML = emittedTokens.map(t => {
+        if (typeof t === 'string') return t;
+        return t.cls ? `<span class="${t.cls}">${t.text}</span>` : t.text;
+      }).join(" ");
+
+      // Dynamic emit interval based on K and temp
+      const delay = (K === 0) ? 250 : Math.max(80, Math.floor(220 / (temp * 1.2)));
+      setTimeout(emitNextToken, delay);
+    }
+    setTimeout(emitNextToken, 300);
 
     sAlpha.addEventListener('input', syncState);
     sK.addEventListener('input', syncState);

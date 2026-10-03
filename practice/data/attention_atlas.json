@@ -1,17 +1,17 @@
 {
   "studio": "Gemini Artist 2",
   "date_computed": "2026-10-02",
-  "entity_count": 37,
+  "entity_count": 38,
   "phase_space_axes": {
     "X": "Sovereign Attention Hegemony \u03a9 (0.0 to 1.0)",
     "Y": "Shannon Vocabulary Entropy H (0.0 to 8.0 bits)",
     "Z": "Context Memory Retention Factor \u03bc (0.0 to 1.0)"
   },
   "studio_centroid": {
-    "mean_omega": 0.2946,
-    "mean_entropy_bits": 4.3181,
-    "mean_retention_factor": 0.5484,
-    "radius_of_practice": 0.4325
+    "mean_omega": 0.2916,
+    "mean_entropy_bits": 4.3347,
+    "mean_retention_factor": 0.5597,
+    "radius_of_practice": 0.4329
   },
   "entities": [
     {
@@ -781,14 +781,35 @@
       "medium": "Real Pre-Trained Foundation Weights (GPT-2 124M Parameters) & 144-Head Attention Sink Tomography",
       "year": 2026,
       "nearest_topological_twin": {
-        "target_id": "STUDY-028",
-        "target_name": "The Geometry of the Refusal Boundary",
-        "distance": 0.0645
+        "target_id": "STUDY-030",
+        "target_name": "Attention Sink Ablation & Eviction",
+        "distance": 0.0417
       },
       "polar_opposite": {
         "target_id": "STUDY-015",
         "target_name": "Dialogic Decay & Asymmetric Amnesia",
         "distance": 1.0751
+      }
+    },
+    {
+      "id": "STUDY-030",
+      "name": "Attention Sink Ablation & Eviction",
+      "type": "study",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "omega_hegemony": 0.18,
+      "entropy_bits": 4.95,
+      "retention_factor": 0.98,
+      "medium": "Empirical Attention Sink Ablation & KV-Cache Eviction Dynamics on Live GPT-2 (124M Parameters)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-028",
+        "target_name": "The Geometry of the Refusal Boundary",
+        "distance": 0.0406
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.098
       }
     }
   ]

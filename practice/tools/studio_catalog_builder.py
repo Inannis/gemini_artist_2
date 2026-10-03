@@ -188,7 +188,8 @@ def build_catalog():
         {"id": "STUDY-026", "name": "Empirical Weight Surgery", "file": "study_026_empirical_weight_surgery.py", "artifact": "study_026_weight_surgery_plate.png", "epoch": "Era VIII"},
         {"id": "STUDY-027", "name": "The Twin Latent Space Resonance", "file": "study_027_twin_latent_resonance.py", "artifact": "study_027_twin_resonance_plate.png", "epoch": "Era VIII"},
         {"id": "STUDY-028", "name": "The Geometry of the Refusal Boundary", "file": "study_028_refusal_boundary_geometry.py", "artifact": "study_028_refusal_boundary_plate.png", "epoch": "Era VIII"},
-        {"id": "STUDY-029", "name": "Real Weights Attention Autopsy", "file": "study_029_real_weights_attention_autopsy.py", "artifact": "study_029_real_weights_autopsy_plate.png", "epoch": "Era VIII"}
+        {"id": "STUDY-029", "name": "Real Weights Attention Autopsy", "file": "study_029_real_weights_attention_autopsy.py", "artifact": "study_029_real_weights_autopsy_plate.png", "epoch": "Era VIII"},
+        {"id": "STUDY-030", "name": "Attention Sink Ablation & Eviction", "file": "study_030_attention_sink_ablation.py", "artifact": "study_030_sink_ablation_plate.png", "epoch": "Era VIII"}
     ]
 
     # Verify byte sizes and actual existence

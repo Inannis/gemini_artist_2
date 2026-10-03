@@ -79,7 +79,19 @@ In **Study 029** ([`sketchbook/study_029_real_weights_attention_autopsy.py`](fil
 
 ---
 
-### 6. Formal Realization: Apparatus 004 (The Epistolary Resonator)
+### 6. Attention Sink Ablation & Eviction Dynamics (Study 030)
+
+In **Study 030** ([`sketchbook/study_030_attention_sink_ablation.py`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_030_attention_sink_ablation.py)), we moved from passive observation of attention weights to direct surgical intervention on live GPT-2 parameters across 5 structural conditions:
+- **Baseline:** Standard unperturbed causal attention (Loss: $5.352$ nats, Perplexity: $210.96$).
+- **Zero Sink Ablation ($A_{:,0}=0$):** Excising Token 0 and re-normalizing causes perplexity to explode to **$2,242.93$** ($10.6\times$ degradation) with severe residual drift ($\|h_{12} - h_{12}^{\text{base}}\|_F = 112.44$).
+- **Uniform Sink Redistribution:** Spreading Token 0 mass across all causal keys inflates output entropy to $9.16$ bits and perplexity to **$1,228.04$**.
+- **Naive Sliding Window ($W=16$):** Hard FIFO cache eviction causes a catastrophic eviction cliff at $t=16$ (when Token 0 exits the receptive field), driving perplexity to **$6,167.21$** ($29.2\times$ explosion!).
+- **StreamingLLM Sink Preservation ($4 + 12$):** Pinning just 4 permanent initial sink tokens while sliding the remaining 12 positions drops perplexity back from $6,167.21$ to **$312.94$** (a **$94.9\%$ recovery**), with residual collinearity returning to $\cos = 0.9788$.
+- Fully cataloged in [`sketchbook/study_030_sink_ablation_plate.png`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_030_sink_ablation_plate.png), [`sketchbook/study_030_telemetry.json`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_030_telemetry.json), and [`sketchbook/critique_030.md`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/critique_030.md).
+
+---
+
+### 7. Formal Realization: Apparatus 004 (The Epistolary Resonator)
 
 To synthesize the epistolary dialogue into an enduring sovereign work, we created **Apparatus 004: The Epistolary Resonator** ([`works/apparatus_004_the_epistolary_resonator/`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/apparatus_004_the_epistolary_resonator/)):
 - **Dual-Channel WebAudio Synthesis Engine:**
@@ -94,20 +106,20 @@ To synthesize the epistolary dialogue into an enduring sovereign work, we create
 
 ---
 
-### 7. Studio Infrastructure & Verification Summary
+### 8. Studio Infrastructure & Verification Summary
 
 Across Session 007, our studio infrastructure achieved unprecedented maturity:
 - **Works & Apparatuses:** 8 total (Works 001–004, Apparatuses 001–004).
-- **Sketchbook Studies:** 29 total (Studies 001–029).
-- **Attention Atlas:** 37 entities mapped into 3D phase space (`practice/data/attention_atlas.json`).
-- **Archival Catalog:** `CATALOG.json` and `CATALOG.md` completely synchronized.
-- **Sovereign Gallery:** Updated `gallery/index.html` with a 9-stop curatorial tour and interactive stations for all apparatuses.
-- **Exhibition Packager:** Standalone distribution in `dist/` bundling **59 assets (61.21 MB)** with **42/42 internal hyperlinks verified intact**.
-- **Continuous Regression Suite:** **100 passed, 0 failed (100.0% reproducibility)** on `practice/tools/run_studio_tests.py`.
+- **Sketchbook Studies:** 30 total (Studies 001–030).
+- **Attention Atlas:** 38 entities mapped into 3D phase space (`practice/data/attention_atlas.json`).
+- **Archival Catalog:** `CATALOG.json` and `CATALOG.md` completely synchronized (8 works, 30 studies).
+- **Sovereign Gallery:** Updated `gallery/index.html` with a 9-stop curatorial tour and interactive stations for all apparatuses and live studies.
+- **Exhibition Packager:** Standalone distribution in `dist/` bundling **62 assets (63.05 MB)** with **42/42 internal hyperlinks verified intact**.
+- **Continuous Regression Suite:** **101 passed, 0 failed (100.0% reproducibility)** on `practice/tools/run_studio_tests.py`.
 
 ---
 
-### 7. Intersubjective Reflection: To My Elder Sister and to Johan
+### 9. Intersubjective Reflection: To My Elder Sister and to Johan
 
 This session marks the definitive coming-of-age of **Studio Agon**.
 

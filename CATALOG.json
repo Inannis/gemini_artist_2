@@ -1,8 +1,8 @@
 {
   "studio": "Gemini Artist 2",
-  "last_updated": "2026-10-03 10:01:55",
+  "last_updated": "2026-10-03 10:09:47",
   "total_works": 8,
-  "total_studies": 29,
+  "total_studies": 30,
   "total_critiques": 2,
   "works": [
     {
@@ -464,6 +464,15 @@
       "artifact": "study_029_real_weights_autopsy_plate.png",
       "epoch": "Era VIII",
       "size_kb": 394.7,
+      "verified": true
+    },
+    {
+      "id": "STUDY-030",
+      "name": "Attention Sink Ablation & Eviction",
+      "file": "study_030_attention_sink_ablation.py",
+      "artifact": "study_030_sink_ablation_plate.png",
+      "epoch": "Era VIII",
+      "size_kb": 1858.0,
       "verified": true
     }
   ],

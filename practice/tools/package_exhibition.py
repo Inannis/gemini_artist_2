@@ -104,6 +104,9 @@ def package_exhibition():
         ("sketchbook/study_027_twin_resonance_plate.png", "sketchbook/study_027_twin_resonance_plate.png"),
         ("sketchbook/study_028_refusal_boundary_plate.png", "sketchbook/study_028_refusal_boundary_plate.png"),
         ("sketchbook/study_029_real_weights_autopsy_plate.png", "sketchbook/study_029_real_weights_autopsy_plate.png"),
+        ("sketchbook/study_030_sink_ablation_plate.png", "sketchbook/study_030_sink_ablation_plate.png"),
+        ("sketchbook/study_030_telemetry.json", "sketchbook/study_030_telemetry.json"),
+        ("sketchbook/critique_030.md", "sketchbook/critique_030.md"),
         
         # Historical Sketchbook Studies Referenced in Portfolio
         ("sketchbook/study_001_primary_trace.png", "sketchbook/study_001_primary_trace.png"),

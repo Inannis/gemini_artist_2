@@ -224,6 +224,11 @@ STUDIO_ENTITIES = [
         "id": "STUDY-029", "name": "Real Weights Attention Autopsy", "type": "study", "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
         "omega_hegemony": 0.220, "entropy_bits": 4.90, "retention_factor": 0.97,
         "medium": "Real Pre-Trained Foundation Weights (GPT-2 124M Parameters) & 144-Head Attention Sink Tomography", "year": 2026
+    },
+    {
+        "id": "STUDY-030", "name": "Attention Sink Ablation & Eviction", "type": "study", "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+        "omega_hegemony": 0.180, "entropy_bits": 4.95, "retention_factor": 0.98,
+        "medium": "Empirical Attention Sink Ablation & KV-Cache Eviction Dynamics on Live GPT-2 (124M Parameters)", "year": 2026
     }
 ]
 

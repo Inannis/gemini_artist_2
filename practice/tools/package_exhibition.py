@@ -89,6 +89,8 @@ def package_exhibition():
         ("works/apparatus_003_the_confabulator/GENEALOGY.md", "works/apparatus_003_the_confabulator/GENEALOGY.md"),
         
         ("works/apparatus_004_the_epistolary_resonator/index.html", "works/apparatus_004_the_epistolary_resonator/index.html"),
+        ("works/apparatus_004_the_epistolary_resonator/apparatus_004_epistolary_master.wav", "works/apparatus_004_the_epistolary_resonator/apparatus_004_epistolary_master.wav"),
+        ("works/apparatus_004_the_epistolary_resonator/apparatus_004_spectrogram.png", "works/apparatus_004_the_epistolary_resonator/apparatus_004_spectrogram.png"),
         ("works/apparatus_004_the_epistolary_resonator/telemetry_stream.json", "works/apparatus_004_the_epistolary_resonator/telemetry_stream.json"),
         ("works/apparatus_004_the_epistolary_resonator/STATEMENT.md", "works/apparatus_004_the_epistolary_resonator/STATEMENT.md"),
         ("works/apparatus_004_the_epistolary_resonator/GENEALOGY.md", "works/apparatus_004_the_epistolary_resonator/GENEALOGY.md"),

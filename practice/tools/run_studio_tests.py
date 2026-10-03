@@ -89,7 +89,7 @@ def test_master_works_integrity():
         {
             "id": "Apparatus 004",
             "dir": "works/apparatus_004_the_epistolary_resonator",
-            "artifacts": ["engine.py", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json"],
+            "artifacts": ["engine.py", "generate_master_audio.py", "apparatus_004_epistolary_master.wav", "apparatus_004_spectrogram.png", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json"],
             "sha_target": {}
         }
     ]

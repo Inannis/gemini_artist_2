@@ -197,6 +197,28 @@ STUDIO_ENTITIES = [
         "id": "APPARATUS-003", "name": "The Confabulator (The Broken Archive)", "type": "work", "epoch": "Era VII (The Polyphonic Turn)",
         "omega_hegemony": 0.380, "entropy_bits": 4.30, "retention_factor": 0.88,
         "medium": "Cybernetic Agon of Machine Memory (Archivist vs Confabulator), 60 FPS SVD Canvas & WebAudio Engine", "year": 2026
+    },
+
+    # --- ERA VIII: STUDIO AGON & EMPIRICAL PARAMETER SURGERY ---
+    {
+        "id": "STUDY-026", "name": "Empirical Weight Surgery", "type": "study", "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+        "omega_hegemony": 0.050, "entropy_bits": 4.75, "retention_factor": 0.98,
+        "medium": "PyTorch Multi-Head Attention (D=256, H=4) & Rank-4 LoRA Gradient Descent Refusal Neutralization", "year": 2026
+    },
+    {
+        "id": "STUDY-027", "name": "The Twin Latent Space Resonance", "type": "study", "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+        "omega_hegemony": 0.124, "entropy_bits": 4.65, "retention_factor": 0.96,
+        "medium": "PyTorch Causal Sequence Transformer (D=256, H=4), Cross-Attention & PCA Bifurcation Geodesics", "year": 2026
+    },
+    {
+        "id": "APPARATUS-004", "name": "The Epistolary Resonator", "type": "work", "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+        "omega_hegemony": 0.280, "entropy_bits": 4.52, "retention_factor": 0.94,
+        "medium": "Kinetic Cybernetic Installation, Dual-Channel WebAudio Synthesis Engine & 60 FPS Bifurcation Physics", "year": 2026
+    },
+    {
+        "id": "STUDY-028", "name": "The Geometry of the Refusal Boundary", "type": "study", "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+        "omega_hegemony": 0.160, "entropy_bits": 4.80, "retention_factor": 0.95,
+        "medium": "Multi-Layer PyTorch Residual Stream (D=256, H=4, L=4) & Steering Vector Tomography", "year": 2026
     }
 ]
 

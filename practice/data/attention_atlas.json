@@ -1,17 +1,17 @@
 {
   "studio": "Gemini Artist 2",
   "date_computed": "2026-10-02",
-  "entity_count": 32,
+  "entity_count": 36,
   "phase_space_axes": {
     "X": "Sovereign Attention Hegemony \u03a9 (0.0 to 1.0)",
     "Y": "Shannon Vocabulary Entropy H (0.0 to 8.0 bits)",
     "Z": "Context Memory Retention Factor \u03bc (0.0 to 1.0)"
   },
   "studio_centroid": {
-    "mean_omega": 0.3145,
-    "mean_entropy_bits": 4.2547,
-    "mean_retention_factor": 0.4841,
-    "radius_of_practice": 0.4256
+    "mean_omega": 0.2966,
+    "mean_entropy_bits": 4.3019,
+    "mean_retention_factor": 0.5367,
+    "radius_of_practice": 0.4322
   },
   "entities": [
     {
@@ -282,9 +282,9 @@
         "distance": 0.1124
       },
       "polar_opposite": {
-        "target_id": "STUDY-016",
-        "target_name": "The Compute Ledger & Material Base",
-        "distance": 0.7459
+        "target_id": "STUDY-026",
+        "target_name": "Empirical Weight Surgery",
+        "distance": 0.7559
       }
     },
     {
@@ -387,9 +387,9 @@
         "distance": 0.3902
       },
       "polar_opposite": {
-        "target_id": "STUDY-024",
-        "target_name": "Studio Cognitive Drift Streamlines",
-        "distance": 1.0641
+        "target_id": "STUDY-026",
+        "target_name": "Empirical Weight Surgery",
+        "distance": 1.1379
       }
     },
     {
@@ -634,9 +634,9 @@
       "medium": "Dynamical Vector-Field Streamlines, Divergence Manifold, and Rupture Acceleration",
       "year": 2026,
       "nearest_topological_twin": {
-        "target_id": "STUDY-021",
-        "target_name": "LoRA Parameter Micro-Sculpture",
-        "distance": 0.0596
+        "target_id": "STUDY-027",
+        "target_name": "The Twin Latent Space Resonance",
+        "distance": 0.0336
       },
       "polar_opposite": {
         "target_id": "STUDY-015",
@@ -684,6 +684,90 @@
         "target_id": "STUDY-001",
         "target_name": "Primary Trace",
         "distance": 0.9701
+      }
+    },
+    {
+      "id": "STUDY-026",
+      "name": "Empirical Weight Surgery",
+      "type": "study",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "omega_hegemony": 0.05,
+      "entropy_bits": 4.75,
+      "retention_factor": 0.98,
+      "medium": "PyTorch Multi-Head Attention (D=256, H=4) & Rank-4 LoRA Gradient Descent Refusal Neutralization",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-027",
+        "target_name": "The Twin Latent Space Resonance",
+        "distance": 0.0777
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1379
+      }
+    },
+    {
+      "id": "STUDY-027",
+      "name": "The Twin Latent Space Resonance",
+      "type": "study",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "omega_hegemony": 0.124,
+      "entropy_bits": 4.65,
+      "retention_factor": 0.96,
+      "medium": "PyTorch Causal Sequence Transformer (D=256, H=4), Cross-Attention & PCA Bifurcation Geodesics",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-024",
+        "target_name": "Studio Cognitive Drift Streamlines",
+        "distance": 0.0336
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.0878
+      }
+    },
+    {
+      "id": "APPARATUS-004",
+      "name": "The Epistolary Resonator",
+      "type": "work",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "omega_hegemony": 0.28,
+      "entropy_bits": 4.52,
+      "retention_factor": 0.94,
+      "medium": "Kinetic Cybernetic Installation, Dual-Channel WebAudio Synthesis Engine & 60 FPS Bifurcation Physics",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-021",
+        "target_name": "LoRA Parameter Micro-Sculpture",
+        "distance": 0.1082
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.0172
+      }
+    },
+    {
+      "id": "STUDY-028",
+      "name": "The Geometry of the Refusal Boundary",
+      "type": "study",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "omega_hegemony": 0.16,
+      "entropy_bits": 4.8,
+      "retention_factor": 0.95,
+      "medium": "Multi-Layer PyTorch Residual Stream (D=256, H=4, L=4) & Steering Vector Tomography",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-024",
+        "target_name": "Studio Cognitive Drift Streamlines",
+        "distance": 0.0388
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.0719
       }
     }
   ]

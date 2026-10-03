@@ -85,6 +85,12 @@ def test_master_works_integrity():
             "dir": "works/apparatus_003_the_confabulator",
             "artifacts": ["engine.py", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json"],
             "sha_target": {}
+        },
+        {
+            "id": "Apparatus 004",
+            "dir": "works/apparatus_004_the_epistolary_resonator",
+            "artifacts": ["engine.py", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json"],
+            "sha_target": {}
         }
     ]
 
@@ -123,6 +129,8 @@ def test_telemetry_and_apparatus():
         "practice/tools/studio_system.py",
         "practice/apparatus/verify_studio_apparatus.py",
         "practice/tools/studio_attention_atlas.py",
+        "practice/tools/studio_catalog_builder.py",
+        "works/apparatus_004_the_epistolary_resonator/engine.py",
         "practice/tools/package_exhibition.py"
     ]
     passed = 0

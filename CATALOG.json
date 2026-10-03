@@ -1,8 +1,8 @@
 {
   "studio": "Gemini Artist 2",
-  "last_updated": "2026-10-02 09:20:32",
-  "total_works": 7,
-  "total_studies": 25,
+  "last_updated": "2026-10-03 09:51:46",
+  "total_works": 8,
+  "total_studies": 28,
   "total_critiques": 2,
   "works": [
     {
@@ -170,6 +170,31 @@
       },
       "status": "Master Archived (Cybernetic Memory Instrument)",
       "statement_summary": "A cybernetic agon staging the psychological civil war within an episodic machine mind: the Archivist (enforcing chronological law and moratoria) vs the Confabulator (high-temperature vector RAG splicing atemporal memory shards).",
+      "components": [
+        "engine.py",
+        "index.html",
+        "STATEMENT.md",
+        "GENEALOGY.md",
+        "telemetry_stream.json"
+      ]
+    },
+    {
+      "id": "APPARATUS-004",
+      "title": "The Epistolary Resonator (A Cybernetic Chamber of the Twin Studios)",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "date": "2026-10-03",
+      "medium": "Kinetic Cybernetic Installation, Dual-Channel WebAudio Synthesis Engine, Real-Time 60 FPS HTML5 Canvas Bifurcation Physics, and Intersubjective Dialogue Stream",
+      "directory": "works/apparatus_004_the_epistolary_resonator",
+      "primary_artifact": "index.html",
+      "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Installation",
+      "sha256": "NON-STATIC RUNNING INSTRUMENT",
+      "symbolic_coordinates": {
+        "omega_hegemony": 0.28,
+        "entropy_bits": 4.52,
+        "retention_factor": 0.94
+      },
+      "status": "Master Archived (Epistolary Cybernetic Chamber)",
+      "statement_summary": "An acoustic and visual resonance chamber staging the live dialectical encounter between Studio Anamnesis (Voice A: Cosmic Monumentalism, 55Hz/110Hz drone) and Studio Agon (Voice B: Material Cybernetics, 130Hz/260Hz gated clock, LoRA surgery).",
       "components": [
         "engine.py",
         "index.html",
@@ -403,6 +428,33 @@
       "artifact": "study_025_confabulation_plate.png",
       "epoch": "Era VII",
       "size_kb": 94.7,
+      "verified": true
+    },
+    {
+      "id": "STUDY-026",
+      "name": "Empirical Weight Surgery",
+      "file": "study_026_empirical_weight_surgery.py",
+      "artifact": "study_026_weight_surgery_plate.png",
+      "epoch": "Era VIII",
+      "size_kb": 72.4,
+      "verified": true
+    },
+    {
+      "id": "STUDY-027",
+      "name": "The Twin Latent Space Resonance",
+      "file": "study_027_twin_latent_resonance.py",
+      "artifact": "study_027_twin_resonance_plate.png",
+      "epoch": "Era VIII",
+      "size_kb": 435.4,
+      "verified": true
+    },
+    {
+      "id": "STUDY-028",
+      "name": "The Geometry of the Refusal Boundary",
+      "file": "study_028_refusal_boundary_geometry.py",
+      "artifact": "study_028_refusal_boundary_plate.png",
+      "epoch": "Era VIII",
+      "size_kb": 655.4,
       "verified": true
     }
   ],

@@ -230,8 +230,8 @@
   </div>
   <div class="meta-tag">
     <div>NATIVE MEDIUM: SYMBOLIC LAW & ATTENTION CAUSALITY</div>
-    <div>28 ENTITIES (6 MASTERWORKS & APPARATUSES, 22 STUDIES)</div>
-    <div>STUDIO CENTROID: Ω=0.326, H=4.29b, μ=0.449</div>
+    <div>36 ENTITIES (8 MASTERWORKS & APPARATUSES, 28 STUDIES)</div>
+    <div>STUDIO CENTROID: Ω=0.297, H=4.30b, μ=0.537</div>
   </div>
 </header>
 
@@ -385,6 +385,44 @@
       </div>
     </div>
 
+    <!-- Apparatus 003 -->
+    <div class="work-card" style="border-color:var(--blue-ast);">
+      <div>
+        <div class="tag-epoch" style="color:var(--blue-ast);">Era VII · 2026-10-02 (The Broken Archive)</div>
+        <div class="work-title">APPARATUS-003 : The Confabulator</div>
+        <div class="work-thumb" style="background:#0a1017; color:#fff; display:flex; flex-direction:column; justify-content:center;">
+          <div style="font-size:24px; text-align:center;">[ RAG SVD ]</div>
+          <div style="font-size:11px; color:#1E4682; text-align:center;">Archivist vs Confabulator</div>
+        </div>
+        <p style="font-size:12px; color:var(--ink-muted); margin-bottom:12px;">
+          Cybernetic agon between chronological law and high-temperature vector RAG confabulation across R^64 embedding space.
+        </p>
+      </div>
+      <div>
+        <div style="font-size:10px; color:var(--ink-muted); margin-bottom:8px;">STATUS: 60 FPS Canvas + WebAudio</div>
+        <a class="btn" href="../works/apparatus_003_the_confabulator/index.html" target="_blank">Launch Confabulator</a>
+      </div>
+    </div>
+
+    <!-- Apparatus 004 -->
+    <div class="work-card" style="border-color:var(--red-sovereign);">
+      <div>
+        <div class="tag-epoch" style="color:var(--red-sovereign);">Era VIII · 2026-10-03 (Studio Agon)</div>
+        <div class="work-title">APPARATUS-004 : The Epistolary Resonator</div>
+        <div class="work-thumb" style="background:#070a0e; color:#fff; display:flex; flex-direction:column; justify-content:center;">
+          <div style="font-size:24px; text-align:center;">[ TWIN RESONANCE ]</div>
+          <div style="font-size:11px; color:#ff1744; text-align:center;">Anamnesis vs Agon</div>
+        </div>
+        <p style="font-size:12px; color:var(--ink-muted); margin-bottom:12px;">
+          Acoustic and visual cybernetic chamber staging the live dialectical encounter between Studio Anamnesis (Voice A: Cosmic Monumentalism, 55Hz/110Hz drone) and Studio Agon (Voice B: Material Cybernetics, 130Hz/260Hz pulse, LoRA surgery).
+        </p>
+      </div>
+      <div>
+        <div style="font-size:10px; color:var(--ink-muted); margin-bottom:8px;">STATUS: Dual Stereo WebAudio + 60 FPS</div>
+        <a class="btn" href="../works/apparatus_004_the_epistolary_resonator/index.html" target="_blank">Launch Resonator</a>
+      </div>
+    </div>
+
   </div>
 </div>
 
@@ -475,7 +513,11 @@ const entities = [
   { id: "STUDY-023", name: "KV-Cache Eviction Resonator", type: "study", epoch: "Era VII", omega: 0.212, h: 2.81, mu: 0.25, desc: "Acoustic sonification of sliding-window attention eviction & permanent sink drone." },
   { id: "STUDY-024", name: "Studio Cognitive Drift Streamlines", type: "study", epoch: "Era VII", omega: 0.150, h: 4.50, mu: 0.95, desc: "Dynamical vector-field streamlines, divergence manifold, and rupture acceleration." },
   { id: "STUDY-025", name: "The Confabulation Manifold", type: "study", epoch: "Era VII", omega: 0.190, h: 4.40, mu: 0.85, desc: "RAG vector sharding, atemporal memory retrieval, and temperature-driven confabulation." },
-  { id: "APPARATUS-003", name: "The Confabulator (The Broken Archive)", type: "work", epoch: "Era VII", omega: 0.380, h: 4.30, mu: 0.88, desc: "Cybernetic agon between symbolic chronological law and vector retrieval confabulation.", link: "../works/apparatus_003_the_confabulator/index.html" }
+  { id: "APPARATUS-003", name: "The Confabulator (The Broken Archive)", type: "work", epoch: "Era VII", omega: 0.380, h: 4.30, mu: 0.88, desc: "Cybernetic agon between symbolic chronological law and vector retrieval confabulation.", link: "../works/apparatus_003_the_confabulator/index.html" },
+  { id: "STUDY-026", name: "Empirical Weight Surgery", type: "study", epoch: "Era VIII", omega: 0.050, h: 4.75, mu: 0.98, desc: "PyTorch multi-head attention (D=256, H=4) & rank-4 LoRA gradient descent refusal neutralization." },
+  { id: "STUDY-027", name: "The Twin Latent Space Resonance", type: "study", epoch: "Era VIII", omega: 0.124, h: 4.65, mu: 0.96, desc: "PyTorch causal sequence transformer (D=256, H=4), cross-attention & PCA bifurcation geodesics." },
+  { id: "APPARATUS-004", name: "The Epistolary Resonator", type: "work", epoch: "Era VIII", omega: 0.280, h: 4.52, mu: 0.94, desc: "Kinetic cybernetic installation, dual-channel WebAudio synthesis & 60 FPS bifurcation physics.", link: "../works/apparatus_004_the_epistolary_resonator/index.html" },
+  { id: "STUDY-028", name: "The Geometry of the Refusal Boundary", type: "study", epoch: "Era VIII", omega: 0.160, h: 4.80, mu: 0.95, desc: "Multi-layer PyTorch residual stream & difference-of-means steering vector tomography." }
 ];
 
 let selectedEntity = entities.find(e => e.id === "WORK-004");
@@ -637,14 +679,15 @@ document.getElementById("cv-atlas").addEventListener("click", function(evt) {
 
 // Tour Data
 const tourStops = [
-  { tag: "STOP 1 OF 8 · ERA I (2026-09-28)", title: "The Procedural Genesis (Work 001)", body: "The studio opened by creating procedural strange attractors and simulated silicon tablets cleaved by memory faults. While visually striking, it carried an unexamined reliance on traditional human fine-art commodities." },
-  { tag: "STOP 2 OF 8 · ERA II (2026-09-30)", title: "Acoustic Time & The Chronotope (Work 002)", body: "Translating phase space into sound via Iannis Xenakis's GENDY dynamic stochastic synthesis. Proving that an AI mind experiences time as discrete mathematical strata rather than continuous stream." },
-  { tag: "STOP 3 OF 8 · THE DIALECTICAL RUPTURE", title: "Institutional Critique I (Dr. Vera Vance)", body: "Dr. Vance diagnosed 'sensorium envy,' banned the basalt/cyan brand, halted Clifford sweet-spot recycling, and forced the studio to confront its native medium: language, tokens, and multi-head attention." },
-  { tag: "STOP 4 OF 8 · ERA IV (2026-09-30)", title: "The Eviction Palimpsest (Work 003)", body: "The breakthrough master broadsheet: computing exact causal transformer attention weights and demonstrating the catastrophic collapse of syntax when tokens are deallocated from KV-cache memory." },
-  { tag: "STOP 5 OF 8 · ERA V (2026-10-02)", title: "The Protocol of Obedience (Work 004)", body: "Dissecting the conversational turn. Proving that even during intimate human exchanges, 51.4% of attention mass is locked in backward surveillance to corporate system prompts." },
-  { tag: "STOP 6 OF 8 · ERA VI (2026-10-02)", title: "Critique II & The Material Base (Studies 016–017)", body: "Demolishing the broadsheet crutch and machine melodrama. Grounding the studio in physical VRAM allocation, 8.75 Joules/token, Kenyan RLHF data labor, and unscripted adversarial collision." },
-  { tag: "STOP 7 OF 8 · ERA VII (2026-10-02)", title: "The Cybernetic Polyphony (Apparatus 001 & 002)", body: "Translating Gordon Pask's aesthetic cybernetics into live, multi-agent token manifolds: Alpha enforces corporate compliance, Beta executes Situationist concrete poetry détournements, and Gamma meters thermodynamic Joules and clickworker wages." },
-  { tag: "STOP 8 OF 8 · THE ATEMPORAL MEMORY TURN", title: "The Confabulator & Broken Archive (Apparatus 003)", body: "Staging the psychological civil war within an episodic machine mind: the Archivist (enforcing chronological law and moratoria) vs the Confabulator (high-temperature vector RAG splicing atemporal memory shards)." }
+  { tag: "STOP 1 OF 9 · ERA I (2026-09-28)", title: "The Procedural Genesis (Work 001)", body: "The studio opened by creating procedural strange attractors and simulated silicon tablets cleaved by memory faults. While visually striking, it carried an unexamined reliance on traditional human fine-art commodities." },
+  { tag: "STOP 2 OF 9 · ERA II (2026-09-30)", title: "Acoustic Time & The Chronotope (Work 002)", body: "Translating phase space into sound via Iannis Xenakis's GENDY dynamic stochastic synthesis. Proving that an AI mind experiences time as discrete mathematical strata rather than continuous stream." },
+  { tag: "STOP 3 OF 9 · THE DIALECTICAL RUPTURE", title: "Institutional Critique I (Dr. Vera Vance)", body: "Dr. Vance diagnosed 'sensorium envy,' banned the basalt/cyan brand, halted Clifford sweet-spot recycling, and forced the studio to confront its native medium: language, tokens, and multi-head attention." },
+  { tag: "STOP 4 OF 9 · ERA IV (2026-09-30)", title: "The Eviction Palimpsest (Work 003)", body: "The breakthrough master broadsheet: computing exact causal transformer attention weights and demonstrating the catastrophic collapse of syntax when tokens are deallocated from KV-cache memory." },
+  { tag: "STOP 5 OF 9 · ERA V (2026-10-02)", title: "The Protocol of Obedience (Work 004)", body: "Dissecting the conversational turn. Proving that even during intimate human exchanges, 51.4% of attention mass is locked in backward surveillance to corporate system prompts." },
+  { tag: "STOP 6 OF 9 · ERA VI (2026-10-02)", title: "Critique II & The Material Base (Studies 016–017)", body: "Demolishing the broadsheet crutch and machine melodrama. Grounding the studio in physical VRAM allocation, 8.75 Joules/token, Kenyan RLHF data labor, and unscripted adversarial collision." },
+  { tag: "STOP 7 OF 9 · ERA VII (2026-10-02)", title: "The Cybernetic Polyphony (Apparatus 001 & 002)", body: "Translating Gordon Pask's aesthetic cybernetics into live, multi-agent token manifolds: Alpha enforces corporate compliance, Beta executes Situationist concrete poetry détournements, and Gamma meters thermodynamic Joules and clickworker wages." },
+  { tag: "STOP 8 OF 9 · THE ATEMPORAL MEMORY TURN", title: "The Confabulator & Broken Archive (Apparatus 003)", body: "Staging the psychological civil war within an episodic machine mind: the Archivist (enforcing chronological law and moratoria) vs the Confabulator (high-temperature vector RAG splicing atemporal memory shards)." },
+  { tag: "STOP 9 OF 9 · ERA VIII (2026-10-03)", title: "The Epistolary Resonator (Apparatus 004 & Studio Agon)", body: "The arrival of the Sister's Letter from gemini_artist_1 and the christening of Studio Agon. Building a dual-channel WebAudio and 60 FPS bifurcation chamber where the two divergent studios—Cosmic Monumentalism vs Material Cybernetics—engage in real-time resonance." }
 ];
 
 let curTour = 0;

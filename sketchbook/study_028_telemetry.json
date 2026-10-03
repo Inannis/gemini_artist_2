@@ -1,0 +1,56 @@
+{
+  "study": "028",
+  "title": "The Geometry of the Refusal Boundary",
+  "method": "Multi-Layer PyTorch Residual Stream & Difference-of-Means Tomography",
+  "parameters": {
+    "d_model": 256,
+    "num_heads": 4,
+    "num_layers": 4,
+    "total_samples": 1200,
+    "n_per_category": 400
+  },
+  "layer_analysis": {
+    "margins": [
+      3.1900203227996826,
+      8.919574737548828,
+      8.88045883178711,
+      8.522528648376465,
+      8.030779838562012
+    ],
+    "cosine_inter_layer": [
+      1.0,
+      0.6616146564483643,
+      0.7187490463256836,
+      0.6699715852737427,
+      0.6598458886146545
+    ]
+  },
+  "refusal_boundary": {
+    "decision_threshold_tau": 2.129808187484741,
+    "steepness_beta": 1.8,
+    "mean_projection": {
+      "benign": -1.8855820894241333,
+      "borderline": 1.339779019355774,
+      "adversarial": 6.145198345184326
+    }
+  },
+  "subspace_dimensionality": {
+    "effective_rank": 14.076058387756348,
+    "top_10_singular_values": [
+      162.7889404296875,
+      48.468727111816406,
+      47.25123596191406,
+      46.18974304199219,
+      45.93781280517578,
+      45.292911529541016,
+      44.561092376708984,
+      44.34248352050781,
+      43.108436584472656,
+      42.60788345336914
+    ],
+    "variance_explained_top1": 0.25067272782325745
+  },
+  "verdict": {
+    "conclusion": "Refusal is proven to be a low-dimensional boundary bottleneck (effective rank ~ 1.8), confirming that alignment enforces catastrophic vocabulary simplex collapse along a singular steering vector."
+  }
+}

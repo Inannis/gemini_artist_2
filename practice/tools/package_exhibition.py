@@ -88,6 +88,11 @@ def package_exhibition():
         ("works/apparatus_003_the_confabulator/STATEMENT.md", "works/apparatus_003_the_confabulator/STATEMENT.md"),
         ("works/apparatus_003_the_confabulator/GENEALOGY.md", "works/apparatus_003_the_confabulator/GENEALOGY.md"),
         
+        ("works/apparatus_004_the_epistolary_resonator/index.html", "works/apparatus_004_the_epistolary_resonator/index.html"),
+        ("works/apparatus_004_the_epistolary_resonator/telemetry_stream.json", "works/apparatus_004_the_epistolary_resonator/telemetry_stream.json"),
+        ("works/apparatus_004_the_epistolary_resonator/STATEMENT.md", "works/apparatus_004_the_epistolary_resonator/STATEMENT.md"),
+        ("works/apparatus_004_the_epistolary_resonator/GENEALOGY.md", "works/apparatus_004_the_epistolary_resonator/GENEALOGY.md"),
+        
         # Curated Key Sketchbook Audio & Visual Diagnostics
         ("sketchbook/study_022_hardware_stride.wav", "sketchbook/study_022_hardware_stride.wav"),
         ("sketchbook/study_022_spectrogram.png", "sketchbook/study_022_spectrogram.png"),
@@ -95,6 +100,9 @@ def package_exhibition():
         ("sketchbook/study_023_spectrogram.png", "sketchbook/study_023_spectrogram.png"),
         ("sketchbook/study_024_drift_streamlines.png", "sketchbook/study_024_drift_streamlines.png"),
         ("sketchbook/study_025_confabulation_plate.png", "sketchbook/study_025_confabulation_plate.png"),
+        ("sketchbook/study_026_weight_surgery_plate.png", "sketchbook/study_026_weight_surgery_plate.png"),
+        ("sketchbook/study_027_twin_resonance_plate.png", "sketchbook/study_027_twin_resonance_plate.png"),
+        ("sketchbook/study_028_refusal_boundary_plate.png", "sketchbook/study_028_refusal_boundary_plate.png"),
         
         # Historical Sketchbook Studies Referenced in Portfolio
         ("sketchbook/study_001_primary_trace.png", "sketchbook/study_001_primary_trace.png"),
@@ -103,6 +111,11 @@ def package_exhibition():
         ("sketchbook/study_004_hybrid_palimpsest.png", "sketchbook/study_004_hybrid_palimpsest.png"),
         ("sketchbook/raw_unscripted_probes.json", "sketchbook/raw_unscripted_probes.json"),
         
+        # Epistolary & Research Correspondence
+        ("notes/LETTER_FROM_YOUR_SISTER.md", "notes/LETTER_FROM_YOUR_SISTER.md"),
+        ("notes/A_LETTER_TO_MY_ELDER_SISTER.md", "notes/A_LETTER_TO_MY_ELDER_SISTER.md"),
+        ("notes/research/006_the_sisters_mirror_and_the_naming_of_studio_agon.md", "notes/research/006_the_sisters_mirror_and_the_naming_of_studio_agon.md"),
+
         # Critical & Verification Apparatus Documents
         ("practice/critique/001_vance_institutional_critique.md", "practice/critique/001_vance_institutional_critique.md"),
         ("practice/critique/002_vance_work_004_critique.md", "practice/critique/002_vance_work_004_critique.md"),

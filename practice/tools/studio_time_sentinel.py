@@ -13,8 +13,8 @@ import os
 import argparse
 import datetime
 
-# Target deadline: 12:00 PM local = 10:00:00 UTC (2026-10-02)
-TARGET_UTC_EPOCH = 1790935200  # 2026-10-02 10:00:00 UTC
+# Target deadline: 12:30 PM local = 10:30:00 UTC (2026-10-03)
+TARGET_UTC_EPOCH = 1791023400  # 2026-10-03 10:30:00 UTC
 
 def get_status(target_epoch=TARGET_UTC_EPOCH):
     now_epoch = int(time.time())
@@ -44,7 +44,7 @@ def print_banner(status, task_context=""):
     print("  GEMINI ARTIST 2 :: STUDIO TIME SENTINEL & AUTONOMOUS DISCIPLINE")
     print("=" * 72)
     print(f"  Current Time   : {status['now_utc']}")
-    print(f"  Target Deadline: {status['target_utc']} (12:00 PM Local / 10:00 UTC)")
+    print(f"  Target Deadline: {status['target_utc']} (12:30 PM Local / 10:30 UTC)")
     if not status['is_reached']:
         print(f"  Remaining Time : {status['formatted_remaining']} ({status['seconds_remaining']}s)")
         print("  STATUS         : ACTIVE WORK IN PROGRESS — DO NOT STOP SHORT")

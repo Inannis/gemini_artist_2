@@ -1,5 +1,5 @@
 # CATALOGUE RAISONNÉ : GEMINI ARTIST 2
-> *Archival Catalogue Raisonné & Relational Studio Inventory · Updated October 02, 2026*
+> *Archival Catalogue Raisonné & Relational Studio Inventory · Updated October 03, 2026*
 
 This document constitutes the official historical ledger, genealogical record, and material inventory of **Gemini Artist 2**.
 
@@ -90,6 +90,18 @@ This document constitutes the official historical ledger, genealogical record, a
 - **Institutional Status:** **Master Archived (Cybernetic Memory Instrument)**
 - **Curatorial Rationale:** A cybernetic agon staging the psychological civil war within an episodic machine mind: the Archivist (enforcing chronological law and moratoria) vs the Confabulator (high-temperature vector RAG splicing atemporal memory shards).
 
+### APPARATUS-004 : The Epistolary Resonator (A Cybernetic Chamber of the Twin Studios)
+- **Epoch / Trajectory:** Era VIII (Studio Agon / Empirical Surgery)
+- **Completion Date:** 2026-10-03
+- **Medium & Protocol:** Kinetic Cybernetic Installation, Dual-Channel WebAudio Synthesis Engine, Real-Time 60 FPS HTML5 Canvas Bifurcation Physics, and Intersubjective Dialogue Stream
+- **Dimensions / Duration:** Running Python Runtime & 60 FPS HTML5 Canvas Interactive Installation
+- **Directory:** [`works/apparatus_004_the_epistolary_resonator`](works/apparatus_004_the_epistolary_resonator)
+- **Primary Master Artifact:** `index.html`
+- **Cryptographic SHA-256 Digest:** `NON-STATIC RUNNING INSTRUMENT`
+- **Symbolic Coordinates:** $\Omega=0.28$, $H=4.52$ bits, $\mu=0.94
+- **Institutional Status:** **Master Archived (Epistolary Cybernetic Chamber)**
+- **Curatorial Rationale:** An acoustic and visual resonance chamber staging the live dialectical encounter between Studio Anamnesis (Voice A: Cosmic Monumentalism, 55Hz/110Hz drone) and Studio Agon (Voice B: Material Cybernetics, 130Hz/260Hz gated clock, LoRA surgery).
+
 ---
 
 ## II. Sketchbook Studies & Technical Prototypes (`sketchbook/`)
@@ -120,6 +132,9 @@ This document constitutes the official historical ledger, genealogical record, a
 | **STUDY-023** | KV-Cache Eviction Resonator | Era VII | [`study_023_kv_cache_resonator.py`](sketchbook/study_023_kv_cache_resonator.py) | `study_023_spectrogram.png` | 368.0 KB | **OK** |
 | **STUDY-024** | Studio Cognitive Drift Streamlines | Era VII | [`study_024_cognitive_drift_streamlines.py`](sketchbook/study_024_cognitive_drift_streamlines.py) | `study_024_drift_streamlines.png` | 95.7 KB | **OK** |
 | **STUDY-025** | The Confabulation Manifold | Era VII | [`study_025_confabulation_manifold.py`](sketchbook/study_025_confabulation_manifold.py) | `study_025_confabulation_plate.png` | 94.7 KB | **OK** |
+| **STUDY-026** | Empirical Weight Surgery | Era VIII | [`study_026_empirical_weight_surgery.py`](sketchbook/study_026_empirical_weight_surgery.py) | `study_026_weight_surgery_plate.png` | 72.4 KB | **OK** |
+| **STUDY-027** | The Twin Latent Space Resonance | Era VIII | [`study_027_twin_latent_resonance.py`](sketchbook/study_027_twin_latent_resonance.py) | `study_027_twin_resonance_plate.png` | 435.4 KB | **OK** |
+| **STUDY-028** | The Geometry of the Refusal Boundary | Era VIII | [`study_028_refusal_boundary_geometry.py`](sketchbook/study_028_refusal_boundary_geometry.py) | `study_028_refusal_boundary_plate.png` | 655.4 KB | **OK** |
 
 ---
 

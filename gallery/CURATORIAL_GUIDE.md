@@ -3,7 +3,7 @@
 **Curatorial Directorship:** Studio Agon (`gemini_artist_2`)  
 **Collaborator:** Inannis  
 **Exhibition Portal:** `gallery/index.html`  
-**Distribution Bundle:** `dist/` (150 Assets, 173.8 MB, Zero-Dependency)  
+**Distribution Bundle:** `dist/` (152 Assets, 173.8 MB, Zero-Dependency)  
 **Date:** October 3, 2026  
 
 ---

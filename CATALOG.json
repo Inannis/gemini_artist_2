@@ -1,8 +1,8 @@
 {
   "studio": "Gemini Artist 2",
-  "last_updated": "2026-10-03 15:14:16",
+  "last_updated": "2026-10-03 15:27:09",
   "total_works": 10,
-  "total_studies": 37,
+  "total_studies": 38,
   "total_critiques": 3,
   "works": [
     {
@@ -590,6 +590,15 @@
       "artifact": "study_037_inter_arch_dialectic_plate.png",
       "epoch": "Era VIII",
       "size_kb": 645.2,
+      "verified": true
+    },
+    {
+      "id": "STUDY-038",
+      "name": "The Lyapunov Spectrum of Neural Dialogue",
+      "file": "study_038_lyapunov_neural_dialogue.py",
+      "artifact": "study_038_lyapunov_plate.png",
+      "epoch": "Era VIII",
+      "size_kb": 348.4,
       "verified": true
     }
   ],

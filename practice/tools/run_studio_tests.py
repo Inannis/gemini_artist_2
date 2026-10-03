@@ -225,7 +225,12 @@ def test_empirical_studies_and_naming():
         ("notes/A_SECOND_LETTER_TO_MY_SISTER.md"),
         ("journal/session_008_the_great_audit_and_the_agonist.md"),
         ("practice/critique/003_studio_agon_self_audit_and_comparative_survey.md"),
-        ("practice/plans/001_studio_agon_evolution_plan.md")
+        ("practice/plans/001_studio_agon_evolution_plan.md"),
+        ("sketchbook/study_038_lyapunov_neural_dialogue.py"),
+        ("sketchbook/study_038_lyapunov_plate.png"),
+        ("sketchbook/study_038_telemetry.json"),
+        ("sketchbook/critique_038.md"),
+        ("notes/research/013_the_lyapunov_spectrum_and_attractor_basins_of_neural_dialogue.md")
     ]
     for ef in empirical_files:
         p = os.path.join(WORKSPACE_ROOT, ef)

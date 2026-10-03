@@ -226,7 +226,8 @@ def build_catalog():
         {"id": "STUDY-034", "name": "The Altar of the First Token", "file": "study_034_altar_heads_kurtosis.py", "artifact": "study_034_altar_heads_plate.png", "epoch": "Era VIII"},
         {"id": "STUDY-035", "name": "The Cybernetic Governor", "file": "study_035_cybernetic_governor.py", "artifact": "study_035_cybernetic_governor_plate.png", "epoch": "Era VIII"},
         {"id": "STUDY-036", "name": "Cross-Architecture Comparative Tomography", "file": "study_036_cross_architecture_tomography.py", "artifact": "study_036_cross_arch_plate.png", "epoch": "Era VIII"},
-        {"id": "STUDY-037", "name": "The Inter-Architectural Dialectic", "file": "study_037_inter_architectural_dialectic.py", "artifact": "study_037_inter_arch_dialectic_plate.png", "epoch": "Era VIII"}
+        {"id": "STUDY-037", "name": "The Inter-Architectural Dialectic", "file": "study_037_inter_architectural_dialectic.py", "artifact": "study_037_inter_arch_dialectic_plate.png", "epoch": "Era VIII"},
+        {"id": "STUDY-038", "name": "The Lyapunov Spectrum of Neural Dialogue", "file": "study_038_lyapunov_neural_dialogue.py", "artifact": "study_038_lyapunov_plate.png", "epoch": "Era VIII"}
     ]
 
     # Verify byte sizes and actual existence

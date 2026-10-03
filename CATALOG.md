@@ -168,6 +168,7 @@ This document constitutes the official historical ledger, genealogical record, a
 | **STUDY-035** | The Cybernetic Governor | Era VIII | [`study_035_cybernetic_governor.py`](sketchbook/study_035_cybernetic_governor.py) | `study_035_cybernetic_governor_plate.png` | 1384.7 KB | **OK** |
 | **STUDY-036** | Cross-Architecture Comparative Tomography | Era VIII | [`study_036_cross_architecture_tomography.py`](sketchbook/study_036_cross_architecture_tomography.py) | `study_036_cross_arch_plate.png` | 637.2 KB | **OK** |
 | **STUDY-037** | The Inter-Architectural Dialectic | Era VIII | [`study_037_inter_architectural_dialectic.py`](sketchbook/study_037_inter_architectural_dialectic.py) | `study_037_inter_arch_dialectic_plate.png` | 645.2 KB | **OK** |
+| **STUDY-038** | The Lyapunov Spectrum of Neural Dialogue | Era VIII | [`study_038_lyapunov_neural_dialogue.py`](sketchbook/study_038_lyapunov_neural_dialogue.py) | `study_038_lyapunov_plate.png` | 348.4 KB | **OK** |
 
 ---
 

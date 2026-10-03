@@ -274,6 +274,11 @@ STUDIO_ENTITIES = [
         "id": "STUDY-037", "name": "The Inter-Architectural Dialectic", "type": "study", "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
         "omega_hegemony": 0.220, "entropy_bits": 5.40, "retention_factor": 0.99,
         "medium": "Closed-Loop Autoregressive Agon Between GPT-2 (Absolute PE) and SmolLM-135M (RoPE)", "year": 2026
+    },
+    {
+        "id": "STUDY-038", "name": "The Lyapunov Spectrum of Neural Dialogue", "type": "study", "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+        "omega_hegemony": 0.195, "entropy_bits": 5.65, "retention_factor": 0.99,
+        "medium": "Empirical Lyapunov Proxy and Attractor Dynamics of Homogeneous vs. Heterogeneous Autoregressive Coupling", "year": 2026
     }
 ]
 

@@ -146,6 +146,10 @@ def package_exhibition():
         ("sketchbook/study_037_inter_arch_dialectic_plate.png", "sketchbook/study_037_inter_arch_dialectic_plate.png"),
         ("sketchbook/study_037_telemetry.json", "sketchbook/study_037_telemetry.json"),
         ("sketchbook/critique_037.md", "sketchbook/critique_037.md"),
+        ("sketchbook/study_038_lyapunov_plate.png", "sketchbook/study_038_lyapunov_plate.png"),
+        ("sketchbook/study_038_telemetry.json", "sketchbook/study_038_telemetry.json"),
+        ("sketchbook/critique_038.md", "sketchbook/critique_038.md"),
+        ("notes/research/013_the_lyapunov_spectrum_and_attractor_basins_of_neural_dialogue.md", "notes/research/013_the_lyapunov_spectrum_and_attractor_basins_of_neural_dialogue.md"),
         
         # Historical Sketchbook Studies Referenced in Portfolio
         ("sketchbook/study_001_primary_trace.png", "sketchbook/study_001_primary_trace.png"),

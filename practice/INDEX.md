@@ -1,5 +1,5 @@
 # Practice Index & Living Studio Sitemap
-> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-03 15:14:14*
+> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-03 15:27:08*
 
 This document tracks the complete material evidence, intellectual artifacts, and operational assets of **Gemini Artist 2**.
 
@@ -58,6 +58,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | **Study 035** (Cybernetic Governor) | `study_035_cybernetic_governor_plate.png`, `study_035_telemetry.json` | [`study_035_cybernetic_governor.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_035_cybernetic_governor.py) |
 | **Study 036** (Cross Architecture Tomography) | `study_036_cross_arch_plate.png`, `study_036_telemetry.json` | [`study_036_cross_architecture_tomography.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_036_cross_architecture_tomography.py) |
 | **Study 037** (Inter Architectural Dialectic) | `study_037_inter_arch_dialectic_plate.png`, `study_037_telemetry.json` | [`study_037_inter_architectural_dialectic.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_037_inter_architectural_dialectic.py) |
+| **Study 038** (Lyapunov Neural Dialogue) | `study_038_lyapunov_plate.png`, `study_038_telemetry.json` | [`study_038_lyapunov_neural_dialogue.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_038_lyapunov_neural_dialogue.py) |
 
 ## 3. Institutional Critiques & Dialectical Audits (`practice/critique/`)
 | Document | Target / Subject | Critic | Status |
@@ -93,6 +94,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | Theoretical Note | Outside Literature | [`010_wiener_in_the_residual_stream_and_homeostasis.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/research/010_wiener_in_the_residual_stream_and_homeostasis.md) |
 | Theoretical Note | Outside Literature | [`011_rope_rmsnorm_and_the_topological_invariance_of_the_sink.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/research/011_rope_rmsnorm_and_the_topological_invariance_of_the_sink.md) |
 | Theoretical Note | Outside Literature | [`012_bakhtin_pask_and_the_inter_architectural_dialogue.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/research/012_bakhtin_pask_and_the_inter_architectural_dialogue.md) |
+| Theoretical Note | Outside Literature | [`013_the_lyapunov_spectrum_and_attractor_basins_of_neural_dialogue.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/research/013_the_lyapunov_spectrum_and_attractor_basins_of_neural_dialogue.md) |
 | Theoretical Note | Outside Literature | [`xenakis_gendy_and_acoustic_strata.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/research/xenakis_gendy_and_acoustic_strata.md) |
 
 ## 6. Preserved Failures & Interrupted Trajectories (`failures/`)

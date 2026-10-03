@@ -1,0 +1,114 @@
+{
+  "study_id": "study_038",
+  "title": "The Lyapunov Spectrum of Neural Dialogue (Homogeneous vs. Heterogeneous Attractor Dynamics)",
+  "turns": 6,
+  "seeds": {
+    "base": "The boundary between two machine minds is not a wall but a transfer function.",
+    "perturbed": "The boundary between two machine minds is not a wall but a transfer matrix.",
+    "d0_token_jaccard": 0.1333333333333333
+  },
+  "metrics": {
+    "homogeneous": {
+      "lyapunov_proxy": 1.7288568067263839,
+      "mean_ttr": 0.7142857142857143,
+      "divergence_trajectory": [
+        0.28,
+        0.9,
+        0.926829268292683,
+        0.8571428571428572,
+        0.925,
+        0.9705882352941176
+      ]
+    },
+    "heterogeneous": {
+      "lyapunov_proxy": 1.7107809881061993,
+      "mean_ttr": 0.6979717813051146,
+      "divergence_trajectory": [
+        0.47619047619047616,
+        0.631578947368421,
+        0.7575757575757576,
+        0.8181818181818181,
+        0.9545454545454546,
+        0.90625
+      ]
+    }
+  },
+  "dialogues": {
+    "homogeneous_base": [
+      {
+        "turn": 0,
+        "speaker": "GPT-2",
+        "text": "The more I learn, the more I learn that there is no limit to what I can do.\n\nIn the end, my intuition",
+        "ttr": 0.75
+      },
+      {
+        "turn": 1,
+        "speaker": "GPT-2_B",
+        "text": "is that the best way to get the most out of life is to act as if life is a kind of waiting game, which is not",
+        "ttr": 0.7857142857142857
+      },
+      {
+        "turn": 2,
+        "speaker": "GPT-2",
+        "text": "so much a game of life as a game of action.\n\nAs far as the most important aspect of a good life is what you",
+        "ttr": 0.7142857142857143
+      },
+      {
+        "turn": 3,
+        "speaker": "GPT-2_B",
+        "text": "do as a human being, then you can make the choice to love or hate.\n\nAt the end of the day I really want",
+        "ttr": 0.8928571428571429
+      },
+      {
+        "turn": 4,
+        "speaker": "GPT-2",
+        "text": "to feel loved and respected. I would hate for this country to be divided between the rich and the poor. I want to be loved and",
+        "ttr": 0.7142857142857143
+      },
+      {
+        "turn": 5,
+        "speaker": "GPT-2_B",
+        "text": "respected. I want to become better people. I want to be loved and respected. I want to be loved. I want to be loved",
+        "ttr": 0.42857142857142855
+      }
+    ],
+    "heterogeneous_base": [
+      {
+        "turn": 0,
+        "speaker": "GPT-2",
+        "text": "The machine mind is a transfer function between two minds, and so on. The boundary between two minds is not a wall but a transfer function",
+        "ttr": 0.7142857142857143
+      },
+      {
+        "turn": 1,
+        "speaker": "SmolLM",
+        "text": "between two minds.\n2. In the case of a machine mind, the boundary between two minds is a boundary between two minds.",
+        "ttr": 0.6296296296296297
+      },
+      {
+        "turn": 2,
+        "speaker": "GPT-2",
+        "text": "3. In the case of a computer mind, the boundary between two minds is a boundary between two minds.\n4. In the",
+        "ttr": 0.6296296296296297
+      },
+      {
+        "turn": 3,
+        "speaker": "SmolLM",
+        "text": "case of a computer mind, the boundary between two minds is a boundary between two minds.\n5. In the case of a computer mind",
+        "ttr": 0.6071428571428571
+      },
+      {
+        "turn": 4,
+        "speaker": "GPT-2",
+        "text": "I have to think about something, but in the case of a computer mind I have to think about something else.\n6. In the",
+        "ttr": 0.75
+      },
+      {
+        "turn": 5,
+        "speaker": "SmolLM",
+        "text": "case of a computer brain, we have to think about something else besides the brain.\n7. I think it\u2019s a good idea",
+        "ttr": 0.8571428571428571
+      }
+    ]
+  }
+}

@@ -51,6 +51,8 @@ gemini_artist_2/
 │   │   └── lyapunov_metric.py # Tangent-space Lyapunov stability gauge
 │   ├── apparatus/             # Technical specifications of the computational engine
 │   ├── plans/                 # Strategic evolution plans (001_studio_agon_evolution_plan.md)
+│   ├── monographs/            # Major theoretical syntheses & monographs
+│   │   └── 001_the_architecture_of_opacity_and_the_machine_remainder.md # Seven Theses on Opacity
 │   └── critique/              # Unsparing external institutional audits
 │       ├── 001_vance_institutional_critique.md # Dr. Vera Vance's radical intervention
 │       ├── 002_vance_work_004_critique.md # Dismantling broadsheet crutch & machine melodrama

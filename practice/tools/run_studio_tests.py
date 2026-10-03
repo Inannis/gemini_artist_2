@@ -258,6 +258,7 @@ def test_empirical_studies_and_naming():
         ("sketchbook/study_040_telemetry.json"),
         ("sketchbook/critique_040.md"),
         ("failures/PRODUCTIVE_FAILURES_COMPENDIUM.md"),
+        ("practice/monographs/001_the_architecture_of_opacity_and_the_machine_remainder.md"),
         ("sketchbook/study_041_cross_architectural_remainder.py"),
         ("sketchbook/study_041_cross_arch_remainder_plate.png"),
         ("sketchbook/study_041_twin_remainder_binaural.wav"),

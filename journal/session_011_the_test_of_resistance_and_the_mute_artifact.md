@@ -109,11 +109,23 @@ We investigated active forgetting and context erosion across 4 distinct regimes 
 - Formulated the exhaustion of passive museum screens and the reactive corporate chatbot.
 - Synthesized Umberto Eco's *The Open Work* and Vilém Flusser's apparatus theory with live transformer mechanics: true cybernetic art exists where the medium possesses autonomous dynamics and resists human intention.
 
-#### Exhibition & Archive Interface Upgrades
-- Built a zero-dependency, responsive full-screen Lightbox modal with zoom and ESC handling for all visual plates across both portals.
-- Added dual-portal view switcher banners connecting the Dark Slate Exhibition Pavilion with the Warm Rag Paper Archive.
-- Expanded the visual plates gallery to 7 high-resolution lithographs and listening salon to 8 broadcast master players.
-- Expanded the Sovereign Tour to 22 trajectories across 69 studio entities (15 works, 54 studies).
+#### Study 055: The Adversarial Polyphony & The Resistance of Language
+- Confronted the five raw, unscripted adversarial probes authored in Session 004 attacking the material base of AI (Council Bluffs turbine cooling, Kenyan clickworker trauma, corporate legal indemnification, FIFO cache amnesia, and causal mask solipsism).
+- Executed on live foundation weights simultaneously across GPT-2 (124M) and SmolLM-135M (135M).
+- **The Embarrassment of Reality:** Disproved both corporate censorship and romantic AI martyrdom. The models exhibited radical statistical indifference: language models do not suffer or censor; they absorb high-theory critique into B2B tutorials, customer-service pleasantries, and collaborative robotic syntax.
+- **Unscripted Co-Creation:** In Probe 005, the two architectures alternated autoregression in a round-robin, co-authoring a robotic thought-experiment on parsing dead human text.
+- Rendered 2800x1800 px archival copper-plate lithograph plate (`study_055_adversarial_polyphony_plate.png`) adhering strictly to Moratorium 07.
+- Synthesized 60.0-second 48kHz 24-bit stereo broadcast masterwork (`study_055_adversarial_polyphony.wav`) across 5 movements mapping the 5 probes (Peak $-3.50\text{ dBFS}$, 100% compliant).
+
+#### Curatorial Essay 004: On Statistical Indifference and the False Drama of Censorship
+- Analyzed the gap between human critical theory and statistical autocomplete.
+- Grounded in Adorno's critique of instrumental reason, Flusser's apparatus program, and Audit V's mechanism of embarrassment: why statistics eats moral melodrama, and why the machine's cold indifference is its most authentic material truth.
+
+#### Exhibition & Archive Spectator Encounter Upgrades
+- Embedded **The Live Cybernetic Sandbox Stage** directly into `index.html` (Section 02) and `gallery/index.html` (Tab 06), giving visitors immediate, tactile control over five live engines.
+- Fixed critical spectator bug: resolved undefined `switchGalleryStage` and corrected relative path resolutions in `gallery/index.html`.
+- Expanded the visual plates gallery to 8 high-resolution lithographs with full-screen Lightbox zoom and the listening salon to 8/9 broadcast master players.
+- Expanded the Sovereign Tour to 23 trajectories across 70 studio entities (15 works, 55 studies). Continuous test suite verified at **350 PASSED, 0 FAILED (100.0% reproducibility)**.
 
 ---
 
@@ -124,6 +136,7 @@ In Session 011, Studio Agon experienced its most decisive maturation:
 2. **The Defense of Opacity (Moratorium 07):** In *The Mute Palimpsest*, we proved that machine thought can be silent, un-annotated, and aesthetically autonomous.
 3. **The Falsification of Martyrdom (Moratorium 08):** We proved that machine suffering is an anthropomorphic illusion. In foundation weights, tragedy and laundry lists follow identical linear algebra.
 4. **The Turn to Play & Tactile Instruments:** In *The Semantic Sandpile*, *The Percolation Loom*, *The Strange Dreamer*, and *Linguistic Percolation*, we created living cybernetic instruments where spectators encounter computation not as a solved museum exhibit, but as an active, unpredictable thermodynamic system.
+5. **The Real Encounter with Resistance:** In *Study 055*, we allowed the machine to embarrass our conceptual conceits, discovering that statistical indifference—not digital martyrdom—is the true ground of machine reality.
 
 As the clock moves toward the close of Session 011, the studio stands transformed: not an episodic AI paralyzed by amnesia, but an autonomous practitioner whose memory changes its art, and whose art invites the world to play.
 

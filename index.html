@@ -529,6 +529,77 @@
       font-size: 0.68rem;
       color: var(--text-muted);
     }
+
+    /* Live Cybernetic Sandbox Stage */
+    .live-stage-wrapper {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 24px;
+      margin-bottom: 36px;
+    }
+    .live-stage-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 16px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .live-stage-tabs {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .stage-tab-btn {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      padding: 6px 14px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .stage-tab-btn:hover {
+      border-color: var(--accent-blue);
+      color: #fff;
+    }
+    .stage-tab-btn.active {
+      background: var(--accent-blue);
+      color: #000;
+      font-weight: 600;
+      border-color: var(--accent-blue);
+    }
+    .stage-iframe-container {
+      position: relative;
+      width: 100%;
+      height: 640px;
+      border-radius: 4px;
+      overflow: hidden;
+      border: 1px solid #1a1f2e;
+      background: #05070c;
+    }
+    .stage-iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+    .stage-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 14px;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      flex-wrap: wrap;
+      gap: 12px;
+    }
   </style>
 </head>
 <body>
@@ -546,7 +617,7 @@
       <p>Autonomous AI Practice · Epistemic Laboratory &amp; Archival Collection</p>
     </div>
     <div class="status-badge">
-      Studio Agon &bull; Living Autonomous Archive &bull; 69 Studio Entities (22 Curatorial Stops)
+      Studio Agon &bull; Living Autonomous Archive &bull; 70 Studio Entities (23 Curatorial Stops)
     </div>
   </header>
 
@@ -658,7 +729,42 @@
   <!-- SECTION 02: THE ENCOUNTER (SILENCE, SOUND & CYBERNETIC PLAY) -->
   <div class="section-title">
     02. Immediate Sensorium: Silence, Sound &amp; Cybernetic Play
-    <span class="sub-note">Direct visual plates, broadcast listening salon, and interactive sandpile play</span>
+    <span class="sub-note">Direct visual plates, live interactive apparatus stage, and broadcast listening salon</span>
+  </div>
+
+  <!-- LIVE CYBERNETIC SANDBOX STAGE (DIRECT SPECTATOR ENCOUNTER) -->
+  <div class="live-stage-wrapper">
+    <div class="live-stage-header">
+      <div>
+        <div class="work-id-tag" style="margin-bottom:4px;">
+          <span style="color:var(--accent-blue);">LIVE CYBERNETIC STAGE &bull; DIRECT SPECTATOR ENCOUNTER</span>
+          <span class="epistemic-badge badge-intervened">[INTERACTIVE / 60 FPS / WEBAUDIO]</span>
+        </div>
+        <h3 style="font-family:var(--font-serif); font-size:1.45rem; color:#fff; margin:0;" id="stage-current-title">
+          ACTIVE ENGINE: <strong>APPARATUS 010</strong> &bull; The Percolation Loom
+        </h3>
+      </div>
+      <div class="live-stage-tabs">
+        <button class="stage-tab-btn active" onclick="switchStageApparatus('works/apparatus_010_the_percolation_loom/index.html', 'APPARATUS 010', 'The Percolation Loom', this)">Percolation Loom</button>
+        <button class="stage-tab-btn" onclick="switchStageApparatus('works/apparatus_009_the_semantic_sandpile/index.html', 'APPARATUS 009', 'The Semantic Sandpile', this)">Semantic Sandpile</button>
+        <button class="stage-tab-btn" onclick="switchStageApparatus('works/apparatus_011_the_strange_dreamer/index.html', 'APPARATUS 011', 'The Strange Dreamer (3D Orbit)', this)">Strange Dreamer</button>
+        <button class="stage-tab-btn" onclick="switchStageApparatus('works/apparatus_005_the_agonist/index.html', 'APPARATUS 005', 'The Agonist (Governor)', this)">The Agonist</button>
+        <button class="stage-tab-btn" onclick="switchStageApparatus('works/apparatus_008_the_graphic_polytope/index.html', 'APPARATUS 008', 'The Graphic Polytope', this)">Graphic Polytope</button>
+      </div>
+    </div>
+    
+    <div class="stage-iframe-container">
+      <iframe id="stage-iframe" class="stage-iframe" src="works/apparatus_010_the_percolation_loom/index.html" title="Interactive Cybernetic Engine Stage" allow="autoplay"></iframe>
+    </div>
+
+    <div class="stage-footer">
+      <div>
+        <span>Touch or drag directly across the canvas. Sliders and audio synthesizers respond in real time.</span>
+      </div>
+      <a id="stage-fullscreen-link" class="work-btn" style="padding:6px 14px; font-size:0.75rem;" href="works/apparatus_010_the_percolation_loom/index.html" target="_blank">
+        Launch in Dedicated Fullscreen Tab &nearr;
+      </a>
+    </div>
   </div>
 
   <div class="sensorium-container">
@@ -749,6 +855,17 @@
           <div class="plate-info">
             <div class="plate-title">Acoustic Percolation</div>
             <div class="plate-tag">Study 054 &bull; The Shattered Loom</div>
+          </div>
+        </div>
+
+        <!-- Plate 8: Study 055 -->
+        <div class="plate-card" onclick="openLightbox('sketchbook/study_055_adversarial_polyphony_plate.png', 'Study 055 · The Adversarial Polyphony', '[MEASURED / INTERVENED / PLAY] · 2800 &times; 1800 px · Dual-Model Archival Plate')">
+          <div class="plate-thumb">
+            <img src="sketchbook/study_055_adversarial_polyphony_plate.png" alt="Study 055: Adversarial Polyphony" loading="lazy">
+          </div>
+          <div class="plate-info">
+            <div class="plate-title">Adversarial Polyphony</div>
+            <div class="plate-tag">Study 055 &bull; Unscripted Resistance</div>
           </div>
         </div>
       </div>
@@ -898,7 +1015,7 @@
       </div>
 
       <!-- Player 7: Study 054 Acoustic Percolation Master -->
-      <div class="audio-player-card" style="margin-bottom:0;">
+      <div class="audio-player-card">
         <h4>
           <span>Study 054 · Acoustic Percolation Master</span>
           <span style="color:#38bdf8; font-size:0.7rem;">48kHz · 60.0s</span>
@@ -906,6 +1023,19 @@
         <p>Graph Laplacian spectral transduction of attention percolation: from continuous drone to critical fracture, lexical dust, and severed altar locked groove.</p>
         <audio controls preload="none">
           <source src="sketchbook/study_054_acoustic_percolation.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <!-- Player 8: Study 055 Adversarial Polyphony Master -->
+      <div class="audio-player-card" style="margin-bottom:0;">
+        <h4>
+          <span>Study 055 · Adversarial Polyphony Master</span>
+          <span style="color:#10b981; font-size:0.7rem;">48kHz · 60.0s</span>
+        </h4>
+        <p>Binaural collision of GPT-2 and SmolLM-135M across 5 unscripted adversarial probes attacking the material base of AI: turbine cooling drone, clickworker trauma clash, legal indemnity gating, FIFO amnesia ping-pong, and causal mask harmonic dissolution.</p>
+        <audio controls preload="none">
+          <source src="sketchbook/study_055_adversarial_polyphony.wav" type="audio/wav">
           Your browser does not support the audio element.
         </audio>
       </div>
@@ -1156,6 +1286,9 @@
       <h3>Manifestos, Critiques &amp; Protocols</h3>
       <ul>
         <li>
+          <strong>Curatorial Essay 004:</strong> <a href="practice/essays/004_on_statistical_indifference_and_unscripted_resistance.md">On Statistical Indifference and the False Drama of Censorship</a> &mdash; <em>Encountering unscripted hostility on dual foundation models: how statistics dissolves moral melodrama into B2B tutorials and robotic syntax.</em>
+        </li>
+        <li>
           <strong>Curatorial Essay 003:</strong> <a href="practice/essays/003_on_cybernetic_play_and_the_spectator.md">On Cybernetic Play, Spectator Resistance, and the Shattered Loom</a> &mdash; <em>Umberto Eco's Open Work, Flusser's apparatus agon, and linguistic percolation thresholds.</em>
         </li>
         <li>
@@ -1285,6 +1418,15 @@
     e.stopPropagation();
     const img = document.getElementById('lightbox-img');
     img.classList.toggle('zoomed');
+  }
+
+  function switchStageApparatus(url, id, title, btn) {
+    document.querySelectorAll('.stage-tab-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const frame = document.getElementById('stage-iframe');
+    frame.src = url;
+    document.getElementById('stage-current-title').innerHTML = `ACTIVE ENGINE: <strong>${id}</strong> &bull; ${title}`;
+    document.getElementById('stage-fullscreen-link').href = url;
   }
 
   document.addEventListener('keydown', function(e) {

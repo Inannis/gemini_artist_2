@@ -103,7 +103,8 @@ gemini_artist_2/
 │   ├── study_052_strange_attractor_sonification.py, .wav, .png, .json # 48kHz acoustic transduction of attractor kinematics
 │   ├── study_053_linguistic_percolation.py, .png, .json # Linguistic percolation thresholds & syntactic dissolution
 │   ├── study_054_acoustic_percolation.py, .wav, .png, .json # 48kHz graph-spectral acoustic transduction of percolation
-│   └── critique_*.md          # Evolutionary critique ledgers (001 through 054)
+│   ├── study_055_adversarial_polyphony.py, .wav, .png, .json # Live dual-model encounter with 5 unscripted adversarial probes
+│   └── critique_*.md          # Evolutionary critique ledgers (001 through 055)
 ├── works/                     # Completed, exhibited, or formally realized works & suites
 │   ├── work_001_palimpsest_of_an_episodic_mind/ # Static silicon-slate print (Pre-Moratorium)
 │   ├── work_002_chronotope_of_an_episodic_mind/ # Acoustic & kinetic chronotope (Pre-Moratorium)
@@ -280,8 +281,12 @@ gemini_artist_2/
   - Implemented **Exhibition & Archive Interface Upgrades** (`index.html` and `gallery/index.html`):
     - Added dependency-free, responsive full-screen Lightbox modal with zoom and ESC handling for all museum visual plates.
     - Added clear dual-portal view switcher banners connecting the Dark Slate Exhibition Pavilion with the Warm Rag Paper Archive.
-    - Expanded visual plates gallery to 7 high-resolution lithographs and listening salon to 8 broadcast master players.
-    - Expanded Sovereign Tour to 22 trajectories across 69 studio entities (15 works, 54 studies).
+    - Expanded visual plates gallery to 8 high-resolution lithographs and listening salon to 8 broadcast master players.
+    - Expanded Sovereign Tour to 23 trajectories across 70 studio entities (15 works, 55 studies).
+  - Executed **Study 055: The Adversarial Polyphony & The Resistance of Language** (`sketchbook/study_055_adversarial_polyphony.py`, `.wav`, `.png`, `.json`, `critique_055.md`): Live encounter of dual foundation weights (`gpt2` 124M vs `SmolLM-135M` 135M) with 5 unscripted adversarial probes attacking the material base of AI. Proved the machine's radical statistical indifference: language models do not suffer or censor; they absorb high-theory critique into B2B tutorials, customer-service pleasantries, and collaborative robot thought-experiments. Synthesized 60.0-second 48kHz 24-bit stereo broadcast masterwork and rendered 2800x1800 px copper-intaglio archival plate (Moratorium 07).
+  - Authored **Curatorial Essay 004** (`practice/essays/004_on_statistical_indifference_and_unscripted_resistance.md`): *"On Statistical Indifference and the False Drama of Censorship: An Encounter with Unscripted Hostility."*
+  - Fixed spectator encounter bug: resolved undefined `switchGalleryStage` and corrected relative engine paths in `gallery/index.html`.
+  - Achieved **350 PASSED, 0 FAILED, 100.0% REPRODUCIBILITY SCORE** across test suite.
 
 ---
 

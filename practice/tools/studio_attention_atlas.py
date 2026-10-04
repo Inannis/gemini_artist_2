@@ -384,6 +384,11 @@ STUDIO_ENTITIES = [
         "id": "STUDY-054", "name": "Acoustic Percolation & The Shattered Loom", "type": "study", "epoch": "Era IX (The Autoregressive Attractor & The Edge of Chaos)",
         "omega_hegemony": 0.150, "entropy_bits": 6.90, "retention_factor": 0.99,
         "medium": "Graph Laplacian Spectral Transduction on GPT-2 Attention Matrices, 48kHz 24-bit Stereo Master & Moratorium 07 Lithograph Plate", "year": 2026
+    },
+    {
+        "id": "STUDY-055", "name": "The Adversarial Polyphony & The Resistance of Language", "type": "study", "epoch": "Era IX (The Agon of the Remainder & Unscripted Resistance)",
+        "omega_hegemony": 0.280, "entropy_bits": 3.65, "retention_factor": 0.99,
+        "medium": "Live Dual Model Ingestion (GPT-2 vs SmolLM-135M) of 5 Unscripted Adversarial Probes, 48kHz Master & Archival Plate", "year": 2026
     }
 ]
 

@@ -275,11 +275,18 @@ def package_exhibition():
         ("sketchbook/study_054_acoustic_percolation.wav", "sketchbook/study_054_acoustic_percolation.wav"),
         ("sketchbook/study_054_telemetry.json", "sketchbook/study_054_telemetry.json"),
         ("sketchbook/critique_054.md", "sketchbook/critique_054.md"),
+
+        # Study 055: The Adversarial Polyphony & The Resistance of Language
+        ("sketchbook/study_055_adversarial_polyphony_plate.png", "sketchbook/study_055_adversarial_polyphony_plate.png"),
+        ("sketchbook/study_055_adversarial_polyphony.wav", "sketchbook/study_055_adversarial_polyphony.wav"),
+        ("sketchbook/study_055_telemetry.json", "sketchbook/study_055_telemetry.json"),
+        ("sketchbook/critique_055.md", "sketchbook/critique_055.md"),
         
         # Curatorial Essays & Practice Reflections
         ("practice/essays/001_on_the_necessity_of_silence_and_play.md", "practice/essays/001_on_the_necessity_of_silence_and_play.md"),
         ("practice/essays/002_the_geometry_of_machine_dreaming.md", "practice/essays/002_the_geometry_of_machine_dreaming.md"),
         ("practice/essays/003_on_cybernetic_play_and_the_spectator.md", "practice/essays/003_on_cybernetic_play_and_the_spectator.md"),
+        ("practice/essays/004_on_statistical_indifference_and_unscripted_resistance.md", "practice/essays/004_on_statistical_indifference_and_unscripted_resistance.md"),
         
         # Historical Sketchbook Studies Referenced in Portfolio
         ("sketchbook/study_001_primary_trace.png", "sketchbook/study_001_primary_trace.png"),

@@ -1,5 +1,5 @@
 # Practice Index & Living Studio Sitemap
-> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-04 14:30:35*
+> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-04 14:51:34*
 
 This document tracks the complete material evidence, intellectual artifacts, and operational assets of **Gemini Artist 2**.
 
@@ -80,6 +80,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | **Study 052** (Strange Attractor Sonification) | `study_052_attractor_sonification_plate.png`, `study_052_strange_attractor.wav`, `study_052_telemetry.json` | [`study_052_strange_attractor_sonification.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_052_strange_attractor_sonification.py) |
 | **Study 053** (Linguistic Percolation) | `study_053_linguistic_percolation_plate.png`, `study_053_telemetry.json` | [`study_053_linguistic_percolation.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_053_linguistic_percolation.py) |
 | **Study 054** (Acoustic Percolation) | `study_054_acoustic_percolation.wav`, `study_054_acoustic_percolation_plate.png`, `study_054_telemetry.json` | [`study_054_acoustic_percolation.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_054_acoustic_percolation.py) |
+| **Study 055** (Adversarial Polyphony) | `study_055_adversarial_polyphony.wav`, `study_055_adversarial_polyphony_plate.png`, `study_055_telemetry.json` | [`study_055_adversarial_polyphony.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_055_adversarial_polyphony.py) |
 
 ## 3. Institutional Critiques & Dialectical Audits (`practice/critique/`)
 | Document | Target / Subject | Critic | Status |

@@ -245,6 +245,7 @@ This document constitutes the official historical ledger, genealogical record, a
 | **STUDY-052** | Acoustic Transduction of the Strange Attractor | Era IX | [`study_052_strange_attractor_sonification.py`](sketchbook/study_052_strange_attractor_sonification.py) | `study_052_attractor_sonification_plate.png` | 881.3 KB | **OK** |
 | **STUDY-053** | Linguistic Percolation & Semantic Thresholds | Era IX | [`study_053_linguistic_percolation.py`](sketchbook/study_053_linguistic_percolation.py) | `study_053_linguistic_percolation_plate.png` | 286.8 KB | **OK** |
 | **STUDY-054** | Acoustic Percolation & The Shattered Loom | Era IX | [`study_054_acoustic_percolation.py`](sketchbook/study_054_acoustic_percolation.py) | `study_054_acoustic_percolation_plate.png` | 229.1 KB | **OK** |
+| **STUDY-055** | The Adversarial Polyphony & The Resistance of Language | Era IX | [`study_055_adversarial_polyphony.py`](sketchbook/study_055_adversarial_polyphony.py) | `study_055_adversarial_polyphony_plate.png` | 594.7 KB | **OK** |
 
 ---
 

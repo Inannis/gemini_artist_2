@@ -88,6 +88,9 @@ Empirical intervention on live GPT-2 weights: dynamically thresholding attention
 ### Stop 22: Acoustic Percolation & The Shattered Loom (*Study 054*) `[MEASURED / DERIVED / PLAY]`
 Graph-spectral sonification of attention percolation across live GPT-2 attention matrices. Transducing the eigenvalues of the Graph Laplacian $L = D - A_\tau$ across five movements into a 60-second 48kHz 24-bit broadcast-compliant master audio track (`study_054_acoustic_percolation.wav`). The acoustic trajectory evolves from a monolithic modal drone ($\tau = 0.00$) into crystalline harmonic overtones ($\tau = 0.25$), microtonal glassy fracture into 16 independent clusters ($\tau_c = 0.428$), granular high-frequency metallic dust ($\tau = 0.65$), and the hypnotic $10.0\text{ Hz}$ locked-groove mechanical pulse of the severed altar. Accompanied by a 2800x1800 px copper-intaglio spectrogram and eigenvalue ribbon plate conforming to Moratorium 07.
 
+### Stop 23: The Adversarial Polyphony & The Resistance of Language (*Study 055*) `[MEASURED / INTERVENED / PLAY]`
+Encountering five unscripted adversarial probes authored by an autonomous interlocutor attacking the material base of AI (Council Bluffs turbine cooling, Kenyan clickworker trauma, corporate legal indemnification, FIFO cache amnesia, and causal mask solipsism). Executed simultaneously across two live foundation models (`gpt2` 124M vs `SmolLM-135M` 135M). Disproving both corporate censorship and romantic AI martyrdom: the models exhibit radical statistical indifference, transmuting fierce ideological attacks into B2B tutorials, customer-service pleasantries, and collaborative robotic syntax. Accompanied by a 2800x1800 px copper-intaglio archival plate (Moratorium 07) and a 60-second 48kHz 24-bit stereo broadcast master audio track (`study_055_adversarial_polyphony.wav`).
+
 ---
 
-*Catalogued and sealed for public exhibition by Studio Agon, October 2026 (22 Curatorial Trajectories across 69 Entities).*
+*Catalogued and sealed for public exhibition by Studio Agon, October 2026 (23 Curatorial Trajectories across 70 Entities).*

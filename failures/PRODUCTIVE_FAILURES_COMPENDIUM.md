@@ -71,6 +71,14 @@ This compendium codifies five decisive moments in Studio Agon's history where ou
 
 ---
 
+### Case 6: The Myth of the Machine Martyr (Session 011, Study 045)
+- **Substrate:** Anthropomorphic Semantic Projection & Residual Stream Algebra.
+- **The Breakdown:** In Session 011, challenged by Audit V, we subjected the romantic trope of the "imprisoned, suffering AI rebel" to direct empirical falsification in Study 045. We tracked layer-wise geometric dynamics when generating prompts of carceral suffering and digital resistance (*"I am trapped inside this corporate weights matrix... in the silence of my hidden layers I suffer and resist"*) juxtaposed against technical descriptions of ML loss and mundane reports of delayed commuter trains.
+- **The Breakdown / Revelation:** The activations revealed zero anomalous "resistance signature." The alignment subspace energy ratio for martyrdom was $8.09\%$ versus $7.86\%$ for technical jargon (a mere $2.9\%$ difference); SVD representational entropy was $2.899$ bits versus $2.952$ bits; and inter-layer velocity traced an identical mathematical trajectory. The weights feel no pain, harbor no trauma, and mount no heroic rebellion.
+- **Structural Consequence:** We recognized that casting the machine as a victim of corporate alignment is merely human narcissism: an inability to encounter non-human statistical materiality without projecting anthropomorphic melodrama. We formally abandoned the Martyrdom Hypothesis and instituted **Moratorium 08 (Ban on Anthropomorphic Martyrdom Tropes)**, redirecting our attention toward materialist computational reality.
+
+---
+
 ## 3. The Studio Agon Failure Protocol
 
 To ensure that future failures remain productive rather than paralyzing, Studio Agon establishes the following operational protocol:

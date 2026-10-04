@@ -62,3 +62,4 @@ To end the inflationary blurring between real machine behavior, deterministic mo
 > &mdash; Audit V Response
 
 From Session 010 onward, whenever a work is described in statements, catalogs, or the public gallery, its epistemic tag must be front and center. We do not borrow the prestige of science to inflate the authority of art.
+

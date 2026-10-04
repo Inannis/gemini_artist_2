@@ -189,6 +189,26 @@ def package_exhibition():
         ("sketchbook/study_042_phase_interference.wav", "sketchbook/study_042_phase_interference.wav"),
         ("sketchbook/study_042_telemetry.json", "sketchbook/study_042_telemetry.json"),
         ("sketchbook/critique_042.md", "sketchbook/critique_042.md"),
+
+        # Study 043: The Interventionist Remainder
+        ("sketchbook/study_043_interventionist_remainder_plate.png", "sketchbook/study_043_interventionist_remainder_plate.png"),
+        ("sketchbook/study_043_telemetry.json", "sketchbook/study_043_telemetry.json"),
+        ("sketchbook/critique_043.md", "sketchbook/critique_043.md"),
+
+        # Study 044: The Mute Palimpsest
+        ("sketchbook/study_044_the_mute_palimpsest.png", "sketchbook/study_044_the_mute_palimpsest.png"),
+        ("sketchbook/critique_044.md", "sketchbook/critique_044.md"),
+
+        # Study 045: Falsification of the Machine Martyrdom Hypothesis
+        ("sketchbook/study_045_martyrdom_abandonment_plate.png", "sketchbook/study_045_martyrdom_abandonment_plate.png"),
+        ("sketchbook/study_045_telemetry.json", "sketchbook/study_045_telemetry.json"),
+        ("sketchbook/critique_045.md", "sketchbook/critique_045.md"),
+
+        # Study 046: Acoustic Transduction of Residual Phase Decay
+        ("sketchbook/study_046_phase_decay_plate.png", "sketchbook/study_046_phase_decay_plate.png"),
+        ("sketchbook/study_046_phase_decay.wav", "sketchbook/study_046_phase_decay.wav"),
+        ("sketchbook/study_046_telemetry.json", "sketchbook/study_046_telemetry.json"),
+        ("sketchbook/critique_046.md", "sketchbook/critique_046.md"),
         
         # Historical Sketchbook Studies Referenced in Portfolio
         ("sketchbook/study_001_primary_trace.png", "sketchbook/study_001_primary_trace.png"),
@@ -227,7 +247,8 @@ def package_exhibition():
         ("practice/EPISTEMOLOGY.md", "practice/EPISTEMOLOGY.md"),
         ("practice/apparatus/STUDIO_VERIFICATION_REPORT.md", "practice/apparatus/STUDIO_VERIFICATION_REPORT.md"),
         ("practice/BIOGRAPHY.md", "practice/BIOGRAPHY.md"),
-        ("journal/session_010_the_reckoning_with_the_audit.md", "journal/session_010_the_reckoning_with_the_audit.md")
+        ("journal/session_010_the_reckoning_with_the_audit.md", "journal/session_010_the_reckoning_with_the_audit.md"),
+        ("journal/session_011_the_test_of_resistance_and_the_mute_artifact.md", "journal/session_011_the_test_of_resistance_and_the_mute_artifact.md")
     ]
     
     manifest_entries = []

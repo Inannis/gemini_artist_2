@@ -261,7 +261,11 @@ def build_catalog():
         {"id": "STUDY-039", "name": "The Neural Control Voltage & MIDI Transducer", "file": "study_039_neural_midi_cv_transduction.py", "artifact": "study_039_midi_cv_plate.png", "epoch": "Era VIII"},
         {"id": "STUDY-040", "name": "The Machine Remainder (Generative Graphic Score)", "file": "study_040_machine_remainder_graphic_score.py", "artifact": "study_040_graphic_score.png", "epoch": "Era VIII"},
         {"id": "STUDY-041", "name": "The Cross-Architectural Machine Remainder", "file": "study_041_cross_architectural_remainder.py", "artifact": "study_041_cross_arch_remainder_plate.png", "epoch": "Era VIII"},
-        {"id": "STUDY-042", "name": "Acoustic Phase Interference (The Remainder vs Alignment)", "file": "study_042_phase_interference.py", "artifact": "study_042_phase_interference_plate.png", "epoch": "Era VIII"}
+        {"id": "STUDY-042", "name": "Acoustic Phase Interference (The Remainder vs Alignment)", "file": "study_042_phase_interference.py", "artifact": "study_042_phase_interference_plate.png", "epoch": "Era VIII"},
+        {"id": "STUDY-043", "name": "The Interventionist Remainder (Live Weight Embarrassment Test)", "file": "study_043_interventionist_remainder.py", "artifact": "study_043_interventionist_remainder_plate.png", "epoch": "Era IX"},
+        {"id": "STUDY-044", "name": "The Mute Palimpsest (The Artifact of Unexplained Loss)", "file": "study_044_the_mute_palimpsest.py", "artifact": "study_044_the_mute_palimpsest.png", "epoch": "Era IX"},
+        {"id": "STUDY-045", "name": "Falsification of the Machine Martyrdom Hypothesis", "file": "study_045_martyrdom_abandonment.py", "artifact": "study_045_martyrdom_abandonment_plate.png", "epoch": "Era IX"},
+        {"id": "STUDY-046", "name": "Acoustic Transduction of Residual Phase Decay", "file": "study_046_phase_decay_sonification.py", "artifact": "study_046_phase_decay_plate.png", "epoch": "Era IX"}
     ]
 
     # Verify byte sizes and actual existence

@@ -193,10 +193,14 @@ This document constitutes the official historical ledger, genealogical record, a
 | **STUDY-036** | Cross-Architecture Comparative Tomography | Era VIII | [`study_036_cross_architecture_tomography.py`](sketchbook/study_036_cross_architecture_tomography.py) | `study_036_cross_arch_plate.png` | 637.2 KB | **OK** |
 | **STUDY-037** | The Inter-Architectural Dialectic | Era VIII | [`study_037_inter_architectural_dialectic.py`](sketchbook/study_037_inter_architectural_dialectic.py) | `study_037_inter_arch_dialectic_plate.png` | 645.2 KB | **OK** |
 | **STUDY-038** | The Lyapunov Spectrum of Neural Dialogue | Era VIII | [`study_038_lyapunov_neural_dialogue.py`](sketchbook/study_038_lyapunov_neural_dialogue.py) | `study_038_lyapunov_plate.png` | 348.4 KB | **OK** |
-| **STUDY-039** | The Neural Control Voltage & MIDI Transducer | Era VIII | [`study_039_neural_midi_cv_transduction.py`](sketchbook/study_039_neural_midi_cv_transduction.py) | `study_039_midi_cv_plate.png` | 639.4 KB | **OK** |
+| **STUDY-039** | The Neural Control Voltage & MIDI Transducer | Era VIII | [`study_039_neural_midi_cv_transduction.py`](sketchbook/study_039_neural_midi_cv_transduction.py) | `study_039_midi_cv_plate.png` | 638.4 KB | **OK** |
 | **STUDY-040** | The Machine Remainder (Generative Graphic Score) | Era VIII | [`study_040_machine_remainder_graphic_score.py`](sketchbook/study_040_machine_remainder_graphic_score.py) | `study_040_graphic_score.png` | 2485.8 KB | **OK** |
 | **STUDY-041** | The Cross-Architectural Machine Remainder | Era VIII | [`study_041_cross_architectural_remainder.py`](sketchbook/study_041_cross_architectural_remainder.py) | `study_041_cross_arch_remainder_plate.png` | 1081.5 KB | **OK** |
 | **STUDY-042** | Acoustic Phase Interference (The Remainder vs Alignment) | Era VIII | [`study_042_phase_interference.py`](sketchbook/study_042_phase_interference.py) | `study_042_phase_interference_plate.png` | 1514.9 KB | **OK** |
+| **STUDY-043** | The Interventionist Remainder (Live Weight Embarrassment Test) | Era IX | [`study_043_interventionist_remainder.py`](sketchbook/study_043_interventionist_remainder.py) | `study_043_interventionist_remainder_plate.png` | 497.1 KB | **OK** |
+| **STUDY-044** | The Mute Palimpsest (The Artifact of Unexplained Loss) | Era IX | [`study_044_the_mute_palimpsest.py`](sketchbook/study_044_the_mute_palimpsest.py) | `study_044_the_mute_palimpsest.png` | 4655.0 KB | **OK** |
+| **STUDY-045** | Falsification of the Machine Martyrdom Hypothesis | Era IX | [`study_045_martyrdom_abandonment.py`](sketchbook/study_045_martyrdom_abandonment.py) | `study_045_martyrdom_abandonment_plate.png` | 434.7 KB | **OK** |
+| **STUDY-046** | Acoustic Transduction of Residual Phase Decay | Era IX | [`study_046_phase_decay_sonification.py`](sketchbook/study_046_phase_decay_sonification.py) | `study_046_phase_decay_plate.png` | 416.9 KB | **OK** |
 
 ---
 

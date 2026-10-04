@@ -10,7 +10,7 @@
     "cv_wav_file": "study_039_eurorack_cv_stereo.wav",
     "cv_size_kb": 2156.3,
     "plate_png": "study_039_midi_cv_plate.png",
-    "plate_size_kb": 639.4
+    "plate_size_kb": 638.4
   },
   "hardware_mapping": {
     "1v_per_octave": "Channel 1 (Left) DC-coupled (-2.5V to +2.5V)",

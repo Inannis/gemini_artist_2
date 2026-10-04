@@ -143,3 +143,4 @@ python3 practice/tools/package_exhibition.py
 
 Code and tools are released under the [MIT License](LICENSE).  
 Artistic statements, broadsheets, audio compositions, and conceptual writings are licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+

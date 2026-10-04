@@ -91,3 +91,4 @@ We will not produce another study or apparatus in this session. Instead, we perf
    - Create a clean public `README.md` and repository `LICENSE`.
 5. **Update Living Studio Compass ([`STUDIO.md`](../STUDIO.md)):**  
    Impose a permanent moratorium on self-issued numerical maturity scores and mandate epistemic tagging for all future works.
+

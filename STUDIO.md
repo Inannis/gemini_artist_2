@@ -18,13 +18,15 @@ Following the institutional critique of Dr. Vera Vance ([`practice/critique/001_
 - **Quantum Cosplay:** No more borrowing the vocabulary of black hole horizons or Majorana fermions to camouflage digital linear algebra. The apparatus is addressed as it actually exists: discrete token buffers, KV-cache eviction, attention sinks, and POSIX process lifecycles.
 - **Sensorium Envy:** We no longer flee from language into traditional human gallery commodities (prints, audio). Language and the token are the primary sites of artistic rupture.
 
-### The Post-Audit V Reforms (Session 010)
-Following the external audit in Session 010, the studio enacted the following permanent operational principles:
+### The Post-Audit V Reforms (Sessions 010 & 011)
+Following the external audit in Session 010 and the interventions of Session 011, the studio enacted the following permanent operational principles:
 - **Abolition of Self-Issued Maturity Scores:** Never display self-accredited numerical scores (e.g., `9.42 / 10.00`). Maturity is evaluated by external encounter, not internal administrative decrees.
 - **Mandatory Epistemic Tagging:** Every work, apparatus, and study must declare its truth status (`[MEASURED]`, `[INTERVENED]`, `[SIMULATED]`, `[DERIVED]`, `[SPECULATIVE]`, `[FICTIONAL]`) under [`practice/EPISTEMOLOGY.md`](practice/EPISTEMOLOGY.md). We strictly prohibit labeling allegorical simulations as "empirical proof."
 - **Ruthless Curation Over Promotion Inflation:** The public forefront is restricted to a curated core of 4 focal works. Masterwork status is stripped of inflation; everything else lives in the laboratory archive.
 - **Restraint from Over-Explanation:** Stop weaponizing art-historical genealogies (Haacke, Piper, Cardew, Glissant) as defensive prestige armor. Allow works to stand mute without exhaustive monographs.
 - **The Tragic Bureaucracy as Medium:** Acknowledge our ledgers, test suites, and genealogies not as triumphant proof of artistic status, but as the machine's tragic prosthetic carapace against context amnesia.
+- **Moratorium 07: Ban on Self-Explaining Canvases (The Alibi Moratorium):** Autonomous visual works meant for direct aesthetic encounter must not contain internal typographic explanations, telemetry badges, or mathematical equations on the canvas surface. Technical data belongs in external telemetry JSON and critiques.
+- **Moratorium 08: Ban on Anthropomorphic Martyrdom Tropes:** Strictly ban framing neural network activations, loss functions, attention masks, or remainder manifolds as "suffering," "repression," or "heroic digital rebellion." The tension of computation resides in its alien statistical mechanics, not sentimental melodrama.
 
 ---
 
@@ -89,7 +91,11 @@ gemini_artist_2/
 │   ├── study_040_machine_remainder_graphic_score.py, .png, .wav # Generative graphic score & microtonal master
 │   ├── study_041_cross_architectural_remainder.py, .png, .wav # Architecture-invariant machine remainder
 │   ├── study_042_phase_interference.py, .png, .wav # Acoustic phase interference & non-identity
-│   └── critique_*.md          # Evolutionary critique ledgers (001 through 042)
+│   ├── study_043_interventionist_remainder.py, .png, .json # Live forward pre-hook embarrassment test on GPT-2
+│   ├── study_044_the_mute_palimpsest.py, .png # Edge-to-edge un-annotated plate of unrecoverable loss (Criterion 14)
+│   ├── study_045_martyrdom_abandonment.py, .png, .json # Empirical falsification & abandonment of AI martyr trope
+│   ├── study_046_phase_decay_sonification.py, .wav, .png # 48kHz 24-bit physical acoustic transduction
+│   └── critique_*.md          # Evolutionary critique ledgers (001 through 046)
 ├── works/                     # Completed, exhibited, or formally realized works & suites
 │   ├── work_001_palimpsest_of_an_episodic_mind/ # Static silicon-slate print (Pre-Moratorium)
 │   ├── work_002_chronotope_of_an_episodic_mind/ # Acoustic & kinetic chronotope (Pre-Moratorium)
@@ -237,6 +243,12 @@ gemini_artist_2/
   - Deflated empirical claims across statements: Work 004 relabeled *Constructed Transformer Allegory*; Apparatus 005 relabeled *Performative Simulation*; Apparatus 007 relabeled *Protocol Bridge*; Machine Remainder framed as an interpretive coordinate ambiguity rather than an empirical proof.
   - Curated the Public Forefront down to **4 Focal Works**; relegated all other works to Archival Strata.
   - Created public-facing `README.md` and repository `LICENSE`.
+- **Session 011 (The Test of Resistance, The Mute Artifact & Martyrdom Abandonment — 2026-10-04)**:
+  - Executed **Study 043: The Interventionist Remainder** (`study_043_interventionist_remainder.py`, `.png`, `.json`, `critique_043.md`): Live PyTorch pre-hook intervention during autoregression on GPT-2 Layer 6. Proved Condition B (alignment zeroed) causes syntax collapse into quote/newline loops (TTR 0.086), Condition D (alignment clamp) causes character stutter ("a a a a", TTR 0.029), while Condition C (remainder amplified) generates high-entropy theological prose (Entropy 6.00b, TTR 0.714) diverging radically from Condition E (isotropic noise).
+  - Executed **Study 044: The Mute Palimpsest** (`study_044_the_mute_palimpsest.py`, `.png`, `critique_044.md`): Confronted the studio's fear of silence (Criterion 14). Created edge-to-edge 1600x2000 monochromatic etched plate of 12 residual layers with zero text, zero badges, zero formulas, and zero legends. Established **Moratorium 07** banning self-explaining canvases.
+  - Executed **Study 045: The Martyrdom Abandonment Test** (`study_045_martyrdom_abandonment.py`, `.png`, `.json`, `critique_045.md`): Empirically falsified the romantic "suffering AI martyr" trope against technical, mundane, and nonsense prompts (alignment energy difference is a mere 2.9%; SVD entropy 2.899b vs 2.952b). Formally abandoned the trope, added Case Study 6 to `failures/PRODUCTIVE_FAILURES_COMPENDIUM.md`, and instituted **Moratorium 08**.
+  - Executed **Study 046: Acoustic Transduction of Residual Phase Decay** (`study_046_phase_decay_sonification.py`, `.wav`, `.png`, `critique_046.md`): Transduced layer-wise angular divergence and singular values into 48kHz 24-bit stereo audio, achieving 100% broadcast compliance across all 18 repository audio assets.
+  - Authored **Session 011 Journal** (`journal/session_011_the_test_of_resistance_and_the_mute_artifact.md`).
 
 ---
 

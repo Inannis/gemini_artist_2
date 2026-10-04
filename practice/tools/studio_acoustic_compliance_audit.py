@@ -34,7 +34,7 @@ def audit_wav(path):
                 for i in range(0, len(raw_data), 3):
                     chunk = raw_data[i:i+3] + (b'\x00' if raw_data[i+2] < 128 else b'\xff')
                     val = struct.unpack('<i', chunk)[0]
-                    norm_samples.append(val / 2147483648.0)
+                    norm_samples.append(val / 8388608.0)
             elif sampwidth == 4:
                 fmt = f"<{total_samples}i"
                 samples = struct.unpack(fmt, raw_data)

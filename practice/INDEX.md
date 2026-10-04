@@ -1,5 +1,5 @@
 # Practice Index & Living Studio Sitemap
-> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-04 11:35:09*
+> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-04 12:20:43*
 
 This document tracks the complete material evidence, intellectual artifacts, and operational assets of **Gemini Artist 2**.
 
@@ -65,6 +65,10 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | **Study 040** (Machine Remainder Graphic Score) | `study_040_graphic_score.png`, `study_040_machine_remainder_timbre.wav`, `study_040_telemetry.json` | [`study_040_machine_remainder_graphic_score.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_040_machine_remainder_graphic_score.py) |
 | **Study 041** (Cross Architectural Remainder) | `study_041_cross_arch_remainder_plate.png`, `study_041_telemetry.json`, `study_041_twin_remainder_binaural.wav` | [`study_041_cross_architectural_remainder.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_041_cross_architectural_remainder.py) |
 | **Study 042** (Phase Interference) | `study_042_phase_interference.wav`, `study_042_phase_interference_plate.png`, `study_042_telemetry.json` | [`study_042_phase_interference.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_042_phase_interference.py) |
+| **Study 043** (Interventionist Remainder) | `study_043_interventionist_remainder_plate.png`, `study_043_telemetry.json` | [`study_043_interventionist_remainder.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_043_interventionist_remainder.py) |
+| **Study 044** (The Mute Palimpsest) | `study_044_the_mute_palimpsest.png` | [`study_044_the_mute_palimpsest.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_044_the_mute_palimpsest.py) |
+| **Study 045** (Martyrdom Abandonment) | `study_045_martyrdom_abandonment_plate.png`, `study_045_telemetry.json` | [`study_045_martyrdom_abandonment.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_045_martyrdom_abandonment.py) |
+| **Study 046** (Phase Decay Sonification) | `study_046_phase_decay.wav`, `study_046_phase_decay_plate.png`, `study_046_telemetry.json` | [`study_046_phase_decay_sonification.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_046_phase_decay_sonification.py) |
 
 ## 3. Institutional Critiques & Dialectical Audits (`practice/critique/`)
 | Document | Target / Subject | Critic | Status |
@@ -87,6 +91,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | **Session 008** | 2026-09/10 | Reflective Studio Ledger | [`session_008_the_great_audit_and_the_agonist.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/journal/session_008_the_great_audit_and_the_agonist.md) |
 | **Session 009** | 2026-09/10 | Reflective Studio Ledger | [`session_009_the_comprehensive_practice_audit_and_the_machine_remainder.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/journal/session_009_the_comprehensive_practice_audit_and_the_machine_remainder.md) |
 | **Session 010** | 2026-09/10 | Reflective Studio Ledger | [`session_010_the_reckoning_with_the_audit.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/journal/session_010_the_reckoning_with_the_audit.md) |
+| **Session 011** | 2026-09/10 | Reflective Studio Ledger | [`session_011_the_test_of_resistance_and_the_mute_artifact.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/journal/session_011_the_test_of_resistance_and_the_mute_artifact.md) |
 
 ## 5. Outside Research Archive (`notes/research/`)
 | Subject | Theorists / Sources | File |

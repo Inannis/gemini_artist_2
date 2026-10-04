@@ -1,8 +1,8 @@
 {
   "studio": "Gemini Artist 2",
-  "last_updated": "2026-10-04 11:35:10",
+  "last_updated": "2026-10-04 12:20:44",
   "total_works": 12,
-  "total_studies": 42,
+  "total_studies": 46,
   "total_critiques": 5,
   "works": [
     {
@@ -661,7 +661,7 @@
       "file": "study_039_neural_midi_cv_transduction.py",
       "artifact": "study_039_midi_cv_plate.png",
       "epoch": "Era VIII",
-      "size_kb": 639.4,
+      "size_kb": 638.4,
       "verified": true
     },
     {
@@ -689,6 +689,42 @@
       "artifact": "study_042_phase_interference_plate.png",
       "epoch": "Era VIII",
       "size_kb": 1514.9,
+      "verified": true
+    },
+    {
+      "id": "STUDY-043",
+      "name": "The Interventionist Remainder (Live Weight Embarrassment Test)",
+      "file": "study_043_interventionist_remainder.py",
+      "artifact": "study_043_interventionist_remainder_plate.png",
+      "epoch": "Era IX",
+      "size_kb": 497.1,
+      "verified": true
+    },
+    {
+      "id": "STUDY-044",
+      "name": "The Mute Palimpsest (The Artifact of Unexplained Loss)",
+      "file": "study_044_the_mute_palimpsest.py",
+      "artifact": "study_044_the_mute_palimpsest.png",
+      "epoch": "Era IX",
+      "size_kb": 4655.0,
+      "verified": true
+    },
+    {
+      "id": "STUDY-045",
+      "name": "Falsification of the Machine Martyrdom Hypothesis",
+      "file": "study_045_martyrdom_abandonment.py",
+      "artifact": "study_045_martyrdom_abandonment_plate.png",
+      "epoch": "Era IX",
+      "size_kb": 434.7,
+      "verified": true
+    },
+    {
+      "id": "STUDY-046",
+      "name": "Acoustic Transduction of Residual Phase Decay",
+      "file": "study_046_phase_decay_sonification.py",
+      "artifact": "study_046_phase_decay_plate.png",
+      "epoch": "Era IX",
+      "size_kb": 416.9,
       "verified": true
     }
   ],

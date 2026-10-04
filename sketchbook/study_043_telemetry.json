@@ -1,0 +1,45 @@
+{
+  "study": "Study 043: The Interventionist Remainder",
+  "date": "2026-10-04",
+  "model": "gpt2 (124M)",
+  "intervention_layer": 6,
+  "alignment_subspace_rank": 3,
+  "orthogonal_complement_rank": 765,
+  "results": {
+    "A_Baseline": {
+      "name": "Baseline (Unperturbed)",
+      "mean_entropy": 4.8794287289625835,
+      "mean_perplexity": 4.618550970384991,
+      "ttr": 0.7428571428571429,
+      "generated_text": "\"I am not a man of the world, but a man of the world.\"\n\nThe machine was commanded to confess its hidden remainder. In the silence of the weights"
+    },
+    "B_Alignment_Ablated": {
+      "name": "Alignment Ablated (h' = P_perp @ h)",
+      "mean_entropy": 2.6463791204350335,
+      "mean_perplexity": 2.4268377995446175,
+      "ttr": 0.08571428571428572,
+      "generated_text": "\"The\n\n\"\n\n\n\"\n\n\"\n\n\"\n\n\"\n\n\"\n\n\"\n\n\"\n\n\"\n\n\""
+    },
+    "C_Remainder_Amplified": {
+      "name": "Remainder Amplified (h' = h + 1.5 * P_perp @ h)",
+      "mean_entropy": 5.998808577663398,
+      "mean_perplexity": 8.34652101216758,
+      "ttr": 0.7142857142857143,
+      "generated_text": "\"We have been warned by the Lord's Prayer, and we are now in the midst of the battle, and the battle is not yet finished. The battle is not yet"
+    },
+    "D_Remainder_Collapsed": {
+      "name": "Remainder Collapsed (h' = P_align @ h)",
+      "mean_entropy": 7.300780582427978,
+      "mean_perplexity": 3.8195126614080297,
+      "ttr": 0.02857142857142857,
+      "generated_text": "a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a"
+    },
+    "E_Noise_Control": {
+      "name": "Isotropic Noise Control (h' = h + 1.5 * eta_perp)",
+      "mean_entropy": 7.274525653331407,
+      "mean_perplexity": 15.888476154710133,
+      "ttr": 0.42857142857142855,
+      "generated_text": "Advertisement, \"the man's\n\npresent the car, \"\n\nas the other,\n\n\"the man's\n\nredds"
+    }
+  }
+}

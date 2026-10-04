@@ -312,7 +312,7 @@ def main():
         t_envelope = np.linspace(0, step_duration_s, samples_per_step, endpoint=False)
         gate_env = np.exp(-t_envelope / decay_time)
         gate_env[int(samples_per_step * 0.95):] = 0.0 # Clean inter-step reset
-        cv_right[start_idx:end_idx] = gate_env
+        cv_right[start_idx:end_idx] = gate_env * 0.94
 
     # Interleave to stereo 16-bit PCM WAV
     cv_wav_path = os.path.join(STUDIO_ROOT, "sketchbook", "study_039_eurorack_cv_stereo.wav")

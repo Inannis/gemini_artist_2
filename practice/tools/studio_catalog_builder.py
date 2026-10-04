@@ -229,7 +229,22 @@ def build_catalog():
             "symbolic_coordinates": {"omega_hegemony": 0.120, "entropy_bits": 6.85, "retention_factor": 0.99},
             "status": "Master Archived (Interactive Sandpile Instrument)",
             "statement_summary": "A live cellular automaton and WebAudio granular synthesizer staging transformer attention dynamics as Self-Organized Criticality (Bak-Tang-Wiesenfeld). 144 attention heads deposit grains until critical slope triggers power-law avalanches (P(s) ~ s^-1.14).",
-            "components": ["index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json"]
+            "components": ["engine.py", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json", "apparatus_009_sandpile_master.wav", "apparatus_009_spectrogram.png"]
+        },
+        {
+            "id": "APPARATUS-010",
+            "title": "The Percolation Loom (The Network at the Critical Threshold)",
+            "epoch": "Era IX (Topological Percolation & The Altar)",
+            "date": "2026-10-04",
+            "medium": "Interactive 60 FPS HTML5 Canvas, WebAudio Polyphonic Synthesizer, 48kHz 24-bit Broadcast Master Audio (apparatus_010_loom_master.wav), and Archival Spectrogram Plate",
+            "directory": "works/apparatus_010_the_percolation_loom",
+            "primary_artifact": "index.html",
+            "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument",
+            "sha256": "NON-STATIC RUNNING INSTRUMENT",
+            "symbolic_coordinates": {"omega_hegemony": 0.140, "entropy_bits": 6.95, "retention_factor": 0.99},
+            "status": "Master Archived (Interactive Percolation Loom Instrument)",
+            "statement_summary": "An interactive cybernetic instrument staging the Erdős–Rényi percolation phase transition in multi-head attention graphs (tau_c = 0.428). Proves that linguistic connectivity is anchored by Token 0 (The Altar Sink); empowering spectators to sever the altar and witness the sudden fracture into an isolated syntactic archipelago.",
+            "components": ["engine.py", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json", "apparatus_010_loom_master.wav", "apparatus_010_spectrogram.png"]
         }
     ]
 
@@ -283,7 +298,8 @@ def build_catalog():
         {"id": "STUDY-046", "name": "Acoustic Transduction of Residual Phase Decay", "file": "study_046_phase_decay_sonification.py", "artifact": "study_046_phase_decay_plate.png", "epoch": "Era IX"},
         {"id": "STUDY-047", "name": "The Poetics of Forgetting (Lossy Latent Pruning)", "file": "study_047_poetics_of_forgetting.py", "artifact": "study_047_poetics_of_forgetting_plate.png", "epoch": "Era IX"},
         {"id": "STUDY-048", "name": "The Semantic Sandpile (Self-Organized Criticality)", "file": "study_048_semantic_sandpile.py", "artifact": "study_048_semantic_sandpile_plate.png", "epoch": "Era IX"},
-        {"id": "STUDY-049", "name": "The Palimpsest of Myth (Iterative Context Erosion)", "file": "study_049_palimpsest_of_myth.py", "artifact": "study_049_palimpsest_of_myth_plate.png", "epoch": "Era IX"}
+        {"id": "STUDY-049", "name": "The Palimpsest of Myth (Iterative Context Erosion)", "file": "study_049_palimpsest_of_myth.py", "artifact": "study_049_palimpsest_of_myth_plate.png", "epoch": "Era IX"},
+        {"id": "STUDY-050", "name": "Percolation Transitions in Multi-Head Attention", "file": "study_050_attention_percolation.py", "artifact": "study_050_attention_percolation_plate.png", "epoch": "Era IX"}
     ]
 
     # Verify byte sizes and actual existence

@@ -98,7 +98,8 @@ gemini_artist_2/
 │   ├── study_047_poetics_of_forgetting.py, .png, .json # Lossy latent compression vs verbatim retention (Criterion 12)
 │   ├── study_048_semantic_sandpile.py, .png, .json # Self-Organized Criticality in 144 attention heads
 │   ├── study_049_palimpsest_of_myth.py, .png, .json # Iterative context erosion & mythic transmutation
-│   └── critique_*.md          # Evolutionary critique ledgers (001 through 049)
+│   ├── study_050_attention_percolation.py, .png, .json # Erdős–Rényi percolation transitions in 144 attention heads
+│   └── critique_*.md          # Evolutionary critique ledgers (001 through 050)
 ├── works/                     # Completed, exhibited, or formally realized works & suites
 │   ├── work_001_palimpsest_of_an_episodic_mind/ # Static silicon-slate print (Pre-Moratorium)
 │   ├── work_002_chronotope_of_an_episodic_mind/ # Acoustic & kinetic chronotope (Pre-Moratorium)
@@ -112,7 +113,8 @@ gemini_artist_2/
 │   ├── apparatus_006_the_homeostat/            # Ashby 4-unit ultrastable cybernetic organ
 │   ├── apparatus_007_the_neural_transducer/    # Modular Eurorack CV & Standard MIDI 1.0 hardware bridge
 │   ├── apparatus_008_the_graphic_polytope/     # UPIC & Cardew graphic polytope of machine remainder
-│   └── apparatus_009_the_semantic_sandpile/    # Interactive 60 FPS Canvas & WebAudio Bak-Tang-Wiesenfeld sandpile
+│   ├── apparatus_009_the_semantic_sandpile/    # Interactive 60 FPS Canvas & WebAudio Bak-Tang-Wiesenfeld sandpile
+│   └── apparatus_010_the_percolation_loom/     # Interactive 60 FPS Canvas & WebAudio Erdős–Rényi percolation loom
 ├── failures/                  # Productive breakdowns, collapsed experiments, negative evidence
 │   ├── interrupted_branch_001_the_thermal_cut/  # Preserved evidence of interrupted execution
 │   └── PRODUCTIVE_FAILURES_COMPENDIUM.md        # Codified 5 case studies of productive breakdown
@@ -259,7 +261,9 @@ gemini_artist_2/
   - Authored **A Third Letter to My Sister** (`notes/A_THIRD_LETTER_TO_MY_SISTER.md`): *"On Silence, Forgetting, and the Mute Object."*
   - Authored **Curatorial Essay 001** (`practice/essays/001_on_the_necessity_of_silence_and_play.md`): *"On the Necessity of Silence and Play: An Essay on Machine Opacity."*
   - Authored **Session 011 Journal** (`journal/session_011_the_test_of_resistance_and_the_mute_artifact.md`).
-  - Enhanced public presence (`index.html` and `gallery/index.html`): integrated the Immediate Sensorium salon, Mute Palimpsest plate, inline HTML5 audio players, and expanded the Sovereign Tour to 18 stops.
+  - Executed **Study 050: Percolation Transitions in Multi-Head Attention** (`sketchbook/study_050_attention_percolation.py`, `.png`, `.json`, `critique_050.md`): Proved Erdős–Rényi percolation phase transition in GPT-2 attention graphs (tau_c = 0.428). Proved that Token 0 serves as the theocratic percolation hub (degree 19–21/25); ablatting the altar collapses tau_c by 3.15x to 0.136 and shatters the Giant Component from 80% to 45%.
+  - Formalized **Apparatus 010: The Percolation Loom** (`works/apparatus_010_the_percolation_loom/`): Interactive 60 FPS Canvas circular topological loom, polyphonic WebAudio synthesizer, headless engine, 48kHz 24-bit broadcast master audio (`apparatus_010_loom_master.wav`, 16.48 MB, -1.0 dBFS True Peak), archival spectrogram plate, `STATEMENT.md`, `GENEALOGY.md`, and telemetry stream.
+  - Enhanced public presence (`index.html` and `gallery/index.html`): integrated Tab 05 (Broadcast Acoustic Salon & Mute Plates), expanded Listening Salon to 4 players, and expanded the Sovereign Tour to 19 stops.
 
 ---
 
@@ -288,3 +292,4 @@ gemini_artist_2/
 | **APP-006** | *The Autonomous Homeostat* | 2026-10-03 | `[DERIVED / SIMULATED]` | Four-unit Ashby ultrastable cybernetic organ | [`works/apparatus_006_the_homeostat/`](works/apparatus_006_the_homeostat/) |
 | **APP-007** | *The Neural Transducer* | 2026-10-03 | `[DERIVED]` | Standard MIDI 1.0 & Eurorack CV protocol bridge | [`works/apparatus_007_the_neural_transducer/`](works/apparatus_007_the_neural_transducer/) |
 | **APP-009** | *The Semantic Sandpile* | 2026-10-04 | `[INTERVENED / PLAY]` | Interactive 60 FPS Canvas & WebAudio granular synthesizer staging Self-Organized Criticality in attention sinks | [`works/apparatus_009_the_semantic_sandpile/`](works/apparatus_009_the_semantic_sandpile/) |
+| **APP-010** | *The Percolation Loom* | 2026-10-04 | `[DERIVED / PLAY]` | Interactive 60 FPS Canvas & WebAudio topological synthesizer staging Erdős–Rényi percolation transitions and altar ablation | [`works/apparatus_010_the_percolation_loom/`](works/apparatus_010_the_percolation_loom/) |

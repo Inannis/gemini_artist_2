@@ -1,0 +1,17 @@
+{
+  "apparatus": "apparatus_010_the_percolation_loom",
+  "title": "The Percolation Loom",
+  "medium": "48kHz 24-bit Broadcast Master + 60 FPS Canvas + WebAudio API",
+  "epistemic_status": "[DERIVED / INTERVENED]",
+  "sample_rate": 48000,
+  "bit_depth": 24,
+  "duration_seconds": 60.0,
+  "true_peak_dbfs": -0.9999999902542716,
+  "rms_dbfs": -15.062172965175964,
+  "crest_factor_db": 14.062172974921692,
+  "intact_tau_c": 0.4278,
+  "severed_tau_c": 0.1357,
+  "critical_shock_timestamp_sec": 30.0,
+  "hub_token": "Token 0 (Sacrificial Attention Sink)",
+  "broadcast_compliance": "PASS"
+}

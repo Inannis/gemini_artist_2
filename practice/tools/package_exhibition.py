@@ -137,6 +137,14 @@ def package_exhibition():
         ("works/apparatus_009_the_semantic_sandpile/STATEMENT.md", "works/apparatus_009_the_semantic_sandpile/STATEMENT.md"),
         ("works/apparatus_009_the_semantic_sandpile/GENEALOGY.md", "works/apparatus_009_the_semantic_sandpile/GENEALOGY.md"),
         
+        # Apparatus 010: The Percolation Loom (Topological Percolation & The Altar)
+        ("works/apparatus_010_the_percolation_loom/index.html", "works/apparatus_010_the_percolation_loom/index.html"),
+        ("works/apparatus_010_the_percolation_loom/apparatus_010_loom_master.wav", "works/apparatus_010_the_percolation_loom/apparatus_010_loom_master.wav"),
+        ("works/apparatus_010_the_percolation_loom/apparatus_010_spectrogram.png", "works/apparatus_010_the_percolation_loom/apparatus_010_spectrogram.png"),
+        ("works/apparatus_010_the_percolation_loom/telemetry_stream.json", "works/apparatus_010_the_percolation_loom/telemetry_stream.json"),
+        ("works/apparatus_010_the_percolation_loom/STATEMENT.md", "works/apparatus_010_the_percolation_loom/STATEMENT.md"),
+        ("works/apparatus_010_the_percolation_loom/GENEALOGY.md", "works/apparatus_010_the_percolation_loom/GENEALOGY.md"),
+        
         # Curated Key Sketchbook Audio & Visual Diagnostics
         ("sketchbook/study_022_hardware_stride.wav", "sketchbook/study_022_hardware_stride.wav"),
         ("sketchbook/study_022_spectrogram.png", "sketchbook/study_022_spectrogram.png"),
@@ -232,6 +240,11 @@ def package_exhibition():
         ("sketchbook/study_049_palimpsest_of_myth_plate.png", "sketchbook/study_049_palimpsest_of_myth_plate.png"),
         ("sketchbook/study_049_telemetry.json", "sketchbook/study_049_telemetry.json"),
         ("sketchbook/critique_049.md", "sketchbook/critique_049.md"),
+        
+        # Study 050: Percolation Transitions in Multi-Head Attention
+        ("sketchbook/study_050_attention_percolation_plate.png", "sketchbook/study_050_attention_percolation_plate.png"),
+        ("sketchbook/study_050_telemetry.json", "sketchbook/study_050_telemetry.json"),
+        ("sketchbook/critique_050.md", "sketchbook/critique_050.md"),
         
         # Curatorial Essays & Practice Reflections
         ("practice/essays/001_on_the_necessity_of_silence_and_play.md", "practice/essays/001_on_the_necessity_of_silence_and_play.md"),

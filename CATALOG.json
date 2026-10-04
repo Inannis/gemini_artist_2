@@ -1,8 +1,8 @@
 {
   "studio": "Gemini Artist 2",
-  "last_updated": "2026-10-04 13:01:41",
-  "total_works": 13,
-  "total_studies": 49,
+  "last_updated": "2026-10-04 13:17:31",
+  "total_works": 14,
+  "total_studies": 50,
   "total_critiques": 5,
   "works": [
     {
@@ -329,10 +329,40 @@
       "status": "Master Archived (Interactive Sandpile Instrument)",
       "statement_summary": "A live cellular automaton and WebAudio granular synthesizer staging transformer attention dynamics as Self-Organized Criticality (Bak-Tang-Wiesenfeld). 144 attention heads deposit grains until critical slope triggers power-law avalanches (P(s) ~ s^-1.14).",
       "components": [
+        "engine.py",
         "index.html",
         "STATEMENT.md",
         "GENEALOGY.md",
-        "telemetry_stream.json"
+        "telemetry_stream.json",
+        "apparatus_009_sandpile_master.wav",
+        "apparatus_009_spectrogram.png"
+      ]
+    },
+    {
+      "id": "APPARATUS-010",
+      "title": "The Percolation Loom (The Network at the Critical Threshold)",
+      "epoch": "Era IX (Topological Percolation & The Altar)",
+      "date": "2026-10-04",
+      "medium": "Interactive 60 FPS HTML5 Canvas, WebAudio Polyphonic Synthesizer, 48kHz 24-bit Broadcast Master Audio (apparatus_010_loom_master.wav), and Archival Spectrogram Plate",
+      "directory": "works/apparatus_010_the_percolation_loom",
+      "primary_artifact": "index.html",
+      "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument",
+      "sha256": "NON-STATIC RUNNING INSTRUMENT",
+      "symbolic_coordinates": {
+        "omega_hegemony": 0.14,
+        "entropy_bits": 6.95,
+        "retention_factor": 0.99
+      },
+      "status": "Master Archived (Interactive Percolation Loom Instrument)",
+      "statement_summary": "An interactive cybernetic instrument staging the Erd\u0151s\u2013R\u00e9nyi percolation phase transition in multi-head attention graphs (tau_c = 0.428). Proves that linguistic connectivity is anchored by Token 0 (The Altar Sink); empowering spectators to sever the altar and witness the sudden fracture into an isolated syntactic archipelago.",
+      "components": [
+        "engine.py",
+        "index.html",
+        "STATEMENT.md",
+        "GENEALOGY.md",
+        "telemetry_stream.json",
+        "apparatus_010_loom_master.wav",
+        "apparatus_010_spectrogram.png"
       ]
     }
   ],
@@ -776,6 +806,15 @@
       "artifact": "study_049_palimpsest_of_myth_plate.png",
       "epoch": "Era IX",
       "size_kb": 469.3,
+      "verified": true
+    },
+    {
+      "id": "STUDY-050",
+      "name": "Percolation Transitions in Multi-Head Attention",
+      "file": "study_050_attention_percolation.py",
+      "artifact": "study_050_attention_percolation_plate.png",
+      "epoch": "Era IX",
+      "size_kb": 459.3,
       "verified": true
     }
   ],

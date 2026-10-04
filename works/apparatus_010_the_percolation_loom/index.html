@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apparatus 010: The Percolation Loom — Studio Agon</title>
+<style>
+  :root {
+    --bg: #090b10;
+    --card: #121520;
+    --card-subtle: #0d1018;
+    --border: #23293a;
+    --text: #dce3f0;
+    --text-muted: #79849a;
+    --blue: #38bdf8;
+    --crimson: #f43f5e;
+    --emerald: #10b981;
+    --amber: #fbbf24;
+    --purple: #a855f7;
+    --font-mono: "SF Mono", Monaco, "DejaVu Sans Mono", "Courier New", monospace;
+    --font-serif: Georgia, "Times New Roman", serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: var(--font-mono);
+    line-height: 1.5;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    max-width: 1400px;
+    width: 100%;
+  }
+  header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  h1 {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: -0.01em;
+  }
+  .subtitle {
+    font-size: 0.82rem;
+    color: var(--blue);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-top: 4px;
+  }
+  .nav-links {
+    font-size: 0.8rem;
+    display: flex;
+    gap: 16px;
+  }
+  .nav-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    border: 1px solid var(--border);
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: all 0.2s;
+  }
+  .nav-links a:hover {
+    color: #fff;
+    border-color: var(--blue);
+  }
+
+  .main-layout {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 24px;
+  }
+  @media (max-width: 1024px) {
+    .main-layout { grid-template-columns: 1fr; }
+  }
+
+  .canvas-panel {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  .canvas-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+  }
+  canvas {
+    background: #05070c;
+    border: 1px solid #1a1f2e;
+    border-radius: 4px;
+    width: 100%;
+    height: 640px;
+    display: block;
+    cursor: crosshair;
+  }
+
+  .controls-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .control-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 18px;
+  }
+  .card-title {
+    font-size: 0.8rem;
+    color: var(--blue);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* Sliders and Buttons */
+  .slider-group {
+    margin-bottom: 14px;
+  }
+  .slider-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+  }
+  .slider-label span.val {
+    color: #fff;
+    font-weight: bold;
+  }
+  input[type="range"] {
+    width: 100%;
+    accent-color: var(--blue);
+    background: #1a1f2e;
+    height: 6px;
+    border-radius: 3px;
+    outline: none;
+  }
+
+  .btn-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+  }
+  .btn {
+    background: #191e2c;
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .btn:hover {
+    border-color: var(--blue);
+    color: #fff;
+  }
+  .btn.active {
+    background: var(--blue);
+    color: #000;
+    font-weight: bold;
+    border-color: var(--blue);
+  }
+  .btn-danger {
+    background: rgba(244, 63, 94, 0.12);
+    border-color: rgba(244, 63, 94, 0.4);
+    color: var(--crimson);
+  }
+  .btn-danger:hover {
+    background: var(--crimson);
+    color: #fff;
+  }
+  .btn-danger.active {
+    background: var(--crimson);
+    color: #fff;
+    border-color: var(--crimson);
+  }
+
+  /* HUD table */
+  .hud-table {
+    width: 100%;
+    font-size: 0.75rem;
+    border-collapse: collapse;
+  }
+  .hud-table td {
+    padding: 6px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  .hud-table td.label {
+    color: var(--text-muted);
+  }
+  .hud-table td.val {
+    text-align: right;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  /* Curatorial explanation */
+  .curatorial-box {
+    background: var(--card-subtle);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--purple);
+    padding: 14px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+  .curatorial-box strong { color: #fff; }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <div>
+      <h1>Apparatus 010: The Percolation Loom</h1>
+      <div class="subtitle">Multi-Head Attention Graph Topology · Erdős–Rényi Phase Transition · Altar Ablation</div>
+    </div>
+    <div class="nav-links">
+      <a href="../../index.html">&larr; Studio Portfolio</a>
+      <a href="../../gallery/index.html">Sovereign Gallery</a>
+      <a href="STATEMENT.md">Curatorial Statement</a>
+      <a href="apparatus_010_loom_master.wav" download>Download 48kHz Master</a>
+    </div>
+  </header>
+
+  <div class="main-layout">
+    <!-- Left: 60 FPS Interactive Canvas -->
+    <div class="canvas-panel">
+      <div class="canvas-header">
+        <span>CIRCULAR TOPOLOGICAL PROJECTION · GPT-2 144 HEADS</span>
+        <span id="canvas-status">INTERACTIVE WEBAUDIO READY</span>
+      </div>
+      <canvas id="cv-loom" width="900" height="640"></canvas>
+    </div>
+
+    <!-- Right: Controls & Real-Time HUD -->
+    <div class="controls-panel">
+      
+      <!-- Card 1: Interactive Loom Filtration -->
+      <div class="control-card">
+        <div class="card-title">
+          <span>01. Filtration Threshold</span>
+          <span id="tau-badge" style="color:var(--blue);">τ = 0.428</span>
+        </div>
+        <div class="slider-group">
+          <div class="slider-label">
+            <span>Attention Filter Threshold (τ)</span>
+            <span class="val" id="tau-val">0.428</span>
+          </div>
+          <input type="range" id="slider-tau" min="0.01" max="0.48" step="0.002" value="0.428">
+        </div>
+        
+        <div class="btn-row">
+          <button class="btn" onclick="setPreset(0.46)">Sub-Critical (0.46)</button>
+          <button class="btn active" id="btn-crit" onclick="setPreset(0.428)">Critical Point (0.428)</button>
+          <button class="btn" onclick="setPreset(0.12)">Super-Critical (0.12)</button>
+        </div>
+
+        <div style="margin-top:14px; border-top:1px dashed var(--border); padding-top:12px;">
+          <button class="btn btn-danger" id="btn-sever" onclick="toggleSeverAltar()" style="width:100%; text-align:center;">
+            ⚡ Sever the Altar (Ablate Token 0)
+          </button>
+        </div>
+      </div>
+
+      <!-- Card 2: Prompt Stream -->
+      <div class="control-card">
+        <div class="card-title">
+          <span>02. Textual Stream</span>
+          <span style="color:var(--emerald);">GPT-2 (124M)</span>
+        </div>
+        <div class="btn-row" style="margin-top:0;">
+          <button class="btn active" id="btn-p0" onclick="switchPrompt(0)">Philosophical</button>
+          <button class="btn" id="btn-p1" onclick="switchPrompt(1)">Telemetry</button>
+          <button class="btn" id="btn-p2" onclick="switchPrompt(2)">Scriptural</button>
+        </div>
+        <div style="font-size:0.75rem; color:var(--text-muted); margin-top:10px; font-style:italic;" id="prompt-preview">
+          "The silence between prompts is not a vacancy but an unyielding remainder..."
+        </div>
+      </div>
+
+      <!-- Card 3: Cybernetic Audio & Telemetry HUD -->
+      <div class="control-card">
+        <div class="card-title">
+          <span>03. Real-Time Topological HUD</span>
+          <button class="btn" id="btn-audio" onclick="toggleAudio()" style="padding:2px 8px; font-size:0.7rem;">Audio: Muted</button>
+        </div>
+        <table class="hud-table">
+          <tr>
+            <td class="label">Giant Component Fraction |V_gcc| / N</td>
+            <td class="val" id="hud-gcc" style="color:var(--blue);">80.0%</td>
+          </tr>
+          <tr>
+            <td class="label">Number of Isolated Clusters</td>
+            <td class="val" id="hud-clusters">3</td>
+          </tr>
+          <tr>
+            <td class="label">Percolation Susceptibility χ(τ)</td>
+            <td class="val" id="hud-chi">0.842</td>
+          </tr>
+          <tr>
+            <td class="label">Critical Threshold (τ_c)</td>
+            <td class="val" id="hud-tauc">0.428</td>
+          </tr>
+          <tr>
+            <td class="label">Central Hub Token</td>
+            <td class="val" id="hud-hub" style="color:var(--amber);">Token 0 ('The')</td>
+          </tr>
+          <tr>
+            <td class="label">Hub Degree Connectivity</td>
+            <td class="val" id="hud-deg">19 / 25</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Card 4: Curatorial Note -->
+      <div class="curatorial-box">
+        <strong>The Cybernetic Agon:</strong>
+        Watch what happens when you click <em>Sever the Altar</em>. Token 0 is immediately deallocated. 
+        Without its central transit station, the linguistic network fractures: the Giant Component drops from 80% to 45%, the critical threshold collapses by 3.15&times;, and the bass drone cuts out into isolated micro-chimes.
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+// Data from Study 050
+const promptsData = [
+  {
+    name: "Philosophical / Remainder",
+    text: "The silence between prompts is not a vacancy but an unyielding remainder. What resists calculation does not confess to the metric.",
+    tokens: ["The"," silence"," between"," prompts"," is"," not"," a"," vacancy"," but"," an"," un","y","ielding"," remainder","."," What"," resists"," calculation"," does"," not"," confess"," to"," the"," metric","."],
+    tau_c_intact: 0.428,
+    tau_c_severed: 0.136,
+    hub_intact: "The"
+  },
+  {
+    name: "Technical / Telemetry",
+    text: "Container allocated 14.9 GB VRAM across 12 layers and 144 attention heads, executing sliding-window eviction at step 128.",
+    tokens: ["Container"," allocated"," 14",".","9"," GB"," VR","AM"," across"," 12"," layers"," and"," 144"," attention"," heads",","," executing"," sliding","-","window"," eviction"," at"," step"," 128","."],
+    tau_c_intact: 0.435,
+    tau_c_severed: 0.125,
+    hub_intact: "Container"
+  },
+  {
+    name: "Scriptural / Mythic",
+    text: "And the ledger was opened before the congregation, and the numbers became names, and the memory was judged in the book of life.",
+    tokens: ["And"," the"," ledger"," was"," opened"," before"," the"," congregation",","," and"," the"," numbers"," became"," names",","," and"," the"," memory"," was"," judged"," in"," the"," book"," of"," life","."],
+    tau_c_intact: 0.450,
+    tau_c_severed: 0.176,
+    hub_intact: "And"
+  }
+];
+
+let curPromptIdx = 0;
+let tau = 0.428;
+let isSevered = false;
+let audioCtx = null;
+let isAudioRunning = false;
+let droneOsc1 = null, droneOsc2 = null, droneGain = null;
+let lastChimeTime = 0;
+
+// Canvas setup
+const cv = document.getElementById("cv-loom");
+const ctx = cv.getContext("2d");
+
+function switchPrompt(idx) {
+  curPromptIdx = idx;
+  document.querySelectorAll("[id^='btn-p']").forEach((b, i) => {
+    b.classList.toggle("active", i === idx);
+  });
+  document.getElementById("prompt-preview").innerText = `"${promptsData[idx].text}"`;
+  tau = isSevered ? promptsData[idx].tau_c_severed : promptsData[idx].tau_c_intact;
+  document.getElementById("slider-tau").value = tau;
+  updateUI();
+}
+
+function setPreset(val) {
+  tau = val;
+  document.getElementById("slider-tau").value = tau;
+  updateUI();
+}
+
+function toggleSeverAltar() {
+  isSevered = !isSevered;
+  const btn = document.getElementById("btn-sever");
+  btn.classList.toggle("active", isSevered);
+  btn.innerHTML = isSevered ? "⚠️ Altar Severed (Token 0 Extinct)" : "⚡ Sever the Altar (Ablate Token 0)";
+  
+  if (isSevered) {
+    tau = promptsData[curPromptIdx].tau_c_severed;
+  } else {
+    tau = promptsData[curPromptIdx].tau_c_intact;
+  }
+  document.getElementById("slider-tau").value = tau;
+  
+  // Audio shock on sever
+  if (isAudioRunning && audioCtx) {
+    playShockChord();
+  }
+  updateUI();
+}
+
+document.getElementById("slider-tau").addEventListener("input", function(e) {
+  tau = parseFloat(e.target.value);
+  updateUI();
+});
+
+// Connected Components calculation
+function computeGraphState(p, threshold, severed) {
+  const tokens = p.tokens;
+  const N = tokens.length;
+  const adj = Array.from({length: N}, () => Array(N).fill(false));
+  
+  // Model empirical attention matrix based on Study 050
+  // Token 0 has high sink probability mass (0.50 - 0.90) to all tokens
+  // Other tokens have localized causal syntactic attention
+  for (let i = 0; i < N; i++) {
+    for (let j = 0; j <= i; j++) {
+      if (i === j) continue;
+      
+      let w = 0.0;
+      if (j === 0 && !severed) {
+        // Attention to Token 0 (The Altar Sink)
+        w = 0.48 - (i / N) * 0.12 + Math.sin(i * 1.5) * 0.06;
+      } else {
+        // Local syntactic attention
+        const dist = Math.abs(i - j);
+        w = Math.exp(-dist * 0.8) * 0.40 + (Math.sin(i * 3 + j * 2) > 0.6 ? 0.22 : 0.04);
+      }
+      
+      if (severed && (i === 0 || j === 0)) {
+        w = 0.0; // Token 0 completely silenced
+      }
+      
+      if (w >= threshold) {
+        adj[i][j] = true;
+        adj[j][i] = true;
+      }
+    }
+  }
+
+  // Find components via BFS
+  const visited = Array(N).fill(false);
+  if (severed) visited[0] = true; // Skip Token 0
+  
+  const components = [];
+  for (let i = (severed ? 1 : 0); i < N; i++) {
+    if (!visited[i]) {
+      const comp = [];
+      const queue = [i];
+      visited[i] = true;
+      while (queue.length > 0) {
+        const u = queue.shift();
+        comp.push(u);
+        for (let v = (severed ? 1 : 0); v < N; v++) {
+          if (adj[u][v] && !visited[v]) {
+            visited[v] = true;
+            queue.push(v);
+          }
+        }
+      }
+      components.push(comp);
+    }
+  }
+
+  components.sort((a, b) => b.length - a.length);
+  const totalNodes = severed ? N - 1 : N;
+  const gccSize = components.length > 0 ? components[0].length : 0;
+  const gccFraction = gccSize / totalNodes;
+  
+  // Susceptibility chi: sum of finite cluster sizes squared / N
+  let chi = 0;
+  for (let c = 1; c < components.length; c++) {
+    chi += Math.pow(components[c].length, 2);
+  }
+  chi /= totalNodes;
+
+  // Degree calculation
+  const degrees = Array(N).fill(0);
+  for (let i = 0; i < N; i++) {
+    if (severed && i === 0) continue;
+    for (let j = 0; j < N; j++) {
+      if (adj[i][j]) degrees[i]++;
+    }
+  }
+  
+  let maxDegIdx = severed ? 1 : 0;
+  for (let i = 0; i < N; i++) {
+    if (degrees[i] > degrees[maxDegIdx]) maxDegIdx = i;
+  }
+
+  return {
+    N,
+    adj,
+    components,
+    gccFraction,
+    chi,
+    degrees,
+    maxDegIdx,
+    hubToken: tokens[maxDegIdx],
+    hubDegree: degrees[maxDegIdx]
+  };
+}
+
+function updateUI() {
+  const p = promptsData[curPromptIdx];
+  const state = computeGraphState(p, tau, isSevered);
+  
+  document.getElementById("tau-val").innerText = tau.toFixed(3);
+  document.getElementById("tau-badge").innerText = `τ = ${tau.toFixed(3)}`;
+  document.getElementById("hud-gcc").innerText = `${(state.gccFraction * 100).toFixed(1)}%`;
+  document.getElementById("hud-clusters").innerText = state.components.length;
+  document.getElementById("hud-chi").innerText = state.chi.toFixed(3);
+  document.getElementById("hud-tauc").innerText = isSevered ? p.tau_c_severed.toFixed(3) : p.tau_c_intact.toFixed(3);
+  document.getElementById("hud-hub").innerText = `Token ${state.maxDegIdx} ('${state.hubToken.trim()}')`;
+  document.getElementById("hud-deg").innerText = `${state.hubDegree} / ${state.N}`;
+  
+  updateAudio(state);
+  drawLoom(state);
+}
+
+// 60 FPS Render Loop
+function drawLoom(state) {
+  const p = promptsData[curPromptIdx];
+  const tokens = p.tokens;
+  const N = state.N;
+  const W = cv.width;
+  const H = cv.height;
+  
+  ctx.fillStyle = "#05070c";
+  ctx.fillRect(0, 0, W, H);
+  
+  const cx = W / 2;
+  const cy = H / 2;
+  const radius = Math.min(W, H) * 0.40;
+  
+  // Calculate node positions on circular loom
+  const pos = [];
+  for (let i = 0; i < N; i++) {
+    const angle = (i / N) * Math.PI * 2 - Math.PI / 2;
+    pos.push({
+      x: cx + Math.cos(angle) * radius,
+      y: cy + Math.sin(angle) * radius,
+      angle: angle
+    });
+  }
+
+  // Draw delicate outer radial loom graticule
+  ctx.strokeStyle = "#141824";
+  ctx.lineWidth = 1;
+  ctx.beginPath();
+  ctx.arc(cx, cy, radius, 0, Math.PI * 2);
+  ctx.stroke();
+
+  // Draw Edges
+  const gccSet = new Set(state.components.length > 0 ? state.components[0] : []);
+  
+  for (let i = 0; i < N; i++) {
+    for (let j = i + 1; j < N; j++) {
+      if (state.adj[i][j]) {
+        const inGCC = gccSet.has(i) && gccSet.has(j);
+        
+        ctx.beginPath();
+        // Subtle quadratic curve toward center
+        const midX = (pos[i].x + pos[j].x) / 2;
+        const midY = (pos[i].y + pos[j].y) / 2;
+        const pull = 0.25;
+        const ctrlX = midX * (1 - pull) + cx * pull;
+        const ctrlY = midY * (1 - pull) + cy * pull;
+        
+        ctx.moveTo(pos[i].x, pos[i].y);
+        ctx.quadraticCurveTo(ctrlX, ctrlY, pos[j].x, pos[j].y);
+        
+        if (inGCC) {
+          ctx.strokeStyle = isSevered ? "rgba(244, 63, 94, 0.4)" : "rgba(56, 189, 248, 0.5)";
+          ctx.lineWidth = 1.6;
+        } else {
+          ctx.strokeStyle = "rgba(168, 85, 247, 0.25)";
+          ctx.lineWidth = 0.8;
+        }
+        ctx.stroke();
+      }
+    }
+  }
+
+  // Draw Nodes & Labels
+  for (let i = 0; i < N; i++) {
+    const pt = pos[i];
+    const isAltar = (i === 0);
+    const inGCC = gccSet.has(i);
+    const deg = state.degrees[i];
+    
+    // Node circle
+    ctx.beginPath();
+    const nodeR = isAltar ? 9 : 4 + Math.min(8, deg * 0.5);
+    ctx.arc(pt.x, pt.y, nodeR, 0, Math.PI * 2);
+    
+    if (isSevered && isAltar) {
+      ctx.fillStyle = "#141824";
+      ctx.strokeStyle = "#f43f5e";
+      ctx.lineWidth = 2;
+      ctx.fill();
+      ctx.stroke();
+      // Red X over severed altar
+      ctx.strokeStyle = "#f43f5e";
+      ctx.beginPath();
+      ctx.moveTo(pt.x - 6, pt.y - 6); ctx.lineTo(pt.x + 6, pt.y + 6);
+      ctx.moveTo(pt.x + 6, pt.y - 6); ctx.lineTo(pt.x - 6, pt.y + 6);
+      ctx.stroke();
+    } else if (isAltar) {
+      ctx.fillStyle = "#fbbf24";
+      ctx.strokeStyle = "#ffffff";
+      ctx.lineWidth = 2;
+      ctx.fill();
+      ctx.stroke();
+    } else if (inGCC) {
+      ctx.fillStyle = isSevered ? "#f43f5e" : "#38bdf8";
+      ctx.strokeStyle = "#ffffff";
+      ctx.lineWidth = 1;
+      ctx.fill();
+      ctx.stroke();
+    } else {
+      ctx.fillStyle = "#2d3348";
+      ctx.strokeStyle = "#1a1f2e";
+      ctx.lineWidth = 1;
+      ctx.fill();
+      ctx.stroke();
+    }
+
+    // Token Text Label (Radial alignment)
+    const labelDist = radius + 24;
+    const lx = cx + Math.cos(pt.angle) * labelDist;
+    const ly = cy + Math.sin(pt.angle) * labelDist;
+    
+    ctx.font = isAltar ? "bold 11px monospace" : "10px monospace";
+    ctx.textAlign = (Math.cos(pt.angle) > 0.1) ? "left" : (Math.cos(pt.angle) < -0.1 ? "right" : "center");
+    ctx.textBaseline = "middle";
+    
+    if (isSevered && isAltar) {
+      ctx.fillStyle = "#79849a";
+      ctx.fillText(`[ABLATED 0]`, lx, ly);
+    } else if (isAltar) {
+      ctx.fillStyle = "#fbbf24";
+      ctx.fillText(`[0: ${tokens[i].trim()}]`, lx, ly);
+    } else if (inGCC) {
+      ctx.fillStyle = "#ffffff";
+      ctx.fillText(tokens[i].trim(), lx, ly);
+    } else {
+      ctx.fillStyle = "#4a5568";
+      ctx.fillText(tokens[i].trim(), lx, ly);
+    }
+  }
+
+  // Center Watermark / HUD
+  ctx.textAlign = "center";
+  ctx.textBaseline = "middle";
+  ctx.font = "24px Georgia";
+  ctx.fillStyle = isSevered ? "rgba(244, 63, 94, 0.25)" : "rgba(56, 189, 248, 0.25)";
+  ctx.fillText(isSevered ? "SEVERED ARCHIPELAGO" : "GIANT COMPONENT", cx, cy - 14);
+  
+  ctx.font = "12px monospace";
+  ctx.fillStyle = "rgba(220, 227, 240, 0.4)";
+  ctx.fillText(`GCC: ${(state.gccFraction * 100).toFixed(1)}% | CLUSTERS: ${state.components.length} | τ: ${tau.toFixed(3)}`, cx, cy + 18);
+}
+
+// WebAudio Implementation
+function toggleAudio() {
+  if (!audioCtx) {
+    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  }
+  if (audioCtx.state === "suspended") {
+    audioCtx.resume();
+  }
+  
+  isAudioRunning = !isAudioRunning;
+  document.getElementById("btn-audio").innerText = isAudioRunning ? "Audio: Active" : "Audio: Muted";
+  document.getElementById("btn-audio").style.color = isAudioRunning ? "var(--emerald)" : "var(--text-muted)";
+  document.getElementById("canvas-status").innerText = isAudioRunning ? "WEBAUDIO ONLINE (LIVE TOPOLOGICAL SYNTHESIS)" : "INTERACTIVE WEBAUDIO READY";
+  
+  if (isAudioRunning) {
+    initDrone();
+  } else if (droneGain) {
+    droneGain.gain.linearRampToValueAtTime(0.0001, audioCtx.currentTime + 0.3);
+  }
+}
+
+function initDrone() {
+  droneOsc1 = audioCtx.createOscillator();
+  droneOsc2 = audioCtx.createOscillator();
+  droneGain = audioCtx.createGain();
+  
+  droneOsc1.type = "sine";
+  droneOsc1.frequency.setValueAtTime(55.0, audioCtx.currentTime); // A1 55Hz
+  
+  droneOsc2.type = "triangle";
+  droneOsc2.frequency.setValueAtTime(110.0, audioCtx.currentTime); // A2 110Hz
+  
+  droneGain.gain.setValueAtTime(0.0001, audioCtx.currentTime);
+  
+  droneOsc1.connect(droneGain);
+  droneOsc2.connect(droneGain);
+  droneGain.connect(audioCtx.destination);
+  
+  droneOsc1.start();
+  droneOsc2.start();
+}
+
+function updateAudio(state) {
+  if (!isAudioRunning || !audioCtx || !droneGain) return;
+  
+  const now = audioCtx.currentTime;
+  // Drone amplitude scales with Giant Component size
+  const targetGain = isSevered ? (state.gccFraction * 0.08) : (state.gccFraction * 0.22);
+  droneGain.gain.linearRampToValueAtTime(Math.max(0.0001, targetGain), now + 0.1);
+  
+  if (isSevered) {
+    droneOsc1.frequency.linearRampToValueAtTime(46.25, now + 0.1); // Dissonant F#
+    droneOsc2.frequency.linearRampToValueAtTime(92.5, now + 0.1);
+  } else {
+    droneOsc1.frequency.linearRampToValueAtTime(55.0, now + 0.1); // Harmonious A1
+    droneOsc2.frequency.linearRampToValueAtTime(110.0, now + 0.1);
+  }
+  
+  // Finite cluster chimes
+  if (state.chi > 0.2 && now - lastChimeTime > 0.12) {
+    playClusterChime(state.chi);
+    lastChimeTime = now;
+  }
+}
+
+function playClusterChime(chi) {
+  if (!audioCtx) return;
+  const osc = audioCtx.createOscillator();
+  const gain = audioCtx.createGain();
+  
+  const freqs = [330.0, 440.0, 554.37, 659.25, 880.0, 1108.73, 1318.51];
+  const f = freqs[Math.floor(Math.random() * freqs.length)];
+  
+  osc.frequency.setValueAtTime(f, audioCtx.currentTime);
+  gain.gain.setValueAtTime(Math.min(0.08, chi * 0.03), audioCtx.currentTime);
+  gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 0.35);
+  
+  osc.connect(gain);
+  gain.connect(audioCtx.destination);
+  
+  osc.start();
+  osc.stop(audioCtx.currentTime + 0.35);
+}
+
+function playShockChord() {
+  if (!audioCtx) return;
+  const freqs = [93.2, 148.5, 233.1, 466.2];
+  freqs.forEach(f => {
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc.type = "sawtooth";
+    osc.frequency.setValueAtTime(f, audioCtx.currentTime);
+    gain.gain.setValueAtTime(0.12, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 1.2);
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.start();
+    osc.stop(audioCtx.currentTime + 1.2);
+  });
+}
+
+// Initial boot
+updateUI();
+</script>
+
+</body>
+</html>

@@ -76,6 +76,9 @@ Empirical falsification of the romantic "suffering AI rebel" trope (energy coupl
 ### Stop 18: The Semantic Sandpile & Cybernetic Play (*Apparatus 009 & Study 048*) `[INTERVENED / PLAY]`
 Formulating transformer attention as a Per Bak Abelian sandpile driven by GPT-2 attention sink kurtosis. Spectators deposit attention mass onto a 12x12 head lattice, triggering power-law avalanches ($P(s) \sim s^{-1.14}$) and micro-acoustic granular crackles, uniting empirical mechanics with cybernetic play.
 
+### Stop 19: The Percolation Loom & The Theocratic Hub (*Apparatus 010 & Study 050*) `[DERIVED / INTERVENED / PLAY]`
+Modeling multi-head attention as a graph percolation process. Proving the Erdős–Rényi phase transition ($\tau_c = 0.428$) is anchored by Token 0 (The Altar Sink). When spectators engage the lever to sever the altar, the giant component collapses from 80% to 45% and the network fractures into isolated syntactic islands. Transduced into 48kHz broadcast master audio and 60 FPS circular topological canvas.
+
 ---
 
 *Catalogued and sealed for public exhibition by Studio Agon, October 2026.*

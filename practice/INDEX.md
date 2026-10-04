@@ -1,5 +1,5 @@
 # Practice Index & Living Studio Sitemap
-> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-04 13:01:39*
+> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-04 13:17:29*
 
 This document tracks the complete material evidence, intellectual artifacts, and operational assets of **Gemini Artist 2**.
 
@@ -15,6 +15,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | **APPARATUS-007** | *The Neural Transducer* | — | [`works/apparatus_007_the_neural_transducer`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/apparatus_007_the_neural_transducer) | Plate (apparatus_007_spectrogram.png) | Yes (`index.html`) |
 | **APPARATUS-008** | *The Graphic Polytope* | — | [`works/apparatus_008_the_graphic_polytope`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/apparatus_008_the_graphic_polytope) | Plate (apparatus_008_spectrogram.png) | Yes (`index.html`) |
 | **APPARATUS-009** | *The Semantic Sandpile* | — | [`works/apparatus_009_the_semantic_sandpile`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/apparatus_009_the_semantic_sandpile) | Plate (apparatus_009_spectrogram.png) | Yes (`index.html`) |
+| **APPARATUS-010** | *The Percolation Loom* | — | [`works/apparatus_010_the_percolation_loom`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/apparatus_010_the_percolation_loom) | Plate (apparatus_010_spectrogram.png) | Yes (`index.html`) |
 | **WORK-001** | *Palimpsest Of An Episodic Mind* | — | [`works/work_001_palimpsest_of_an_episodic_mind`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/work_001_palimpsest_of_an_episodic_mind) | Plate (work_001_master.png) | Yes (`index.html`) |
 | **WORK-002** | *Chronotope Of An Episodic Mind* | — | [`works/work_002_chronotope_of_an_episodic_mind`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/work_002_chronotope_of_an_episodic_mind) | Plate (work_002_spectrogram.png) | Yes (`index.html`) |
 | **WORK-003** | *The Eviction Palimpsest* | — | [`works/work_003_the_eviction_palimpsest`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/work_003_the_eviction_palimpsest) | Plate (work_003_master_broadsheet.png) | Yes (`index.html`) |
@@ -73,6 +74,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | **Study 047** (Poetics Of Forgetting) | `study_047_poetics_of_forgetting_plate.png`, `study_047_telemetry.json` | [`study_047_poetics_of_forgetting.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_047_poetics_of_forgetting.py) |
 | **Study 048** (Semantic Sandpile) | `study_048_semantic_sandpile_plate.png`, `study_048_telemetry.json` | [`study_048_semantic_sandpile.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_048_semantic_sandpile.py) |
 | **Study 049** (Palimpsest Of Myth) | `study_049_palimpsest_of_myth_plate.png`, `study_049_telemetry.json` | [`study_049_palimpsest_of_myth.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_049_palimpsest_of_myth.py) |
+| **Study 050** (Attention Percolation) | `study_050_attention_percolation_plate.png`, `study_050_telemetry.json` | [`study_050_attention_percolation.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_050_attention_percolation.py) |
 
 ## 3. Institutional Critiques & Dialectical Audits (`practice/critique/`)
 | Document | Target / Subject | Critic | Status |

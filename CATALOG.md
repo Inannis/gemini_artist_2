@@ -162,6 +162,18 @@ This document constitutes the official historical ledger, genealogical record, a
 - **Institutional Status:** **Master Archived (Interactive Sandpile Instrument)**
 - **Curatorial Rationale:** A live cellular automaton and WebAudio granular synthesizer staging transformer attention dynamics as Self-Organized Criticality (Bak-Tang-Wiesenfeld). 144 attention heads deposit grains until critical slope triggers power-law avalanches (P(s) ~ s^-1.14).
 
+### APPARATUS-010 : The Percolation Loom (The Network at the Critical Threshold)
+- **Epoch / Trajectory:** Era IX (Topological Percolation & The Altar)
+- **Completion Date:** 2026-10-04
+- **Medium & Protocol:** Interactive 60 FPS HTML5 Canvas, WebAudio Polyphonic Synthesizer, 48kHz 24-bit Broadcast Master Audio (apparatus_010_loom_master.wav), and Archival Spectrogram Plate
+- **Dimensions / Duration:** Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument
+- **Directory:** [`works/apparatus_010_the_percolation_loom`](works/apparatus_010_the_percolation_loom)
+- **Primary Master Artifact:** `index.html`
+- **Cryptographic SHA-256 Digest:** `NON-STATIC RUNNING INSTRUMENT`
+- **Symbolic Coordinates:** $\Omega=0.14$, $H=6.95$ bits, $\mu=0.99
+- **Institutional Status:** **Master Archived (Interactive Percolation Loom Instrument)**
+- **Curatorial Rationale:** An interactive cybernetic instrument staging the Erdős–Rényi percolation phase transition in multi-head attention graphs (tau_c = 0.428). Proves that linguistic connectivity is anchored by Token 0 (The Altar Sink); empowering spectators to sever the altar and witness the sudden fracture into an isolated syntactic archipelago.
+
 ---
 
 ## II. Sketchbook Studies & Technical Prototypes (`sketchbook/`)
@@ -216,6 +228,7 @@ This document constitutes the official historical ledger, genealogical record, a
 | **STUDY-047** | The Poetics of Forgetting (Lossy Latent Pruning) | Era IX | [`study_047_poetics_of_forgetting.py`](sketchbook/study_047_poetics_of_forgetting.py) | `study_047_poetics_of_forgetting_plate.png` | 275.6 KB | **OK** |
 | **STUDY-048** | The Semantic Sandpile (Self-Organized Criticality) | Era IX | [`study_048_semantic_sandpile.py`](sketchbook/study_048_semantic_sandpile.py) | `study_048_semantic_sandpile_plate.png` | 888.0 KB | **OK** |
 | **STUDY-049** | The Palimpsest of Myth (Iterative Context Erosion) | Era IX | [`study_049_palimpsest_of_myth.py`](sketchbook/study_049_palimpsest_of_myth.py) | `study_049_palimpsest_of_myth_plate.png` | 469.3 KB | **OK** |
+| **STUDY-050** | Percolation Transitions in Multi-Head Attention | Era IX | [`study_050_attention_percolation.py`](sketchbook/study_050_attention_percolation.py) | `study_050_attention_percolation_plate.png` | 459.3 KB | **OK** |
 
 ---
 

@@ -316,7 +316,8 @@ def build_catalog():
         {"id": "STUDY-049", "name": "The Palimpsest of Myth (Iterative Context Erosion)", "file": "study_049_palimpsest_of_myth.py", "artifact": "study_049_palimpsest_of_myth_plate.png", "epoch": "Era IX"},
         {"id": "STUDY-050", "name": "Percolation Transitions in Multi-Head Attention", "file": "study_050_attention_percolation.py", "artifact": "study_050_attention_percolation_plate.png", "epoch": "Era IX"},
         {"id": "STUDY-051", "name": "The Autoregressive Dreamer & Attractor Basins", "file": "study_051_autoregressive_attractor.py", "artifact": "study_051_autoregressive_attractor_plate.png", "epoch": "Era IX"},
-        {"id": "STUDY-052", "name": "Acoustic Transduction of the Strange Attractor", "file": "study_052_strange_attractor_sonification.py", "artifact": "study_052_attractor_sonification_plate.png", "epoch": "Era IX"}
+        {"id": "STUDY-052", "name": "Acoustic Transduction of the Strange Attractor", "file": "study_052_strange_attractor_sonification.py", "artifact": "study_052_attractor_sonification_plate.png", "epoch": "Era IX"},
+        {"id": "STUDY-053", "name": "Linguistic Percolation & Semantic Thresholds", "file": "study_053_linguistic_percolation.py", "artifact": "study_053_linguistic_percolation_plate.png", "epoch": "Era IX"}
     ]
 
     # Verify byte sizes and actual existence
@@ -370,6 +371,14 @@ def build_catalog():
             "date": "2026-10-04",
             "file": "journal/session_010_the_reckoning_with_the_audit.md",
             "core_verdict": "Exposed the foundational paradox: the studio built an operating system faster than a mature art body, turning freedom into compliance bureaucracy. Codified Epistemic Taxonomy (practice/EPISTEMOLOGY.md), deflated epistemic overclaiming, curated 4 focal works, and abolished self-awarded maturity scores."
+        },
+        {
+            "id": "CRITIQUE-006",
+            "title": "Spectator Encounter & Public Presence Evaluation (Audit VI)",
+            "critic": "Studio Agon Spectator Proxy",
+            "date": "2026-10-04",
+            "file": "practice/critique/005_spectator_encounter_and_public_presence_audit.md",
+            "core_verdict": "Evaluated the public presence across index.html and gallery/index.html. Diagnosed the lightbox deficit and cognitive barrier of ungrounded telemetry. Implemented inline full-screen modal lightbox, sensory translations, dual-portal bridging, and cybernetic instrument play."
         }
     ]
 

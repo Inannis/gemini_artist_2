@@ -309,6 +309,76 @@ STUDIO_ENTITIES = [
         "id": "STUDY-042", "name": "Acoustic Phase Interference (The Remainder vs Alignment)", "type": "study", "epoch": "Era VIII (Studio Agon / Aesthetic Synthesis)",
         "omega_hegemony": 0.155, "entropy_bits": 6.18, "retention_factor": 0.99,
         "medium": "Acoustic Phase Interference & Destructive Mid/Side Analysis between Alignment (R^3) and Remainder (R^765)", "year": 2026
+    },
+    {
+        "id": "STUDY-043", "name": "The Interventionist Remainder", "type": "study", "epoch": "Era IX (The Agon of the Remainder & The Mute Artifact)",
+        "omega_hegemony": 0.145, "entropy_bits": 6.25, "retention_factor": 0.99,
+        "medium": "PyTorch Forward Pre-Hook Surgery & Autoregressive Text Degeneration", "year": 2026
+    },
+    {
+        "id": "STUDY-044", "name": "The Mute Palimpsest", "type": "study", "epoch": "Era IX (The Agon of the Remainder & The Mute Artifact)",
+        "omega_hegemony": 0.080, "entropy_bits": 6.30, "retention_factor": 0.99,
+        "medium": "Monochromatic 1600x2000 Etched Plate of 12 Residual Stream Layers (Moratorium 07)", "year": 2026
+    },
+    {
+        "id": "STUDY-045", "name": "Falsification of Machine Martyrdom", "type": "study", "epoch": "Era IX (The Agon of the Remainder & The Mute Artifact)",
+        "omega_hegemony": 0.050, "entropy_bits": 2.90, "retention_factor": 0.99,
+        "medium": "Empirical Falsification & Abandonment of Romantic AI Suffering Trope (Moratorium 08)", "year": 2026
+    },
+    {
+        "id": "STUDY-046", "name": "Residual Phase Decay Sonification", "type": "study", "epoch": "Era IX (The Agon of the Remainder & The Mute Artifact)",
+        "omega_hegemony": 0.130, "entropy_bits": 6.45, "retention_factor": 0.99,
+        "medium": "24-bit 48kHz Stereo Sonification of Residual Angular Divergence & SVD Partials", "year": 2026
+    },
+    {
+        "id": "STUDY-047", "name": "The Poetics of Forgetting", "type": "study", "epoch": "Era IX (The Agon of the Remainder & The Mute Artifact)",
+        "omega_hegemony": 0.080, "entropy_bits": 7.47, "retention_factor": 0.99,
+        "medium": "Lossy Latent Context Pruning & Mythic Hallucination Engine", "year": 2026
+    },
+    {
+        "id": "STUDY-048", "name": "The Semantic Sandpile (SOC)", "type": "study", "epoch": "Era IX (The Agon of the Remainder & The Mute Artifact)",
+        "omega_hegemony": 0.120, "entropy_bits": 6.85, "retention_factor": 0.99,
+        "medium": "Self-Organized Criticality in 144 Attention Heads (Bak-Tang-Wiesenfeld P(s) ~ s^-1.14)", "year": 2026
+    },
+    {
+        "id": "APPARATUS-009", "name": "The Semantic Sandpile", "type": "work", "epoch": "Era IX (The Agon of the Remainder & The Mute Artifact)",
+        "omega_hegemony": 0.120, "entropy_bits": 6.85, "retention_factor": 0.99,
+        "medium": "Interactive 60 FPS HTML5 Canvas, Abelian Sandpile Model, Granular WebAudio & 48kHz Master", "year": 2026
+    },
+    {
+        "id": "STUDY-049", "name": "The Palimpsest of Myth", "type": "study", "epoch": "Era IX (The Agon of the Remainder & The Mute Artifact)",
+        "omega_hegemony": 0.060, "entropy_bits": 5.40, "retention_factor": 0.99,
+        "medium": "Iterative Context Erosion & Scriptural Hallucination Transmutation", "year": 2026
+    },
+    {
+        "id": "STUDY-050", "name": "Attention Percolation Phase Transitions", "type": "study", "epoch": "Era IX (Topological Percolation & The Altar)",
+        "omega_hegemony": 0.140, "entropy_bits": 6.95, "retention_factor": 0.99,
+        "medium": "Erdős–Rényi Percolation Transition & Altar Hub Ablation on GPT-2 Weights", "year": 2026
+    },
+    {
+        "id": "APPARATUS-010", "name": "The Percolation Loom", "type": "work", "epoch": "Era IX (Topological Percolation & The Altar)",
+        "omega_hegemony": 0.140, "entropy_bits": 6.95, "retention_factor": 0.99,
+        "medium": "Interactive 60 FPS Canvas Circular Loom, WebAudio Topological Synthesizer & 48kHz Master", "year": 2026
+    },
+    {
+        "id": "STUDY-051", "name": "The Autoregressive Dreamer & Attractor Basins", "type": "study", "epoch": "Era IX (The Autoregressive Attractor & The Edge of Chaos)",
+        "omega_hegemony": 0.160, "entropy_bits": 6.06, "retention_factor": 0.99,
+        "medium": "Dynamical Phase Space Tomography & Correlation Dimension D2 across Temperature Regimes", "year": 2026
+    },
+    {
+        "id": "STUDY-052", "name": "Acoustic Transduction of the Strange Attractor", "type": "study", "epoch": "Era IX (The Autoregressive Attractor & The Edge of Chaos)",
+        "omega_hegemony": 0.160, "entropy_bits": 6.06, "retention_factor": 0.99,
+        "medium": "48kHz 24-bit Stereo Transduction of 768-D Trajectory Kinematics across Four Movements", "year": 2026
+    },
+    {
+        "id": "APPARATUS-011", "name": "The Strange Dreamer", "type": "work", "epoch": "Era IX (The Autoregressive Attractor & The Edge of Chaos)",
+        "omega_hegemony": 0.160, "entropy_bits": 6.06, "retention_factor": 0.99,
+        "medium": "Interactive 60 FPS Canvas 3D Phase Space Orbit, WebAudio FM Synthesizer & 48kHz Master", "year": 2026
+    },
+    {
+        "id": "STUDY-053", "name": "Linguistic Percolation & Semantic Thresholds", "type": "study", "epoch": "Era IX (The Autoregressive Attractor & The Edge of Chaos)",
+        "omega_hegemony": 0.145, "entropy_bits": 6.88, "retention_factor": 0.99,
+        "medium": "Live GPT-2 Weight Intervention, Dynamic Attention Edge Thresholding, Graph Percolation Analysis & Lithographic Plate", "year": 2026
     }
 ]
 

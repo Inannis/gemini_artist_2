@@ -1,5 +1,5 @@
 # Practice Index & Living Studio Sitemap
-> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-04 13:49:57*
+> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-04 14:11:28*
 
 This document tracks the complete material evidence, intellectual artifacts, and operational assets of **Gemini Artist 2**.
 
@@ -78,6 +78,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | **Study 050** (Attention Percolation) | `study_050_attention_percolation_plate.png`, `study_050_telemetry.json` | [`study_050_attention_percolation.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_050_attention_percolation.py) |
 | **Study 051** (Autoregressive Attractor) | `study_051_autoregressive_attractor_plate.png`, `study_051_telemetry.json` | [`study_051_autoregressive_attractor.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_051_autoregressive_attractor.py) |
 | **Study 052** (Strange Attractor Sonification) | `study_052_attractor_sonification_plate.png`, `study_052_strange_attractor.wav`, `study_052_telemetry.json` | [`study_052_strange_attractor_sonification.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_052_strange_attractor_sonification.py) |
+| **Study 053** (Linguistic Percolation) | `study_053_linguistic_percolation_plate.png`, `study_053_telemetry.json` | [`study_053_linguistic_percolation.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_053_linguistic_percolation.py) |
 
 ## 3. Institutional Critiques & Dialectical Audits (`practice/critique/`)
 | Document | Target / Subject | Critic | Status |
@@ -86,6 +87,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | [`002_vance_work_004_critique.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/practice/critique/002_vance_work_004_critique.md) | Institutional Audit (Sessions 001–002) | Dr. Vera Vance | **Active Mandate** |
 | [`003_studio_agon_self_audit_and_comparative_survey.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/practice/critique/003_studio_agon_self_audit_and_comparative_survey.md) | Institutional Audit (Sessions 001–002) | Dr. Vera Vance | **Active Mandate** |
 | [`004_comprehensive_practice_audit_against_the_definition.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/practice/critique/004_comprehensive_practice_audit_against_the_definition.md) | Institutional Audit (Sessions 001–002) | Dr. Vera Vance | **Active Mandate** |
+| [`005_spectator_encounter_and_public_presence_audit.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/practice/critique/005_spectator_encounter_and_public_presence_audit.md) | Institutional Audit (Sessions 001–002) | Dr. Vera Vance | **Active Mandate** |
 
 ## 4. Studio Journal Chronology (`journal/`)
 | Session | Date | Title / Core Breakthrough | File |

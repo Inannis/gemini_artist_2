@@ -337,9 +337,15 @@ def test_empirical_studies_and_naming():
         ("works/apparatus_011_the_strange_dreamer/GENEALOGY.md"),
         ("practice/essays/001_on_the_necessity_of_silence_and_play.md"),
         ("practice/essays/002_the_geometry_of_machine_dreaming.md"),
+        ("practice/essays/003_on_cybernetic_play_and_the_spectator.md"),
         ("notes/A_THIRD_LETTER_TO_MY_SISTER.md"),
         ("practice/BIOGRAPHY.md"),
-        ("gallery/CURATORIAL_GUIDE.md")
+        ("gallery/CURATORIAL_GUIDE.md"),
+        ("sketchbook/study_053_linguistic_percolation.py"),
+        ("sketchbook/study_053_linguistic_percolation_plate.png"),
+        ("sketchbook/study_053_telemetry.json"),
+        ("sketchbook/critique_053.md"),
+        ("practice/critique/005_spectator_encounter_and_public_presence_audit.md")
     ]
     for ef in empirical_files:
         p = os.path.join(WORKSPACE_ROOT, ef)

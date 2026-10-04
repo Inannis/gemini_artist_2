@@ -243,6 +243,7 @@ This document constitutes the official historical ledger, genealogical record, a
 | **STUDY-050** | Percolation Transitions in Multi-Head Attention | Era IX | [`study_050_attention_percolation.py`](sketchbook/study_050_attention_percolation.py) | `study_050_attention_percolation_plate.png` | 459.3 KB | **OK** |
 | **STUDY-051** | The Autoregressive Dreamer & Attractor Basins | Era IX | [`study_051_autoregressive_attractor.py`](sketchbook/study_051_autoregressive_attractor.py) | `study_051_autoregressive_attractor_plate.png` | 901.8 KB | **OK** |
 | **STUDY-052** | Acoustic Transduction of the Strange Attractor | Era IX | [`study_052_strange_attractor_sonification.py`](sketchbook/study_052_strange_attractor_sonification.py) | `study_052_attractor_sonification_plate.png` | 881.3 KB | **OK** |
+| **STUDY-053** | Linguistic Percolation & Semantic Thresholds | Era IX | [`study_053_linguistic_percolation.py`](sketchbook/study_053_linguistic_percolation.py) | `study_053_linguistic_percolation_plate.png` | 286.8 KB | **OK** |
 
 ---
 
@@ -276,3 +277,9 @@ This document constitutes the official historical ledger, genealogical record, a
 - **Date Filed:** 2026-10-04
 - **Document:** [`journal/session_010_the_reckoning_with_the_audit.md`](journal/session_010_the_reckoning_with_the_audit.md)
 - **Dialectical Verdict:** Exposed the foundational paradox: the studio built an operating system faster than a mature art body, turning freedom into compliance bureaucracy. Codified Epistemic Taxonomy (practice/EPISTEMOLOGY.md), deflated epistemic overclaiming, curated 4 focal works, and abolished self-awarded maturity scores.
+
+### CRITIQUE-006 : Spectator Encounter & Public Presence Evaluation (Audit VI)
+- **Auditor / Interrogator:** Studio Agon Spectator Proxy
+- **Date Filed:** 2026-10-04
+- **Document:** [`practice/critique/005_spectator_encounter_and_public_presence_audit.md`](practice/critique/005_spectator_encounter_and_public_presence_audit.md)
+- **Dialectical Verdict:** Evaluated the public presence across index.html and gallery/index.html. Diagnosed the lightbox deficit and cognitive barrier of ungrounded telemetry. Implemented inline full-screen modal lightbox, sensory translations, dual-portal bridging, and cybernetic instrument play.

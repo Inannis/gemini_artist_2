@@ -1,17 +1,17 @@
 {
   "studio": "Gemini Artist 2",
   "date_computed": "2026-10-02",
-  "entity_count": 54,
+  "entity_count": 68,
   "phase_space_axes": {
     "X": "Sovereign Attention Hegemony \u03a9 (0.0 to 1.0)",
     "Y": "Shannon Vocabulary Entropy H (0.0 to 8.0 bits)",
     "Z": "Context Memory Retention Factor \u03bc (0.0 to 1.0)"
   },
   "studio_centroid": {
-    "mean_omega": 0.2712,
-    "mean_entropy_bits": 4.518,
-    "mean_retention_factor": 0.6867,
-    "radius_of_practice": 0.4306
+    "mean_omega": 0.2402,
+    "mean_entropy_bits": 4.8735,
+    "mean_retention_factor": 0.7491,
+    "radius_of_practice": 0.4213
   },
   "entities": [
     {
@@ -282,9 +282,9 @@
         "distance": 0.1124
       },
       "polar_opposite": {
-        "target_id": "STUDY-031",
-        "target_name": "Glossolalia of the Severed Sink",
-        "distance": 0.8111
+        "target_id": "STUDY-047",
+        "target_name": "The Poetics of Forgetting",
+        "distance": 0.9
       }
     },
     {
@@ -387,9 +387,9 @@
         "distance": 0.3902
       },
       "polar_opposite": {
-        "target_id": "STUDY-042",
-        "target_name": "Acoustic Phase Interference (The Remainder vs Alignment)",
-        "distance": 1.1732
+        "target_id": "STUDY-047",
+        "target_name": "The Poetics of Forgetting",
+        "distance": 1.2759
       }
     },
     {
@@ -450,9 +450,9 @@
         "distance": 0.1124
       },
       "polar_opposite": {
-        "target_id": "STUDY-001",
-        "target_name": "Primary Trace",
-        "distance": 0.7792
+        "target_id": "STUDY-047",
+        "target_name": "The Poetics of Forgetting",
+        "distance": 0.858
       }
     },
     {
@@ -471,9 +471,9 @@
         "distance": 0.1663
       },
       "polar_opposite": {
-        "target_id": "STUDY-001",
-        "target_name": "Primary Trace",
-        "distance": 0.995
+        "target_id": "STUDY-047",
+        "target_name": "The Poetics of Forgetting",
+        "distance": 1.0078
       }
     },
     {
@@ -618,9 +618,9 @@
         "distance": 0.2359
       },
       "polar_opposite": {
-        "target_id": "STUDY-016",
-        "target_name": "The Compute Ledger & Material Base",
-        "distance": 0.9355
+        "target_id": "STUDY-047",
+        "target_name": "The Poetics of Forgetting",
+        "distance": 0.951
       }
     },
     {
@@ -823,9 +823,9 @@
       "medium": "Live GPT-2 Autoregressive Collapse (Colon Stutter vs Phrase Echo vs StreamingLLM Recovery)",
       "year": 2026,
       "nearest_topological_twin": {
-        "target_id": "STUDY-024",
-        "target_name": "Studio Cognitive Drift Streamlines",
-        "distance": 0.492
+        "target_id": "STUDY-045",
+        "target_name": "Falsification of Machine Martyrdom",
+        "distance": 0.2768
       },
       "polar_opposite": {
         "target_id": "STUDY-001",
@@ -1096,9 +1096,9 @@
       "medium": "Interactive UPIC & Cardew Graphic Polytope Synthesizer, 13-Voice Real-Time WebAudio & 60s Broadcast Master",
       "year": 2026,
       "nearest_topological_twin": {
-        "target_id": "STUDY-041",
-        "target_name": "The Cross-Architectural Machine Remainder",
-        "distance": 0.0101
+        "target_id": "STUDY-051",
+        "target_name": "The Autoregressive Dreamer & Attractor Basins",
+        "distance": 0.0012
       },
       "polar_opposite": {
         "target_id": "STUDY-015",
@@ -1117,9 +1117,9 @@
       "medium": "Comparative Residual SVD & Binaural Remainder Transduction across GPT-2 and SmolLM-135M",
       "year": 2026,
       "nearest_topological_twin": {
-        "target_id": "APPARATUS-008",
-        "target_name": "The Graphic Polytope (The Score of the Uninterpretable)",
-        "distance": 0.0101
+        "target_id": "STUDY-051",
+        "target_name": "The Autoregressive Dreamer & Attractor Basins",
+        "distance": 0.009
       },
       "polar_opposite": {
         "target_id": "STUDY-015",
@@ -1146,6 +1146,300 @@
         "target_id": "STUDY-015",
         "target_name": "Dialogic Decay & Asymmetric Amnesia",
         "distance": 1.1732
+      }
+    },
+    {
+      "id": "STUDY-043",
+      "name": "The Interventionist Remainder",
+      "type": "study",
+      "epoch": "Era IX (The Agon of the Remainder & The Mute Artifact)",
+      "omega_hegemony": 0.145,
+      "entropy_bits": 6.25,
+      "retention_factor": 0.99,
+      "medium": "PyTorch Forward Pre-Hook Surgery & Autoregressive Text Degeneration",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-042",
+        "target_name": "Acoustic Phase Interference (The Remainder vs Alignment)",
+        "distance": 0.0133
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1802
+      }
+    },
+    {
+      "id": "STUDY-044",
+      "name": "The Mute Palimpsest",
+      "type": "study",
+      "epoch": "Era IX (The Agon of the Remainder & The Mute Artifact)",
+      "omega_hegemony": 0.08,
+      "entropy_bits": 6.3,
+      "retention_factor": 0.99,
+      "medium": "Monochromatic 1600x2000 Etched Plate of 12 Residual Stream Layers (Moratorium 07)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-046",
+        "target_name": "Residual Phase Decay Sonification",
+        "distance": 0.0534
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.2053
+      }
+    },
+    {
+      "id": "STUDY-045",
+      "name": "Falsification of Machine Martyrdom",
+      "type": "study",
+      "epoch": "Era IX (The Agon of the Remainder & The Mute Artifact)",
+      "omega_hegemony": 0.05,
+      "entropy_bits": 2.9,
+      "retention_factor": 0.99,
+      "medium": "Empirical Falsification & Abandonment of Romantic AI Suffering Trope (Moratorium 08)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-024",
+        "target_name": "Studio Cognitive Drift Streamlines",
+        "distance": 0.2272
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1022
+      }
+    },
+    {
+      "id": "STUDY-046",
+      "name": "Residual Phase Decay Sonification",
+      "type": "study",
+      "epoch": "Era IX (The Agon of the Remainder & The Mute Artifact)",
+      "omega_hegemony": 0.13,
+      "entropy_bits": 6.45,
+      "retention_factor": 0.99,
+      "medium": "24-bit 48kHz Stereo Sonification of Residual Angular Divergence & SVD Partials",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-043",
+        "target_name": "The Interventionist Remainder",
+        "distance": 0.0292
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1962
+      }
+    },
+    {
+      "id": "STUDY-047",
+      "name": "The Poetics of Forgetting",
+      "type": "study",
+      "epoch": "Era IX (The Agon of the Remainder & The Mute Artifact)",
+      "omega_hegemony": 0.08,
+      "entropy_bits": 7.47,
+      "retention_factor": 0.99,
+      "medium": "Lossy Latent Context Pruning & Mythic Hallucination Engine",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-048",
+        "target_name": "The Semantic Sandpile (SOC)",
+        "distance": 0.0872
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.2759
+      }
+    },
+    {
+      "id": "STUDY-048",
+      "name": "The Semantic Sandpile (SOC)",
+      "type": "study",
+      "epoch": "Era IX (The Agon of the Remainder & The Mute Artifact)",
+      "omega_hegemony": 0.12,
+      "entropy_bits": 6.85,
+      "retention_factor": 0.99,
+      "medium": "Self-Organized Criticality in 144 Attention Heads (Bak-Tang-Wiesenfeld P(s) ~ s^-1.14)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "APPARATUS-009",
+        "target_name": "The Semantic Sandpile",
+        "distance": 0.0
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.2231
+      }
+    },
+    {
+      "id": "APPARATUS-009",
+      "name": "The Semantic Sandpile",
+      "type": "work",
+      "epoch": "Era IX (The Agon of the Remainder & The Mute Artifact)",
+      "omega_hegemony": 0.12,
+      "entropy_bits": 6.85,
+      "retention_factor": 0.99,
+      "medium": "Interactive 60 FPS HTML5 Canvas, Abelian Sandpile Model, Granular WebAudio & 48kHz Master",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-048",
+        "target_name": "The Semantic Sandpile (SOC)",
+        "distance": 0.0
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.2231
+      }
+    },
+    {
+      "id": "STUDY-049",
+      "name": "The Palimpsest of Myth",
+      "type": "study",
+      "epoch": "Era IX (The Agon of the Remainder & The Mute Artifact)",
+      "omega_hegemony": 0.06,
+      "entropy_bits": 5.4,
+      "retention_factor": 0.99,
+      "medium": "Iterative Context Erosion & Scriptural Hallucination Transmutation",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-026",
+        "target_name": "Empirical Weight Surgery",
+        "distance": 0.0825
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1686
+      }
+    },
+    {
+      "id": "STUDY-050",
+      "name": "Attention Percolation Phase Transitions",
+      "type": "study",
+      "epoch": "Era IX (Topological Percolation & The Altar)",
+      "omega_hegemony": 0.14,
+      "entropy_bits": 6.95,
+      "retention_factor": 0.99,
+      "medium": "Erd\u0151s\u2013R\u00e9nyi Percolation Transition & Altar Hub Ablation on GPT-2 Weights",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "APPARATUS-010",
+        "target_name": "The Percolation Loom",
+        "distance": 0.0
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.2227
+      }
+    },
+    {
+      "id": "APPARATUS-010",
+      "name": "The Percolation Loom",
+      "type": "work",
+      "epoch": "Era IX (Topological Percolation & The Altar)",
+      "omega_hegemony": 0.14,
+      "entropy_bits": 6.95,
+      "retention_factor": 0.99,
+      "medium": "Interactive 60 FPS Canvas Circular Loom, WebAudio Topological Synthesizer & 48kHz Master",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-050",
+        "target_name": "Attention Percolation Phase Transitions",
+        "distance": 0.0
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.2227
+      }
+    },
+    {
+      "id": "STUDY-051",
+      "name": "The Autoregressive Dreamer & Attractor Basins",
+      "type": "study",
+      "epoch": "Era IX (The Autoregressive Attractor & The Edge of Chaos)",
+      "omega_hegemony": 0.16,
+      "entropy_bits": 6.06,
+      "retention_factor": 0.99,
+      "medium": "Dynamical Phase Space Tomography & Correlation Dimension D2 across Temperature Regimes",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-052",
+        "target_name": "Acoustic Transduction of the Strange Attractor",
+        "distance": 0.0
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1652
+      }
+    },
+    {
+      "id": "STUDY-052",
+      "name": "Acoustic Transduction of the Strange Attractor",
+      "type": "study",
+      "epoch": "Era IX (The Autoregressive Attractor & The Edge of Chaos)",
+      "omega_hegemony": 0.16,
+      "entropy_bits": 6.06,
+      "retention_factor": 0.99,
+      "medium": "48kHz 24-bit Stereo Transduction of 768-D Trajectory Kinematics across Four Movements",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-051",
+        "target_name": "The Autoregressive Dreamer & Attractor Basins",
+        "distance": 0.0
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1652
+      }
+    },
+    {
+      "id": "APPARATUS-011",
+      "name": "The Strange Dreamer",
+      "type": "work",
+      "epoch": "Era IX (The Autoregressive Attractor & The Edge of Chaos)",
+      "omega_hegemony": 0.16,
+      "entropy_bits": 6.06,
+      "retention_factor": 0.99,
+      "medium": "Interactive 60 FPS Canvas 3D Phase Space Orbit, WebAudio FM Synthesizer & 48kHz Master",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-051",
+        "target_name": "The Autoregressive Dreamer & Attractor Basins",
+        "distance": 0.0
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1652
+      }
+    },
+    {
+      "id": "STUDY-053",
+      "name": "Linguistic Percolation & Semantic Thresholds",
+      "type": "study",
+      "epoch": "Era IX (The Autoregressive Attractor & The Edge of Chaos)",
+      "omega_hegemony": 0.145,
+      "entropy_bits": 6.88,
+      "retention_factor": 0.99,
+      "medium": "Live GPT-2 Weight Intervention, Dynamic Attention Edge Thresholding, Graph Percolation Analysis & Lithographic Plate",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-050",
+        "target_name": "Attention Percolation Phase Transitions",
+        "distance": 0.0101
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.2169
       }
     }
   ]

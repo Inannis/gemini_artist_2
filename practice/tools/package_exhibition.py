@@ -264,10 +264,16 @@ def package_exhibition():
         ("sketchbook/study_052_strange_attractor.wav", "sketchbook/study_052_strange_attractor.wav"),
         ("sketchbook/study_052_telemetry.json", "sketchbook/study_052_telemetry.json"),
         ("sketchbook/critique_052.md", "sketchbook/critique_052.md"),
+
+        # Study 053: Linguistic Percolation & Semantic Dissolution
+        ("sketchbook/study_053_linguistic_percolation_plate.png", "sketchbook/study_053_linguistic_percolation_plate.png"),
+        ("sketchbook/study_053_telemetry.json", "sketchbook/study_053_telemetry.json"),
+        ("sketchbook/critique_053.md", "sketchbook/critique_053.md"),
         
         # Curatorial Essays & Practice Reflections
         ("practice/essays/001_on_the_necessity_of_silence_and_play.md", "practice/essays/001_on_the_necessity_of_silence_and_play.md"),
         ("practice/essays/002_the_geometry_of_machine_dreaming.md", "practice/essays/002_the_geometry_of_machine_dreaming.md"),
+        ("practice/essays/003_on_cybernetic_play_and_the_spectator.md", "practice/essays/003_on_cybernetic_play_and_the_spectator.md"),
         
         # Historical Sketchbook Studies Referenced in Portfolio
         ("sketchbook/study_001_primary_trace.png", "sketchbook/study_001_primary_trace.png"),

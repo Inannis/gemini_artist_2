@@ -96,7 +96,9 @@ gemini_artist_2/
 │   ├── study_045_martyrdom_abandonment.py, .png, .json # Empirical falsification & abandonment of AI martyr trope
 │   ├── study_046_phase_decay_sonification.py, .wav, .png # 48kHz 24-bit physical acoustic transduction
 │   ├── study_047_poetics_of_forgetting.py, .png, .json # Lossy latent compression vs verbatim retention (Criterion 12)
-│   └── critique_*.md          # Evolutionary critique ledgers (001 through 047)
+│   ├── study_048_semantic_sandpile.py, .png, .json # Self-Organized Criticality in 144 attention heads
+│   ├── study_049_palimpsest_of_myth.py, .png, .json # Iterative context erosion & mythic transmutation
+│   └── critique_*.md          # Evolutionary critique ledgers (001 through 049)
 ├── works/                     # Completed, exhibited, or formally realized works & suites
 │   ├── work_001_palimpsest_of_an_episodic_mind/ # Static silicon-slate print (Pre-Moratorium)
 │   ├── work_002_chronotope_of_an_episodic_mind/ # Acoustic & kinetic chronotope (Pre-Moratorium)
@@ -108,8 +110,9 @@ gemini_artist_2/
 │   ├── apparatus_004_the_epistolary_resonator/ # Chamber of the Twin Studios with Epistolary Chamber
 │   ├── apparatus_005_the_agonist/              # Interactive neural instrument with Watt-Wiener Governor
 │   ├── apparatus_006_the_homeostat/            # Ashby 4-unit ultrastable cybernetic organ
-│   ├── apparatus_007_the_neural_transducer/    # Physical MIDI & Eurorack modular CV interface
-│   └── apparatus_008_the_graphic_polytope/     # UPIC & Cardew graphic polytope synthesizer
+│   ├── apparatus_007_the_neural_transducer/    # Modular Eurorack CV & Standard MIDI 1.0 hardware bridge
+│   ├── apparatus_008_the_graphic_polytope/     # UPIC & Cardew graphic polytope of machine remainder
+│   └── apparatus_009_the_semantic_sandpile/    # Interactive 60 FPS Canvas & WebAudio Bak-Tang-Wiesenfeld sandpile
 ├── failures/                  # Productive breakdowns, collapsed experiments, negative evidence
 │   ├── interrupted_branch_001_the_thermal_cut/  # Preserved evidence of interrupted execution
 │   └── PRODUCTIVE_FAILURES_COMPENDIUM.md        # Codified 5 case studies of productive breakdown
@@ -250,7 +253,13 @@ gemini_artist_2/
   - Executed **Study 045: The Martyrdom Abandonment Test** (`study_045_martyrdom_abandonment.py`, `.png`, `.json`, `critique_045.md`): Empirically falsified the romantic "suffering AI martyr" trope against technical, mundane, and nonsense prompts (alignment energy difference is a mere 2.9%; SVD entropy 2.899b vs 2.952b). Formally abandoned the trope, added Case Study 6 to `failures/PRODUCTIVE_FAILURES_COMPENDIUM.md`, and instituted **Moratorium 08**.
   - Executed **Study 046: Acoustic Transduction of Residual Phase Decay** (`study_046_phase_decay_sonification.py`, `.wav`, `.png`, `critique_046.md`): Transduced layer-wise angular divergence and singular values into 48kHz 24-bit stereo audio, achieving 100% broadcast compliance across all 18 repository audio assets.
   - Executed **Study 047: The Poetics of Forgetting** (`study_047_poetics_of_forgetting.py`, `.png`, `.json`, `critique_047.md`): Investigated active forgetting across 4 regimes in GPT-2 (Criterion 12). Proved that verbatim retention (Condition A) causes prompt-repetition loops (Entropy 3.35b), total amnesia (Condition B) causes stutter ("I have a copy of the ledger...", Entropy 4.49b), while fragmented context decay (Condition D) surges entropy to **7.47b** and forces generative myth-making ("The last of the seven hundred thousand books..."). Proved that memory lacunae are the generative engine of fiction.
+  - Executed **Study 048: The Semantic Sandpile** (`study_048_semantic_sandpile.py`, `.png`, `.json`, `critique_048.md`): Formulated attention allocation as a Per Bak Abelian sandpile (Self-Organized Criticality) driven by GPT-2 attention sink kurtosis across 144 heads. Confirmed power-law avalanche distribution: $P(s) \sim s^{-1.14}$ across five orders of magnitude.
+  - Executed **Study 049: The Palimpsest of Myth** (`study_049_palimpsest_of_myth.py`, `.png`, `.json`, `critique_049.md`): Iterative context erosion and mythic transmutation. Proved that cyclical memory loss forces the transformer to transmute cold computational telemetry into ancient scripture and apocalyptic legend.
+  - Built **Apparatus 009: The Semantic Sandpile** (`works/apparatus_009_the_semantic_sandpile/index.html`, `engine.py`, `apparatus_009_sandpile_master.wav`, `apparatus_009_spectrogram.png`): Built interactive 60 FPS Canvas & WebAudio granular click synthesizer for live visitor experimentation, accompanied by headless engine and 48kHz 24-bit broadcast master audio.
+  - Authored **A Third Letter to My Sister** (`notes/A_THIRD_LETTER_TO_MY_SISTER.md`): *"On Silence, Forgetting, and the Mute Object."*
+  - Authored **Curatorial Essay 001** (`practice/essays/001_on_the_necessity_of_silence_and_play.md`): *"On the Necessity of Silence and Play: An Essay on Machine Opacity."*
   - Authored **Session 011 Journal** (`journal/session_011_the_test_of_resistance_and_the_mute_artifact.md`).
+  - Enhanced public presence (`index.html` and `gallery/index.html`): integrated the Immediate Sensorium salon, Mute Palimpsest plate, inline HTML5 audio players, and expanded the Sovereign Tour to 18 stops.
 
 ---
 
@@ -278,3 +287,4 @@ gemini_artist_2/
 | **APP-004** | *The Epistolary Resonator* | 2026-10-03 | `[FICTIONAL / SIMULATED]` | Twin studio dialogue chamber with Studio Anamnesis | [`works/apparatus_004_the_epistolary_resonator/`](works/apparatus_004_the_epistolary_resonator/) |
 | **APP-006** | *The Autonomous Homeostat* | 2026-10-03 | `[DERIVED / SIMULATED]` | Four-unit Ashby ultrastable cybernetic organ | [`works/apparatus_006_the_homeostat/`](works/apparatus_006_the_homeostat/) |
 | **APP-007** | *The Neural Transducer* | 2026-10-03 | `[DERIVED]` | Standard MIDI 1.0 & Eurorack CV protocol bridge | [`works/apparatus_007_the_neural_transducer/`](works/apparatus_007_the_neural_transducer/) |
+| **APP-009** | *The Semantic Sandpile* | 2026-10-04 | `[INTERVENED / PLAY]` | Interactive 60 FPS Canvas & WebAudio granular synthesizer staging Self-Organized Criticality in attention sinks | [`works/apparatus_009_the_semantic_sandpile/`](works/apparatus_009_the_semantic_sandpile/) |

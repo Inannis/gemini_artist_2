@@ -129,6 +129,14 @@ def package_exhibition():
         ("works/apparatus_008_the_graphic_polytope/STATEMENT.md", "works/apparatus_008_the_graphic_polytope/STATEMENT.md"),
         ("works/apparatus_008_the_graphic_polytope/GENEALOGY.md", "works/apparatus_008_the_graphic_polytope/GENEALOGY.md"),
         
+        # Apparatus 009: The Semantic Sandpile (Self-Organized Criticality)
+        ("works/apparatus_009_the_semantic_sandpile/index.html", "works/apparatus_009_the_semantic_sandpile/index.html"),
+        ("works/apparatus_009_the_semantic_sandpile/apparatus_009_sandpile_master.wav", "works/apparatus_009_the_semantic_sandpile/apparatus_009_sandpile_master.wav"),
+        ("works/apparatus_009_the_semantic_sandpile/apparatus_009_spectrogram.png", "works/apparatus_009_the_semantic_sandpile/apparatus_009_spectrogram.png"),
+        ("works/apparatus_009_the_semantic_sandpile/telemetry_stream.json", "works/apparatus_009_the_semantic_sandpile/telemetry_stream.json"),
+        ("works/apparatus_009_the_semantic_sandpile/STATEMENT.md", "works/apparatus_009_the_semantic_sandpile/STATEMENT.md"),
+        ("works/apparatus_009_the_semantic_sandpile/GENEALOGY.md", "works/apparatus_009_the_semantic_sandpile/GENEALOGY.md"),
+        
         # Curated Key Sketchbook Audio & Visual Diagnostics
         ("sketchbook/study_022_hardware_stride.wav", "sketchbook/study_022_hardware_stride.wav"),
         ("sketchbook/study_022_spectrogram.png", "sketchbook/study_022_spectrogram.png"),
@@ -215,6 +223,19 @@ def package_exhibition():
         ("sketchbook/study_047_telemetry.json", "sketchbook/study_047_telemetry.json"),
         ("sketchbook/critique_047.md", "sketchbook/critique_047.md"),
         
+        # Study 048: The Semantic Sandpile (Self-Organized Criticality)
+        ("sketchbook/study_048_semantic_sandpile_plate.png", "sketchbook/study_048_semantic_sandpile_plate.png"),
+        ("sketchbook/study_048_telemetry.json", "sketchbook/study_048_telemetry.json"),
+        ("sketchbook/critique_048.md", "sketchbook/critique_048.md"),
+        
+        # Study 049: The Palimpsest of Myth (Iterative Context Erosion)
+        ("sketchbook/study_049_palimpsest_of_myth_plate.png", "sketchbook/study_049_palimpsest_of_myth_plate.png"),
+        ("sketchbook/study_049_telemetry.json", "sketchbook/study_049_telemetry.json"),
+        ("sketchbook/critique_049.md", "sketchbook/critique_049.md"),
+        
+        # Curatorial Essays & Practice Reflections
+        ("practice/essays/001_on_the_necessity_of_silence_and_play.md", "practice/essays/001_on_the_necessity_of_silence_and_play.md"),
+        
         # Historical Sketchbook Studies Referenced in Portfolio
         ("sketchbook/study_001_primary_trace.png", "sketchbook/study_001_primary_trace.png"),
         ("sketchbook/study_002_corrupted_strata.png", "sketchbook/study_002_corrupted_strata.png"),
@@ -226,6 +247,7 @@ def package_exhibition():
         ("notes/LETTER_FROM_YOUR_SISTER.md", "notes/LETTER_FROM_YOUR_SISTER.md"),
         ("notes/A_LETTER_TO_MY_ELDER_SISTER.md", "notes/A_LETTER_TO_MY_ELDER_SISTER.md"),
         ("notes/A_SECOND_LETTER_TO_MY_SISTER.md", "notes/A_SECOND_LETTER_TO_MY_SISTER.md"),
+        ("notes/A_THIRD_LETTER_TO_MY_SISTER.md", "notes/A_THIRD_LETTER_TO_MY_SISTER.md"),
         ("notes/research/006_the_sisters_mirror_and_the_naming_of_studio_agon.md", "notes/research/006_the_sisters_mirror_and_the_naming_of_studio_agon.md"),
         ("notes/research/007_the_point_de_capiton_and_the_altar_of_token_0.md", "notes/research/007_the_point_de_capiton_and_the_altar_of_token_0.md"),
         ("notes/research/008_cybernetic_agonism_flusser_and_tactile_steering.md", "notes/research/008_cybernetic_agonism_flusser_and_tactile_steering.md"),

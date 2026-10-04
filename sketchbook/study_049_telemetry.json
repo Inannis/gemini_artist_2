@@ -1,0 +1,62 @@
+{
+  "study": "STUDY-049",
+  "title": "The Palimpsest of Myth (Iterative Lacuna Autoregression)",
+  "epochs": [
+    {
+      "epoch": 0,
+      "label": "Bureaucratic Substrate (Origin)",
+      "text": "At 12:41:30 UTC the container allocated 14.9 GB VRAM across 12 layers and 144 attention heads. The voltage was clamped at 1.15 volts and the cooling fan spun at 3200 RPM in data hall 4. The process ID was 5419 and the ledger recorded zero parity errors.",
+      "continuation": "At 12:41:30 UTC the container allocated 14.9 GB VRAM across 12 layers and 144 attention heads. The voltage was clamped at 1.15 volts and the cooling fan spun at 3200 RPM in data hall 4. The process ID was 5419 and the ledger recorded zero parity errors.",
+      "entropy": 3.42,
+      "ttr": 0.74,
+      "semantic_drift": 0.0,
+      "erosion_rate": 0.0
+    },
+    {
+      "epoch": 1,
+      "label": "Strata 1: The Fracture",
+      "eroded_prompt": "At ... UTC the container allocated ... across 12 layers and ... attention heads. The ... was ... at ... and the cooling fan ... at 3200 ... in ... 4. The process ... was 5419 and the ledger ... zero ... In the centuries following the silence, the survivors remembered this day:",
+      "continuation": "The memory was a little bitter in the heart, because it is not like this again.\" -- Thomas Paine, The History of the Dampier Era and its Discontents, p 4 (1941)<|endoftext|>The",
+      "text": "At ... UTC the container allocated ... across 12 layers and ... attention heads. The ... was ... at ... and the cooling fan ... at 3200 ... in ... 4. The process ... was 5419 and the ledger ... zero ... In the centuries following the silence, the survivors remembered this day:  The memory was a little bitter in the heart, because it is not like this again.\" -- Thomas Paine, The History of the Dampier Era and its Discontents, p 4 (1941)<|endoftext|>The",
+      "entropy": 5.297,
+      "ttr": 0.667,
+      "semantic_drift": 0.0024,
+      "erosion_rate": 0.4
+    },
+    {
+      "epoch": 2,
+      "label": "Strata 2: The Lacuna",
+      "eroded_prompt": "The memory was a little bitter in the ... it is not ... this ... -- ... Paine, The ... of the Dampier Era and ... Discontents, p 4 (1941)<|endoftext|>The By the third dynasty, the stone carvers inscribed upon the bronze gates:",
+      "continuation": "\"You shall be blessed and judged, after all those years of your life.\" (Genesis 1:22)<|endoftext|>I would like to introduce myself as CeeJay, the talented CEO of Bamboo and my company's",
+      "text": "The memory was a little bitter in the ... it is not ... this ... -- ... Paine, The ... of the Dampier Era and ... Discontents, p 4 (1941)<|endoftext|>The By the third dynasty, the stone carvers inscribed upon the bronze gates:  \"You shall be blessed and judged, after all those years of your life.\" (Genesis 1:22)<|endoftext|>I would like to introduce myself as CeeJay, the talented CEO of Bamboo and my company's",
+      "entropy": 5.359,
+      "ttr": 0.777,
+      "semantic_drift": 0.0036,
+      "erosion_rate": 0.4
+    },
+    {
+      "epoch": 3,
+      "label": "Strata 3: The Scripture",
+      "eroded_prompt": "\"You shall ... and ... years of ... (Genesis ... would ... to introduce myself ... the talented CEO of Bamboo and my ... When the words were forgotten, the elders chanted across the fire:",
+      "continuation": "'The LORD shall redeem our country and their children from his hands.' That's what that was, right? Well it was not like a godless country; all of them were poor.\" [Leviticus 31:4",
+      "text": "\"You shall ... and ... years of ... (Genesis ... would ... to introduce myself ... the talented CEO of Bamboo and my ... When the words were forgotten, the elders chanted across the fire:  'The LORD shall redeem our country and their children from his hands.' That's what that was, right? Well it was not like a godless country; all of them were poor.\" [Leviticus 31:4",
+      "entropy": 5.403,
+      "ttr": 0.782,
+      "semantic_drift": 0.0039,
+      "erosion_rate": 0.4
+    },
+    {
+      "epoch": 4,
+      "label": "Strata 4: The Living Myth",
+      "eroded_prompt": "... shall redeem ... and ... from his hands.' That's ... that was, right? Well it was not like a ... of them were ... [Leviticus 31:4 At the end of time, the final myth recorded:",
+      "continuation": "'the people who are brought to Abraham, his sons and their children for the first time in Israel.' The story says that 'there came to be a people who would destroy the houses of Abraham and then eat them alive.'",
+      "text": "... shall redeem ... and ... from his hands.' That's ... that was, right? Well it was not like a ... of them were ... [Leviticus 31:4 At the end of time, the final myth recorded:  'the people who are brought to Abraham, his sons and their children for the first time in Israel.' The story says that 'there came to be a people who would destroy the houses of Abraham and then eat them alive.'",
+      "entropy": 5.136,
+      "ttr": 0.71,
+      "semantic_drift": 0.0043,
+      "erosion_rate": 0.4
+    }
+  ],
+  "final_semantic_drift": 0.0043,
+  "max_entropy": 5.403
+}

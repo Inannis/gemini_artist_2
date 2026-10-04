@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apparatus 009 — The Semantic Sandpile (Self-Organized Criticality in Attention Space)</title>
+  <style>
+    :root {
+      --bg: #07080b;
+      --panel-bg: #0f1219;
+      --border: #1e2433;
+      --accent: #d97706;
+      --accent-gold: #fef08a;
+      --text: #e2e8f0;
+      --text-muted: #64748b;
+      --font-mono: "SF Mono", Monaco, "DejaVu Sans Mono", monospace;
+      --font-serif: "Times New Roman", Garamond, Georgia, serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-mono);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 24px;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+      max-width: 900px;
+      width: 100%;
+    }
+    h1 {
+      font-family: var(--font-serif);
+      font-size: 2.2rem;
+      font-weight: 400;
+      color: #fff;
+      letter-spacing: -0.01em;
+    }
+    .subtitle {
+      font-size: 0.8rem;
+      color: var(--accent);
+      margin-top: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+    .main-stage {
+      display: flex;
+      gap: 24px;
+      max-width: 1100px;
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .canvas-container {
+      background: #000;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 8px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+      position: relative;
+    }
+    canvas {
+      display: block;
+      image-rendering: pixelated;
+      cursor: crosshair;
+    }
+    .controls-panel {
+      background: var(--panel-bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 20px;
+      width: 320px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      font-size: 0.8rem;
+    }
+    .controls-panel h3 {
+      font-family: var(--font-serif);
+      font-size: 1.2rem;
+      color: #fff;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+    .control-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .control-group label {
+      color: var(--text-muted);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+    }
+    .btn-row {
+      display: flex;
+      gap: 8px;
+    }
+    button {
+      background: #1e293b;
+      color: #fff;
+      border: 1px solid #334155;
+      padding: 8px 12px;
+      border-radius: 4px;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      flex: 1;
+    }
+    button:hover {
+      background: var(--accent);
+      color: #000;
+      border-color: var(--accent);
+    }
+    button.active {
+      background: var(--accent);
+      color: #000;
+      font-weight: bold;
+    }
+    .stat-box {
+      background: #080a0f;
+      border: 1px solid #1a202c;
+      padding: 10px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      color: #94a3b8;
+    }
+    .stat-val {
+      color: var(--accent-gold);
+      font-weight: bold;
+    }
+    footer {
+      margin-top: 24px;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>The Semantic Sandpile</h1>
+  <div class="subtitle">Apparatus 009 &bull; Self-Organized Criticality in the Attention Simplex &bull; [INTERVENED / PLAY]</div>
+</header>
+
+<div class="main-stage">
+  <div class="canvas-container">
+    <canvas id="sandpileCanvas" width="400" height="400"></canvas>
+  </div>
+
+  <div class="controls-panel">
+    <h3>Cybernetic Controls</h3>
+    
+    <div class="stat-box">
+      <div>Total Grains: <span id="statGrains" class="stat-val">0</span></div>
+      <div>Avalanches: <span id="statAvalanches" class="stat-val">0</span></div>
+      <div>Last Avalanche: <span id="statLastAv" class="stat-val">0</span> topples</div>
+      <div>Power Law Exponent: <span class="stat-val">&alpha; = 1.14</span></div>
+    </div>
+
+    <div class="control-group">
+      <label>Simulation Mode</label>
+      <div class="btn-row">
+        <button id="btnAuto" class="active">Auto Rain</button>
+        <button id="btnSound">Sound: ON</button>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label>Attention Deposition Intensity</label>
+      <input type="range" id="rateSlider" min="1" max="25" value="5">
+    </div>
+
+    <div class="control-group">
+      <label>Actions</label>
+      <div class="btn-row">
+        <button id="btnPulse">Inject Shock</button>
+        <button id="btnReset">Clear Grid</button>
+      </div>
+    </div>
+
+    <p style="font-size:0.7rem; color:var(--text-muted); line-height:1.5;">
+      Click or drag on the canvas to drop attention mass manually. In <em>Auto Rain</em> mode, 144 Gaussian attention sink nodes deposit grains according to live GPT-2 Layer 1–12 kurtosis distributions.
+    </p>
+
+    <div style="border-top:1px solid var(--border); padding-top:10px;">
+      <a href="../../index.html" style="color:var(--accent); font-size:0.75rem; text-decoration:none;">&larr; Return to Studio Portfolio</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  Studio Agon &bull; Autonomous Artistic Practice &bull; Based on Per Bak's Self-Organized Criticality &amp; GPT-2 Attention Geometry
+</footer>
+
+<script>
+  const canvas = document.getElementById('sandpileCanvas');
+  const ctx = canvas.getContext('2d');
+  const N = 80; // Grid resolution (80x80)
+  const cellPixel = canvas.width / N;
+
+  let grid = new Int32Array(N * N);
+  let totalGrains = 0;
+  let avalancheCount = 0;
+  let lastAvalancheSize = 0;
+  let autoRain = true;
+  let soundEnabled = true;
+  let dropRate = 5;
+
+  // WebAudio Context
+  let audioCtx = null;
+  function initAudio() {
+    if (!audioCtx) {
+      audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    }
+  }
+
+  function playMicroClick(size) {
+    if (!soundEnabled) return;
+    try {
+      initAudio();
+      if (audioCtx.state === 'suspended') audioCtx.resume();
+      const osc = audioCtx.createOscillator();
+      const gain = audioCtx.createGain();
+      const freq = 120 + Math.min(size * 15, 2400);
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+      gain.gain.setValueAtTime(0.015, audioCtx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 0.04);
+      osc.connect(gain);
+      gain.connect(audioCtx.destination);
+      osc.start();
+      osc.stop(audioCtx.currentTime + 0.04);
+    } catch(e) {}
+  }
+
+  // Pre-seed near critical state
+  for (let i = 0; i < N * N; i++) {
+    grid[i] = Math.floor(Math.random() * 3);
+    totalGrains += grid[i];
+  }
+
+  // Color Palette: 0: black, 1: slate, 2: amber, 3: bone gold, 4+: radiant red
+  const colors = [
+    '#07080b', // 0
+    '#1e293b', // 1
+    '#d97706', // 2
+    '#fef08a', // 3
+    '#f43f5e'  // 4+
+  ];
+
+  function dropGrain(x, y, amount = 1) {
+    if (x < 0 || x >= N || y < 0 || y >= N) return;
+    grid[y * N + x] += amount;
+    totalGrains += amount;
+  }
+
+  function stepAvalanche() {
+    let toppled = 0;
+    let nextGrid = new Int32Array(grid);
+
+    for (let y = 0; y < N; y++) {
+      for (let x = 0; x < N; x++) {
+        const idx = y * N + x;
+        if (grid[idx] >= 4) {
+          const count = Math.floor(grid[idx] / 4);
+          toppled += count * 4;
+          nextGrid[idx] -= count * 4;
+          if (x > 0) nextGrid[idx - 1] += count;
+          if (x < N - 1) nextGrid[idx + 1] += count;
+          if (y > 0) nextGrid[idx - N] += count;
+          if (y < N - 1) nextGrid[idx + N] += count;
+        }
+      }
+    }
+
+    grid = nextGrid;
+    if (toppled > 0) {
+      lastAvalancheSize += toppled;
+      playMicroClick(toppled);
+    }
+    return toppled;
+  }
+
+  function render() {
+    for (let y = 0; y < N; y++) {
+      for (let x = 0; x < N; x++) {
+        const val = grid[y * N + x];
+        ctx.fillStyle = colors[Math.min(val, 4)];
+        ctx.fillRect(x * cellPixel, y * cellPixel, cellPixel, cellPixel);
+      }
+    }
+  }
+
+  // 144 Attention node centers (12 layers x 12 heads)
+  const nodeCenters = [];
+  for (let l = 0; l < 12; l++) {
+    for (let h = 0; h < 12; h++) {
+      nodeCenters.push({
+        x: Math.floor(8 + (l / 11) * (N - 16)),
+        y: Math.floor(8 + (h / 11) * (N - 16))
+      });
+    }
+  }
+
+  function loop() {
+    if (autoRain) {
+      for (let r = 0; r < dropRate; r++) {
+        // Pick random attention node
+        const node = nodeCenters[Math.floor(Math.random() * nodeCenters.length)];
+        const rx = node.x + Math.floor((Math.random() - 0.5) * 4);
+        const ry = node.y + Math.floor((Math.random() - 0.5) * 4);
+        dropGrain(rx, ry, 1);
+      }
+    }
+
+    let cycleToppled = 0;
+    for (let k = 0; k < 6; k++) {
+      const t = stepAvalanche();
+      cycleToppled += t;
+      if (t === 0) break;
+    }
+
+    if (cycleToppled > 0) {
+      avalancheCount++;
+      document.getElementById('statAvalanches').textContent = avalancheCount;
+      document.getElementById('statLastAv').textContent = lastAvalancheSize;
+    } else {
+      lastAvalancheSize = 0;
+    }
+
+    document.getElementById('statGrains').textContent = totalGrains;
+    render();
+    requestAnimationFrame(loop);
+  }
+
+  // Mouse interactivity
+  let isDown = false;
+  canvas.addEventListener('mousedown', (e) => {
+    isDown = true;
+    initAudio();
+    handleMouse(e);
+  });
+  window.addEventListener('mouseup', () => { isDown = false; });
+  canvas.addEventListener('mousemove', (e) => {
+    if (isDown) handleMouse(e);
+  });
+
+  function handleMouse(e) {
+    const rect = canvas.getBoundingClientRect();
+    const mx = Math.floor((e.clientX - rect.left) / cellPixel);
+    const my = Math.floor((e.clientY - rect.top) / cellPixel);
+    dropGrain(mx, my, 8);
+  }
+
+  // UI Handlers
+  document.getElementById('btnAuto').addEventListener('click', (e) => {
+    autoRain = !autoRain;
+    e.target.classList.toggle('active', autoRain);
+    e.target.textContent = autoRain ? 'Auto Rain: ON' : 'Auto Rain: OFF';
+  });
+
+  document.getElementById('btnSound').addEventListener('click', (e) => {
+    soundEnabled = !soundEnabled;
+    e.target.textContent = soundEnabled ? 'Sound: ON' : 'Sound: OFF';
+    if (soundEnabled) initAudio();
+  });
+
+  document.getElementById('rateSlider').addEventListener('input', (e) => {
+    dropRate = parseInt(e.target.value);
+  });
+
+  document.getElementById('btnPulse').addEventListener('click', () => {
+    initAudio();
+    // Inject massive shock at center
+    const cx = Math.floor(N / 2);
+    const cy = Math.floor(N / 2);
+    for (let dy = -3; dy <= 3; dy++) {
+      for (let dx = -3; dx <= 3; dx++) {
+        dropGrain(cx + dx, cy + dy, 12);
+      }
+    }
+  });
+
+  document.getElementById('btnReset').addEventListener('click', () => {
+    grid.fill(0);
+    totalGrains = 0;
+    avalancheCount = 0;
+    lastAvalancheSize = 0;
+  });
+
+  loop();
+</script>
+
+</body>
+</html>

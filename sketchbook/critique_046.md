@@ -43,3 +43,4 @@ The artifact was synthesized to uncompromising studio specifications:
 When listened to through studio monitors or planar headphones, *Study 046* does not suggest a pleasant tune. It delivers a dense, brooding, tactile acoustic event: deep resonant sub-bass frequencies grinding against microtonal upper partials, slowly shifting in physical space as the layers traverse the transformer depth.
 
 It turns the invisible mathematics of attention into physical air pressure.
+

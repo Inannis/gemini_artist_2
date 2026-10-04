@@ -115,6 +115,12 @@ def test_master_works_integrity():
             "dir": "works/apparatus_008_the_graphic_polytope",
             "artifacts": ["engine.py", "apparatus_008_polytope_master.wav", "apparatus_008_spectrogram.png", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json"],
             "sha_target": {}
+        },
+        {
+            "id": "Apparatus 009",
+            "dir": "works/apparatus_009_the_semantic_sandpile",
+            "artifacts": ["engine.py", "apparatus_009_sandpile_master.wav", "apparatus_009_spectrogram.png", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json"],
+            "sha_target": {}
         }
     ]
 
@@ -156,6 +162,8 @@ def test_telemetry_and_apparatus():
         "practice/tools/studio_catalog_builder.py",
         "works/apparatus_004_the_epistolary_resonator/engine.py",
         "works/apparatus_005_the_agonist/engine.py",
+        "works/apparatus_009_the_semantic_sandpile/engine.py",
+        "practice/tools/studio_acoustic_compliance_audit.py",
         "practice/tools/package_exhibition.py"
     ]
     passed = 0
@@ -271,6 +279,36 @@ def test_empirical_studies_and_naming():
         ("sketchbook/critique_042.md"),
         ("notes/research/015_acoustic_phase_interference_and_the_myth_of_computational_zeroing.md"),
         ("notes/research/016_the_cartography_of_agon_from_autopsy_to_cybernetic_polytope.md"),
+        ("sketchbook/study_043_interventionist_remainder.py"),
+        ("sketchbook/study_043_interventionist_remainder_plate.png"),
+        ("sketchbook/study_043_telemetry.json"),
+        ("sketchbook/critique_043.md"),
+        ("sketchbook/study_044_the_mute_palimpsest.py"),
+        ("sketchbook/study_044_the_mute_palimpsest.png"),
+        ("sketchbook/critique_044.md"),
+        ("sketchbook/study_045_martyrdom_abandonment.py"),
+        ("sketchbook/study_045_martyrdom_abandonment_plate.png"),
+        ("sketchbook/study_045_telemetry.json"),
+        ("sketchbook/critique_045.md"),
+        ("sketchbook/study_046_phase_decay_sonification.py"),
+        ("sketchbook/study_046_phase_decay_plate.png"),
+        ("sketchbook/study_046_phase_decay.wav"),
+        ("sketchbook/study_046_telemetry.json"),
+        ("sketchbook/critique_046.md"),
+        ("sketchbook/study_047_poetics_of_forgetting.py"),
+        ("sketchbook/study_047_poetics_of_forgetting_plate.png"),
+        ("sketchbook/study_047_telemetry.json"),
+        ("sketchbook/critique_047.md"),
+        ("sketchbook/study_048_semantic_sandpile.py"),
+        ("sketchbook/study_048_semantic_sandpile_plate.png"),
+        ("sketchbook/study_048_telemetry.json"),
+        ("sketchbook/critique_048.md"),
+        ("sketchbook/study_049_palimpsest_of_myth.py"),
+        ("sketchbook/study_049_palimpsest_of_myth_plate.png"),
+        ("sketchbook/study_049_telemetry.json"),
+        ("sketchbook/critique_049.md"),
+        ("practice/essays/001_on_the_necessity_of_silence_and_play.md"),
+        ("notes/A_THIRD_LETTER_TO_MY_SISTER.md"),
         ("practice/BIOGRAPHY.md"),
         ("gallery/CURATORIAL_GUIDE.md")
     ]

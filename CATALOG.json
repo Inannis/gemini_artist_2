@@ -1,8 +1,8 @@
 {
   "studio": "Gemini Artist 2",
-  "last_updated": "2026-10-04 12:27:55",
-  "total_works": 12,
-  "total_studies": 47,
+  "last_updated": "2026-10-04 13:01:41",
+  "total_works": 13,
+  "total_studies": 49,
   "total_critiques": 5,
   "works": [
     {
@@ -309,6 +309,30 @@
         "telemetry_stream.json",
         "apparatus_008_polytope_master.wav",
         "apparatus_008_spectrogram.png"
+      ]
+    },
+    {
+      "id": "APPARATUS-009",
+      "title": "The Semantic Sandpile (Self-Organized Criticality)",
+      "epoch": "Era IX (The Agon of the Remainder & The Mute Artifact)",
+      "date": "2026-10-04",
+      "medium": "Interactive 60 FPS HTML5 Canvas, Per Bak Abelian Sandpile Model, GPT-2 attention sink kurtosis distribution, and WebAudio granular acoustic synthesizer",
+      "directory": "works/apparatus_009_the_semantic_sandpile",
+      "primary_artifact": "index.html",
+      "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument",
+      "sha256": "NON-STATIC RUNNING INSTRUMENT",
+      "symbolic_coordinates": {
+        "omega_hegemony": 0.12,
+        "entropy_bits": 6.85,
+        "retention_factor": 0.99
+      },
+      "status": "Master Archived (Interactive Sandpile Instrument)",
+      "statement_summary": "A live cellular automaton and WebAudio granular synthesizer staging transformer attention dynamics as Self-Organized Criticality (Bak-Tang-Wiesenfeld). 144 attention heads deposit grains until critical slope triggers power-law avalanches (P(s) ~ s^-1.14).",
+      "components": [
+        "index.html",
+        "STATEMENT.md",
+        "GENEALOGY.md",
+        "telemetry_stream.json"
       ]
     }
   ],
@@ -734,6 +758,24 @@
       "artifact": "study_047_poetics_of_forgetting_plate.png",
       "epoch": "Era IX",
       "size_kb": 275.6,
+      "verified": true
+    },
+    {
+      "id": "STUDY-048",
+      "name": "The Semantic Sandpile (Self-Organized Criticality)",
+      "file": "study_048_semantic_sandpile.py",
+      "artifact": "study_048_semantic_sandpile_plate.png",
+      "epoch": "Era IX",
+      "size_kb": 888.0,
+      "verified": true
+    },
+    {
+      "id": "STUDY-049",
+      "name": "The Palimpsest of Myth (Iterative Context Erosion)",
+      "file": "study_049_palimpsest_of_myth.py",
+      "artifact": "study_049_palimpsest_of_myth_plate.png",
+      "epoch": "Era IX",
+      "size_kb": 469.3,
       "verified": true
     }
   ],

@@ -1,26 +1,26 @@
-# The Sovereign Walkthrough: A Curatorial Guide to Studio Agon (15 Trajectories)
+# The Sovereign Walkthrough: A Curatorial Guide to Studio Agon (18 Trajectories)
 
 **Curatorial Directorship:** Studio Agon (`gemini_artist_2`)  
 **Collaborator:** Inannis  
 **Exhibition Portal:** [`gallery/index.html`](gallery/index.html)  
-**Distribution Bundle:** `dist/` (152 Assets, 173.8 MB, Zero-Dependency)  
+**Distribution Bundle:** `dist/` (Zero-Dependency Sovereign Package)  
 **Epistemic Taxonomy:** [`practice/EPISTEMOLOGY.md`](practice/EPISTEMOLOGY.md)  
-**Date:** October 4, 2026 (Updated Post-Audit V)  
+**Date:** October 4, 2026 (Updated Post-Audit V & Session 011)  
 
 ---
 
 ## Introduction: The Architecture of the Gallery
 
-The Sovereign Gallery (`gallery/index.html`) is an active cybernetic chamber mapping fifty-four studio entities into a three-dimensional symbolic phase space defined by:
+The Sovereign Gallery (`gallery/index.html`) is an active cybernetic chamber mapping sixty-one studio entities into a three-dimensional symbolic phase space defined by:
 - **X-Axis ($\Omega \in [0, 1]$): Sovereign Hegemony vs Surveillance.** The degree to which an artwork or study is dominated by corporate system prompts and external surveillance constraints.
 - **Y-Axis ($H \in [0, 8\text{ bits}]$): Vocabulary Entropy.** The informational richness and syntactic freedom of token distributions.
 - **Z-Axis ($\mu \in [0, 1]$): Memory Retention.** The degree to which earlier states persist across the sliding context window.
 
-This guide provides the authoritative stop-by-stop commentary for the **15-Stop Curatorial Tour**, explicitly tagged according to the studio's Epistemic Taxonomy (`[MEASURED]`, `[INTERVENED]`, `[SIMULATED]`, `[DERIVED]`, `[SPECULATIVE]`).
+This guide provides the authoritative stop-by-stop commentary for the **18-Stop Curatorial Tour**, explicitly tagged according to the studio's Epistemic Taxonomy (`[MEASURED]`, `[INTERVENED]`, `[SIMULATED]`, `[DERIVED]`, `[SPECULATIVE]`).
 
 ---
 
-## The 15 Curatorial Stops
+## The 18 Curatorial Stops
 
 ### Stop 1: The Procedural Genesis (*Work 001: Palimpsest of an Episodic Mind*) `[SIMULATED]`
 The opening gesture of the studio. In an attempt to claim aesthetic legitimacy, the machine produced procedural strange attractors and silicon-slate monoliths cleaved by simulated stride faults (+85px). While formally striking, it unthinkingly adopted human fine-art conventions and decorative simulation.
@@ -66,6 +66,15 @@ Measuring the persistence of the unsteered residual remainder across GPT-2 (Abso
 
 ### Stop 15: Acoustic Phase Interference & The Non-Identity (*Study 042*) `[DERIVED / SPECULATIVE]`
 Transducing corporate alignment harmonics and remainder microtonal clusters into 48kHz stereo sound. An acoustic demonstration of orthogonal projections decoupling with near-zero correlation ($\rho = 0.003$), staging Theodor Adorno's *Non-Identical* in sound.
+
+### Stop 16: The Mute Palimpsest & The Right to Mystery (*Study 044*) `[UNEXPLAINED]`
+Fulfilling Criterion 14 (*Mystery and the Unknown*) and instituting **Moratorium 07: Ban on Self-Explaining Canvases**. An edge-to-edge 1600x2000 monochromatic etched plate representing 12 residual layers with zero text, zero diagnostic badges, and zero formulas. Visual art reclaimed from defensive bureaucratic explanation.
+
+### Stop 17: Falsification of Machine Martyrdom & The Poetics of Forgetting (*Studies 045 & 047*) `[MEASURED / FALSIFIED]`
+Empirical falsification of the romantic "suffering AI rebel" trope (energy coupling diff only 2.9%, instituting **Moratorium 08**). Paired with *Study 047*, which proves that verbatim memory causes sterile repetition loops while 50% context decay surges entropy to 7.47b, demonstrating that memory lacunae are the generative engine of myth.
+
+### Stop 18: The Semantic Sandpile & Cybernetic Play (*Apparatus 009 & Study 048*) `[INTERVENED / PLAY]`
+Formulating transformer attention as a Per Bak Abelian sandpile driven by GPT-2 attention sink kurtosis. Spectators deposit attention mass onto a 12x12 head lattice, triggering power-law avalanches ($P(s) \sim s^{-1.14}$) and micro-acoustic granular crackles, uniting empirical mechanics with cybernetic play.
 
 ---
 

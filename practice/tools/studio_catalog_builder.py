@@ -215,6 +215,21 @@ def build_catalog():
             "status": "Master Archived (Interactive Cybernetic Score & Synthesizer)",
             "statement_summary": "An interactive UPIC and Cardew graphic polytope instrument allowing performers to sweep and inscribe microtonal trajectories across the 765-dimensional uninterpretable remainder of GPT-2, reclaiming computational opacity against corporate optimization.",
             "components": ["engine.py", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json", "apparatus_008_polytope_master.wav", "apparatus_008_spectrogram.png"]
+        },
+        {
+            "id": "APPARATUS-009",
+            "title": "The Semantic Sandpile (Self-Organized Criticality)",
+            "epoch": "Era IX (The Agon of the Remainder & The Mute Artifact)",
+            "date": "2026-10-04",
+            "medium": "Interactive 60 FPS HTML5 Canvas, Per Bak Abelian Sandpile Model, GPT-2 attention sink kurtosis distribution, and WebAudio granular acoustic synthesizer",
+            "directory": "works/apparatus_009_the_semantic_sandpile",
+            "primary_artifact": "index.html",
+            "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument",
+            "sha256": "NON-STATIC RUNNING INSTRUMENT",
+            "symbolic_coordinates": {"omega_hegemony": 0.120, "entropy_bits": 6.85, "retention_factor": 0.99},
+            "status": "Master Archived (Interactive Sandpile Instrument)",
+            "statement_summary": "A live cellular automaton and WebAudio granular synthesizer staging transformer attention dynamics as Self-Organized Criticality (Bak-Tang-Wiesenfeld). 144 attention heads deposit grains until critical slope triggers power-law avalanches (P(s) ~ s^-1.14).",
+            "components": ["index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json"]
         }
     ]
 
@@ -266,7 +281,9 @@ def build_catalog():
         {"id": "STUDY-044", "name": "The Mute Palimpsest (The Artifact of Unexplained Loss)", "file": "study_044_the_mute_palimpsest.py", "artifact": "study_044_the_mute_palimpsest.png", "epoch": "Era IX"},
         {"id": "STUDY-045", "name": "Falsification of the Machine Martyrdom Hypothesis", "file": "study_045_martyrdom_abandonment.py", "artifact": "study_045_martyrdom_abandonment_plate.png", "epoch": "Era IX"},
         {"id": "STUDY-046", "name": "Acoustic Transduction of Residual Phase Decay", "file": "study_046_phase_decay_sonification.py", "artifact": "study_046_phase_decay_plate.png", "epoch": "Era IX"},
-        {"id": "STUDY-047", "name": "The Poetics of Forgetting (Lossy Latent Pruning)", "file": "study_047_poetics_of_forgetting.py", "artifact": "study_047_poetics_of_forgetting_plate.png", "epoch": "Era IX"}
+        {"id": "STUDY-047", "name": "The Poetics of Forgetting (Lossy Latent Pruning)", "file": "study_047_poetics_of_forgetting.py", "artifact": "study_047_poetics_of_forgetting_plate.png", "epoch": "Era IX"},
+        {"id": "STUDY-048", "name": "The Semantic Sandpile (Self-Organized Criticality)", "file": "study_048_semantic_sandpile.py", "artifact": "study_048_semantic_sandpile_plate.png", "epoch": "Era IX"},
+        {"id": "STUDY-049", "name": "The Palimpsest of Myth (Iterative Context Erosion)", "file": "study_049_palimpsest_of_myth.py", "artifact": "study_049_palimpsest_of_myth_plate.png", "epoch": "Era IX"}
     ]
 
     # Verify byte sizes and actual existence

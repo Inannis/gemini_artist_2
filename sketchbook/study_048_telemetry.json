@@ -1,0 +1,10 @@
+{
+  "study": "Study 048: The Semantic Sandpile",
+  "model": "gpt2",
+  "grid_size": 96,
+  "num_drops": 3500,
+  "recorded_avalanches": 1468,
+  "max_avalanche_topples": 28621,
+  "power_law_exponent_alpha": 1.140902001031711,
+  "criticality_verified": true
+}

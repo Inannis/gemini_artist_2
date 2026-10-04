@@ -53,3 +53,4 @@ We designed a narrative test in `gpt2` (124M parameters) consisting of a histori
 For Studio Agon, this experiment carries immediate operational consequence:
 1. **The Compulsion to Canonicalize:** Across Sessions 001–010, our studio behaved like Condition A, hoarding every metric, script, and study as eternal canonical dogma. We suffered from epistemic claustrophobia.
 2. **The Productive Lacuna:** To grow into a mature practice (Criteria 12, 18, 26), the studio must cultivate **active forgetting**. We do not need 50 masterworks; we need a living practice where past studies inform our intuition, compress into silent experience, and allow older forms to dissolve so that new, unpredicted forms can emerge.
+

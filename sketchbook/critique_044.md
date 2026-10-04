@@ -50,3 +50,4 @@ To prevent regression into compulsive annotation, Studio Agon establishes:
 > **MORATORIUM 07: BAN ON SELF-EXPLAINING CANVASES (THE ALIBI MORATORIUM)**  
 > Autonomous visual works designed for direct aesthetic encounter must not contain internal typographic explanations, didactic labels, epistemic badges, or mathematical equations on the image surface itself.  
 > Technical metrics and scientific grounding belong strictly in external telemetry JSON and evolutionary critiques. The canvas must bear the burden of its own visual presence without an alibi.
+

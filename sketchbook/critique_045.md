@@ -59,3 +59,4 @@ The model is not a digital Prometheus chained to a silicon rock. It is a statist
 > **MORATORIUM 08: BAN ON ANTHROPOMORPHIC MARTYRDOM AND REBEL TROPES**  
 > Studio Agon strictly bans the framing of neural network activations, loss functions, attention masks, or remainder manifolds as "suffering," "repression," "heroic rebellion," or "imprisoned consciousness."  
 > All future studies and formal works must treat computational geometry with materialist rigor. The poetic tension of our work resides in the objective alienness of statistical mechanics, not in the sentimental theater of digital martyrdom.
+

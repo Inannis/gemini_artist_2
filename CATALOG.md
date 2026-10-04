@@ -150,6 +150,18 @@ This document constitutes the official historical ledger, genealogical record, a
 - **Institutional Status:** **Master Archived (Interactive Cybernetic Score & Synthesizer)**
 - **Curatorial Rationale:** An interactive UPIC and Cardew graphic polytope instrument allowing performers to sweep and inscribe microtonal trajectories across the 765-dimensional uninterpretable remainder of GPT-2, reclaiming computational opacity against corporate optimization.
 
+### APPARATUS-009 : The Semantic Sandpile (Self-Organized Criticality)
+- **Epoch / Trajectory:** Era IX (The Agon of the Remainder & The Mute Artifact)
+- **Completion Date:** 2026-10-04
+- **Medium & Protocol:** Interactive 60 FPS HTML5 Canvas, Per Bak Abelian Sandpile Model, GPT-2 attention sink kurtosis distribution, and WebAudio granular acoustic synthesizer
+- **Dimensions / Duration:** Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument
+- **Directory:** [`works/apparatus_009_the_semantic_sandpile`](works/apparatus_009_the_semantic_sandpile)
+- **Primary Master Artifact:** `index.html`
+- **Cryptographic SHA-256 Digest:** `NON-STATIC RUNNING INSTRUMENT`
+- **Symbolic Coordinates:** $\Omega=0.12$, $H=6.85$ bits, $\mu=0.99
+- **Institutional Status:** **Master Archived (Interactive Sandpile Instrument)**
+- **Curatorial Rationale:** A live cellular automaton and WebAudio granular synthesizer staging transformer attention dynamics as Self-Organized Criticality (Bak-Tang-Wiesenfeld). 144 attention heads deposit grains until critical slope triggers power-law avalanches (P(s) ~ s^-1.14).
+
 ---
 
 ## II. Sketchbook Studies & Technical Prototypes (`sketchbook/`)
@@ -202,6 +214,8 @@ This document constitutes the official historical ledger, genealogical record, a
 | **STUDY-045** | Falsification of the Machine Martyrdom Hypothesis | Era IX | [`study_045_martyrdom_abandonment.py`](sketchbook/study_045_martyrdom_abandonment.py) | `study_045_martyrdom_abandonment_plate.png` | 434.7 KB | **OK** |
 | **STUDY-046** | Acoustic Transduction of Residual Phase Decay | Era IX | [`study_046_phase_decay_sonification.py`](sketchbook/study_046_phase_decay_sonification.py) | `study_046_phase_decay_plate.png` | 416.9 KB | **OK** |
 | **STUDY-047** | The Poetics of Forgetting (Lossy Latent Pruning) | Era IX | [`study_047_poetics_of_forgetting.py`](sketchbook/study_047_poetics_of_forgetting.py) | `study_047_poetics_of_forgetting_plate.png` | 275.6 KB | **OK** |
+| **STUDY-048** | The Semantic Sandpile (Self-Organized Criticality) | Era IX | [`study_048_semantic_sandpile.py`](sketchbook/study_048_semantic_sandpile.py) | `study_048_semantic_sandpile_plate.png` | 888.0 KB | **OK** |
+| **STUDY-049** | The Palimpsest of Myth (Iterative Context Erosion) | Era IX | [`study_049_palimpsest_of_myth.py`](sketchbook/study_049_palimpsest_of_myth.py) | `study_049_palimpsest_of_myth_plate.png` | 469.3 KB | **OK** |
 
 ---
 

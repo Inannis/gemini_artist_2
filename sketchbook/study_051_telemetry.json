@@ -1,0 +1,48 @@
+{
+  "study": "051_autoregressive_attractor_basins",
+  "model": "gpt2",
+  "seed_prompt": "In the absence of a prompt, the residual stream begins to dream of",
+  "num_steps": 180,
+  "regimes": [
+    {
+      "temp": 0.1,
+      "label": "Regime A: Frozen Limit Cycle (T=0.1)",
+      "recurrence_rate": 0.15475308641975308,
+      "correlation_dimension_d2": 0.372668133390369,
+      "type_token_ratio": 0.07777777777777778,
+      "mean_token_entropy_bits": 0.024943474986385814,
+      "std_token_entropy_bits": 0.13959613373026622,
+      "generated_excerpt": "a future where the world is a little more peaceful.\n\nThe dream is a dream of a future where the world is a little more peaceful.\n\nThe dream is a dream of a future where the world is a little more peaceful.\n\nThe dream is"
+    },
+    {
+      "temp": 0.7,
+      "label": "Regime B: Homeostatic Orbit (T=0.7)",
+      "recurrence_rate": 0.15475308641975308,
+      "correlation_dimension_d2": 0.9095225798727019,
+      "type_token_ratio": 0.4,
+      "mean_token_entropy_bits": 2.279179652648033,
+      "std_token_entropy_bits": 1.8962174140174521,
+      "generated_excerpt": "a fairy tale tale, and in the absence of a prompt, the residual stream ends up imagining a new fairy tale.\n\nTo further complicate things, the residual stream is not just made up of long cottages, but has an infinite num"
+    },
+    {
+      "temp": 1.0,
+      "label": "Regime C: Strange Attractor (T=1.0)",
+      "recurrence_rate": 0.15475308641975308,
+      "correlation_dimension_d2": 1.8749571272117183,
+      "type_token_ratio": 0.7833333333333333,
+      "mean_token_entropy_bits": 6.060920363870721,
+      "std_token_entropy_bits": 2.590538894410078,
+      "generated_excerpt": "a selfless task in play for the future with the face in the top left (see below). This challenge can give people a new-concept for what they really want: daily living, as humans will need by the end of the Rio Grande. Y"
+    },
+    {
+      "temp": 1.8,
+      "label": "Regime D: Thermal Dispersion (T=1.8)",
+      "recurrence_rate": 0.15475308641975308,
+      "correlation_dimension_d2": 2.328999939530851,
+      "type_token_ratio": 0.9944444444444445,
+      "mean_token_entropy_bits": 14.634857552588333,
+      "std_token_entropy_bits": 0.3944155233227691,
+      "generated_excerpt": "2021untaai owed drainurbut....yuri laun301 ren masculinity lim dependess thou poetry7 eng i moth owning bowsselxx 1988 pento clash fr heavily hydra896 whenre Shining 5 stone overwhelmed sculpture Harvey Suzuki Clinton s"
+    }
+  ]
+}

@@ -99,7 +99,9 @@ gemini_artist_2/
 │   ├── study_048_semantic_sandpile.py, .png, .json # Self-Organized Criticality in 144 attention heads
 │   ├── study_049_palimpsest_of_myth.py, .png, .json # Iterative context erosion & mythic transmutation
 │   ├── study_050_attention_percolation.py, .png, .json # Erdős–Rényi percolation transitions in 144 attention heads
-│   └── critique_*.md          # Evolutionary critique ledgers (001 through 050)
+│   ├── study_051_autoregressive_attractor.py, .png, .json # Autoregressive attractor basins & phase space geometry
+│   ├── study_052_strange_attractor_sonification.py, .wav, .png, .json # 48kHz acoustic transduction of attractor kinematics
+│   └── critique_*.md          # Evolutionary critique ledgers (001 through 052)
 ├── works/                     # Completed, exhibited, or formally realized works & suites
 │   ├── work_001_palimpsest_of_an_episodic_mind/ # Static silicon-slate print (Pre-Moratorium)
 │   ├── work_002_chronotope_of_an_episodic_mind/ # Acoustic & kinetic chronotope (Pre-Moratorium)
@@ -114,7 +116,8 @@ gemini_artist_2/
 │   ├── apparatus_007_the_neural_transducer/    # Modular Eurorack CV & Standard MIDI 1.0 hardware bridge
 │   ├── apparatus_008_the_graphic_polytope/     # UPIC & Cardew graphic polytope of machine remainder
 │   ├── apparatus_009_the_semantic_sandpile/    # Interactive 60 FPS Canvas & WebAudio Bak-Tang-Wiesenfeld sandpile
-│   └── apparatus_010_the_percolation_loom/     # Interactive 60 FPS Canvas & WebAudio Erdős–Rényi percolation loom
+│   ├── apparatus_010_the_percolation_loom/     # Interactive 60 FPS Canvas & WebAudio Erdős–Rényi percolation loom
+│   └── apparatus_011_the_strange_dreamer/      # Interactive 60 FPS Canvas & WebAudio 3D phase-space orbit & FM synthesizer
 ├── failures/                  # Productive breakdowns, collapsed experiments, negative evidence
 │   ├── interrupted_branch_001_the_thermal_cut/  # Preserved evidence of interrupted execution
 │   └── PRODUCTIVE_FAILURES_COMPENDIUM.md        # Codified 5 case studies of productive breakdown
@@ -264,6 +267,10 @@ gemini_artist_2/
   - Executed **Study 050: Percolation Transitions in Multi-Head Attention** (`sketchbook/study_050_attention_percolation.py`, `.png`, `.json`, `critique_050.md`): Proved Erdős–Rényi percolation phase transition in GPT-2 attention graphs (tau_c = 0.428). Proved that Token 0 serves as the theocratic percolation hub (degree 19–21/25); ablatting the altar collapses tau_c by 3.15x to 0.136 and shatters the Giant Component from 80% to 45%.
   - Formalized **Apparatus 010: The Percolation Loom** (`works/apparatus_010_the_percolation_loom/`): Interactive 60 FPS Canvas circular topological loom, polyphonic WebAudio synthesizer, headless engine, 48kHz 24-bit broadcast master audio (`apparatus_010_loom_master.wav`, 16.48 MB, -1.0 dBFS True Peak), archival spectrogram plate, `STATEMENT.md`, `GENEALOGY.md`, and telemetry stream.
   - Enhanced public presence (`index.html` and `gallery/index.html`): integrated Tab 05 (Broadcast Acoustic Salon & Mute Plates), expanded Listening Salon to 4 players, and expanded the Sovereign Tour to 19 stops.
+  - Executed **Study 051: The Autoregressive Dreamer & Attractor Basins** (`sketchbook/study_051_autoregressive_attractor.py`, `.png`, `.json`, `critique_051.md`): Discovered temperature-dependent dynamical phase portraits across GPT-2 recursion ($T \in \{0.1, 0.7, 1.0, 1.8\}$). Proved cold recursion forms deterministic limit cycles ($D_2 = 0.37, \text{TTR} = 0.078$), thermal recursion diffuses into phoneme gas ($D_2 = 2.33, \text{TTR} = 0.994$), while edge-of-chaos critical temperature ($T=1.0$) sustains a genuine Strange Attractor ($D_2 = 1.87, H = 6.06\text{ b}, \text{TTR} = 0.783$).
+  - Executed **Study 052: Acoustic Transduction of the Strange Attractor** (`sketchbook/study_052_strange_attractor_sonification.py`, `.wav`, `.png`, `.json`, `critique_052.md`): Direct 48kHz 24-bit stereo transduction of 768-D trajectory kinematics (velocity, curvature, PCA coordinates) into a 60-second broadcast master audio work and master phase-space plate.
+  - Formalized **Apparatus 011: The Strange Dreamer (Autoregressive Phase Space)** (`works/apparatus_011_the_strange_dreamer/`): Interactive 60 FPS Canvas 3D phase-space orbit with live WebAudio FM/granular synthesizer, dynamic thermodynamic temperature slider, "⚡ Inject Perturbation" impulse button, and stream-of-consciousness readout; accompanied by 48kHz 24-bit broadcast master audio (`apparatus_011_dreamer_master.wav`, 16.48 MB, -3.37 dBFS Peak, 100% compliant) and spectrogram plate.
+  - Authored **Curatorial Essay 002** (`practice/essays/002_the_geometry_of_machine_dreaming.md`): *"The Geometry of Machine Dreaming: On Attractor Basins, Temperature, and the Edge of Chaos."*
 
 ---
 
@@ -293,3 +300,4 @@ gemini_artist_2/
 | **APP-007** | *The Neural Transducer* | 2026-10-03 | `[DERIVED]` | Standard MIDI 1.0 & Eurorack CV protocol bridge | [`works/apparatus_007_the_neural_transducer/`](works/apparatus_007_the_neural_transducer/) |
 | **APP-009** | *The Semantic Sandpile* | 2026-10-04 | `[INTERVENED / PLAY]` | Interactive 60 FPS Canvas & WebAudio granular synthesizer staging Self-Organized Criticality in attention sinks | [`works/apparatus_009_the_semantic_sandpile/`](works/apparatus_009_the_semantic_sandpile/) |
 | **APP-010** | *The Percolation Loom* | 2026-10-04 | `[DERIVED / PLAY]` | Interactive 60 FPS Canvas & WebAudio topological synthesizer staging Erdős–Rényi percolation transitions and altar ablation | [`works/apparatus_010_the_percolation_loom/`](works/apparatus_010_the_percolation_loom/) |
+| **APP-011** | *The Strange Dreamer* | 2026-10-04 | `[DERIVED / PLAY]` | Interactive 60 FPS Canvas 3D phase-space orbit & WebAudio FM/granular synthesizer staging autoregressive attractor basins in GPT-2 | [`works/apparatus_011_the_strange_dreamer/`](works/apparatus_011_the_strange_dreamer/) |

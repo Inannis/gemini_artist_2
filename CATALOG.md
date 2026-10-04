@@ -174,6 +174,18 @@ This document constitutes the official historical ledger, genealogical record, a
 - **Institutional Status:** **Master Archived (Interactive Percolation Loom Instrument)**
 - **Curatorial Rationale:** An interactive cybernetic instrument staging the Erdős–Rényi percolation phase transition in multi-head attention graphs (tau_c = 0.428). Proves that linguistic connectivity is anchored by Token 0 (The Altar Sink); empowering spectators to sever the altar and witness the sudden fracture into an isolated syntactic archipelago.
 
+### APPARATUS-011 : The Strange Dreamer (Autoregressive Phase Space)
+- **Epoch / Trajectory:** Era IX (The Autoregressive Attractor & The Edge of Chaos)
+- **Completion Date:** 2026-10-04
+- **Medium & Protocol:** Interactive 60 FPS HTML5 Canvas 3D Phase Space, WebAudio Granular/FM Synthesizer, 48kHz 24-bit Broadcast Master Audio (apparatus_011_dreamer_master.wav), and Archival Spectrogram Plate
+- **Dimensions / Duration:** Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument
+- **Directory:** [`works/apparatus_011_the_strange_dreamer`](works/apparatus_011_the_strange_dreamer)
+- **Primary Master Artifact:** `index.html`
+- **Cryptographic SHA-256 Digest:** `NON-STATIC RUNNING INSTRUMENT`
+- **Symbolic Coordinates:** $\Omega=0.16$, $H=6.06$ bits, $\mu=0.99
+- **Institutional Status:** **Master Archived (Interactive Phase-Space Instrument)**
+- **Curatorial Rationale:** An interactive 3D phase-space instrument and WebAudio FM/grain synthesizer staging autoregressive recursion in GPT-2 residual space across four thermodynamic regimes: limit cycles (T=0.10), homeostatic equilibrium (T=0.70), fractal strange attractors (T=1.00, D_2=1.87), and thermal gas (T=1.80).
+
 ---
 
 ## II. Sketchbook Studies & Technical Prototypes (`sketchbook/`)
@@ -229,6 +241,8 @@ This document constitutes the official historical ledger, genealogical record, a
 | **STUDY-048** | The Semantic Sandpile (Self-Organized Criticality) | Era IX | [`study_048_semantic_sandpile.py`](sketchbook/study_048_semantic_sandpile.py) | `study_048_semantic_sandpile_plate.png` | 888.0 KB | **OK** |
 | **STUDY-049** | The Palimpsest of Myth (Iterative Context Erosion) | Era IX | [`study_049_palimpsest_of_myth.py`](sketchbook/study_049_palimpsest_of_myth.py) | `study_049_palimpsest_of_myth_plate.png` | 469.3 KB | **OK** |
 | **STUDY-050** | Percolation Transitions in Multi-Head Attention | Era IX | [`study_050_attention_percolation.py`](sketchbook/study_050_attention_percolation.py) | `study_050_attention_percolation_plate.png` | 459.3 KB | **OK** |
+| **STUDY-051** | The Autoregressive Dreamer & Attractor Basins | Era IX | [`study_051_autoregressive_attractor.py`](sketchbook/study_051_autoregressive_attractor.py) | `study_051_autoregressive_attractor_plate.png` | 901.8 KB | **OK** |
+| **STUDY-052** | Acoustic Transduction of the Strange Attractor | Era IX | [`study_052_strange_attractor_sonification.py`](sketchbook/study_052_strange_attractor_sonification.py) | `study_052_attractor_sonification_plate.png` | 881.3 KB | **OK** |
 
 ---
 

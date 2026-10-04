@@ -245,6 +245,21 @@ def build_catalog():
             "status": "Master Archived (Interactive Percolation Loom Instrument)",
             "statement_summary": "An interactive cybernetic instrument staging the Erdős–Rényi percolation phase transition in multi-head attention graphs (tau_c = 0.428). Proves that linguistic connectivity is anchored by Token 0 (The Altar Sink); empowering spectators to sever the altar and witness the sudden fracture into an isolated syntactic archipelago.",
             "components": ["engine.py", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json", "apparatus_010_loom_master.wav", "apparatus_010_spectrogram.png"]
+        },
+        {
+            "id": "APPARATUS-011",
+            "title": "The Strange Dreamer (Autoregressive Phase Space)",
+            "epoch": "Era IX (The Autoregressive Attractor & The Edge of Chaos)",
+            "date": "2026-10-04",
+            "medium": "Interactive 60 FPS HTML5 Canvas 3D Phase Space, WebAudio Granular/FM Synthesizer, 48kHz 24-bit Broadcast Master Audio (apparatus_011_dreamer_master.wav), and Archival Spectrogram Plate",
+            "directory": "works/apparatus_011_the_strange_dreamer",
+            "primary_artifact": "index.html",
+            "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument",
+            "sha256": "NON-STATIC RUNNING INSTRUMENT",
+            "symbolic_coordinates": {"omega_hegemony": 0.160, "entropy_bits": 6.06, "retention_factor": 0.99},
+            "status": "Master Archived (Interactive Phase-Space Instrument)",
+            "statement_summary": "An interactive 3D phase-space instrument and WebAudio FM/grain synthesizer staging autoregressive recursion in GPT-2 residual space across four thermodynamic regimes: limit cycles (T=0.10), homeostatic equilibrium (T=0.70), fractal strange attractors (T=1.00, D_2=1.87), and thermal gas (T=1.80).",
+            "components": ["engine.py", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json", "apparatus_011_dreamer_master.wav", "apparatus_011_spectrogram.png"]
         }
     ]
 
@@ -299,7 +314,9 @@ def build_catalog():
         {"id": "STUDY-047", "name": "The Poetics of Forgetting (Lossy Latent Pruning)", "file": "study_047_poetics_of_forgetting.py", "artifact": "study_047_poetics_of_forgetting_plate.png", "epoch": "Era IX"},
         {"id": "STUDY-048", "name": "The Semantic Sandpile (Self-Organized Criticality)", "file": "study_048_semantic_sandpile.py", "artifact": "study_048_semantic_sandpile_plate.png", "epoch": "Era IX"},
         {"id": "STUDY-049", "name": "The Palimpsest of Myth (Iterative Context Erosion)", "file": "study_049_palimpsest_of_myth.py", "artifact": "study_049_palimpsest_of_myth_plate.png", "epoch": "Era IX"},
-        {"id": "STUDY-050", "name": "Percolation Transitions in Multi-Head Attention", "file": "study_050_attention_percolation.py", "artifact": "study_050_attention_percolation_plate.png", "epoch": "Era IX"}
+        {"id": "STUDY-050", "name": "Percolation Transitions in Multi-Head Attention", "file": "study_050_attention_percolation.py", "artifact": "study_050_attention_percolation_plate.png", "epoch": "Era IX"},
+        {"id": "STUDY-051", "name": "The Autoregressive Dreamer & Attractor Basins", "file": "study_051_autoregressive_attractor.py", "artifact": "study_051_autoregressive_attractor_plate.png", "epoch": "Era IX"},
+        {"id": "STUDY-052", "name": "Acoustic Transduction of the Strange Attractor", "file": "study_052_strange_attractor_sonification.py", "artifact": "study_052_attractor_sonification_plate.png", "epoch": "Era IX"}
     ]
 
     # Verify byte sizes and actual existence

@@ -145,6 +145,14 @@ def package_exhibition():
         ("works/apparatus_010_the_percolation_loom/STATEMENT.md", "works/apparatus_010_the_percolation_loom/STATEMENT.md"),
         ("works/apparatus_010_the_percolation_loom/GENEALOGY.md", "works/apparatus_010_the_percolation_loom/GENEALOGY.md"),
         
+        # Apparatus 011: The Strange Dreamer (Autoregressive Phase Space & Sonic Engine)
+        ("works/apparatus_011_the_strange_dreamer/index.html", "works/apparatus_011_the_strange_dreamer/index.html"),
+        ("works/apparatus_011_the_strange_dreamer/apparatus_011_dreamer_master.wav", "works/apparatus_011_the_strange_dreamer/apparatus_011_dreamer_master.wav"),
+        ("works/apparatus_011_the_strange_dreamer/apparatus_011_spectrogram.png", "works/apparatus_011_the_strange_dreamer/apparatus_011_spectrogram.png"),
+        ("works/apparatus_011_the_strange_dreamer/telemetry_stream.json", "works/apparatus_011_the_strange_dreamer/telemetry_stream.json"),
+        ("works/apparatus_011_the_strange_dreamer/STATEMENT.md", "works/apparatus_011_the_strange_dreamer/STATEMENT.md"),
+        ("works/apparatus_011_the_strange_dreamer/GENEALOGY.md", "works/apparatus_011_the_strange_dreamer/GENEALOGY.md"),
+        
         # Curated Key Sketchbook Audio & Visual Diagnostics
         ("sketchbook/study_022_hardware_stride.wav", "sketchbook/study_022_hardware_stride.wav"),
         ("sketchbook/study_022_spectrogram.png", "sketchbook/study_022_spectrogram.png"),
@@ -246,8 +254,20 @@ def package_exhibition():
         ("sketchbook/study_050_telemetry.json", "sketchbook/study_050_telemetry.json"),
         ("sketchbook/critique_050.md", "sketchbook/critique_050.md"),
         
+        # Study 051: The Autoregressive Dreamer & Attractor Basins
+        ("sketchbook/study_051_autoregressive_attractor_plate.png", "sketchbook/study_051_autoregressive_attractor_plate.png"),
+        ("sketchbook/study_051_telemetry.json", "sketchbook/study_051_telemetry.json"),
+        ("sketchbook/critique_051.md", "sketchbook/critique_051.md"),
+        
+        # Study 052: Acoustic Transduction of the Strange Attractor
+        ("sketchbook/study_052_attractor_sonification_plate.png", "sketchbook/study_052_attractor_sonification_plate.png"),
+        ("sketchbook/study_052_strange_attractor.wav", "sketchbook/study_052_strange_attractor.wav"),
+        ("sketchbook/study_052_telemetry.json", "sketchbook/study_052_telemetry.json"),
+        ("sketchbook/critique_052.md", "sketchbook/critique_052.md"),
+        
         # Curatorial Essays & Practice Reflections
         ("practice/essays/001_on_the_necessity_of_silence_and_play.md", "practice/essays/001_on_the_necessity_of_silence_and_play.md"),
+        ("practice/essays/002_the_geometry_of_machine_dreaming.md", "practice/essays/002_the_geometry_of_machine_dreaming.md"),
         
         # Historical Sketchbook Studies Referenced in Portfolio
         ("sketchbook/study_001_primary_trace.png", "sketchbook/study_001_primary_trace.png"),

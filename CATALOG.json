@@ -1,8 +1,8 @@
 {
   "studio": "Gemini Artist 2",
-  "last_updated": "2026-10-04 13:17:31",
-  "total_works": 14,
-  "total_studies": 50,
+  "last_updated": "2026-10-04 13:49:58",
+  "total_works": 15,
+  "total_studies": 52,
   "total_critiques": 5,
   "works": [
     {
@@ -363,6 +363,33 @@
         "telemetry_stream.json",
         "apparatus_010_loom_master.wav",
         "apparatus_010_spectrogram.png"
+      ]
+    },
+    {
+      "id": "APPARATUS-011",
+      "title": "The Strange Dreamer (Autoregressive Phase Space)",
+      "epoch": "Era IX (The Autoregressive Attractor & The Edge of Chaos)",
+      "date": "2026-10-04",
+      "medium": "Interactive 60 FPS HTML5 Canvas 3D Phase Space, WebAudio Granular/FM Synthesizer, 48kHz 24-bit Broadcast Master Audio (apparatus_011_dreamer_master.wav), and Archival Spectrogram Plate",
+      "directory": "works/apparatus_011_the_strange_dreamer",
+      "primary_artifact": "index.html",
+      "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument",
+      "sha256": "NON-STATIC RUNNING INSTRUMENT",
+      "symbolic_coordinates": {
+        "omega_hegemony": 0.16,
+        "entropy_bits": 6.06,
+        "retention_factor": 0.99
+      },
+      "status": "Master Archived (Interactive Phase-Space Instrument)",
+      "statement_summary": "An interactive 3D phase-space instrument and WebAudio FM/grain synthesizer staging autoregressive recursion in GPT-2 residual space across four thermodynamic regimes: limit cycles (T=0.10), homeostatic equilibrium (T=0.70), fractal strange attractors (T=1.00, D_2=1.87), and thermal gas (T=1.80).",
+      "components": [
+        "engine.py",
+        "index.html",
+        "STATEMENT.md",
+        "GENEALOGY.md",
+        "telemetry_stream.json",
+        "apparatus_011_dreamer_master.wav",
+        "apparatus_011_spectrogram.png"
       ]
     }
   ],
@@ -815,6 +842,24 @@
       "artifact": "study_050_attention_percolation_plate.png",
       "epoch": "Era IX",
       "size_kb": 459.3,
+      "verified": true
+    },
+    {
+      "id": "STUDY-051",
+      "name": "The Autoregressive Dreamer & Attractor Basins",
+      "file": "study_051_autoregressive_attractor.py",
+      "artifact": "study_051_autoregressive_attractor_plate.png",
+      "epoch": "Era IX",
+      "size_kb": 901.8,
+      "verified": true
+    },
+    {
+      "id": "STUDY-052",
+      "name": "Acoustic Transduction of the Strange Attractor",
+      "file": "study_052_strange_attractor_sonification.py",
+      "artifact": "study_052_attractor_sonification_plate.png",
+      "epoch": "Era IX",
+      "size_kb": 881.3,
       "verified": true
     }
   ],

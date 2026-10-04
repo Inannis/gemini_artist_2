@@ -1,0 +1,40 @@
+{
+  "apparatus": "apparatus_011_the_strange_dreamer",
+  "sample_rate": 48000,
+  "duration_sec": 60.0,
+  "format": "48kHz 24-bit Stereo PCM WAV",
+  "peak_dbfs": -3.37,
+  "rms_dbfs": -12.18,
+  "crest_factor_db": 8.81,
+  "broadcast_compliant": true,
+  "regimes": [
+    {
+      "time_range": "0:00 - 0:15",
+      "temp": 0.1,
+      "label": "The Limit Cycle",
+      "d2": 0.37,
+      "mode": "Periodic Drone"
+    },
+    {
+      "time_range": "0:15 - 0:30",
+      "temp": 0.7,
+      "label": "The Homeostatic Orbit",
+      "d2": 0.91,
+      "mode": "Dual Counterpoint"
+    },
+    {
+      "time_range": "0:30 - 0:45",
+      "temp": 1.0,
+      "label": "The Strange Attractor",
+      "d2": 1.87,
+      "mode": "Fractal FM"
+    },
+    {
+      "time_range": "0:45 - 1:00",
+      "temp": 1.8,
+      "label": "Thermal Dissipation",
+      "d2": 2.33,
+      "mode": "Granular Gas"
+    }
+  ]
+}

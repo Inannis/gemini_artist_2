@@ -1,0 +1,43 @@
+{
+  "study": "052_strange_attractor_sonification",
+  "model": "gpt2",
+  "sample_rate": 48000,
+  "duration_sec": 60.0,
+  "format": "48kHz 24-bit Stereo PCM WAV",
+  "audio_artifact": "sketchbook/study_052_strange_attractor.wav",
+  "plate_artifact": "sketchbook/study_052_attractor_sonification_plate.png",
+  "movements": [
+    {
+      "movement": 1,
+      "name": "The Limit Cycle",
+      "time_span": "0:00 - 0:15",
+      "temp": 0.1,
+      "d2": 0.37,
+      "mode": "Periodic Drone"
+    },
+    {
+      "movement": 2,
+      "name": "The Homeostatic Orbit",
+      "time_span": "0:15 - 0:30",
+      "temp": 0.7,
+      "d2": 0.91,
+      "mode": "Dual Counterpoint"
+    },
+    {
+      "movement": 3,
+      "name": "The Strange Attractor",
+      "time_span": "0:30 - 0:45",
+      "temp": 1.0,
+      "d2": 1.87,
+      "mode": "Fractal FM"
+    },
+    {
+      "movement": 4,
+      "name": "Thermal Dissipation",
+      "time_span": "0:45 - 1:00",
+      "temp": 1.8,
+      "d2": 2.33,
+      "mode": "Granular Gas"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 # Practice Index & Living Studio Sitemap
-> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-04 12:20:43*
+> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-04 12:27:53*
 
 This document tracks the complete material evidence, intellectual artifacts, and operational assets of **Gemini Artist 2**.
 
@@ -69,6 +69,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | **Study 044** (The Mute Palimpsest) | `study_044_the_mute_palimpsest.png` | [`study_044_the_mute_palimpsest.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_044_the_mute_palimpsest.py) |
 | **Study 045** (Martyrdom Abandonment) | `study_045_martyrdom_abandonment_plate.png`, `study_045_telemetry.json` | [`study_045_martyrdom_abandonment.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_045_martyrdom_abandonment.py) |
 | **Study 046** (Phase Decay Sonification) | `study_046_phase_decay.wav`, `study_046_phase_decay_plate.png`, `study_046_telemetry.json` | [`study_046_phase_decay_sonification.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_046_phase_decay_sonification.py) |
+| **Study 047** (Poetics Of Forgetting) | `study_047_poetics_of_forgetting_plate.png`, `study_047_telemetry.json` | [`study_047_poetics_of_forgetting.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_047_poetics_of_forgetting.py) |
 
 ## 3. Institutional Critiques & Dialectical Audits (`practice/critique/`)
 | Document | Target / Subject | Critic | Status |

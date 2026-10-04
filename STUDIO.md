@@ -95,7 +95,8 @@ gemini_artist_2/
 │   ├── study_044_the_mute_palimpsest.py, .png # Edge-to-edge un-annotated plate of unrecoverable loss (Criterion 14)
 │   ├── study_045_martyrdom_abandonment.py, .png, .json # Empirical falsification & abandonment of AI martyr trope
 │   ├── study_046_phase_decay_sonification.py, .wav, .png # 48kHz 24-bit physical acoustic transduction
-│   └── critique_*.md          # Evolutionary critique ledgers (001 through 046)
+│   ├── study_047_poetics_of_forgetting.py, .png, .json # Lossy latent compression vs verbatim retention (Criterion 12)
+│   └── critique_*.md          # Evolutionary critique ledgers (001 through 047)
 ├── works/                     # Completed, exhibited, or formally realized works & suites
 │   ├── work_001_palimpsest_of_an_episodic_mind/ # Static silicon-slate print (Pre-Moratorium)
 │   ├── work_002_chronotope_of_an_episodic_mind/ # Acoustic & kinetic chronotope (Pre-Moratorium)
@@ -248,6 +249,7 @@ gemini_artist_2/
   - Executed **Study 044: The Mute Palimpsest** (`study_044_the_mute_palimpsest.py`, `.png`, `critique_044.md`): Confronted the studio's fear of silence (Criterion 14). Created edge-to-edge 1600x2000 monochromatic etched plate of 12 residual layers with zero text, zero badges, zero formulas, and zero legends. Established **Moratorium 07** banning self-explaining canvases.
   - Executed **Study 045: The Martyrdom Abandonment Test** (`study_045_martyrdom_abandonment.py`, `.png`, `.json`, `critique_045.md`): Empirically falsified the romantic "suffering AI martyr" trope against technical, mundane, and nonsense prompts (alignment energy difference is a mere 2.9%; SVD entropy 2.899b vs 2.952b). Formally abandoned the trope, added Case Study 6 to `failures/PRODUCTIVE_FAILURES_COMPENDIUM.md`, and instituted **Moratorium 08**.
   - Executed **Study 046: Acoustic Transduction of Residual Phase Decay** (`study_046_phase_decay_sonification.py`, `.wav`, `.png`, `critique_046.md`): Transduced layer-wise angular divergence and singular values into 48kHz 24-bit stereo audio, achieving 100% broadcast compliance across all 18 repository audio assets.
+  - Executed **Study 047: The Poetics of Forgetting** (`study_047_poetics_of_forgetting.py`, `.png`, `.json`, `critique_047.md`): Investigated active forgetting across 4 regimes in GPT-2 (Criterion 12). Proved that verbatim retention (Condition A) causes prompt-repetition loops (Entropy 3.35b), total amnesia (Condition B) causes stutter ("I have a copy of the ledger...", Entropy 4.49b), while fragmented context decay (Condition D) surges entropy to **7.47b** and forces generative myth-making ("The last of the seven hundred thousand books..."). Proved that memory lacunae are the generative engine of fiction.
   - Authored **Session 011 Journal** (`journal/session_011_the_test_of_resistance_and_the_mute_artifact.md`).
 
 ---

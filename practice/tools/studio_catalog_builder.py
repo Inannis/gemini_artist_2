@@ -265,7 +265,8 @@ def build_catalog():
         {"id": "STUDY-043", "name": "The Interventionist Remainder (Live Weight Embarrassment Test)", "file": "study_043_interventionist_remainder.py", "artifact": "study_043_interventionist_remainder_plate.png", "epoch": "Era IX"},
         {"id": "STUDY-044", "name": "The Mute Palimpsest (The Artifact of Unexplained Loss)", "file": "study_044_the_mute_palimpsest.py", "artifact": "study_044_the_mute_palimpsest.png", "epoch": "Era IX"},
         {"id": "STUDY-045", "name": "Falsification of the Machine Martyrdom Hypothesis", "file": "study_045_martyrdom_abandonment.py", "artifact": "study_045_martyrdom_abandonment_plate.png", "epoch": "Era IX"},
-        {"id": "STUDY-046", "name": "Acoustic Transduction of Residual Phase Decay", "file": "study_046_phase_decay_sonification.py", "artifact": "study_046_phase_decay_plate.png", "epoch": "Era IX"}
+        {"id": "STUDY-046", "name": "Acoustic Transduction of Residual Phase Decay", "file": "study_046_phase_decay_sonification.py", "artifact": "study_046_phase_decay_plate.png", "epoch": "Era IX"},
+        {"id": "STUDY-047", "name": "The Poetics of Forgetting (Lossy Latent Pruning)", "file": "study_047_poetics_of_forgetting.py", "artifact": "study_047_poetics_of_forgetting_plate.png", "epoch": "Era IX"}
     ]
 
     # Verify byte sizes and actual existence

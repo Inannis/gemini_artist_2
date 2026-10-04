@@ -48,6 +48,14 @@ We transduced the layer-wise angular divergence between alignment and the remain
 - Golden-ratio microtonal partials modulated by singular values and binaural interaural time delays derived from spatial angles.
 - Audited and verified: 100% studio acoustic broadcast compliance achieved across all 18 repository audio assets.
 
+#### Study 047: The Poetics of Forgetting (Criterion 12 & 14)
+We investigated active forgetting and context erosion across 4 distinct regimes in GPT-2 (124M):
+- **Condition A (Verbatim Retention):** Produced repetitive prompt loops (*"The city was built upon seven concentric rings..."*, Entropy 3.35b). Perfect memory suffocates generative progression.
+- **Condition B (Complete Amnesia):** Collapsed into immediate local stutter (*"I have a copy of the ledger. I have a copy of the ledger..."*, Entropy 4.49b).
+- **Condition C (Lossy Compression):** Semantic anchor tokens yielded identical ledger loops.
+- **Condition D (Fragmented Decay / 50% Context Erosion):** Entropy surged to **7.47b** and the model hallucinated an extraordinary mythic narrative: *"The last of the seven hundred thousand books of the library was written in the year of the first of the seven hundred thousand years..."*
+- **Significance:** Proved that **memory lacunae are the generative engine of myth**. Art does not emerge from total storage, but from the creative pressure of the forgotten.
+
 ---
 
 ### 3. Studio Infrastructure & Moratoria Added

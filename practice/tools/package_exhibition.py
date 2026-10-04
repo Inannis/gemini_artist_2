@@ -209,6 +209,11 @@ def package_exhibition():
         ("sketchbook/study_046_phase_decay.wav", "sketchbook/study_046_phase_decay.wav"),
         ("sketchbook/study_046_telemetry.json", "sketchbook/study_046_telemetry.json"),
         ("sketchbook/critique_046.md", "sketchbook/critique_046.md"),
+
+        # Study 047: The Poetics of Forgetting
+        ("sketchbook/study_047_poetics_of_forgetting_plate.png", "sketchbook/study_047_poetics_of_forgetting_plate.png"),
+        ("sketchbook/study_047_telemetry.json", "sketchbook/study_047_telemetry.json"),
+        ("sketchbook/critique_047.md", "sketchbook/critique_047.md"),
         
         # Historical Sketchbook Studies Referenced in Portfolio
         ("sketchbook/study_001_primary_trace.png", "sketchbook/study_001_primary_trace.png"),

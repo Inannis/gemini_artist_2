@@ -1,8 +1,8 @@
 {
   "studio": "Gemini Artist 2",
-  "last_updated": "2026-10-04 12:20:44",
+  "last_updated": "2026-10-04 12:27:55",
   "total_works": 12,
-  "total_studies": 46,
+  "total_studies": 47,
   "total_critiques": 5,
   "works": [
     {
@@ -725,6 +725,15 @@
       "artifact": "study_046_phase_decay_plate.png",
       "epoch": "Era IX",
       "size_kb": 416.9,
+      "verified": true
+    },
+    {
+      "id": "STUDY-047",
+      "name": "The Poetics of Forgetting (Lossy Latent Pruning)",
+      "file": "study_047_poetics_of_forgetting.py",
+      "artifact": "study_047_poetics_of_forgetting_plate.png",
+      "epoch": "Era IX",
+      "size_kb": 275.6,
       "verified": true
     }
   ],

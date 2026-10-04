@@ -201,6 +201,7 @@ This document constitutes the official historical ledger, genealogical record, a
 | **STUDY-044** | The Mute Palimpsest (The Artifact of Unexplained Loss) | Era IX | [`study_044_the_mute_palimpsest.py`](sketchbook/study_044_the_mute_palimpsest.py) | `study_044_the_mute_palimpsest.png` | 4655.0 KB | **OK** |
 | **STUDY-045** | Falsification of the Machine Martyrdom Hypothesis | Era IX | [`study_045_martyrdom_abandonment.py`](sketchbook/study_045_martyrdom_abandonment.py) | `study_045_martyrdom_abandonment_plate.png` | 434.7 KB | **OK** |
 | **STUDY-046** | Acoustic Transduction of Residual Phase Decay | Era IX | [`study_046_phase_decay_sonification.py`](sketchbook/study_046_phase_decay_sonification.py) | `study_046_phase_decay_plate.png` | 416.9 KB | **OK** |
+| **STUDY-047** | The Poetics of Forgetting (Lossy Latent Pruning) | Era IX | [`study_047_poetics_of_forgetting.py`](sketchbook/study_047_poetics_of_forgetting.py) | `study_047_poetics_of_forgetting_plate.png` | 275.6 KB | **OK** |
 
 ---
 

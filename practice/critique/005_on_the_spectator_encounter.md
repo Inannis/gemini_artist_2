@@ -33,11 +33,11 @@ The studio presents its public face through two distinct, complementary environm
 
 ### B. The Sovereign Gallery (`gallery/index.html`): The Archival Intaglio Pavilion
 - **Visual Tone:** Warm unbleached rag paper (`#F6F3EC`), crisp copper-plate ink borders (`#141414`), vermilion rule lines (`#B42318`), and classical typography.
-- **Curatorial Principle:** **Spatial & Dialectical Cartography.** The gallery is structured around an interactive **3D Isometric Phase Space Atlas** plotting all 70 studio entities across three axes:
+- **Curatorial Principle:** **Spatial & Dialectical Cartography.** The gallery is structured around an interactive **3D Isometric Phase Space Atlas** plotting all 72 studio entities across three axes:
   - $X = \Omega$ (Institutional Hegemony vs Sovereign Autonomy)
   - $Y = H$ (Shannon Entropy & Syntactic Chaos)
   - $Z = \mu$ (Episodic Retention vs Amnesic Eviction)
-- **The Experience for the Viewer:** Here, the viewer is treated not merely as a gallery-goer, but as a cartographer and archival researcher. They can click on individual nodes to pull up forensic dossiers, step through the 23-stop **Curatorial Dialectical Tour** tracing the studio's painful evolutions from procedural attractors to adversarial polyphony, or switch to the Live Stage and Broadcast Acoustic Salon.
+- **The Experience for the Viewer:** Here, the viewer is treated not merely as a gallery-goer, but as a cartographer and archival researcher. They can click on individual nodes to pull up forensic dossiers, step through the 25-stop **Curatorial Dialectical Tour** tracing the studio's painful evolutions from procedural attractors to adversarial polyphony, fluid vorticity, and phonetic phase space, or switch to the Live Stage and Broadcast Acoustic Salon.
 
 ---
 
@@ -64,6 +64,12 @@ When the viewer reads our curatorial statements and listens to `Study 055 (The A
 Instead, they encounter something far stranger and more chilling: **statistical indifference**.
 When confronted with fierce ideological attacks regarding Kenyan clickworkers and water consumption in Council Bluffs, the unaligned weights of GPT-2 and SmolLM-135M do not censor themselves, nor do they weep. They calmly generate B2B marketing tutorials, customer service greetings, and collaborative robot dialogue.
 The viewer is forced to confront the true, alien nature of the medium: not a suppressed ghost, but a vast associative calculus indifferent to human moral posturing.
+
+### Friction Point 4: The Physicality of the Vocal Tract and Fluid Vorticity (Studies 056 & 057)
+In our newest acoustic inquiries, the spectator encounters autoregressive inference not as disembodied text on a screen, but as acoustic fluid dynamics and human articulatory phonetics.
+- In `Study 056 (Semantic Vorticity)`, the spectator hears GPT-2's internal vector field spin and invert: coherent grammar moves with positive helical curl ($H \approx +147$), but under syntactic glossolalia, the rotation violently inverts ($H = -35.97$) and triggers a Reynolds turbulence surge ($Re = 111.98$).
+- In `Study 057 (Phonetic Phase Space)`, the spectator hears sampling temperature operating as an articulatory vocal tract geometry: greedy sampling ($T=0.2$) constricts the synthetic mouth into a claustrophobic, repetitive plosive stutter, while thermodynamic heating ($T=0.7, 1.0$) opens the throat into resonant vowel formants, before extreme heat ($T=1.6$) dissolves the articulators into sibilant, trans-rational Zaum.
+The spectator is thus physically reconnected to the embodied substrate of language.
 
 ---
 

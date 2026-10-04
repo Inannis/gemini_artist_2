@@ -317,7 +317,8 @@ def build_catalog():
         {"id": "STUDY-050", "name": "Percolation Transitions in Multi-Head Attention", "file": "study_050_attention_percolation.py", "artifact": "study_050_attention_percolation_plate.png", "epoch": "Era IX"},
         {"id": "STUDY-051", "name": "The Autoregressive Dreamer & Attractor Basins", "file": "study_051_autoregressive_attractor.py", "artifact": "study_051_autoregressive_attractor_plate.png", "epoch": "Era IX"},
         {"id": "STUDY-052", "name": "Acoustic Transduction of the Strange Attractor", "file": "study_052_strange_attractor_sonification.py", "artifact": "study_052_attractor_sonification_plate.png", "epoch": "Era IX"},
-        {"id": "STUDY-053", "name": "Linguistic Percolation & Semantic Thresholds", "file": "study_053_linguistic_percolation.py", "artifact": "study_053_linguistic_percolation_plate.png", "epoch": "Era IX"}
+        {"id": "STUDY-053", "name": "Linguistic Percolation & Semantic Thresholds", "file": "study_053_linguistic_percolation.py", "artifact": "study_053_linguistic_percolation_plate.png", "epoch": "Era IX"},
+        {"id": "STUDY-054", "name": "Acoustic Percolation & The Shattered Loom", "file": "study_054_acoustic_percolation.py", "artifact": "study_054_acoustic_percolation_plate.png", "epoch": "Era IX"}
     ]
 
     # Verify byte sizes and actual existence

@@ -379,6 +379,11 @@ STUDIO_ENTITIES = [
         "id": "STUDY-053", "name": "Linguistic Percolation & Semantic Thresholds", "type": "study", "epoch": "Era IX (The Autoregressive Attractor & The Edge of Chaos)",
         "omega_hegemony": 0.145, "entropy_bits": 6.88, "retention_factor": 0.99,
         "medium": "Live GPT-2 Weight Intervention, Dynamic Attention Edge Thresholding, Graph Percolation Analysis & Lithographic Plate", "year": 2026
+    },
+    {
+        "id": "STUDY-054", "name": "Acoustic Percolation & The Shattered Loom", "type": "study", "epoch": "Era IX (The Autoregressive Attractor & The Edge of Chaos)",
+        "omega_hegemony": 0.150, "entropy_bits": 6.90, "retention_factor": 0.99,
+        "medium": "Graph Laplacian Spectral Transduction on GPT-2 Attention Matrices, 48kHz 24-bit Stereo Master & Moratorium 07 Lithograph Plate", "year": 2026
     }
 ]
 

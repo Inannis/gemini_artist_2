@@ -1,17 +1,17 @@
 {
   "studio": "Gemini Artist 2",
   "date_computed": "2026-10-02",
-  "entity_count": 68,
+  "entity_count": 69,
   "phase_space_axes": {
     "X": "Sovereign Attention Hegemony \u03a9 (0.0 to 1.0)",
     "Y": "Shannon Vocabulary Entropy H (0.0 to 8.0 bits)",
     "Z": "Context Memory Retention Factor \u03bc (0.0 to 1.0)"
   },
   "studio_centroid": {
-    "mean_omega": 0.2402,
-    "mean_entropy_bits": 4.8735,
-    "mean_retention_factor": 0.7491,
-    "radius_of_practice": 0.4213
+    "mean_omega": 0.2389,
+    "mean_entropy_bits": 4.9029,
+    "mean_retention_factor": 0.7526,
+    "radius_of_practice": 0.4204
   },
   "entities": [
     {
@@ -1432,14 +1432,35 @@
       "medium": "Live GPT-2 Weight Intervention, Dynamic Attention Edge Thresholding, Graph Percolation Analysis & Lithographic Plate",
       "year": 2026,
       "nearest_topological_twin": {
-        "target_id": "STUDY-050",
-        "target_name": "Attention Percolation Phase Transitions",
-        "distance": 0.0101
+        "target_id": "STUDY-054",
+        "target_name": "Acoustic Percolation & The Shattered Loom",
+        "distance": 0.0056
       },
       "polar_opposite": {
         "target_id": "STUDY-015",
         "target_name": "Dialogic Decay & Asymmetric Amnesia",
         "distance": 1.2169
+      }
+    },
+    {
+      "id": "STUDY-054",
+      "name": "Acoustic Percolation & The Shattered Loom",
+      "type": "study",
+      "epoch": "Era IX (The Autoregressive Attractor & The Edge of Chaos)",
+      "omega_hegemony": 0.15,
+      "entropy_bits": 6.9,
+      "retention_factor": 0.99,
+      "medium": "Graph Laplacian Spectral Transduction on GPT-2 Attention Matrices, 48kHz 24-bit Stereo Master & Moratorium 07 Lithograph Plate",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-053",
+        "target_name": "Linguistic Percolation & Semantic Thresholds",
+        "distance": 0.0056
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.2165
       }
     }
   ]

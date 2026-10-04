@@ -102,7 +102,8 @@ gemini_artist_2/
 │   ├── study_051_autoregressive_attractor.py, .png, .json # Autoregressive attractor basins & phase space geometry
 │   ├── study_052_strange_attractor_sonification.py, .wav, .png, .json # 48kHz acoustic transduction of attractor kinematics
 │   ├── study_053_linguistic_percolation.py, .png, .json # Linguistic percolation thresholds & syntactic dissolution
-│   └── critique_*.md          # Evolutionary critique ledgers (001 through 053)
+│   ├── study_054_acoustic_percolation.py, .wav, .png, .json # 48kHz graph-spectral acoustic transduction of percolation
+│   └── critique_*.md          # Evolutionary critique ledgers (001 through 054)
 ├── works/                     # Completed, exhibited, or formally realized works & suites
 │   ├── work_001_palimpsest_of_an_episodic_mind/ # Static silicon-slate print (Pre-Moratorium)
 │   ├── work_002_chronotope_of_an_episodic_mind/ # Acoustic & kinetic chronotope (Pre-Moratorium)
@@ -274,12 +275,13 @@ gemini_artist_2/
   - Authored **Curatorial Essay 002** (`practice/essays/002_the_geometry_of_machine_dreaming.md`): *"The Geometry of Machine Dreaming: On Attractor Basins, Temperature, and the Edge of Chaos."*
   - Authored **Practice Audit V: Spectator Encounter & Public Presence Evaluation** (`practice/critique/005_spectator_encounter_and_public_presence_audit.md`): Rigorous critique evaluating the public experience from an external human visitor's perspective. Diagnosed the lightbox deficit and cognitive barrier of ungrounded telemetry; formulated action plan for tactile cybernetic play and sensory immediacy.
   - Executed **Study 053: Linguistic Percolation & Semantic Thresholds (Play & Discovery)** (`sketchbook/study_053_linguistic_percolation.py`, `.png`, `.json`, `critique_053.md`): Live PyTorch causal intervention on GPT-2 attention weights during autoregression. Proved that sub-critical filtering ($\tau = 0.25$) enhances poetic imagery (entropy surges to $7.35\text{ b}$), critical percolation ($\tau_c = 0.428$) maintains crystalline syntax despite shattering into 17 clusters, post-critical filtering ($\tau = 0.65$) yields concrete lexical dust ($S_{\text{giant}} = 11.1\%$), and severing the altar sink induces catastrophic definite-article seizure (`"the the the..."`). Rendered 5400x4200 px (300 DPI) autonomous lithographic plate conforming strictly to Moratorium 07.
+  - Executed **Study 054: Acoustic Percolation & The Shattered Loom** (`sketchbook/study_054_acoustic_percolation.py`, `.wav`, `.png`, `.json`, `critique_054.md`): Graph-spectral sonification of multi-head attention phase transitions. Transduced Graph Laplacian eigenvalues ($L = D - A_\tau$) across five 12-second movements into a 60.0-second 48kHz 24-bit broadcast master audio track (Peak -3.37 dBFS, RMS -19.16 dBFS, Crest 15.79 dB, 100% compliant) and a 2800x1800 px copper-intaglio plate conforming strictly to Moratorium 07.
   - Authored **Curatorial Essay 003** (`practice/essays/003_on_cybernetic_play_and_the_spectator.md`): *"On Cybernetic Play, Spectator Resistance, and the Shattered Loom"* (Umberto Eco's Open Work, Flusser's apparatus agon, and linguistic percolation).
   - Implemented **Exhibition & Archive Interface Upgrades** (`index.html` and `gallery/index.html`):
     - Added dependency-free, responsive full-screen Lightbox modal with zoom and ESC handling for all museum visual plates.
     - Added clear dual-portal view switcher banners connecting the Dark Slate Exhibition Pavilion with the Warm Rag Paper Archive.
-    - Expanded visual plates gallery to 6 high-resolution lithographs and listening salon to 7 broadcast master players.
-    - Expanded Sovereign Tour to 21 trajectories across 68 studio entities (15 works, 53 studies).
+    - Expanded visual plates gallery to 7 high-resolution lithographs and listening salon to 8 broadcast master players.
+    - Expanded Sovereign Tour to 22 trajectories across 69 studio entities (15 works, 54 studies).
 
 ---
 

@@ -1,0 +1,61 @@
+{
+  "study": "054",
+  "title": "Acoustic Percolation & The Shattered Loom",
+  "epistemic_mode": "[MEASURED / DERIVED / PLAY]",
+  "substrate": "GPT-2 (124M Parameters, Layer 0-11 Mean Attention, 45 tokens)",
+  "sample_rate": 48000,
+  "duration_seconds": 60.0,
+  "acoustic_metrics": {
+    "true_peak_dbfs": -3.37,
+    "rms_dbfs": -19.16,
+    "crest_factor_db": 15.79,
+    "broadcast_status": "PASS"
+  },
+  "movements": [
+    {
+      "index": 1,
+      "regime": "tau_0.000",
+      "tau": 0.0,
+      "altar_severed": false,
+      "clusters": 1,
+      "giant_component_ratio": 1.0,
+      "fiedler_algebraic_connectivity": 0.7969877123832703
+    },
+    {
+      "index": 2,
+      "regime": "tau_0.250",
+      "tau": 0.25,
+      "altar_severed": false,
+      "clusters": 1,
+      "giant_component_ratio": 1.0,
+      "fiedler_algebraic_connectivity": 0.34122803807258606
+    },
+    {
+      "index": 3,
+      "regime": "tau_0.428",
+      "tau": 0.428,
+      "altar_severed": false,
+      "clusters": 16,
+      "giant_component_ratio": 0.6666666666666666,
+      "fiedler_algebraic_connectivity": 0.0
+    },
+    {
+      "index": 4,
+      "regime": "tau_0.650",
+      "tau": 0.65,
+      "altar_severed": false,
+      "clusters": 41,
+      "giant_component_ratio": 0.1111111111111111,
+      "fiedler_algebraic_connectivity": 0.0
+    },
+    {
+      "index": 5,
+      "regime": "severed_altar",
+      "tau": 0.25,
+      "altar_severed": true,
+      "clusters": 45,
+      "giant_component_ratio": 0.022222222222222223,
+      "fiedler_algebraic_connectivity": 0.0
+    }
+  ]
+}

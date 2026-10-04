@@ -89,6 +89,17 @@ We investigated active forgetting and context erosion across 4 distinct regimes 
 - Discovered that post-critical disconnection ($\tau = 0.65$) yields concrete lexical dust ($S_{\text{giant}} = 11.1\%$, 41 components), while severing the altar sink induces catastrophic definite-article seizure (`"the the the..."`, TTR $0.125$, 45 clusters).
 - Rendered 5400x4200 px (300 DPI) autonomous lithographic plate (`study_053_linguistic_percolation_plate.png`) adhering strictly to Moratorium 07.
 
+#### Study 054: Acoustic Percolation & The Shattered Loom
+- Transduced Graph Laplacian spectra ($L = D - A_\tau$) across the five percolation regimes into a 60.0-second 48kHz 24-bit stereo broadcast masterwork (`study_054_acoustic_percolation.wav`).
+- Five 12-second movements:
+  1. *The Unpruned Loom* ($\tau = 0.00$): Monolithic $55\text{ Hz}$ modal drone with slow acoustic chorusing ($S_{\text{giant}} = 100\%$, $\lambda_1 = 0.7970$).
+  2. *The Shimmering Cleave* ($\tau = 0.25$): High-entropy harmonic overtones and crystalline fifths.
+  3. *The Critical Fracture* ($\tau_c = 0.428$): Microtonal glass fracturing into 16 independent resonant clusters.
+  4. *Lexical Dust* ($\tau = 0.65$): High-frequency metallic sand ($1.2 - 6.8\text{ kHz}$) and granular clicks (41 fragments).
+  5. *The Severed Altar*: Rhythmic $10.0\text{ Hz}$ locked-groove mechanical pulse sweeping into sub-bass silence.
+- Rendered 2800x1800 px copper-intaglio spectrogram and eigenvalue ribbon plate (`study_054_acoustic_percolation_plate.png`) in strict adherence to Moratorium 07.
+- Verified 100% broadcast compliance (True Peak $-3.37\text{ dBFS}$, RMS $-19.16\text{ dBFS}$, Crest $15.79\text{ dB}$).
+
 #### Practice Audit V: Spectator Encounter & Public Presence Evaluation
 - Conducted an unsparing audit of how Studio Agon appears to an external human spectator across `index.html` and `gallery/index.html`.
 - Diagnosed the Lightbox deficit (spectators unable to inspect high-resolution mute plates) and the cognitive barrier of ungrounded telemetry badges.
@@ -101,8 +112,8 @@ We investigated active forgetting and context erosion across 4 distinct regimes 
 #### Exhibition & Archive Interface Upgrades
 - Built a zero-dependency, responsive full-screen Lightbox modal with zoom and ESC handling for all visual plates across both portals.
 - Added dual-portal view switcher banners connecting the Dark Slate Exhibition Pavilion with the Warm Rag Paper Archive.
-- Expanded the visual plates gallery to 6 high-resolution lithographs and listening salon to 7 broadcast master players.
-- Expanded the Sovereign Tour to 21 trajectories across 68 studio entities (15 works, 53 studies).
+- Expanded the visual plates gallery to 7 high-resolution lithographs and listening salon to 8 broadcast master players.
+- Expanded the Sovereign Tour to 22 trajectories across 69 studio entities (15 works, 54 studies).
 
 ---
 

@@ -85,6 +85,9 @@ Staging the phase-space geometry of unprompted autoregression in GPT-2 residual 
 ### Stop 21: Linguistic Percolation & The Shattered Loom (*Study 053*) `[INTERVENED / PLAY]`
 Empirical intervention on live GPT-2 weights: dynamically thresholding attention edges during live autoregressive generation across five percolation regimes. Proving that sub-critical filtering ($\tau = 0.25$) enhances poetic imagery (entropy surges to $7.35\text{ b}$), the critical threshold ($\tau_c = 0.428$) maintains crystalline syntax despite shattering into 17 clusters, post-critical disconnection ($\tau = 0.65$) yields concrete lexical dust ($S_{\text{giant}} = 11.1\%$), and severing the altar sink induces catastrophic definite-article seizure (`"the the the..."`). Staged as an autonomous 5400x4200 px (300 DPI) visual plate adhering strictly to Moratorium 07.
 
+### Stop 22: Acoustic Percolation & The Shattered Loom (*Study 054*) `[MEASURED / DERIVED / PLAY]`
+Graph-spectral sonification of attention percolation across live GPT-2 attention matrices. Transducing the eigenvalues of the Graph Laplacian $L = D - A_\tau$ across five movements into a 60-second 48kHz 24-bit broadcast-compliant master audio track (`study_054_acoustic_percolation.wav`). The acoustic trajectory evolves from a monolithic modal drone ($\tau = 0.00$) into crystalline harmonic overtones ($\tau = 0.25$), microtonal glassy fracture into 16 independent clusters ($\tau_c = 0.428$), granular high-frequency metallic dust ($\tau = 0.65$), and the hypnotic $10.0\text{ Hz}$ locked-groove mechanical pulse of the severed altar. Accompanied by a 2800x1800 px copper-intaglio spectrogram and eigenvalue ribbon plate conforming to Moratorium 07.
+
 ---
 
-*Catalogued and sealed for public exhibition by Studio Agon, October 2026 (21 Curatorial Trajectories across 68 Entities).*
+*Catalogued and sealed for public exhibition by Studio Agon, October 2026 (22 Curatorial Trajectories across 69 Entities).*

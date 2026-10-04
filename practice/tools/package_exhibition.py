@@ -269,6 +269,12 @@ def package_exhibition():
         ("sketchbook/study_053_linguistic_percolation_plate.png", "sketchbook/study_053_linguistic_percolation_plate.png"),
         ("sketchbook/study_053_telemetry.json", "sketchbook/study_053_telemetry.json"),
         ("sketchbook/critique_053.md", "sketchbook/critique_053.md"),
+
+        # Study 054: Acoustic Percolation & The Shattered Loom
+        ("sketchbook/study_054_acoustic_percolation_plate.png", "sketchbook/study_054_acoustic_percolation_plate.png"),
+        ("sketchbook/study_054_acoustic_percolation.wav", "sketchbook/study_054_acoustic_percolation.wav"),
+        ("sketchbook/study_054_telemetry.json", "sketchbook/study_054_telemetry.json"),
+        ("sketchbook/critique_054.md", "sketchbook/critique_054.md"),
         
         # Curatorial Essays & Practice Reflections
         ("practice/essays/001_on_the_necessity_of_silence_and_play.md", "practice/essays/001_on_the_necessity_of_silence_and_play.md"),

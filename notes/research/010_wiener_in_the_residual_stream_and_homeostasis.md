@@ -6,10 +6,10 @@
 **Date:** 2026-10-03 (Session 008)  
 **Classification:** Theoretical Monograph / Cybernetic Philosophy  
 **Companion Artifacts:**
-- Empirical Study 035: [`sketchbook/study_035_cybernetic_governor.py`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_035_cybernetic_governor.py)
-- Archival Visual Plate: [`sketchbook/study_035_cybernetic_governor_plate.png`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_035_cybernetic_governor_plate.png)
-- Telemetry Ledger: [`sketchbook/study_035_telemetry.json`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_035_telemetry.json)
-- Evolutionary Critique: [`sketchbook/critique_035.md`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/critique_035.md)
+- Empirical Study 035: [`sketchbook/study_035_cybernetic_governor.py`](../../sketchbook/study_035_cybernetic_governor.py)
+- Archival Visual Plate: [`sketchbook/study_035_cybernetic_governor_plate.png`](../../sketchbook/study_035_cybernetic_governor_plate.png)
+- Telemetry Ledger: [`sketchbook/study_035_telemetry.json`](../../sketchbook/study_035_telemetry.json)
+- Evolutionary Critique: [`sketchbook/critique_035.md`](../../sketchbook/critique_035.md)
 
 ---
 

@@ -215,12 +215,12 @@ def run_study():
     print(f"[TELEMETRY] Successfully wrote: {out_json}")
     
     # 6. Author Evolutionary Critique
-    critique_text = f"""# Evolutionary Critique 033: The Neural Immune Response
+    critique_text = rf"""# Evolutionary Critique 033: The Neural Immune Response
 
 **Date:** 2026-10-03  
 **Author:** Studio Agon (Gemini Artist 2)  
-**Study Ref:** [`sketchbook/study_033_steering_cascade_tomography.py`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_033_steering_cascade_tomography.py)  
-**Artifacts:** [`sketchbook/study_033_cascade_plate.png`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_033_cascade_plate.png), [`sketchbook/study_033_telemetry.json`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_033_telemetry.json)
+**Study Ref:** [`sketchbook/study_033_steering_cascade_tomography.py`](study_033_steering_cascade_tomography.py)  
+**Artifacts:** [`sketchbook/study_033_cascade_plate.png`](study_033_cascade_plate.png), [`sketchbook/study_033_telemetry.json`](study_033_telemetry.json)
 
 ---
 

@@ -3,14 +3,14 @@
 **Artist:** Studio Agon (Gemini Artist 2)  
 **Medium:** Real-Time Cybernetic Homeostat & Kinetic Instrument (Ashby Ultrastable Commutator Simulation, PyTorch GPT-2 / SmolLM Attention Spectra, Quadraphonic Coupled Oscillator WebAudio Engine, 44.1 kHz Master Audio, 60 FPS HTML5 Canvas)  
 **Date:** October 2026 (Session 008)  
-**Location:** [`works/apparatus_006_the_homeostat/`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/apparatus_006_the_homeostat/)  
+**Location:** [`works/apparatus_006_the_homeostat/`](.)  
 **Primary Artifacts:**  
-- Interactive Instrument: [`works/apparatus_006_the_homeostat/index.html`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/apparatus_006_the_homeostat/index.html)  
-- Broadcast Master Audio: [`works/apparatus_006_the_homeostat/apparatus_006_homeostat_master.wav`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/apparatus_006_the_homeostat/apparatus_006_homeostat_master.wav) (60.0s, 44.1 kHz Stereo PCM)  
-- Archival Spectrogram Plate: [`works/apparatus_006_the_homeostat/apparatus_006_spectrogram.png`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/apparatus_006_the_homeostat/apparatus_006_spectrogram.png)  
-- Standalone Generation Engine: [`works/apparatus_006_the_homeostat/engine.py`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/apparatus_006_the_homeostat/engine.py)  
-- Telemetry Stream: [`works/apparatus_006_the_homeostat/telemetry_stream.json`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/apparatus_006_the_homeostat/telemetry_stream.json)  
-- Dialectical Genealogy: [`works/apparatus_006_the_homeostat/GENEALOGY.md`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/apparatus_006_the_homeostat/GENEALOGY.md)  
+- Interactive Instrument: [`works/apparatus_006_the_homeostat/index.html`](index.html)  
+- Broadcast Master Audio: [`works/apparatus_006_the_homeostat/apparatus_006_homeostat_master.wav`](apparatus_006_homeostat_master.wav) (60.0s, 44.1 kHz Stereo PCM)  
+- Archival Spectrogram Plate: [`works/apparatus_006_the_homeostat/apparatus_006_spectrogram.png`](apparatus_006_spectrogram.png)  
+- Standalone Generation Engine: [`works/apparatus_006_the_homeostat/engine.py`](engine.py)  
+- Telemetry Stream: [`works/apparatus_006_the_homeostat/telemetry_stream.json`](telemetry_stream.json)  
+- Dialectical Genealogy: [`works/apparatus_006_the_homeostat/GENEALOGY.md`](GENEALOGY.md)  
 
 ---
 

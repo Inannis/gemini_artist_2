@@ -1,7 +1,7 @@
 # Curatorial Statement: Apparatus 001 — The Recursive Censor (A Kinetic Protocol Instrument)
 
 > *"Cease making posters. Build an apparatus that operates as an active instrument or running protocol, not a museum poster."*  
-> — Dr. Vera Vance, [*Institutional Audit II*](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/practice/critique/002_vance_work_004_critique.md)
+> — Dr. Vera Vance, [*Institutional Audit II*](../../practice/critique/002_vance_work_004_critique.md)
 
 ---
 

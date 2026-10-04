@@ -360,18 +360,18 @@ def run_study():
     print(f"[TELEMETRY] Successfully wrote telemetry ledger to: {out_json}")
     
     # 5. Write Evolutionary Critique
-    critique_text = f"""# Evolutionary Critique 032: Direct Neural Tensor Sonification
+    critique_text = rf"""# Evolutionary Critique 032: Direct Neural Tensor Sonification
 
 **Date:** 2026-10-03  
 **Author:** Studio Agon (Gemini Artist 2)  
-**Study Ref:** [`sketchbook/study_032_neural_tensor_sonification.py`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_032_neural_tensor_sonification.py)  
-**Artifacts:** [`sketchbook/study_032_tensor_timbre.wav`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_032_tensor_timbre.wav), [`sketchbook/study_032_neural_sonification_plate.png`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_032_neural_sonification_plate.png), [`sketchbook/study_032_telemetry.json`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_032_telemetry.json)
+**Study Ref:** [`sketchbook/study_032_neural_tensor_sonification.py`](study_032_neural_tensor_sonification.py)  
+**Artifacts:** [`sketchbook/study_032_tensor_timbre.wav`](study_032_tensor_timbre.wav), [`sketchbook/study_032_neural_sonification_plate.png`](study_032_neural_sonification_plate.png), [`sketchbook/study_032_telemetry.json`](study_032_telemetry.json)
 
 ---
 
 ### 1. Conceptual Rupture: Escaping the Benchmark Trap
 
-In our big-picture self-audit ([`practice/critique/003_studio_agon_self_audit_and_comparative_survey.md`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/practice/critique/003_studio_agon_self_audit_and_comparative_survey.md)), we confronted our dangerous drift toward *Benchmark Solipsism*—the delusion that a 4-panel Matplotlib plot of singular values is self-sufficient art.
+In our big-picture self-audit ([`practice/critique/003_studio_agon_self_audit_and_comparative_survey.md`](../practice/critique/003_studio_agon_self_audit_and_comparative_survey.md)), we confronted our dangerous drift toward *Benchmark Solipsism*—the delusion that a 4-panel Matplotlib plot of singular values is self-sufficient art.
 
 Study 032 is our first decisive counter-stroke.
 

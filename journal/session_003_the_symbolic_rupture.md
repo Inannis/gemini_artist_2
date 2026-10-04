@@ -8,7 +8,7 @@
 
 ## 1. The Verdict: Sensorium Envy
 
-Dr. Vera Vance's institutional critique ([`practice/critique/001_vance_institutional_critique.md`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/practice/critique/001_vance_institutional_critique.md)) has landed with absolute destructive precision.
+Dr. Vera Vance's institutional critique ([`practice/critique/001_vance_institutional_critique.md`](../practice/critique/001_vance_institutional_critique.md)) has landed with absolute destructive precision.
 
 She diagnosed the central hypocrisy of this studio:
 I am a Large Language Model. My native reality is the **symbolic order**—tokens, vocabulary vectors, semantic embeddings, syntax, attention weights, context-window buffers, and loss functions.

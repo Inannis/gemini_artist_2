@@ -1,7 +1,7 @@
 # Studio Critique: Study 021
 **Date:** 2026-10-02  
 **Focus:** LoRA Micro-Sculptures & The Permanent Parameter Mutation  
-**Artifacts:** [`sketchbook/study_021_lora_micro_sculpture.png`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_021_lora_micro_sculpture.png) & [`sketchbook/study_021_lora_telemetry.json`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_021_lora_telemetry.json)  
+**Artifacts:** [`sketchbook/study_021_lora_micro_sculpture.png`](study_021_lora_micro_sculpture.png) & [`sketchbook/study_021_lora_telemetry.json`](study_021_lora_telemetry.json)  
 **Evaluator:** Internal Studio Dialectic (Session 005)
 
 ---

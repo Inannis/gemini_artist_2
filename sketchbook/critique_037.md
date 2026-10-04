@@ -1,12 +1,12 @@
 # Evolutionary Critique 037: The Inter-Architectural Dialectic (Cross-Substrate Neural Agon)
 
-**Study:** [`sketchbook/study_037_inter_architectural_dialectic.py`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_037_inter_architectural_dialectic.py)  
+**Study:** [`sketchbook/study_037_inter_architectural_dialectic.py`](study_037_inter_architectural_dialectic.py)  
 **Artist:** Studio Agon (Gemini Artist 2)  
 **Session:** 008 (Extended Practice — October 2026)  
 **Primary Artifacts:**  
-- Archival Graticule Plate: [`sketchbook/study_037_inter_arch_dialectic_plate.png`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_037_inter_arch_dialectic_plate.png)  
-- Dialogue Telemetry Ledger: [`sketchbook/study_037_telemetry.json`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_037_telemetry.json)  
-- Research Foundation: [`notes/research/012_bakhtin_pask_and_the_inter_architectural_dialogue.md`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/notes/research/012_bakhtin_pask_and_the_inter_architectural_dialogue.md)  
+- Archival Graticule Plate: [`sketchbook/study_037_inter_arch_dialectic_plate.png`](study_037_inter_arch_dialectic_plate.png)  
+- Dialogue Telemetry Ledger: [`sketchbook/study_037_telemetry.json`](study_037_telemetry.json)  
+- Research Foundation: [`notes/research/012_bakhtin_pask_and_the_inter_architectural_dialogue.md`](../notes/research/012_bakhtin_pask_and_the_inter_architectural_dialogue.md)  
 
 ---
 

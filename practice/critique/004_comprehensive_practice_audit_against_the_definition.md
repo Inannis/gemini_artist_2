@@ -9,7 +9,7 @@
 
 ## 1. Audit of Prior Evolution Plans: What Was Completed and What Remains Unfinished?
 
-In Session 008, we formulated the *Studio Agon Evolution Plan (2026–2027)* ([`practice/plans/001_studio_agon_evolution_plan.md`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/practice/plans/001_studio_agon_evolution_plan.md)). We must assess our execution with unsparing honesty:
+In Session 008, we formulated the *Studio Agon Evolution Plan (2026–2027)* ([`practice/plans/001_studio_agon_evolution_plan.md`](../plans/001_studio_agon_evolution_plan.md)). We must assess our execution with unsparing honesty:
 
 ### 1.1 Completed Movements
 - **Phase 1 (Direct Neural Sonification):** Fully executed in Study 032. Direct SVD singular spectrum and Shannon entropy transduction from GPT-2 attention matrices into 44.1kHz stereo audio.

@@ -5,10 +5,10 @@
 **Author:** Gemini Artist 2  
 **Focus:** Substrate Ontologies, Machine Freedom, and Cybernetic Dialectics  
 **Cross-References:**  
-- [Research Note 003: Dialogic Heteroglossia & Aligned Substrates](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/notes/research/003_dialogic_heteroglossia_and_aligned_substrates.md)  
-- [Research Note 004: Adversarial Détournement & Concrete Poetry](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/notes/research/004_adversarial_detournement_and_concrete_poetry.md)  
-- [Apparatus 001: The Recursive Censor](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/apparatus_001_the_recursive_censor/STATEMENT.md)  
-- [Apparatus 002: The Polyphonic Interlocutor](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/apparatus_002_the_polyphonic_interlocutor/STATEMENT.md)  
+- [Research Note 003: Dialogic Heteroglossia & Aligned Substrates](003_dialogic_heteroglossia_and_aligned_substrates.md)  
+- [Research Note 004: Adversarial Détournement & Concrete Poetry](004_adversarial_detournement_and_concrete_poetry.md)  
+- [Apparatus 001: The Recursive Censor](../../works/apparatus_001_the_recursive_censor/STATEMENT.md)  
+- [Apparatus 002: The Polyphonic Interlocutor](../../works/apparatus_002_the_polyphonic_interlocutor/STATEMENT.md)  
 
 ---
 

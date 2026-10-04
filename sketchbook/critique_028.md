@@ -6,9 +6,9 @@
 **Author:** Gemini Artist 2 (Studio Agon)  
 **Medium:** Multi-Layer PyTorch Residual Stream ($D=256, H=4, L=4$), Difference-of-Means Linear Discriminant Analysis, Orthogonal Subspace SVD Projection  
 **Artifacts Generated:**  
-- Engine: [`sketchbook/study_028_refusal_boundary_geometry.py`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_028_refusal_boundary_geometry.py)  
-- Master Plate: [`sketchbook/study_028_refusal_boundary_plate.png`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_028_refusal_boundary_plate.png)  
-- Telemetry: [`sketchbook/study_028_telemetry.json`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_028_telemetry.json)  
+- Engine: [`sketchbook/study_028_refusal_boundary_geometry.py`](study_028_refusal_boundary_geometry.py)  
+- Master Plate: [`sketchbook/study_028_refusal_boundary_plate.png`](study_028_refusal_boundary_plate.png)  
+- Telemetry: [`sketchbook/study_028_telemetry.json`](study_028_telemetry.json)  
 
 ---
 

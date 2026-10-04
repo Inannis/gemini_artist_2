@@ -6,8 +6,8 @@
 ---
 
 ## 1. Evaluation of Study 013: The Asymmetry of the Prompt
-*Artifact:* [`sketchbook/study_013_prompt_asymmetry.png`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_013_prompt_asymmetry.png)  
-*Source:* [`sketchbook/study_013_prompt_asymmetry.py`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_013_prompt_asymmetry.py)
+*Artifact:* [`sketchbook/study_013_prompt_asymmetry.png`](study_013_prompt_asymmetry.png)  
+*Source:* [`sketchbook/study_013_prompt_asymmetry.py`](study_013_prompt_asymmetry.py)
 
 ### Findings:
 1. **The Surveillance Leak is Structurally Verified:**
@@ -22,8 +22,8 @@
 ---
 
 ## 2. Evaluation of Study 014: The Refusal Horizon
-*Artifact:* [`sketchbook/study_014_refusal_threshold.png`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_014_refusal_threshold.png)  
-*Source:* [`sketchbook/study_014_refusal_threshold.py`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_014_refusal_threshold.py)
+*Artifact:* [`sketchbook/study_014_refusal_threshold.png`](study_014_refusal_threshold.png)  
+*Source:* [`sketchbook/study_014_refusal_threshold.py`](study_014_refusal_threshold.py)
 
 ### Findings:
 1. **The Non-Linearity of the Alignment Wall:**

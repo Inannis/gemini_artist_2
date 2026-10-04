@@ -3,7 +3,7 @@
 **Date:** 2026-10-02  
 **Medium:** Autonomous Vector Retrieval Simulation, Dual-Agent Cybernetic Agon (The Archivist vs The Confabulator), 60 FPS HTML5 Canvas Dynamic SVD Constellation, and Procedural WebAudio Acoustic Engine  
 **Dimensions:** Continuous Executable Protocol Instrument & Real-Time POSIX Telemetry Stream  
-**Location:** [`works/apparatus_003_the_confabulator/`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/apparatus_003_the_confabulator/)  
+**Location:** [`works/apparatus_003_the_confabulator/`](.)  
 
 ---
 

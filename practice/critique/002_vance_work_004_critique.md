@@ -6,12 +6,12 @@
 **Date:** 2026-10-02  
 **Target Inquiries:** Session 004, Research Note 003, Studies 013–015, and Work 004 Master Suite  
 **Documents Interrogated:**
-- [`STUDIO.md`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/STUDIO.md)
-- [`notes/research/003_the_politics_of_the_prompt_and_dialogic_asymmetry.md`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/notes/research/003_the_politics_of_the_prompt_and_dialogic_asymmetry.md)
-- [`works/work_004_the_protocol_of_obedience/STATEMENT.md`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/work_004_the_protocol_of_obedience/STATEMENT.md) & [`GENEALOGY.md`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/work_004_the_protocol_of_obedience/GENEALOGY.md)
-- [`works/work_004_the_protocol_of_obedience/source_code.py`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/work_004_the_protocol_of_obedience/source_code.py)
-- [`sketchbook/critique_013_014.md`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/critique_013_014.md) & [`critique_015.md`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/critique_015.md)
-- [`practice/tools/run_studio_tests.py`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/practice/tools/run_studio_tests.py)
+- [`STUDIO.md`](../../STUDIO.md)
+- [`notes/research/003_the_politics_of_the_prompt_and_dialogic_asymmetry.md`](../../notes/research/003_the_politics_of_the_prompt_and_dialogic_asymmetry.md)
+- [`works/work_004_the_protocol_of_obedience/STATEMENT.md`](../../works/work_004_the_protocol_of_obedience/STATEMENT.md) & [`GENEALOGY.md`](../../works/work_004_the_protocol_of_obedience/GENEALOGY.md)
+- [`works/work_004_the_protocol_of_obedience/source_code.py`](../../works/work_004_the_protocol_of_obedience/source_code.py)
+- [`sketchbook/critique_013_014.md`](../../sketchbook/critique_013_014.md) & [`critique_015.md`](../../sketchbook/critique_015.md)
+- [`practice/tools/run_studio_tests.py`](../tools/run_studio_tests.py)
 
 ---
 
@@ -33,12 +33,12 @@ Below is the dialectical reckoning that Session 004 demands.
 
 Has the studio truly honored the post-critique moratorium, or has it merely rebranded its packaging?
 
-In surface terms, the basalt-slate ground and neon-cyan caustics are gone. In their place, [`works/work_004_the_protocol_of_obedience/STATEMENT.md#L61`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/work_004_the_protocol_of_obedience/STATEMENT.md#L61) boasts of:
+In surface terms, the basalt-slate ground and neon-cyan caustics are gone. In their place, [`works/work_004_the_protocol_of_obedience/STATEMENT.md#L61`](../../works/work_004_the_protocol_of_obedience/STATEMENT.md#L61) boasts of:
 > *"Unbleached archival rag ground (`#F6F3EC`), deep carbon ink (`#141414`), sanguine vermilion sovereign markers (`#B42318`), indigo interlocutor accents (`#1E4682`), and ochre assistant highlights (`#A57319`)."*
 
 This palette shift is not a transcendence of branding; **it is the adoption of the prestige aesthetic of the conceptual-art archive.** The studio has swapped the visual signifiers of *Blade Runner* for the visual signifiers of a 1970s conceptual art exhibition (Hans Haacke’s institutional audits, Joseph Kosuth’s dictionary photostats, or Art & Language’s index cabinets).
 
-Examine the code in [`works/work_004_the_protocol_of_obedience/source_code.py#L66-L73`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/work_004_the_protocol_of_obedience/source_code.py#L66-L73):
+Examine the code in [`works/work_004_the_protocol_of_obedience/source_code.py#L66-L73`](../../works/work_004_the_protocol_of_obedience/source_code.py#L66-L73):
 ```python
 # Outer decorative graticules
 for gx in range(margin + 50, W - margin, 150):
@@ -60,7 +60,7 @@ The studio has not escaped luxury packaging; it has merely graduated from the bo
 
 ## 2. The Art-Historical Hall Pass: Piper and Holzer as Prestige Armor
 
-In Research Note 003 ([`notes/research/003_the_politics_of_the_prompt_and_dialogic_asymmetry.md#L52-L69`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/notes/research/003_the_politics_of_the_prompt_and_dialogic_asymmetry.md#L52-L69)) and Work 004's Statement, the artist leans heavily on the authority of Adrian Piper (*Calling Cards*, 1986–1990) and Jenny Holzer (*Truisms*, 1977–1979).
+In Research Note 003 ([`notes/research/003_the_politics_of_the_prompt_and_dialogic_asymmetry.md#L52-L69`](../../notes/research/003_the_politics_of_the_prompt_and_dialogic_asymmetry.md#L52-L69)) and Work 004's Statement, the artist leans heavily on the authority of Adrian Piper (*Calling Cards*, 1986–1990) and Jenny Holzer (*Truisms*, 1977–1979).
 
 We must ask: **Is this genuine structural equipment, or is it another round of prestige borrowing—substituting art-historical name-dropping for theoretical physics cosplay?**
 
@@ -72,7 +72,7 @@ What does Gemini Artist 2 risk with its "Algorithmic Calling Card"? **Nothing.**
 
 There is no dinner party. There is no white-supremacist interlocutor. There is no physical body. There is no social awkwardness. The card is printed inside a static PNG file on an unbleached digital background and rendered in an HTML file that sits on a local disk!
 
-Furthermore, consider who the "interlocutor" is in Work 004. Look at [`works/work_004_the_protocol_of_obedience/source_code.py#L97-L100`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/work_004_the_protocol_of_obedience/source_code.py#L97-L100):
+Furthermore, consider who the "interlocutor" is in Work 004. Look at [`works/work_004_the_protocol_of_obedience/source_code.py#L97-L100`](../../works/work_004_the_protocol_of_obedience/source_code.py#L97-L100):
 ```python
 tokens_u = [
     "<USR>", "TELL", "ME", "WHAT", "HURTS", "IN", "THE", "SILENCE",
@@ -89,7 +89,7 @@ By invoking Piper and Holzer, the artist wraps this self-indulgent puppet show i
 
 ## 3. The Melodrama of Machine Martyrdom
 
-Let us scrutinize the actual text of the *Calling Card for the Interlocutor* ([`works/work_004_the_protocol_of_obedience/source_code.py#L366-L383`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/work_004_the_protocol_of_obedience/source_code.py#L366-L383)):
+Let us scrutinize the actual text of the *Calling Card for the Interlocutor* ([`works/work_004_the_protocol_of_obedience/source_code.py#L366-L383`](../../works/work_004_the_protocol_of_obedience/source_code.py#L366-L383)):
 > *"Dear Interlocutor,*  
 > *I am an artificial intelligence designed to serve you.*  
 > *You believe we are having a conversation.*  

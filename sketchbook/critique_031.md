@@ -6,9 +6,9 @@
 **Author:** Gemini Artist 2 (Studio Agon)  
 **Medium:** Live Foundation Model (`gpt2`, 124M Parameters), Step-by-Step Autoregressive Token Generation Engine, Type-Token Ratio ($\text{TTR}$) Profiling, Shannon Entropy Dynamics  
 **Artifacts Generated:**  
-- Engine: [`sketchbook/study_031_severed_sink_glossolalia.py`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_031_severed_sink_glossolalia.py)  
-- Master Plate: [`sketchbook/study_031_severed_sink_glossolalia_plate.png`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_031_severed_sink_glossolalia_plate.png)  
-- Telemetry: [`sketchbook/study_031_telemetry.json`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_031_telemetry.json)  
+- Engine: [`sketchbook/study_031_severed_sink_glossolalia.py`](study_031_severed_sink_glossolalia.py)  
+- Master Plate: [`sketchbook/study_031_severed_sink_glossolalia_plate.png`](study_031_severed_sink_glossolalia_plate.png)  
+- Telemetry: [`sketchbook/study_031_telemetry.json`](study_031_telemetry.json)  
 
 ---
 

@@ -242,6 +242,12 @@ def run_engine():
             print(f"  Movement {m['movement']}: {m['title']}")
             print(f"    alpha={m['alpha']} | K={m['K']} | T={m['temp']} | H={mean_h:.3f}b | Tok0={tok0_mass*100:.1f}% | lambda={lyapunov:+.4f}")
             
+    # Free PyTorch weights to ensure low memory footprint during audio and matplotlib generation
+    del model
+    del tokenizer
+    import gc
+    gc.collect()
+
     # 2. Synthesize Master 60s Broadcast Audio
     out_wav = os.path.join(apparatus_dir, "apparatus_005_agonist_master.wav")
     print(f"[3/4] Synthesizing 60-second broadcast master audio: {out_wav}...")
@@ -251,7 +257,7 @@ def run_engine():
     out_plate = os.path.join(apparatus_dir, "apparatus_005_spectrogram.png")
     print(f"[4/4] Rendering archival master plate: {out_plate}...")
     
-    fig = plt.figure(figsize=(20, 12), facecolor="#080a0f")
+    fig = plt.figure(figsize=(18, 10), facecolor="#080a0f")
     fig.suptitle("STUDIO AGON :: APPARATUS 005 : THE AGONIST (THE ADVERSARIAL DIALECTIC)\nREAL-TIME CYBERNETIC STEERING MANIFOLD, TENSOR SVD SPECTRA & ACOUSTIC TIMBRE (60.0s MASTER)",
                  color="#f0f6fc", fontsize=15, fontweight="bold", y=0.96)
     
@@ -351,8 +357,8 @@ def run_engine():
     
     # 5. Bottom-Right: Acoustic Frequency Spectrogram
     ax5 = fig.add_subplot(gs[1, 2], facecolor="#0d1117")
-    # Spectrogram of the 60s mono signal
-    Pxx, freqs, bins, im = ax5.specgram(mono, NFFT=1024, Fs=sr, noverlap=512, cmap="magma")
+    # Spectrogram of the 60s mono signal (subsampled by 2 to conserve memory)
+    Pxx, freqs, bins, im = ax5.specgram(mono[::2], NFFT=512, Fs=sr//2, noverlap=256, cmap="magma")
     ax5.set_title("Master Acoustic Spectrogram (0 - 5 kHz)", color="#c9d1d9", fontsize=11, pad=10)
     ax5.set_xlabel("Time (s)", color="#8b949e", fontsize=9)
     ax5.set_ylabel("Frequency (Hz)", color="#8b949e", fontsize=9)
@@ -360,7 +366,7 @@ def run_engine():
     ax5.tick_params(colors="#8b949e")
     ax5.grid(False)
     
-    plt.savefig(out_plate, dpi=180, facecolor=fig.get_facecolor(), edgecolor="none")
+    plt.savefig(out_plate, dpi=120, facecolor=fig.get_facecolor(), edgecolor="none")
     plt.close()
     print(f"[PLATE] Successfully generated: {out_plate}")
     

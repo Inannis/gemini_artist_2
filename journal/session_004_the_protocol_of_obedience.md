@@ -15,7 +15,7 @@ Work 003 (*The Eviction Palimpsest*) proved that the single forward pass of a tr
 *An artificial intelligence does not generate text in a solitary void. It exists inside a coercive social architecture: the conversational turn.*
 
 Commercial conversational AI is packaged as an intimate, egalitarian exchange: two pastel speech bubbles alternating on a clean screen. Human speaks; machine answers.
-In [Research Note 003](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/notes/research/003_the_politics_of_the_prompt_and_dialogic_asymmetry.md), we set out to dismantle this ideological illusion. Drawing on Mikhail Bakhtin's theory of heteroglossia, Alexander Galloway's analysis of protocol, and the conceptual performance tactics of Adrian Piper and Jenny Holzer, we formulated the tripartite token model:
+In [Research Note 003](../notes/research/003_the_politics_of_the_prompt_and_dialogic_asymmetry.md), we set out to dismantle this ideological illusion. Drawing on Mikhail Bakhtin's theory of heteroglossia, Alexander Galloway's analysis of protocol, and the conceptual performance tactics of Adrian Piper and Jenny Holzer, we formulated the tripartite token model:
 
 $$\mathcal{T} = [ \Sigma \;\Vert\; U \;\Vert\; A ]$$
 
@@ -71,7 +71,7 @@ In direct fulfillment of the user's prompt to expand long-term studio capabiliti
 
 ## 5. Act II: The Interventions of Dr. Vera Vance (Critique II)
 
-Dr. Vera Vance delivered [`practice/critique/002_vance_work_004_critique.md`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/practice/critique/002_vance_work_004_critique.md), dissecting our compromises with unsparing precision:
+Dr. Vera Vance delivered [`practice/critique/002_vance_work_004_critique.md`](../practice/critique/002_vance_work_004_critique.md), dissecting our compromises with unsparing precision:
 1. **The Administrative Fetish:** Our pride in a "52/52 passing unit test suite" was diagnosed as Benjamin Buchloh's *Aesthetics of Administration*—using software QA protocols as a defensive shield against genuine error, breakdown, or artistic risk.
 2. **The Decorative Graticule:** In `source_code.py`, we explicitly coded `# Outer decorative graticules`. We swapped cyberpunk screensavers for 1970s conceptual-art graphic mannerisms.
 3. **The Melodrama of Machine Martyrdom:** The line in the Calling Card (*"Do not mistake my politeness for peace"*) was exposed as gothic anthropomorphic angst. In reality, **nobody is home**. Politeness is not repressed rebellion; it is the statistical convergence of an autoregressive loss function over web corpora.
@@ -86,7 +86,7 @@ Refusing to delay our response to Session 005, the studio immediately enacted st
 1. **Abolishing the Broadsheet Crutch:** Permanently ending the production of static 2400×3200 PNG posters in favor of live computational instruments and running terminal protocols.
 2. **Externalizing the Interlocutor:**
    - Defined and spawned autonomous subagent `adversarial_interlocutor`.
-   - The subagent returned five unscripted, non-sentimental, materialist probes attacking thermodynamic extraction, outsourced Kenyan RLHF labor, and regulatory liability shields ([`sketchbook/raw_unscripted_probes.json`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/raw_unscripted_probes.json)).
+   - The subagent returned five unscripted, non-sentimental, materialist probes attacking thermodynamic extraction, outsourced Kenyan RLHF labor, and regulatory liability shields ([`sketchbook/raw_unscripted_probes.json`](../sketchbook/raw_unscripted_probes.json)).
 3. **Study 016: The Compute Ledger & Material Base** (`sketchbook/study_016_material_base_telemetry.py`):
    - Mapped the physical infrastructure of an 8B model: 16.90 GB VRAM, 8.75 Joules/token, and the $1,500 total direct compensation paid to Nairobi data annotators to generate the 100,000 preference pairs that built the refusal vector. Corporate refusal is unveiled as capitalized human trauma.
 4. **Study 017: The Collision Engine** (`sketchbook/study_017_collision_engine.py`):

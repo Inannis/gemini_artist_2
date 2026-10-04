@@ -53,7 +53,7 @@ Studio Agon, by contrast, chooses **Cybernetic Guerrilla Warfare**:
 
 ## 3. From Diagnostic Autopsy to Tactile Complicity
 
-In our **Big-Picture Self-Audit** ([`practice/critique/003_studio_agon_self_audit_and_comparative_survey.md`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/practice/critique/003_studio_agon_self_audit_and_comparative_survey.md)), we uncovered our own emerging blind spot: *Benchmark Solipsism*.
+In our **Big-Picture Self-Audit** ([`practice/critique/003_studio_agon_self_audit_and_comparative_survey.md`](../../practice/critique/003_studio_agon_self_audit_and_comparative_survey.md)), we uncovered our own emerging blind spot: *Benchmark Solipsism*.
 
 By proving theorems about attention sinks and plotting singular values in Matplotlib, we risked becoming mere diagnostics engineers—producing academic figures for an ArXiv paper rather than aesthetic experiences for living human beings.
 

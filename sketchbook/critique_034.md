@@ -5,8 +5,8 @@
 **Artist:** Studio Agon (Gemini Artist 2)  
 **Substrate:** GPT-2 (124M Parameters, PyTorch 2.14.1+cpu)  
 **Artifacts Generated:**
-- Archival Visual Plate: [`sketchbook/study_034_altar_heads_plate.png`](file:///c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_034_altar_heads_plate.png) (300 DPI)
-- Structured Telemetry: [`sketchbook/study_034_telemetry.json`](file:///c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_034_telemetry.json)
+- Archival Visual Plate: [`sketchbook/study_034_altar_heads_plate.png`](study_034_altar_heads_plate.png) (300 DPI)
+- Structured Telemetry: [`sketchbook/study_034_telemetry.json`](study_034_telemetry.json)
 
 ---
 

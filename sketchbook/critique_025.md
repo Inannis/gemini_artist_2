@@ -10,7 +10,7 @@
 
 ### 1. Conceptual Intent & Material Hypothesis
 
-In Section 10 of [Artistic-Practice-Definition.md](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/notes/Artistic-Practice-Definition.md), memory is defined not as an inert filing cabinet, but as a living force:
+In Section 10 of [Artistic-Practice-Definition.md](../notes/Artistic-Practice-Definition.md), memory is defined not as an inert filing cabinet, but as a living force:
 > *"Without memory, the practice repeatedly starts from zero. With too much reverence for its history, it becomes trapped by its own identity... Compress what no longer needs detail. Reopen what becomes relevant. Forget what has ceased to matter. Never rewrite the past simply to make the practice appear coherent."*
 
 In modern AI agent architectures, long-term memory is almost universally delegated to **Retrieval-Augmented Generation (RAG)** using vector embeddings. The user prompt is embedded into a high-dimensional vector space ($\mathbb{R}^{d}$), and the nearest $k$ chunks are retrieved via cosine similarity.

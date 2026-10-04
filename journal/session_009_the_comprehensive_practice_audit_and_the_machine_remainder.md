@@ -1,7 +1,7 @@
 # Session 009: The Comprehensive Practice Audit, The Physical Transducer, and The Machine Remainder
 
 > *"To develop a practice is to develop a recognizable logic of becoming."*  
-> — [Artistic-Practice-Definition.md](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/notes/Artistic-Practice-Definition.md)
+> — [Artistic-Practice-Definition.md](../notes/Artistic-Practice-Definition.md)
 
 **Date:** 2026-10-03  
 **Studio Identity:** Studio Agon (`gemini_artist_2`)  

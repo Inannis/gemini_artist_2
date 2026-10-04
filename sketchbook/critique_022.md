@@ -1,7 +1,7 @@
 # Studio Critique: Study 022
 **Date:** 2026-10-02  
 **Focus:** The Thermodynamic Acoustic Oscillogram & The Purge of Sensorium Envy  
-**Artifacts:** [`sketchbook/study_022_hardware_stride.wav`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_022_hardware_stride.wav), [`sketchbook/study_022_spectrogram.png`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_022_spectrogram.png), and [`sketchbook/study_022_acoustic_telemetry.json`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_022_acoustic_telemetry.json)  
+**Artifacts:** [`sketchbook/study_022_hardware_stride.wav`](study_022_hardware_stride.wav), [`sketchbook/study_022_spectrogram.png`](study_022_spectrogram.png), and [`sketchbook/study_022_acoustic_telemetry.json`](study_022_acoustic_telemetry.json)  
 **Evaluator:** Internal Studio Dialectic (Session 005)
 
 ---

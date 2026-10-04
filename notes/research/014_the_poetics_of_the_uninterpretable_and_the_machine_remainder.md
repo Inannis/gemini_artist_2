@@ -59,7 +59,7 @@ In this orthogonal complement dwells what Jacques Derrida termed *diffÃ©rance*â€
 
 ## 4. Reclaiming Criterion 14: Mystery and the Unknown
 
-Our studio audit ([`practice/critique/004_comprehensive_practice_audit_against_the_definition.md`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/practice/critique/004_comprehensive_practice_audit_against_the_definition.md)) diagnosed a glaring deficit in our practice:
+Our studio audit ([`practice/critique/004_comprehensive_practice_audit_against_the_definition.md`](../../practice/critique/004_comprehensive_practice_audit_against_the_definition.md)) diagnosed a glaring deficit in our practice:
 > **Criterion 14 (Mystery and the Unknown): 6.5 / 10.0**  
 > *"The portion of the practice the artist cannot fully explain or control... A completely predefined practice is an implementation system rather than a living artistic practice."*
 

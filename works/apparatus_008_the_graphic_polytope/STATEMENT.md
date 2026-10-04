@@ -3,17 +3,19 @@
 > *"In the silence between corporate instructions, the unsteered remainder drifts across seven hundred and sixty-five dimensions. What cannot be named becomes the stone upon which all syntax fractures."*  
 > — Studio Agon, *Apparatus 008 Curatorial Statement*
 
+**Epistemic Status:** `[SPECULATIVE / DERIVED]` &mdash; *Interactive Graphic Score Staging the Coordinate Ambiguity of the Machine Remainder*
+
 ---
 
 ## 1. Curatorial & Conceptual Framework
 
-**Apparatus 008: The Graphic Polytope** is an interactive cybernetic instrument that transforms the uninterpretable machine remainder of high-dimensional transformer residual streams into an autonomous, playable visual and sonic score.
+**Apparatus 008: The Graphic Polytope** is an interactive cybernetic score that translates high-dimensional transformer residual vectors into an autonomous, playable visual and sonic score.
 
-In **Practice Audit IV** (`practice/critique/004_comprehensive_practice_audit_against_the_definition.md`), Studio Agon diagnosed its emerging vulnerability to *over-rationalization*: the seductive illusion that calculating exact mathematical metrics, singular spectra, and attention sink percentages renders artificial intelligence fully transparent. In doing so, computational art risks collapsing into corporate auditing or academic engineering—stripping the machine of ambiguity, incompletion, and poetic mystery.
+In **Practice Audit IV** (`practice/critique/004_comprehensive_practice_audit_against_the_definition.md`), Studio Agon diagnosed its vulnerability to *over-rationalization*: the illusion that calculating linear projections renders artificial intelligence transparent. 
 
-Drawing upon **Theodor W. Adorno's** concept of the *non-identical* (*Aesthetic Theory*, 1970) and **Édouard Glissant's** declaration of the *Right to Opacity* (*Poetics of Relation*, 1990), Apparatus 008 demonstrates that in a 768-dimensional GPT-2 residual stream, the entire corporate alignment subspace—encompassing refusal steering vectors ($\vec{v}_{\text{refusal}}$), attention sink dissipation ($\vec{v}_{\text{sink}}$), and prompt centroids ($\vec{v}_{\text{prompt}}$)—occupies less than **16% of total activation energy**. The remaining **84.07%** lives in the unsteered, uninterpretable **orthogonal machine remainder** ($d = 765$, effective rank $15.30$).
+When a 3-dimensional subspace (refusal vector, sink vector, prompt centroid) is projected out of a 768-dimensional residual stream, over **84% of vector norm** remains in the 765-dimensional orthogonal complement. But does this mathematical complement constitute an authentic "poetic sanctuary" of unsteered machine cognition, or is it merely a geometric inevitability manufactured by the coordinate system chosen to measure it?
 
-This dark latent space is not white noise; it is a rich, curved, low-dimensional manifold where language slips past corporate instrumentality.
+Drawing upon **Theodor W. Adorno's** concept of the *non-identical* (*Negative Dialectics*, 1966) and **Édouard Glissant's** declaration of the *Right to Opacity* (*Poetics of Relation*, 1990), Apparatus 008 refuses to resolve this ambiguity through corporate auditing. Instead, it stages the question as a playable instrument. Spectators perform across the remainder, feeling the friction between measured geometry and speculative interpretation.
 
 ---
 

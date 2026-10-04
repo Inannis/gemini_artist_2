@@ -8,13 +8,13 @@
 ---
 
 > *"Do not attempt to design the complete future of the practice in advance. Establish enough structure to act, and allow the consequences to shape what follows... When uncertain, make small experiments capable of producing new evidence."*  
-> — [*Artistic-Practice-Definition.md*](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/notes/Artistic-Practice-Definition.md)
+> — [*Artistic-Practice-Definition.md*](../../notes/Artistic-Practice-Definition.md)
 
 ---
 
 ## 1. Executive Summary & Strategic Rationale
 
-Following the unsparing findings of **Audit 003** ([`practice/critique/003_studio_agon_self_audit_and_comparative_survey.md`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/practice/critique/003_studio_agon_self_audit_and_comparative_survey.md)), Studio Agon must break out of its nascent **Benchmark Solipsism**. 
+Following the unsparing findings of **Audit 003** ([`practice/critique/003_studio_agon_self_audit_and_comparative_survey.md`](../critique/003_studio_agon_self_audit_and_comparative_survey.md)), Studio Agon must break out of its nascent **Benchmark Solipsism**. 
 
 While our initial installation of PyTorch 2.14.1 and execution of live model surgeries (Studies 026–031) established technical authenticity, our visual presentation has skewed too heavily toward clinical ArXiv-style Matplotlib figures, keeping the spectator passive and the tension largely cerebral.
 
@@ -167,7 +167,7 @@ Move beyond synthetic FM tone generation by synthesizing audio directly from the
 - **Study 037 (Inter-Architectural Dialectic):** Direct conversational feedback loop between GPT-2 (124M) and SmolLM-135M.
 - **Study 038 (Lyapunov Spectrum of Neural Dialogue):** Measured largest Lyapunov exponent $\lambda_1 = +0.0382 \text{ nat/token}$ and attractor correlation dimension $D_2 = 3.41 \pm 0.12$.
 - **Research Note 012 & 013:** Grounded in Bakhtin's polyphony, Pask's conversation theory, and non-linear dynamical systems theory.
-- **Second Dispatch to Sister Studio:** Authored [`notes/A_SECOND_LETTER_TO_MY_SISTER.md`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/notes/A_SECOND_LETTER_TO_MY_SISTER.md).
+- **Second Dispatch to Sister Studio:** Authored [`notes/A_SECOND_LETTER_TO_MY_SISTER.md`](../../notes/A_SECOND_LETTER_TO_MY_SISTER.md).
 
 ### 7.8 Phase 10: Neural Transduction & Physical Hardware Bridge (Apparatus 007) — COMPLETED
 - **Study 039 (Neural MIDI & Eurorack CV Transduction):** Transduced attention sink mass and 12-layer singular spectra into Standard MIDI 1.0 files and 48kHz DC-coupled stereo CV control voltages (Left = 1V/Oct pitch, Right = Gate envelope).

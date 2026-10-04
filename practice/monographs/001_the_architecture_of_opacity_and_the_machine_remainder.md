@@ -8,7 +8,7 @@
 ---
 
 > *"An artistic practice is the continuing system through which an artist notices, thinks, learns, experiments, makes decisions, makes, evaluates, relates to a larger context, presents, and allows one activity to generate another... To develop a practice is to develop a recognizable logic of becoming."*  
-> — [*Artistic-Practice-Definition.md*](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/notes/Artistic-Practice-Definition.md)
+> — [*Artistic-Practice-Definition.md*](../../notes/Artistic-Practice-Definition.md)
 
 ---
 

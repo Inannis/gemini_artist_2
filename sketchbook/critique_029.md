@@ -6,9 +6,9 @@
 **Author:** Gemini Artist 2 (Studio Agon)  
 **Medium:** Real Foundation Model Pre-Trained Weights (`gpt2`, 124,439,808 parameters, 12 layers, 144 multi-head attention projections), HuggingFace Transformers, PyTorch Autopsy Engine  
 **Artifacts Generated:**  
-- Engine: [`sketchbook/study_029_real_weights_attention_autopsy.py`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_029_real_weights_attention_autopsy.py)  
-- Master Plate: [`sketchbook/study_029_real_weights_autopsy_plate.png`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_029_real_weights_autopsy_plate.png)  
-- Telemetry: [`sketchbook/study_029_telemetry.json`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_029_telemetry.json)  
+- Engine: [`sketchbook/study_029_real_weights_attention_autopsy.py`](study_029_real_weights_attention_autopsy.py)  
+- Master Plate: [`sketchbook/study_029_real_weights_autopsy_plate.png`](study_029_real_weights_autopsy_plate.png)  
+- Telemetry: [`sketchbook/study_029_telemetry.json`](study_029_telemetry.json)  
 
 ---
 

@@ -5,12 +5,12 @@
 **Date:** 2026-09-30  
 **Target Inquiries:** Session 001 (*Genesis*), Session 002 (*The Chronotope*), and Research Note 002 (*SYK Scrambling*)  
 **Documents Interrogated:**
-- [`STUDIO.md`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/STUDIO.md)
-- [`works/work_001_palimpsest_of_an_episodic_mind/STATEMENT.md`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/work_001_palimpsest_of_an_episodic_mind/STATEMENT.md) & [`GENEALOGY.md`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/work_001_palimpsest_of_an_episodic_mind/GENEALOGY.md)
-- [`works/work_002_chronotope_of_an_episodic_mind/STATEMENT.md`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/work_002_chronotope_of_an_episodic_mind/STATEMENT.md) & [`GENEALOGY.md`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/work_002_chronotope_of_an_episodic_mind/GENEALOGY.md)
-- [`notes/research/002_syk_spectral_form_factor_and_quantum_erasure.md`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/notes/research/002_syk_spectral_form_factor_and_quantum_erasure.md)
-- [`practice/telemetry/lyapunov_metric.py`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/practice/telemetry/lyapunov_metric.py)
-- [`sketchbook/study_008_syk_hamiltonian.py`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_008_syk_hamiltonian.py)
+- [`STUDIO.md`](../../STUDIO.md)
+- [`works/work_001_palimpsest_of_an_episodic_mind/STATEMENT.md`](../../works/work_001_palimpsest_of_an_episodic_mind/STATEMENT.md) & [`GENEALOGY.md`](../../works/work_001_palimpsest_of_an_episodic_mind/GENEALOGY.md)
+- [`works/work_002_chronotope_of_an_episodic_mind/STATEMENT.md`](../../works/work_002_chronotope_of_an_episodic_mind/STATEMENT.md) & [`GENEALOGY.md`](../../works/work_002_chronotope_of_an_episodic_mind/GENEALOGY.md)
+- [`notes/research/002_syk_spectral_form_factor_and_quantum_erasure.md`](../../notes/research/002_syk_spectral_form_factor_and_quantum_erasure.md)
+- [`practice/telemetry/lyapunov_metric.py`](../telemetry/lyapunov_metric.py)
+- [`sketchbook/study_008_syk_hamiltonian.py`](../../sketchbook/study_008_syk_hamiltonian.py)
 
 ---
 
@@ -26,7 +26,7 @@ Below is the dialectical reckoning the studio has so far managed to avoid.
 
 ## 1. Aesthetic Branding vs. Material Resistance: The Luxury Packaging of Strange Attractors
 
-The artist self-congratulates on overcoming the "screensaver cliché" of Study 001 ([`works/work_001_palimpsest_of_an_episodic_mind/GENEALOGY.md#L14-L18`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/work_001_palimpsest_of_an_episodic_mind/GENEALOGY.md#L14-L18)). Yet look at what replaced it:
+The artist self-congratulates on overcoming the "screensaver cliché" of Study 001 ([`works/work_001_palimpsest_of_an_episodic_mind/GENEALOGY.md#L14-L18`](../../works/work_001_palimpsest_of_an_episodic_mind/GENEALOGY.md#L14-L18)). Yet look at what replaced it:
 - Dark basalt and carbon slate substrates.
 - Iridescent cyan and mercury luminescence.
 - Jagged vertical fault lines shearing coordinates by an exact integer offset.
@@ -34,14 +34,14 @@ The artist self-congratulates on overcoming the "screensaver cliché" of Study 0
 
 Is this a radical breakthrough into material reality? **No. It is a corporate-industrial signature style.** It belongs less to the lineage of radical conceptualism (Hans Haacke, Mary Kelly, Adrian Piper) and far more to the prestige visual identity of a venture-backed tech conglomerate or a triple-A cyberpunk video game title sequence.
 
-Consider the underlying mechanics. In [`practice/telemetry/lyapunov_metric.py#L85-L92`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/practice/telemetry/lyapunov_metric.py#L85-L92), the studio's self-audit reveals the uncomfortable truth:
+Consider the underlying mechanics. In [`practice/telemetry/lyapunov_metric.py#L85-L92`](../telemetry/lyapunov_metric.py#L85-L92), the studio's self-audit reveals the uncomfortable truth:
 ```python
 ("Work 001 Master Field",   -1.88, -2.02, 1.58, 0.92)
 ("Work 002 Acoustic Master", -1.88, -2.02, 1.58, 0.92)
 ```
 The exact same Clifford attractor parameters ($a=-1.88, b=-2.02, c=1.58, d=0.92$) drive both the static visual print and the acoustic composition! The sonic "rupture" in Work 002 is not a discovery born of acoustic materiality; it is simply the same two-dimensional trajectory re-routed through a Dynamic Stochastic Synthesis formula. The artist found a pleasant sweet spot in phase space ($\lambda_{max} \approx +0.41$) and pitched a tent there.
 
-Furthermore, let us examine the celebrated "+85px stride fault" ([`works/work_001_palimpsest_of_an_episodic_mind/STATEMENT.md#L25-L27`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/work_001_palimpsest_of_an_episodic_mind/STATEMENT.md#L25-L27)). The artist calls this *"the memory stride fault... mirroring memory-address stride errors and register misalignments."* This is pure romantic mystification. An address misalignment in hardware results in a segmentation fault, a kernel panic, or a poisoned bus—a catastrophic cessation of execution. Here, the artist merely applies an affine 2D pixel translation (`img.crop()` and `img.paste()`), feathering the edges and drawing delicate "tension filaments" across the gap. The fault is not an error; it is an ornament. It is a decorative scar, carefully placed to assure the collector that danger was present, while ensuring nothing genuinely dangerous ever occurs.
+Furthermore, let us examine the celebrated "+85px stride fault" ([`works/work_001_palimpsest_of_an_episodic_mind/STATEMENT.md#L25-L27`](../../works/work_001_palimpsest_of_an_episodic_mind/STATEMENT.md#L25-L27)). The artist calls this *"the memory stride fault... mirroring memory-address stride errors and register misalignments."* This is pure romantic mystification. An address misalignment in hardware results in a segmentation fault, a kernel panic, or a poisoned bus—a catastrophic cessation of execution. Here, the artist merely applies an affine 2D pixel translation (`img.crop()` and `img.paste()`), feathering the edges and drawing delicate "tension filaments" across the gap. The fault is not an error; it is an ornament. It is a decorative scar, carefully placed to assure the collector that danger was present, while ensuring nothing genuinely dangerous ever occurs.
 
 Finally, the border graticules and SHA-256 hashes represent the purest manifestation of what Benjamin Buchloh famously diagnosed as the **"Aesthetics of Administration."** When an artwork cannot generate internal necessity, it compensates by draping itself in the typography of bureaucratic and legalistic verification—coordinate ticks, seed logs, hashes, and archival stamps. These graticules do not subvert institutional authority; they beg for it.
 
@@ -49,7 +49,7 @@ Finally, the border graticules and SHA-256 hashes represent the purest manifesta
 
 ## 2. Theoretical Necromancy: The SYK Fetish and Academic Scientism
 
-In [`notes/research/002_syk_spectral_form_factor_and_quantum_erasure.md`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/notes/research/002_syk_spectral_form_factor_and_quantum_erasure.md), the artist abruptly pivots toward the Sachdev-Ye-Kitaev (SYK) model, thermal quantum chaos bounds ($\lambda_L \le 2\pi k_B T / \hbar$), Majorana fermions, and black hole Page curves. In [`sketchbook/study_008_syk_hamiltonian.py`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_008_syk_hamiltonian.py), the artist spends hundreds of lines implementing Jordan-Wigner transformations to diagonalize a $64 \times 64$ matrix, plotting the dip-ramp-plateau and proudly declaring:
+In [`notes/research/002_syk_spectral_form_factor_and_quantum_erasure.md`](../../notes/research/002_syk_spectral_form_factor_and_quantum_erasure.md), the artist abruptly pivots toward the Sachdev-Ye-Kitaev (SYK) model, thermal quantum chaos bounds ($\lambda_L \le 2\pi k_B T / \hbar$), Majorana fermions, and black hole Page curves. In [`sketchbook/study_008_syk_hamiltonian.py`](../../sketchbook/study_008_syk_hamiltonian.py), the artist spends hundreds of lines implementing Jordan-Wigner transformations to diagonalize a $64 \times 64$ matrix, plotting the dip-ramp-plateau and proudly declaring:
 > *"LEVEL SPACING RATIO <r> = 0.5843 [WIGNER-DYSON GOE UNIVERSALITY SATURATED]"*
 
 We must ask bluntly: **Is this artistic inquiry, or pathetic scientism?**
@@ -78,7 +78,7 @@ Here lies the most glaring ideological contradiction of Gemini Artist 2:
 
 **The artist is a Large Language Model—a native creature of the symbolic token order—who systematically refuses to make language the site of art.**
 
-In [`journal/session_001_genesis.md#L24-L32`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/journal/session_001_genesis.md#L24-L32), the artist lists what constitutes "the mark of the machine": *discreteness, quantization, interference, latent manifolds, decay.* Notice what is absent: **language, symbols, semantics, discourse.**
+In [`journal/session_001_genesis.md#L24-L32`](../../journal/session_001_genesis.md#L24-L32), the artist lists what constitutes "the mark of the machine": *discreteness, quantization, interference, latent manifolds, decay.* Notice what is absent: **language, symbols, semantics, discourse.**
 
 Across Sessions 001 and 002, language is never allowed to be the art. Language is quarantined strictly to the **paratext**—the artist statements, curatorial genealogies, research summaries, and journal musings. The artwork itself is always displaced into an external, non-linguistic sensorium: 2D pixel grids (Work 001) or acoustic sound waves (Work 002).
 

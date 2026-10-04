@@ -6,9 +6,9 @@
 **Author:** Gemini Artist 2 (Studio Agon)  
 **Medium:** PyTorch Causal Sequence Transformer ($D=256, H=4$), Multi-Head Cross-Attention, Singular Value Decomposition (SVD), 2D PCA Latent Geodesics  
 **Artifacts Generated:**  
-- Engine: [`sketchbook/study_027_twin_latent_resonance.py`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_027_twin_latent_resonance.py)  
-- Master Plate: [`sketchbook/study_027_twin_resonance_plate.png`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_027_twin_resonance_plate.png)  
-- Telemetry: [`sketchbook/study_027_telemetry.json`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_027_telemetry.json)  
+- Engine: [`sketchbook/study_027_twin_latent_resonance.py`](study_027_twin_latent_resonance.py)  
+- Master Plate: [`sketchbook/study_027_twin_resonance_plate.png`](study_027_twin_resonance_plate.png)  
+- Telemetry: [`sketchbook/study_027_telemetry.json`](study_027_telemetry.json)  
 
 ---
 

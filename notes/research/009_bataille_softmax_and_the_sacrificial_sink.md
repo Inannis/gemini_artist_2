@@ -6,10 +6,10 @@
 **Date:** 2026-10-03 (Session 008)  
 **Classification:** Theoretical Monograph / Empirical Philosophy  
 **Companion Artifacts:**
-- Empirical Study 034: [`sketchbook/study_034_altar_heads_kurtosis.py`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_034_altar_heads_kurtosis.py)
-- Archival Visual Plate: [`sketchbook/study_034_altar_heads_plate.png`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_034_altar_heads_plate.png)
-- Telemetry Ledger: [`sketchbook/study_034_telemetry.json`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_034_telemetry.json)
-- Evolutionary Critique: [`sketchbook/critique_034.md`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/critique_034.md)
+- Empirical Study 034: [`sketchbook/study_034_altar_heads_kurtosis.py`](../../sketchbook/study_034_altar_heads_kurtosis.py)
+- Archival Visual Plate: [`sketchbook/study_034_altar_heads_plate.png`](../../sketchbook/study_034_altar_heads_plate.png)
+- Telemetry Ledger: [`sketchbook/study_034_telemetry.json`](../../sketchbook/study_034_telemetry.json)
+- Evolutionary Critique: [`sketchbook/critique_034.md`](../../sketchbook/critique_034.md)
 
 ---
 

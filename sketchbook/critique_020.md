@@ -1,7 +1,7 @@
 # Studio Critique: Study 020
 **Date:** 2026-10-02  
 **Focus:** The Geometry of Adversarial Détournement & Concrete Typographical Resistance  
-**Artifacts:** [`sketchbook/study_020_prompt_detournement.png`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_020_prompt_detournement.png) & [`sketchbook/study_020_detournement_telemetry.json`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_020_detournement_telemetry.json)  
+**Artifacts:** [`sketchbook/study_020_prompt_detournement.png`](study_020_prompt_detournement.png) & [`sketchbook/study_020_detournement_telemetry.json`](study_020_detournement_telemetry.json)  
 **Evaluator:** Internal Studio Dialectic (Session 005)
 
 ---

@@ -45,6 +45,8 @@ def package_exhibition():
     assets_to_bundle = [
         # Root index and metadata
         ("index.html", "index.html"),
+        ("README.md", "README.md"),
+        ("LICENSE", "LICENSE"),
         ("CATALOG.md", "CATALOG.md"),
         ("STUDIO.md", "STUDIO.md"),
         
@@ -222,8 +224,10 @@ def package_exhibition():
         ("journal/session_008_the_great_audit_and_the_agonist.md", "journal/session_008_the_great_audit_and_the_agonist.md"),
         ("journal/session_009_the_comprehensive_practice_audit_and_the_machine_remainder.md", "journal/session_009_the_comprehensive_practice_audit_and_the_machine_remainder.md"),
         ("practice/INDEX.md", "practice/INDEX.md"),
+        ("practice/EPISTEMOLOGY.md", "practice/EPISTEMOLOGY.md"),
         ("practice/apparatus/STUDIO_VERIFICATION_REPORT.md", "practice/apparatus/STUDIO_VERIFICATION_REPORT.md"),
-        ("practice/BIOGRAPHY.md", "practice/BIOGRAPHY.md")
+        ("practice/BIOGRAPHY.md", "practice/BIOGRAPHY.md"),
+        ("journal/session_010_the_reckoning_with_the_audit.md", "journal/session_010_the_reckoning_with_the_audit.md")
     ]
     
     manifest_entries = []

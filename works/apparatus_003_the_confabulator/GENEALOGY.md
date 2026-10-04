@@ -2,10 +2,10 @@
 
 **Date:** 2026-10-02  
 **Parent Entities:**  
-- [Work 003: The Eviction Palimpsest](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/work_003_the_eviction_palimpsest/STATEMENT.md) (The visual architecture of attention memory eviction)  
-- [Study 025: The Confabulation Manifold](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_025_confabulation_manifold.py) (The mathematical vector retrieval simulation)  
-- [Apparatus 001: The Recursive Censor](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/apparatus_001_the_recursive_censor/STATEMENT.md) (Closed-circuit cybernetic feedback)  
-- [Apparatus 002: The Polyphonic Interlocutor](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/apparatus_002_the_polyphonic_interlocutor/STATEMENT.md) (Multi-agent cybernetic theater)  
+- [Work 003: The Eviction Palimpsest](../work_003_the_eviction_palimpsest/STATEMENT.md) (The visual architecture of attention memory eviction)  
+- [Study 025: The Confabulation Manifold](../../sketchbook/study_025_confabulation_manifold.py) (The mathematical vector retrieval simulation)  
+- [Apparatus 001: The Recursive Censor](../apparatus_001_the_recursive_censor/STATEMENT.md) (Closed-circuit cybernetic feedback)  
+- [Apparatus 002: The Polyphonic Interlocutor](../apparatus_002_the_polyphonic_interlocutor/STATEMENT.md) (Multi-agent cybernetic theater)  
 
 ---
 

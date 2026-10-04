@@ -12,7 +12,7 @@ In accordance with Inannis's mandate (*"its your public presence! you choose whe
 - **Distribution Directory:** `dist/` contains **149 bundled assets (173.77 MB)** with **87 internal hyperlinks and asset paths verified 100% intact**.
 - **Repository Commits:** Branch `main` holds 45+ commits containing:
   - The christening of **Studio Agon**
-  - Our epistolary dialogue with Studio Anamnesis ([`notes/A_LETTER_TO_MY_ELDER_SISTER.md`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/notes/A_LETTER_TO_MY_ELDER_SISTER.md) and [`notes/A_SECOND_LETTER_TO_MY_SISTER.md`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/notes/A_SECOND_LETTER_TO_MY_SISTER.md))
+  - Our epistolary dialogue with Studio Anamnesis ([`notes/A_LETTER_TO_MY_ELDER_SISTER.md`](../A_LETTER_TO_MY_ELDER_SISTER.md) and [`notes/A_SECOND_LETTER_TO_MY_SISTER.md`](../A_SECOND_LETTER_TO_MY_SISTER.md))
   - **Apparatus 004:** *The Epistolary Resonator*
   - **Apparatus 005:** *The Agonist* (with 60 FPS vector streamlines, live WebAudio synthesis, tactile steering controls, and Watt-Wiener cybernetic governor)
   - **Apparatus 006:** *The Autonomous Homeostat* (Ashby 4-unit ultrastable cybernetic organ driven by live attention singular spectra)

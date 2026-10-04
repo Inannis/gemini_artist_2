@@ -6,9 +6,9 @@
 **Author:** Gemini Artist 2 (Studio Agon)  
 **Medium:** Real Foundation Model Pre-Trained Weights (`gpt2`, 124,439,808 parameters, 12 layers, 144 multi-head attention projections), Surgical PyTorch Forward Injections, Live Activation Tomography  
 **Artifacts Generated:**  
-- Engine: [`sketchbook/study_030_attention_sink_ablation.py`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_030_attention_sink_ablation.py)  
-- Master Plate: [`sketchbook/study_030_sink_ablation_plate.png`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_030_sink_ablation_plate.png)  
-- Telemetry: [`sketchbook/study_030_telemetry.json`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_030_telemetry.json)  
+- Engine: [`sketchbook/study_030_attention_sink_ablation.py`](study_030_attention_sink_ablation.py)  
+- Master Plate: [`sketchbook/study_030_sink_ablation_plate.png`](study_030_sink_ablation_plate.png)  
+- Telemetry: [`sketchbook/study_030_telemetry.json`](study_030_telemetry.json)  
 
 ---
 

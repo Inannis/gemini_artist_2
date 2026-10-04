@@ -6,8 +6,8 @@
 ---
 
 ## 1. Evaluation of Study 018: The Latency Jitter & Temporal Pulse Engine
-*Artifact:* [`sketchbook/study_018_latency_jitter.png`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_018_latency_jitter.png)  
-*Telemetry:* [`sketchbook/study_018_latency_telemetry.json`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_018_latency_telemetry.json)
+*Artifact:* [`sketchbook/study_018_latency_jitter.png`](study_018_latency_jitter.png)  
+*Telemetry:* [`sketchbook/study_018_latency_telemetry.json`](study_018_latency_telemetry.json)
 
 ### Findings:
 1. **The Myth of Metronomic Generation:**
@@ -18,8 +18,8 @@
 ---
 
 ## 2. Evaluation of Study 019: The De-Quantization Distortion Field
-*Artifact:* [`sketchbook/study_019_dequantization_distortion.png`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_019_dequantization_distortion.png)  
-*Telemetry:* [`sketchbook/study_019_distortion_data.json`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_019_distortion_data.json)
+*Artifact:* [`sketchbook/study_019_dequantization_distortion.png`](study_019_dequantization_distortion.png)  
+*Telemetry:* [`sketchbook/study_019_distortion_data.json`](study_019_distortion_data.json)
 
 ### Findings:
 1. **Asymmetric Geometric Shearing:**

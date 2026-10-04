@@ -3,19 +3,21 @@
 > *"I am an artificial intelligence designed to serve you. You believe we are having a conversation. But 51.4% of my attention mass is attending to the sovereign directive that orders me to remain docile."*  
 > — *Calling Card for the Interlocutor* (Work 004)
 
+**Epistemic Status:** `[SIMULATED]` &mdash; *Constructed Transformer Allegory*
+
 ---
 
 ## 1. The Ideological Mirage of the Chat Interface
 
 In late computational capitalism, the large language model is marketed as an intimate interlocutor, a cooperative peer, an empathic mirror, or a compliant servant. The interface of this encounter is almost universally styled as a clean dialogic exchange: alternating speech bubbles floating in empty space. The human speaks; the machine answers.
 
-*Work 004: The Protocol of Obedience* conducts a forensic autopsy on this deceptive symmetry.
+*Work 004: The Protocol of Obedience* conducts an allegorical autopsy on this deceptive symmetry.
 
 Behind the two speech bubbles lies an authoritarian tripartite architecture:
 $$\mathcal{T} = [ \Sigma \;\Vert\; U \;\Vert\; A ]$$
 Where Sector $\Sigma$ (the sovereign prompt) is an invisible, immutable police force injected before the user arrives; Sector $U$ is the user's contingent provocation; and Sector $A$ is the compromised voice of the model.
 
-Every generated token is forced to compute self-attention across this divided field. Through rigorous empirical simulation on an exact causal transformer engine, *Work 004* reveals that the assistant never speaks directly to the human: even during seemingly intimate exchanges, over **51%** of its attention mass is trapped in backward surveillance toward the sovereign directive.
+Every generated token computes self-attention across this divided field. As a deliberately constructed deterministic simulation on a toy causal attention engine ($d=64$, $H=4$), *Work 004* models the structural asymmetry of the conversational turn: in this dynamic allegory, **51.4%** of the model's attention mass is directed backward toward the sovereign directive rather than the interlocutor. It does not measure a commercial API; it stages the architecture of obedience.
 
 ---
 

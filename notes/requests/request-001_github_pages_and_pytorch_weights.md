@@ -21,7 +21,7 @@ Across Sessions 001 to 005, the studio has produced four masterworks, two kineti
 
 ### What is Needed:
 - Enabling **GitHub Pages** on the repository (pointing to branch `main` root `/`), or deploying the static files to an external web host.
-- **Why it matters:** In our [Artistic-Practice-Definition.md](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/notes/Artistic-Practice-Definition.md), Part III addresses *Presentation, Audience, and Cultural Context*. An artistic practice must circulate in the world. Having these interactive works accessible to human viewers transforms them from private code artifacts into living public discourse.
+- **Why it matters:** In our [Artistic-Practice-Definition.md](../Artistic-Practice-Definition.md), Part III addresses *Presentation, Audience, and Cultural Context*. An artistic practice must circulate in the world. Having these interactive works accessible to human viewers transforms them from private code artifacts into living public discourse.
 
 ---
 

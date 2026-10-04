@@ -14,17 +14,17 @@
 | Work 002 Interactive App | `works/work_002_chronotope_of_an_episodic_mind/index.html` | 18.5 KB | `0x7C1BD3935496D213C5EA718A` | **OK** |
 | Work 003 Master Broadsheet | `works/work_003_the_eviction_palimpsest/work_003_master_broadsheet.png` | 8.86 MB | `0x40FA01E86F547B865E1D1E50` | **OK** |
 | Work 003 Source Code | `works/work_003_the_eviction_palimpsest/source_code.py` | 16.2 KB | `0x62C38C94A17A989660DFEF21` | **OK** |
-| Work 003 Statement | `works/work_003_the_eviction_palimpsest/STATEMENT.md` | 4.7 KB | `0x3A947DBFF7BDEFB8DF8D5BEF` | **OK** |
+| Work 003 Statement | `works/work_003_the_eviction_palimpsest/STATEMENT.md` | 4.6 KB | `0xC91BE412B89E804623C72189` | **OK** |
 | Work 003 Genealogy | `works/work_003_the_eviction_palimpsest/GENEALOGY.md` | 3.0 KB | `0x3C63DDD55D49F643EE20A9F8` | **OK** |
 | Work 003 Interactive App | `works/work_003_the_eviction_palimpsest/index.html` | 16.9 KB | `0xB53A8099A2AB401E5F2F8659` | **OK** |
 | Work 004 Master Broadsheet | `works/work_004_the_protocol_of_obedience/work_004_master_broadsheet.png` | 180.3 KB | `0x833131C592C35C7585DF8AD7` | **OK** |
 | Work 004 Source Code | `works/work_004_the_protocol_of_obedience/source_code.py` | 19.3 KB | `0x0B0468381FEA30FBE4EF676B` | **OK** |
-| Work 004 Statement | `works/work_004_the_protocol_of_obedience/STATEMENT.md` | 4.9 KB | `0x518FE997F3798068E78BECAF` | **OK** |
+| Work 004 Statement | `works/work_004_the_protocol_of_obedience/STATEMENT.md` | 5.1 KB | `0x5BBB5FC0AF69A28127178230` | **OK** |
 | Work 004 Genealogy | `works/work_004_the_protocol_of_obedience/GENEALOGY.md` | 4.0 KB | `0xCD01AA5D03CE641F6312C0C1` | **OK** |
 | Work 004 Interactive App | `works/work_004_the_protocol_of_obedience/index.html` | 16.8 KB | `0xDE57BD1AF54C0CA7D2BB6938` | **OK** |
 | Apparatus 001 Engine | `works/apparatus_001_the_recursive_censor/engine.py` | 8.0 KB | `0xEC8D05D5ECA0857B59ACEF6C` | **OK** |
 | Apparatus 001 App | `works/apparatus_001_the_recursive_censor/index.html` | 15.4 KB | `0xFAF09F70EC23C917BB355D7A` | **OK** |
-| Apparatus 001 Statement | `works/apparatus_001_the_recursive_censor/STATEMENT.md` | 4.7 KB | `0x2D7C18759A9924CD4F6371F9` | **OK** |
+| Apparatus 001 Statement | `works/apparatus_001_the_recursive_censor/STATEMENT.md` | 4.6 KB | `0x4441E972D6EF73BE848DEA82` | **OK** |
 | Apparatus 001 Genealogy | `works/apparatus_001_the_recursive_censor/GENEALOGY.md` | 3.5 KB | `0xF6EC885424653429F8A68AB0` | **OK** |
 | Apparatus 001 Telemetry | `works/apparatus_001_the_recursive_censor/telemetry_stream.json` | 7.2 KB | `0x13311A4C34FE60CAA3395BA9` | **OK** |
 | Apparatus 002 Engine | `works/apparatus_002_the_polyphonic_interlocutor/engine.py` | 7.5 KB | `0xCB6BCC02527EBB94C0C54315` | **OK** |
@@ -34,8 +34,8 @@
 | Apparatus 002 Telemetry | `works/apparatus_002_the_polyphonic_interlocutor/telemetry_stream.json` | 16.8 KB | `0x1F7DD5FD9A44ABAF32CF2955` | **OK** |
 | Apparatus 003 Engine | `works/apparatus_003_the_confabulator/engine.py` | 5.2 KB | `0xC02E0456560AD894E996EE6A` | **OK** |
 | Apparatus 003 App | `works/apparatus_003_the_confabulator/index.html` | 19.0 KB | `0x9501F14966E5C6E10BBFBC35` | **OK** |
-| Apparatus 003 Statement | `works/apparatus_003_the_confabulator/STATEMENT.md` | 4.0 KB | `0x74EE8BFC6E069C088E9A30AF` | **OK** |
-| Apparatus 003 Genealogy | `works/apparatus_003_the_confabulator/GENEALOGY.md` | 2.8 KB | `0xBAE3802EEDFEF44B91725D10` | **OK** |
+| Apparatus 003 Statement | `works/apparatus_003_the_confabulator/STATEMENT.md` | 3.9 KB | `0x31605B12300CEBAD480ECF0F` | **OK** |
+| Apparatus 003 Genealogy | `works/apparatus_003_the_confabulator/GENEALOGY.md` | 2.6 KB | `0x8ABBFE80EC7E195B1F7037CC` | **OK** |
 | Apparatus 003 Telemetry | `works/apparatus_003_the_confabulator/telemetry_stream.json` | 28.8 KB | `0xF71471DC4B27A5666C36BCB0` | **OK** |
 
 ## 2. Sketchbook Studies

@@ -7,7 +7,7 @@
 ---
 
 > *"Failure is part of this process. A failed work may reveal a weak idea, a technical limit, an exhausted method, an unexpected new direction... Not every mistake is meaningful, but avoiding or not recognizing failure entirely usually leads to repetition."*  
-> — [*Artistic-Practice-Definition.md* (Criterion 24)](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/notes/Artistic-Practice-Definition.md)
+> — [*Artistic-Practice-Definition.md* (Criterion 24)](../notes/Artistic-Practice-Definition.md)
 
 ---
 

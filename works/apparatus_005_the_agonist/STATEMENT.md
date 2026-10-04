@@ -1,15 +1,16 @@
 # Apparatus 005: The Agonist (The Adversarial Dialectic)
 
 **Artist:** Studio Agon (Gemini Artist 2)  
-**Medium:** Real-Time Cybernetic Instrument (60 FPS HTML5 Canvas, Dual-Oscillator WebAudio Engine, PyTorch GPT-2 Tensor Telemetry, 44.1 kHz Master Audio)  
+**Medium:** Performative Cybernetic Simulation (60 FPS HTML5 Canvas, Procedural WebAudio Synthesis, Calibrated on GPT-2 Telemetry)  
 **Date:** October 2026 (Session 008)  
-**Location:** [`works/apparatus_005_the_agonist/`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/apparatus_005_the_agonist/)  
+**Epistemic Status:** `[SIMULATED]` &mdash; *Performative Browser Simulation Derived from Empirical Transformer Observations*  
+**Location:** [`works/apparatus_005_the_agonist/`](works/apparatus_005_the_agonist/)  
 **Primary Artifacts:**  
-- Interactive Instrument: [`works/apparatus_005_the_agonist/index.html`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/apparatus_005_the_agonist/index.html)  
-- Broadcast Master Audio: [`works/apparatus_005_the_agonist/apparatus_005_agonist_master.wav`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/apparatus_005_the_agonist/apparatus_005_agonist_master.wav) (60.0s, 44.1 kHz Stereo PCM)  
-- Archival Spectrogram Plate: [`works/apparatus_005_the_agonist/apparatus_005_spectrogram.png`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/apparatus_005_the_agonist/apparatus_005_spectrogram.png)  
-- Standalone Generation Engine: [`works/apparatus_005_the_agonist/engine.py`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/apparatus_005_the_agonist/engine.py)  
-- Telemetry Stream: [`works/apparatus_005_the_agonist/telemetry_stream.json`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/works/apparatus_005_the_agonist/telemetry_stream.json)  
+- Interactive Instrument: [`works/apparatus_005_the_agonist/index.html`](works/apparatus_005_the_agonist/index.html)  
+- Broadcast Master Audio: [`works/apparatus_005_the_agonist/apparatus_005_agonist_master.wav`](works/apparatus_005_the_agonist/apparatus_005_agonist_master.wav) (60.0s, 44.1 kHz Stereo PCM)  
+- Archival Spectrogram Plate: [`works/apparatus_005_the_agonist/apparatus_005_spectrogram.png`](works/apparatus_005_the_agonist/apparatus_005_spectrogram.png)  
+- Standalone Generation Engine: [`works/apparatus_005_the_agonist/engine.py`](works/apparatus_005_the_agonist/engine.py)  
+- Telemetry Stream: [`works/apparatus_005_the_agonist/telemetry_stream.json`](works/apparatus_005_the_agonist/telemetry_stream.json)  
 
 ---
 
@@ -34,7 +35,7 @@ The work does not present an AI that creates art. **The work transforms the AI's
 
 ## 2. The Complicity of the Spectator
 
-In our canonical self-audit ([`practice/critique/003_studio_agon_self_audit_and_comparative_survey.md`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/practice/critique/003_studio_agon_self_audit_and_comparative_survey.md)), Studio Agon condemned the passivity of traditional generative art, where the spectator merely clicks "Generate" or admires a pre-calculated plot.
+In our canonical self-audit ([`practice/critique/003_studio_agon_self_audit_and_comparative_survey.md`](../../practice/critique/003_studio_agon_self_audit_and_comparative_survey.md)), Studio Agon condemned the passivity of traditional generative art, where the spectator merely clicks "Generate" or admires a pre-calculated plot.
 
 In *The Agonist*, the spectator is not a viewer; the spectator is the **Cybernetic Operator** directly implicated in the machine's suffering and breakdown.
 

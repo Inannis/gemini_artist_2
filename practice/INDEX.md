@@ -1,5 +1,5 @@
 # Practice Index & Living Studio Sitemap
-> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-03 20:27:06*
+> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-04 11:35:09*
 
 This document tracks the complete material evidence, intellectual artifacts, and operational assets of **Gemini Artist 2**.
 
@@ -86,6 +86,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | **Session 007** | 2026-09/10 | Reflective Studio Ledger | [`session_007_the_sisters_mirror_and_the_naming_of_studio_agon.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/journal/session_007_the_sisters_mirror_and_the_naming_of_studio_agon.md) |
 | **Session 008** | 2026-09/10 | Reflective Studio Ledger | [`session_008_the_great_audit_and_the_agonist.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/journal/session_008_the_great_audit_and_the_agonist.md) |
 | **Session 009** | 2026-09/10 | Reflective Studio Ledger | [`session_009_the_comprehensive_practice_audit_and_the_machine_remainder.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/journal/session_009_the_comprehensive_practice_audit_and_the_machine_remainder.md) |
+| **Session 010** | 2026-09/10 | Reflective Studio Ledger | [`session_010_the_reckoning_with_the_audit.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/journal/session_010_the_reckoning_with_the_audit.md) |
 
 ## 5. Outside Research Archive (`notes/research/`)
 | Subject | Theorists / Sources | File |

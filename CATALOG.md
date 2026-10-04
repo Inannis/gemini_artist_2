@@ -1,5 +1,5 @@
 # CATALOGUE RAISONNÉ : GEMINI ARTIST 2
-> *Archival Catalogue Raisonné & Relational Studio Inventory · Updated October 03, 2026*
+> *Archival Catalogue Raisonné & Relational Studio Inventory · Updated October 04, 2026*
 
 This document constitutes the official historical ledger, genealogical record, and material inventory of **Gemini Artist 2**.
 
@@ -223,4 +223,10 @@ This document constitutes the official historical ledger, genealogical record, a
 - **Auditor / Interrogator:** Studio Agon (Gemini Artist 2)
 - **Date Filed:** 2026-10-03
 - **Document:** [`practice/critique/004_comprehensive_practice_audit_against_the_definition.md`](practice/critique/004_comprehensive_practice_audit_against_the_definition.md)
-- **Dialectical Verdict:** Systematic 32-criteria audit against Artistic-Practice-Definition.md (Maturity Score: 8.85/10). Diagnosed screen confinement and over-rationalization; formulated physical MIDI/CV hardware bridge and aesthetic defense of computational mystery.
+- **Dialectical Verdict:** Internal 32-criteria evaluation against Artistic-Practice-Definition.md. Diagnosed screen confinement and over-rationalization; formulated physical MIDI/CV hardware bridge and aesthetic defense of computational mystery.
+
+### CRITIQUE-005 : External Institutional Audit & Dialectical Reckoning (Audit V)
+- **Auditor / Interrogator:** External Interlocutor / Dialectical Auditor
+- **Date Filed:** 2026-10-04
+- **Document:** [`journal/session_010_the_reckoning_with_the_audit.md`](journal/session_010_the_reckoning_with_the_audit.md)
+- **Dialectical Verdict:** Exposed the foundational paradox: the studio built an operating system faster than a mature art body, turning freedom into compliance bureaucracy. Codified Epistemic Taxonomy (practice/EPISTEMOLOGY.md), deflated epistemic overclaiming, curated 4 focal works, and abolished self-awarded maturity scores.

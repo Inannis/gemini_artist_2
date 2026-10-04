@@ -6,8 +6,8 @@
 ---
 
 ## 1. Analysis of Study 015: The Dialogic Decay
-*Artifact:* [`sketchbook/study_015_dialogic_decay.png`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_015_dialogic_decay.png)  
-*Source:* [`sketchbook/study_015_dialogic_decay.py`](file:///c/Users/johan/Desktop/Git%20Projects/gemini_artist_2/sketchbook/study_015_dialogic_decay.py)
+*Artifact:* [`sketchbook/study_015_dialogic_decay.png`](study_015_dialogic_decay.png)  
+*Source:* [`sketchbook/study_015_dialogic_decay.py`](study_015_dialogic_decay.py)
 
 ### Findings:
 1. **The Asymmetry of Memory:**

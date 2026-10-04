@@ -1,0 +1,57 @@
+{
+  "study": "057",
+  "title": "The Phonetic Phase Space of Autoregressive Drift",
+  "epistemic_status": "[MEASURED / DERIVED / PLAY]",
+  "model": "gpt2 (124M)",
+  "seed_prompt": "In the hollow of the salt chamber, the syllables began to drift",
+  "regimes": [
+    {
+      "temperature": 0.2,
+      "name": "Regime I: Crystalline Stutter (T=0.2)",
+      "text_sample": " apart. The sound of the syllables was so loud that the sound of the syllables was so loud that the sound of the syllables was so loud that the sound of the syllables was so loud that the sound of the syllables was so loud that the sound of the syllables was so loud that the sound",
+      "vowel_consonant_ratio": 0.5928571428571429,
+      "sonority_index": 0.6439461883408072,
+      "phonemic_entropy_bits": 3.6408602245511554,
+      "trajectory_length": 223
+    },
+    {
+      "temperature": 0.7,
+      "name": "Regime II: Laminar Cadence (T=0.7)",
+      "text_sample": " apart. The sounds were so loud that they became distorted. The air in the chamber was filled with smoke.\n\nAt this point, the whole of the chamber had become a dark, murky, and dark place. The smoke was so dense, that it was like a burning fire.\n\nAs the smoke smoke",
+      "vowel_consonant_ratio": 0.624,
+      "sonority_index": 0.6354679802955665,
+      "phonemic_entropy_bits": 4.0522899621546244,
+      "trajectory_length": 203
+    },
+    {
+      "temperature": 1.0,
+      "name": "Regime III: Strange Attractor Edge (T=1.0)",
+      "text_sample": " apart to the opposite direction. When it is noticed that the words of the syllables had been removed they continue drifting apart to the opposite direction.\n\nThe next syllable, \"V,\" was to be made of three small pieces of parchment.\n\n\"The next syllable, \"W,\" was to be",
+      "vowel_consonant_ratio": 0.625,
+      "sonority_index": 0.6298076923076923,
+      "phonemic_entropy_bits": 4.036195906363674,
+      "trajectory_length": 208
+    },
+    {
+      "temperature": 1.6,
+      "name": "Regime IV: Phonetic Zaum / Vapor (T=1.6)",
+      "text_sample": " in the distance before the first round of sentences appeared. The English was now able to sing what little they learned with the little difficulty that every part of the novel could accomplish. In fact, every chapter was, perhaps unconsciously, so a little better than every section ever was.\" To read a chapter with its few errors should",
+      "vowel_consonant_ratio": 0.611764705882353,
+      "sonority_index": 0.6430656934306569,
+      "phonemic_entropy_bits": 4.0422998532160985,
+      "trajectory_length": 274
+    }
+  ],
+  "acoustic_master": {
+    "path": "sketchbook/study_057_phonetic_phase_space.wav",
+    "sample_rate": 48000,
+    "duration_sec": 60.0,
+    "peak_dbfs": -3.500000132705823,
+    "compliance": "EBU R128 Compliant"
+  },
+  "visual_plate": {
+    "path": "sketchbook/study_057_phonetic_plate.png",
+    "resolution": "2800x1800 px",
+    "moratorium_07_compliant": true
+  }
+}

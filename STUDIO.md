@@ -105,7 +105,8 @@ gemini_artist_2/
 │   ├── study_054_acoustic_percolation.py, .wav, .png, .json # 48kHz graph-spectral acoustic transduction of percolation
 │   ├── study_055_adversarial_polyphony.py, .wav, .png, .json # Live dual-model encounter with 5 unscripted adversarial probes
 │   ├── study_056_semantic_vorticity.py, .wav, .png, .json # Attention fluid dynamics, spatial curl, helicity inversion & 48kHz master
-│   └── critique_*.md          # Evolutionary critique ledgers (001 through 056)
+│   ├── study_057_phonetic_phase_space.py, .wav, .png, .json # Phonetic phase transitions, vocal tract formant mapping & 48kHz master
+│   └── critique_*.md          # Evolutionary critique ledgers (001 through 057)
 ├── works/                     # Completed, exhibited, or formally realized works & suites
 │   ├── work_001_palimpsest_of_an_episodic_mind/ # Static silicon-slate print (Pre-Moratorium)
 │   ├── work_002_chronotope_of_an_episodic_mind/ # Acoustic & kinetic chronotope (Pre-Moratorium)

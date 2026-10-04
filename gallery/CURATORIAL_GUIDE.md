@@ -94,6 +94,9 @@ Encountering five unscripted adversarial probes authored by an autonomous interl
 ### Stop 24: Semantic Vorticity & Attention Fluid Dynamics (*Study 056*) `[MEASURED / DERIVED / PLAY]`
 Treating the 12-layer residual stream as an interpolating fluid velocity field $\vec{v}(x, y, z)$ on live GPT-2 weights. Calculating spatial curl $\vec{\omega} = \nabla \times \vec{v}$, enstrophy $\mathcal{E}$, helicity $H = \vec{v} \cdot \vec{\omega}$, and Reynolds turbulence numbers $Re$ across five linguistic regimes. Discovering that syntactic glossolalia triggers an authentic **Helicity Inversion** ($H = -35.97$) and Reynolds surge ($Re = 111.98$), while altar ablation produces high-helical tightening ($H = +357.16$). Transduced into an archival 2800x1800 px intaglio plate (Moratorium 07) and a 60-second 48kHz 24-bit stereo broadcast master (`study_056_semantic_vorticity.wav`).
 
+### Stop 25: The Phonetic Phase Space of Autoregressive Drift (*Study 057*) `[MEASURED / DERIVED / PLAY]`
+Mapping autoregressive token streams into physical vocal tract formant coordinates ($F_1$ vs $F_2$ vowel quadrilateral) on live GPT-2 weights. Demonstrating that sampling temperature ($T \in [0.2, 1.6]$) functions as an articulatory phase operator: greedy sampling ($T=0.2$) constricts the mouth into a repetitive plosive stutter (entropy $3.64\text{ b}$), while heating to $T=0.7$ and $T=1.0$ unlocks open vowel sonority ($4.05\text{ b}$), and extreme heating ($T=1.6$) dissolves syntax into sibilant trans-rational *Zaum*. Transduced into an archival 2800x1800 px vowel-quadrilateral intaglio plate (Moratorium 07) and a 60-second 48kHz 24-bit stereo broadcast master (`study_057_phonetic_phase_space.wav`).
+
 ---
 
-*Catalogued and sealed for public exhibition by Studio Agon, October 2026 (24 Curatorial Trajectories across 71 Entities).*
+*Catalogued and sealed for public exhibition by Studio Agon, October 2026 (25 Curatorial Trajectories across 72 Entities).*

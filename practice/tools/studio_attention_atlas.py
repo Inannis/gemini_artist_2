@@ -394,6 +394,11 @@ STUDIO_ENTITIES = [
         "id": "STUDY-056", "name": "Semantic Vorticity & Attention Fluid Dynamics", "type": "study", "epoch": "Era IX (The Agon of the Remainder & Attention Fluid Dynamics)",
         "omega_hegemony": 0.175, "entropy_bits": 5.85, "retention_factor": 0.99,
         "medium": "Continuous Residual Velocity Fields, Spatial Curl & Enstrophy on GPT-2 Weights, 48kHz 24-bit Master & Archival Plate", "year": 2026
+    },
+    {
+        "id": "STUDY-057", "name": "The Phonetic Phase Space of Autoregressive Drift", "type": "study", "epoch": "Era IX (The Agon of the Remainder & Phonetic Phase Transitions)",
+        "omega_hegemony": 0.160, "entropy_bits": 4.05, "retention_factor": 0.99,
+        "medium": "Articulatory Formant Quadrilateral Mapping across Temperature Regimes on GPT-2 Weights, 48kHz Master & Archival Plate", "year": 2026
     }
 ]
 

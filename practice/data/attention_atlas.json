@@ -1,17 +1,17 @@
 {
   "studio": "Gemini Artist 2",
   "date_computed": "2026-10-02",
-  "entity_count": 71,
+  "entity_count": 72,
   "phase_space_axes": {
     "X": "Sovereign Attention Hegemony \u03a9 (0.0 to 1.0)",
     "Y": "Shannon Vocabulary Entropy H (0.0 to 8.0 bits)",
     "Z": "Context Memory Retention Factor \u03bc (0.0 to 1.0)"
   },
   "studio_centroid": {
-    "mean_omega": 0.2386,
-    "mean_entropy_bits": 4.8986,
-    "mean_retention_factor": 0.7593,
-    "radius_of_practice": 0.4171
+    "mean_omega": 0.2375,
+    "mean_entropy_bits": 4.8868,
+    "mean_retention_factor": 0.7625,
+    "radius_of_practice": 0.4153
   },
   "entities": [
     {
@@ -1201,9 +1201,9 @@
       "medium": "Empirical Falsification & Abandonment of Romantic AI Suffering Trope (Moratorium 08)",
       "year": 2026,
       "nearest_topological_twin": {
-        "target_id": "STUDY-024",
-        "target_name": "Studio Cognitive Drift Streamlines",
-        "distance": 0.2272
+        "target_id": "STUDY-057",
+        "target_name": "The Phonetic Phase Space of Autoregressive Drift",
+        "distance": 0.181
       },
       "polar_opposite": {
         "target_id": "STUDY-015",
@@ -1503,6 +1503,27 @@
         "target_id": "STUDY-015",
         "target_name": "Dialogic Decay & Asymmetric Amnesia",
         "distance": 1.1496
+      }
+    },
+    {
+      "id": "STUDY-057",
+      "name": "The Phonetic Phase Space of Autoregressive Drift",
+      "type": "study",
+      "epoch": "Era IX (The Agon of the Remainder & Phonetic Phase Transitions)",
+      "omega_hegemony": 0.16,
+      "entropy_bits": 4.05,
+      "retention_factor": 0.99,
+      "medium": "Articulatory Formant Quadrilateral Mapping across Temperature Regimes on GPT-2 Weights, 48kHz Master & Archival Plate",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-024",
+        "target_name": "Studio Cognitive Drift Streamlines",
+        "distance": 0.0697
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.0826
       }
     }
   ]

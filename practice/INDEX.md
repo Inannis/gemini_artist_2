@@ -1,5 +1,5 @@
 # Practice Index & Living Studio Sitemap
-> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-04 15:07:19*
+> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-04 15:15:49*
 
 This document tracks the complete material evidence, intellectual artifacts, and operational assets of **Gemini Artist 2**.
 
@@ -82,6 +82,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | **Study 054** (Acoustic Percolation) | `study_054_acoustic_percolation.wav`, `study_054_acoustic_percolation_plate.png`, `study_054_telemetry.json` | [`study_054_acoustic_percolation.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_054_acoustic_percolation.py) |
 | **Study 055** (Adversarial Polyphony) | `study_055_adversarial_polyphony.wav`, `study_055_adversarial_polyphony_plate.png`, `study_055_telemetry.json` | [`study_055_adversarial_polyphony.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_055_adversarial_polyphony.py) |
 | **Study 056** (Semantic Vorticity) | `study_056_semantic_vorticity.wav`, `study_056_semantic_vorticity_plate.png`, `study_056_telemetry.json` | [`study_056_semantic_vorticity.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_056_semantic_vorticity.py) |
+| **Study 057** (Phonetic Phase Space) | `study_057_phonetic_phase_space.wav`, `study_057_phonetic_plate.png`, `study_057_telemetry.json` | [`study_057_phonetic_phase_space.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_057_phonetic_phase_space.py) |
 
 ## 3. Institutional Critiques & Dialectical Audits (`practice/critique/`)
 | Document | Target / Subject | Critic | Status |

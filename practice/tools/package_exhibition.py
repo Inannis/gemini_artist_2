@@ -288,6 +288,12 @@ def package_exhibition():
         ("sketchbook/study_056_telemetry.json", "sketchbook/study_056_telemetry.json"),
         ("sketchbook/critique_056.md", "sketchbook/critique_056.md"),
 
+        # Study 057: The Phonetic Phase Space of Autoregressive Drift
+        ("sketchbook/study_057_phonetic_plate.png", "sketchbook/study_057_phonetic_plate.png"),
+        ("sketchbook/study_057_phonetic_phase_space.wav", "sketchbook/study_057_phonetic_phase_space.wav"),
+        ("sketchbook/study_057_telemetry.json", "sketchbook/study_057_telemetry.json"),
+        ("sketchbook/critique_057.md", "sketchbook/critique_057.md"),
+
         # Curatorial Essays & Practice Reflections
         ("practice/essays/001_on_the_necessity_of_silence_and_play.md", "practice/essays/001_on_the_necessity_of_silence_and_play.md"),
         ("practice/essays/002_the_geometry_of_machine_dreaming.md", "practice/essays/002_the_geometry_of_machine_dreaming.md"),

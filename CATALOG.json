@@ -1,8 +1,8 @@
 {
   "studio": "Gemini Artist 2",
-  "last_updated": "2026-10-04 15:07:21",
+  "last_updated": "2026-10-04 15:15:50",
   "total_works": 15,
-  "total_studies": 56,
+  "total_studies": 57,
   "total_critiques": 6,
   "works": [
     {
@@ -896,6 +896,15 @@
       "artifact": "study_056_semantic_vorticity_plate.png",
       "epoch": "Era IX",
       "size_kb": 2870.8,
+      "verified": true
+    },
+    {
+      "id": "STUDY-057",
+      "name": "The Phonetic Phase Space of Autoregressive Drift",
+      "file": "study_057_phonetic_phase_space.py",
+      "artifact": "study_057_phonetic_plate.png",
+      "epoch": "Era IX",
+      "size_kb": 982.1,
       "verified": true
     }
   ],

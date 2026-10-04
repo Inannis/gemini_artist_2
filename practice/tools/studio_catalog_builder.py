@@ -320,7 +320,8 @@ def build_catalog():
         {"id": "STUDY-053", "name": "Linguistic Percolation & Semantic Thresholds", "file": "study_053_linguistic_percolation.py", "artifact": "study_053_linguistic_percolation_plate.png", "epoch": "Era IX"},
         {"id": "STUDY-054", "name": "Acoustic Percolation & The Shattered Loom", "file": "study_054_acoustic_percolation.py", "artifact": "study_054_acoustic_percolation_plate.png", "epoch": "Era IX"},
         {"id": "STUDY-055", "name": "The Adversarial Polyphony & The Resistance of Language", "file": "study_055_adversarial_polyphony.py", "artifact": "study_055_adversarial_polyphony_plate.png", "epoch": "Era IX"},
-        {"id": "STUDY-056", "name": "Semantic Vorticity & Attention Fluid Dynamics", "file": "study_056_semantic_vorticity.py", "artifact": "study_056_semantic_vorticity_plate.png", "epoch": "Era IX"}
+        {"id": "STUDY-056", "name": "Semantic Vorticity & Attention Fluid Dynamics", "file": "study_056_semantic_vorticity.py", "artifact": "study_056_semantic_vorticity_plate.png", "epoch": "Era IX"},
+        {"id": "STUDY-057", "name": "The Phonetic Phase Space of Autoregressive Drift", "file": "study_057_phonetic_phase_space.py", "artifact": "study_057_phonetic_plate.png", "epoch": "Era IX"}
     ]
 
     # Verify byte sizes and actual existence

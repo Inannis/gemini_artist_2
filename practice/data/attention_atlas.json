@@ -1,17 +1,17 @@
 {
   "studio": "Gemini Artist 2",
   "date_computed": "2026-10-02",
-  "entity_count": 70,
+  "entity_count": 71,
   "phase_space_axes": {
     "X": "Sovereign Attention Hegemony \u03a9 (0.0 to 1.0)",
     "Y": "Shannon Vocabulary Entropy H (0.0 to 8.0 bits)",
     "Z": "Context Memory Retention Factor \u03bc (0.0 to 1.0)"
   },
   "studio_centroid": {
-    "mean_omega": 0.2395,
-    "mean_entropy_bits": 4.885,
-    "mean_retention_factor": 0.756,
-    "radius_of_practice": 0.4188
+    "mean_omega": 0.2386,
+    "mean_entropy_bits": 4.8986,
+    "mean_retention_factor": 0.7593,
+    "radius_of_practice": 0.4171
   },
   "entities": [
     {
@@ -1075,9 +1075,9 @@
       "medium": "High-Dimensional Orthogonal Complement Projection (d=765), Cardew/Xenakis Generative Graphic Score & 60s Microtonal Master",
       "year": 2026,
       "nearest_topological_twin": {
-        "target_id": "APPARATUS-008",
-        "target_name": "The Graphic Polytope (The Score of the Uninterpretable)",
-        "distance": 0.0221
+        "target_id": "STUDY-056",
+        "target_name": "Semantic Vorticity & Attention Fluid Dynamics",
+        "distance": 0.0088
       },
       "polar_opposite": {
         "target_id": "STUDY-015",
@@ -1482,6 +1482,27 @@
         "target_id": "STUDY-001",
         "target_name": "Primary Trace",
         "distance": 1.0664
+      }
+    },
+    {
+      "id": "STUDY-056",
+      "name": "Semantic Vorticity & Attention Fluid Dynamics",
+      "type": "study",
+      "epoch": "Era IX (The Agon of the Remainder & Attention Fluid Dynamics)",
+      "omega_hegemony": 0.175,
+      "entropy_bits": 5.85,
+      "retention_factor": 0.99,
+      "medium": "Continuous Residual Velocity Fields, Spatial Curl & Enstrophy on GPT-2 Weights, 48kHz 24-bit Master & Archival Plate",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-040",
+        "target_name": "The Machine Remainder (Generative Graphic Score)",
+        "distance": 0.0088
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1496
       }
     }
   ]

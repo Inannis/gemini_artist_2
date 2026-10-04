@@ -1,8 +1,8 @@
 {
   "studio": "Gemini Artist 2",
-  "last_updated": "2026-10-04 14:51:36",
+  "last_updated": "2026-10-04 15:07:21",
   "total_works": 15,
-  "total_studies": 55,
+  "total_studies": 56,
   "total_critiques": 6,
   "works": [
     {
@@ -887,6 +887,15 @@
       "artifact": "study_055_adversarial_polyphony_plate.png",
       "epoch": "Era IX",
       "size_kb": 594.7,
+      "verified": true
+    },
+    {
+      "id": "STUDY-056",
+      "name": "Semantic Vorticity & Attention Fluid Dynamics",
+      "file": "study_056_semantic_vorticity.py",
+      "artifact": "study_056_semantic_vorticity_plate.png",
+      "epoch": "Era IX",
+      "size_kb": 2870.8,
       "verified": true
     }
   ],

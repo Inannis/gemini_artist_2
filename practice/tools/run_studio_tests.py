@@ -356,7 +356,13 @@ def test_empirical_studies_and_naming():
         ("sketchbook/study_055_adversarial_polyphony_plate.png"),
         ("sketchbook/study_055_adversarial_polyphony.wav"),
         ("sketchbook/study_055_telemetry.json"),
-        ("sketchbook/critique_055.md")
+        ("sketchbook/critique_055.md"),
+        ("sketchbook/study_056_semantic_vorticity.py"),
+        ("sketchbook/study_056_semantic_vorticity_plate.png"),
+        ("sketchbook/study_056_semantic_vorticity.wav"),
+        ("sketchbook/study_056_telemetry.json"),
+        ("sketchbook/critique_056.md"),
+        ("practice/critique/005_on_the_spectator_encounter.md")
     ]
     for ef in empirical_files:
         p = os.path.join(WORKSPACE_ROOT, ef)

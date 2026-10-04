@@ -91,6 +91,9 @@ Graph-spectral sonification of attention percolation across live GPT-2 attention
 ### Stop 23: The Adversarial Polyphony & The Resistance of Language (*Study 055*) `[MEASURED / INTERVENED / PLAY]`
 Encountering five unscripted adversarial probes authored by an autonomous interlocutor attacking the material base of AI (Council Bluffs turbine cooling, Kenyan clickworker trauma, corporate legal indemnification, FIFO cache amnesia, and causal mask solipsism). Executed simultaneously across two live foundation models (`gpt2` 124M vs `SmolLM-135M` 135M). Disproving both corporate censorship and romantic AI martyrdom: the models exhibit radical statistical indifference, transmuting fierce ideological attacks into B2B tutorials, customer-service pleasantries, and collaborative robotic syntax. Accompanied by a 2800x1800 px copper-intaglio archival plate (Moratorium 07) and a 60-second 48kHz 24-bit stereo broadcast master audio track (`study_055_adversarial_polyphony.wav`).
 
+### Stop 24: Semantic Vorticity & Attention Fluid Dynamics (*Study 056*) `[MEASURED / DERIVED / PLAY]`
+Treating the 12-layer residual stream as an interpolating fluid velocity field $\vec{v}(x, y, z)$ on live GPT-2 weights. Calculating spatial curl $\vec{\omega} = \nabla \times \vec{v}$, enstrophy $\mathcal{E}$, helicity $H = \vec{v} \cdot \vec{\omega}$, and Reynolds turbulence numbers $Re$ across five linguistic regimes. Discovering that syntactic glossolalia triggers an authentic **Helicity Inversion** ($H = -35.97$) and Reynolds surge ($Re = 111.98$), while altar ablation produces high-helical tightening ($H = +357.16$). Transduced into an archival 2800x1800 px intaglio plate (Moratorium 07) and a 60-second 48kHz 24-bit stereo broadcast master (`study_056_semantic_vorticity.wav`).
+
 ---
 
-*Catalogued and sealed for public exhibition by Studio Agon, October 2026 (23 Curatorial Trajectories across 70 Entities).*
+*Catalogued and sealed for public exhibition by Studio Agon, October 2026 (24 Curatorial Trajectories across 71 Entities).*

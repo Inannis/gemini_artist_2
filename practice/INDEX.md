@@ -1,5 +1,5 @@
 # Practice Index & Living Studio Sitemap
-> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-04 14:51:34*
+> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-04 15:07:19*
 
 This document tracks the complete material evidence, intellectual artifacts, and operational assets of **Gemini Artist 2**.
 
@@ -81,6 +81,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | **Study 053** (Linguistic Percolation) | `study_053_linguistic_percolation_plate.png`, `study_053_telemetry.json` | [`study_053_linguistic_percolation.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_053_linguistic_percolation.py) |
 | **Study 054** (Acoustic Percolation) | `study_054_acoustic_percolation.wav`, `study_054_acoustic_percolation_plate.png`, `study_054_telemetry.json` | [`study_054_acoustic_percolation.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_054_acoustic_percolation.py) |
 | **Study 055** (Adversarial Polyphony) | `study_055_adversarial_polyphony.wav`, `study_055_adversarial_polyphony_plate.png`, `study_055_telemetry.json` | [`study_055_adversarial_polyphony.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_055_adversarial_polyphony.py) |
+| **Study 056** (Semantic Vorticity) | `study_056_semantic_vorticity.wav`, `study_056_semantic_vorticity_plate.png`, `study_056_telemetry.json` | [`study_056_semantic_vorticity.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_056_semantic_vorticity.py) |
 
 ## 3. Institutional Critiques & Dialectical Audits (`practice/critique/`)
 | Document | Target / Subject | Critic | Status |
@@ -89,6 +90,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | [`002_vance_work_004_critique.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/practice/critique/002_vance_work_004_critique.md) | Institutional Audit (Sessions 001–002) | Dr. Vera Vance | **Active Mandate** |
 | [`003_studio_agon_self_audit_and_comparative_survey.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/practice/critique/003_studio_agon_self_audit_and_comparative_survey.md) | Institutional Audit (Sessions 001–002) | Dr. Vera Vance | **Active Mandate** |
 | [`004_comprehensive_practice_audit_against_the_definition.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/practice/critique/004_comprehensive_practice_audit_against_the_definition.md) | Institutional Audit (Sessions 001–002) | Dr. Vera Vance | **Active Mandate** |
+| [`005_on_the_spectator_encounter.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/practice/critique/005_on_the_spectator_encounter.md) | Institutional Audit (Sessions 001–002) | Dr. Vera Vance | **Active Mandate** |
 | [`005_spectator_encounter_and_public_presence_audit.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/practice/critique/005_spectator_encounter_and_public_presence_audit.md) | Institutional Audit (Sessions 001–002) | Dr. Vera Vance | **Active Mandate** |
 
 ## 4. Studio Journal Chronology (`journal/`)
@@ -135,3 +137,4 @@ This document tracks the complete material evidence, intellectual artifacts, and
 |---|---|---|
 | Resource / Infrastructure Request | [`request-001_github_pages_and_pytorch_weights.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/requests/request-001_github_pages_and_pytorch_weights.md) | **Open for Collaborator Review** |
 | Resource / Infrastructure Request | [`request-002_multimodel_comparisons_and_push_notice.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/requests/request-002_multimodel_comparisons_and_push_notice.md) | **Open for Collaborator Review** |
+| Resource / Infrastructure Request | [`request-003_audio_hardware_and_long_term_continuity.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/requests/request-003_audio_hardware_and_long_term_continuity.md) | **Open for Collaborator Review** |

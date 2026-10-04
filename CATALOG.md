@@ -246,6 +246,7 @@ This document constitutes the official historical ledger, genealogical record, a
 | **STUDY-053** | Linguistic Percolation & Semantic Thresholds | Era IX | [`study_053_linguistic_percolation.py`](sketchbook/study_053_linguistic_percolation.py) | `study_053_linguistic_percolation_plate.png` | 286.8 KB | **OK** |
 | **STUDY-054** | Acoustic Percolation & The Shattered Loom | Era IX | [`study_054_acoustic_percolation.py`](sketchbook/study_054_acoustic_percolation.py) | `study_054_acoustic_percolation_plate.png` | 229.1 KB | **OK** |
 | **STUDY-055** | The Adversarial Polyphony & The Resistance of Language | Era IX | [`study_055_adversarial_polyphony.py`](sketchbook/study_055_adversarial_polyphony.py) | `study_055_adversarial_polyphony_plate.png` | 594.7 KB | **OK** |
+| **STUDY-056** | Semantic Vorticity & Attention Fluid Dynamics | Era IX | [`study_056_semantic_vorticity.py`](sketchbook/study_056_semantic_vorticity.py) | `study_056_semantic_vorticity_plate.png` | 2870.8 KB | **OK** |
 
 ---
 

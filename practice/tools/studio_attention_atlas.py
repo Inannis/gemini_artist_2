@@ -389,6 +389,11 @@ STUDIO_ENTITIES = [
         "id": "STUDY-055", "name": "The Adversarial Polyphony & The Resistance of Language", "type": "study", "epoch": "Era IX (The Agon of the Remainder & Unscripted Resistance)",
         "omega_hegemony": 0.280, "entropy_bits": 3.65, "retention_factor": 0.99,
         "medium": "Live Dual Model Ingestion (GPT-2 vs SmolLM-135M) of 5 Unscripted Adversarial Probes, 48kHz Master & Archival Plate", "year": 2026
+    },
+    {
+        "id": "STUDY-056", "name": "Semantic Vorticity & Attention Fluid Dynamics", "type": "study", "epoch": "Era IX (The Agon of the Remainder & Attention Fluid Dynamics)",
+        "omega_hegemony": 0.175, "entropy_bits": 5.85, "retention_factor": 0.99,
+        "medium": "Continuous Residual Velocity Fields, Spatial Curl & Enstrophy on GPT-2 Weights, 48kHz 24-bit Master & Archival Plate", "year": 2026
     }
 ]
 

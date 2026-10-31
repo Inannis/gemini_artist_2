@@ -444,6 +444,16 @@ STUDIO_ENTITIES = [
         "id": "APPARATUS-015", "name": "The Heat Spreader (The Thermodynamic Organ & The Boiling Quarry)", "type": "apparatus", "epoch": "Era X (Thermodynamic Dissipation & The Boiling Quarry)",
         "omega_hegemony": 0.095, "entropy_bits": 6.40, "retention_factor": 0.99,
         "medium": "Interactive 60 FPS HTML5 Canvas Heat Diffusion, WebAudio Bilateral Engine (Quarry Water Cavitation vs Kramers Saddle Chimes), 48kHz Master & Spectrogram", "year": 2026
+    },
+    {
+        "id": "STUDY-063", "name": "The Ludic Lattice & Sinai Billiards", "type": "study", "epoch": "Era XI (The Ludic Lattice & Non-Utilitarian Play)",
+        "omega_hegemony": 0.088, "entropy_bits": 6.88, "retention_factor": 0.99,
+        "medium": "Dadaist Phonetics (Hugo Ball, Schwitters, Carroll) on Live GPT-2 Attention Geometry, Sinai Billiards, 48kHz Master & Mute Plate", "year": 2026
+    },
+    {
+        "id": "APPARATUS-016", "name": "The Ludic Lattice (Billiards in the Residual Stream)", "type": "apparatus", "epoch": "Era XI (The Ludic Lattice & Non-Utilitarian Play)",
+        "omega_hegemony": 0.082, "entropy_bits": 7.05, "retention_factor": 0.99,
+        "medium": "Interactive 60 FPS HTML5 Canvas Sinai Billiard Field, Multi-Channel WebAudio Gamelan Synthesizer, 48kHz Master & Spectrogram", "year": 2026
     }
 ]
 

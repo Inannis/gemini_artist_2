@@ -1,0 +1,28 @@
+{
+  "apparatus": "APPARATUS-016",
+  "title": "The Ludic Lattice",
+  "subtitle": "Billiards in the Residual Stream",
+  "epistemic_status": "[INTERACTIVE / DERIVED / PLAY]",
+  "sampling_rate_hz": 48000,
+  "duration_seconds": 60.0,
+  "acoustic_metrics": {
+    "peak_dbfs": -3.4999999978101197,
+    "rms_dbfs": -21.942244968973533,
+    "crest_factor_db": 18.44224497116341,
+    "broadcast_compliance": "EBU R128 Compliant"
+  },
+  "ludic_parameters": {
+    "scatterers": 36,
+    "layers": 12,
+    "hidden_dimension": 768,
+    "dada_regimes": [
+      "ball_karawane",
+      "schwitters_ursonate",
+      "morgenstern_lalula",
+      "carroll_jabberwocky"
+    ],
+    "mean_deflection_deg": 22.74,
+    "max_deflection_deg": 38.62,
+    "effective_dimensionality": 1.99
+  }
+}

@@ -9,6 +9,7 @@ import os
 import wave
 import struct
 import math
+import numpy as np
 
 WORKSPACE_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 
@@ -26,24 +27,24 @@ def audit_wav(path):
             total_samples = n_frames * n_channels
             
             if sampwidth == 2:
-                fmt = f"<{total_samples}h"
-                samples = struct.unpack(fmt, raw_data)
-                norm_samples = [s / 32768.0 for s in samples]
+                samples = np.frombuffer(raw_data, dtype=np.int16)
+                norm_samples = samples.astype(np.float64) / 32768.0
             elif sampwidth == 3:
-                norm_samples = []
-                for i in range(0, len(raw_data), 3):
-                    chunk = raw_data[i:i+3] + (b'\x00' if raw_data[i+2] < 128 else b'\xff')
-                    val = struct.unpack('<i', chunk)[0]
-                    norm_samples.append(val / 8388608.0)
+                raw_bytes = np.frombuffer(raw_data, dtype=np.uint8)
+                b0 = raw_bytes[0::3].astype(np.int32)
+                b1 = raw_bytes[1::3].astype(np.int32)
+                b2 = raw_bytes[2::3].astype(np.int32)
+                sign = (b2 >= 128).astype(np.int32) * -16777216
+                samples = b0 | (b1 << 8) | (b2 << 16) | sign
+                norm_samples = samples.astype(np.float64) / 8388608.0
             elif sampwidth == 4:
-                fmt = f"<{total_samples}i"
-                samples = struct.unpack(fmt, raw_data)
-                norm_samples = [s / 2147483648.0 for s in samples]
+                samples = np.frombuffer(raw_data, dtype=np.int32)
+                norm_samples = samples.astype(np.float64) / 2147483648.0
             else:
                 return None
                 
-            peak = max(abs(s) for s in norm_samples)
-            rms = math.sqrt(sum(s*s for s in norm_samples) / float(len(norm_samples)))
+            peak = float(np.max(np.abs(norm_samples)))
+            rms = float(np.sqrt(np.mean(norm_samples ** 2)))
             peak_db = 20 * math.log10(peak + 1e-9)
             rms_db = 20 * math.log10(rms + 1e-9)
             crest_factor = peak_db - rms_db

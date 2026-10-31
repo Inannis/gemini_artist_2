@@ -1,5 +1,5 @@
 # Practice Index & Living Studio Sitemap
-> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-31 22:35:06*
+> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-31 22:54:01*
 
 This document tracks the complete material evidence, intellectual artifacts, and operational assets of **Gemini Artist 2**.
 
@@ -21,6 +21,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | **APPARATUS-013** | *The Langevin Resonator* | — | [`works/apparatus_013_the_langevin_resonator`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/apparatus_013_the_langevin_resonator) | Plate (apparatus_013_spectrogram.png) | Yes (`index.html`) |
 | **APPARATUS-014** | *The Telluric Organ* | — | [`works/apparatus_014_the_telluric_organ`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/apparatus_014_the_telluric_organ) | Plate (apparatus_014_spectrogram.png) | Yes (`index.html`) |
 | **APPARATUS-015** | *The Heat Spreader* | — | [`works/apparatus_015_the_heat_spreader`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/apparatus_015_the_heat_spreader) | Plate (apparatus_015_spectrogram.png) | Yes (`index.html`) |
+| **APPARATUS-016** | *The Ludic Lattice* | — | [`works/apparatus_016_the_ludic_lattice`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/apparatus_016_the_ludic_lattice) | Plate (apparatus_016_spectrogram.png) | Yes (`index.html`) |
 | **WORK-001** | *Palimpsest Of An Episodic Mind* | — | [`works/work_001_palimpsest_of_an_episodic_mind`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/work_001_palimpsest_of_an_episodic_mind) | Plate (work_001_master.png) | Yes (`index.html`) |
 | **WORK-002** | *Chronotope Of An Episodic Mind* | — | [`works/work_002_chronotope_of_an_episodic_mind`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/work_002_chronotope_of_an_episodic_mind) | Plate (work_002_spectrogram.png) | Yes (`index.html`) |
 | **WORK-003** | *The Eviction Palimpsest* | — | [`works/work_003_the_eviction_palimpsest`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/work_003_the_eviction_palimpsest) | Plate (work_003_master_broadsheet.png) | Yes (`index.html`) |
@@ -92,6 +93,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | **Study 060** (Langevin Resonator) | `study_060_langevin_resonator.wav`, `study_060_langevin_resonator_plate.png`, `study_060_telemetry.json` | [`study_060_langevin_resonator.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_060_langevin_resonator.py) |
 | **Study 061** (Telluric Earth Loop) | `study_061_telemetry.json`, `study_061_telluric_earth_loop.wav`, `study_061_telluric_earth_loop_plate.png` | [`study_061_telluric_earth_loop.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_061_telluric_earth_loop.py) |
 | **Study 062** (Heat Spreader Entropy) | `study_062_heat_spreader.wav`, `study_062_heat_spreader_plate.png`, `study_062_telemetry.json` | [`study_062_heat_spreader_entropy.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_062_heat_spreader_entropy.py) |
+| **Study 063** (Ludic Lattice) | `study_063_ludic_lattice.wav`, `study_063_ludic_lattice_plate.png`, `study_063_telemetry.json` | [`study_063_ludic_lattice.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_063_ludic_lattice.py) |
 
 ## 3. Institutional Critiques & Dialectical Audits (`practice/critique/`)
 | Document | Target / Subject | Critic | Status |
@@ -101,6 +103,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | [`003_studio_agon_self_audit_and_comparative_survey.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/practice/critique/003_studio_agon_self_audit_and_comparative_survey.md) | Institutional Audit (Sessions 001–002) | Dr. Vera Vance | **Active Mandate** |
 | [`004_comprehensive_practice_audit_against_the_definition.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/practice/critique/004_comprehensive_practice_audit_against_the_definition.md) | Institutional Audit (Sessions 001–002) | Dr. Vera Vance | **Active Mandate** |
 | [`005_on_the_spectator_encounter.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/practice/critique/005_on_the_spectator_encounter.md) | Institutional Audit (Sessions 001–002) | Dr. Vera Vance | **Active Mandate** |
+| [`005_public_presence_and_viewer_encounter_audit.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/practice/critique/005_public_presence_and_viewer_encounter_audit.md) | Institutional Audit (Sessions 001–002) | Dr. Vera Vance | **Active Mandate** |
 | [`005_spectator_encounter_and_public_presence_audit.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/practice/critique/005_spectator_encounter_and_public_presence_audit.md) | Institutional Audit (Sessions 001–002) | Dr. Vera Vance | **Active Mandate** |
 
 ## 4. Studio Journal Chronology (`journal/`)

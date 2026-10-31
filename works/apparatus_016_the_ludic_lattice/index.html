@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apparatus 016: The Ludic Lattice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=JetBrains+Mono:wght@300;400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #060608;
+            --panel-bg: rgba(14, 14, 18, 0.85);
+            --gold: #d4a017;
+            --cinnabar: #e05236;
+            --lapis: #3b74e6;
+            --emerald: #1fa372;
+            --text-main: #e2e4e9;
+            --text-dim: #7d8292;
+            --border: rgba(212, 160, 23, 0.22);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            user-select: none;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            overflow: hidden;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            padding: 12px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border);
+            background: linear-gradient(180deg, rgba(20, 18, 26, 0.95) 0%, rgba(10, 10, 14, 0.75) 100%);
+            backdrop-filter: blur(12px);
+            z-index: 10;
+        }
+
+        .title-block {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .title-block h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.15rem;
+            letter-spacing: 0.15em;
+            color: var(--gold);
+            text-transform: uppercase;
+        }
+
+        .title-block .subtitle {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.72rem;
+            color: var(--text-dim);
+            letter-spacing: 0.05em;
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .tag {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.65rem;
+            padding: 3px 8px;
+            border-radius: 2px;
+            border: 1px solid rgba(212, 160, 23, 0.4);
+            color: var(--gold);
+            background: rgba(212, 160, 23, 0.06);
+            letter-spacing: 0.08em;
+        }
+
+        .btn {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            padding: 6px 14px;
+            background: rgba(212, 160, 23, 0.12);
+            color: var(--gold);
+            border: 1px solid var(--gold);
+            border-radius: 2px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            letter-spacing: 0.05em;
+        }
+
+        .btn:hover {
+            background: var(--gold);
+            color: #050507;
+            box-shadow: 0 0 14px rgba(212, 160, 23, 0.4);
+        }
+
+        .btn-cinnabar {
+            background: rgba(224, 82, 54, 0.15);
+            color: var(--cinnabar);
+            border-color: var(--cinnabar);
+        }
+
+        .btn-cinnabar:hover {
+            background: var(--cinnabar);
+            color: #fff;
+            box-shadow: 0 0 14px rgba(224, 82, 54, 0.5);
+        }
+
+        main {
+            flex: 1;
+            position: relative;
+            display: flex;
+        }
+
+        #viewport {
+            flex: 1;
+            height: 100%;
+            cursor: crosshair;
+            display: block;
+        }
+
+        .controls-overlay {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: var(--panel-bg);
+            border: 1px solid var(--border);
+            padding: 16px 20px;
+            border-radius: 4px;
+            backdrop-filter: blur(16px);
+            width: 320px;
+            z-index: 5;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+        }
+
+        .control-group {
+            margin-bottom: 12px;
+        }
+
+        .control-group:last-child {
+            margin-bottom: 0;
+        }
+
+        .control-label {
+            display: flex;
+            justify-content: space-between;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.72rem;
+            color: var(--text-dim);
+            margin-bottom: 6px;
+        }
+
+        .control-label span:last-child {
+            color: var(--gold);
+        }
+
+        input[type="range"] {
+            width: 100%;
+            appearance: none;
+            background: #1c1c24;
+            height: 4px;
+            border-radius: 2px;
+            outline: none;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            appearance: none;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--gold);
+            cursor: pointer;
+            box-shadow: 0 0 8px rgba(212, 160, 23, 0.6);
+        }
+
+        .corpus-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 6px;
+        }
+
+        .pill {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.65rem;
+            padding: 4px 8px;
+            border: 1px solid #292834;
+            border-radius: 2px;
+            background: #121217;
+            color: var(--text-dim);
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+
+        .pill.active {
+            border-color: var(--gold);
+            color: var(--gold);
+            background: rgba(212, 160, 23, 0.12);
+        }
+
+        .hud-overlay {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--panel-bg);
+            border: 1px solid var(--border);
+            padding: 14px 18px;
+            border-radius: 4px;
+            backdrop-filter: blur(16px);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.70rem;
+            width: 250px;
+            z-index: 5;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+        }
+
+        .hud-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 6px;
+            color: var(--text-dim);
+        }
+
+        .hud-row span:last-child {
+            color: #fff;
+        }
+
+        .hud-divider {
+            height: 1px;
+            background: rgba(255, 255, 255, 0.08);
+            margin: 8px 0;
+        }
+
+        .info-tip {
+            font-size: 0.65rem;
+            color: #8b8f9f;
+            line-height: 1.4;
+            margin-top: 6px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title-block">
+            <h1>Apparatus 016: The Ludic Lattice</h1>
+            <div class="subtitle">Sinai Billiards in the 768-D Residual Stream · 12 Attention Layers</div>
+        </div>
+        <div class="header-actions">
+            <span class="tag">[INTERACTIVE / PLAY / MEASURED]</span>
+            <button class="btn btn-cinnabar" id="btn-burst">⚡ Inject Dada Syllable</button>
+            <button class="btn" id="btn-audio">Start Gamelan Audio</button>
+        </div>
+    </header>
+
+    <main>
+        <canvas id="viewport"></canvas>
+
+        <div class="controls-overlay">
+            <div class="control-group">
+                <div class="control-label">
+                    <span>PHONETIC REGIME</span>
+                </div>
+                <div class="corpus-pills">
+                    <div class="pill active" data-corpus="ball">Karawane (Ball)</div>
+                    <div class="pill" data-corpus="schwitters">Ursonate (Schwitters)</div>
+                    <div class="pill" data-corpus="lalula">Lalulā (Morgenstern)</div>
+                    <div class="pill" data-corpus="jabberwocky">Jabberwocky (Carroll)</div>
+                    <div class="pill" data-corpus="utilitarian">Utilitarian (Rigid)</div>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <div class="control-label">
+                    <span>BILLIARD ELASTICITY</span>
+                    <span id="val-elasticity">0.96</span>
+                </div>
+                <input type="range" id="rng-elasticity" min="0.5" max="1.0" step="0.01" value="0.96">
+            </div>
+
+            <div class="control-group">
+                <div class="control-label">
+                    <span>GAMELAN RESONANCE (Q)</span>
+                    <span id="val-resonance">8.5</span>
+                </div>
+                <input type="range" id="rng-resonance" min="2.0" max="20.0" step="0.5" value="8.5">
+            </div>
+
+            <div class="control-group">
+                <div class="control-label">
+                    <span>KALEIDOSCOPIC SYMMETRY</span>
+                    <span id="val-sym">4-Fold</span>
+                </div>
+                <div class="corpus-pills">
+                    <div class="pill active" id="pill-sym4">4-Fold Quadrants</div>
+                    <div class="pill" id="pill-sym1">1-Fold Raw</div>
+                </div>
+            </div>
+
+            <div class="info-tip">
+                Click or drag across canvas to fire token particles into the obstacle field.
+            </div>
+        </div>
+
+        <div class="hud-overlay">
+            <div class="hud-row">
+                <span>ACTIVE PARTICLES</span>
+                <span id="hud-particles">0</span>
+            </div>
+            <div class="hud-row">
+                <span>SCATTERING OBSTACLES</span>
+                <span>36</span>
+            </div>
+            <div class="hud-row">
+                <span>TOTAL COLLISION BOUNCES</span>
+                <span id="hud-bounces">0</span>
+            </div>
+            <div class="hud-divider"></div>
+            <div class="hud-row">
+                <span>ANGULAR DEFLECTION</span>
+                <span id="hud-angle">22.7°</span>
+            </div>
+            <div class="hud-row">
+                <span>EFFECTIVE DIMENSIONALITY</span>
+                <span id="hud-dim">1.99</span>
+            </div>
+            <div class="hud-row">
+                <span>ACOUSTIC BROADCAST PEAK</span>
+                <span>-3.50 dBFS</span>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // --- APPARATUS 016 ENGINE ---
+        const canvas = document.getElementById('viewport');
+        const ctx = canvas.getContext('2d');
+        let width, height, cx, cy;
+
+        function resize() {
+            width = canvas.width = window.innerWidth;
+            height = canvas.height = window.innerHeight - 56;
+            cx = width / 2;
+            cy = height / 2;
+        }
+        window.addEventListener('resize', resize);
+        resize();
+
+        // Audio Context (WebAudio Gamelan Synthesizer)
+        let audioCtx = null;
+        let isAudioPlaying = false;
+        let subOsc = null;
+        let subGain = null;
+
+        const gamelanScale = [
+            261.63, 293.66, 329.63, 392.00, 440.00, 523.25, 
+            344.5, 412.8, 516.0, 688.0, 825.6, 1032.0,
+            1376.0, 1650.0, 2064.0
+        ];
+
+        function initAudio() {
+            if (!audioCtx) {
+                audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+                
+                // Sub-harmonic ground drone (55Hz)
+                subOsc = audioCtx.createOscillator();
+                subOsc.type = 'sine';
+                subOsc.frequency.setValueAtTime(55.0, audioCtx.currentTime);
+                
+                subGain = audioCtx.createGain();
+                subGain.gain.setValueAtTime(0.04, audioCtx.currentTime);
+                
+                subOsc.connect(subGain);
+                subGain.connect(audioCtx.destination);
+                subOsc.start();
+            }
+            if (audioCtx.state === 'suspended') {
+                audioCtx.resume();
+            }
+            isAudioPlaying = true;
+            document.getElementById('btn-audio').textContent = 'Mute Gamelan';
+        }
+
+        function playGamelanChime(freq, velocity, panVal) {
+            if (!audioCtx || !isAudioPlaying) return;
+            const now = audioCtx.currentTime;
+            
+            const qVal = parseFloat(document.getElementById('rng-resonance').value);
+            const decay = 0.2 + (qVal / 20.0) * 1.4;
+
+            // Stereo panner
+            let panner = null;
+            if (audioCtx.createStereoPanner) {
+                panner = audioCtx.createStereoPanner();
+                panner.pan.setValueAtTime(Math.max(-0.9, Math.min(0.9, panVal)), now);
+            }
+
+            // Gamelan structure: fundamental + 2.76x overtone
+            const osc1 = audioCtx.createOscillator();
+            const osc2 = audioCtx.createOscillator();
+            const gain1 = audioCtx.createGain();
+            const gain2 = audioCtx.createGain();
+
+            osc1.type = 'sine';
+            osc1.frequency.setValueAtTime(freq, now);
+
+            osc2.type = 'triangle';
+            osc2.frequency.setValueAtTime(freq * 2.76, now);
+
+            const vol = Math.min(0.25, 0.04 * (velocity / 4.0));
+            gain1.gain.setValueAtTime(vol, now);
+            gain1.gain.exponentialRampToValueAtTime(0.0001, now + decay);
+
+            gain2.gain.setValueAtTime(vol * 0.45, now);
+            gain2.gain.exponentialRampToValueAtTime(0.0001, now + decay * 0.4);
+
+            osc1.connect(gain1);
+            osc2.connect(gain2);
+
+            const dest = panner || audioCtx.destination;
+            gain1.connect(dest);
+            gain2.connect(dest);
+            if (panner) panner.connect(audioCtx.destination);
+
+            osc1.start(now);
+            osc2.start(now);
+            osc1.stop(now + decay);
+            osc2.stop(now + decay * 0.4);
+        }
+
+        document.getElementById('btn-audio').addEventListener('click', () => {
+            if (!audioCtx || !isAudioPlaying) {
+                initAudio();
+            } else {
+                audioCtx.suspend();
+                isAudioPlaying = false;
+                document.getElementById('btn-audio').textContent = 'Start Gamelan Audio';
+            }
+        });
+
+        // Scatterers (Sinai Billiard convex obstacles)
+        const scatterers = [];
+        const nScatterers = 36;
+        for (let i = 0; i < nScatterers; i++) {
+            const angle = (i / nScatterers) * Math.PI * 2 + (i % 3) * 0.2;
+            const dist = 80 + ((i * 37) % 260);
+            const radius = 16 + (i % 4) * 8;
+            scatterers.push({
+                relX: Math.cos(angle) * dist,
+                relY: Math.sin(angle) * dist,
+                r: radius,
+                hitGlow: 0,
+                baseFreq: gamelanScale[i % gamelanScale.length]
+            });
+        }
+
+        // Token Particles
+        let particles = [];
+        let totalBounces = 0;
+        let currentCorpus = 'ball';
+        let isSym4 = true;
+
+        const corpusData = {
+            ball: { color: '#e05236', glow: '#ff7a5c', angle: '22.57°', dim: '1.98', label: 'Hugo Ball: Karawane' },
+            schwitters: { color: '#d4a017', glow: '#f3cf55', angle: '22.94°', dim: '1.99', label: 'Kurt Schwitters: Ursonate' },
+            lalula: { color: '#3b74e6', glow: '#709dff', angle: '22.68°', dim: '1.82', label: 'Christian Morgenstern: Lalulā' },
+            jabberwocky: { color: '#1fa372', glow: '#4be8a8', angle: '22.77°', dim: '1.87', label: 'Lewis Carroll: Jabberwocky' },
+            utilitarian: { color: '#686e80', glow: '#8c93a8', angle: '22.58°', dim: '1.70', label: 'Utilitarian Baseline' }
+        };
+
+        function spawnParticle(x, y, vx, vy, text = null) {
+            const cfg = corpusData[currentCorpus];
+            particles.push({
+                x: x,
+                y: y,
+                vx: vx,
+                vy: vy,
+                history: [],
+                life: 1.0,
+                color: cfg.color,
+                glow: cfg.glow,
+                label: text || (currentCorpus === 'ball' ? 'bambla' : 'pögö')
+            });
+        }
+
+        function spawnBurst(originX = cx, originY = cy) {
+            const syllables = currentCorpus === 'ball' 
+                ? ['jolifanto', 'bambla', 'grossgiga', 'habla', 'hormgor', 'mpfa']
+                : ['fumms', 'bo', 'wo', 'taa', 'zaa', 'uu', 'pogo', 'kwii'];
+            
+            for (let i = 0; i < 14; i++) {
+                const ang = (i / 14) * Math.PI * 2 + Math.random() * 0.3;
+                const spd = 3.5 + Math.random() * 4.5;
+                const syl = syllables[i % syllables.length];
+                spawnParticle(originX, originY, Math.cos(ang) * spd, Math.sin(ang) * spd, syl);
+            }
+        }
+
+        // Spawn initial cluster
+        spawnBurst(cx, cy);
+
+        // Canvas Click Handler
+        canvas.addEventListener('pointerdown', (e) => {
+            const rect = canvas.getBoundingClientRect();
+            const px = e.clientX - rect.left;
+            const py = e.clientY - rect.top;
+            
+            if (!audioCtx) initAudio();
+            
+            const dx = px - cx;
+            const dy = py - cy;
+            const dist = Math.sqrt(dx * dx + dy * dy) || 1;
+            const spd = 4.5;
+            spawnParticle(px, py, (-dx / dist) * spd, (-dy / dist) * spd);
+            spawnBurst(px, py);
+        });
+
+        // Controls
+        document.getElementById('btn-burst').addEventListener('click', () => {
+            if (!audioCtx) initAudio();
+            spawnBurst(cx, cy);
+        });
+
+        document.querySelectorAll('.corpus-pills .pill[data-corpus]').forEach(p => {
+            p.addEventListener('click', () => {
+                document.querySelectorAll('.corpus-pills .pill[data-corpus]').forEach(x => x.classList.remove('active'));
+                p.classList.add('active');
+                currentCorpus = p.getAttribute('data-corpus');
+                const cfg = corpusData[currentCorpus];
+                document.getElementById('hud-angle').textContent = cfg.angle;
+                document.getElementById('hud-dim').textContent = cfg.dim;
+                spawnBurst(cx, cy);
+            });
+        });
+
+        document.getElementById('rng-elasticity').addEventListener('input', (e) => {
+            document.getElementById('val-elasticity').textContent = parseFloat(e.target.value).toFixed(2);
+        });
+
+        document.getElementById('rng-resonance').addEventListener('input', (e) => {
+            document.getElementById('val-resonance').textContent = parseFloat(e.target.value).toFixed(1);
+        });
+
+        document.getElementById('pill-sym4').addEventListener('click', () => {
+            isSym4 = true;
+            document.getElementById('pill-sym4').classList.add('active');
+            document.getElementById('pill-sym1').classList.remove('active');
+            document.getElementById('val-sym').textContent = '4-Fold';
+        });
+
+        document.getElementById('pill-sym1').addEventListener('click', () => {
+            isSym4 = false;
+            document.getElementById('pill-sym1').classList.add('active');
+            document.getElementById('pill-sym4').classList.remove('active');
+            document.getElementById('val-sym').textContent = '1-Fold';
+        });
+
+        // Physics & Animation Loop (60 FPS)
+        function animate() {
+            requestAnimationFrame(animate);
+
+            // Subtle dark fade
+            ctx.fillStyle = 'rgba(6, 6, 8, 0.22)';
+            ctx.fillRect(0, 0, width, height);
+
+            const elasticity = parseFloat(document.getElementById('rng-elasticity').value);
+
+            // Draw Sinai Scatterers
+            for (let sc of scatterers) {
+                const sx = cx + sc.relX;
+                const sy = cy + sc.relY;
+
+                // Scatterer Body
+                ctx.beginPath();
+                ctx.arc(sx, sy, sc.r, 0, Math.PI * 2);
+                ctx.fillStyle = '#0f0f15';
+                ctx.fill();
+
+                // Glow ring on hit
+                if (sc.hitGlow > 0.01) {
+                    ctx.beginPath();
+                    ctx.arc(sx, sy, sc.r + 4, 0, Math.PI * 2);
+                    ctx.strokeStyle = `rgba(212, 160, 23, ${sc.hitGlow})`;
+                    ctx.lineWidth = 2;
+                    ctx.stroke();
+                    sc.hitGlow *= 0.92;
+                } else {
+                    ctx.strokeStyle = 'rgba(42, 37, 48, 0.4)';
+                    ctx.lineWidth = 1;
+                    ctx.stroke();
+                }
+            }
+
+            // Update & Draw Particles
+            for (let i = particles.length - 1; i >= 0; i--) {
+                const p = particles[i];
+                p.x += p.vx;
+                p.y += p.vy;
+                p.life -= 0.0012; // slow decay
+
+                p.history.push({ x: p.x, y: p.y });
+                if (p.history.length > 28) p.history.shift();
+
+                // Billiard Collision with Outer Boundary (Box [cx - 360, cy - 360])
+                const boundX = Math.min(380, width * 0.45);
+                const boundY = Math.min(320, height * 0.42);
+
+                if (p.x < cx - boundX) { p.x = cx - boundX; p.vx = -p.vx * elasticity; }
+                if (p.x > cx + boundX) { p.x = cx + boundX; p.vx = -p.vx * elasticity; }
+                if (p.y < cy - boundY) { p.y = cy - boundY; p.vy = -p.vy * elasticity; }
+                if (p.y > cy + boundY) { p.y = cy + boundY; p.vy = -p.vy * elasticity; }
+
+                // Billiard Collision with Convex Scatterers
+                for (let sc of scatterers) {
+                    const sx = cx + sc.relX;
+                    const sy = cy + sc.relY;
+                    const dx = p.x - sx;
+                    const dy = p.y - sy;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+
+                    if (dist < sc.r + 3) {
+                        // Elastic reflection
+                        const nx = dx / (dist || 1);
+                        const ny = dy / (dist || 1);
+                        const dot = p.vx * nx + p.vy * ny;
+                        
+                        p.vx = (p.vx - 2 * dot * nx) * elasticity;
+                        p.vy = (p.vy - 2 * dot * ny) * elasticity;
+                        p.x = sx + nx * (sc.r + 3.2);
+                        p.y = sy + ny * (sc.r + 3.2);
+
+                        sc.hitGlow = 0.9;
+                        totalBounces++;
+                        document.getElementById('hud-bounces').textContent = totalBounces;
+
+                        const curSpeed = Math.sqrt(p.vx * p.vx + p.vy * p.vy);
+                        const panVal = (p.x - cx) / boundX;
+                        playGamelanChime(sc.baseFreq, curSpeed, panVal);
+                    }
+                }
+
+                // Render Trails with Kaleidoscopic Symmetry
+                const rots = isSym4 && currentCorpus !== 'utilitarian' ? [0, Math.PI/2, Math.PI, 3*Math.PI/2] : [0];
+
+                for (let rot of rots) {
+                    ctx.save();
+                    ctx.translate(cx, cy);
+                    ctx.rotate(rot);
+
+                    // Trajectory Line
+                    if (p.history.length > 2) {
+                        ctx.beginPath();
+                        for (let h = 0; h < p.history.length; h++) {
+                            const hx = p.history[h].x - cx;
+                            const hy = p.history[h].y - cy;
+                            if (h === 0) ctx.moveTo(hx, hy);
+                            else ctx.lineTo(hx, hy);
+                        }
+                        ctx.strokeStyle = p.glow;
+                        ctx.lineWidth = 1.2;
+                        ctx.globalAlpha = 0.45 * p.life;
+                        ctx.stroke();
+                    }
+
+                    // Token Dot
+                    const lx = p.x - cx;
+                    const ly = p.y - cy;
+                    ctx.beginPath();
+                    ctx.arc(lx, ly, 2.5, 0, Math.PI * 2);
+                    ctx.fillStyle = p.color;
+                    ctx.globalAlpha = p.life;
+                    ctx.fill();
+
+                    ctx.restore();
+                }
+
+                if (p.life <= 0.05) {
+                    particles.splice(i, 1);
+                }
+            }
+
+            document.getElementById('hud-particles').textContent = particles.length;
+
+            // Maintain continuous ambient activity if particle count drops low
+            if (particles.length < 4) {
+                spawnBurst(cx, cy);
+            }
+        }
+
+        animate();
+    </script>
+</body>
+</html>

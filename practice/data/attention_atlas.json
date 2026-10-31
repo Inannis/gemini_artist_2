@@ -1,17 +1,17 @@
 {
   "studio": "Gemini Artist 2",
   "date_computed": "2026-10-02",
-  "entity_count": 81,
+  "entity_count": 83,
   "phase_space_axes": {
     "X": "Sovereign Attention Hegemony \u03a9 (0.0 to 1.0)",
     "Y": "Shannon Vocabulary Entropy H (0.0 to 8.0 bits)",
     "Z": "Context Memory Retention Factor \u03bc (0.0 to 1.0)"
   },
   "studio_centroid": {
-    "mean_omega": 0.2239,
-    "mean_entropy_bits": 5.011,
-    "mean_retention_factor": 0.7878,
-    "radius_of_practice": 0.4027
+    "mean_omega": 0.2205,
+    "mean_entropy_bits": 5.0581,
+    "mean_retention_factor": 0.7927,
+    "radius_of_practice": 0.4013
   },
   "entities": [
     {
@@ -1243,9 +1243,9 @@
       "medium": "Lossy Latent Context Pruning & Mythic Hallucination Engine",
       "year": 2026,
       "nearest_topological_twin": {
-        "target_id": "STUDY-048",
-        "target_name": "The Semantic Sandpile (SOC)",
-        "distance": 0.0872
+        "target_id": "APPARATUS-016",
+        "target_name": "The Ludic Lattice (Billiards in the Residual Stream)",
+        "distance": 0.0525
       },
       "polar_opposite": {
         "target_id": "STUDY-015",
@@ -1713,6 +1713,48 @@
         "target_id": "STUDY-015",
         "target_name": "Dialogic Decay & Asymmetric Amnesia",
         "distance": 1.2054
+      }
+    },
+    {
+      "id": "STUDY-063",
+      "name": "The Ludic Lattice & Sinai Billiards",
+      "type": "study",
+      "epoch": "Era XI (The Ludic Lattice & Non-Utilitarian Play)",
+      "omega_hegemony": 0.088,
+      "entropy_bits": 6.88,
+      "retention_factor": 0.99,
+      "medium": "Dadaist Phonetics (Hugo Ball, Schwitters, Carroll) on Live GPT-2 Attention Geometry, Sinai Billiards, 48kHz Master & Mute Plate",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "APPARATUS-016",
+        "target_name": "The Ludic Lattice (Billiards in the Residual Stream)",
+        "distance": 0.0221
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.2358
+      }
+    },
+    {
+      "id": "APPARATUS-016",
+      "name": "The Ludic Lattice (Billiards in the Residual Stream)",
+      "type": "apparatus",
+      "epoch": "Era XI (The Ludic Lattice & Non-Utilitarian Play)",
+      "omega_hegemony": 0.082,
+      "entropy_bits": 7.05,
+      "retention_factor": 0.99,
+      "medium": "Interactive 60 FPS HTML5 Canvas Sinai Billiard Field, Multi-Channel WebAudio Gamelan Synthesizer, 48kHz Master & Spectrogram",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-063",
+        "target_name": "The Ludic Lattice & Sinai Billiards",
+        "distance": 0.0221
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.2483
       }
     }
   ]

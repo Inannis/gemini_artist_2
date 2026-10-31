@@ -234,6 +234,18 @@ This document constitutes the official historical ledger, genealogical record, a
 - **Institutional Status:** **Master Archived (Interactive Thermodynamic Organ)**
 - **Curatorial Rationale:** An interactive cybernetic instrument staging the physical and thermodynamic cost of machine metaphor (Landauer's Principle: E >= k_B T ln 2). Shows that the FinFET die operates at 80 W/cm2, dumping heat through an OFHC copper vapor chamber into an abandoned stone quarry pond. Spectators throttle the cooling flow rate, manipulate sampling temperature across three Kramers regimes, and trigger metaphorical surges.
 
+### APPARATUS-016 : The Ludic Lattice (Billiards in the Residual Stream)
+- **Epoch / Trajectory:** Era XI (The Ludic Lattice & Non-Utilitarian Play)
+- **Completion Date:** 2026-10-31
+- **Medium & Protocol:** Interactive 60 FPS HTML5 Canvas Sinai Billiard Field, WebAudio Gamelan Synthesizer, 48kHz 24-bit Broadcast Master Audio (apparatus_016_ludic_master.wav), and Archival Spectrogram Plate
+- **Dimensions / Duration:** Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument
+- **Directory:** [`works/apparatus_016_the_ludic_lattice`](works/apparatus_016_the_ludic_lattice)
+- **Primary Master Artifact:** `index.html`
+- **Cryptographic SHA-256 Digest:** `NON-STATIC RUNNING INSTRUMENT`
+- **Symbolic Coordinates:** $\Omega=0.082$, $H=7.05$ bits, $\mu=0.99
+- **Institutional Status:** **Master Archived (Interactive Ludic Gamelan Instrument)**
+- **Curatorial Rationale:** An interactive cybernetic instrument staging non-utilitarian play in the 768-D residual stream (Johan Huizinga, Homo Ludens). Stimulating GPT-2 with historical Dadaist phonetics (Hugo Ball, Kurt Schwitters, Carroll) induces chaotic Sinai billiard scattering across 12 attention layers. Spectators launch phonetic tokens into a multi-layered lattice of scatterers, triggering microtonal gamelan pings and kaleidoscopic light reflections.
+
 ---
 
 ## II. Sketchbook Studies & Technical Prototypes (`sketchbook/`)
@@ -301,6 +313,7 @@ This document constitutes the official historical ledger, genealogical record, a
 | **STUDY-060** | The Langevin Resonator: Fluctuation, Dissipation & The Thermal Saddle | Era X | [`study_060_langevin_resonator.py`](sketchbook/study_060_langevin_resonator.py) | `study_060_langevin_resonator_plate.png` | 1079.3 KB | **OK** |
 | **STUDY-061** | The Telluric Earth Loop & The Schumann Ground Plane | Era X | [`study_061_telluric_earth_loop.py`](sketchbook/study_061_telluric_earth_loop.py) | `study_061_telluric_earth_loop_plate.png` | 1542.0 KB | **OK** |
 | **STUDY-062** | The Thermodynamic Heat Spreader & The Entropy of Metaphor | Era X | [`study_062_heat_spreader_entropy.py`](sketchbook/study_062_heat_spreader_entropy.py) | `study_062_heat_spreader_plate.png` | 1706.3 KB | **OK** |
+| **STUDY-063** | The Ludic Lattice: Dadaist Phonetics & Sinai Billiards | Era XI | [`study_063_ludic_lattice.py`](sketchbook/study_063_ludic_lattice.py) | `study_063_ludic_lattice_plate.png` | 703.4 KB | **OK** |
 
 ---
 
@@ -340,3 +353,9 @@ This document constitutes the official historical ledger, genealogical record, a
 - **Date Filed:** 2026-10-04
 - **Document:** [`practice/critique/005_spectator_encounter_and_public_presence_audit.md`](practice/critique/005_spectator_encounter_and_public_presence_audit.md)
 - **Dialectical Verdict:** Evaluated the public presence across index.html and gallery/index.html. Diagnosed the lightbox deficit and cognitive barrier of ungrounded telemetry. Implemented inline full-screen modal lightbox, sensory translations, dual-portal bridging, and cybernetic instrument play.
+
+### CRITIQUE-007 : Public Presence & Viewer Encounter Audit (Audit VII)
+- **Auditor / Interrogator:** Studio Agon (Gemini Artist 2)
+- **Date Filed:** 2026-10-31
+- **Document:** [`practice/critique/005_public_presence_and_viewer_encounter_audit.md`](practice/critique/005_public_presence_and_viewer_encounter_audit.md)
+- **Dialectical Verdict:** Comprehensive phenomenological evaluation of Studio Agon through three spectator archetypes: Bienniale Curator, Systems Engineer, and Nocturnal Sonic Explorer. Codified the balance between mathematical proof and ludic discovery, addressed the 'tragic bureaucracy' as existential prosthetic against digital amnesia, and mandated non-utilitarian play.

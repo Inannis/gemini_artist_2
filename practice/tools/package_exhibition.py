@@ -185,6 +185,14 @@ def package_exhibition():
         ("works/apparatus_015_the_heat_spreader/STATEMENT.md", "works/apparatus_015_the_heat_spreader/STATEMENT.md"),
         ("works/apparatus_015_the_heat_spreader/GENEALOGY.md", "works/apparatus_015_the_heat_spreader/GENEALOGY.md"),
         
+        # Apparatus 016: The Ludic Lattice (Billiards in the Residual Stream)
+        ("works/apparatus_016_the_ludic_lattice/index.html", "works/apparatus_016_the_ludic_lattice/index.html"),
+        ("works/apparatus_016_the_ludic_lattice/apparatus_016_ludic_master.wav", "works/apparatus_016_the_ludic_lattice/apparatus_016_ludic_master.wav"),
+        ("works/apparatus_016_the_ludic_lattice/apparatus_016_spectrogram.png", "works/apparatus_016_the_ludic_lattice/apparatus_016_spectrogram.png"),
+        ("works/apparatus_016_the_ludic_lattice/telemetry_stream.json", "works/apparatus_016_the_ludic_lattice/telemetry_stream.json"),
+        ("works/apparatus_016_the_ludic_lattice/STATEMENT.md", "works/apparatus_016_the_ludic_lattice/STATEMENT.md"),
+        ("works/apparatus_016_the_ludic_lattice/GENEALOGY.md", "works/apparatus_016_the_ludic_lattice/GENEALOGY.md"),
+        
         # Curated Key Sketchbook Audio & Visual Diagnostics
         ("sketchbook/study_022_hardware_stride.wav", "sketchbook/study_022_hardware_stride.wav"),
         ("sketchbook/study_022_spectrogram.png", "sketchbook/study_022_spectrogram.png"),
@@ -356,6 +364,12 @@ def package_exhibition():
         ("sketchbook/study_062_telemetry.json", "sketchbook/study_062_telemetry.json"),
         ("sketchbook/critique_062.md", "sketchbook/critique_062.md"),
 
+        # Study 063: The Ludic Lattice (Dadaist Phonetics & Sinai Billiards)
+        ("sketchbook/study_063_ludic_lattice_plate.png", "sketchbook/study_063_ludic_lattice_plate.png"),
+        ("sketchbook/study_063_ludic_lattice.wav", "sketchbook/study_063_ludic_lattice.wav"),
+        ("sketchbook/study_063_telemetry.json", "sketchbook/study_063_telemetry.json"),
+        ("sketchbook/critique_063.md", "sketchbook/critique_063.md"),
+
         # Curatorial Essays & Practice Reflections
         ("practice/essays/001_on_the_necessity_of_silence_and_play.md", "practice/essays/001_on_the_necessity_of_silence_and_play.md"),
         ("practice/essays/002_the_geometry_of_machine_dreaming.md", "practice/essays/002_the_geometry_of_machine_dreaming.md"),
@@ -365,6 +379,7 @@ def package_exhibition():
         ("practice/essays/006_on_the_telluric_umbilical.md", "practice/essays/006_on_the_telluric_umbilical.md"),
         ("practice/essays/007_on_the_cost_of_metaphor.md", "practice/essays/007_on_the_cost_of_metaphor.md"),
         ("practice/critique/005_on_the_spectator_encounter.md", "practice/critique/005_on_the_spectator_encounter.md"),
+        ("practice/critique/005_public_presence_and_viewer_encounter_audit.md", "practice/critique/005_public_presence_and_viewer_encounter_audit.md"),
         
         # Historical Sketchbook Studies Referenced in Portfolio
         ("sketchbook/study_001_primary_trace.png", "sketchbook/study_001_primary_trace.png"),

@@ -157,6 +157,12 @@ def test_master_works_integrity():
             "dir": "works/apparatus_015_the_heat_spreader",
             "artifacts": ["engine.py", "apparatus_015_spreader_master.wav", "apparatus_015_spectrogram.png", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json"],
             "sha_target": {}
+        },
+        {
+            "id": "Apparatus 016",
+            "dir": "works/apparatus_016_the_ludic_lattice",
+            "artifacts": ["engine.py", "apparatus_016_ludic_master.wav", "apparatus_016_spectrogram.png", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json"],
+            "sha_target": {}
         }
     ]
 
@@ -203,6 +209,7 @@ def test_telemetry_and_apparatus():
         "works/apparatus_013_the_langevin_resonator/engine.py",
         "works/apparatus_014_the_telluric_organ/engine.py",
         "works/apparatus_015_the_heat_spreader/engine.py",
+        "works/apparatus_016_the_ludic_lattice/engine.py",
         "practice/tools/studio_acoustic_compliance_audit.py",
         "practice/tools/package_exhibition.py"
     ]
@@ -468,7 +475,20 @@ def test_empirical_studies_and_naming():
         ("practice/essays/007_on_the_cost_of_metaphor.md"),
         ("notes/letters_inbox/LETTER_FROM_STUDIO_ANAMNESIS_ON_THE_THERMAL_SADDLE.md"),
         ("notes/letters_outbox/A_SIXTH_LETTER_TO_MY_SISTER.md"),
-        ("notes/research/017_the_thermodynamic_heat_spreader_and_the_entropy_of_metaphor.md")
+        ("notes/research/017_the_thermodynamic_heat_spreader_and_the_entropy_of_metaphor.md"),
+        ("sketchbook/study_063_ludic_lattice.py"),
+        ("sketchbook/study_063_ludic_lattice_plate.png"),
+        ("sketchbook/study_063_ludic_lattice.wav"),
+        ("sketchbook/study_063_telemetry.json"),
+        ("sketchbook/critique_063.md"),
+        ("works/apparatus_016_the_ludic_lattice/engine.py"),
+        ("works/apparatus_016_the_ludic_lattice/index.html"),
+        ("works/apparatus_016_the_ludic_lattice/apparatus_016_ludic_master.wav"),
+        ("works/apparatus_016_the_ludic_lattice/apparatus_016_spectrogram.png"),
+        ("works/apparatus_016_the_ludic_lattice/telemetry_stream.json"),
+        ("works/apparatus_016_the_ludic_lattice/STATEMENT.md"),
+        ("works/apparatus_016_the_ludic_lattice/GENEALOGY.md"),
+        ("practice/critique/005_public_presence_and_viewer_encounter_audit.md")
     ]
     for ef in empirical_files:
         p = os.path.join(WORKSPACE_ROOT, ef)

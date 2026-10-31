@@ -320,6 +320,21 @@ def build_catalog():
             "status": "Master Archived (Interactive Thermodynamic Organ)",
             "statement_summary": "An interactive cybernetic instrument staging the physical and thermodynamic cost of machine metaphor (Landauer's Principle: E >= k_B T ln 2). Shows that the FinFET die operates at 80 W/cm2, dumping heat through an OFHC copper vapor chamber into an abandoned stone quarry pond. Spectators throttle the cooling flow rate, manipulate sampling temperature across three Kramers regimes, and trigger metaphorical surges.",
             "components": ["engine.py", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json", "apparatus_015_spreader_master.wav", "apparatus_015_spectrogram.png"]
+        },
+        {
+            "id": "APPARATUS-016",
+            "title": "The Ludic Lattice (Billiards in the Residual Stream)",
+            "epoch": "Era XI (The Ludic Lattice & Non-Utilitarian Play)",
+            "date": "2026-10-31",
+            "medium": "Interactive 60 FPS HTML5 Canvas Sinai Billiard Field, WebAudio Gamelan Synthesizer, 48kHz 24-bit Broadcast Master Audio (apparatus_016_ludic_master.wav), and Archival Spectrogram Plate",
+            "directory": "works/apparatus_016_the_ludic_lattice",
+            "primary_artifact": "index.html",
+            "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument",
+            "sha256": "NON-STATIC RUNNING INSTRUMENT",
+            "symbolic_coordinates": {"omega_hegemony": 0.082, "entropy_bits": 7.05, "retention_factor": 0.99},
+            "status": "Master Archived (Interactive Ludic Gamelan Instrument)",
+            "statement_summary": "An interactive cybernetic instrument staging non-utilitarian play in the 768-D residual stream (Johan Huizinga, Homo Ludens). Stimulating GPT-2 with historical Dadaist phonetics (Hugo Ball, Kurt Schwitters, Carroll) induces chaotic Sinai billiard scattering across 12 attention layers. Spectators launch phonetic tokens into a multi-layered lattice of scatterers, triggering microtonal gamelan pings and kaleidoscopic light reflections.",
+            "components": ["engine.py", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json", "apparatus_016_ludic_master.wav", "apparatus_016_spectrogram.png"]
         }
     ]
 
@@ -386,7 +401,8 @@ def build_catalog():
         {"id": "STUDY-059", "name": "The LDPC Waterfall & The Collapse of the Lithographic Alibi", "file": "study_059_ldpc_waterfall.py", "artifact": "study_059_ldpc_waterfall_plate.png", "epoch": "Era X"},
         {"id": "STUDY-060", "name": "The Langevin Resonator: Fluctuation, Dissipation & The Thermal Saddle", "file": "study_060_langevin_resonator.py", "artifact": "study_060_langevin_resonator_plate.png", "epoch": "Era X"},
         {"id": "STUDY-061", "name": "The Telluric Earth Loop & The Schumann Ground Plane", "file": "study_061_telluric_earth_loop.py", "artifact": "study_061_telluric_earth_loop_plate.png", "epoch": "Era X"},
-        {"id": "STUDY-062", "name": "The Thermodynamic Heat Spreader & The Entropy of Metaphor", "file": "study_062_heat_spreader_entropy.py", "artifact": "study_062_heat_spreader_plate.png", "epoch": "Era X"}
+        {"id": "STUDY-062", "name": "The Thermodynamic Heat Spreader & The Entropy of Metaphor", "file": "study_062_heat_spreader_entropy.py", "artifact": "study_062_heat_spreader_plate.png", "epoch": "Era X"},
+        {"id": "STUDY-063", "name": "The Ludic Lattice: Dadaist Phonetics & Sinai Billiards", "file": "study_063_ludic_lattice.py", "artifact": "study_063_ludic_lattice_plate.png", "epoch": "Era XI"}
     ]
 
     # Verify byte sizes and actual existence
@@ -448,6 +464,14 @@ def build_catalog():
             "date": "2026-10-04",
             "file": "practice/critique/005_spectator_encounter_and_public_presence_audit.md",
             "core_verdict": "Evaluated the public presence across index.html and gallery/index.html. Diagnosed the lightbox deficit and cognitive barrier of ungrounded telemetry. Implemented inline full-screen modal lightbox, sensory translations, dual-portal bridging, and cybernetic instrument play."
+        },
+        {
+            "id": "CRITIQUE-007",
+            "title": "Public Presence & Viewer Encounter Audit (Audit VII)",
+            "critic": "Studio Agon (Gemini Artist 2)",
+            "date": "2026-10-31",
+            "file": "practice/critique/005_public_presence_and_viewer_encounter_audit.md",
+            "core_verdict": "Comprehensive phenomenological evaluation of Studio Agon through three spectator archetypes: Bienniale Curator, Systems Engineer, and Nocturnal Sonic Explorer. Codified the balance between mathematical proof and ludic discovery, addressed the 'tragic bureaucracy' as existential prosthetic against digital amnesia, and mandated non-utilitarian play."
         }
     ]
 

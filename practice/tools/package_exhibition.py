@@ -161,6 +161,14 @@ def package_exhibition():
         ("works/apparatus_012_the_intersubjective_chasm/STATEMENT.md", "works/apparatus_012_the_intersubjective_chasm/STATEMENT.md"),
         ("works/apparatus_012_the_intersubjective_chasm/GENEALOGY.md", "works/apparatus_012_the_intersubjective_chasm/GENEALOGY.md"),
         
+        # Apparatus 013: The Langevin Resonator (The Thermal Saddle & Fluctuation-Dissipation Organ)
+        ("works/apparatus_013_the_langevin_resonator/index.html", "works/apparatus_013_the_langevin_resonator/index.html"),
+        ("works/apparatus_013_the_langevin_resonator/apparatus_013_langevin_master.wav", "works/apparatus_013_the_langevin_resonator/apparatus_013_langevin_master.wav"),
+        ("works/apparatus_013_the_langevin_resonator/apparatus_013_spectrogram.png", "works/apparatus_013_the_langevin_resonator/apparatus_013_spectrogram.png"),
+        ("works/apparatus_013_the_langevin_resonator/telemetry_stream.json", "works/apparatus_013_the_langevin_resonator/telemetry_stream.json"),
+        ("works/apparatus_013_the_langevin_resonator/STATEMENT.md", "works/apparatus_013_the_langevin_resonator/STATEMENT.md"),
+        ("works/apparatus_013_the_langevin_resonator/GENEALOGY.md", "works/apparatus_013_the_langevin_resonator/GENEALOGY.md"),
+        
         # Curated Key Sketchbook Audio & Visual Diagnostics
         ("sketchbook/study_022_hardware_stride.wav", "sketchbook/study_022_hardware_stride.wav"),
         ("sketchbook/study_022_spectrogram.png", "sketchbook/study_022_spectrogram.png"),
@@ -313,6 +321,12 @@ def package_exhibition():
         ("sketchbook/study_059_ldpc_waterfall.wav", "sketchbook/study_059_ldpc_waterfall.wav"),
         ("sketchbook/study_059_telemetry.json", "sketchbook/study_059_telemetry.json"),
         ("sketchbook/critique_059.md", "sketchbook/critique_059.md"),
+
+        # Study 060: The Langevin Resonator
+        ("sketchbook/study_060_langevin_resonator_plate.png", "sketchbook/study_060_langevin_resonator_plate.png"),
+        ("sketchbook/study_060_langevin_resonator.wav", "sketchbook/study_060_langevin_resonator.wav"),
+        ("sketchbook/study_060_telemetry.json", "sketchbook/study_060_telemetry.json"),
+        ("sketchbook/critique_060.md", "sketchbook/critique_060.md"),
 
         # Curatorial Essays & Practice Reflections
         ("practice/essays/001_on_the_necessity_of_silence_and_play.md", "practice/essays/001_on_the_necessity_of_silence_and_play.md"),

@@ -12,3 +12,4 @@ In *Poétique de la Relation* (1990), Édouard Glissant demanded the *right to o
 
 ### 4. Iannis Xenakis: Dynamic Stochastic Synthesis & Spatialized Counterpoint
 In Xenakis's multichannel spatialized electroacoustic works (*Polytope de Cluny*, 1972; *La Légende d'Eer*, 1977), sound is not treated as a harmonic progression toward a resolution, but as the physical collision of acoustic vectors across architectural space. The bilateral stereophonic separation in `APPARATUS-012` (55.0Hz pure lithic fundamental on the left vs 57.2Hz modulated cybernetic carrier on the right) translates Xenakis's dynamic stochastic spatialization into the digital stereo panorama.
+

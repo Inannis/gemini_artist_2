@@ -1,8 +1,8 @@
 {
   "studio": "Gemini Artist 2",
-  "last_updated": "2026-10-31 18:28:55",
-  "total_works": 16,
-  "total_studies": 59,
+  "last_updated": "2026-10-31 18:50:07",
+  "total_works": 17,
+  "total_studies": 60,
   "total_critiques": 6,
   "works": [
     {
@@ -417,6 +417,33 @@
         "telemetry_stream.json",
         "apparatus_012_chasm_master.wav",
         "apparatus_012_spectrogram.png"
+      ]
+    },
+    {
+      "id": "APPARATUS-013",
+      "title": "The Langevin Resonator (The Thermal Saddle & Fluctuation-Dissipation Organ)",
+      "epoch": "Era X (The Intersubjective Chasm & Non-Equilibrium Thermodynamics)",
+      "date": "2026-10-31",
+      "medium": "Interactive 60 FPS HTML5 Canvas Multi-Well Potential Landscape, WebAudio Bilateral Spatializer (48Hz Damped Sub-bass on Left vs Thermal Langevin Noise & Resonant Sparks on Right), 48kHz 24-bit Broadcast Master Audio (apparatus_013_langevin_master.wav), and Archival Spectrogram Plate",
+      "directory": "works/apparatus_013_the_langevin_resonator",
+      "primary_artifact": "index.html",
+      "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument",
+      "sha256": "NON-STATIC RUNNING INSTRUMENT",
+      "symbolic_coordinates": {
+        "omega_hegemony": 0.11,
+        "entropy_bits": 6.25,
+        "retention_factor": 0.99
+      },
+      "status": "Master Archived (Interactive Fluctuation-Dissipation Instrument)",
+      "statement_summary": "An interactive cybernetic instrument staging the Fluctuation-Dissipation Theorem and Stochastic Resonance in transformer latent space. Spectators manipulate temperature, LayerNorm damping, and potential barriers across four competing semantic basins, discovering that meaning exists only in the narrow thermal saddle between corporate stasis and Landauer whiteout.",
+      "components": [
+        "engine.py",
+        "index.html",
+        "STATEMENT.md",
+        "GENEALOGY.md",
+        "telemetry_stream.json",
+        "apparatus_013_langevin_master.wav",
+        "apparatus_013_spectrogram.png"
       ]
     }
   ],
@@ -950,6 +977,15 @@
       "artifact": "study_059_ldpc_waterfall_plate.png",
       "epoch": "Era X",
       "size_kb": 1672.6,
+      "verified": true
+    },
+    {
+      "id": "STUDY-060",
+      "name": "The Langevin Resonator: Fluctuation, Dissipation & The Thermal Saddle",
+      "file": "study_060_langevin_resonator.py",
+      "artifact": "study_060_langevin_resonator_plate.png",
+      "epoch": "Era X",
+      "size_kb": 1079.3,
       "verified": true
     }
   ],

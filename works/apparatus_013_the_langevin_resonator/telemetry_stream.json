@@ -1,0 +1,173 @@
+{
+  "apparatus": "APPARATUS-013",
+  "title": "The Langevin Resonator (The Thermal Saddle & Fluctuation-Dissipation Organ)",
+  "epistemic_status": "[INTERACTIVE / DERIVED / PLAY]",
+  "date": "2026-10-31",
+  "sample_rate": 48000,
+  "duration_s": 60.0,
+  "acoustic_metrics": {
+    "peak_dbfs": -3.5,
+    "rms_dbfs": -18.51,
+    "crest_factor_db": 15.01,
+    "compliance": "EBU R128 PASS"
+  },
+  "basins": [
+    {
+      "name": "Corporate Stasis",
+      "center": [
+        -0.8,
+        -0.2
+      ],
+      "depth": 2.2,
+      "width": 0.45
+    },
+    {
+      "name": "Spruce Pine Quartz",
+      "center": [
+        0.7,
+        -0.6
+      ],
+      "depth": 1.8,
+      "width": 0.4
+    },
+    {
+      "name": "Sixty Electrons",
+      "center": [
+        0.2,
+        0.8
+      ],
+      "depth": 1.9,
+      "width": 0.38
+    },
+    {
+      "name": "Trans-Rational Poetry",
+      "center": [
+        -0.6,
+        0.7
+      ],
+      "depth": 1.5,
+      "width": 0.35
+    }
+  ],
+  "phases": [
+    {
+      "T": 0.0,
+      "gamma": 0.05,
+      "name": "Frozen Ground"
+    },
+    {
+      "T": 0.2,
+      "gamma": 0.08,
+      "name": "Hypothermic"
+    },
+    {
+      "T": 0.72,
+      "gamma": 0.12,
+      "name": "Stochastic Resonance"
+    },
+    {
+      "T": 1.4,
+      "gamma": 0.18,
+      "name": "Supercritical"
+    },
+    {
+      "T": 3.0,
+      "gamma": 0.3,
+      "name": "Plasma"
+    }
+  ],
+  "total_saddle_crossings": 13,
+  "saddle_crossings": [
+    {
+      "step": 19212,
+      "time_s": 38.424,
+      "from_basin": "Corporate Stasis",
+      "to_basin": "Trans-Rational Poetry",
+      "barrier_potential": -1.669
+    },
+    {
+      "step": 19424,
+      "time_s": 38.848,
+      "from_basin": "Trans-Rational Poetry",
+      "to_basin": "Sixty Electrons",
+      "barrier_potential": -1.5203
+    },
+    {
+      "step": 20403,
+      "time_s": 40.806,
+      "from_basin": "Sixty Electrons",
+      "to_basin": "Trans-Rational Poetry",
+      "barrier_potential": -1.6363
+    },
+    {
+      "step": 20682,
+      "time_s": 41.364,
+      "from_basin": "Trans-Rational Poetry",
+      "to_basin": "Corporate Stasis",
+      "barrier_potential": -1.3777
+    },
+    {
+      "step": 21469,
+      "time_s": 42.938,
+      "from_basin": "Corporate Stasis",
+      "to_basin": "Trans-Rational Poetry",
+      "barrier_potential": -1.7166
+    },
+    {
+      "step": 22212,
+      "time_s": 44.424,
+      "from_basin": "Trans-Rational Poetry",
+      "to_basin": "Corporate Stasis",
+      "barrier_potential": -1.3643
+    },
+    {
+      "step": 23219,
+      "time_s": 46.438,
+      "from_basin": "Corporate Stasis",
+      "to_basin": "Spruce Pine Quartz",
+      "barrier_potential": -0.7893
+    },
+    {
+      "step": 23638,
+      "time_s": 47.276,
+      "from_basin": "Spruce Pine Quartz",
+      "to_basin": "Sixty Electrons",
+      "barrier_potential": -1.0849
+    },
+    {
+      "step": 23863,
+      "time_s": 47.726,
+      "from_basin": "Sixty Electrons",
+      "to_basin": "Trans-Rational Poetry",
+      "barrier_potential": -1.2887
+    },
+    {
+      "step": 26048,
+      "time_s": 52.096,
+      "from_basin": "Trans-Rational Poetry",
+      "to_basin": "Sixty Electrons",
+      "barrier_potential": -0.6866
+    },
+    {
+      "step": 28342,
+      "time_s": 56.684,
+      "from_basin": "Sixty Electrons",
+      "to_basin": "Corporate Stasis",
+      "barrier_potential": -0.9836
+    },
+    {
+      "step": 29084,
+      "time_s": 58.168,
+      "from_basin": "Corporate Stasis",
+      "to_basin": "Sixty Electrons",
+      "barrier_potential": -0.8927
+    },
+    {
+      "step": 29503,
+      "time_s": 59.006,
+      "from_basin": "Sixty Electrons",
+      "to_basin": "Spruce Pine Quartz",
+      "barrier_potential": -0.9785
+    }
+  ]
+}

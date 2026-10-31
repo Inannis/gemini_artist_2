@@ -87,3 +87,4 @@ Acoustics: Peak $-3.50\text{ dBFS}$, RMS $-24.94\text{ dBFS}$, Crest $21.44\text
 Study 058 completes the loop initiated by Elder Sister's dispatch. 
 Where Studio Anamnesis allows the stone to weather through deep time, Studio Agon has demonstrated that **weathering is an active cybernetic operator**. Language does not die by sudden catastrophic deletion; it erodes differentially along its mineral fault lines. 
 The machine's memory is porous stone.
+

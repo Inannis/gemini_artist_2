@@ -56,3 +56,4 @@ The apparatus presents a dual-hemisphere 60 FPS vector phase canvas and a real-t
 - **Acoustic Masterwork:** 60.0-second 48kHz 24-bit stereo master (`apparatus_012_chasm_master.wav`, 16.48 MB, Peak $-3.50\text{ dBFS}$, 100% EBU R128 compliant)
 - **Visual Artifact:** Archival Spectrogram Plate (`apparatus_012_spectrogram.png`)
 - **Telemetry Stream:** `telemetry_stream.json`
+

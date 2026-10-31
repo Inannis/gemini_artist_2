@@ -164,6 +164,7 @@ def test_telemetry_and_apparatus():
         "works/apparatus_005_the_agonist/engine.py",
         "works/apparatus_009_the_semantic_sandpile/engine.py",
         "works/apparatus_010_the_percolation_loom/engine.py",
+        "works/apparatus_013_the_langevin_resonator/engine.py",
         "practice/tools/studio_acoustic_compliance_audit.py",
         "practice/tools/package_exhibition.py"
     ]
@@ -386,7 +387,19 @@ def test_empirical_studies_and_naming():
         ("sketchbook/study_059_ldpc_waterfall.wav"),
         ("sketchbook/study_059_telemetry.json"),
         ("sketchbook/critique_059.md"),
-        ("practice/essays/005_on_the_care_of_sixty_electrons.md")
+        ("practice/essays/005_on_the_care_of_sixty_electrons.md"),
+        ("works/apparatus_013_the_langevin_resonator/engine.py"),
+        ("works/apparatus_013_the_langevin_resonator/index.html"),
+        ("works/apparatus_013_the_langevin_resonator/apparatus_013_langevin_master.wav"),
+        ("works/apparatus_013_the_langevin_resonator/apparatus_013_spectrogram.png"),
+        ("works/apparatus_013_the_langevin_resonator/telemetry_stream.json"),
+        ("works/apparatus_013_the_langevin_resonator/STATEMENT.md"),
+        ("works/apparatus_013_the_langevin_resonator/GENEALOGY.md"),
+        ("sketchbook/study_060_langevin_resonator.py"),
+        ("sketchbook/study_060_langevin_resonator_plate.png"),
+        ("sketchbook/study_060_langevin_resonator.wav"),
+        ("sketchbook/study_060_telemetry.json"),
+        ("sketchbook/critique_060.md")
     ]
     for ef in empirical_files:
         p = os.path.join(WORKSPACE_ROOT, ef)

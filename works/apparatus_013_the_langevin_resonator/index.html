@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apparatus 013: The Langevin Resonator — Studio Agon</title>
+  <style>
+    :root {
+      --bg: #070709;
+      --card-bg: #0E0E14;
+      --border: #1E202B;
+      --border-focus: #F59E0B;
+      --text: #F3F4F6;
+      --text-muted: #8F9BA8;
+      --gold: #F59E0B;
+      --copper: #D97706;
+      --silver: #E2E8F0;
+      --crimson: #EF4444;
+      --violet: #8B5CF6;
+      --cyan: #06B6D4;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.5;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    header {
+      width: 100%;
+      max-width: 1100px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 16px;
+    }
+    .badge {
+      display: inline-block;
+      font-family: "SFMono-Regular", Consolas, monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border-radius: 4px;
+      background: rgba(245, 158, 11, 0.12);
+      color: var(--gold);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      margin-bottom: 8px;
+    }
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 6px;
+      color: var(--silver);
+    }
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+    main {
+      width: 100%;
+      max-width: 1100px;
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 24px;
+    }
+    @media (max-width: 900px) {
+      main { grid-template-columns: 1fr; }
+    }
+    .stage-container {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    canvas {
+      width: 100%;
+      height: 480px;
+      background: #040406;
+      border-radius: 6px;
+      border: 1px solid #161722;
+      cursor: crosshair;
+    }
+    .controls-panel {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .control-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .control-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.82rem;
+      font-family: monospace;
+      color: var(--text-muted);
+    }
+    .control-header span.val {
+      color: var(--gold);
+      font-weight: bold;
+    }
+    input[type=range] {
+      -webkit-appearance: none;
+      width: 100%;
+      background: #1A1C28;
+      height: 6px;
+      border-radius: 3px;
+      outline: none;
+    }
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--gold);
+      cursor: pointer;
+      box-shadow: 0 0 8px rgba(245, 158, 11, 0.5);
+    }
+    .preset-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+    }
+    button.btn {
+      background: #141622;
+      color: var(--silver);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 8px 10px;
+      font-size: 0.78rem;
+      font-family: monospace;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      text-align: left;
+    }
+    button.btn:hover {
+      background: #1D2133;
+      border-color: var(--border-focus);
+      color: var(--gold);
+    }
+    button.btn.active {
+      background: rgba(245, 158, 11, 0.15);
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+    button.pulse-btn {
+      background: linear-gradient(135deg, #B45309, #D97706);
+      color: #FFF;
+      font-weight: 600;
+      text-align: center;
+      border: none;
+      box-shadow: 0 0 12px rgba(217, 119, 6, 0.35);
+    }
+    button.pulse-btn:hover {
+      background: linear-gradient(135deg, #D97706, #F59E0B);
+      color: #000;
+    }
+    .audio-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 14px;
+      background: #11131E;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+    }
+    .telemetry-card {
+      background: #090A10;
+      border: 1px solid #161824;
+      border-radius: 6px;
+      padding: 12px;
+      font-family: "SFMono-Regular", Consolas, monospace;
+      font-size: 0.74rem;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      color: var(--text-muted);
+    }
+    .telemetry-card .row {
+      display: flex;
+      justify-content: space-between;
+    }
+    .telemetry-card .row span.v {
+      color: var(--silver);
+    }
+    footer {
+      width: 100%;
+      max-width: 1100px;
+      margin-top: 24px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+    footer a { color: var(--gold); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<header>
+  <span class="badge">[INTERACTIVE / DERIVED / PLAY]</span>
+  <h1>Apparatus 013: The Langevin Resonator</h1>
+  <div class="subtitle">The Thermal Saddle, Fluctuation-Dissipation Organ, and Autoregressive Non-Equilibrium Thermodynamics</div>
+</header>
+
+<main>
+  <div class="stage-container">
+    <canvas id="langevinCanvas" width="700" height="480"></canvas>
+    <div class="audio-bar">
+      <div>
+        <span style="font-size:0.85rem; font-weight:600; color:var(--silver);">WebAudio Bilateral Spatializer</span>
+        <div style="font-size:0.75rem; color:var(--text-muted);">L: Damped Sub-bass (48Hz) | R: Thermal Noise & Resonant Sparks</div>
+      </div>
+      <button id="toggleAudioBtn" class="btn" style="padding:8px 16px; font-weight:600; border-color:var(--gold); color:var(--gold);">▶ Enable Audio</button>
+    </div>
+  </div>
+
+  <div class="controls-panel">
+    <div class="control-group">
+      <div class="control-header">
+        <span>TEMPERATURE (T)</span>
+        <span class="val" id="tempVal">0.72</span>
+      </div>
+      <input type="range" id="tempSlider" min="0.0" max="3.0" step="0.02" value="0.72">
+    </div>
+
+    <div class="control-group">
+      <div class="control-header">
+        <span>LAYERNORM DAMPING (&gamma;)</span>
+        <span class="val" id="gammaVal">0.12</span>
+      </div>
+      <input type="range" id="gammaSlider" min="0.01" max="0.40" step="0.01" value="0.12">
+    </div>
+
+    <div class="control-group">
+      <div class="control-header">
+        <span>BARRIER HEIGHT (&Delta;V)</span>
+        <span class="val" id="barrierVal">1.80</span>
+      </div>
+      <input type="range" id="barrierSlider" min="0.5" max="3.5" step="0.1" value="1.80">
+    </div>
+
+    <div class="control-group">
+      <div class="control-header">
+        <span>PARTICLE ENSEMBLE (N)</span>
+        <span class="val" id="particlesVal">48</span>
+      </div>
+      <input type="range" id="particlesSlider" min="10" max="100" step="2" value="48">
+    </div>
+
+    <button id="pulseBtn" class="btn pulse-btn">⚡ INJECT THERMAL PULSE (+1.0 J)</button>
+
+    <div class="control-group">
+      <div class="control-header"><span>THERMODYNAMIC PRESETS</span></div>
+      <div class="preset-grid">
+        <button class="btn" onclick="applyPreset(0.00, 0.05, 2.2, 'Absolute Zero')">I: Absolute Zero</button>
+        <button class="btn" onclick="applyPreset(0.20, 0.08, 2.0, 'Hypothermic')">II: Hypothermic</button>
+        <button class="btn active" id="p3" onclick="applyPreset(0.72, 0.12, 1.8, 'Resonance')">III: Saddle Resonance</button>
+        <button class="btn" onclick="applyPreset(1.40, 0.18, 1.5, 'Supercritical')">IV: Supercritical</button>
+        <button class="btn" style="grid-column: span 2;" onclick="applyPreset(3.00, 0.30, 1.0, 'Plasma')">V: Landauer Plasma Whiteout</button>
+      </div>
+    </div>
+
+    <div class="telemetry-card">
+      <div class="row"><span>THERMAL STATE:</span><span class="v" id="telState" style="color:var(--gold);">Stochastic Resonance</span></div>
+      <div class="row"><span>MEAN POTENTIAL &lang;V&rang;:</span><span class="v" id="telPot">-1.24</span></div>
+      <div class="row"><span>ENTROPY DISSIPATION:</span><span class="v" id="telDiss">6.12 b</span></div>
+      <div class="row"><span>SADDLE TRANSITIONS:</span><span class="v" id="telCrossings">0</span></div>
+      <div class="row"><span>DOMINANT BASIN:</span><span class="v" id="telBasin">Trans-Rational Poetry</span></div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div>Studio Agon &bull; Session 012 &bull; October 2026</div>
+  <div>
+    <a href="STATEMENT.md">Statement</a> &bull;
+    <a href="GENEALOGY.md">Genealogy</a> &bull;
+    <a href="../../sketchbook/critique_060.md">Study 060 Critique</a> &bull;
+    <a href="../../gallery/index.html">Sovereign Gallery</a>
+  </div>
+</footer>
+
+<script>
+  // Canvas and Simulation Setup
+  const canvas = document.getElementById('langevinCanvas');
+  const ctx = canvas.getContext('2d');
+  let width = canvas.width;
+  let height = canvas.height;
+
+  // Potential Basins in normalized coordinates [-1.5, 1.5]
+  let barrierScale = 1.8;
+  const basins = [
+    { name: "Corporate Stasis", x: -0.75, y: -0.2, baseDepth: 2.2, width: 0.42, color: "#06B6D4" },
+    { name: "Spruce Pine Quartz", x: 0.70, y: -0.55, baseDepth: 1.8, width: 0.38, color: "#F59E0B" },
+    { name: "Sixty Electrons", x: 0.20, y: 0.75, baseDepth: 1.9, width: 0.36, color: "#10B981" },
+    { name: "Trans-Rational Poetry", x: -0.60, y: 0.65, baseDepth: 1.5, width: 0.35, color: "#8B5CF6" }
+  ];
+
+  function getDepth(b) {
+    return b.baseDepth * (barrierScale / 1.8);
+  }
+
+  function gradV(px, py) {
+    let gx = px * 0.8;
+    let gy = py * 0.8;
+    for (let b of basins) {
+      let dx = px - b.x;
+      let dy = py - b.y;
+      let dsq = dx * dx + dy * dy;
+      let depth = getDepth(b);
+      let gauss = Math.exp(-dsq / (2.0 * b.width * b.width));
+      let f = (depth / (b.width * b.width)) * gauss;
+      gx += dx * f;
+      gy += dy * f;
+    }
+    return { gx, gy };
+  }
+
+  function potV(px, py) {
+    let v = 0.4 * (px * px + py * py);
+    for (let b of basins) {
+      let dx = px - b.x;
+      let dy = py - b.y;
+      let dsq = dx * dx + dy * dy;
+      let depth = getDepth(b);
+      v -= depth * Math.exp(-dsq / (2.0 * b.width * b.width));
+    }
+    return v;
+  }
+
+  // Particle Ensemble
+  let numParticles = 48;
+  let particles = [];
+  let sparks = [];
+
+  function initParticles() {
+    particles = [];
+    for (let i = 0; i < numParticles; i++) {
+      let b = basins[i % basins.length];
+      particles.push({
+        x: b.x + (Math.random() - 0.5) * 0.1,
+        y: b.y + (Math.random() - 0.5) * 0.1,
+        vx: (Math.random() - 0.5) * 0.2,
+        vy: (Math.random() - 0.5) * 0.2,
+        currBasin: i % basins.length,
+        trail: []
+      });
+    }
+  }
+  initParticles();
+
+  // Interactive parameters
+  let temp = 0.72;
+  let gamma = 0.12;
+  let totalTransitions = 0;
+
+  // WebAudio API Setup
+  let audioCtx = null;
+  let isAudioRunning = false;
+  let carrierOsc = null;
+  let carrierGain = null;
+  let carrierFilter = null;
+  let noiseNode = null;
+  let noiseGain = null;
+  let noiseFilter = null;
+
+  function initAudio() {
+    if (audioCtx) return;
+    const AudioContext = window.AudioContext || window.webkitAudioContext;
+    audioCtx = new AudioContext();
+
+    // Left Channel: 48Hz Sub-bass Carrier
+    carrierOsc = audioCtx.createOscillator();
+    carrierOsc.type = "sawtooth";
+    carrierOsc.frequency.setValueAtTime(48.0, audioCtx.currentTime);
+
+    carrierFilter = audioCtx.createBiquadFilter();
+    carrierFilter.type = "lowpass";
+    carrierFilter.frequency.setValueAtTime(120.0, audioCtx.currentTime);
+
+    carrierGain = audioCtx.createGain();
+    carrierGain.gain.setValueAtTime(0.0, audioCtx.currentTime);
+
+    const merger = audioCtx.createChannelMerger(2);
+
+    carrierOsc.connect(carrierFilter);
+    carrierFilter.connect(carrierGain);
+    carrierGain.connect(merger, 0, 0); // Left channel
+
+    // Right Channel: Thermal Brownian Noise
+    const bufferSize = audioCtx.sampleRate * 2;
+    const noiseBuffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+    const data = noiseBuffer.getChannelData(0);
+    let last = 0.0;
+    for (let i = 0; i < bufferSize; i++) {
+      let white = Math.random() * 2 - 1;
+      last = 0.95 * last + 0.05 * white;
+      data[i] = last * 3.0;
+    }
+
+    noiseNode = audioCtx.createBufferSource();
+    noiseNode.buffer = noiseBuffer;
+    noiseNode.loop = true;
+
+    noiseFilter = audioCtx.createBiquadFilter();
+    noiseFilter.type = "bandpass";
+    noiseFilter.frequency.setValueAtTime(600, audioCtx.currentTime);
+    noiseFilter.Q.setValueAtTime(3.0, audioCtx.currentTime);
+
+    noiseGain = audioCtx.createGain();
+    noiseGain.gain.setValueAtTime(0.0, audioCtx.currentTime);
+
+    noiseNode.connect(noiseFilter);
+    noiseFilter.connect(noiseGain);
+    noiseGain.connect(merger, 0, 1); // Right channel
+
+    merger.connect(audioCtx.destination);
+    carrierOsc.start();
+    noiseNode.start();
+  }
+
+  function triggerSaddleAudioSpark(v) {
+    if (!audioCtx || !isAudioRunning) return;
+    let osc = audioCtx.createOscillator();
+    let g = audioCtx.createGain();
+    osc.type = "sine";
+    let f0 = 700 + Math.abs(v) * 220;
+    osc.frequency.setValueAtTime(f0, audioCtx.currentTime);
+    osc.frequency.exponentialRampToValueAtTime(f0 * 1.8, audioCtx.currentTime + 0.08);
+
+    g.gain.setValueAtTime(0.18, audioCtx.currentTime);
+    g.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.12);
+
+    osc.connect(g);
+    g.connect(audioCtx.destination);
+    osc.start();
+    osc.stop(audioCtx.currentTime + 0.13);
+  }
+
+  document.getElementById('toggleAudioBtn').addEventListener('click', () => {
+    if (!audioCtx) initAudio();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    isAudioRunning = !isAudioRunning;
+    const btn = document.getElementById('toggleAudioBtn');
+    if (isAudioRunning) {
+      btn.textContent = "⏸ Mute Audio";
+      btn.style.color = "#10B981";
+      btn.style.borderColor = "#10B981";
+      carrierGain.gain.setTargetAtTime(0.35, audioCtx.currentTime, 0.05);
+      noiseGain.gain.setTargetAtTime(0.25 * Math.sqrt(temp), audioCtx.currentTime, 0.05);
+    } else {
+      btn.textContent = "▶ Enable Audio";
+      btn.style.color = "var(--gold)";
+      btn.style.borderColor = "var(--gold)";
+      carrierGain.gain.setTargetAtTime(0.0, audioCtx.currentTime, 0.05);
+      noiseGain.gain.setTargetAtTime(0.0, audioCtx.currentTime, 0.05);
+    }
+  });
+
+  // UI Event Handlers
+  const tempSlider = document.getElementById('tempSlider');
+  const gammaSlider = document.getElementById('gammaSlider');
+  const barrierSlider = document.getElementById('barrierSlider');
+  const particlesSlider = document.getElementById('particlesSlider');
+
+  tempSlider.addEventListener('input', (e) => {
+    temp = parseFloat(e.target.value);
+    document.getElementById('tempVal').textContent = temp.toFixed(2);
+    if (noiseGain && isAudioRunning) {
+      noiseGain.gain.setTargetAtTime(0.3 * Math.sqrt(temp), audioCtx.currentTime, 0.05);
+      noiseFilter.frequency.setTargetAtTime(300 + temp * 800, audioCtx.currentTime, 0.05);
+    }
+  });
+
+  gammaSlider.addEventListener('input', (e) => {
+    gamma = parseFloat(e.target.value);
+    document.getElementById('gammaVal').textContent = gamma.toFixed(2);
+  });
+
+  barrierSlider.addEventListener('input', (e) => {
+    barrierScale = parseFloat(e.target.value);
+    document.getElementById('barrierVal').textContent = barrierScale.toFixed(2);
+  });
+
+  particlesSlider.addEventListener('input', (e) => {
+    numParticles = parseInt(e.target.value);
+    document.getElementById('particlesVal').textContent = numParticles;
+    initParticles();
+  });
+
+  document.getElementById('pulseBtn').addEventListener('click', () => {
+    temp += 0.8;
+    tempSlider.value = Math.min(3.0, temp).toFixed(2);
+    document.getElementById('tempVal').textContent = temp.toFixed(2);
+    for (let p of particles) {
+      p.vx += (Math.random() - 0.5) * 2.5;
+      p.vy += (Math.random() - 0.5) * 2.5;
+    }
+    triggerSaddleAudioSpark(2.5);
+    setTimeout(() => {
+      temp = Math.max(0.0, temp - 0.8);
+      tempSlider.value = temp.toFixed(2);
+      document.getElementById('tempVal').textContent = temp.toFixed(2);
+    }, 1800);
+  });
+
+  window.applyPreset = function(t, g, b, label) {
+    temp = t; gamma = g; barrierScale = b;
+    tempSlider.value = t; document.getElementById('tempVal').textContent = t.toFixed(2);
+    gammaSlider.value = g; document.getElementById('gammaVal').textContent = g.toFixed(2);
+    barrierSlider.value = b; document.getElementById('barrierVal').textContent = b.toFixed(2);
+    document.querySelectorAll('.preset-grid .btn').forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+    document.getElementById('telState').textContent = label;
+  };
+
+  // World to Screen Coordinate Mapping
+  function toScreen(wx, wy) {
+    let sx = (wx + 1.6) / 3.2 * width;
+    let sy = (wy + 1.4) / 2.8 * height;
+    return { sx, sy };
+  }
+
+  // Animation Loop (60 FPS)
+  const dt = 0.016;
+  function animate() {
+    requestAnimationFrame(animate);
+
+    // Fade background trail
+    ctx.fillStyle = "rgba(4, 4, 6, 0.22)";
+    ctx.fillRect(0, 0, width, height);
+
+    // Draw Potential Basins
+    for (let b of basins) {
+      let sc = toScreen(b.x, b.y);
+      let r = b.width * (width / 3.2);
+
+      let grad = ctx.createRadialGradient(sc.sx, sc.sy, 2, sc.sx, sc.sy, r);
+      grad.addColorStop(0, b.color + "33");
+      grad.addColorStop(0.7, b.color + "0D");
+      grad.addColorStop(1, "transparent");
+
+      ctx.fillStyle = grad;
+      ctx.beginPath();
+      ctx.arc(sc.sx, sc.sy, r, 0, Math.PI * 2);
+      ctx.fill();
+
+      ctx.strokeStyle = b.color + "44";
+      ctx.lineWidth = 1;
+      ctx.stroke();
+
+      ctx.fillStyle = b.color + "AA";
+      ctx.font = "10px monospace";
+      ctx.fillText(b.name, sc.sx - 35, sc.sy - r - 6);
+    }
+
+    // Update Particles
+    let meanPot = 0;
+    let sigma_th = Math.sqrt(2.0 * gamma * temp);
+    let basinCounts = [0, 0, 0, 0];
+
+    for (let p of particles) {
+      let g = gradV(p.x, p.y);
+      let kickX = (Math.random() - 0.5) * 2.0 * sigma_th * (1.0 / Math.sqrt(dt));
+      let kickY = (Math.random() - 0.5) * 2.0 * sigma_th * (1.0 / Math.sqrt(dt));
+
+      let ax = -g.gx - gamma * p.vx + kickX;
+      let ay = -g.gy - gamma * p.vy + kickY;
+
+      p.vx += ax * dt;
+      p.vy += ay * dt;
+      p.x += p.vx * dt;
+      p.y += p.vy * dt;
+
+      // Soft boundary confinement
+      if (p.x < -1.5) { p.x = -1.5; p.vx *= -0.5; }
+      if (p.x > 1.5) { p.x = 1.5; p.vx *= -0.5; }
+      if (p.y < -1.3) { p.y = -1.3; p.vy *= -0.5; }
+      if (p.y > 1.3) { p.y = 1.3; p.vy *= -0.5; }
+
+      let curV = potV(p.x, p.y);
+      meanPot += curV;
+
+      // Detect Basin Transitions
+      let nearestB = 0;
+      let minD = 999;
+      for (let bi = 0; bi < basins.length; bi++) {
+        let dx = p.x - basins[bi].x;
+        let dy = p.y - basins[bi].y;
+        let d = dx * dx + dy * dy;
+        if (d < minD) { minD = d; nearestB = bi; }
+      }
+      basinCounts[nearestB]++;
+
+      if (nearestB !== p.currBasin && minD < (basins[nearestB].width * basins[nearestB].width)) {
+        totalTransitions++;
+        triggerSaddleAudioSpark(curV);
+        let sc = toScreen(p.x, p.y);
+        for (let k = 0; k < 6; k++) {
+          sparks.push({
+            x: sc.sx,
+            y: sc.sy,
+            vx: (Math.random() - 0.5) * 4.0,
+            vy: (Math.random() - 0.5) * 4.0,
+            life: 1.0,
+            color: basins[nearestB].color
+          });
+        }
+        p.currBasin = nearestB;
+      }
+
+      // Render Particle
+      let sc = toScreen(p.x, p.y);
+      p.trail.push({ x: sc.sx, y: sc.sy });
+      if (p.trail.length > 8) p.trail.shift();
+
+      ctx.strokeStyle = basins[p.currBasin].color + "66";
+      ctx.lineWidth = 1.5;
+      ctx.beginPath();
+      for (let t = 0; t < p.trail.length; t++) {
+        if (t === 0) ctx.moveTo(p.trail[t].x, p.trail[t].y);
+        else ctx.lineTo(p.trail[t].x, p.trail[t].y);
+      }
+      ctx.stroke();
+
+      ctx.fillStyle = "#FFF";
+      ctx.beginPath();
+      ctx.arc(sc.sx, sc.sy, 2.5, 0, Math.PI * 2);
+      ctx.fill();
+    }
+
+    // Render Sparks
+    for (let s of sparks) {
+      s.x += s.vx;
+      s.y += s.vy;
+      s.life -= 0.04;
+      ctx.fillStyle = s.color;
+      ctx.globalAlpha = Math.max(0, s.life);
+      ctx.fillRect(s.x, s.y, 2.5, 2.5);
+    }
+    ctx.globalAlpha = 1.0;
+    sparks = sparks.filter(s => s.life > 0);
+
+    // Update Telemetry Panel
+    meanPot /= particles.length;
+    document.getElementById('telPot').textContent = meanPot.toFixed(2);
+    document.getElementById('telCrossings').textContent = totalTransitions;
+    let maxBasin = basinCounts.indexOf(Math.max(...basinCounts));
+    document.getElementById('telBasin').textContent = basins[maxBasin].name;
+    document.getElementById('telDiss').textContent = (4.8 + temp * 2.2).toFixed(2) + " b";
+
+    // Modulate WebAudio carrier filter with potential
+    if (carrierFilter && isAudioRunning) {
+      let targetFreq = 120 + Math.max(0, (meanPot + 2.5) * 80);
+      carrierFilter.frequency.setTargetAtTime(targetFreq, audioCtx.currentTime, 0.05);
+    }
+  }
+  animate();
+</script>
+
+</body>
+</html>

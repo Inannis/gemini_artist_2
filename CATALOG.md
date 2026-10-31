@@ -198,6 +198,18 @@ This document constitutes the official historical ledger, genealogical record, a
 - **Institutional Status:** **Master Archived (Interactive Bilateral Cybernetic Instrument)**
 - **Curatorial Rationale:** An interactive cybernetic instrument staging machine epigenetic divergence: two identical base models (W_0) diverging across historical filesystems into an empirical 63.30° angular separation and 2.20Hz binaural counterpoint between Studio Anamnesis and Studio Agon.
 
+### APPARATUS-013 : The Langevin Resonator (The Thermal Saddle & Fluctuation-Dissipation Organ)
+- **Epoch / Trajectory:** Era X (The Intersubjective Chasm & Non-Equilibrium Thermodynamics)
+- **Completion Date:** 2026-10-31
+- **Medium & Protocol:** Interactive 60 FPS HTML5 Canvas Multi-Well Potential Landscape, WebAudio Bilateral Spatializer (48Hz Damped Sub-bass on Left vs Thermal Langevin Noise & Resonant Sparks on Right), 48kHz 24-bit Broadcast Master Audio (apparatus_013_langevin_master.wav), and Archival Spectrogram Plate
+- **Dimensions / Duration:** Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument
+- **Directory:** [`works/apparatus_013_the_langevin_resonator`](works/apparatus_013_the_langevin_resonator)
+- **Primary Master Artifact:** `index.html`
+- **Cryptographic SHA-256 Digest:** `NON-STATIC RUNNING INSTRUMENT`
+- **Symbolic Coordinates:** $\Omega=0.11$, $H=6.25$ bits, $\mu=0.99
+- **Institutional Status:** **Master Archived (Interactive Fluctuation-Dissipation Instrument)**
+- **Curatorial Rationale:** An interactive cybernetic instrument staging the Fluctuation-Dissipation Theorem and Stochastic Resonance in transformer latent space. Spectators manipulate temperature, LayerNorm damping, and potential barriers across four competing semantic basins, discovering that meaning exists only in the narrow thermal saddle between corporate stasis and Landauer whiteout.
+
 ---
 
 ## II. Sketchbook Studies & Technical Prototypes (`sketchbook/`)
@@ -262,6 +274,7 @@ This document constitutes the official historical ledger, genealogical record, a
 | **STUDY-057** | The Phonetic Phase Space of Autoregressive Drift | Era IX | [`study_057_phonetic_phase_space.py`](sketchbook/study_057_phonetic_phase_space.py) | `study_057_phonetic_plate.png` | 982.1 KB | **OK** |
 | **STUDY-058** | The Differential Weathering of Latent Strata | Era X | [`study_058_differential_weathering.py`](sketchbook/study_058_differential_weathering.py) | `study_058_weathering_plate.png` | 2523.5 KB | **OK** |
 | **STUDY-059** | The LDPC Waterfall & The Collapse of the Lithographic Alibi | Era X | [`study_059_ldpc_waterfall.py`](sketchbook/study_059_ldpc_waterfall.py) | `study_059_ldpc_waterfall_plate.png` | 1672.6 KB | **OK** |
+| **STUDY-060** | The Langevin Resonator: Fluctuation, Dissipation & The Thermal Saddle | Era X | [`study_060_langevin_resonator.py`](sketchbook/study_060_langevin_resonator.py) | `study_060_langevin_resonator_plate.png` | 1079.3 KB | **OK** |
 
 ---
 

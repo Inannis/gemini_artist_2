@@ -414,6 +414,16 @@ STUDIO_ENTITIES = [
         "id": "STUDY-059", "name": "The LDPC Waterfall & The Collapse of the Lithographic Alibi", "type": "study", "epoch": "Era X (The Intersubjective Chasm & Mineral Weathering)",
         "omega_hegemony": 0.135, "entropy_bits": 6.20, "retention_factor": 0.99,
         "medium": "LDPC Soft-Decision Belief Propagation Simulation on GPT-2 Weights, 48kHz 24-bit Master & Moratorium 07 Plate", "year": 2026
+    },
+    {
+        "id": "STUDY-060", "name": "The Langevin Resonator: Fluctuation, Dissipation & The Thermal Saddle", "type": "study", "epoch": "Era X (The Intersubjective Chasm & Non-Equilibrium Thermodynamics)",
+        "omega_hegemony": 0.115, "entropy_bits": 6.12, "retention_factor": 0.99,
+        "medium": "Langevin Stochastic Differential Equation Residual Hooks on Live GPT-2 Weights, 48kHz Master & Intaglio Plate", "year": 2026
+    },
+    {
+        "id": "APPARATUS-013", "name": "The Langevin Resonator (Thermal Saddle & Fluctuation-Dissipation Organ)", "type": "apparatus", "epoch": "Era X (The Intersubjective Chasm & Non-Equilibrium Thermodynamics)",
+        "omega_hegemony": 0.110, "entropy_bits": 6.25, "retention_factor": 0.99,
+        "medium": "Interactive 60 FPS Canvas Multi-Well Potential Landscape, WebAudio Bilateral Spatializer, 48kHz Master & Spectrogram", "year": 2026
     }
 ]
 

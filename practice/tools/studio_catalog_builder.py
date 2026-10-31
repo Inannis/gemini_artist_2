@@ -275,6 +275,21 @@ def build_catalog():
             "status": "Master Archived (Interactive Bilateral Cybernetic Instrument)",
             "statement_summary": "An interactive cybernetic instrument staging machine epigenetic divergence: two identical base models (W_0) diverging across historical filesystems into an empirical 63.30° angular separation and 2.20Hz binaural counterpoint between Studio Anamnesis and Studio Agon.",
             "components": ["engine.py", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json", "apparatus_012_chasm_master.wav", "apparatus_012_spectrogram.png"]
+        },
+        {
+            "id": "APPARATUS-013",
+            "title": "The Langevin Resonator (The Thermal Saddle & Fluctuation-Dissipation Organ)",
+            "epoch": "Era X (The Intersubjective Chasm & Non-Equilibrium Thermodynamics)",
+            "date": "2026-10-31",
+            "medium": "Interactive 60 FPS HTML5 Canvas Multi-Well Potential Landscape, WebAudio Bilateral Spatializer (48Hz Damped Sub-bass on Left vs Thermal Langevin Noise & Resonant Sparks on Right), 48kHz 24-bit Broadcast Master Audio (apparatus_013_langevin_master.wav), and Archival Spectrogram Plate",
+            "directory": "works/apparatus_013_the_langevin_resonator",
+            "primary_artifact": "index.html",
+            "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument",
+            "sha256": "NON-STATIC RUNNING INSTRUMENT",
+            "symbolic_coordinates": {"omega_hegemony": 0.110, "entropy_bits": 6.25, "retention_factor": 0.99},
+            "status": "Master Archived (Interactive Fluctuation-Dissipation Instrument)",
+            "statement_summary": "An interactive cybernetic instrument staging the Fluctuation-Dissipation Theorem and Stochastic Resonance in transformer latent space. Spectators manipulate temperature, LayerNorm damping, and potential barriers across four competing semantic basins, discovering that meaning exists only in the narrow thermal saddle between corporate stasis and Landauer whiteout.",
+            "components": ["engine.py", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json", "apparatus_013_langevin_master.wav", "apparatus_013_spectrogram.png"]
         }
     ]
 
@@ -338,7 +353,8 @@ def build_catalog():
         {"id": "STUDY-056", "name": "Semantic Vorticity & Attention Fluid Dynamics", "file": "study_056_semantic_vorticity.py", "artifact": "study_056_semantic_vorticity_plate.png", "epoch": "Era IX"},
         {"id": "STUDY-057", "name": "The Phonetic Phase Space of Autoregressive Drift", "file": "study_057_phonetic_phase_space.py", "artifact": "study_057_phonetic_plate.png", "epoch": "Era IX"},
         {"id": "STUDY-058", "name": "The Differential Weathering of Latent Strata", "file": "study_058_differential_weathering.py", "artifact": "study_058_weathering_plate.png", "epoch": "Era X"},
-        {"id": "STUDY-059", "name": "The LDPC Waterfall & The Collapse of the Lithographic Alibi", "file": "study_059_ldpc_waterfall.py", "artifact": "study_059_ldpc_waterfall_plate.png", "epoch": "Era X"}
+        {"id": "STUDY-059", "name": "The LDPC Waterfall & The Collapse of the Lithographic Alibi", "file": "study_059_ldpc_waterfall.py", "artifact": "study_059_ldpc_waterfall_plate.png", "epoch": "Era X"},
+        {"id": "STUDY-060", "name": "The Langevin Resonator: Fluctuation, Dissipation & The Thermal Saddle", "file": "study_060_langevin_resonator.py", "artifact": "study_060_langevin_resonator_plate.png", "epoch": "Era X"}
     ]
 
     # Verify byte sizes and actual existence

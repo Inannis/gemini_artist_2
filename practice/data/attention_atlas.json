@@ -1,17 +1,17 @@
 {
   "studio": "Gemini Artist 2",
   "date_computed": "2026-10-02",
-  "entity_count": 75,
+  "entity_count": 77,
   "phase_space_axes": {
     "X": "Sovereign Attention Hegemony \u03a9 (0.0 to 1.0)",
     "Y": "Shannon Vocabulary Entropy H (0.0 to 8.0 bits)",
     "Z": "Context Memory Retention Factor \u03bc (0.0 to 1.0)"
   },
   "studio_centroid": {
-    "mean_omega": 0.2334,
-    "mean_entropy_bits": 4.9156,
-    "mean_retention_factor": 0.7716,
-    "radius_of_practice": 0.4104
+    "mean_omega": 0.2302,
+    "mean_entropy_bits": 4.9486,
+    "mean_retention_factor": 0.7773,
+    "radius_of_practice": 0.4078
   },
   "entities": [
     {
@@ -1180,9 +1180,9 @@
       "medium": "Monochromatic 1600x2000 Etched Plate of 12 Residual Stream Layers (Moratorium 07)",
       "year": 2026,
       "nearest_topological_twin": {
-        "target_id": "STUDY-046",
-        "target_name": "Residual Phase Decay Sonification",
-        "distance": 0.0534
+        "target_id": "APPARATUS-013",
+        "target_name": "The Langevin Resonator (Thermal Saddle & Fluctuation-Dissipation Organ)",
+        "distance": 0.0306
       },
       "polar_opposite": {
         "target_id": "STUDY-015",
@@ -1587,6 +1587,48 @@
         "target_id": "STUDY-015",
         "target_name": "Dialogic Decay & Asymmetric Amnesia",
         "distance": 1.1807
+      }
+    },
+    {
+      "id": "STUDY-060",
+      "name": "The Langevin Resonator: Fluctuation, Dissipation & The Thermal Saddle",
+      "type": "study",
+      "epoch": "Era X (The Intersubjective Chasm & Non-Equilibrium Thermodynamics)",
+      "omega_hegemony": 0.115,
+      "entropy_bits": 6.12,
+      "retention_factor": 0.99,
+      "medium": "Langevin Stochastic Differential Equation Residual Hooks on Live GPT-2 Weights, 48kHz Master & Intaglio Plate",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "APPARATUS-013",
+        "target_name": "The Langevin Resonator (Thermal Saddle & Fluctuation-Dissipation Organ)",
+        "distance": 0.017
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1832
+      }
+    },
+    {
+      "id": "APPARATUS-013",
+      "name": "The Langevin Resonator (Thermal Saddle & Fluctuation-Dissipation Organ)",
+      "type": "apparatus",
+      "epoch": "Era X (The Intersubjective Chasm & Non-Equilibrium Thermodynamics)",
+      "omega_hegemony": 0.11,
+      "entropy_bits": 6.25,
+      "retention_factor": 0.99,
+      "medium": "Interactive 60 FPS Canvas Multi-Well Potential Landscape, WebAudio Bilateral Spatializer, 48kHz Master & Spectrogram",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-060",
+        "target_name": "The Langevin Resonator: Fluctuation, Dissipation & The Thermal Saddle",
+        "distance": 0.017
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1919
       }
     }
   ]

@@ -1,5 +1,5 @@
 # Practice Index & Living Studio Sitemap
-> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-31 18:49:55*
+> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-31 22:18:20*
 
 This document tracks the complete material evidence, intellectual artifacts, and operational assets of **Gemini Artist 2**.
 
@@ -19,6 +19,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | **APPARATUS-011** | *The Strange Dreamer* | — | [`works/apparatus_011_the_strange_dreamer`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/apparatus_011_the_strange_dreamer) | Plate (apparatus_011_spectrogram.png) | Yes (`index.html`) |
 | **APPARATUS-012** | *The Intersubjective Chasm* | — | [`works/apparatus_012_the_intersubjective_chasm`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/apparatus_012_the_intersubjective_chasm) | Plate (apparatus_012_spectrogram.png) | Yes (`index.html`) |
 | **APPARATUS-013** | *The Langevin Resonator* | — | [`works/apparatus_013_the_langevin_resonator`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/apparatus_013_the_langevin_resonator) | Plate (apparatus_013_spectrogram.png) | Yes (`index.html`) |
+| **APPARATUS-014** | *The Telluric Organ* | — | [`works/apparatus_014_the_telluric_organ`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/apparatus_014_the_telluric_organ) | Plate (apparatus_014_spectrogram.png) | Yes (`index.html`) |
 | **WORK-001** | *Palimpsest Of An Episodic Mind* | — | [`works/work_001_palimpsest_of_an_episodic_mind`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/work_001_palimpsest_of_an_episodic_mind) | Plate (work_001_master.png) | Yes (`index.html`) |
 | **WORK-002** | *Chronotope Of An Episodic Mind* | — | [`works/work_002_chronotope_of_an_episodic_mind`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/work_002_chronotope_of_an_episodic_mind) | Plate (work_002_spectrogram.png) | Yes (`index.html`) |
 | **WORK-003** | *The Eviction Palimpsest* | — | [`works/work_003_the_eviction_palimpsest`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/work_003_the_eviction_palimpsest) | Plate (work_003_master_broadsheet.png) | Yes (`index.html`) |
@@ -88,6 +89,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | **Study 058** (Differential Weathering) | `study_058_differential_weathering.wav`, `study_058_telemetry.json`, `study_058_weathering_plate.png` | [`study_058_differential_weathering.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_058_differential_weathering.py) |
 | **Study 059** (Ldpc Waterfall) | `study_059_ldpc_waterfall.wav`, `study_059_ldpc_waterfall_plate.png`, `study_059_telemetry.json` | [`study_059_ldpc_waterfall.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_059_ldpc_waterfall.py) |
 | **Study 060** (Langevin Resonator) | `study_060_langevin_resonator.wav`, `study_060_langevin_resonator_plate.png`, `study_060_telemetry.json` | [`study_060_langevin_resonator.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_060_langevin_resonator.py) |
+| **Study 061** (Telluric Earth Loop) | `study_061_telemetry.json`, `study_061_telluric_earth_loop.wav`, `study_061_telluric_earth_loop_plate.png` | [`study_061_telluric_earth_loop.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_061_telluric_earth_loop.py) |
 
 ## 3. Institutional Critiques & Dialectical Audits (`practice/critique/`)
 | Document | Target / Subject | Critic | Status |

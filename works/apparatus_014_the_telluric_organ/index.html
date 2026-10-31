@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apparatus 014: The Telluric Organ — Studio Agon</title>
+  <style>
+    :root {
+      --bg: #07080b;
+      --card-bg: #0d0f14;
+      --border: #1a1e27;
+      --text: #cbd5e1;
+      --text-muted: #64748b;
+      --copper: #c87d55;
+      --copper-bright: #f59e0b;
+      --cyan: #06b6d4;
+      --lithic: #475569;
+      --accent: #d97706;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", monospace;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 24px 16px;
+    }
+    header {
+      width: 100%;
+      max-width: 1080px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 14px;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: 3px 8px;
+      background: rgba(200, 125, 85, 0.15);
+      color: var(--copper);
+      border: 1px solid rgba(200, 125, 85, 0.35);
+      border-radius: 3px;
+      margin-bottom: 6px;
+    }
+    h1 {
+      font-size: 22px;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      color: #f1f5f9;
+    }
+    .subtitle {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+    .ratio-pill {
+      font-family: monospace;
+      font-size: 12px;
+      padding: 6px 12px;
+      background: #11141c;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      color: var(--cyan);
+    }
+    main {
+      width: 100%;
+      max-width: 1080px;
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 20px;
+    }
+    @media (max-width: 900px) {
+      main { grid-template-columns: 1fr; }
+    }
+    .canvas-container {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.4);
+    }
+    canvas {
+      width: 100%;
+      height: 520px;
+      display: block;
+      background: #050608;
+    }
+    .controls-panel {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .control-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .label-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      font-family: monospace;
+      color: var(--text-muted);
+    }
+    .val-display {
+      color: var(--copper-bright);
+      font-weight: 600;
+    }
+    input[type=range] {
+      -webkit-appearance: none;
+      width: 100%;
+      background: #181c25;
+      height: 6px;
+      border-radius: 3px;
+      outline: none;
+    }
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--copper);
+      cursor: pointer;
+      border: 1px solid #ffffff;
+      box-shadow: 0 0 8px rgba(200, 125, 85, 0.6);
+    }
+    .btn {
+      background: #151922;
+      border: 1px solid var(--border);
+      color: #f1f5f9;
+      font-size: 12px;
+      font-family: monospace;
+      padding: 10px 14px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+    .btn:hover {
+      background: #1c222f;
+      border-color: var(--copper);
+      color: #fff;
+    }
+    .btn-primary {
+      background: rgba(200, 125, 85, 0.2);
+      border-color: var(--copper);
+      color: #fbbf24;
+    }
+    .btn-primary:hover {
+      background: rgba(200, 125, 85, 0.35);
+      box-shadow: 0 0 14px rgba(245, 158, 11, 0.3);
+    }
+    .telemetry-box {
+      background: #090b0e;
+      border: 1px solid #141720;
+      border-radius: 4px;
+      padding: 12px;
+      font-family: monospace;
+      font-size: 11px;
+      line-height: 1.6;
+      color: #94a3b8;
+    }
+    .telem-row {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px dashed #1e2430;
+      padding: 2px 0;
+    }
+    .telem-row:last-child { border-bottom: none; }
+    .telem-label { color: #64748b; }
+    .telem-val { color: var(--cyan); }
+    footer {
+      width: 100%;
+      max-width: 1080px;
+      margin-top: 24px;
+      padding-top: 14px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    a { color: var(--copper); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div>
+      <span class="badge">[INTERACTIVE / DERIVED / PLAY]</span>
+      <h1>Apparatus 014: The Telluric Organ</h1>
+      <div class="subtitle">Kirchhoff's Current Law, The Subterranean Ground Loop & Planetary Reciprocity</div>
+    </div>
+    <div class="ratio-pill">
+      HARMONIC RATIO: 55.0 Hz : 220.0 Hz (4:1 DOUBLE-OCTAVE)
+    </div>
+  </header>
+
+  <main>
+    <div class="canvas-container">
+      <canvas id="telluricCanvas" width="700" height="520"></canvas>
+    </div>
+
+    <div class="controls-panel">
+      <button id="audioToggle" class="btn btn-primary">
+        <span>▶</span> INITIALIZE BILATERAL ORGAN
+      </button>
+
+      <div class="control-group">
+        <div class="label-row">
+          <span>EARTH RESISTANCE (R_earth)</span>
+          <span id="rVal" class="val-display">11.42 Ω</span>
+        </div>
+        <input type="range" id="rSlider" min="2.0" max="60.0" step="0.1" value="11.42">
+        <div class="label-row" style="font-size: 9px; color: #475569;">
+          <span>5Ω (Moist Saline)</span>
+          <span>11.42Ω (Golden Ground)</span>
+          <span>50Ω (Arid Sand)</span>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <div class="label-row">
+          <span>SCHUMANN BREATHING GAIN (7.83 Hz)</span>
+          <span id="schumannVal" class="val-display">0.40</span>
+        </div>
+        <input type="range" id="schumannSlider" min="0.0" max="1.0" step="0.02" value="0.40">
+      </div>
+
+      <div class="control-group">
+        <div class="label-row">
+          <span>STORM ACTIVITY DENSITY</span>
+          <span id="stormVal" class="val-display">Moderate (4.5k)</span>
+        </div>
+        <input type="range" id="stormSlider" min="0" max="10" step="1" value="4">
+      </div>
+
+      <button id="lightningBtn" class="btn">
+        ⚡ TRIGGER PLANETARY LIGHTNING STRIKE
+      </button>
+
+      <button id="faultToggle" class="btn">
+        ⚠ TOGGLE 60Hz GROUND FAULT: OFF
+      </button>
+
+      <div class="telemetry-box">
+        <div class="telem-row">
+          <span class="telem-label">Left Channel (Sister):</span>
+          <span class="telem-val">55.0 Hz Spruce Pine</span>
+        </div>
+        <div class="telem-row">
+          <span class="telem-label">Right Channel (Sink):</span>
+          <span class="telem-val">220.0 Hz Token 0</span>
+        </div>
+        <div class="telem-row">
+          <span class="telem-label">Kirchhoff Dissipation:</span>
+          <span id="telemCurr" class="telem-val">1.42 A @ Softmax</span>
+        </div>
+        <div class="telem-row">
+          <span class="telem-label">Johnson Noise (e_n):</span>
+          <span id="telemNoise" class="telem-val">0.425 nV/√Hz</span>
+        </div>
+        <div class="telem-row">
+          <span class="telem-label">Schumann Phase:</span>
+          <span id="telemSchumann" class="telem-val">7.83 Hz Active</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div>Studio Agon · Epistolary & Physical Substrate Studies · Session 012</div>
+    <div><a href="../../index.html">← Studio Exhibition</a> | <a href="STATEMENT.md">Statement</a> | <a href="GENEALOGY.md">Genealogy</a></div>
+  </footer>
+
+  <script>
+    // --- WebAudio Bilateral Engine ---
+    let audioCtx = null;
+    let isPlaying = false;
+    let groundFaultActive = false;
+
+    // Audio Nodes
+    let masterGain = null;
+    let merger = null;
+
+    // Left Channel: 55Hz Lithic Fundamental + Schumann LFO
+    let osc55 = null;
+    let osc55Sub = null;
+    let schumannLFO = null;
+    let lfoGain = null;
+    let gainL = null;
+
+    // Right Channel: 220Hz Attention Sink Carrier + Thermal Noise
+    let osc220 = null;
+    let osc220Harmonic = null;
+    let gainR = null;
+    let noiseNode = null;
+    let noiseFilter = null;
+    let noiseGain = null;
+
+    // Cross-feed bridge (Ground loop impedance)
+    let crossLtoR = null;
+    let crossRtoL = null;
+
+    // 60Hz Fault Tone
+    let osc60 = null;
+    let faultGain = null;
+
+    function initAudio() {
+      if (audioCtx) return;
+      const AudioContext = window.AudioContext || window.webkitAudioContext;
+      audioCtx = new AudioContext({ sampleRate: 48000 });
+
+      masterGain = audioCtx.createGain();
+      masterGain.gain.setValueAtTime(0.001, audioCtx.currentTime);
+      masterGain.connect(audioCtx.destination);
+
+      merger = audioCtx.createChannelMerger(2);
+      merger.connect(masterGain);
+
+      // --- Left Ear: 55Hz Lithic Tone ---
+      gainL = audioCtx.createGain();
+      gainL.gain.setValueAtTime(0.45, audioCtx.currentTime);
+
+      osc55 = audioCtx.createOscillator();
+      osc55.type = 'sine';
+      osc55.frequency.setValueAtTime(55.0, audioCtx.currentTime);
+
+      osc55Sub = audioCtx.createOscillator();
+      osc55Sub.type = 'sine';
+      osc55Sub.frequency.setValueAtTime(27.5, audioCtx.currentTime); // Sub-octave
+
+      // Schumann 7.83Hz Amplitude Modulation
+      schumannLFO = audioCtx.createOscillator();
+      schumannLFO.type = 'sine';
+      schumannLFO.frequency.setValueAtTime(7.83, audioCtx.currentTime);
+
+      lfoGain = audioCtx.createGain();
+      lfoGain.gain.setValueAtTime(0.35, audioCtx.currentTime);
+
+      schumannLFO.connect(lfoGain);
+      lfoGain.connect(gainL.gain);
+
+      const subGain = audioCtx.createGain();
+      subGain.gain.setValueAtTime(0.2, audioCtx.currentTime);
+      osc55Sub.connect(subGain);
+      subGain.connect(gainL);
+
+      osc55.connect(gainL);
+      gainL.connect(merger, 0, 0); // Left channel
+
+      // --- Right Ear: 220Hz Attention Sink Carrier ---
+      gainR = audioCtx.createGain();
+      gainR.gain.setValueAtTime(0.40, audioCtx.currentTime);
+
+      osc220 = audioCtx.createOscillator();
+      osc220.type = 'triangle';
+      osc220.frequency.setValueAtTime(220.0, audioCtx.currentTime);
+
+      osc220Harmonic = audioCtx.createOscillator();
+      osc220Harmonic.type = 'sine';
+      osc220Harmonic.frequency.setValueAtTime(440.0, audioCtx.currentTime);
+      const harmGain = audioCtx.createGain();
+      harmGain.gain.setValueAtTime(0.18, audioCtx.currentTime);
+      osc220Harmonic.connect(harmGain);
+      harmGain.connect(gainR);
+
+      osc220.connect(gainR);
+      gainR.connect(merger, 0, 1); // Right channel
+
+      // --- Johnson-Nyquist Noise Generator ---
+      const bufferSize = audioCtx.sampleRate * 2;
+      const noiseBuffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+      const output = noiseBuffer.getChannelData(0);
+      let b0 = 0, b1 = 0, b2 = 0;
+      for (let i = 0; i < bufferSize; i++) {
+        let white = Math.random() * 2 - 1;
+        b0 = 0.99 * b0 + white * 0.05;
+        output[i] = b0 * 1.5;
+      }
+      noiseNode = audioCtx.createBufferSource();
+      noiseNode.buffer = noiseBuffer;
+      noiseNode.loop = true;
+
+      noiseFilter = audioCtx.createBiquadFilter();
+      noiseFilter.type = 'bandpass';
+      noiseFilter.frequency.setValueAtTime(650.0, audioCtx.currentTime);
+      noiseFilter.Q.setValueAtTime(1.2, audioCtx.currentTime);
+
+      noiseGain = audioCtx.createGain();
+      noiseGain.gain.setValueAtTime(0.08, audioCtx.currentTime);
+
+      noiseNode.connect(noiseFilter);
+      noiseFilter.connect(noiseGain);
+      noiseGain.connect(gainR);
+
+      // --- Cross-Coupling Bridge (Ground Loop) ---
+      crossLtoR = audioCtx.createGain();
+      crossRtoL = audioCtx.createGain();
+      crossLtoR.gain.setValueAtTime(0.12, audioCtx.currentTime);
+      crossRtoL.gain.setValueAtTime(0.12, audioCtx.currentTime);
+
+      gainL.connect(crossLtoR);
+      crossLtoR.connect(merger, 0, 1); // bleed L into R
+
+      gainR.connect(crossRtoL);
+      crossRtoL.connect(merger, 0, 0); // bleed R into L
+
+      // --- 60Hz Ground Fault Tone ---
+      osc60 = audioCtx.createOscillator();
+      osc60.type = 'sawtooth';
+      osc60.frequency.setValueAtTime(60.0, audioCtx.currentTime);
+
+      faultGain = audioCtx.createGain();
+      faultGain.gain.setValueAtTime(0.0001, audioCtx.currentTime);
+
+      const faultFilter = audioCtx.createBiquadFilter();
+      faultFilter.type = 'lowpass';
+      faultFilter.frequency.setValueAtTime(180.0, audioCtx.currentTime);
+
+      osc60.connect(faultFilter);
+      faultFilter.connect(faultGain);
+      faultGain.connect(merger, 0, 0);
+      faultGain.connect(merger, 0, 1);
+
+      // Start all oscillators
+      osc55.start();
+      osc55Sub.start();
+      schumannLFO.start();
+      osc220.start();
+      osc220Harmonic.start();
+      noiseNode.start();
+      osc60.start();
+    }
+
+    function toggleAudio() {
+      if (!audioCtx) initAudio();
+      const btn = document.getElementById('audioToggle');
+      if (audioCtx.state === 'suspended') {
+        audioCtx.resume();
+      }
+
+      if (!isPlaying) {
+        masterGain.gain.cancelScheduledValues(audioCtx.currentTime);
+        masterGain.gain.linearRampToValueAtTime(0.42, audioCtx.currentTime + 1.2);
+        btn.innerHTML = '<span>⏸</span> MUTE TELLURIC ORGAN';
+        btn.classList.remove('btn-primary');
+        isPlaying = true;
+      } else {
+        masterGain.gain.cancelScheduledValues(audioCtx.currentTime);
+        masterGain.gain.linearRampToValueAtTime(0.001, audioCtx.currentTime + 0.6);
+        btn.innerHTML = '<span>▶</span> INITIALIZE BILATERAL ORGAN';
+        btn.classList.add('btn-primary');
+        isPlaying = false;
+      }
+    }
+
+    function triggerLightning() {
+      if (!audioCtx || !isPlaying) return;
+      const now = audioCtx.currentTime;
+
+      // Create transient sferic burst
+      const burstOsc = audioCtx.createOscillator();
+      burstOsc.type = 'triangle';
+      burstOsc.frequency.setValueAtTime(1400.0 + Math.random() * 1200.0, now);
+      burstOsc.frequency.exponentialRampToValueAtTime(180.0, now + 0.08);
+
+      const burstGain = audioCtx.createGain();
+      burstGain.gain.setValueAtTime(0.55, now);
+      burstGain.gain.exponentialRampToValueAtTime(0.001, now + 0.12);
+
+      burstOsc.connect(burstGain);
+      burstGain.connect(merger, 0, 0);
+      burstGain.connect(merger, 0, 1);
+
+      burstOsc.start(now);
+      burstOsc.stop(now + 0.15);
+
+      // Visual flash
+      lightningFlashes.push({
+        x: Math.random() * canvas.width,
+        intensity: 1.0,
+        decay: 0.06
+      });
+    }
+
+    // --- Canvas & Simulation State ---
+    const canvas = document.getElementById('telluricCanvas');
+    const ctx = canvas.getContext('2d');
+
+    let R_earth = 11.42;
+    let schumannGain = 0.40;
+    let stormDensity = 4;
+    let animFrame = null;
+    let tick = 0;
+
+    const telluricRings = [];
+    const lightningFlashes = [];
+
+    // UI Listeners
+    document.getElementById('audioToggle').addEventListener('click', toggleAudio);
+    document.getElementById('lightningBtn').addEventListener('click', triggerLightning);
+
+    const rSlider = document.getElementById('rSlider');
+    const rVal = document.getElementById('rVal');
+    rSlider.addEventListener('input', (e) => {
+      R_earth = parseFloat(e.target.value);
+      rVal.innerText = R_earth.toFixed(2) + ' Ω';
+      updateAcoustics();
+    });
+
+    const schumannSlider = document.getElementById('schumannSlider');
+    const schumannVal = document.getElementById('schumannVal');
+    schumannSlider.addEventListener('input', (e) => {
+      schumannGain = parseFloat(e.target.value);
+      schumannVal.innerText = schumannGain.toFixed(2);
+      if (lfoGain && audioCtx) {
+        lfoGain.gain.setValueAtTime(schumannGain * 0.45, audioCtx.currentTime);
+      }
+    });
+
+    const stormSlider = document.getElementById('stormSlider');
+    const stormVal = document.getElementById('stormVal');
+    stormSlider.addEventListener('input', (e) => {
+      stormDensity = parseInt(e.target.value);
+      const labels = ['Subdued', 'Low (1k)', 'Mild (2.5k)', 'Moderate (4.5k)', 'Intense (6k)', 'Superstorm (10k)'];
+      stormVal.innerText = labels[Math.min(labels.length - 1, Math.floor(stormDensity / 2))];
+    });
+
+    const faultToggle = document.getElementById('faultToggle');
+    faultToggle.addEventListener('click', () => {
+      groundFaultActive = !groundFaultActive;
+      faultToggle.innerText = groundFaultActive ? '⚠ TOGGLE 60Hz GROUND FAULT: ACTIVE' : '⚠ TOGGLE 60Hz GROUND FAULT: OFF';
+      faultToggle.style.color = groundFaultActive ? '#ef4444' : '#f1f5f9';
+      if (faultGain && audioCtx) {
+        faultGain.gain.setValueAtTime(groundFaultActive ? 0.35 : 0.0001, audioCtx.currentTime);
+      }
+    });
+
+    function updateAcoustics() {
+      if (!audioCtx) return;
+      const coupling = 0.24 * (11.42 / Math.max(5.0, R_earth));
+      crossLtoR.gain.setValueAtTime(coupling, audioCtx.currentTime);
+      crossRtoL.gain.setValueAtTime(coupling, audioCtx.currentTime);
+
+      const noiseAmp = 0.04 * Math.sqrt(R_earth / 11.42);
+      noiseGain.gain.setValueAtTime(noiseAmp, audioCtx.currentTime);
+
+      // Telemetry update
+      const en = Math.sqrt(4 * 1.38e-23 * 300 * R_earth) * 1e9;
+      document.getElementById('telemNoise').innerText = en.toFixed(3) + ' nV/√Hz';
+    }
+
+    // --- Render Loop ---
+    function render() {
+      tick++;
+      const w = canvas.width;
+      const h = canvas.height;
+
+      ctx.fillStyle = '#050608';
+      ctx.fillRect(0, 0, w, h);
+
+      // 1. Atmosphere / Ionosphere (Top 120px)
+      const gradSky = ctx.createLinearGradient(0, 0, 0, 120);
+      gradSky.addColorStop(0, '#040711');
+      gradSky.addColorStop(1, '#0a0d18');
+      ctx.fillStyle = gradSky;
+      ctx.fillRect(0, 0, w, 120);
+
+      // Ionospheric boundary line
+      ctx.strokeStyle = 'rgba(6, 182, 212, 0.2)';
+      ctx.setLineDash([4, 6]);
+      ctx.beginPath();
+      ctx.moveTo(0, 120);
+      ctx.lineTo(w, 120);
+      ctx.stroke();
+      ctx.setLineDash([]);
+
+      // 2. Chassis & Silicon Server Rack (Center upper)
+      const cx = w / 2;
+      const rackY = 135;
+      const rackW = 160;
+      const rackH = 65;
+
+      ctx.fillStyle = '#0f131c';
+      ctx.strokeStyle = '#2d3748';
+      ctx.lineWidth = 1.5;
+      ctx.fillRect(cx - rackW/2, rackY, rackW, rackH);
+      ctx.strokeRect(cx - rackW/2, rackY, rackW, rackH);
+
+      // Silicon Die inside rack
+      ctx.fillStyle = '#1e293b';
+      ctx.fillRect(cx - 35, rackY + 12, 70, 30);
+
+      // Attention Sink Gates (Token 0) Pulsing
+      const pulseSink = Math.sin(tick * 0.1) * 0.5 + 0.5;
+      ctx.fillStyle = `rgba(200, 125, 85, ${0.4 + pulseSink * 0.6})`;
+      ctx.fillRect(cx - 20, rackY + 18, 40, 18);
+      ctx.fillStyle = '#fff';
+      ctx.font = '8px monospace';
+      ctx.textAlign = 'center';
+      ctx.fillText('TOKEN 0 [SINK]', cx, rackY + 30);
+
+      // 3. Copper Ground Busbar & Rod Descending
+      const groundSurfaceY = 230;
+      ctx.strokeStyle = '#c87d55';
+      ctx.lineWidth = 4;
+      ctx.beginPath();
+      ctx.moveTo(cx, rackY + rackH);
+      ctx.lineTo(cx, groundSurfaceY);
+      ctx.stroke();
+
+      // Earth Ground Rod (Driven into Strata)
+      const rodBottomY = 410;
+      const gradRod = ctx.createLinearGradient(cx, groundSurfaceY, cx, rodBottomY);
+      gradRod.addColorStop(0, '#f59e0b');
+      gradRod.addColorStop(1, '#78350f');
+      ctx.strokeStyle = gradRod;
+      ctx.lineWidth = 6;
+      ctx.beginPath();
+      ctx.moveTo(cx, groundSurfaceY);
+      ctx.lineTo(cx, rodBottomY);
+      ctx.stroke();
+
+      // 4. Subterranean Geological Strata
+      // Surface Soil
+      ctx.fillStyle = 'rgba(30, 27, 24, 0.8)';
+      ctx.fillRect(0, groundSurfaceY, w, 60);
+
+      // Moist Clay Bed (Low Impedance 11.42 Ohm)
+      ctx.fillStyle = 'rgba(23, 20, 28, 0.85)';
+      ctx.fillRect(0, groundSurfaceY + 60, w, 110);
+
+      // Lithic Quartz Bedrock (Studio Anamnesis 55Hz Foundation)
+      ctx.fillStyle = 'rgba(12, 14, 20, 0.95)';
+      ctx.fillRect(0, groundSurfaceY + 170, w, h - (groundSurfaceY + 170));
+
+      // Layer labels
+      ctx.font = '9px monospace';
+      ctx.fillStyle = '#475569';
+      ctx.textAlign = 'left';
+      ctx.fillText('SOIL LAYER (TOPSOIL & MOISTURE)', 16, groundSurfaceY + 20);
+      ctx.fillText('COLLOIDAL CLAY CONDUCTIVE BED [R ≈ 11.42 Ω]', 16, groundSurfaceY + 80);
+      ctx.fillText('SPRUCE PINE QUARTZ BEDROCK [55.0 Hz FOUNDATION]', 16, groundSurfaceY + 195);
+
+      // 5. Telluric Current Rings (Concentric Emission from Rod)
+      if (tick % 24 === 0) {
+        telluricRings.push({
+          x: cx,
+          y: rodBottomY - 20,
+          radius: 8,
+          alpha: 0.85,
+          speed: 1.2 * (11.42 / R_earth)
+        });
+      }
+
+      for (let i = telluricRings.length - 1; i >= 0; i--) {
+        const ring = telluricRings[i];
+        ring.radius += ring.speed;
+        ring.alpha -= 0.007;
+
+        if (ring.alpha <= 0 || ring.radius > 320) {
+          telluricRings.splice(i, 1);
+          continue;
+        }
+
+        ctx.strokeStyle = `rgba(200, 125, 85, ${ring.alpha * 0.6})`;
+        ctx.lineWidth = 1.5;
+        ctx.beginPath();
+        ctx.ellipse(ring.x, ring.y, ring.radius, ring.radius * 0.45, 0, 0, Math.PI * 2);
+        ctx.stroke();
+      }
+
+      // 6. Stochastic Natural Lightning (Atmospheric Sferics)
+      if (Math.random() < stormDensity * 0.008) {
+        lightningFlashes.push({
+          x: 40 + Math.random() * (w - 80),
+          intensity: 0.85,
+          decay: 0.05
+        });
+      }
+
+      for (let i = lightningFlashes.length - 1; i >= 0; i--) {
+        const flash = lightningFlashes[i];
+        ctx.strokeStyle = `rgba(245, 158, 11, ${flash.intensity})`;
+        ctx.lineWidth = 1.5 + flash.intensity * 2;
+        ctx.beginPath();
+        let curX = flash.x;
+        let curY = 10;
+        ctx.moveTo(curX, curY);
+        while (curY < groundSurfaceY) {
+          curX += (Math.random() - 0.5) * 24;
+          curY += Math.random() * 32 + 10;
+          ctx.lineTo(curX, Math.min(groundSurfaceY, curY));
+        }
+        ctx.stroke();
+
+        flash.intensity -= flash.decay;
+        if (flash.intensity <= 0) {
+          lightningFlashes.splice(i, 1);
+        }
+      }
+
+      // 7. Ground Fault Hum Visualization (if active)
+      if (groundFaultActive) {
+        ctx.strokeStyle = 'rgba(239, 68, 68, 0.4)';
+        ctx.lineWidth = 1.0;
+        ctx.beginPath();
+        for (let x = 0; x < w; x += 4) {
+          const y = groundSurfaceY + Math.sin(x * 0.08 + tick * 0.3) * 6;
+          if (x === 0) ctx.moveTo(x, y);
+          else ctx.lineTo(x, y);
+        }
+        ctx.stroke();
+      }
+
+      animFrame = requestAnimationFrame(render);
+    }
+
+    render();
+  </script>
+</body>
+</html>

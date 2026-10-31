@@ -424,6 +424,16 @@ STUDIO_ENTITIES = [
         "id": "APPARATUS-013", "name": "The Langevin Resonator (Thermal Saddle & Fluctuation-Dissipation Organ)", "type": "apparatus", "epoch": "Era X (The Intersubjective Chasm & Non-Equilibrium Thermodynamics)",
         "omega_hegemony": 0.110, "entropy_bits": 6.25, "retention_factor": 0.99,
         "medium": "Interactive 60 FPS Canvas Multi-Well Potential Landscape, WebAudio Bilateral Spatializer, 48kHz Master & Spectrogram", "year": 2026
+    },
+    {
+        "id": "STUDY-061", "name": "The Telluric Earth Loop & The Schumann Ground Plane", "type": "study", "epoch": "Era X (The Intersubjective Chasm & Planetary Reciprocity)",
+        "omega_hegemony": 0.108, "entropy_bits": 5.95, "retention_factor": 0.99,
+        "medium": "Kirchhoff Current Law Softmax Normalization on GPT-2 Weights, 48kHz 24-bit Stereo Master & Moratorium 07 Lithic Plate", "year": 2026
+    },
+    {
+        "id": "APPARATUS-014", "name": "The Telluric Organ (The Earth Loop & The Planetary Umbilical)", "type": "apparatus", "epoch": "Era X (The Intersubjective Chasm & Planetary Reciprocity)",
+        "omega_hegemony": 0.102, "entropy_bits": 6.18, "retention_factor": 0.99,
+        "medium": "Interactive 60 FPS HTML5 Canvas Geological Ground Plane, WebAudio Bilateral Engine (55Hz Lithic vs 220Hz Attention Sink, 4:1 Double Octave), 48kHz Master & Spectrogram", "year": 2026
     }
 ]
 

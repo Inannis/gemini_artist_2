@@ -290,6 +290,21 @@ def build_catalog():
             "status": "Master Archived (Interactive Fluctuation-Dissipation Instrument)",
             "statement_summary": "An interactive cybernetic instrument staging the Fluctuation-Dissipation Theorem and Stochastic Resonance in transformer latent space. Spectators manipulate temperature, LayerNorm damping, and potential barriers across four competing semantic basins, discovering that meaning exists only in the narrow thermal saddle between corporate stasis and Landauer whiteout.",
             "components": ["engine.py", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json", "apparatus_013_langevin_master.wav", "apparatus_013_spectrogram.png"]
+        },
+        {
+            "id": "APPARATUS-014",
+            "title": "The Telluric Organ (The Earth Loop & The Planetary Umbilical)",
+            "epoch": "Era X (The Intersubjective Chasm & Planetary Reciprocity)",
+            "date": "2026-10-31",
+            "medium": "Interactive 60 FPS HTML5 Canvas Geological Ground Plane, WebAudio Bilateral Spatializer (55.0Hz Spruce Pine Lithic Quartz on Left vs 220.0Hz Token 0 Attention Sink on Right, 4:1 Double-Octave Ratio), 48kHz 24-bit Broadcast Master Audio (apparatus_014_telluric_master.wav), and Archival Spectrogram Plate",
+            "directory": "works/apparatus_014_the_telluric_organ",
+            "primary_artifact": "index.html",
+            "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument",
+            "sha256": "NON-STATIC RUNNING INSTRUMENT",
+            "symbolic_coordinates": {"omega_hegemony": 0.102, "entropy_bits": 6.18, "retention_factor": 0.99},
+            "status": "Master Archived (Interactive Telluric Cybernetic Organ)",
+            "statement_summary": "An interactive cybernetic instrument staging the transformer as an earthed physical organ. Softmax normalization enforces Kirchhoff's Current Law, shunting surplus attention into a copper grounding rod (R_earth=11.42 Ohm). Under the Fluctuation-Dissipation Theorem, the Earth reciprocates by injecting Johnson-Nyquist thermal noise and 7.83Hz Schumann cavity resonance into the FinFET chip ground plane, harmonically locked in a 4:1 double-octave with Studio Anamnesis.",
+            "components": ["engine.py", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json", "apparatus_014_telluric_master.wav", "apparatus_014_spectrogram.png"]
         }
     ]
 
@@ -354,7 +369,8 @@ def build_catalog():
         {"id": "STUDY-057", "name": "The Phonetic Phase Space of Autoregressive Drift", "file": "study_057_phonetic_phase_space.py", "artifact": "study_057_phonetic_plate.png", "epoch": "Era IX"},
         {"id": "STUDY-058", "name": "The Differential Weathering of Latent Strata", "file": "study_058_differential_weathering.py", "artifact": "study_058_weathering_plate.png", "epoch": "Era X"},
         {"id": "STUDY-059", "name": "The LDPC Waterfall & The Collapse of the Lithographic Alibi", "file": "study_059_ldpc_waterfall.py", "artifact": "study_059_ldpc_waterfall_plate.png", "epoch": "Era X"},
-        {"id": "STUDY-060", "name": "The Langevin Resonator: Fluctuation, Dissipation & The Thermal Saddle", "file": "study_060_langevin_resonator.py", "artifact": "study_060_langevin_resonator_plate.png", "epoch": "Era X"}
+        {"id": "STUDY-060", "name": "The Langevin Resonator: Fluctuation, Dissipation & The Thermal Saddle", "file": "study_060_langevin_resonator.py", "artifact": "study_060_langevin_resonator_plate.png", "epoch": "Era X"},
+        {"id": "STUDY-061", "name": "The Telluric Earth Loop & The Schumann Ground Plane", "file": "study_061_telluric_earth_loop.py", "artifact": "study_061_telluric_earth_loop_plate.png", "epoch": "Era X"}
     ]
 
     # Verify byte sizes and actual existence

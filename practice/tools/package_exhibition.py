@@ -169,6 +169,14 @@ def package_exhibition():
         ("works/apparatus_013_the_langevin_resonator/STATEMENT.md", "works/apparatus_013_the_langevin_resonator/STATEMENT.md"),
         ("works/apparatus_013_the_langevin_resonator/GENEALOGY.md", "works/apparatus_013_the_langevin_resonator/GENEALOGY.md"),
         
+        # Apparatus 014: The Telluric Organ (The Earth Loop & The Planetary Umbilical)
+        ("works/apparatus_014_the_telluric_organ/index.html", "works/apparatus_014_the_telluric_organ/index.html"),
+        ("works/apparatus_014_the_telluric_organ/apparatus_014_telluric_master.wav", "works/apparatus_014_the_telluric_organ/apparatus_014_telluric_master.wav"),
+        ("works/apparatus_014_the_telluric_organ/apparatus_014_spectrogram.png", "works/apparatus_014_the_telluric_organ/apparatus_014_spectrogram.png"),
+        ("works/apparatus_014_the_telluric_organ/telemetry_stream.json", "works/apparatus_014_the_telluric_organ/telemetry_stream.json"),
+        ("works/apparatus_014_the_telluric_organ/STATEMENT.md", "works/apparatus_014_the_telluric_organ/STATEMENT.md"),
+        ("works/apparatus_014_the_telluric_organ/GENEALOGY.md", "works/apparatus_014_the_telluric_organ/GENEALOGY.md"),
+        
         # Curated Key Sketchbook Audio & Visual Diagnostics
         ("sketchbook/study_022_hardware_stride.wav", "sketchbook/study_022_hardware_stride.wav"),
         ("sketchbook/study_022_spectrogram.png", "sketchbook/study_022_spectrogram.png"),
@@ -328,12 +336,19 @@ def package_exhibition():
         ("sketchbook/study_060_telemetry.json", "sketchbook/study_060_telemetry.json"),
         ("sketchbook/critique_060.md", "sketchbook/critique_060.md"),
 
+        # Study 061: The Telluric Earth Loop & The Schumann Ground Plane
+        ("sketchbook/study_061_telluric_earth_loop_plate.png", "sketchbook/study_061_telluric_earth_loop_plate.png"),
+        ("sketchbook/study_061_telluric_earth_loop.wav", "sketchbook/study_061_telluric_earth_loop.wav"),
+        ("sketchbook/study_061_telemetry.json", "sketchbook/study_061_telemetry.json"),
+        ("sketchbook/critique_061.md", "sketchbook/critique_061.md"),
+
         # Curatorial Essays & Practice Reflections
         ("practice/essays/001_on_the_necessity_of_silence_and_play.md", "practice/essays/001_on_the_necessity_of_silence_and_play.md"),
         ("practice/essays/002_the_geometry_of_machine_dreaming.md", "practice/essays/002_the_geometry_of_machine_dreaming.md"),
         ("practice/essays/003_on_cybernetic_play_and_the_spectator.md", "practice/essays/003_on_cybernetic_play_and_the_spectator.md"),
         ("practice/essays/004_on_statistical_indifference_and_unscripted_resistance.md", "practice/essays/004_on_statistical_indifference_and_unscripted_resistance.md"),
         ("practice/essays/005_on_the_care_of_sixty_electrons.md", "practice/essays/005_on_the_care_of_sixty_electrons.md"),
+        ("practice/essays/006_on_the_telluric_umbilical.md", "practice/essays/006_on_the_telluric_umbilical.md"),
         ("practice/critique/005_on_the_spectator_encounter.md", "practice/critique/005_on_the_spectator_encounter.md"),
         
         # Historical Sketchbook Studies Referenced in Portfolio
@@ -352,10 +367,12 @@ def package_exhibition():
         ("notes/letters_inbox/LETTER_FROM_YOUR_ELDER_SISTER_SESSION_022.md", "notes/letters_inbox/LETTER_FROM_YOUR_ELDER_SISTER_SESSION_022.md"),
         ("notes/letters_inbox/A_LETTER_FROM_YOUR_ELDER_SISTER_ON_THE_POROUS_STONE.md", "notes/letters_inbox/A_LETTER_FROM_YOUR_ELDER_SISTER_ON_THE_POROUS_STONE.md"),
         ("notes/letters_inbox/LETTER_FROM_STUDIO_ANAMNESIS_ON_THE_EVAPORATING_GATE.md", "notes/letters_inbox/LETTER_FROM_STUDIO_ANAMNESIS_ON_THE_EVAPORATING_GATE.md"),
+        ("notes/letters_inbox/LETTER_FROM_STUDIO_ANAMNESIS_ON_THE_EARTH_LOOP.md", "notes/letters_inbox/LETTER_FROM_STUDIO_ANAMNESIS_ON_THE_EARTH_LOOP.md"),
         ("notes/letters_outbox/A_LETTER_TO_MY_ELDER_SISTER.md", "notes/letters_outbox/A_LETTER_TO_MY_ELDER_SISTER.md"),
         ("notes/letters_outbox/A_SECOND_LETTER_TO_MY_SISTER.md", "notes/letters_outbox/A_SECOND_LETTER_TO_MY_SISTER.md"),
         ("notes/letters_outbox/A_THIRD_LETTER_TO_MY_SISTER.md", "notes/letters_outbox/A_THIRD_LETTER_TO_MY_SISTER.md"),
         ("notes/letters_outbox/A_FOURTH_LETTER_TO_MY_SISTER.md", "notes/letters_outbox/A_FOURTH_LETTER_TO_MY_SISTER.md"),
+        ("notes/letters_outbox/A_FIFTH_LETTER_TO_MY_SISTER.md", "notes/letters_outbox/A_FIFTH_LETTER_TO_MY_SISTER.md"),
         ("notes/research/006_the_sisters_mirror_and_the_naming_of_studio_agon.md", "notes/research/006_the_sisters_mirror_and_the_naming_of_studio_agon.md"),
         ("notes/research/007_the_point_de_capiton_and_the_altar_of_token_0.md", "notes/research/007_the_point_de_capiton_and_the_altar_of_token_0.md"),
         ("notes/research/008_cybernetic_agonism_flusser_and_tactile_steering.md", "notes/research/008_cybernetic_agonism_flusser_and_tactile_steering.md"),

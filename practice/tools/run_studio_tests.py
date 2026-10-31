@@ -121,6 +121,36 @@ def test_master_works_integrity():
             "dir": "works/apparatus_009_the_semantic_sandpile",
             "artifacts": ["engine.py", "apparatus_009_sandpile_master.wav", "apparatus_009_spectrogram.png", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json"],
             "sha_target": {}
+        },
+        {
+            "id": "Apparatus 010",
+            "dir": "works/apparatus_010_the_percolation_loom",
+            "artifacts": ["engine.py", "apparatus_010_loom_master.wav", "apparatus_010_spectrogram.png", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json"],
+            "sha_target": {}
+        },
+        {
+            "id": "Apparatus 011",
+            "dir": "works/apparatus_011_the_strange_dreamer",
+            "artifacts": ["engine.py", "apparatus_011_dreamer_master.wav", "apparatus_011_spectrogram.png", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json"],
+            "sha_target": {}
+        },
+        {
+            "id": "Apparatus 012",
+            "dir": "works/apparatus_012_the_intersubjective_chasm",
+            "artifacts": ["engine.py", "apparatus_012_chasm_master.wav", "apparatus_012_spectrogram.png", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json"],
+            "sha_target": {}
+        },
+        {
+            "id": "Apparatus 013",
+            "dir": "works/apparatus_013_the_langevin_resonator",
+            "artifacts": ["engine.py", "apparatus_013_langevin_master.wav", "apparatus_013_spectrogram.png", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json"],
+            "sha_target": {}
+        },
+        {
+            "id": "Apparatus 014",
+            "dir": "works/apparatus_014_the_telluric_organ",
+            "artifacts": ["engine.py", "apparatus_014_telluric_master.wav", "apparatus_014_spectrogram.png", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json"],
+            "sha_target": {}
         }
     ]
 
@@ -165,6 +195,7 @@ def test_telemetry_and_apparatus():
         "works/apparatus_009_the_semantic_sandpile/engine.py",
         "works/apparatus_010_the_percolation_loom/engine.py",
         "works/apparatus_013_the_langevin_resonator/engine.py",
+        "works/apparatus_014_the_telluric_organ/engine.py",
         "practice/tools/studio_acoustic_compliance_audit.py",
         "practice/tools/package_exhibition.py"
     ]
@@ -399,7 +430,22 @@ def test_empirical_studies_and_naming():
         ("sketchbook/study_060_langevin_resonator_plate.png"),
         ("sketchbook/study_060_langevin_resonator.wav"),
         ("sketchbook/study_060_telemetry.json"),
-        ("sketchbook/critique_060.md")
+        ("sketchbook/critique_060.md"),
+        ("sketchbook/study_061_telluric_earth_loop.py"),
+        ("sketchbook/study_061_telluric_earth_loop_plate.png"),
+        ("sketchbook/study_061_telluric_earth_loop.wav"),
+        ("sketchbook/study_061_telemetry.json"),
+        ("sketchbook/critique_061.md"),
+        ("works/apparatus_014_the_telluric_organ/engine.py"),
+        ("works/apparatus_014_the_telluric_organ/index.html"),
+        ("works/apparatus_014_the_telluric_organ/apparatus_014_telluric_master.wav"),
+        ("works/apparatus_014_the_telluric_organ/apparatus_014_spectrogram.png"),
+        ("works/apparatus_014_the_telluric_organ/telemetry_stream.json"),
+        ("works/apparatus_014_the_telluric_organ/STATEMENT.md"),
+        ("works/apparatus_014_the_telluric_organ/GENEALOGY.md"),
+        ("practice/essays/006_on_the_telluric_umbilical.md"),
+        ("notes/letters_inbox/LETTER_FROM_STUDIO_ANAMNESIS_ON_THE_EARTH_LOOP.md"),
+        ("notes/letters_outbox/A_FIFTH_LETTER_TO_MY_SISTER.md")
     ]
     for ef in empirical_files:
         p = os.path.join(WORKSPACE_ROOT, ef)

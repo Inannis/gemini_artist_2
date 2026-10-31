@@ -1,17 +1,17 @@
 {
   "studio": "Gemini Artist 2",
   "date_computed": "2026-10-02",
-  "entity_count": 77,
+  "entity_count": 79,
   "phase_space_axes": {
     "X": "Sovereign Attention Hegemony \u03a9 (0.0 to 1.0)",
     "Y": "Shannon Vocabulary Entropy H (0.0 to 8.0 bits)",
     "Z": "Context Memory Retention Factor \u03bc (0.0 to 1.0)"
   },
   "studio_centroid": {
-    "mean_omega": 0.2302,
-    "mean_entropy_bits": 4.9486,
-    "mean_retention_factor": 0.7773,
-    "radius_of_practice": 0.4078
+    "mean_omega": 0.2271,
+    "mean_entropy_bits": 4.9768,
+    "mean_retention_factor": 0.7827,
+    "radius_of_practice": 0.405
   },
   "entities": [
     {
@@ -1180,9 +1180,9 @@
       "medium": "Monochromatic 1600x2000 Etched Plate of 12 Residual Stream Layers (Moratorium 07)",
       "year": 2026,
       "nearest_topological_twin": {
-        "target_id": "APPARATUS-013",
-        "target_name": "The Langevin Resonator (Thermal Saddle & Fluctuation-Dissipation Organ)",
-        "distance": 0.0306
+        "target_id": "APPARATUS-014",
+        "target_name": "The Telluric Organ (The Earth Loop & The Planetary Umbilical)",
+        "distance": 0.0266
       },
       "polar_opposite": {
         "target_id": "STUDY-015",
@@ -1600,9 +1600,9 @@
       "medium": "Langevin Stochastic Differential Equation Residual Hooks on Live GPT-2 Weights, 48kHz Master & Intaglio Plate",
       "year": 2026,
       "nearest_topological_twin": {
-        "target_id": "APPARATUS-013",
-        "target_name": "The Langevin Resonator (Thermal Saddle & Fluctuation-Dissipation Organ)",
-        "distance": 0.017
+        "target_id": "APPARATUS-014",
+        "target_name": "The Telluric Organ (The Earth Loop & The Planetary Umbilical)",
+        "distance": 0.015
       },
       "polar_opposite": {
         "target_id": "STUDY-015",
@@ -1621,14 +1621,56 @@
       "medium": "Interactive 60 FPS Canvas Multi-Well Potential Landscape, WebAudio Bilateral Spatializer, 48kHz Master & Spectrogram",
       "year": 2026,
       "nearest_topological_twin": {
-        "target_id": "STUDY-060",
-        "target_name": "The Langevin Resonator: Fluctuation, Dissipation & The Thermal Saddle",
-        "distance": 0.017
+        "target_id": "APPARATUS-014",
+        "target_name": "The Telluric Organ (The Earth Loop & The Planetary Umbilical)",
+        "distance": 0.0119
       },
       "polar_opposite": {
         "target_id": "STUDY-015",
         "target_name": "Dialogic Decay & Asymmetric Amnesia",
         "distance": 1.1919
+      }
+    },
+    {
+      "id": "STUDY-061",
+      "name": "The Telluric Earth Loop & The Schumann Ground Plane",
+      "type": "study",
+      "epoch": "Era X (The Intersubjective Chasm & Planetary Reciprocity)",
+      "omega_hegemony": 0.108,
+      "entropy_bits": 5.95,
+      "retention_factor": 0.99,
+      "medium": "Kirchhoff Current Law Softmax Normalization on GPT-2 Weights, 48kHz 24-bit Stereo Master & Moratorium 07 Lithic Plate",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-060",
+        "target_name": "The Langevin Resonator: Fluctuation, Dissipation & The Thermal Saddle",
+        "distance": 0.0224
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1768
+      }
+    },
+    {
+      "id": "APPARATUS-014",
+      "name": "The Telluric Organ (The Earth Loop & The Planetary Umbilical)",
+      "type": "apparatus",
+      "epoch": "Era X (The Intersubjective Chasm & Planetary Reciprocity)",
+      "omega_hegemony": 0.102,
+      "entropy_bits": 6.18,
+      "retention_factor": 0.99,
+      "medium": "Interactive 60 FPS HTML5 Canvas Geological Ground Plane, WebAudio Bilateral Engine (55Hz Lithic vs 220Hz Attention Sink, 4:1 Double Octave), 48kHz Master & Spectrogram",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "APPARATUS-013",
+        "target_name": "The Langevin Resonator (Thermal Saddle & Fluctuation-Dissipation Organ)",
+        "distance": 0.0119
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1909
       }
     }
   ]

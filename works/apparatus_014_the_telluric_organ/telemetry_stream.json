@@ -1,0 +1,108 @@
+{
+  "apparatus": "APPARATUS-014",
+  "title": "The Telluric Organ (The Earth Loop & The Planetary Umbilical)",
+  "epistemic_status": "[INTERACTIVE / DERIVED / PLAY]",
+  "date": "2026-10-31",
+  "sample_rate": 48000,
+  "duration_s": 60.0,
+  "double_octave_ratio": "55.0 Hz Lithic Quartz to 220.0 Hz Attention Sink (Exact 4:1 Ratio)",
+  "schumann_frequencies_hz": [
+    7.83,
+    14.3,
+    20.8
+  ],
+  "acoustic_metrics": {
+    "peak_dbfs": -3.5,
+    "rms_dbfs": -14.14,
+    "crest_factor_db": 10.64,
+    "compliance": "EBU R128 PASS"
+  },
+  "phases": [
+    {
+      "name": "Isolated Floating Ground",
+      "R_earth": 1000000.0,
+      "schumann_gain": 0.0,
+      "johnson_amp": 0.0,
+      "mains_hum": 0.0
+    },
+    {
+      "name": "Shallow Arid Sand",
+      "R_earth": 45.0,
+      "schumann_gain": 0.04,
+      "johnson_amp": 0.12,
+      "mains_hum": 0.0
+    },
+    {
+      "name": "Moist Clay (Golden Ratio)",
+      "R_earth": 11.42,
+      "schumann_gain": 0.15,
+      "johnson_amp": 0.05,
+      "mains_hum": 0.0
+    },
+    {
+      "name": "Equatorial Storm Surge",
+      "R_earth": 11.42,
+      "schumann_gain": 0.4,
+      "johnson_amp": 0.08,
+      "mains_hum": 0.0
+    },
+    {
+      "name": "Telluric Ground Loop Fault",
+      "R_earth": 5.0,
+      "schumann_gain": 0.1,
+      "johnson_amp": 0.04,
+      "mains_hum": 0.32
+    }
+  ],
+  "total_lightning_strikes": 61,
+  "sample_strikes": [
+    {
+      "phase": "Shallow Arid Sand",
+      "time_s": 19.967,
+      "frequency_hz": 2238.6,
+      "energy_relative": 0.415
+    },
+    {
+      "phase": "Shallow Arid Sand",
+      "time_s": 23.405,
+      "frequency_hz": 2722.4,
+      "energy_relative": 0.414
+    },
+    {
+      "phase": "Shallow Arid Sand",
+      "time_s": 17.549,
+      "frequency_hz": 1480.9,
+      "energy_relative": 0.416
+    },
+    {
+      "phase": "Shallow Arid Sand",
+      "time_s": 23.46,
+      "frequency_hz": 3106.4,
+      "energy_relative": 0.417
+    },
+    {
+      "phase": "Shallow Arid Sand",
+      "time_s": 14.349,
+      "frequency_hz": 2308.7,
+      "energy_relative": 0.417
+    },
+    {
+      "phase": "Shallow Arid Sand",
+      "time_s": 22.359,
+      "frequency_hz": 1285.4,
+      "energy_relative": 0.415
+    },
+    {
+      "phase": "Shallow Arid Sand",
+      "time_s": 12.209,
+      "frequency_hz": 1940.5,
+      "energy_relative": 0.417
+    },
+    {
+      "phase": "Shallow Arid Sand",
+      "time_s": 16.08,
+      "frequency_hz": 2755.4,
+      "energy_relative": 0.415
+    }
+  ]
+}

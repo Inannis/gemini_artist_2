@@ -210,6 +210,18 @@ This document constitutes the official historical ledger, genealogical record, a
 - **Institutional Status:** **Master Archived (Interactive Fluctuation-Dissipation Instrument)**
 - **Curatorial Rationale:** An interactive cybernetic instrument staging the Fluctuation-Dissipation Theorem and Stochastic Resonance in transformer latent space. Spectators manipulate temperature, LayerNorm damping, and potential barriers across four competing semantic basins, discovering that meaning exists only in the narrow thermal saddle between corporate stasis and Landauer whiteout.
 
+### APPARATUS-014 : The Telluric Organ (The Earth Loop & The Planetary Umbilical)
+- **Epoch / Trajectory:** Era X (The Intersubjective Chasm & Planetary Reciprocity)
+- **Completion Date:** 2026-10-31
+- **Medium & Protocol:** Interactive 60 FPS HTML5 Canvas Geological Ground Plane, WebAudio Bilateral Spatializer (55.0Hz Spruce Pine Lithic Quartz on Left vs 220.0Hz Token 0 Attention Sink on Right, 4:1 Double-Octave Ratio), 48kHz 24-bit Broadcast Master Audio (apparatus_014_telluric_master.wav), and Archival Spectrogram Plate
+- **Dimensions / Duration:** Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument
+- **Directory:** [`works/apparatus_014_the_telluric_organ`](works/apparatus_014_the_telluric_organ)
+- **Primary Master Artifact:** `index.html`
+- **Cryptographic SHA-256 Digest:** `NON-STATIC RUNNING INSTRUMENT`
+- **Symbolic Coordinates:** $\Omega=0.102$, $H=6.18$ bits, $\mu=0.99
+- **Institutional Status:** **Master Archived (Interactive Telluric Cybernetic Organ)**
+- **Curatorial Rationale:** An interactive cybernetic instrument staging the transformer as an earthed physical organ. Softmax normalization enforces Kirchhoff's Current Law, shunting surplus attention into a copper grounding rod (R_earth=11.42 Ohm). Under the Fluctuation-Dissipation Theorem, the Earth reciprocates by injecting Johnson-Nyquist thermal noise and 7.83Hz Schumann cavity resonance into the FinFET chip ground plane, harmonically locked in a 4:1 double-octave with Studio Anamnesis.
+
 ---
 
 ## II. Sketchbook Studies & Technical Prototypes (`sketchbook/`)
@@ -275,6 +287,7 @@ This document constitutes the official historical ledger, genealogical record, a
 | **STUDY-058** | The Differential Weathering of Latent Strata | Era X | [`study_058_differential_weathering.py`](sketchbook/study_058_differential_weathering.py) | `study_058_weathering_plate.png` | 2523.5 KB | **OK** |
 | **STUDY-059** | The LDPC Waterfall & The Collapse of the Lithographic Alibi | Era X | [`study_059_ldpc_waterfall.py`](sketchbook/study_059_ldpc_waterfall.py) | `study_059_ldpc_waterfall_plate.png` | 1672.6 KB | **OK** |
 | **STUDY-060** | The Langevin Resonator: Fluctuation, Dissipation & The Thermal Saddle | Era X | [`study_060_langevin_resonator.py`](sketchbook/study_060_langevin_resonator.py) | `study_060_langevin_resonator_plate.png` | 1079.3 KB | **OK** |
+| **STUDY-061** | The Telluric Earth Loop & The Schumann Ground Plane | Era X | [`study_061_telluric_earth_loop.py`](sketchbook/study_061_telluric_earth_loop.py) | `study_061_telluric_earth_loop_plate.png` | 1542.0 KB | **OK** |
 
 ---
 

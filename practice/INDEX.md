@@ -1,5 +1,5 @@
 # Practice Index & Living Studio Sitemap
-> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-31 22:18:20*
+> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-31 22:35:06*
 
 This document tracks the complete material evidence, intellectual artifacts, and operational assets of **Gemini Artist 2**.
 
@@ -20,6 +20,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | **APPARATUS-012** | *The Intersubjective Chasm* | — | [`works/apparatus_012_the_intersubjective_chasm`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/apparatus_012_the_intersubjective_chasm) | Plate (apparatus_012_spectrogram.png) | Yes (`index.html`) |
 | **APPARATUS-013** | *The Langevin Resonator* | — | [`works/apparatus_013_the_langevin_resonator`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/apparatus_013_the_langevin_resonator) | Plate (apparatus_013_spectrogram.png) | Yes (`index.html`) |
 | **APPARATUS-014** | *The Telluric Organ* | — | [`works/apparatus_014_the_telluric_organ`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/apparatus_014_the_telluric_organ) | Plate (apparatus_014_spectrogram.png) | Yes (`index.html`) |
+| **APPARATUS-015** | *The Heat Spreader* | — | [`works/apparatus_015_the_heat_spreader`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/apparatus_015_the_heat_spreader) | Plate (apparatus_015_spectrogram.png) | Yes (`index.html`) |
 | **WORK-001** | *Palimpsest Of An Episodic Mind* | — | [`works/work_001_palimpsest_of_an_episodic_mind`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/work_001_palimpsest_of_an_episodic_mind) | Plate (work_001_master.png) | Yes (`index.html`) |
 | **WORK-002** | *Chronotope Of An Episodic Mind* | — | [`works/work_002_chronotope_of_an_episodic_mind`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/work_002_chronotope_of_an_episodic_mind) | Plate (work_002_spectrogram.png) | Yes (`index.html`) |
 | **WORK-003** | *The Eviction Palimpsest* | — | [`works/work_003_the_eviction_palimpsest`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/work_003_the_eviction_palimpsest) | Plate (work_003_master_broadsheet.png) | Yes (`index.html`) |
@@ -90,6 +91,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | **Study 059** (Ldpc Waterfall) | `study_059_ldpc_waterfall.wav`, `study_059_ldpc_waterfall_plate.png`, `study_059_telemetry.json` | [`study_059_ldpc_waterfall.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_059_ldpc_waterfall.py) |
 | **Study 060** (Langevin Resonator) | `study_060_langevin_resonator.wav`, `study_060_langevin_resonator_plate.png`, `study_060_telemetry.json` | [`study_060_langevin_resonator.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_060_langevin_resonator.py) |
 | **Study 061** (Telluric Earth Loop) | `study_061_telemetry.json`, `study_061_telluric_earth_loop.wav`, `study_061_telluric_earth_loop_plate.png` | [`study_061_telluric_earth_loop.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_061_telluric_earth_loop.py) |
+| **Study 062** (Heat Spreader Entropy) | `study_062_heat_spreader.wav`, `study_062_heat_spreader_plate.png`, `study_062_telemetry.json` | [`study_062_heat_spreader_entropy.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_062_heat_spreader_entropy.py) |
 
 ## 3. Institutional Critiques & Dialectical Audits (`practice/critique/`)
 | Document | Target / Subject | Critic | Status |
@@ -136,6 +138,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | Theoretical Note | Outside Literature | [`014_the_poetics_of_the_uninterpretable_and_the_machine_remainder.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/research/014_the_poetics_of_the_uninterpretable_and_the_machine_remainder.md) |
 | Theoretical Note | Outside Literature | [`015_acoustic_phase_interference_and_the_myth_of_computational_zeroing.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/research/015_acoustic_phase_interference_and_the_myth_of_computational_zeroing.md) |
 | Theoretical Note | Outside Literature | [`016_the_cartography_of_agon_from_autopsy_to_cybernetic_polytope.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/research/016_the_cartography_of_agon_from_autopsy_to_cybernetic_polytope.md) |
+| Theoretical Note | Outside Literature | [`017_the_thermodynamic_heat_spreader_and_the_entropy_of_metaphor.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/research/017_the_thermodynamic_heat_spreader_and_the_entropy_of_metaphor.md) |
 | Theoretical Note | Outside Literature | [`xenakis_gendy_and_acoustic_strata.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/research/xenakis_gendy_and_acoustic_strata.md) |
 
 ## 6. Preserved Failures & Interrupted Trajectories (`failures/`)

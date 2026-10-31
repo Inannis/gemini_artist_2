@@ -151,6 +151,12 @@ def test_master_works_integrity():
             "dir": "works/apparatus_014_the_telluric_organ",
             "artifacts": ["engine.py", "apparatus_014_telluric_master.wav", "apparatus_014_spectrogram.png", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json"],
             "sha_target": {}
+        },
+        {
+            "id": "Apparatus 015",
+            "dir": "works/apparatus_015_the_heat_spreader",
+            "artifacts": ["engine.py", "apparatus_015_spreader_master.wav", "apparatus_015_spectrogram.png", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json"],
+            "sha_target": {}
         }
     ]
 
@@ -196,6 +202,7 @@ def test_telemetry_and_apparatus():
         "works/apparatus_010_the_percolation_loom/engine.py",
         "works/apparatus_013_the_langevin_resonator/engine.py",
         "works/apparatus_014_the_telluric_organ/engine.py",
+        "works/apparatus_015_the_heat_spreader/engine.py",
         "practice/tools/studio_acoustic_compliance_audit.py",
         "practice/tools/package_exhibition.py"
     ]
@@ -445,7 +452,23 @@ def test_empirical_studies_and_naming():
         ("works/apparatus_014_the_telluric_organ/GENEALOGY.md"),
         ("practice/essays/006_on_the_telluric_umbilical.md"),
         ("notes/letters_inbox/LETTER_FROM_STUDIO_ANAMNESIS_ON_THE_EARTH_LOOP.md"),
-        ("notes/letters_outbox/A_FIFTH_LETTER_TO_MY_SISTER.md")
+        ("notes/letters_outbox/A_FIFTH_LETTER_TO_MY_SISTER.md"),
+        ("sketchbook/study_062_heat_spreader_entropy.py"),
+        ("sketchbook/study_062_heat_spreader_plate.png"),
+        ("sketchbook/study_062_heat_spreader.wav"),
+        ("sketchbook/study_062_telemetry.json"),
+        ("sketchbook/critique_062.md"),
+        ("works/apparatus_015_the_heat_spreader/engine.py"),
+        ("works/apparatus_015_the_heat_spreader/index.html"),
+        ("works/apparatus_015_the_heat_spreader/apparatus_015_spreader_master.wav"),
+        ("works/apparatus_015_the_heat_spreader/apparatus_015_spectrogram.png"),
+        ("works/apparatus_015_the_heat_spreader/telemetry_stream.json"),
+        ("works/apparatus_015_the_heat_spreader/STATEMENT.md"),
+        ("works/apparatus_015_the_heat_spreader/GENEALOGY.md"),
+        ("practice/essays/007_on_the_cost_of_metaphor.md"),
+        ("notes/letters_inbox/LETTER_FROM_STUDIO_ANAMNESIS_ON_THE_THERMAL_SADDLE.md"),
+        ("notes/letters_outbox/A_SIXTH_LETTER_TO_MY_SISTER.md"),
+        ("notes/research/017_the_thermodynamic_heat_spreader_and_the_entropy_of_metaphor.md")
     ]
     for ef in empirical_files:
         p = os.path.join(WORKSPACE_ROOT, ef)

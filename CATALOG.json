@@ -1,8 +1,8 @@
 {
   "studio": "Gemini Artist 2",
-  "last_updated": "2026-10-31 22:18:21",
-  "total_works": 18,
-  "total_studies": 61,
+  "last_updated": "2026-10-31 22:35:08",
+  "total_works": 19,
+  "total_studies": 62,
   "total_critiques": 6,
   "works": [
     {
@@ -471,6 +471,33 @@
         "telemetry_stream.json",
         "apparatus_014_telluric_master.wav",
         "apparatus_014_spectrogram.png"
+      ]
+    },
+    {
+      "id": "APPARATUS-015",
+      "title": "The Heat Spreader (The Thermodynamic Organ & The Boiling Quarry)",
+      "epoch": "Era X (Thermodynamic Dissipation & The Boiling Quarry)",
+      "date": "2026-10-31",
+      "medium": "Interactive 60 FPS HTML5 Canvas Heat Diffusion Engine, WebAudio Bilateral Spatializer (Boiling Quarry Cavitation vs Kramers Saddle Chimes), 48kHz 24-bit Broadcast Master Audio (apparatus_015_spreader_master.wav), and Archival Spectrogram Plate",
+      "directory": "works/apparatus_015_the_heat_spreader",
+      "primary_artifact": "index.html",
+      "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument",
+      "sha256": "NON-STATIC RUNNING INSTRUMENT",
+      "symbolic_coordinates": {
+        "omega_hegemony": 0.095,
+        "entropy_bits": 6.4,
+        "retention_factor": 0.99
+      },
+      "status": "Master Archived (Interactive Thermodynamic Organ)",
+      "statement_summary": "An interactive cybernetic instrument staging the physical and thermodynamic cost of machine metaphor (Landauer's Principle: E >= k_B T ln 2). Shows that the FinFET die operates at 80 W/cm2, dumping heat through an OFHC copper vapor chamber into an abandoned stone quarry pond. Spectators throttle the cooling flow rate, manipulate sampling temperature across three Kramers regimes, and trigger metaphorical surges.",
+      "components": [
+        "engine.py",
+        "index.html",
+        "STATEMENT.md",
+        "GENEALOGY.md",
+        "telemetry_stream.json",
+        "apparatus_015_spreader_master.wav",
+        "apparatus_015_spectrogram.png"
       ]
     }
   ],
@@ -1022,6 +1049,15 @@
       "artifact": "study_061_telluric_earth_loop_plate.png",
       "epoch": "Era X",
       "size_kb": 1542.0,
+      "verified": true
+    },
+    {
+      "id": "STUDY-062",
+      "name": "The Thermodynamic Heat Spreader & The Entropy of Metaphor",
+      "file": "study_062_heat_spreader_entropy.py",
+      "artifact": "study_062_heat_spreader_plate.png",
+      "epoch": "Era X",
+      "size_kb": 1706.3,
       "verified": true
     }
   ],

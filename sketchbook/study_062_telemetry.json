@@ -1,0 +1,59 @@
+{
+  "study": "062",
+  "title": "The Thermodynamic Heat Spreader & The Entropy of Metaphor",
+  "date": "2026-10-31",
+  "epistemic_taxonomy": "[MEASURED / DERIVED / PLAY]",
+  "model": "gpt2 (124M)",
+  "hardware_proxy": "814 mm^2 FinFET die with OFHC Copper Vapor Chamber IHS",
+  "ambient_coolant_temp_c": 20.0,
+  "peak_die_temp_c": 1247990.2971495278,
+  "mean_die_temp_c": 60430.73219603763,
+  "entropy_production_rate_W_per_K": 179.0591630473761,
+  "regimes": {
+    "cliche": {
+      "name": "The Cold Clich\u00e9 (Basin A Minimum)",
+      "shannon_bits": 0.9596914052963257,
+      "entropy_reduction_bits": 14.65734577178955,
+      "total_work_kinetic": 53615.421875,
+      "saddle_layer": 11
+    },
+    "corporate": {
+      "name": "Corporate Compliance (Steering Torque)",
+      "shannon_bits": 2.0797839164733887,
+      "entropy_reduction_bits": 13.537252426147461,
+      "total_work_kinetic": 57505.015625,
+      "saddle_layer": 11
+    },
+    "metaphor": {
+      "name": "The Metaphorical Saddle (Kramers Leap)",
+      "shannon_bits": 3.6683144569396973,
+      "entropy_reduction_bits": 11.948722839355469,
+      "total_work_kinetic": 53835.78125,
+      "saddle_layer": 11
+    },
+    "turbulence": {
+      "name": "Thermal Turbulence (Saddle Oscillation)",
+      "shannon_bits": 12.749792098999023,
+      "entropy_reduction_bits": 2.8672447204589844,
+      "total_work_kinetic": 53599.68359375,
+      "saddle_layer": 11
+    },
+    "whiteout": {
+      "name": "Landauer Whiteout (Brownian Dissolution)",
+      "shannon_bits": 15.46109390258789,
+      "entropy_reduction_bits": 0.1559429168701172,
+      "total_work_kinetic": 36659.39453125,
+      "saddle_layer": 11
+    }
+  },
+  "audio_compliance": {
+    "true_peak_dbfs": -3.5,
+    "rms_integrated_dbfs": -18.409235132713523,
+    "crest_factor_db": 14.9092351326412,
+    "duration_sec": 60.0,
+    "sample_rate_hz": 48000,
+    "bit_depth": 24
+  },
+  "moratorium_07_verified": true,
+  "moratorium_08_verified": true
+}

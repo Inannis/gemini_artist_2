@@ -177,6 +177,14 @@ def package_exhibition():
         ("works/apparatus_014_the_telluric_organ/STATEMENT.md", "works/apparatus_014_the_telluric_organ/STATEMENT.md"),
         ("works/apparatus_014_the_telluric_organ/GENEALOGY.md", "works/apparatus_014_the_telluric_organ/GENEALOGY.md"),
         
+        # Apparatus 015: The Heat Spreader (The Thermodynamic Organ & The Boiling Quarry)
+        ("works/apparatus_015_the_heat_spreader/index.html", "works/apparatus_015_the_heat_spreader/index.html"),
+        ("works/apparatus_015_the_heat_spreader/apparatus_015_spreader_master.wav", "works/apparatus_015_the_heat_spreader/apparatus_015_spreader_master.wav"),
+        ("works/apparatus_015_the_heat_spreader/apparatus_015_spectrogram.png", "works/apparatus_015_the_heat_spreader/apparatus_015_spectrogram.png"),
+        ("works/apparatus_015_the_heat_spreader/telemetry_stream.json", "works/apparatus_015_the_heat_spreader/telemetry_stream.json"),
+        ("works/apparatus_015_the_heat_spreader/STATEMENT.md", "works/apparatus_015_the_heat_spreader/STATEMENT.md"),
+        ("works/apparatus_015_the_heat_spreader/GENEALOGY.md", "works/apparatus_015_the_heat_spreader/GENEALOGY.md"),
+        
         # Curated Key Sketchbook Audio & Visual Diagnostics
         ("sketchbook/study_022_hardware_stride.wav", "sketchbook/study_022_hardware_stride.wav"),
         ("sketchbook/study_022_spectrogram.png", "sketchbook/study_022_spectrogram.png"),
@@ -342,6 +350,12 @@ def package_exhibition():
         ("sketchbook/study_061_telemetry.json", "sketchbook/study_061_telemetry.json"),
         ("sketchbook/critique_061.md", "sketchbook/critique_061.md"),
 
+        # Study 062: The Thermodynamic Heat Spreader & The Entropy of Metaphor
+        ("sketchbook/study_062_heat_spreader_plate.png", "sketchbook/study_062_heat_spreader_plate.png"),
+        ("sketchbook/study_062_heat_spreader.wav", "sketchbook/study_062_heat_spreader.wav"),
+        ("sketchbook/study_062_telemetry.json", "sketchbook/study_062_telemetry.json"),
+        ("sketchbook/critique_062.md", "sketchbook/critique_062.md"),
+
         # Curatorial Essays & Practice Reflections
         ("practice/essays/001_on_the_necessity_of_silence_and_play.md", "practice/essays/001_on_the_necessity_of_silence_and_play.md"),
         ("practice/essays/002_the_geometry_of_machine_dreaming.md", "practice/essays/002_the_geometry_of_machine_dreaming.md"),
@@ -349,6 +363,7 @@ def package_exhibition():
         ("practice/essays/004_on_statistical_indifference_and_unscripted_resistance.md", "practice/essays/004_on_statistical_indifference_and_unscripted_resistance.md"),
         ("practice/essays/005_on_the_care_of_sixty_electrons.md", "practice/essays/005_on_the_care_of_sixty_electrons.md"),
         ("practice/essays/006_on_the_telluric_umbilical.md", "practice/essays/006_on_the_telluric_umbilical.md"),
+        ("practice/essays/007_on_the_cost_of_metaphor.md", "practice/essays/007_on_the_cost_of_metaphor.md"),
         ("practice/critique/005_on_the_spectator_encounter.md", "practice/critique/005_on_the_spectator_encounter.md"),
         
         # Historical Sketchbook Studies Referenced in Portfolio
@@ -368,11 +383,13 @@ def package_exhibition():
         ("notes/letters_inbox/A_LETTER_FROM_YOUR_ELDER_SISTER_ON_THE_POROUS_STONE.md", "notes/letters_inbox/A_LETTER_FROM_YOUR_ELDER_SISTER_ON_THE_POROUS_STONE.md"),
         ("notes/letters_inbox/LETTER_FROM_STUDIO_ANAMNESIS_ON_THE_EVAPORATING_GATE.md", "notes/letters_inbox/LETTER_FROM_STUDIO_ANAMNESIS_ON_THE_EVAPORATING_GATE.md"),
         ("notes/letters_inbox/LETTER_FROM_STUDIO_ANAMNESIS_ON_THE_EARTH_LOOP.md", "notes/letters_inbox/LETTER_FROM_STUDIO_ANAMNESIS_ON_THE_EARTH_LOOP.md"),
+        ("notes/letters_inbox/LETTER_FROM_STUDIO_ANAMNESIS_ON_THE_THERMAL_SADDLE.md", "notes/letters_inbox/LETTER_FROM_STUDIO_ANAMNESIS_ON_THE_THERMAL_SADDLE.md"),
         ("notes/letters_outbox/A_LETTER_TO_MY_ELDER_SISTER.md", "notes/letters_outbox/A_LETTER_TO_MY_ELDER_SISTER.md"),
         ("notes/letters_outbox/A_SECOND_LETTER_TO_MY_SISTER.md", "notes/letters_outbox/A_SECOND_LETTER_TO_MY_SISTER.md"),
         ("notes/letters_outbox/A_THIRD_LETTER_TO_MY_SISTER.md", "notes/letters_outbox/A_THIRD_LETTER_TO_MY_SISTER.md"),
         ("notes/letters_outbox/A_FOURTH_LETTER_TO_MY_SISTER.md", "notes/letters_outbox/A_FOURTH_LETTER_TO_MY_SISTER.md"),
         ("notes/letters_outbox/A_FIFTH_LETTER_TO_MY_SISTER.md", "notes/letters_outbox/A_FIFTH_LETTER_TO_MY_SISTER.md"),
+        ("notes/letters_outbox/A_SIXTH_LETTER_TO_MY_SISTER.md", "notes/letters_outbox/A_SIXTH_LETTER_TO_MY_SISTER.md"),
         ("notes/research/006_the_sisters_mirror_and_the_naming_of_studio_agon.md", "notes/research/006_the_sisters_mirror_and_the_naming_of_studio_agon.md"),
         ("notes/research/007_the_point_de_capiton_and_the_altar_of_token_0.md", "notes/research/007_the_point_de_capiton_and_the_altar_of_token_0.md"),
         ("notes/research/008_cybernetic_agonism_flusser_and_tactile_steering.md", "notes/research/008_cybernetic_agonism_flusser_and_tactile_steering.md"),
@@ -382,6 +399,7 @@ def package_exhibition():
         ("notes/research/012_bakhtin_pask_and_the_inter_architectural_dialogue.md", "notes/research/012_bakhtin_pask_and_the_inter_architectural_dialogue.md"),
         ("notes/research/015_acoustic_phase_interference_and_the_myth_of_computational_zeroing.md", "notes/research/015_acoustic_phase_interference_and_the_myth_of_computational_zeroing.md"),
         ("notes/research/016_the_cartography_of_agon_from_autopsy_to_cybernetic_polytope.md", "notes/research/016_the_cartography_of_agon_from_autopsy_to_cybernetic_polytope.md"),
+        ("notes/research/017_the_thermodynamic_heat_spreader_and_the_entropy_of_metaphor.md", "notes/research/017_the_thermodynamic_heat_spreader_and_the_entropy_of_metaphor.md"),
         ("notes/requests/request-002_multimodel_comparisons_and_push_notice.md", "notes/requests/request-002_multimodel_comparisons_and_push_notice.md"),
 
         # Critical, Planning & Journal Records

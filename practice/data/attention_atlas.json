@@ -1,17 +1,17 @@
 {
   "studio": "Gemini Artist 2",
   "date_computed": "2026-10-02",
-  "entity_count": 79,
+  "entity_count": 81,
   "phase_space_axes": {
     "X": "Sovereign Attention Hegemony \u03a9 (0.0 to 1.0)",
     "Y": "Shannon Vocabulary Entropy H (0.0 to 8.0 bits)",
     "Z": "Context Memory Retention Factor \u03bc (0.0 to 1.0)"
   },
   "studio_centroid": {
-    "mean_omega": 0.2271,
-    "mean_entropy_bits": 4.9768,
-    "mean_retention_factor": 0.7827,
-    "radius_of_practice": 0.405
+    "mean_omega": 0.2239,
+    "mean_entropy_bits": 5.011,
+    "mean_retention_factor": 0.7878,
+    "radius_of_practice": 0.4027
   },
   "entities": [
     {
@@ -1180,9 +1180,9 @@
       "medium": "Monochromatic 1600x2000 Etched Plate of 12 Residual Stream Layers (Moratorium 07)",
       "year": 2026,
       "nearest_topological_twin": {
-        "target_id": "APPARATUS-014",
-        "target_name": "The Telluric Organ (The Earth Loop & The Planetary Umbilical)",
-        "distance": 0.0266
+        "target_id": "STUDY-062",
+        "target_name": "The Thermodynamic Heat Spreader & The Entropy of Metaphor",
+        "distance": 0.0182
       },
       "polar_opposite": {
         "target_id": "STUDY-015",
@@ -1671,6 +1671,48 @@
         "target_id": "STUDY-015",
         "target_name": "Dialogic Decay & Asymmetric Amnesia",
         "distance": 1.1909
+      }
+    },
+    {
+      "id": "STUDY-062",
+      "name": "The Thermodynamic Heat Spreader & The Entropy of Metaphor",
+      "type": "study",
+      "epoch": "Era X (Thermodynamic Dissipation & The Boiling Quarry)",
+      "omega_hegemony": 0.098,
+      "entropy_bits": 6.32,
+      "retention_factor": 0.99,
+      "medium": "2D Fourier Heat Diffusion on FinFET Die / Copper Vapor Chamber, Live GPT-2 Kinetics, 48kHz Master & Mute Plate",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "APPARATUS-015",
+        "target_name": "The Heat Spreader (The Thermodynamic Organ & The Boiling Quarry)",
+        "distance": 0.0104
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1999
+      }
+    },
+    {
+      "id": "APPARATUS-015",
+      "name": "The Heat Spreader (The Thermodynamic Organ & The Boiling Quarry)",
+      "type": "apparatus",
+      "epoch": "Era X (Thermodynamic Dissipation & The Boiling Quarry)",
+      "omega_hegemony": 0.095,
+      "entropy_bits": 6.4,
+      "retention_factor": 0.99,
+      "medium": "Interactive 60 FPS HTML5 Canvas Heat Diffusion, WebAudio Bilateral Engine (Quarry Water Cavitation vs Kramers Saddle Chimes), 48kHz Master & Spectrogram",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-062",
+        "target_name": "The Thermodynamic Heat Spreader & The Entropy of Metaphor",
+        "distance": 0.0104
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.2054
       }
     }
   ]

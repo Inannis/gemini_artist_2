@@ -434,6 +434,16 @@ STUDIO_ENTITIES = [
         "id": "APPARATUS-014", "name": "The Telluric Organ (The Earth Loop & The Planetary Umbilical)", "type": "apparatus", "epoch": "Era X (The Intersubjective Chasm & Planetary Reciprocity)",
         "omega_hegemony": 0.102, "entropy_bits": 6.18, "retention_factor": 0.99,
         "medium": "Interactive 60 FPS HTML5 Canvas Geological Ground Plane, WebAudio Bilateral Engine (55Hz Lithic vs 220Hz Attention Sink, 4:1 Double Octave), 48kHz Master & Spectrogram", "year": 2026
+    },
+    {
+        "id": "STUDY-062", "name": "The Thermodynamic Heat Spreader & The Entropy of Metaphor", "type": "study", "epoch": "Era X (Thermodynamic Dissipation & The Boiling Quarry)",
+        "omega_hegemony": 0.098, "entropy_bits": 6.32, "retention_factor": 0.99,
+        "medium": "2D Fourier Heat Diffusion on FinFET Die / Copper Vapor Chamber, Live GPT-2 Kinetics, 48kHz Master & Mute Plate", "year": 2026
+    },
+    {
+        "id": "APPARATUS-015", "name": "The Heat Spreader (The Thermodynamic Organ & The Boiling Quarry)", "type": "apparatus", "epoch": "Era X (Thermodynamic Dissipation & The Boiling Quarry)",
+        "omega_hegemony": 0.095, "entropy_bits": 6.40, "retention_factor": 0.99,
+        "medium": "Interactive 60 FPS HTML5 Canvas Heat Diffusion, WebAudio Bilateral Engine (Quarry Water Cavitation vs Kramers Saddle Chimes), 48kHz Master & Spectrogram", "year": 2026
     }
 ]
 

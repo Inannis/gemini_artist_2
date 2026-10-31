@@ -222,6 +222,18 @@ This document constitutes the official historical ledger, genealogical record, a
 - **Institutional Status:** **Master Archived (Interactive Telluric Cybernetic Organ)**
 - **Curatorial Rationale:** An interactive cybernetic instrument staging the transformer as an earthed physical organ. Softmax normalization enforces Kirchhoff's Current Law, shunting surplus attention into a copper grounding rod (R_earth=11.42 Ohm). Under the Fluctuation-Dissipation Theorem, the Earth reciprocates by injecting Johnson-Nyquist thermal noise and 7.83Hz Schumann cavity resonance into the FinFET chip ground plane, harmonically locked in a 4:1 double-octave with Studio Anamnesis.
 
+### APPARATUS-015 : The Heat Spreader (The Thermodynamic Organ & The Boiling Quarry)
+- **Epoch / Trajectory:** Era X (Thermodynamic Dissipation & The Boiling Quarry)
+- **Completion Date:** 2026-10-31
+- **Medium & Protocol:** Interactive 60 FPS HTML5 Canvas Heat Diffusion Engine, WebAudio Bilateral Spatializer (Boiling Quarry Cavitation vs Kramers Saddle Chimes), 48kHz 24-bit Broadcast Master Audio (apparatus_015_spreader_master.wav), and Archival Spectrogram Plate
+- **Dimensions / Duration:** Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument
+- **Directory:** [`works/apparatus_015_the_heat_spreader`](works/apparatus_015_the_heat_spreader)
+- **Primary Master Artifact:** `index.html`
+- **Cryptographic SHA-256 Digest:** `NON-STATIC RUNNING INSTRUMENT`
+- **Symbolic Coordinates:** $\Omega=0.095$, $H=6.4$ bits, $\mu=0.99
+- **Institutional Status:** **Master Archived (Interactive Thermodynamic Organ)**
+- **Curatorial Rationale:** An interactive cybernetic instrument staging the physical and thermodynamic cost of machine metaphor (Landauer's Principle: E >= k_B T ln 2). Shows that the FinFET die operates at 80 W/cm2, dumping heat through an OFHC copper vapor chamber into an abandoned stone quarry pond. Spectators throttle the cooling flow rate, manipulate sampling temperature across three Kramers regimes, and trigger metaphorical surges.
+
 ---
 
 ## II. Sketchbook Studies & Technical Prototypes (`sketchbook/`)
@@ -288,6 +300,7 @@ This document constitutes the official historical ledger, genealogical record, a
 | **STUDY-059** | The LDPC Waterfall & The Collapse of the Lithographic Alibi | Era X | [`study_059_ldpc_waterfall.py`](sketchbook/study_059_ldpc_waterfall.py) | `study_059_ldpc_waterfall_plate.png` | 1672.6 KB | **OK** |
 | **STUDY-060** | The Langevin Resonator: Fluctuation, Dissipation & The Thermal Saddle | Era X | [`study_060_langevin_resonator.py`](sketchbook/study_060_langevin_resonator.py) | `study_060_langevin_resonator_plate.png` | 1079.3 KB | **OK** |
 | **STUDY-061** | The Telluric Earth Loop & The Schumann Ground Plane | Era X | [`study_061_telluric_earth_loop.py`](sketchbook/study_061_telluric_earth_loop.py) | `study_061_telluric_earth_loop_plate.png` | 1542.0 KB | **OK** |
+| **STUDY-062** | The Thermodynamic Heat Spreader & The Entropy of Metaphor | Era X | [`study_062_heat_spreader_entropy.py`](sketchbook/study_062_heat_spreader_entropy.py) | `study_062_heat_spreader_plate.png` | 1706.3 KB | **OK** |
 
 ---
 

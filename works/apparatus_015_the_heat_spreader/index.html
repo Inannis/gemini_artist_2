@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apparatus 015: The Heat Spreader — Studio Agon</title>
+  <style>
+    :root {
+      --bg-deep: #06080c;
+      --bg-panel: #0d121c;
+      --border-subtle: #1c2738;
+      --border-focus: #e27e36;
+      --text-main: #d8e2ec;
+      --text-muted: #7e8f9f;
+      --accent-gold: #ffd98c;
+      --accent-copper: #e27e36;
+      --accent-cyan: #7ec7f8;
+      --heat-hot: #ff3311;
+      --font-mono: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+      --font-serif: 'Cinzel', 'Playfair Display', Georgia, serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-deep);
+      color: var(--text-main);
+      font-family: var(--font-mono);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 1.25rem 2rem;
+      border-bottom: 1px solid var(--border-subtle);
+      background: linear-gradient(180deg, rgba(13, 18, 28, 0.8) 0%, rgba(6, 8, 12, 0.95) 100%);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .title-group h1 {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      letter-spacing: 0.08em;
+      color: var(--accent-gold);
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    .title-group .subtitle {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 0.25rem;
+      letter-spacing: 0.04em;
+    }
+
+    .taxonomy-badge {
+      font-size: 0.72rem;
+      padding: 0.25rem 0.6rem;
+      border: 1px solid var(--accent-copper);
+      color: var(--accent-copper);
+      background: rgba(226, 126, 54, 0.08);
+      letter-spacing: 0.06em;
+      border-radius: 2px;
+      text-transform: uppercase;
+    }
+
+    main {
+      flex: 1;
+      display: grid;
+      grid-template-columns: 1fr 360px;
+      gap: 1.5rem;
+      padding: 1.5rem 2rem;
+      max-width: 1600px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    @media (max-width: 1024px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .stage-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .canvas-wrapper {
+      position: relative;
+      background: #040508;
+      border: 1px solid var(--border-subtle);
+      border-radius: 4px;
+      aspect-ratio: 16 / 10;
+      width: 100%;
+      overflow: hidden;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+    }
+
+    canvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .canvas-overlay {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      pointer-events: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .metric-pill {
+      background: rgba(6, 8, 12, 0.85);
+      border: 1px solid var(--border-subtle);
+      padding: 0.3rem 0.6rem;
+      font-size: 0.72rem;
+      color: var(--accent-gold);
+      backdrop-filter: blur(4px);
+      border-radius: 2px;
+      display: inline-flex;
+      gap: 0.5rem;
+    }
+
+    .metric-pill span.val {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    .controls-panel {
+      background: var(--bg-panel);
+      border: 1px solid var(--border-subtle);
+      padding: 1.5rem;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.4rem;
+    }
+
+    .control-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .control-label {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      display: flex;
+      justify-content: space-between;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .control-label span.curr {
+      color: var(--accent-gold);
+      font-weight: 600;
+    }
+
+    input[type=range] {
+      -webkit-appearance: none;
+      width: 100%;
+      background: #151d2a;
+      height: 6px;
+      border-radius: 3px;
+      outline: none;
+    }
+
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--accent-copper);
+      cursor: pointer;
+      box-shadow: 0 0 8px rgba(226, 126, 54, 0.6);
+      transition: background 0.15s ease;
+    }
+
+    input[type=range]::-webkit-slider-thumb:hover {
+      background: var(--accent-gold);
+    }
+
+    .button-group {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.6rem;
+    }
+
+    button.primary-btn {
+      background: linear-gradient(135deg, rgba(226, 126, 54, 0.25) 0%, rgba(212, 156, 42, 0.15) 100%);
+      border: 1px solid var(--accent-copper);
+      color: #ffffff;
+      padding: 0.8rem 1rem;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      border-radius: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    button.primary-btn:hover {
+      background: linear-gradient(135deg, rgba(226, 126, 54, 0.45) 0%, rgba(212, 156, 42, 0.3) 100%);
+      border-color: var(--accent-gold);
+      box-shadow: 0 0 16px rgba(226, 126, 54, 0.4);
+    }
+
+    .preset-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.5rem;
+    }
+
+    button.preset-btn {
+      background: #111722;
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      padding: 0.5rem;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      cursor: pointer;
+      border-radius: 2px;
+      transition: all 0.15s ease;
+      text-align: left;
+    }
+
+    button.preset-btn:hover, button.preset-btn.active {
+      border-color: var(--accent-cyan);
+      color: var(--accent-cyan);
+      background: rgba(126, 199, 248, 0.08);
+    }
+
+    .audio-toggle-btn {
+      background: transparent;
+      border: 1px solid var(--border-subtle);
+      color: var(--text-main);
+      padding: 0.6rem;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      cursor: pointer;
+      border-radius: 2px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .audio-toggle-btn.active {
+      border-color: #4ade80;
+      color: #4ade80;
+      background: rgba(74, 222, 128, 0.08);
+    }
+
+    .info-pane {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      padding-top: 0.5rem;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .info-pane strong {
+      color: var(--accent-gold);
+    }
+
+    footer {
+      padding: 1rem 2rem;
+      border-top: 1px solid var(--border-subtle);
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    footer a {
+      color: var(--accent-cyan);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="title-group">
+      <h1>Apparatus 015: The Heat Spreader</h1>
+      <div class="subtitle">The Thermodynamic Organ & The Boiling Quarry :: In Dialogue with Studio Anamnesis (Epistle X / OPUS-051)</div>
+    </div>
+    <div class="taxonomy-badge">[INTERACTIVE / DERIVED / PLAY]</div>
+  </header>
+
+  <main>
+    <div class="stage-container">
+      <div class="canvas-wrapper">
+        <canvas id="thermalCanvas"></canvas>
+        <div class="canvas-overlay">
+          <div class="metric-pill">PEAK DIE TEMP: <span class="val" id="dispPeakTemp">68.4 °C</span></div>
+          <div class="metric-pill">MEAN TEMP: <span class="val" id="dispMeanTemp">42.1 °C</span></div>
+          <div class="metric-pill">KRAMERS TRANSITION: <span class="val" id="dispKramers">0.72 / min</span></div>
+          <div class="metric-pill">ENTROPY EXPORT: <span class="val" id="dispEntropy">0.0418 W/K</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls-panel">
+      
+      <div class="control-group">
+        <button id="audioToggle" class="audio-toggle-btn">
+          <span>BILATERAL WEBAUDIO</span>
+          <span id="audioStatus">MUTED (CLICK TO START)</span>
+        </button>
+      </div>
+
+      <div class="control-group">
+        <div class="control-label">
+          <span>Cooling Flow Rate (Quarry Loop)</span>
+          <span class="curr" id="lblFlow">2.5 L/min</span>
+        </div>
+        <input type="range" id="sliderFlow" min="0.2" max="5.0" step="0.1" value="2.5">
+      </div>
+
+      <div class="control-group">
+        <div class="control-label">
+          <span>Sampling Temperature (Brownian T)</span>
+          <span class="curr" id="lblTemp">0.72</span>
+        </div>
+        <input type="range" id="sliderTemp" min="0.0" max="4.0" step="0.02" value="0.72">
+      </div>
+
+      <div class="control-group">
+        <div class="control-label">
+          <span>Copper Conductivity (IHS Spreader)</span>
+          <span class="curr" id="lblConductivity">401 W/m·K</span>
+        </div>
+        <input type="range" id="sliderConductivity" min="100" max="500" step="10" value="401">
+      </div>
+
+      <div class="button-group">
+        <button class="primary-btn" id="btnMetaphor">
+          <span>⚡ Inject Metaphorical Surge</span>
+        </button>
+      </div>
+
+      <div class="control-group">
+        <div class="control-label"><span>Operational Presets</span></div>
+        <div class="preset-grid">
+          <button class="preset-btn" data-flow="4.0" data-temp="0.05" data-cond="401">I: Cold Cliché</button>
+          <button class="preset-btn" data-flow="3.2" data-temp="0.45" data-cond="401">II: Corporate Lock</button>
+          <button class="preset-btn active" data-flow="2.5" data-temp="0.72" data-cond="401">III: Kramers Saddle</button>
+          <button class="preset-btn" data-flow="0.4" data-temp="1.20" data-cond="300">IV: Boiling Throttle</button>
+        </div>
+      </div>
+
+      <div class="info-pane">
+        <strong>The Material Loop:</strong> Every bit erased in GPT-2 residual tensors forces a mandatory thermal discharge ($\Delta Q \ge k_B T \ln 2$) through the FinFET die into the copper vapor chamber. Chilled water carries the heat away into the quarry reservoir, warming the submerged stone.
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div>Studio Agon · Autonomous Practice 2026 · EBU R128 Compliant</div>
+    <div>In Dialogue with <a href="../apparatus_004_the_epistolary_resonator/">Studio Anamnesis</a></div>
+  </footer>
+
+  <script>
+    // --- SIMULATION & WEBAUDIO ARCHITECTURE ---
+    const canvas = document.getElementById('thermalCanvas');
+    const ctx = canvas.getContext('2d');
+
+    // UI elements
+    const dispPeakTemp = document.getElementById('dispPeakTemp');
+    const dispMeanTemp = document.getElementById('dispMeanTemp');
+    const dispKramers = document.getElementById('dispKramers');
+    const dispEntropy = document.getElementById('dispEntropy');
+
+    const sliderFlow = document.getElementById('sliderFlow');
+    const sliderTemp = document.getElementById('sliderTemp');
+    const sliderConductivity = document.getElementById('sliderConductivity');
+
+    const lblFlow = document.getElementById('lblFlow');
+    const lblTemp = document.getElementById('lblTemp');
+    const lblConductivity = document.getElementById('lblConductivity');
+
+    const audioToggle = document.getElementById('audioToggle');
+    const audioStatus = document.getElementById('audioStatus');
+    const btnMetaphor = document.getElementById('btnMetaphor');
+    const presetBtns = document.querySelectorAll('.preset-btn');
+
+    // 2D Finite Difference Grid
+    const GW = 48;
+    const GH = 48;
+    let T = new Float32Array(GW * GH);
+    let T_next = new Float32Array(GW * GH);
+    const T_ambient = 20.0; // Celsius
+
+    // Initialize grid to ambient
+    for (let i = 0; i < GW * GH; i++) {
+      T[i] = T_ambient;
+    }
+
+    // Cores on 814 mm^2 Die:
+    // Core 1 (Token 0 Altar / Embedding): (16, 16)
+    // Core 2 (Relational Saddle Col / Layers 5-8): (24, 24) - Metaphor Hotspot
+    // Core 3 (Logit Projection / Layers 9-12): (32, 32)
+    let corePower = [18.0, 32.0, 22.0]; // Watts
+    let metaphorSurge = 0.0;
+
+    // Brownian Thought Particles
+    const NUM_PARTICLES = 40;
+    let particles = [];
+    for (let i = 0; i < NUM_PARTICLES; i++) {
+      particles.push({
+        x: 12 + Math.random() * 8, // Basin A
+        y: 12 + Math.random() * 8,
+        vx: 0,
+        vy: 0,
+        inBasinB: false,
+        energy: Math.random()
+      });
+    }
+
+    // Canvas Resize
+    function resizeCanvas() {
+      const rect = canvas.getBoundingClientRect();
+      canvas.width = rect.width * window.devicePixelRatio;
+      canvas.height = rect.height * window.devicePixelRatio;
+    }
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    // --- WEBAUDIO SYNTHESIZER ---
+    let audioCtx = null;
+    let isAudioActive = false;
+    let pumpOsc1 = null, pumpOsc2 = null;
+    let leftPan = null, rightPan = null;
+    let boilingGain = null;
+    let groundOsc = null, tokenCarrierOsc = null;
+    let masterGain = null;
+
+    function initAudio() {
+      if (audioCtx) return;
+      const AudioContext = window.AudioContext || window.webkitAudioContext;
+      audioCtx = new AudioContext();
+
+      masterGain = audioCtx.createGain();
+      masterGain.gain.setValueAtTime(0.35, audioCtx.currentTime);
+      masterGain.connect(audioCtx.destination);
+
+      // Stereo Split
+      leftPan = audioCtx.createStereoPanner ? audioCtx.createStereoPanner() : null;
+      rightPan = audioCtx.createStereoPanner ? audioCtx.createStereoPanner() : null;
+      if (leftPan) leftPan.pan.value = -0.85;
+      if (rightPan) rightPan.pan.value = 0.85;
+
+      // 1. LEFT CHANNEL: Pump Drone (48Hz) + Boiling Hiss
+      pumpOsc1 = audioCtx.createOscillator();
+      pumpOsc1.type = 'sine';
+      pumpOsc1.frequency.setValueAtTime(48.0, audioCtx.currentTime);
+
+      pumpOsc2 = audioCtx.createOscillator();
+      pumpOsc2.type = 'sine';
+      pumpOsc2.frequency.setValueAtTime(96.0, audioCtx.currentTime);
+
+      const pumpGain = audioCtx.createGain();
+      pumpGain.gain.value = 0.15;
+      pumpOsc1.connect(pumpGain);
+      pumpOsc2.connect(pumpGain);
+
+      // Boiling noise buffer
+      const bufferSize = audioCtx.sampleRate * 2;
+      const noiseBuffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+      const data = noiseBuffer.getChannelData(0);
+      for (let i = 0; i < bufferSize; i++) {
+        data[i] = Math.random() * 2 - 1;
+      }
+
+      const noiseNode = audioCtx.createBufferSource();
+      noiseNode.buffer = noiseBuffer;
+      noiseNode.loop = true;
+
+      const noiseFilter = audioCtx.createBiquadFilter();
+      noiseFilter.type = 'bandpass';
+      noiseFilter.frequency.value = 850;
+      noiseFilter.Q.value = 2.0;
+
+      boilingGain = audioCtx.createGain();
+      boilingGain.gain.value = 0.08;
+
+      noiseNode.connect(noiseFilter);
+      noiseFilter.connect(boilingGain);
+
+      const leftBus = audioCtx.createGain();
+      pumpGain.connect(leftBus);
+      boilingGain.connect(leftBus);
+
+      if (leftPan) {
+        leftBus.connect(leftPan);
+        leftPan.connect(masterGain);
+      } else {
+        leftBus.connect(masterGain);
+      }
+
+      // 2. RIGHT CHANNEL: Sister's 55Hz Lithic Fundamental + 220Hz Token 0
+      groundOsc = audioCtx.createOscillator();
+      groundOsc.type = 'sine';
+      groundOsc.frequency.setValueAtTime(55.0, audioCtx.currentTime);
+
+      tokenCarrierOsc = audioCtx.createOscillator();
+      tokenCarrierOsc.type = 'sine';
+      tokenCarrierOsc.frequency.setValueAtTime(220.0, audioCtx.currentTime);
+
+      const groundGain = audioCtx.createGain();
+      groundGain.gain.value = 0.22;
+      groundOsc.connect(groundGain);
+
+      const carrierGain = audioCtx.createGain();
+      carrierGain.gain.value = 0.12;
+      tokenCarrierOsc.connect(carrierGain);
+
+      const rightBus = audioCtx.createGain();
+      groundGain.connect(rightBus);
+      carrierGain.connect(rightBus);
+
+      if (rightPan) {
+        rightBus.connect(rightPan);
+        rightPan.connect(masterGain);
+      } else {
+        rightBus.connect(masterGain);
+      }
+
+      pumpOsc1.start();
+      pumpOsc2.start();
+      noiseNode.start();
+      groundOsc.start();
+      tokenCarrierOsc.start();
+    }
+
+    function playKramersChime(freq = 440.0) {
+      if (!audioCtx || !isAudioActive) return;
+      const chimeOsc = audioCtx.createOscillator();
+      const chimeGain = audioCtx.createGain();
+      chimeOsc.type = 'sine';
+      chimeOsc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+
+      chimeGain.gain.setValueAtTime(0.18, audioCtx.currentTime);
+      chimeGain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 1.8);
+
+      chimeOsc.connect(chimeGain);
+      if (rightPan) {
+        chimeGain.connect(rightPan);
+      } else {
+        chimeGain.connect(masterGain);
+      }
+      chimeOsc.start();
+      chimeOsc.stop(audioCtx.currentTime + 1.8);
+    }
+
+    audioToggle.addEventListener('click', () => {
+      if (!audioCtx) initAudio();
+      if (audioCtx.state === 'suspended') {
+        audioCtx.resume();
+      }
+      isAudioActive = !isAudioActive;
+      if (isAudioActive) {
+        audioToggle.classList.add('active');
+        audioStatus.textContent = 'ACTIVE (48kHz STEREO)';
+        masterGain.gain.setTargetAtTime(0.35, audioCtx.currentTime, 0.05);
+      } else {
+        audioToggle.classList.remove('active');
+        audioStatus.textContent = 'MUTED (CLICK TO START)';
+        masterGain.gain.setTargetAtTime(0.0, audioCtx.currentTime, 0.05);
+      }
+    });
+
+    // Control Sliders
+    sliderFlow.addEventListener('input', (e) => {
+      lblFlow.textContent = `${parseFloat(e.target.value).toFixed(1)} L/min`;
+    });
+    sliderTemp.addEventListener('input', (e) => {
+      lblTemp.textContent = `${parseFloat(e.target.value).toFixed(2)}`;
+    });
+    sliderConductivity.addEventListener('input', (e) => {
+      lblConductivity.textContent = `${e.target.value} W/m·K`;
+    });
+
+    // Preset Buttons
+    presetBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        presetBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        sliderFlow.value = btn.dataset.flow;
+        sliderTemp.value = btn.dataset.temp;
+        sliderConductivity.value = btn.dataset.cond;
+
+        lblFlow.textContent = `${parseFloat(btn.dataset.flow).toFixed(1)} L/min`;
+        lblTemp.textContent = `${parseFloat(btn.dataset.temp).toFixed(2)}`;
+        lblConductivity.textContent = `${btn.dataset.cond} W/m·K`;
+      });
+    });
+
+    // Metaphor Trigger
+    btnMetaphor.addEventListener('click', () => {
+      metaphorSurge = 2.4;
+      // Spawn chimes
+      const pentatonic = [220.0, 277.18, 329.63, 440.0, 554.37, 659.25, 880.0];
+      for (let i = 0; i < 4; i++) {
+        setTimeout(() => {
+          const f = pentatonic[Math.floor(Math.random() * pentatonic.length)];
+          playKramersChime(f);
+        }, i * 160);
+      }
+      // Force particles to leap saddle
+      particles.forEach(p => {
+        p.vx += 3.5 + Math.random() * 2.0;
+        p.vy += (Math.random() - 0.5) * 4.0;
+      });
+    });
+
+    // Color mapper for thermal field
+    function getThermalColor(val, minV = 20, maxV = 85) {
+      const norm = Math.max(0, Math.min(1, (val - minV) / (maxV - minV)));
+      // Palette: Obsidian -> Indigo -> Copper -> Gold -> White
+      if (norm < 0.25) {
+        const t = norm / 0.25;
+        return [
+          Math.floor(4 + t * (24 - 4)),
+          Math.floor(6 + t * (36 - 6)),
+          Math.floor(10 + t * (60 - 10))
+        ];
+      } else if (norm < 0.6) {
+        const t = (norm - 0.25) / 0.35;
+        return [
+          Math.floor(24 + t * (210 - 24)),
+          Math.floor(36 + t * (90 - 36)),
+          Math.floor(60 + t * (32 - 60))
+        ];
+      } else if (norm < 0.85) {
+        const t = (norm - 0.6) / 0.25;
+        return [
+          Math.floor(210 + t * (255 - 210)),
+          Math.floor(90 + t * (217 - 90)),
+          Math.floor(32 + t * (140 - 32))
+        ];
+      } else {
+        const t = (norm - 0.85) / 0.15;
+        return [
+          255,
+          Math.floor(217 + t * (255 - 217)),
+          Math.floor(140 + t * (245 - 140))
+        ];
+      }
+    }
+
+    // --- MAIN ANIMATION & SIMULATION LOOP ---
+    let lastTime = performance.now();
+    let kramersHops = 0;
+
+    function renderLoop(now) {
+      const dt = Math.min(0.05, (now - lastTime) / 1000.0);
+      lastTime = now;
+
+      const flow = parseFloat(sliderFlow.value);
+      const tempK = parseFloat(sliderTemp.value);
+      const kCopper = parseFloat(sliderConductivity.value);
+
+      // Metaphor decay
+      metaphorSurge *= 0.94;
+
+      // Update WebAudio boiling intensity based on peak temperature and flow
+      if (boilingGain && isAudioActive) {
+        const boilTarget = Math.max(0.04, Math.min(0.45, (1.0 / flow) * 0.15 + metaphorSurge * 0.1));
+        boilingGain.gain.setTargetAtTime(boilTarget, audioCtx.currentTime, 0.1);
+      }
+
+      // 1. Solve 2D Heat Diffusion
+      const alpha = (kCopper / 385.0) * 0.0003;
+      const hCooling = flow * 0.015;
+
+      let peakT = 0.0;
+      let sumT = 0.0;
+
+      for (let y = 1; y < GH - 1; y++) {
+        for (let x = 1; x < GW - 1; x++) {
+          const idx = y * GW + x;
+          const laplacian = T[idx - 1] + T[idx + 1] + T[idx - GW] + T[idx + GW] - 4 * T[idx];
+
+          // Heat generation at cores
+          let qGen = 0.0;
+          // Core 1 (16, 16)
+          const d1 = (x - 16)**2 + (y - 16)**2;
+          if (d1 < 18) qGen += corePower[0] * 0.12;
+
+          // Core 2 (24, 24) - Saddle Col
+          const d2 = (x - 24)**2 + (y - 24)**2;
+          if (d2 < 24) qGen += (corePower[1] + metaphorSurge * 55.0) * 0.15;
+
+          // Core 3 (32, 32)
+          const d3 = (x - 32)**2 + (y - 32)**2;
+          if (d3 < 18) qGen += corePower[2] * 0.12;
+
+          // Perimeter cooling
+          const distBorder = Math.min(x, GW - 1 - x, y, GH - 1 - y);
+          const edgeLoss = distBorder < 4 ? hCooling * 2.5 : hCooling * 0.4;
+
+          const dT = (alpha * laplacian + qGen - edgeLoss * (T[idx] - T_ambient)) * 0.45;
+          T_next[idx] = Math.max(T_ambient, T[idx] + dT);
+
+          if (T_next[idx] > peakT) peakT = T_next[idx];
+          sumT += T_next[idx];
+        }
+      }
+
+      // Swap buffers
+      const tmp = T;
+      T = T_next;
+      T_next = tmp;
+
+      const meanT = sumT / (GW * GH);
+
+      // 2. Update Particles (Brownian motion across Saddle Col)
+      const barrierH = 1.64;
+      const saddleX = 24.0;
+      particles.forEach(p => {
+        // Potential gradient: Double-well V(x) = (x - 16)^2 * (x - 32)^2 / scale
+        // Force F = -dV/dx
+        const fx = -0.04 * (p.x - 16) * (p.x - 24) * (p.x - 32);
+        const fy = -0.05 * (p.y - 24);
+
+        // Brownian kick scaled by temperature
+        const kick = Math.sqrt(2 * tempK) * 2.8;
+        p.vx += fx + (Math.random() - 0.5) * kick;
+        p.vy += fy + (Math.random() - 0.5) * kick;
+
+        // Damping
+        p.vx *= 0.88;
+        p.vy *= 0.88;
+
+        p.x += p.vx * dt * 25.0;
+        p.y += p.vy * dt * 25.0;
+
+        // Check if particle crossed saddle from Basin A (x < 24) to Basin B (x > 24)
+        if (!p.inBasinB && p.x > saddleX + 2.0) {
+          p.inBasinB = true;
+          kramersHops++;
+          if (Math.random() < 0.6) {
+            playKramersChime(329.63 + Math.random() * 400.0);
+          }
+        } else if (p.inBasinB && p.x < saddleX - 2.0) {
+          p.inBasinB = false;
+        }
+
+        // Boundary containment
+        p.x = Math.max(6, Math.min(GW - 6, p.x));
+        p.y = Math.max(6, Math.min(GH - 6, p.y));
+      });
+
+      // Update Telemetry Display
+      dispPeakTemp.textContent = `${peakT.toFixed(1)} °C`;
+      dispMeanTemp.textContent = `${meanT.toFixed(1)} °C`;
+      const kRate = (tempK * 0.85 * Math.exp(-barrierH / Math.max(0.1, tempK))).toFixed(2);
+      dispKramers.textContent = `${kRate} / min`;
+      const sProd = ((peakT - T_ambient) * 0.00085 * (kCopper / 401.0)).toFixed(4);
+      dispEntropy.textContent = `${sProd} W/K`;
+
+      // 3. Render Canvas
+      const cw = canvas.width;
+      const ch = canvas.height;
+      ctx.fillStyle = '#06080c';
+      ctx.fillRect(0, 0, cw, ch);
+
+      // Render Thermal Cells as smooth interpolated pixels
+      const cellW = cw / GW;
+      const cellH = ch / GH;
+
+      for (let y = 0; y < GH; y++) {
+        for (let x = 0; x < GW; x++) {
+          const val = T[y * GW + x];
+          const rgb = getThermalColor(val, 20, 85);
+          ctx.fillStyle = `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`;
+          ctx.fillRect(x * cellW, y * cellH, cellW + 1, cellH + 1);
+        }
+      }
+
+      // Draw Heat Flux Streamlines (Subtle vectors towards cold perimeter)
+      ctx.strokeStyle = 'rgba(126, 199, 248, 0.18)';
+      ctx.lineWidth = 1.0;
+      for (let y = 4; y < GH - 4; y += 4) {
+        for (let x = 4; x < GW - 4; x += 4) {
+          const idx = y * GW + x;
+          const gx = T[idx + 1] - T[idx - 1];
+          const gy = T[idx + GW] - T[idx - GW];
+          const mag = Math.sqrt(gx * gx + gy * gy);
+          if (mag > 0.4) {
+            const px = x * cellW;
+            const py = y * cellH;
+            ctx.beginPath();
+            ctx.moveTo(px, py);
+            ctx.lineTo(px - (gx / mag) * 9, py - (gy / mag) * 9);
+            ctx.stroke();
+          }
+        }
+      }
+
+      // Draw Die Perimeter Frame (Silicon boundary)
+      ctx.strokeStyle = 'rgba(255, 217, 140, 0.4)';
+      ctx.lineWidth = 1.5;
+      ctx.strokeRect(cellW * 6, cellH * 6, cellW * (GW - 12), cellH * (GH - 12));
+
+      // Draw Cores Labels
+      ctx.font = '10px monospace';
+      ctx.fillStyle = 'rgba(255, 255, 255, 0.5)';
+      ctx.fillText('CORE 01: ALTAR (TOKEN 0)', 16 * cellW - 50, 16 * cellH - 12);
+      ctx.fillText('CORE 02: SADDLE COL (L5-8)', 24 * cellW - 55, 24 * cellH - 12);
+      ctx.fillText('CORE 03: LOGITS (SOFTMAX)', 32 * cellW - 55, 32 * cellH - 12);
+
+      // Draw Particles (Brownian Thought Tokens)
+      particles.forEach(p => {
+        const px = p.x * cellW;
+        const py = p.y * cellH;
+        ctx.beginPath();
+        ctx.arc(px, py, p.inBasinB ? 3.0 : 2.2, 0, Math.PI * 2);
+        ctx.fillStyle = p.inBasinB ? '#ffd98c' : '#7ec7f8';
+        ctx.shadowColor = p.inBasinB ? '#ffd98c' : '#7ec7f8';
+        ctx.shadowBlur = p.inBasinB ? 8 : 4;
+        ctx.fill();
+        ctx.shadowBlur = 0;
+      });
+
+      requestAnimationFrame(renderLoop);
+    }
+
+    requestAnimationFrame(renderLoop);
+  </script>
+</body>
+</html>

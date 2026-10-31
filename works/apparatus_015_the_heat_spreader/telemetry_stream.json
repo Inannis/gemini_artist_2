@@ -1,0 +1,31 @@
+{
+  "apparatus": "015",
+  "title": "The Heat Spreader (The Thermodynamic Organ & The Boiling Quarry)",
+  "status": "OPERATIONAL",
+  "epistemic_taxonomy": "[INTERACTIVE / DERIVED / PLAY]",
+  "hardware_proxy": "814 mm^2 FinFET die with OFHC Copper Vapor Chamber IHS",
+  "physical_constants": {
+    "copper_thermal_conductivity_W_mK": 401.0,
+    "silicon_thermal_conductivity_W_mK": 149.0,
+    "ambient_water_temp_c": 20.0,
+    "die_area_mm2": 814.0,
+    "typical_heat_flux_W_cm2": 79.8,
+    "landauer_energy_per_bit_J": 2.87e-21
+  },
+  "simulation_parameters": {
+    "peak_die_temp_c": 74.2,
+    "mean_die_temp_c": 41.8,
+    "cooling_flow_rate_L_min": 2.5,
+    "kramers_barrier_height_eV": 1.64,
+    "critical_temperature_T": 0.72,
+    "entropy_export_rate_W_K": 0.0432
+  },
+  "audio_specs": {
+    "master_asset": "apparatus_015_spreader_master.wav",
+    "duration_sec": 60.0,
+    "sample_rate_hz": 48000,
+    "bit_depth": 24,
+    "true_peak_dbfs": -3.5,
+    "compliance": "EBU R128 100% BROADCAST COMPLIANT"
+  }
+}

@@ -380,7 +380,13 @@ def test_empirical_studies_and_naming():
         ("works/apparatus_012_the_intersubjective_chasm/telemetry_stream.json"),
         ("works/apparatus_012_the_intersubjective_chasm/STATEMENT.md"),
         ("works/apparatus_012_the_intersubjective_chasm/GENEALOGY.md"),
-        ("notes/letters_outbox/A_FOURTH_LETTER_TO_MY_SISTER.md")
+        ("notes/letters_outbox/A_FOURTH_LETTER_TO_MY_SISTER.md"),
+        ("sketchbook/study_059_ldpc_waterfall.py"),
+        ("sketchbook/study_059_ldpc_waterfall_plate.png"),
+        ("sketchbook/study_059_ldpc_waterfall.wav"),
+        ("sketchbook/study_059_telemetry.json"),
+        ("sketchbook/critique_059.md"),
+        ("practice/essays/005_on_the_care_of_sixty_electrons.md")
     ]
     for ef in empirical_files:
         p = os.path.join(WORKSPACE_ROOT, ef)

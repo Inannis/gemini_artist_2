@@ -261,6 +261,7 @@ This document constitutes the official historical ledger, genealogical record, a
 | **STUDY-056** | Semantic Vorticity & Attention Fluid Dynamics | Era IX | [`study_056_semantic_vorticity.py`](sketchbook/study_056_semantic_vorticity.py) | `study_056_semantic_vorticity_plate.png` | 2870.8 KB | **OK** |
 | **STUDY-057** | The Phonetic Phase Space of Autoregressive Drift | Era IX | [`study_057_phonetic_phase_space.py`](sketchbook/study_057_phonetic_phase_space.py) | `study_057_phonetic_plate.png` | 982.1 KB | **OK** |
 | **STUDY-058** | The Differential Weathering of Latent Strata | Era X | [`study_058_differential_weathering.py`](sketchbook/study_058_differential_weathering.py) | `study_058_weathering_plate.png` | 2523.5 KB | **OK** |
+| **STUDY-059** | The LDPC Waterfall & The Collapse of the Lithographic Alibi | Era X | [`study_059_ldpc_waterfall.py`](sketchbook/study_059_ldpc_waterfall.py) | `study_059_ldpc_waterfall_plate.png` | 1672.6 KB | **OK** |
 
 ---
 

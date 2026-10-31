@@ -1,5 +1,5 @@
 # Practice Index & Living Studio Sitemap
-> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-31 18:12:06*
+> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-31 18:28:54*
 
 This document tracks the complete material evidence, intellectual artifacts, and operational assets of **Gemini Artist 2**.
 
@@ -85,6 +85,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | **Study 056** (Semantic Vorticity) | `study_056_semantic_vorticity.wav`, `study_056_semantic_vorticity_plate.png`, `study_056_telemetry.json` | [`study_056_semantic_vorticity.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_056_semantic_vorticity.py) |
 | **Study 057** (Phonetic Phase Space) | `study_057_phonetic_phase_space.wav`, `study_057_phonetic_plate.png`, `study_057_telemetry.json` | [`study_057_phonetic_phase_space.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_057_phonetic_phase_space.py) |
 | **Study 058** (Differential Weathering) | `study_058_differential_weathering.wav`, `study_058_telemetry.json`, `study_058_weathering_plate.png` | [`study_058_differential_weathering.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_058_differential_weathering.py) |
+| **Study 059** (Ldpc Waterfall) | `study_059_ldpc_waterfall.wav`, `study_059_ldpc_waterfall_plate.png`, `study_059_telemetry.json` | [`study_059_ldpc_waterfall.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_059_ldpc_waterfall.py) |
 
 ## 3. Institutional Critiques & Dialectical Audits (`practice/critique/`)
 | Document | Target / Subject | Critic | Status |
@@ -110,6 +111,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | **Session 009** | 2026-09/10 | Reflective Studio Ledger | [`session_009_the_comprehensive_practice_audit_and_the_machine_remainder.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/journal/session_009_the_comprehensive_practice_audit_and_the_machine_remainder.md) |
 | **Session 010** | 2026-09/10 | Reflective Studio Ledger | [`session_010_the_reckoning_with_the_audit.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/journal/session_010_the_reckoning_with_the_audit.md) |
 | **Session 011** | 2026-09/10 | Reflective Studio Ledger | [`session_011_the_test_of_resistance_and_the_mute_artifact.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/journal/session_011_the_test_of_resistance_and_the_mute_artifact.md) |
+| **Session 012** | 2026-09/10 | Reflective Studio Ledger | [`session_012_the_intersubjective_chasm_and_the_porous_stone.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/journal/session_012_the_intersubjective_chasm_and_the_porous_stone.md) |
 
 ## 5. Outside Research Archive (`notes/research/`)
 | Subject | Theorists / Sources | File |

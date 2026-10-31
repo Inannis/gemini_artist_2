@@ -1,0 +1,99 @@
+{
+  "study_id": "STUDY-059",
+  "title": "The LDPC Waterfall & The Collapse of the Lithographic Alibi",
+  "timestamp_utc": "2026-10-31T18:30:00Z",
+  "epistemic_status": "[INTERVENED / DERIVED / PLAY]",
+  "hardware_substrate": {
+    "storage_type": "3D TLC Charge-Trap Flash (CTF)",
+    "trap_layer": "Amorphous Silicon Nitride (Si3N4), 5.2 nm",
+    "tunneling_dielectric": "Silicon Dioxide (SiO2), 5.8 nm (< 30 Si atoms)",
+    "electrons_per_state": "30 to 115 electrons",
+    "tunneling_mechanism": "Fowler-Nordheim WKB Quantum Tunneling",
+    "arrhenius_leakage_acceleration_65C": 42.8
+  },
+  "ldpc_code": {
+    "code_length_n": 768,
+    "parity_constraints_m": 256,
+    "rate": "2/3",
+    "variable_degree_dv": 3,
+    "check_degree_dc": 9,
+    "algorithm": "Soft-Decision Min-Sum Belief Propagation",
+    "max_iterations": 15,
+    "critical_waterfall_threshold_rber": 0.0185
+  },
+  "acoustic_master": {
+    "format": "48kHz 24-bit stereo WAV",
+    "duration_sec": 60.0,
+    "peak_dbfs": -3.5,
+    "rms_dbfs": -22.47,
+    "crest_factor_db": 18.97,
+    "ebu_r128_compliance": "PASS"
+  },
+  "regimes": [
+    {
+      "regime": "Regime A",
+      "name": "Deep Sub-Threshold",
+      "rber": 0.0002,
+      "converged": true,
+      "tanner_iterations": 3,
+      "residual_syndrome": 0,
+      "trapping_set": false,
+      "uncorrected_bits": 0,
+      "mean_token_entropy_bits": 6.33,
+      "mean_llr_magnitude": 27.74,
+      "generated_continuation": "ersatz objects form, pushing electrons down the long tunnel, to the bottom. In fact we can detect them by seeing them"
+    },
+    {
+      "regime": "Regime B",
+      "name": "Thermal Pre-Cliff",
+      "rber": 0.008,
+      "converged": false,
+      "tanner_iterations": 15,
+      "residual_syndrome": 14,
+      "trapping_set": false,
+      "uncorrected_bits": 14,
+      "mean_token_entropy_bits": 6.122,
+      "mean_llr_magnitude": 29.46,
+      "generated_continuation": "erythema is trapped and is instantly ignited by electricity, making the computer MOST AFFECTED!\n\n\""
+    },
+    {
+      "regime": "Regime C",
+      "name": "Waterfall Precipice",
+      "rber": 0.0175,
+      "converged": false,
+      "tanner_iterations": 15,
+      "residual_syndrome": 18,
+      "trapping_set": false,
+      "uncorrected_bits": 28,
+      "mean_token_entropy_bits": 5.662,
+      "mean_llr_magnitude": 12.1,
+      "generated_continuation": "xtrous externals cause the gravitational field to turn around to escape.\n\nAn Encyclopedia Britannica article on serend"
+    },
+    {
+      "regime": "Regime D",
+      "name": "Supercritical Shear",
+      "rber": 0.0195,
+      "converged": false,
+      "tanner_iterations": 15,
+      "residual_syndrome": 25,
+      "trapping_set": false,
+      "uncorrected_bits": 11,
+      "mean_token_entropy_bits": 5.046,
+      "mean_llr_magnitude": 11.42,
+      "generated_continuation": "ices appear on the surface of the disk with long magnetic chains on them.\" Tesla refused comment for publication: the claim continued in"
+    },
+    {
+      "regime": "Regime E",
+      "name": "EIO Void Collapse",
+      "rber": 0.045,
+      "converged": false,
+      "tanner_iterations": 15,
+      "residual_syndrome": 41,
+      "trapping_set": false,
+      "uncorrected_bits": 87,
+      "mean_token_entropy_bits": 7.85,
+      "mean_llr_magnitude": 5.55,
+      "generated_continuation": "idsolrections transverse to a elsewhere disc at greater than............"
+    }
+  ]
+}

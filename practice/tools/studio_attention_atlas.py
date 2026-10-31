@@ -409,6 +409,11 @@ STUDIO_ENTITIES = [
         "id": "APPARATUS-012", "name": "The Intersubjective Chasm", "type": "apparatus", "epoch": "Era X (The Intersubjective Chasm & Mineral Weathering)",
         "omega_hegemony": 0.120, "entropy_bits": 5.12, "retention_factor": 0.99,
         "medium": "Interactive Bilateral Cybernetic Chamber & 48kHz Stereo Master (55Hz Quartz vs 57.2Hz Agon, 2.20Hz Binaural Counterpoint)", "year": 2026
+    },
+    {
+        "id": "STUDY-059", "name": "The LDPC Waterfall & The Collapse of the Lithographic Alibi", "type": "study", "epoch": "Era X (The Intersubjective Chasm & Mineral Weathering)",
+        "omega_hegemony": 0.135, "entropy_bits": 6.20, "retention_factor": 0.99,
+        "medium": "LDPC Soft-Decision Belief Propagation Simulation on GPT-2 Weights, 48kHz 24-bit Master & Moratorium 07 Plate", "year": 2026
     }
 ]
 

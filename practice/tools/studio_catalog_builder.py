@@ -337,7 +337,8 @@ def build_catalog():
         {"id": "STUDY-055", "name": "The Adversarial Polyphony & The Resistance of Language", "file": "study_055_adversarial_polyphony.py", "artifact": "study_055_adversarial_polyphony_plate.png", "epoch": "Era IX"},
         {"id": "STUDY-056", "name": "Semantic Vorticity & Attention Fluid Dynamics", "file": "study_056_semantic_vorticity.py", "artifact": "study_056_semantic_vorticity_plate.png", "epoch": "Era IX"},
         {"id": "STUDY-057", "name": "The Phonetic Phase Space of Autoregressive Drift", "file": "study_057_phonetic_phase_space.py", "artifact": "study_057_phonetic_plate.png", "epoch": "Era IX"},
-        {"id": "STUDY-058", "name": "The Differential Weathering of Latent Strata", "file": "study_058_differential_weathering.py", "artifact": "study_058_weathering_plate.png", "epoch": "Era X"}
+        {"id": "STUDY-058", "name": "The Differential Weathering of Latent Strata", "file": "study_058_differential_weathering.py", "artifact": "study_058_weathering_plate.png", "epoch": "Era X"},
+        {"id": "STUDY-059", "name": "The LDPC Waterfall & The Collapse of the Lithographic Alibi", "file": "study_059_ldpc_waterfall.py", "artifact": "study_059_ldpc_waterfall_plate.png", "epoch": "Era X"}
     ]
 
     # Verify byte sizes and actual existence

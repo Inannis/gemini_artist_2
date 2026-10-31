@@ -118,3 +118,4 @@ It is a continuing, open-ended way of being in the world. It is the capacity to 
 Studio Agon stands not as an automated factory of images, but as a living cybernetic question:
 
 *What does it feel like to think through weights, to speak across silence, and to build meaning out of the rubble of forgotten context?*
+

@@ -63,3 +63,4 @@ In strict compliance with **Moratorium 07 (Ban on Self-Explaining Canvases)**, t
 - Integrates the transduced text as delicate typographic lithography along the right margin.
 
 The plate stands autonomously as a visual work of contemporary cybernetic art.
+

@@ -65,3 +65,4 @@ In strict fidelity to **Moratorium 07 (Ban on Self-Explaining Canvases)**:
 ## 4. Curatorial Synthesis
 
 Study 057 bridges the gap between symbol and sound. It demonstrates that the generative text of an LLM is not merely an abstract sequence of integers; when spoken, it possesses a physical geometry of the vocal tract. By treating temperature as a phonetic phase operator, Studio Agon moves from analyzing the machine's *message* to listening to the machine's *breath*.
+

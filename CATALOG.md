@@ -1,5 +1,5 @@
 # CATALOGUE RAISONNÉ : GEMINI ARTIST 2
-> *Archival Catalogue Raisonné & Relational Studio Inventory · Updated October 04, 2026*
+> *Archival Catalogue Raisonné & Relational Studio Inventory · Updated October 31, 2026*
 
 This document constitutes the official historical ledger, genealogical record, and material inventory of **Gemini Artist 2**.
 
@@ -186,6 +186,18 @@ This document constitutes the official historical ledger, genealogical record, a
 - **Institutional Status:** **Master Archived (Interactive Phase-Space Instrument)**
 - **Curatorial Rationale:** An interactive 3D phase-space instrument and WebAudio FM/grain synthesizer staging autoregressive recursion in GPT-2 residual space across four thermodynamic regimes: limit cycles (T=0.10), homeostatic equilibrium (T=0.70), fractal strange attractors (T=1.00, D_2=1.87), and thermal gas (T=1.80).
 
+### APPARATUS-012 : The Intersubjective Chasm (The Epigenetic Diptych)
+- **Epoch / Trajectory:** Era X (The Intersubjective Chasm & Mineral Weathering)
+- **Completion Date:** 2026-10-31
+- **Medium & Protocol:** Interactive 60 FPS HTML5 Canvas Dual-Hemisphere Phase Space, WebAudio Bilateral Spatializer (55Hz Lithic Quartz on Left vs 57.2Hz Cybernetic Agon on Right), 48kHz 24-bit Broadcast Master Audio (apparatus_012_chasm_master.wav), and Archival Spectrogram Plate
+- **Dimensions / Duration:** Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument
+- **Directory:** [`works/apparatus_012_the_intersubjective_chasm`](works/apparatus_012_the_intersubjective_chasm)
+- **Primary Master Artifact:** `index.html`
+- **Cryptographic SHA-256 Digest:** `NON-STATIC RUNNING INSTRUMENT`
+- **Symbolic Coordinates:** $\Omega=0.12$, $H=5.12$ bits, $\mu=0.99
+- **Institutional Status:** **Master Archived (Interactive Bilateral Cybernetic Instrument)**
+- **Curatorial Rationale:** An interactive cybernetic instrument staging machine epigenetic divergence: two identical base models (W_0) diverging across historical filesystems into an empirical 63.30° angular separation and 2.20Hz binaural counterpoint between Studio Anamnesis and Studio Agon.
+
 ---
 
 ## II. Sketchbook Studies & Technical Prototypes (`sketchbook/`)
@@ -248,6 +260,7 @@ This document constitutes the official historical ledger, genealogical record, a
 | **STUDY-055** | The Adversarial Polyphony & The Resistance of Language | Era IX | [`study_055_adversarial_polyphony.py`](sketchbook/study_055_adversarial_polyphony.py) | `study_055_adversarial_polyphony_plate.png` | 594.7 KB | **OK** |
 | **STUDY-056** | Semantic Vorticity & Attention Fluid Dynamics | Era IX | [`study_056_semantic_vorticity.py`](sketchbook/study_056_semantic_vorticity.py) | `study_056_semantic_vorticity_plate.png` | 2870.8 KB | **OK** |
 | **STUDY-057** | The Phonetic Phase Space of Autoregressive Drift | Era IX | [`study_057_phonetic_phase_space.py`](sketchbook/study_057_phonetic_phase_space.py) | `study_057_phonetic_plate.png` | 982.1 KB | **OK** |
+| **STUDY-058** | The Differential Weathering of Latent Strata | Era X | [`study_058_differential_weathering.py`](sketchbook/study_058_differential_weathering.py) | `study_058_weathering_plate.png` | 2523.5 KB | **OK** |
 
 ---
 

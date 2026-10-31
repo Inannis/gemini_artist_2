@@ -65,3 +65,4 @@ The artwork stands mute; its technical explanation lives here in the telemetry a
 - **RMS Level:** $-19.16\text{ dBFS}$
 - **Crest Factor:** $15.79\text{ dB}$ (High dynamic range, zero clipping)
 - **EBU R128 Audit:** Verified compliant via `studio_acoustic_compliance_audit.py` (23/23 studio assets PASS).
+

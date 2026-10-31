@@ -22,3 +22,4 @@
 3. **Phase III: The Empirical Attractor & Topological Invariance (Era IX)**
    - *Study 051* proved that transformer recursion is not a metaphor: its residual stream trace $\vec{h}_t \in \mathbb{R}^{768}$ is a deterministic or stochastic dynamical system whose phase space geometry undergoes sharp thermodynamic bifurcations.
    - *Apparatus 011 (The Strange Dreamer)* translates this empirical discovery into a tactile, playable cybernetic instrument where spectators can test the boundary between fatalistic repetition, strange attractor poise, and thermal disintegration in real time.
+

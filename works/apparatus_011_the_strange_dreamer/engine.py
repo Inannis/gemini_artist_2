@@ -227,3 +227,4 @@ def generate_apparatus_assets():
 
 if __name__ == "__main__":
     generate_apparatus_assets()
+

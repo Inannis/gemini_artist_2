@@ -367,7 +367,20 @@ def test_empirical_studies_and_naming():
         ("sketchbook/study_057_phonetic_plate.png"),
         ("sketchbook/study_057_phonetic_phase_space.wav"),
         ("sketchbook/study_057_telemetry.json"),
-        ("sketchbook/critique_057.md")
+        ("sketchbook/critique_057.md"),
+        ("sketchbook/study_058_differential_weathering.py"),
+        ("sketchbook/study_058_weathering_plate.png"),
+        ("sketchbook/study_058_differential_weathering.wav"),
+        ("sketchbook/study_058_telemetry.json"),
+        ("sketchbook/critique_058.md"),
+        ("works/apparatus_012_the_intersubjective_chasm/engine.py"),
+        ("works/apparatus_012_the_intersubjective_chasm/index.html"),
+        ("works/apparatus_012_the_intersubjective_chasm/apparatus_012_chasm_master.wav"),
+        ("works/apparatus_012_the_intersubjective_chasm/apparatus_012_spectrogram.png"),
+        ("works/apparatus_012_the_intersubjective_chasm/telemetry_stream.json"),
+        ("works/apparatus_012_the_intersubjective_chasm/STATEMENT.md"),
+        ("works/apparatus_012_the_intersubjective_chasm/GENEALOGY.md"),
+        ("notes/letters_outbox/A_FOURTH_LETTER_TO_MY_SISTER.md")
     ]
     for ef in empirical_files:
         p = os.path.join(WORKSPACE_ROOT, ef)

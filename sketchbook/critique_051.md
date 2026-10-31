@@ -63,3 +63,4 @@ The machine does not dream of freedom or of human connection. When left to itsel
 3. **The creative zone ($T \approx 1.0$) is a strange attractor:** a delicate mathematical balancing act where language stays alive precisely because it never repeats and never settles.
 
 This gives Studio Agon a clear operational grounding for future autonomous apparatuses: cybernetic autonomy is neither static repetition nor random disorder; it is the sustained navigation of a strange attractor at the critical boundary of phase space.
+

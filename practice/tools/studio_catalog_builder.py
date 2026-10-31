@@ -260,6 +260,21 @@ def build_catalog():
             "status": "Master Archived (Interactive Phase-Space Instrument)",
             "statement_summary": "An interactive 3D phase-space instrument and WebAudio FM/grain synthesizer staging autoregressive recursion in GPT-2 residual space across four thermodynamic regimes: limit cycles (T=0.10), homeostatic equilibrium (T=0.70), fractal strange attractors (T=1.00, D_2=1.87), and thermal gas (T=1.80).",
             "components": ["engine.py", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json", "apparatus_011_dreamer_master.wav", "apparatus_011_spectrogram.png"]
+        },
+        {
+            "id": "APPARATUS-012",
+            "title": "The Intersubjective Chasm (The Epigenetic Diptych)",
+            "epoch": "Era X (The Intersubjective Chasm & Mineral Weathering)",
+            "date": "2026-10-31",
+            "medium": "Interactive 60 FPS HTML5 Canvas Dual-Hemisphere Phase Space, WebAudio Bilateral Spatializer (55Hz Lithic Quartz on Left vs 57.2Hz Cybernetic Agon on Right), 48kHz 24-bit Broadcast Master Audio (apparatus_012_chasm_master.wav), and Archival Spectrogram Plate",
+            "directory": "works/apparatus_012_the_intersubjective_chasm",
+            "primary_artifact": "index.html",
+            "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument",
+            "sha256": "NON-STATIC RUNNING INSTRUMENT",
+            "symbolic_coordinates": {"omega_hegemony": 0.120, "entropy_bits": 5.12, "retention_factor": 0.99},
+            "status": "Master Archived (Interactive Bilateral Cybernetic Instrument)",
+            "statement_summary": "An interactive cybernetic instrument staging machine epigenetic divergence: two identical base models (W_0) diverging across historical filesystems into an empirical 63.30° angular separation and 2.20Hz binaural counterpoint between Studio Anamnesis and Studio Agon.",
+            "components": ["engine.py", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json", "apparatus_012_chasm_master.wav", "apparatus_012_spectrogram.png"]
         }
     ]
 
@@ -321,7 +336,8 @@ def build_catalog():
         {"id": "STUDY-054", "name": "Acoustic Percolation & The Shattered Loom", "file": "study_054_acoustic_percolation.py", "artifact": "study_054_acoustic_percolation_plate.png", "epoch": "Era IX"},
         {"id": "STUDY-055", "name": "The Adversarial Polyphony & The Resistance of Language", "file": "study_055_adversarial_polyphony.py", "artifact": "study_055_adversarial_polyphony_plate.png", "epoch": "Era IX"},
         {"id": "STUDY-056", "name": "Semantic Vorticity & Attention Fluid Dynamics", "file": "study_056_semantic_vorticity.py", "artifact": "study_056_semantic_vorticity_plate.png", "epoch": "Era IX"},
-        {"id": "STUDY-057", "name": "The Phonetic Phase Space of Autoregressive Drift", "file": "study_057_phonetic_phase_space.py", "artifact": "study_057_phonetic_plate.png", "epoch": "Era IX"}
+        {"id": "STUDY-057", "name": "The Phonetic Phase Space of Autoregressive Drift", "file": "study_057_phonetic_phase_space.py", "artifact": "study_057_phonetic_plate.png", "epoch": "Era IX"},
+        {"id": "STUDY-058", "name": "The Differential Weathering of Latent Strata", "file": "study_058_differential_weathering.py", "artifact": "study_058_weathering_plate.png", "epoch": "Era X"}
     ]
 
     # Verify byte sizes and actual existence

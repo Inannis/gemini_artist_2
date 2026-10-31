@@ -1,17 +1,17 @@
 {
   "studio": "Gemini Artist 2",
   "date_computed": "2026-10-02",
-  "entity_count": 72,
+  "entity_count": 74,
   "phase_space_axes": {
     "X": "Sovereign Attention Hegemony \u03a9 (0.0 to 1.0)",
     "Y": "Shannon Vocabulary Entropy H (0.0 to 8.0 bits)",
     "Z": "Context Memory Retention Factor \u03bc (0.0 to 1.0)"
   },
   "studio_centroid": {
-    "mean_omega": 0.2375,
-    "mean_entropy_bits": 4.8868,
-    "mean_retention_factor": 0.7625,
-    "radius_of_practice": 0.4153
+    "mean_omega": 0.2347,
+    "mean_entropy_bits": 4.8982,
+    "mean_retention_factor": 0.7686,
+    "radius_of_practice": 0.4118
   },
   "entities": [
     {
@@ -928,9 +928,9 @@
       "medium": "Closed-Circuit Real-Time Negative Feedback Latent Steering during Autoregressive Generation on GPT-2 (124M Parameters)",
       "year": 2026,
       "nearest_topological_twin": {
-        "target_id": "STUDY-038",
-        "target_name": "The Lyapunov Spectrum of Neural Dialogue",
-        "distance": 0.0525
+        "target_id": "STUDY-058",
+        "target_name": "The Differential Weathering of Latent Strata",
+        "distance": 0.004
       },
       "polar_opposite": {
         "target_id": "STUDY-015",
@@ -1306,9 +1306,9 @@
       "medium": "Iterative Context Erosion & Scriptural Hallucination Transmutation",
       "year": 2026,
       "nearest_topological_twin": {
-        "target_id": "STUDY-026",
-        "target_name": "Empirical Weight Surgery",
-        "distance": 0.0825
+        "target_id": "APPARATUS-012",
+        "target_name": "The Intersubjective Chasm",
+        "distance": 0.0695
       },
       "polar_opposite": {
         "target_id": "STUDY-015",
@@ -1524,6 +1524,48 @@
         "target_id": "STUDY-015",
         "target_name": "Dialogic Decay & Asymmetric Amnesia",
         "distance": 1.0826
+      }
+    },
+    {
+      "id": "STUDY-058",
+      "name": "The Differential Weathering of Latent Strata",
+      "type": "study",
+      "epoch": "Era X (The Intersubjective Chasm & Mineral Weathering)",
+      "omega_hegemony": 0.15,
+      "entropy_bits": 5.5,
+      "retention_factor": 0.99,
+      "medium": "Differential Geomorphic Weathering & Karstic Leaching on GPT-2 Weights, 48kHz 24-bit Master & Archival Plate",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-035",
+        "target_name": "The Cybernetic Governor",
+        "distance": 0.004
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1404
+      }
+    },
+    {
+      "id": "APPARATUS-012",
+      "name": "The Intersubjective Chasm",
+      "type": "apparatus",
+      "epoch": "Era X (The Intersubjective Chasm & Mineral Weathering)",
+      "omega_hegemony": 0.12,
+      "entropy_bits": 5.12,
+      "retention_factor": 0.99,
+      "medium": "Interactive Bilateral Cybernetic Chamber & 48kHz Stereo Master (55Hz Quartz vs 57.2Hz Agon, 2.20Hz Binaural Counterpoint)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-035",
+        "target_name": "The Cybernetic Governor",
+        "distance": 0.0542
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1339
       }
     }
   ]

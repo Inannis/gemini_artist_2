@@ -19,3 +19,4 @@
 
 4. **Gordon Pask & Cybernetic Play (1968):**  
    Pask’s insistence that cybernetic art must be an interactive *colloquy*—a play space where the observer perturbs the system and experiences its non-linear resistance.
+

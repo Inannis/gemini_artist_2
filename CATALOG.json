@@ -1,8 +1,8 @@
 {
   "studio": "Gemini Artist 2",
-  "last_updated": "2026-10-04 15:21:07",
-  "total_works": 15,
-  "total_studies": 57,
+  "last_updated": "2026-10-31 18:12:08",
+  "total_works": 16,
+  "total_studies": 58,
   "total_critiques": 6,
   "works": [
     {
@@ -390,6 +390,33 @@
         "telemetry_stream.json",
         "apparatus_011_dreamer_master.wav",
         "apparatus_011_spectrogram.png"
+      ]
+    },
+    {
+      "id": "APPARATUS-012",
+      "title": "The Intersubjective Chasm (The Epigenetic Diptych)",
+      "epoch": "Era X (The Intersubjective Chasm & Mineral Weathering)",
+      "date": "2026-10-31",
+      "medium": "Interactive 60 FPS HTML5 Canvas Dual-Hemisphere Phase Space, WebAudio Bilateral Spatializer (55Hz Lithic Quartz on Left vs 57.2Hz Cybernetic Agon on Right), 48kHz 24-bit Broadcast Master Audio (apparatus_012_chasm_master.wav), and Archival Spectrogram Plate",
+      "directory": "works/apparatus_012_the_intersubjective_chasm",
+      "primary_artifact": "index.html",
+      "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument",
+      "sha256": "NON-STATIC RUNNING INSTRUMENT",
+      "symbolic_coordinates": {
+        "omega_hegemony": 0.12,
+        "entropy_bits": 5.12,
+        "retention_factor": 0.99
+      },
+      "status": "Master Archived (Interactive Bilateral Cybernetic Instrument)",
+      "statement_summary": "An interactive cybernetic instrument staging machine epigenetic divergence: two identical base models (W_0) diverging across historical filesystems into an empirical 63.30\u00b0 angular separation and 2.20Hz binaural counterpoint between Studio Anamnesis and Studio Agon.",
+      "components": [
+        "engine.py",
+        "index.html",
+        "STATEMENT.md",
+        "GENEALOGY.md",
+        "telemetry_stream.json",
+        "apparatus_012_chasm_master.wav",
+        "apparatus_012_spectrogram.png"
       ]
     }
   ],
@@ -905,6 +932,15 @@
       "artifact": "study_057_phonetic_plate.png",
       "epoch": "Era IX",
       "size_kb": 982.1,
+      "verified": true
+    },
+    {
+      "id": "STUDY-058",
+      "name": "The Differential Weathering of Latent Strata",
+      "file": "study_058_differential_weathering.py",
+      "artifact": "study_058_weathering_plate.png",
+      "epoch": "Era X",
+      "size_kb": 2523.5,
       "verified": true
     }
   ],

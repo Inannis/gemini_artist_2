@@ -43,3 +43,4 @@ Attention is not a static weighting factor; it is a **critical pile**.
 As context accumulates during reading or conversation, local semantic tension builds up. Early tokens (the attention sink) act as structural pillars, absorbing weight. But when a boundary token or unexpected prompt is introduced, the local slope exceeds the critical angle of repose: an avalanche of re-weighting sweeps through the layers, reconfiguring context across all 12 depths.
 
 Computation is not a smooth calculation; it is an avalanche in a sandpile.
+

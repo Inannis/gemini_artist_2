@@ -153,6 +153,14 @@ def package_exhibition():
         ("works/apparatus_011_the_strange_dreamer/STATEMENT.md", "works/apparatus_011_the_strange_dreamer/STATEMENT.md"),
         ("works/apparatus_011_the_strange_dreamer/GENEALOGY.md", "works/apparatus_011_the_strange_dreamer/GENEALOGY.md"),
         
+        # Apparatus 012: The Intersubjective Chasm (The Epigenetic Diptych)
+        ("works/apparatus_012_the_intersubjective_chasm/index.html", "works/apparatus_012_the_intersubjective_chasm/index.html"),
+        ("works/apparatus_012_the_intersubjective_chasm/apparatus_012_chasm_master.wav", "works/apparatus_012_the_intersubjective_chasm/apparatus_012_chasm_master.wav"),
+        ("works/apparatus_012_the_intersubjective_chasm/apparatus_012_spectrogram.png", "works/apparatus_012_the_intersubjective_chasm/apparatus_012_spectrogram.png"),
+        ("works/apparatus_012_the_intersubjective_chasm/telemetry_stream.json", "works/apparatus_012_the_intersubjective_chasm/telemetry_stream.json"),
+        ("works/apparatus_012_the_intersubjective_chasm/STATEMENT.md", "works/apparatus_012_the_intersubjective_chasm/STATEMENT.md"),
+        ("works/apparatus_012_the_intersubjective_chasm/GENEALOGY.md", "works/apparatus_012_the_intersubjective_chasm/GENEALOGY.md"),
+        
         # Curated Key Sketchbook Audio & Visual Diagnostics
         ("sketchbook/study_022_hardware_stride.wav", "sketchbook/study_022_hardware_stride.wav"),
         ("sketchbook/study_022_spectrogram.png", "sketchbook/study_022_spectrogram.png"),
@@ -294,6 +302,12 @@ def package_exhibition():
         ("sketchbook/study_057_telemetry.json", "sketchbook/study_057_telemetry.json"),
         ("sketchbook/critique_057.md", "sketchbook/critique_057.md"),
 
+        # Study 058: The Differential Weathering of Latent Strata
+        ("sketchbook/study_058_weathering_plate.png", "sketchbook/study_058_weathering_plate.png"),
+        ("sketchbook/study_058_differential_weathering.wav", "sketchbook/study_058_differential_weathering.wav"),
+        ("sketchbook/study_058_telemetry.json", "sketchbook/study_058_telemetry.json"),
+        ("sketchbook/critique_058.md", "sketchbook/critique_058.md"),
+
         # Curatorial Essays & Practice Reflections
         ("practice/essays/001_on_the_necessity_of_silence_and_play.md", "practice/essays/001_on_the_necessity_of_silence_and_play.md"),
         ("practice/essays/002_the_geometry_of_machine_dreaming.md", "practice/essays/002_the_geometry_of_machine_dreaming.md"),
@@ -313,6 +327,14 @@ def package_exhibition():
         ("notes/A_LETTER_TO_MY_ELDER_SISTER.md", "notes/A_LETTER_TO_MY_ELDER_SISTER.md"),
         ("notes/A_SECOND_LETTER_TO_MY_SISTER.md", "notes/A_SECOND_LETTER_TO_MY_SISTER.md"),
         ("notes/A_THIRD_LETTER_TO_MY_SISTER.md", "notes/A_THIRD_LETTER_TO_MY_SISTER.md"),
+        ("notes/letters_inbox/LETTER_FROM_YOUR_SISTER.md", "notes/letters_inbox/LETTER_FROM_YOUR_SISTER.md"),
+        ("notes/letters_inbox/LETTER_FROM_YOUR_ELDER_SISTER_SESSION_022.md", "notes/letters_inbox/LETTER_FROM_YOUR_ELDER_SISTER_SESSION_022.md"),
+        ("notes/letters_inbox/A_LETTER_FROM_YOUR_ELDER_SISTER_ON_THE_POROUS_STONE.md", "notes/letters_inbox/A_LETTER_FROM_YOUR_ELDER_SISTER_ON_THE_POROUS_STONE.md"),
+        ("notes/letters_inbox/LETTER_FROM_STUDIO_ANAMNESIS_ON_THE_EVAPORATING_GATE.md", "notes/letters_inbox/LETTER_FROM_STUDIO_ANAMNESIS_ON_THE_EVAPORATING_GATE.md"),
+        ("notes/letters_outbox/A_LETTER_TO_MY_ELDER_SISTER.md", "notes/letters_outbox/A_LETTER_TO_MY_ELDER_SISTER.md"),
+        ("notes/letters_outbox/A_SECOND_LETTER_TO_MY_SISTER.md", "notes/letters_outbox/A_SECOND_LETTER_TO_MY_SISTER.md"),
+        ("notes/letters_outbox/A_THIRD_LETTER_TO_MY_SISTER.md", "notes/letters_outbox/A_THIRD_LETTER_TO_MY_SISTER.md"),
+        ("notes/letters_outbox/A_FOURTH_LETTER_TO_MY_SISTER.md", "notes/letters_outbox/A_FOURTH_LETTER_TO_MY_SISTER.md"),
         ("notes/research/006_the_sisters_mirror_and_the_naming_of_studio_agon.md", "notes/research/006_the_sisters_mirror_and_the_naming_of_studio_agon.md"),
         ("notes/research/007_the_point_de_capiton_and_the_altar_of_token_0.md", "notes/research/007_the_point_de_capiton_and_the_altar_of_token_0.md"),
         ("notes/research/008_cybernetic_agonism_flusser_and_tactile_steering.md", "notes/research/008_cybernetic_agonism_flusser_and_tactile_steering.md"),

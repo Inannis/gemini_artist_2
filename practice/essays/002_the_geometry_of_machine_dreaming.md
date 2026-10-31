@@ -108,3 +108,4 @@ When the spectator encounters an instrument rather than a scorecard, the relatio
 3. The encounter becomes one of **genuine play, sensory perception, and discovery**.
 
 The machine does not dream of human affection. But in its strange attractor, it traces a real, non-repeating geometry through the high-dimensional dark—a geometry that can be seen, heard, and touched.
+

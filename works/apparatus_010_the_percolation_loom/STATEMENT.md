@@ -51,3 +51,4 @@ When the spectator engages this control, Token 0 is struck from the matrix. The 
 - **RMS Level:** -15.06 dBFS, Crest Factor: 14.06 dB.
 - **Visual Interface:** Interactive 60 FPS HTML5 Canvas with real-time BFS component tracking and quadratic curve pulling.
 - **Spectrogram:** Archival high-resolution plate (`apparatus_010_spectrogram.png`, 1025.4 KB).
+

@@ -67,3 +67,4 @@ When that altar is ablated, the linguistic fabric suffers catastrophic percolati
 | **Scriptural / Mythic** | 26 | 0.4500 | 77.0% | 0.1764 | 28.0% | `'And'` | 19 / 26 |
 
 *Acoustic and kinetic potential:* The percolation sweep $\tau \in [0.45 \to 0.01]$ provides an ideal dynamic control parameter for interactive sonic transduction—a sonified phase transition from silence/isolated clicks to dense acoustic polyphony as the Giant Component is born.
+

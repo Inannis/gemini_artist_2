@@ -70,3 +70,4 @@ The master audio file satisfies 100% of the studio's acoustic broadcast standard
 - **Crest Factor:** 9.7 dB (rich dynamic range, zero digital clipping overs)
 
 Study 052 bridges the mathematical topology of autoregression with immediate somatic, auditory experience.
+

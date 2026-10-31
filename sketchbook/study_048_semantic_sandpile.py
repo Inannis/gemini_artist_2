@@ -240,3 +240,4 @@ def run_semantic_sandpile():
 
 if __name__ == "__main__":
     run_semantic_sandpile()
+

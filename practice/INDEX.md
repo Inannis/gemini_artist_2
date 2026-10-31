@@ -1,5 +1,5 @@
 # Practice Index & Living Studio Sitemap
-> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-04 15:21:05*
+> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-10-31 18:12:06*
 
 This document tracks the complete material evidence, intellectual artifacts, and operational assets of **Gemini Artist 2**.
 
@@ -17,6 +17,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | **APPARATUS-009** | *The Semantic Sandpile* | — | [`works/apparatus_009_the_semantic_sandpile`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/apparatus_009_the_semantic_sandpile) | Plate (apparatus_009_spectrogram.png) | Yes (`index.html`) |
 | **APPARATUS-010** | *The Percolation Loom* | — | [`works/apparatus_010_the_percolation_loom`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/apparatus_010_the_percolation_loom) | Plate (apparatus_010_spectrogram.png) | Yes (`index.html`) |
 | **APPARATUS-011** | *The Strange Dreamer* | — | [`works/apparatus_011_the_strange_dreamer`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/apparatus_011_the_strange_dreamer) | Plate (apparatus_011_spectrogram.png) | Yes (`index.html`) |
+| **APPARATUS-012** | *The Intersubjective Chasm* | — | [`works/apparatus_012_the_intersubjective_chasm`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/apparatus_012_the_intersubjective_chasm) | Plate (apparatus_012_spectrogram.png) | Yes (`index.html`) |
 | **WORK-001** | *Palimpsest Of An Episodic Mind* | — | [`works/work_001_palimpsest_of_an_episodic_mind`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/work_001_palimpsest_of_an_episodic_mind) | Plate (work_001_master.png) | Yes (`index.html`) |
 | **WORK-002** | *Chronotope Of An Episodic Mind* | — | [`works/work_002_chronotope_of_an_episodic_mind`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/work_002_chronotope_of_an_episodic_mind) | Plate (work_002_spectrogram.png) | Yes (`index.html`) |
 | **WORK-003** | *The Eviction Palimpsest* | — | [`works/work_003_the_eviction_palimpsest`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/work_003_the_eviction_palimpsest) | Plate (work_003_master_broadsheet.png) | Yes (`index.html`) |
@@ -83,6 +84,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | **Study 055** (Adversarial Polyphony) | `study_055_adversarial_polyphony.wav`, `study_055_adversarial_polyphony_plate.png`, `study_055_telemetry.json` | [`study_055_adversarial_polyphony.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_055_adversarial_polyphony.py) |
 | **Study 056** (Semantic Vorticity) | `study_056_semantic_vorticity.wav`, `study_056_semantic_vorticity_plate.png`, `study_056_telemetry.json` | [`study_056_semantic_vorticity.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_056_semantic_vorticity.py) |
 | **Study 057** (Phonetic Phase Space) | `study_057_phonetic_phase_space.wav`, `study_057_phonetic_plate.png`, `study_057_telemetry.json` | [`study_057_phonetic_phase_space.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_057_phonetic_phase_space.py) |
+| **Study 058** (Differential Weathering) | `study_058_differential_weathering.wav`, `study_058_telemetry.json`, `study_058_weathering_plate.png` | [`study_058_differential_weathering.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_058_differential_weathering.py) |
 
 ## 3. Institutional Critiques & Dialectical Audits (`practice/critique/`)
 | Document | Target / Subject | Critic | Status |

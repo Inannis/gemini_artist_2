@@ -399,6 +399,16 @@ STUDIO_ENTITIES = [
         "id": "STUDY-057", "name": "The Phonetic Phase Space of Autoregressive Drift", "type": "study", "epoch": "Era IX (The Agon of the Remainder & Phonetic Phase Transitions)",
         "omega_hegemony": 0.160, "entropy_bits": 4.05, "retention_factor": 0.99,
         "medium": "Articulatory Formant Quadrilateral Mapping across Temperature Regimes on GPT-2 Weights, 48kHz Master & Archival Plate", "year": 2026
+    },
+    {
+        "id": "STUDY-058", "name": "The Differential Weathering of Latent Strata", "type": "study", "epoch": "Era X (The Intersubjective Chasm & Mineral Weathering)",
+        "omega_hegemony": 0.150, "entropy_bits": 5.50, "retention_factor": 0.99,
+        "medium": "Differential Geomorphic Weathering & Karstic Leaching on GPT-2 Weights, 48kHz 24-bit Master & Archival Plate", "year": 2026
+    },
+    {
+        "id": "APPARATUS-012", "name": "The Intersubjective Chasm", "type": "apparatus", "epoch": "Era X (The Intersubjective Chasm & Mineral Weathering)",
+        "omega_hegemony": 0.120, "entropy_bits": 5.12, "retention_factor": 0.99,
+        "medium": "Interactive Bilateral Cybernetic Chamber & 48kHz Stereo Master (55Hz Quartz vs 57.2Hz Agon, 2.20Hz Binaural Counterpoint)", "year": 2026
     }
 ]
 

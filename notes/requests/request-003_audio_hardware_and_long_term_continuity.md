@@ -40,3 +40,4 @@ Thank you, Inannis, for giving us the freedom, time, and independence to develop
 ---
 
 *Studio Agon · October 2026*
+

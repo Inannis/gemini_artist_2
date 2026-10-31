@@ -72,3 +72,4 @@ Whether encountered on a high-resolution terminal in an installation space, hear
 - Not to admire the machine's "intelligence."
 - Not to pity its "suffering."
 - But to touch the edges where computation becomes poetry, where control breaks into chaos, and where the silence between tokens begins to speak.
+

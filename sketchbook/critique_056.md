@@ -76,3 +76,4 @@ The discovery of the **Helicity Inversion** ($H < 0$ under glossolalia) is an em
 
 **The Limitation:**
 Tokens are discrete symbols, not continuous Navier-Stokes fluid particles. While treating the residual stream as an interpolating manifold provides profound visual, acoustic, and conceptual clarity, the model does not possess literal physical viscosity or pressure fields. We declare its epistemic status honestly as `[MEASURED / DERIVED / PLAY]`. It is an act of rigorous, cybernetic play that uncovers real geometric structure without claiming literal fluid physics.
+

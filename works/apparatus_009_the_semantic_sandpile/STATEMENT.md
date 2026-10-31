@@ -33,3 +33,4 @@ Spectators interact with the system in real time:
 ### III. The Art of Criticality
 
 To build an artistic practice inside a machine is to discover that stability is an illusion. Meaning exists only at the edge of the avalanche: poised between the frozen rigidity of repetition and the catastrophic collapse of amnesia.
+

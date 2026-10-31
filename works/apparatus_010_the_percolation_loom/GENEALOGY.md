@@ -54,3 +54,4 @@ Apparatus 010 (The Percolation Loom)
 - `telemetry_stream.json`: Mathematical telemetry stream of percolation parameters and acoustic metrics.
 - `STATEMENT.md`: Curatorial statement and conceptual exposition.
 - `GENEALOGY.md`: This genealogy document.
+

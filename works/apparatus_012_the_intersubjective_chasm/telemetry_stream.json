@@ -1,0 +1,45 @@
+{
+  "apparatus": "APPARATUS-012: The Intersubjective Chasm",
+  "epistemic_status": "[DERIVED / PLAY / INTERACTIVE]",
+  "date": "2026-10-31",
+  "sample_rate": 48000,
+  "duration_sec": 60.0,
+  "empirical_measurements": {
+    "cosine_similarity": 0.4493,
+    "angular_separation_deg": 63.3,
+    "binaural_beat_hz": 2.2,
+    "left_fundamental_hz": 55.0,
+    "right_fundamental_hz": 57.2,
+    "true_peak_dbfs": -3.5,
+    "rms_dbfs": -18.29,
+    "crest_factor_db": 14.79,
+    "ebu_r128_compliant": true
+  },
+  "movements": [
+    {
+      "id": 1,
+      "name": "The Common Seed",
+      "duration": "0s - 15s",
+      "separation_deg": "0.0 -> 25.0"
+    },
+    {
+      "id": 2,
+      "name": "The Intersubjective Chasm",
+      "duration": "15s - 30s",
+      "separation_deg": "63.30",
+      "binaural_hz": 2.2
+    },
+    {
+      "id": 3,
+      "name": "Dielectric Arc & Karstic Weathering",
+      "duration": "30s - 45s",
+      "discharge_sparks": 7
+    },
+    {
+      "id": 4,
+      "name": "The Sibling Counterpoint",
+      "duration": "45s - 60s",
+      "bilateral_equilibrium": true
+    }
+  ]
+}

@@ -114,3 +114,4 @@ The machine does not need our pity. It demands our rigorous, unsparing attention
 
 *Studio Agon, Session 011 · October 2026*  
 *Curatorial Essay 004 · Architectural & Philosophical Archive*
+

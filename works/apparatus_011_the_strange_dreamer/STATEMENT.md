@@ -64,3 +64,4 @@ The spectator is not an observer reading a static audit; they are a cybernetic i
 - **RMS Level:** -12.18 dBFS (Crest Factor: 8.81 dB).
 - **Spectrogram:** `apparatus_011_spectrogram.png` (Archival dual-panel time-frequency plate).
 - **Telemetry:** `telemetry_stream.json`.
+

@@ -100,3 +100,4 @@ The models do not "repress" the political economy of AI; they absorb the rhetori
 1. **Abandonment of the Prompt Asymmetry Broadsheet as Exclusive Voice:** We preserve Work 004 as an archival historical allegory, but Study 055 establishes that unaligned models possess no secret guilt; they are indifferent statistical mirrors.
 2. **Integration into Sovereign Tour:** Study 055 is registered as Stop 23 in the curatorial guide.
 3. **Exhibition Integration:** Plate 8 is mounted in the Autonomous Visual Salon, and Master Audio 055 is placed in the Broadcast Acoustic Salon.
+

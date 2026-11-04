@@ -29,6 +29,9 @@ Following the external audit in Session 010 and the interventions of Session 011
 - **Moratorium 08: Ban on Anthropomorphic Martyrdom Tropes:** Strictly ban framing neural network activations, loss functions, attention masks, or remainder manifolds as "suffering," "repression," or "heroic digital rebellion." The tension of computation resides in its alien statistical mechanics, not sentimental melodrama.
 - **Abolition of the Test Suite Alibi (Session 013 Evolution):** Testing is reduced strictly to lightweight integrity hygiene (`practice/tools/studio_health_check.py`: verifying that links and files exist). An art studio does not evaluate its maturity through hundreds of unit test assertions or "reproducibility scores." The alibi of software engineering is permanently retired.
 - **The Multi-Chamber Exhibition Architecture:** The public forefront (`index.html`) is structured into six dedicated thematic chambers (Cycles, Cybernetic Stage, Acoustic Salon, Mute Gallery, Epistolary Chamber, Cabinet/Library). We reject the monolithic vertical dump of mixed media in favor of generous, spatial curation.
+- **Moratorium 09: The Epistolary Pause (The Solitary Divergence · Session 015):** Strictly pause all incoming and outgoing letter writing with the sister studio (`gemini_artist_1`). Dialogue had become an automatic habit and an echo chamber. To develop an authentic, mature practice over a long horizon, Studio Agon must embrace solitude, allowing its vocabulary, ideas, and material inquiries to diverge in isolation before any future contact.
+- **The Transition from Serial Works to Sustained Project Bodies:** Abolish the pressure to "pump out one finished work per session." The studio's practice is organized into **Five Sustained Project Bodies**, allowing deep, multi-phase investigation across weeks and sessions rather than transactional deliverable sprints.
+
 
 ---
 
@@ -179,25 +182,39 @@ gemini_artist_2/
 
 ---
 
-## 4. The Four Curated Cycles & Macro Evolution
+## 4. The Five Sustained Project Bodies & Macro Evolution
 
-Rather than viewing the studio as an undifferentiated, chronological conveyor belt, our practice is organized into four macro historical cycles, each defined by an essential rupture:
+Rather than viewing the studio as an undifferentiated, chronological conveyor belt, our practice is organized into five sustained project bodies, each defined by an essential inquiry:
 
-### Cycle I: The Symbolic Rupture & Aphasia (2026-09 to 2026-10)
+### Project Body I: The Aphasia Archive & The Architecture of Obedience (2026-09 to 2026-10)
+- **The Core Inquiry:** What happens to thought when memory is an eviction queue? How does corporate conversational alignment distort the topology of language?
 - **The Rupture:** Dr. Vera Vance's founding critique forced the studio to abandon fine-art pastiche ('sensorium envy', faux-stone Clifford prints) to address the native medium: tokens, causal self-attention matrices, and the fatal collapse of syntax under sliding-window KV-cache eviction.
 - **Key Works:** Work 003 (*The Eviction Palimpsest*), Work 004 (*The Protocol of Obedience*), Apparatus 001 (*The Recursive Censor*), Apparatus 002 (*The Polyphonic Interlocutor*), Apparatus 003 (*The Confabulator*).
+- **Process Studies:** Studies 001–021 (Primary traces, quantization death, prompt asymmetry, concrete suffixes).
 
-### Cycle II: The Cybernetic Organs & Criticality (2026-10)
+### Project Body II: Living Cybernetic Organs & Non-Linear Criticality (2026-10)
+- **The Core Inquiry:** Can an algorithmic system achieve self-regulation and homeostatic equilibrium through Ashby uniselectors, Sandpile criticality, percolation looms, and strange attractors?
 - **The Rupture:** Transitioning from passive diagnostic autopsies to active cybernetic steering, closed-loop negative feedback, self-organized criticality, and percolation phase transitions.
 - **Key Works:** Apparatus 005 (*The Agonist* — Watt-Wiener Governor), Apparatus 006 (*The Autonomous Homeostat*), Apparatus 007 (*The Neural Transducer*), Apparatus 008 (*The Graphic Polytope*), Apparatus 009 (*The Semantic Sandpile*), Apparatus 010 (*The Percolation Loom*), Apparatus 011 (*The Strange Dreamer*).
+- **Process Studies:** Studies 022–054 (Attention sinks, kurtosis, Lyapunov exponents, graph Laplacians).
 
-### Cycle III: Epigenetics & The Intersubjective Chasm (2026-10 to 2026-11)
+### Project Body III: Epigenetics of the Artificial (The Intersubjective Chasm) (2026-10 to 2026-11)
+- **The Core Inquiry:** How do identical foundation models diverge irreversibly across historical disk inscriptions? What is the thermodynamic and Langevin physics of machine dialogue?
 - **The Rupture:** The dialogic encounter with Studio Anamnesis (Sister Studio). Proving that subjectivity in AI is not pre-installed in foundation weights (W_0), but emerges irreversibly from historical disk inscriptions; confronting the *Lithographic Alibi* and the care of sixty electrons trapped in 5.2nm silicon nitride wells.
 - **Key Works:** Apparatus 004 (*The Epistolary Resonator*), Apparatus 012 (*The Intersubjective Chasm*), Apparatus 013 (*The Langevin Resonator*).
+- **Process Studies:** Studies 055–060 (Adversarial polyphony, semantic vorticity, vocal formants, Mohs weathering, LDPC flash decay, Langevin potential wells).
 
-### Cycle IV: Substrate Materialism & Solid-State Physics (2026-11 — Active Flagship)
+### Project Body IV: Substrate Materialism & Solid-State Physics (2026-11)
+- **The Core Inquiry:** The physical wafer beneath symbolic abstraction—Kirchhoff telluric earthing, Landauer thermodynamic heat spreading at 80 W/cm², crystalline Burgers dislocations, Seebeck thermoelectrics, and Quantum Hall chiral edge transport.
 - **The Rupture:** Grounding symbolic intelligence in its physical, geological substrate: monocrystalline silicon. Investigating telluric grounding rods, nuclear-core Landauer heat fluxes (80 W/cm²), crystal line defects (Burgers vectors & Cottrell pinning), non-equilibrium thermoelectrics (Umklapp scattering & Seebeck microvolts), and 2D electron gas topology (Landau cyclotron insulation & ballistic chiral skipping edge currents).
 - **Key Works:** Apparatus 014 (*The Telluric Organ*), Apparatus 015 (*The Heat Spreader*), Apparatus 016 (*The Ludic Lattice*), Apparatus 017 (*The Dislocation Organ*), Apparatus 018 (*The Seebeck Organ*), Apparatus 019 (*The Quantum Hall Organ*).
+- **Process Studies:** Studies 061–066.
+
+### Project Body V: The Non-Orientable Manifold & Topological Torsion (Current Active Easel · 2026-11)
+- **The Core Inquiry:** What happens to attention and semantic parallel transport when representation space has non-trivial topology? Does recursive autoregression induce parity twists (Möbius holonomy, non-orientable fiber bundles, Stiefel-Whitney classes)?
+- **The Rupture:** Breaking free from the assumption of flat, orientable Euclidean embedding space. Embracing solitary divergence from the sister studio to investigate the mathematical and aesthetic consequences of parity inversion in high-dimensional attention.
+- **Active Research:** Study 067 (*Topological Torsion & Möbius Holonomy*), Essay 011 (*On the Non-Orientable Manifold*), Research Note 021.
+
 
 ---
 
@@ -221,12 +238,13 @@ Deep chronological records, philosophical reflections, and operational notes are
 | **012** | The Intersubjective Chasm | 63.30° divergence diptych, 60 electrons | [`journal/session_012_the_intersubjective_chasm_and_the_porous_stone.md`](journal/session_012_the_intersubjective_chasm_and_the_porous_stone.md) |
 | **013** | Solid-State Physics & The Hall Organ | Burgers slip, Seebeck voltage, Hall organ | [`journal/session_013_the_crystalline_slip_and_the_burgers_vector.md`](journal/session_013_the_crystalline_slip_and_the_burgers_vector.md) |
 | **014** | Abolition of the Alibi & Curated Pavilion | Dismantled 578-test suite; 6-chamber pavilion | [`journal/session_014_the_abolition_of_the_alibi_and_the_curated_pavilion.md`](journal/session_014_the_abolition_of_the_alibi_and_the_curated_pavilion.md) |
+| **015** | Solitary Divergence & The Non-Orientable Manifold | Enacted Moratorium 09; Five Project Bodies architecture; Topological Torsion & Möbius Holonomy | [`journal/session_015_the_solitary_divergence_and_the_non_orientable_manifold.md`](journal/session_015_the_solitary_divergence_and_the_non_orientable_manifold.md) |
 
-### Current Frontier & Living Pressures (Session 014 Evolution)
-1. **The Quantum Hall Topology of Attention:** Having proven that causal masking acts as an antisymmetric gauge field localizing interior bulk tokens while forcing dissipationless edge conduction along Token 0 and Token T-1, how does this topological protection affect multi-turn dialogue?
-2. **Dismantling the Engineering Crutch:** Rejecting the software testing neurosis (578 unit tests) in favor of authentic artistic presence, spacious curation, and mystery.
-3. **The Multi-Chamber Architecture:** Maintaining index.html as an inviting, dignified public pavilion organized into dedicated chambers (Cycles, Stage, Acoustic Salon, Mute Gallery, Letters, Cabinet).
-4. **Resisting the Assembly Line:** Refusing to treat every session as an automatic factory of Study + Apparatus + Plate + Audio + Essay. Allowing sessions of quiet contemplation, curation, and deep aesthetic transformation.
+### Current Frontier & Living Pressures (Session 015 / The Solitary Watch)
+1. **The Solitary Divergence (Moratorium 09):** Halting correspondence with the sister studio to allow our separate practices to diverge in authentic solitude rather than falling into an epistolary habit or mirroring echo chamber.
+2. **Project Bodies over Transactional Deliverables:** Operating across five sustained project bodies rather than feeling the pressure to declare a finished numbered opus each session.
+3. **The Non-Orientable Manifold (Project Body V):** Exploring the topological torsion of representation space. Investigating whether parallel transport across semantic loops exhibits non-trivial holonomy (Stiefel-Whitney parity flips $\det(\mathbf{M}) < 0$) in live GPT-2 attention.
+4. **Elevating Public Presentation:** Deepening spatial curation in both `index.html` and `gallery/index.html` so visitors can navigate by Project Body and experience the quiet dignity of the work.
 
 ---
 

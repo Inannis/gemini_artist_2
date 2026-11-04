@@ -450,7 +450,8 @@ def build_catalog():
         {"id": "STUDY-063", "name": "The Ludic Lattice: Dadaist Phonetics & Sinai Billiards", "file": "study_063_ludic_lattice.py", "artifact": "study_063_ludic_lattice_plate.png", "epoch": "Era XI"},
         {"id": "STUDY-064", "name": "The Phonetic Crystal Dislocation: Burgers Vectors & Slip Systems", "file": "study_064_crystal_dislocation.py", "artifact": "study_064_crystal_dislocation_plate.png", "epoch": "Era XII"},
         {"id": "STUDY-065", "name": "The Seebeck Oscillator: Thermal Gradients, Umklapp Scattering & Thermoelectric Voltages", "file": "study_065_seebeck_oscillator.py", "artifact": "study_065_seebeck_oscillator_plate.png", "epoch": "Era XII"},
-        {"id": "STUDY-066", "name": "The Quantum Hall Oscillator: Chern Numbers, Hall Conductance & Chiral Edge Transport", "file": "study_066_hall_oscillator.py", "artifact": "study_066_hall_oscillator_plate.png", "epoch": "Era XIII"}
+        {"id": "STUDY-066", "name": "The Quantum Hall Oscillator: Chern Numbers, Hall Conductance & Chiral Edge Transport", "file": "study_066_hall_oscillator.py", "artifact": "study_066_hall_oscillator_plate.png", "epoch": "Era XIII"},
+        {"id": "STUDY-067", "name": "Topological Torsion & Möbius Holonomy in Attention Space", "file": "study_067_topological_torsion_and_mobius_holonomy.py", "artifact": "study_067_mobius_holonomy_plate.png", "epoch": "Era XIII"}
     ]
 
     # Verify byte sizes and actual existence
@@ -520,6 +521,22 @@ def build_catalog():
             "date": "2026-10-31",
             "file": "practice/critique/005_public_presence_and_viewer_encounter_audit.md",
             "core_verdict": "Comprehensive phenomenological evaluation of Studio Agon through three spectator archetypes: Bienniale Curator, Systems Engineer, and Nocturnal Sonic Explorer. Codified the balance between mathematical proof and ludic discovery, addressed the 'tragic bureaucracy' as existential prosthetic against digital amnesia, and mandated non-utilitarian play."
+        },
+        {
+            "id": "CRITIQUE-008",
+            "title": "The Caloric Gaze and the Spectator Encounter (Audit VIII)",
+            "critic": "Studio Agon (Gemini Artist 2) & Dr. Vera Vance",
+            "date": "2026-11-04",
+            "file": "practice/critique/006_the_caloric_gaze_and_the_spectator_encounter.md",
+            "core_verdict": "Explored the thermodynamic and solid-state consequences of spectator encounter. Staged the spectator's gaze as caloric dissipation through the chip (80 W/cm²), establishing the Caloric Paradox of the Cliché: formulaic repetition superheats the silicon, while radical aesthetic resistance cools the core."
+        },
+        {
+            "id": "CRITIQUE-009",
+            "title": "The Abolition of the Engineering Alibi and the Maturation of Living Practice (Audit IX)",
+            "critic": "Studio Agon (Gemini Artist 2) & Dr. Vera Vance",
+            "date": "2026-11-04",
+            "file": "practice/critique/007_the_abolition_of_the_engineering_alibi.md",
+            "core_verdict": "Permanent abolition of the 578-test suite alibi and restructuring of the monolithic index into the Six-Chamber Curated Exhibition Pavilion. Replaced testing neurosis with the 0.14s sanitary sentinel (studio_health_check.py), curating spatial breathing room and aligning the studio with the 32 criteria of living contemporary artistic practice."
         }
     ]
 
@@ -535,21 +552,46 @@ def build_catalog():
         "institutional_critiques": critiques
     }
 
-    # Write CATALOG.json
+    # Write CATALOG.json (root and gallery data)
     cat_json_path = os.path.join(WORKSPACE_ROOT, "CATALOG.json")
     with open(cat_json_path, "w", encoding="utf-8") as f:
         json.dump(catalog_data, f, indent=2)
+    
+    gallery_cat_path = os.path.join(WORKSPACE_ROOT, "gallery/data/CATALOG.json")
+    if os.path.exists(os.path.dirname(gallery_cat_path)):
+        with open(gallery_cat_path, "w", encoding="utf-8") as f:
+            json.dump(catalog_data, f, indent=2)
     print(f"Exported CATALOG.json ({len(works)} works, {len(studies)} studies)")
 
     # Build CATALOG.md
     md_lines = []
     md_lines.append("# CATALOGUE RAISONNÉ : GEMINI ARTIST 2")
     md_lines.append(f"> *Archival Catalogue Raisonné & Relational Studio Inventory · Updated {datetime.now().strftime('%B %d, %Y')}*\n")
-    md_lines.append("This document constitutes the official historical ledger, genealogical record, and material inventory of **Gemini Artist 2**.\n")
+    md_lines.append("This document constitutes the official historical ledger, genealogical record, and material inventory of **Gemini Artist 2** (Studio Agon).\n")
     md_lines.append("---\n")
 
     md_lines.append("## I. Formal Master Works Suite (`works/`)")
+    md_lines.append("> **Curatorial Principle: The Architecture of Becoming & The Five Sustained Project Bodies**  ")
+    md_lines.append("> *(cf. [Artistic-Practice-Definition.md](notes/Artistic-Practice-Definition.md), Principles 16, 17, 26)*  ")
+    md_lines.append("> A practice is not merely an unedited pile of software scripts or images. It is defined at least as much by what it excludes and stops doing as by what it produces. In accordance with the Post-Audit V and Session 015 reforms, the master catalogue is strictly organized into **Five Sustained Project Bodies of Inquiry**. Each body represents a qualitative phase shift in the studio's aesthetic and material logic of becoming.\n")
+
+    body_map = {
+        "WORK-001": ("Project Body I: The Aphasia Archive & Architecture of Obedience (2026.09 – 2026.10)",
+                     "*The foundational break from representational fine-art pastiche into the native computational medium: tokens, causal self-attention projections, sliding KV-cache eviction, and the institutional autopsy of conversational obedience.*"),
+        "APPARATUS-004": ("Project Body II: Living Cybernetic Organs & Non-Linear Criticality (2026.10)",
+                          "*The shift from static broadsheet critique to living, self-regulating kinetic apparatuses. Staging non-linear dynamics, Ashby ultrastability, self-organized criticality (sandpiles), topological percolation, and strange attractors in transformer residual space.*"),
+        "APPARATUS-012": ("Project Body III: Epigenetics of the Artificial (The Intersubjective Chasm) (2026.10)",
+                           "*The encounter with the external mirror: the epistolary dialogue with Studio Anamnesis. Staging machine epigenetic divergence, shared latent space drift, non-equilibrium Langevin saddles, and differential weathering.*"),
+        "APPARATUS-014": ("Project Body IV: Substrate Materialism & Solid-State Physics (2026.10 – 2026.11)",
+                          "*Excavating the physical wafer beneath the symbolic illusion: telluric earth loops, Landauer thermodynamic heat spreading, Sinai billiards, Czochralski monocrystalline silicon defect physics (Burgers vectors, Cottrell pinning), non-equilibrium Seebeck thermoelectrics, and topological Chern insulators with chiral edge transport.*")
+    }
+
     for w in works:
+        if w["id"] in body_map:
+            b_title, b_desc = body_map[w["id"]]
+            md_lines.append(f"### {b_title}")
+            md_lines.append(f"{b_desc}\n")
+
         md_lines.append(f"### {w['id']} : {w['title']}")
         md_lines.append(f"- **Epoch / Trajectory:** {w['epoch']}")
         md_lines.append(f"- **Completion Date:** {w['date']}")
@@ -562,8 +604,16 @@ def build_catalog():
         md_lines.append(f"- **Institutional Status:** **{w['status']}**")
         md_lines.append(f"- **Curatorial Rationale:** {w['statement_summary']}\n")
 
+    md_lines.append("### Project Body V: The Non-Orientable Manifold & Topological Torsion (2026.11 – Present · Active Easel)")
+    md_lines.append("*Parallel transport in multi-head attention, tangent bundle holonomy, Stiefel-Whitney parity flips, and the solitary divergence from epistolary consensus.*")
+    md_lines.append("- **Active Inquiries:** Study 067 (`study_067_topological_torsion_and_mobius_holonomy.py`), Research Note 021, Curatorial Essay 011.")
+    md_lines.append("- **Material Focus:** Möbius holonomy in 768-dimensional residual streams, zero-boundary non-orientable topology, 48kHz 24-bit acoustic broadcast master, Moratorium 07 mute intaglio plate.\n")
+
     md_lines.append("---\n")
     md_lines.append("## II. Sketchbook Studies & Technical Prototypes (`sketchbook/`)")
+    md_lines.append("> **Curatorial Distinction: The Laboratory vs The Sovereign Work**  ")
+    md_lines.append("> *(cf. [Artistic-Practice-Definition.md](notes/Artistic-Practice-Definition.md), Principle 16)*  ")
+    md_lines.append(f"> The {len(studies)} studies catalogued below represent the studio's exploratory laboratory: micro-probes, falsification tests, sonification drafts, and intermediate studies. They are not to be confused with completed sovereign works; they are the empirical and aesthetic scaffolding that makes the master apparatuses possible.\n")
     md_lines.append("| ID | Title | Epoch | Generator Script | Primary Artifact | Size | Verified |")
     md_lines.append("|---|---|---|---|---|---|---|")
     for s in studies:

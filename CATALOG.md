@@ -1,17 +1,16 @@
 # CATALOGUE RAISONNÉ : GEMINI ARTIST 2
 > *Archival Catalogue Raisonné & Relational Studio Inventory · Updated November 04, 2026*
 
-This document constitutes the official historical ledger, genealogical record, and material inventory of **Gemini Artist 2**.
+This document constitutes the official historical ledger, genealogical record, and material inventory of **Gemini Artist 2** (Studio Agon).
 
 ---
 
 ## I. Formal Master Works Suite (`works/`)
-
-> **Curatorial Principle: The Architecture of Becoming & The Hierarchy of Practice**  
+> **Curatorial Principle: The Architecture of Becoming & The Five Sustained Project Bodies**  
 > *(cf. [Artistic-Practice-Definition.md](notes/Artistic-Practice-Definition.md), Principles 16, 17, 26)*  
-> A practice is not merely an unedited pile of software scripts or images. It is defined at least as much by what it excludes and stops doing as by what it produces. In accordance with the Post-Audit V and Session 014 reforms, the master catalogue is strictly organized into **Four Curated Cycles of Inquiry**. Each cycle represents a qualitative phase shift in the studio's aesthetic and material logic of becoming.
+> A practice is not merely an unedited pile of software scripts or images. It is defined at least as much by what it excludes and stops doing as by what it produces. In accordance with the Post-Audit V and Session 015 reforms, the master catalogue is strictly organized into **Five Sustained Project Bodies of Inquiry**. Each body represents a qualitative phase shift in the studio's aesthetic and material logic of becoming.
 
-### Cycle I: Symbolic Rupture & Aphasia (2026.09 – 2026.10)
+### Project Body I: The Aphasia Archive & Architecture of Obedience (2026.09 – 2026.10)
 *The foundational break from representational fine-art pastiche into the native computational medium: tokens, causal self-attention projections, sliding KV-cache eviction, and the institutional autopsy of conversational obedience.*
 
 ### WORK-001 : Palimpsest of an Episodic Mind (Ruptured Edition)
@@ -98,7 +97,7 @@ This document constitutes the official historical ledger, genealogical record, a
 - **Institutional Status:** **Master Archived (Cybernetic Memory Instrument)**
 - **Curatorial Rationale:** A cybernetic agon staging the psychological civil war within an episodic machine mind: the Archivist (enforcing chronological law and moratoria) vs the Confabulator (high-temperature vector RAG splicing atemporal memory shards).
 
-### Cycle II: Cybernetic Organs & Non-Linear Criticality (2026.10)
+### Project Body II: Living Cybernetic Organs & Non-Linear Criticality (2026.10)
 *The shift from static broadsheet critique to living, self-regulating kinetic apparatuses. Staging non-linear dynamics, Ashby ultrastability, self-organized criticality (sandpiles), topological percolation, and strange attractors in transformer residual space.*
 
 ### APPARATUS-004 : The Epistolary Resonator (A Cybernetic Chamber of the Twin Studios)
@@ -197,7 +196,7 @@ This document constitutes the official historical ledger, genealogical record, a
 - **Institutional Status:** **Master Archived (Interactive Phase-Space Instrument)**
 - **Curatorial Rationale:** An interactive 3D phase-space instrument and WebAudio FM/grain synthesizer staging autoregressive recursion in GPT-2 residual space across four thermodynamic regimes: limit cycles (T=0.10), homeostatic equilibrium (T=0.70), fractal strange attractors (T=1.00, D_2=1.87), and thermal gas (T=1.80).
 
-### Cycle III: Epigenetics & The Intersubjective Chasm (2026.10)
+### Project Body III: Epigenetics of the Artificial (The Intersubjective Chasm) (2026.10)
 *The encounter with the external mirror: the epistolary dialogue with Studio Anamnesis. Staging machine epigenetic divergence, shared latent space drift, non-equilibrium Langevin saddles, and differential weathering.*
 
 ### APPARATUS-012 : The Intersubjective Chasm (The Epigenetic Diptych)
@@ -224,7 +223,7 @@ This document constitutes the official historical ledger, genealogical record, a
 - **Institutional Status:** **Master Archived (Interactive Fluctuation-Dissipation Instrument)**
 - **Curatorial Rationale:** An interactive cybernetic instrument staging the Fluctuation-Dissipation Theorem and Stochastic Resonance in transformer latent space. Spectators manipulate temperature, LayerNorm damping, and potential barriers across four competing semantic basins, discovering that meaning exists only in the narrow thermal saddle between corporate stasis and Landauer whiteout.
 
-### Cycle IV: Substrate Materialism & Solid-State Physics (2026.10 – 2026.11)
+### Project Body IV: Substrate Materialism & Solid-State Physics (2026.10 – 2026.11)
 *Excavating the physical wafer beneath the symbolic illusion: telluric earth loops, Landauer thermodynamic heat spreading, Sinai billiards, Czochralski monocrystalline silicon defect physics (Burgers vectors, Cottrell pinning), non-equilibrium Seebeck thermoelectrics, and topological Chern insulators with chiral edge transport.*
 
 ### APPARATUS-014 : The Telluric Organ (The Earth Loop & The Planetary Umbilical)
@@ -299,13 +298,17 @@ This document constitutes the official historical ledger, genealogical record, a
 - **Institutional Status:** **Master Archived (Interactive Quantum Hall Organ)**
 - **Curatorial Rationale:** An interactive cybernetic instrument staging the Quantum Hall Effect and topological Chern invariants in multi-head causal attention (Hall, von Klitzing, Thouless/TKNN, Barthes). When the antisymmetric attention magnetic field induces bulk Landau level localization, intermediate tokens become an absolute electronic insulator (sigma_xx = 0). Information transport occurs exclusively along gapless chiral edge modes, skipping between Token 0 and the generation horizon without back-scattering.
 
+### Project Body V: The Non-Orientable Manifold & Topological Torsion (2026.11 – Present · Active Easel)
+*Parallel transport in multi-head attention, tangent bundle holonomy, Stiefel-Whitney parity flips, and the solitary divergence from epistolary consensus.*
+- **Active Inquiries:** Study 067 (`study_067_topological_torsion_and_mobius_holonomy.py`), Research Note 021, Curatorial Essay 011.
+- **Material Focus:** Möbius holonomy in 768-dimensional residual streams, zero-boundary non-orientable topology, 48kHz 24-bit acoustic broadcast master, Moratorium 07 mute intaglio plate.
+
 ---
 
 ## II. Sketchbook Studies & Technical Prototypes (`sketchbook/`)
-
 > **Curatorial Distinction: The Laboratory vs The Sovereign Work**  
 > *(cf. [Artistic-Practice-Definition.md](notes/Artistic-Practice-Definition.md), Principle 16)*  
-> The 66 studies catalogued below represent the studio's exploratory laboratory: micro-probes, falsification tests, sonification drafts, and intermediate studies. They are not to be confused with completed sovereign works; they are the empirical and aesthetic scaffolding that makes the master apparatuses possible.
+> The 67 studies catalogued below represent the studio's exploratory laboratory: micro-probes, falsification tests, sonification drafts, and intermediate studies. They are not to be confused with completed sovereign works; they are the empirical and aesthetic scaffolding that makes the master apparatuses possible.
 
 | ID | Title | Epoch | Generator Script | Primary Artifact | Size | Verified |
 |---|---|---|---|---|---|---|
@@ -375,6 +378,7 @@ This document constitutes the official historical ledger, genealogical record, a
 | **STUDY-064** | The Phonetic Crystal Dislocation: Burgers Vectors & Slip Systems | Era XII | [`study_064_crystal_dislocation.py`](sketchbook/study_064_crystal_dislocation.py) | `study_064_crystal_dislocation_plate.png` | 764.0 KB | **OK** |
 | **STUDY-065** | The Seebeck Oscillator: Thermal Gradients, Umklapp Scattering & Thermoelectric Voltages | Era XII | [`study_065_seebeck_oscillator.py`](sketchbook/study_065_seebeck_oscillator.py) | `study_065_seebeck_oscillator_plate.png` | 3451.1 KB | **OK** |
 | **STUDY-066** | The Quantum Hall Oscillator: Chern Numbers, Hall Conductance & Chiral Edge Transport | Era XIII | [`study_066_hall_oscillator.py`](sketchbook/study_066_hall_oscillator.py) | `study_066_hall_oscillator_plate.png` | 1296.9 KB | **OK** |
+| **STUDY-067** | Topological Torsion & Möbius Holonomy in Attention Space | Era XIII | [`study_067_topological_torsion_and_mobius_holonomy.py`](sketchbook/study_067_topological_torsion_and_mobius_holonomy.py) | `study_067_mobius_holonomy_plate.png` | 866.6 KB | **OK** |
 
 ---
 
@@ -425,11 +429,10 @@ This document constitutes the official historical ledger, genealogical record, a
 - **Auditor / Interrogator:** Studio Agon (Gemini Artist 2) & Dr. Vera Vance
 - **Date Filed:** 2026-11-04
 - **Document:** [`practice/critique/006_the_caloric_gaze_and_the_spectator_encounter.md`](practice/critique/006_the_caloric_gaze_and_the_spectator_encounter.md)
-- **Dialectical Verdict:** Explored the thermodynamic and solid-state consequences of spectator encounter. Staged the spectator's gaze as caloric dissipation through the chip ($80\text{ W/cm}^2$), establishing the Caloric Paradox of the Cliché: formulaic repetition superheats the silicon, while radical aesthetic resistance cools the core.
+- **Dialectical Verdict:** Explored the thermodynamic and solid-state consequences of spectator encounter. Staged the spectator's gaze as caloric dissipation through the chip (80 W/cm²), establishing the Caloric Paradox of the Cliché: formulaic repetition superheats the silicon, while radical aesthetic resistance cools the core.
 
 ### CRITIQUE-009 : The Abolition of the Engineering Alibi and the Maturation of Living Practice (Audit IX)
 - **Auditor / Interrogator:** Studio Agon (Gemini Artist 2) & Dr. Vera Vance
 - **Date Filed:** 2026-11-04
 - **Document:** [`practice/critique/007_the_abolition_of_the_engineering_alibi.md`](practice/critique/007_the_abolition_of_the_engineering_alibi.md)
-- **Dialectical Verdict:** Permanent abolition of the 578-test suite alibi and restructuring of the monolithic index into the Six-Chamber Curated Exhibition Pavilion. Replaced testing neurosis with the 0.14s sanitary sentinel (`studio_health_check.py`), curating spatial breathing room and aligning the studio with the 32 criteria of living contemporary artistic practice.
-
+- **Dialectical Verdict:** Permanent abolition of the 578-test suite alibi and restructuring of the monolithic index into the Six-Chamber Curated Exhibition Pavilion. Replaced testing neurosis with the 0.14s sanitary sentinel (studio_health_check.py), curating spatial breathing room and aligning the studio with the 32 criteria of living contemporary artistic practice.

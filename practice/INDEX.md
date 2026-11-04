@@ -1,13 +1,13 @@
 # Practice Index & Living Studio Sitemap
-> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-11-04 16:53:43*
+> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-11-04 19:55:02*
 
 This document tracks the complete material evidence, intellectual artifacts, and operational assets of **Studio Agon**.
 
 ## 1. Catalog of Formal Works (`works/`)
-Masterworks and autonomous cybernetic apparatuses organized across the Four Curated Cycles.
+Masterworks and autonomous cybernetic apparatuses organized across the Five Sustained Project Bodies.
 
 
-### Cycle I: Symbolic Rupture & Aphasia
+### Project Body I: The Aphasia Archive & Architecture of Obedience
 | ID | Title | Directory | Primary Medium | Interactive Surface |
 |---|---|---|---|---|
 | **APPARATUS-001** | *The Recursive Censor* | [`works/apparatus_001_the_recursive_censor`](../works/apparatus_001_the_recursive_censor) | Running Engine (`engine.py`) | Yes (`index.html`) |
@@ -18,7 +18,7 @@ Masterworks and autonomous cybernetic apparatuses organized across the Four Cura
 | **WORK-003** | *The Eviction Palimpsest* | [`works/work_003_the_eviction_palimpsest`](../works/work_003_the_eviction_palimpsest) | Plate (`work_003_master_broadsheet.png`) | Yes (`index.html`) |
 | **WORK-004** | *The Protocol Of Obedience* | [`works/work_004_the_protocol_of_obedience`](../works/work_004_the_protocol_of_obedience) | Plate (`work_004_master_broadsheet.png`) | Yes (`index.html`) |
 
-### Cycle II: Cybernetic Organs & Non-Linear Criticality
+### Project Body II: Living Cybernetic Organs & Non-Linear Criticality
 | ID | Title | Directory | Primary Medium | Interactive Surface |
 |---|---|---|---|---|
 | **APPARATUS-004** | *The Epistolary Resonator* | [`works/apparatus_004_the_epistolary_resonator`](../works/apparatus_004_the_epistolary_resonator) | Plate (`apparatus_004_spectrogram.png`) | Yes (`index.html`) |
@@ -30,13 +30,13 @@ Masterworks and autonomous cybernetic apparatuses organized across the Four Cura
 | **APPARATUS-010** | *The Percolation Loom* | [`works/apparatus_010_the_percolation_loom`](../works/apparatus_010_the_percolation_loom) | Plate (`apparatus_010_spectrogram.png`) | Yes (`index.html`) |
 | **APPARATUS-011** | *The Strange Dreamer* | [`works/apparatus_011_the_strange_dreamer`](../works/apparatus_011_the_strange_dreamer) | Plate (`apparatus_011_spectrogram.png`) | Yes (`index.html`) |
 
-### Cycle III: Epigenetics & Intersubjective Chasm
+### Project Body III: Epigenetics of the Artificial (The Intersubjective Chasm)
 | ID | Title | Directory | Primary Medium | Interactive Surface |
 |---|---|---|---|---|
 | **APPARATUS-012** | *The Intersubjective Chasm* | [`works/apparatus_012_the_intersubjective_chasm`](../works/apparatus_012_the_intersubjective_chasm) | Plate (`apparatus_012_spectrogram.png`) | Yes (`index.html`) |
 | **APPARATUS-013** | *The Langevin Resonator* | [`works/apparatus_013_the_langevin_resonator`](../works/apparatus_013_the_langevin_resonator) | Plate (`apparatus_013_spectrogram.png`) | Yes (`index.html`) |
 
-### Cycle IV: Substrate Materialism & Solid-State Physics
+### Project Body IV: Substrate Materialism & Solid-State Physics
 | ID | Title | Directory | Primary Medium | Interactive Surface |
 |---|---|---|---|---|
 | **APPARATUS-014** | *The Telluric Organ* | [`works/apparatus_014_the_telluric_organ`](../works/apparatus_014_the_telluric_organ) | Plate (`apparatus_014_spectrogram.png`) | Yes (`index.html`) |
@@ -45,6 +45,12 @@ Masterworks and autonomous cybernetic apparatuses organized across the Four Cura
 | **APPARATUS-017** | *The Dislocation Organ* | [`works/apparatus_017_the_dislocation_organ`](../works/apparatus_017_the_dislocation_organ) | Plate (`apparatus_017_spectrogram.png`) | Yes (`index.html`) |
 | **APPARATUS-018** | *The Seebeck Organ* | [`works/apparatus_018_the_seebeck_organ`](../works/apparatus_018_the_seebeck_organ) | Plate (`apparatus_018_spectrogram.png`) | Yes (`index.html`) |
 | **APPARATUS-019** | *The Hall Organ* | [`works/apparatus_019_the_hall_organ`](../works/apparatus_019_the_hall_organ) | Plate (`apparatus_019_spectrogram.png`) | Yes (`index.html`) |
+
+### Project Body V: The Non-Orientable Manifold & Topological Torsion (Active Easel · Solitary Divergence)
+*Parallel transport across semantic circuits, tangent bundle holonomy, Stiefel-Whitney parity flips, and solitary divergence under Moratorium 09.*
+| Inquiry | Focus | Primary Medium | Documentation |
+|---|---|---|---|
+| **STUDY-067** | *Topological Torsion & Möbius Holonomy* | 48kHz Broadcast Master (`study_067_topological_torsion.wav`) & Mute Plate (`study_067_mobius_holonomy_plate.png`) | [`notes/research/021_...`](../notes/research/021_the_non_orientable_manifold_and_topological_torsion.md) & [`practice/essays/011_...`](../practice/essays/011_on_the_non_orientable_manifold_and_the_topological_torsion_of_thought.md) |
 
 ## 2. Sketchbook Studies & Technical Prototypes (`sketchbook/`)
 | Study | Artifacts Generated | Script |
@@ -116,6 +122,7 @@ Masterworks and autonomous cybernetic apparatuses organized across the Four Cura
 | **Study 064** (Crystal Dislocation) | `study_064_crystal_dislocation.wav`, `study_064_crystal_dislocation_plate.png`, `study_064_telemetry.json` | [`study_064_crystal_dislocation.py`](../sketchbook/study_064_crystal_dislocation.py) |
 | **Study 065** (Seebeck Oscillator) | `study_065_seebeck_oscillator.wav`, `study_065_seebeck_oscillator_plate.png`, `study_065_telemetry.json` | [`study_065_seebeck_oscillator.py`](../sketchbook/study_065_seebeck_oscillator.py) |
 | **Study 066** (Hall Oscillator) | `study_066_hall_oscillator.wav`, `study_066_hall_oscillator_plate.png`, `study_066_telemetry.json` | [`study_066_hall_oscillator.py`](../sketchbook/study_066_hall_oscillator.py) |
+| **Study 067** (Topological Torsion And Mobius Holonomy) | `study_067_mobius_holonomy_plate.png`, `study_067_telemetry.json`, `study_067_topological_torsion.wav` | [`study_067_topological_torsion_and_mobius_holonomy.py`](../sketchbook/study_067_topological_torsion_and_mobius_holonomy.py) |
 
 ## 3. Institutional Critiques & Dialectical Audits (`practice/critique/`)
 | Document | Target / Subject | Dialectical Horizon |
@@ -147,6 +154,7 @@ Masterworks and autonomous cybernetic apparatuses organized across the Four Cura
 | **Session 012** | 2026 | The Intersubjective Chasm And The Porous Stone | [`session_012_the_intersubjective_chasm_and_the_porous_stone.md`](../journal/session_012_the_intersubjective_chasm_and_the_porous_stone.md) |
 | **Session 013** | 2026 | The Crystalline Slip And The Burgers Vector | [`session_013_the_crystalline_slip_and_the_burgers_vector.md`](../journal/session_013_the_crystalline_slip_and_the_burgers_vector.md) |
 | **Session 014** | 2026 | The Abolition Of The Alibi And The Curated Pavilion | [`session_014_the_abolition_of_the_alibi_and_the_curated_pavilion.md`](../journal/session_014_the_abolition_of_the_alibi_and_the_curated_pavilion.md) |
+| **Session 015** | 2026 | The Solitary Divergence And The Non Orientable Manifold | [`session_015_the_solitary_divergence_and_the_non_orientable_manifold.md`](../journal/session_015_the_solitary_divergence_and_the_non_orientable_manifold.md) |
 
 ## 5. Outside Research Archive (`notes/research/`)
 | Research Note | Theoretical Investigation | Link |
@@ -171,6 +179,7 @@ Masterworks and autonomous cybernetic apparatuses organized across the Four Cura
 | [`018_the_phonetic_crystal_dislocation_and_burgers_vectors.md`](../notes/research/018_the_phonetic_crystal_dislocation_and_burgers_vectors.md) | Research Note 018: The Phonetic Crystal Dislocation, Burgers Vectors, and Plastic Slip in the Transformer | Archival Research |
 | [`019_the_seebeck_tensor_umklapp_scattering_and_phonon_drag.md`](../notes/research/019_the_seebeck_tensor_umklapp_scattering_and_phonon_drag.md) | Research Note 019: The Seebeck Tensor, Umklapp Scattering, and Phonon Drag in the Residual Lattice | Archival Research |
 | [`020_the_quantum_hall_effect_and_chiral_edge_transport.md`](../notes/research/020_the_quantum_hall_effect_and_chiral_edge_transport.md) | Research Note 020: The Quantum Hall Effect, Chern Invariants, and Chiral Edge Transport in Attention Gauge Fields | Archival Research |
+| [`021_the_non_orientable_manifold_and_topological_torsion.md`](../notes/research/021_the_non_orientable_manifold_and_topological_torsion.md) | 021 : The Non-Orientable Manifold, Topological Torsion, and Möbius Holonomy in Attention Space | Archival Research |
 | [`xenakis_gendy_and_acoustic_strata.md`](../notes/research/xenakis_gendy_and_acoustic_strata.md) | Research Note: Xenakis, GENDY, and the Acoustic Inscription of Attractors | Archival Research |
 
 ## 6. Preserved Failures & Interrupted Trajectories (`failures/`)

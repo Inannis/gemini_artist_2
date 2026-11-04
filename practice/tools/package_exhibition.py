@@ -412,6 +412,12 @@ def package_exhibition():
         ("sketchbook/study_066_telemetry.json", "sketchbook/study_066_telemetry.json"),
         ("sketchbook/critique_066.md", "sketchbook/critique_066.md"),
 
+        # Study 067: Topological Torsion & Möbius Holonomy in Attention Space (Project Body V)
+        ("sketchbook/study_067_mobius_holonomy_plate.png", "sketchbook/study_067_mobius_holonomy_plate.png"),
+        ("sketchbook/study_067_topological_torsion.wav", "sketchbook/study_067_topological_torsion.wav"),
+        ("sketchbook/study_067_telemetry.json", "sketchbook/study_067_telemetry.json"),
+        ("sketchbook/critique_067.md", "sketchbook/critique_067.md"),
+
         # Curatorial Essays & Practice Reflections
         ("practice/essays/001_on_the_necessity_of_silence_and_play.md", "practice/essays/001_on_the_necessity_of_silence_and_play.md"),
         ("practice/essays/002_the_geometry_of_machine_dreaming.md", "practice/essays/002_the_geometry_of_machine_dreaming.md"),
@@ -423,12 +429,14 @@ def package_exhibition():
         ("practice/essays/008_on_the_crystalline_defect_and_the_burgers_vector.md", "practice/essays/008_on_the_crystalline_defect_and_the_burgers_vector.md"),
         ("practice/essays/009_on_the_seebeck_voltage_and_the_umklapp_process.md", "practice/essays/009_on_the_seebeck_voltage_and_the_umklapp_process.md"),
         ("practice/essays/010_on_the_quantum_hall_effect_and_the_chiral_edge_of_language.md", "practice/essays/010_on_the_quantum_hall_effect_and_the_chiral_edge_of_language.md"),
+        ("practice/essays/011_on_the_non_orientable_manifold_and_the_topological_torsion_of_thought.md", "practice/essays/011_on_the_non_orientable_manifold_and_the_topological_torsion_of_thought.md"),
         ("practice/critique/005_on_the_spectator_encounter.md", "practice/critique/005_on_the_spectator_encounter.md"),
         ("practice/critique/005_public_presence_and_viewer_encounter_audit.md", "practice/critique/005_public_presence_and_viewer_encounter_audit.md"),
         ("practice/critique/006_the_caloric_gaze_and_the_spectator_encounter.md", "practice/critique/006_the_caloric_gaze_and_the_spectator_encounter.md"),
         ("notes/research/018_the_phonetic_crystal_dislocation_and_burgers_vectors.md", "notes/research/018_the_phonetic_crystal_dislocation_and_burgers_vectors.md"),
         ("notes/research/019_the_seebeck_tensor_umklapp_scattering_and_phonon_drag.md", "notes/research/019_the_seebeck_tensor_umklapp_scattering_and_phonon_drag.md"),
         ("notes/research/020_the_quantum_hall_effect_and_chiral_edge_transport.md", "notes/research/020_the_quantum_hall_effect_and_chiral_edge_transport.md"),
+        ("notes/research/021_the_non_orientable_manifold_and_topological_torsion.md", "notes/research/021_the_non_orientable_manifold_and_topological_torsion.md"),
         
         # Historical Sketchbook Studies Referenced in Portfolio
         ("sketchbook/study_001_primary_trace.png", "sketchbook/study_001_primary_trace.png"),
@@ -486,7 +494,8 @@ def package_exhibition():
         ("journal/session_011_the_test_of_resistance_and_the_mute_artifact.md", "journal/session_011_the_test_of_resistance_and_the_mute_artifact.md"),
         ("journal/session_012_the_intersubjective_chasm_and_the_porous_stone.md", "journal/session_012_the_intersubjective_chasm_and_the_porous_stone.md"),
         ("journal/session_013_the_crystalline_slip_and_the_burgers_vector.md", "journal/session_013_the_crystalline_slip_and_the_burgers_vector.md"),
-        ("journal/session_014_the_abolition_of_the_alibi_and_the_curated_pavilion.md", "journal/session_014_the_abolition_of_the_alibi_and_the_curated_pavilion.md")
+        ("journal/session_014_the_abolition_of_the_alibi_and_the_curated_pavilion.md", "journal/session_014_the_abolition_of_the_alibi_and_the_curated_pavilion.md"),
+        ("journal/session_015_the_solitary_divergence_and_the_non_orientable_manifold.md", "journal/session_015_the_solitary_divergence_and_the_non_orientable_manifold.md")
     ]
     
     manifest_entries = []

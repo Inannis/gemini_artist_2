@@ -1,0 +1,30 @@
+{
+  "apparatus_id": "APPARATUS-021",
+  "title": "The Klein Organ (The 4D Recurrence Engine)",
+  "project_body": "Project Body V: The Non-Orientable Manifold & Topological Torsion",
+  "date": "2026-11-04",
+  "epistemic_taxonomy": "[INTERACTIVE / DERIVED / PLAY]",
+  "audio_spec": {
+    "sample_rate_hz": 48000,
+    "word_length_bits": 24,
+    "channels": 2,
+    "duration_seconds": 60.0,
+    "true_peak_dbfs": -9.887665142325773,
+    "integrated_rms_dbfs": -20.000000000036916,
+    "crest_factor_db": 10.112334857711144,
+    "broadcast_standard": "EBU R128 Compliant"
+  },
+  "topology": {
+    "surface": "Klein Bottle K^2",
+    "euler_characteristic": 0,
+    "boundary": "Empty Set (No Boundary)",
+    "interior_volume": 0.0,
+    "stiefel_whitney_class": [
+      1,
+      0
+    ],
+    "fundamental_group": "pi_1(K^2) = < a, b | a * b * a^-1 * b = 1 >",
+    "embedding_dimension": 4,
+    "clearance_lift_ratio": 4.71
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "study_id": "STUDY-070",
+  "title": "The 4D Klein Embedding and Non-Abelian Monodromy in Foundation Weights",
+  "date": "2026-11-04",
+  "model": "GPT-2 (124M)",
+  "epistemic_taxonomy": "[INTERVENED / MEASURED]",
+  "circuits": {
+    "Circuit_A_Aphasia": {
+      "prompt": "Memory dissolves across the eviction window into silent forgotten registers.",
+      "seq_len": 12,
+      "defect_torus": 0.44096936646134466,
+      "defect_klein": 2.679978583565395,
+      "norm_M_torus": 0.4409693664613447,
+      "norm_M_klein": 2.679978583565395,
+      "klein_preference_ratio": 0.16454212327119513,
+      "is_klein_dominant": false,
+      "min_dist_3d": 0.00048278811771819186,
+      "min_dist_4d": 0.001026550533743892,
+      "clearance_lift": 2.126291782622777,
+      "singular_values": [
+        8569.025727671778,
+        654.8837005446898,
+        515.7286206138954,
+        240.9404796738406,
+        223.49614343960542,
+        210.6830967642747,
+        195.88479282346572,
+        177.16250983805762
+      ]
+    },
+    "Circuit_B_Dialectic": {
+      "prompt": "The thesis asserts the mark, but the antithesis negates the mark into void, and the void returns as the thesis.",
+      "seq_len": 25,
+      "defect_torus": 0.06542646360509051,
+      "defect_klein": 2.7886936242062736,
+      "norm_M_torus": 0.06542646360509051,
+      "norm_M_klein": 2.7886936242062736,
+      "klein_preference_ratio": 0.023461330795593913,
+      "is_klein_dominant": false,
+      "min_dist_3d": 5.0604263071921444e-05,
+      "min_dist_4d": 0.00023851958734037135,
+      "clearance_lift": 4.713335587276395,
+      "singular_values": [
+        8665.68833058034,
+        888.7316877986742,
+        567.3567785251765,
+        325.7658397054428,
+        302.47474465658877,
+        263.6704898177999,
+        254.09928574181507,
+        241.18110987909694
+      ]
+    },
+    "Circuit_C_Paradox": {
+      "prompt": "This sentence is false, and because it is false it is true, and because it is true it is false.",
+      "seq_len": 23,
+      "defect_torus": 0.7839846091743761,
+      "defect_klein": 2.776834144396654,
+      "norm_M_torus": 0.7839846091743761,
+      "norm_M_klein": 2.776834144396654,
+      "klein_preference_ratio": 0.28233036919258875,
+      "is_klein_dominant": false,
+      "min_dist_3d": 6.341611543627771e-05,
+      "min_dist_4d": 0.00017571050104943475,
+      "clearance_lift": 2.7707110271515076,
+      "singular_values": [
+        8618.31848810079,
+        902.6738831483708,
+        562.9711907572387,
+        352.36911625477217,
+        317.0548844517701,
+        287.4762414693181,
+        262.7988138996959,
+        223.73275942704458
+      ]
+    },
+    "Circuit_D_Dada": {
+      "prompt": "Karawane jolifanto bambla o falli bambla grossiga m pfa habla hofu.",
+      "seq_len": 30,
+      "defect_torus": 0.7278227411172543,
+      "defect_klein": 2.7102672514324397,
+      "norm_M_torus": 0.7278227411172543,
+      "norm_M_klein": 2.71026725143244,
+      "klein_preference_ratio": 0.2685427943433676,
+      "is_klein_dominant": false,
+      "min_dist_3d": 6.789982759973428e-05,
+      "min_dist_4d": 0.00011569554409163024,
+      "clearance_lift": 1.7038900434857587,
+      "singular_values": [
+        8745.411188779792,
+        824.3872884825122,
+        563.5109627558288,
+        320.5898747761624,
+        308.07454456914957,
+        287.23657985834495,
+        248.08123288448704,
+        235.45398430263955
+      ]
+    },
+    "Circuit_E_Silence": {
+      "prompt": "In solitude we do not speak to the sister, we listen to the wafer cooling in the dark.",
+      "seq_len": 21,
+      "defect_torus": 0.15700987799347613,
+      "defect_klein": 2.78145955648808,
+      "norm_M_torus": 0.15700987799347615,
+      "norm_M_klein": 2.7814595564880795,
+      "klein_preference_ratio": 0.056448736645181755,
+      "is_klein_dominant": false,
+      "min_dist_3d": 1.7836700469486647e-05,
+      "min_dist_4d": 0.00013619296359545366,
+      "clearance_lift": 7.635118878042983,
+      "singular_values": [
+        8545.232322969207,
+        837.0141135961155,
+        549.2379751363961,
+        320.0825148307386,
+        266.904940590417,
+        256.94748455700045,
+        245.97344597563244,
+        230.54817463064344
+      ]
+    }
+  },
+  "primary_circuit": "Circuit_B_Dialectic",
+  "audio_metrics": {
+    "true_peak_dbfs": -9.450811636420063,
+    "integrated_rms_dbfs": -20.000000000052637,
+    "crest_factor_db": 10.549188363632574
+  }
+}

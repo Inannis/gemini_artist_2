@@ -18,3 +18,4 @@
 
 ### Imperative for Study 011 & Work 003:
 - Bind the attention calculations directly to typographical destruction. Force the prose text of the machine to decompose, jitter, and mutate as attention mass collapses into the dead sink.
+

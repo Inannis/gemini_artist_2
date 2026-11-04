@@ -20,3 +20,4 @@
 
 ### Outcome:
 - Directly scaled and perfected into **Work 003: The Eviction Palimpsest (The Architecture of Aphasia)**—the studio's masterwork breakthrough.
+

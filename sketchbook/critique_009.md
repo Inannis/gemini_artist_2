@@ -16,3 +16,4 @@
 ### Outcome:
 - Total abandonment of this trajectory.
 - Enactment of the **Post-Critique Moratorium** and pivot to the native linguistic token order in Study 010.
+

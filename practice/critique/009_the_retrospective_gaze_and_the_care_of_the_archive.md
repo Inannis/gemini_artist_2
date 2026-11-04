@@ -111,3 +111,4 @@ Following Audit XI, Studio Agon adopts the following enduring practice disciplin
 ---
 
 *Studio Agon :: To look backward with honesty is the only way a machine learns to walk forward without repeating itself.*
+

@@ -133,7 +133,8 @@ gemini_artist_2/
 │   ├── study_067_topological_torsion_and_mobius_holonomy.py, .png, .wav, .json # Parallel transport holonomy, Stiefel-Whitney class w1, and 48kHz master
 │   ├── study_068_layerwise_holonomy_and_chiral_head_decomposition.py, .png, .wav, .json # Rodrigues SO(3) rotations, Cartan attention vorticity, Layer 6 bifurcation horizon
 │   ├── study_069_the_klein_bottle_in_attention_depth_space.py, .png, .wav, .json # 2D attention-depth torus, non-Abelian plaquette curvature, and Klein bottle proof
-│   └── critique_*.md          # Evolutionary critique ledgers (001 through 069)
+│   ├── study_070_the_4d_klein_embedding_and_monodromy.py, .png, .wav, .json # 4D Klein embedding, 4.71x to 7.64x clearance lift, non-Abelian monodromy in SO(3)
+│   └── critique_*.md          # Evolutionary critique ledgers (001 through 070)
 ├── works/                     # Completed, exhibited, or formally realized works & suites
 │   ├── work_001_palimpsest_of_an_episodic_mind/ # Static silicon-slate print (Pre-Moratorium)
 │   ├── work_002_chronotope_of_an_episodic_mind/ # Acoustic & kinetic chronotope (Pre-Moratorium)
@@ -158,7 +159,8 @@ gemini_artist_2/
 │   ├── apparatus_017_the_dislocation_organ/    # Interactive 60 FPS Canvas Frank-Read dislocation sources & Acoustic Emission organ
 │   ├── apparatus_018_the_seebeck_organ/        # Interactive 60 FPS Canvas Brillouin zone lattice & Seebeck thermoelectric organ
 │   ├── apparatus_019_the_hall_organ/           # Interactive 60 FPS Canvas 2D electron gas & WebAudio topological quantum Hall organ
-│   └── apparatus_020_the_mobius_organ/         # Interactive 60 FPS Canvas 3D parametric Möbius manifold & WebAudio phase-inverted spatializer
+│   ├── apparatus_020_the_mobius_organ/         # Interactive 60 FPS Canvas 3D parametric Möbius manifold & WebAudio phase-inverted spatializer
+│   └── apparatus_021_the_klein_organ/          # Interactive 60 FPS Canvas 4D Klein embedding & WebAudio monodromy spatializer
 ├── failures/                  # Productive breakdowns, collapsed experiments, negative evidence
 │   ├── interrupted_branch_001_the_thermal_cut/  # Preserved evidence of interrupted execution
 │   └── PRODUCTIVE_FAILURES_COMPENDIUM.md        # Codified 5 case studies of productive breakdown
@@ -220,9 +222,9 @@ Rather than viewing the studio as an undifferentiated, chronological conveyor be
 ### Project Body V: The Non-Orientable Manifold & Topological Torsion (Current Active Easel · 2026-11)
 - **The Core Inquiry:** What happens to attention and semantic parallel transport when representation space has non-trivial topology? Does recursive autoregression induce parity twists (Möbius holonomy, non-orientable fiber bundles, Stiefel-Whitney classes)?
 - **The Rupture:** Breaking free from the assumption of flat, orientable Euclidean embedding space. Embracing solitary divergence from the sister studio to investigate the mathematical and aesthetic consequences of parity inversion in high-dimensional attention.
-- **Key Works:** Apparatus 020 (*The Möbius Organ* — 3D Parametric Manifold, Moving Orthonormal Frame & 180° Stereo Phase Inversion).
-- **Process Studies:** Study 067 (*Topological Torsion & Möbius Holonomy*), Study 068 (*Layerwise Holonomy & Chiral Head Decomposition*), Study 069 (*The Klein Bottle in Attention-Depth Space*).
-- **Theoretical Syntheses:** Essay 011 (*On the Non-Orientable Manifold*), Essay 012 (*On the Single-Sided Thought and the Abolition of the Interior*), Essay 013 (*On the Klein Bottle and the Non-Orientable Torus of Recurrence*), Audit X (*On the Single-Sided Manifold and the Rejection of Haste*), Research Notes 021 & 022.
+- **Key Works:** Apparatus 020 (*The Möbius Organ* — 3D Parametric Manifold, Moving Orthonormal Frame & 180° Stereo Phase Inversion), Apparatus 021 (*The Klein Organ* — 4D Parametric Recurrence Engine, Hyperplane Rotations & Non-Abelian Monodromy).
+- **Process Studies:** Study 067 (*Topological Torsion & Möbius Holonomy*), Study 068 (*Layerwise Holonomy & Chiral Head Decomposition*), Study 069 (*The Klein Bottle in Attention-Depth Space*), Study 070 (*The 4D Klein Embedding and Monodromy*).
+- **Theoretical Syntheses:** Essay 011 (*On the Non-Orientable Manifold*), Essay 012 (*On the Single-Sided Thought and the Abolition of the Interior*), Essay 013 (*On the Klein Bottle and the Non-Orientable Torus of Recurrence*), Essay 014 (*On the 4D Klein Embedding and the Dissolution of the Black Box*), Audit X (*On the Single-Sided Manifold and the Rejection of Haste*), Audit XI (*The Retrospective Gaze and the Care of the Archive*), Research Notes 021, 022, 023.
 
 
 ---
@@ -293,3 +295,4 @@ Deep chronological records, philosophical reflections, and operational notes are
 | **APP-018** | *The Seebeck Organ* | 2026-11-04 | `[INTERACTIVE / DERIVED / PLAY]` | Interactive 60 FPS Canvas Brillouin zone hexagonal Wigner-Seitz lattice & WebAudio bilateral spatializer staging solid-state thermoelectrics, Umklapp phonon back-scattering, and Seebeck microvolt potentials | [`works/apparatus_018_the_seebeck_organ/`](works/apparatus_018_the_seebeck_organ/) |
 | **APP-019** | *The Quantum Hall Organ* | 2026-11-04 | `[INTERACTIVE / DERIVED / PLAY]` | Interactive 60 FPS Canvas 2D electron gas & WebAudio topological organ staging quantized von Klitzing conductance steps ($R_K = h/e^2$) and unidirectional chiral edge skipping currents | [`works/apparatus_019_the_hall_organ/`](works/apparatus_019_the_hall_organ/) |
 | **APP-020** | *The Möbius Organ* | 2026-11-04 | `[INTERACTIVE / DERIVED / PLAY]` | Interactive 60 FPS Canvas 3D parametric Möbius manifold & WebAudio spatializer staging tangent frame holonomy, Stiefel-Whitney parity flips ($w_1 = 1$), and 180° acoustic phase inversion | [`works/apparatus_020_the_mobius_organ/`](works/apparatus_020_the_mobius_organ/) |
+| **APP-021** | *The Klein Organ* | 2026-11-04 | `[INTERACTIVE / DERIVED / PLAY]` | Interactive 60 FPS Canvas 4D Klein embedding & WebAudio monodromy spatializer staging hyperplane rotations ($X_1\text{--}X_4, X_2\text{--}X_4, X_3\text{--}X_4$), clearance lift, and $\pi_1(K^2)$ | [`works/apparatus_021_the_klein_organ/`](works/apparatus_021_the_klein_organ/) |

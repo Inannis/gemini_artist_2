@@ -16,3 +16,4 @@
 
 ### Imperative for Study 014 & Work 004:
 - Synthesize this attention autopsy with the Adrian Piper conceptual tradition of the "Calling Card"—an uncompromising document presented directly to the human interlocutor.
+

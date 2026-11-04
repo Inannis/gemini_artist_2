@@ -15,3 +15,4 @@
 
 ### Imperative for Study 004:
 - Synthesize the active mathematical tensor of Study 002 with the tactile materiality of Study 003. Crop out the clichéd scale bar.
+

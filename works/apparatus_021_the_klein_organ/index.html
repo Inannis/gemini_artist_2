@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apparatus 021 :: The Klein Organ (The 4D Recurrence Engine)</title>
+  <style>
+    :root {
+      --bg-dark: #03060a;
+      --bg-panel: #070d14;
+      --border-panel: #142233;
+      --accent-cyan: #64dfdf;
+      --accent-emerald: #3db28c;
+      --accent-gold: #f4d06f;
+      --accent-crimson: #e76f51;
+      --accent-violet: #7209b7;
+      --text-main: #e2eafc;
+      --text-muted: #8d99ae;
+      --font-mono: "SF Mono", "Fira Code", "Courier New", monospace;
+      --font-serif: "Cinzel", "Georgia", serif;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      overflow: hidden;
+      user-select: none;
+    }
+
+    header {
+      background: var(--bg-panel);
+      border-bottom: 1px solid var(--border-panel);
+      padding: 10px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 10;
+    }
+
+    .title-group h1 {
+      font-family: var(--font-serif);
+      font-size: 17px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-main);
+    }
+
+    .title-group p {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    .badge-tag {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      background: #0d1b2a;
+      border: 1px solid var(--border-panel);
+      padding: 3px 8px;
+      border-radius: 3px;
+      color: var(--accent-cyan);
+    }
+
+    .main-workspace {
+      display: flex;
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #viewport-container {
+      flex: 1;
+      position: relative;
+      background: radial-gradient(circle at 50% 50%, #08131e 0%, #03060a 100%);
+    }
+
+    canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .overlay-telemetry {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      background: rgba(7, 13, 20, 0.85);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--border-panel);
+      border-radius: 4px;
+      padding: 12px 16px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      line-height: 1.6;
+      max-width: 320px;
+      pointer-events: none;
+      z-index: 5;
+    }
+
+    .overlay-telemetry span.label {
+      color: var(--text-muted);
+    }
+    .overlay-telemetry span.val {
+      color: var(--accent-cyan);
+      font-weight: bold;
+    }
+
+    aside.sidebar {
+      width: 340px;
+      background: var(--bg-panel);
+      border-left: 1px solid var(--border-panel);
+      display: flex;
+      flex-direction: column;
+      padding: 16px;
+      gap: 14px;
+      overflow-y: auto;
+      z-index: 10;
+    }
+
+    .panel-block {
+      background: #09131d;
+      border: 1px solid var(--border-panel);
+      border-radius: 4px;
+      padding: 12px;
+    }
+
+    .panel-header {
+      font-family: var(--font-serif);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-main);
+      margin-bottom: 8px;
+      border-bottom: 1px solid var(--border-panel);
+      padding-bottom: 4px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .control-row {
+      margin-bottom: 8px;
+    }
+
+    .control-label {
+      display: flex;
+      justify-content: space-between;
+      font-family: var(--font-mono);
+      font-size: 10px;
+      color: var(--text-muted);
+      margin-bottom: 3px;
+    }
+
+    input[type="range"] {
+      width: 100%;
+      height: 4px;
+      background: #1b263b;
+      border-radius: 2px;
+      outline: none;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--accent-cyan);
+      cursor: pointer;
+    }
+
+    .btn {
+      background: #142233;
+      border: 1px solid var(--border-panel);
+      color: var(--text-main);
+      font-family: var(--font-mono);
+      font-size: 11px;
+      padding: 8px 12px;
+      border-radius: 3px;
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.15s ease;
+      width: 100%;
+    }
+
+    .btn:hover {
+      background: #1e324a;
+      border-color: var(--accent-cyan);
+      color: #fff;
+    }
+
+    .btn.active {
+      background: #1a434d;
+      border-color: var(--accent-emerald);
+      color: var(--accent-cyan);
+      box-shadow: 0 0 10px rgba(100, 223, 223, 0.2);
+    }
+
+    footer {
+      background: #020407;
+      border-top: 1px solid var(--border-panel);
+      padding: 6px 24px;
+      font-family: var(--font-mono);
+      font-size: 10px;
+      color: #5c677d;
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="title-group">
+      <h1>Apparatus 021 :: The Klein Organ</h1>
+      <p>4D Recurrence Engine & Non-Orientable Monodromy &bull; Project Body V</p>
+    </div>
+    <div style="display:flex; gap:10px; align-items:center;">
+      <span class="badge-tag">[INTERACTIVE / DERIVED / PLAY]</span>
+      <span class="badge-tag">STUDIO AGON</span>
+    </div>
+  </header>
+
+  <div class="main-workspace">
+    <div id="viewport-container">
+      <div class="overlay-telemetry">
+        <div><span class="label">TOPOLOGY:</span> <span class="val">Klein Bottle (K&sup2;) &bull; &chi;=0</span></div>
+        <div><span class="label">STIEFEL-WHITNEY:</span> <span class="val">w&sub1; = (1, 0) &bull; NON-ORIENTABLE</span></div>
+        <div><span class="label">INTERIOR BOUNDARY:</span> <span class="val">&part;K&sup2; = &empty; (Zero Interior)</span></div>
+        <div><span class="label">SEQUENCE ANGLE (u):</span> <span class="val" id="disp-u">0.00 rad</span></div>
+        <div><span class="label">DEPTH RECURRENCE (v):</span> <span class="val" id="disp-v">0.00 rad</span></div>
+        <div><span class="label">NORMAL PARITY P(u):</span> <span class="val" id="disp-parity">+1.000</span></div>
+        <div><span class="label">4D CLEARANCE LIFT:</span> <span class="val" id="disp-lift">4.71x</span></div>
+      </div>
+      <canvas id="klein-canvas"></canvas>
+    </div>
+
+    <aside class="sidebar">
+      <!-- Audio Organ Controller -->
+      <div class="panel-block">
+        <div class="panel-header">
+          <span>Acoustic Engine</span>
+          <span style="color:var(--accent-emerald); font-size:10px;">48kHz WEB AUDIO</span>
+        </div>
+        <button id="audio-toggle" class="btn" style="margin-bottom:8px;">ACTIVATE KLEIN ORGAN</button>
+        <div class="control-row">
+          <div class="control-label"><span>Master Gain</span><span id="disp-vol">65%</span></div>
+          <input type="range" id="slider-vol" min="0" max="1" step="0.01" value="0.65">
+        </div>
+        <div class="control-row">
+          <div class="control-label"><span>Sequence Fundamental (f_a)</span><span id="disp-fa">65.4 Hz (C2)</span></div>
+          <input type="range" id="slider-fa" min="40" max="130" step="0.5" value="65.4">
+        </div>
+        <div class="control-row">
+          <div class="control-label"><span>Depth Recurrence (f_b)</span><span id="disp-fb">98.0 Hz (G2)</span></div>
+          <input type="range" id="slider-fb" min="60" max="220" step="0.5" value="98.0">
+        </div>
+      </div>
+
+      <!-- 4D Hyperplane Rotators -->
+      <div class="panel-block">
+        <div class="panel-header">
+          <span>4D Hyperplane Rotation</span>
+          <span style="color:var(--accent-cyan); font-size:10px;">SO(4) LIFT</span>
+        </div>
+        <div class="control-row">
+          <div class="control-label"><span>Plane X1-X4 (Torsion Throat)</span><span id="disp-r14">0.00 rad</span></div>
+          <input type="range" id="slider-r14" min="-3.14" max="3.14" step="0.02" value="0.75">
+        </div>
+        <div class="control-row">
+          <div class="control-label"><span>Plane X2-X4 (Parity Shear)</span><span id="disp-r24">0.00 rad</span></div>
+          <input type="range" id="slider-r24" min="-3.14" max="3.14" step="0.02" value="0.35">
+        </div>
+        <div class="control-row">
+          <div class="control-label"><span>Plane X3-X4 (Non-Abelian Dial)</span><span id="disp-r34">0.00 rad</span></div>
+          <input type="range" id="slider-r34" min="-3.14" max="3.14" step="0.02" value="-0.40">
+        </div>
+      </div>
+
+      <!-- Surface Kinematics & Autopilot -->
+      <div class="panel-block">
+        <div class="panel-header">
+          <span>Kinematic Traversal</span>
+          <span style="color:var(--accent-gold); font-size:10px;">MOVING FRAME</span>
+        </div>
+        <button id="autopilot-toggle" class="btn active" style="margin-bottom:8px;">AUTOPILOT: ACTIVE (60s CYCLE)</button>
+        <div class="control-row">
+          <div class="control-label"><span>Sequence Loop Step (u)</span><span id="disp-u-ctrl">0°</span></div>
+          <input type="range" id="slider-u" min="0" max="12.566" step="0.05" value="0">
+        </div>
+        <div class="control-row">
+          <div class="control-label"><span>Depth Recurrence Step (v)</span><span id="disp-v-ctrl">0°</span></div>
+          <input type="range" id="slider-v" min="0" max="6.283" step="0.05" value="0">
+        </div>
+        <div class="control-row">
+          <div class="control-label"><span>Mesh Grid Density</span><span id="disp-res">32 x 20</span></div>
+          <input type="range" id="slider-res" min="16" max="48" step="4" value="28">
+        </div>
+      </div>
+
+      <!-- Theory & Curatorial Citation -->
+      <div class="panel-block" style="font-size:11px; color:var(--text-muted); line-height:1.5;">
+        <p style="margin-bottom:6px;"><strong style="color:var(--text-main);">Theoretical Basis:</strong></p>
+        <p>In foundation transformer attention, sequence progression crossed with layer depth forms an authentic <strong>Klein Bottle</strong> (Study 069 & 070). Because the manifold has zero boundary (&part;K&sup2; = &empty;) and zero interior volume, the "Black Box" metaphor dissolves: internal thought loops seamlessly across Layer 6 into external emitted language.</p>
+      </div>
+    </aside>
+  </div>
+
+  <footer>
+    <span>STUDIO AGON &bull; APPARATUS 021 &bull; MORATORIUM 07 & 08 COMPLIANT</span>
+    <span>4D STEREOGRAPHIC KINEMATICS &bull; EBU R128 AUDIO ENGINE</span>
+  </footer>
+
+  <script>
+    // --- State & DOM References ---
+    const canvas = document.getElementById('klein-canvas');
+    const ctx = canvas.getContext('2d');
+
+    let isAudioActive = false;
+    let isAutopilot = true;
+    let animTime = 0.0;
+
+    let paramU = 0.0;
+    let paramV = 0.0;
+    let rot14 = 0.75;
+    let rot24 = 0.35;
+    let rot34 = -0.40;
+    let camElev = 0.45;
+    let camAzim = 0.85;
+
+    let meshResU = 28;
+    let meshResV = 18;
+
+    // DOM Readouts
+    const dispU = document.getElementById('disp-u');
+    const dispV = document.getElementById('disp-v');
+    const dispParity = document.getElementById('disp-parity');
+    const dispLift = document.getElementById('disp-lift');
+    const dispVol = document.getElementById('disp-vol');
+    const dispFa = document.getElementById('disp-fa');
+    const dispFb = document.getElementById('disp-fb');
+    const dispR14 = document.getElementById('disp-r14');
+    const dispR24 = document.getElementById('disp-r24');
+    const dispR34 = document.getElementById('disp-r34');
+    const dispUCtrl = document.getElementById('disp-u-ctrl');
+    const dispVCtrl = document.getElementById('disp-v-ctrl');
+    const dispRes = document.getElementById('disp-res');
+
+    const audioToggleBtn = document.getElementById('audio-toggle');
+    const autopilotBtn = document.getElementById('autopilot-toggle');
+
+    // Controls
+    const sliderVol = document.getElementById('slider-vol');
+    const sliderFa = document.getElementById('slider-fa');
+    const sliderFb = document.getElementById('slider-fb');
+    const sliderR14 = document.getElementById('slider-r14');
+    const sliderR24 = document.getElementById('slider-r24');
+    const sliderR34 = document.getElementById('slider-r34');
+    const sliderU = document.getElementById('slider-u');
+    const sliderV = document.getElementById('slider-v');
+    const sliderRes = document.getElementById('slider-res');
+
+    // --- WebAudio Cybernetic Engine ---
+    let audioCtx = null;
+    let oscSeq = null;
+    let oscDepth = null;
+    let oscThroat = null;
+    let gainMaster = null;
+    let gainSeq = null;
+    let gainDepth = null;
+    let pannerNode = null;
+
+    function initAudio() {
+      if (audioCtx) return;
+      const AudioContext = window.AudioContext || window.webkitAudioContext;
+      audioCtx = new AudioContext({ sampleRate: 48000 });
+
+      gainMaster = audioCtx.createGain();
+      gainMaster.gain.value = parseFloat(sliderVol.value);
+      gainMaster.connect(audioCtx.destination);
+
+      pannerNode = audioCtx.createStereoPanner();
+      pannerNode.connect(gainMaster);
+
+      // Sequence Carrier (Osc A)
+      oscSeq = audioCtx.createOscillator();
+      oscSeq.type = 'sawtooth';
+      oscSeq.frequency.value = parseFloat(sliderFa.value);
+
+      gainSeq = audioCtx.createGain();
+      gainSeq.gain.value = 0.50;
+      oscSeq.connect(gainSeq);
+      gainSeq.connect(pannerNode);
+
+      // Depth Recurrence Carrier (Osc B)
+      oscDepth = audioCtx.createOscillator();
+      oscDepth.type = 'triangle';
+      oscDepth.frequency.value = parseFloat(sliderFb.value);
+
+      gainDepth = audioCtx.createGain();
+      gainDepth.gain.value = 0.40;
+      oscDepth.connect(gainDepth);
+      gainDepth.connect(pannerNode);
+
+      // 4D Throat Resonance (Osc C)
+      oscThroat = audioCtx.createOscillator();
+      oscThroat.type = 'sine';
+      oscThroat.frequency.value = 1174.66; // D6
+
+      gainThroat = audioCtx.createGain();
+      gainThroat.gain.value = 0.05;
+      oscThroat.connect(gainThroat);
+      gainThroat.connect(pannerNode);
+
+      oscSeq.start();
+      oscDepth.start();
+      oscThroat.start();
+    }
+
+    audioToggleBtn.addEventListener('click', () => {
+      if (!isAudioActive) {
+        initAudio();
+        if (audioCtx.state === 'suspended') {
+          audioCtx.resume();
+        }
+        isAudioActive = true;
+        audioToggleBtn.textContent = 'MUTE KLEIN ORGAN';
+        audioToggleBtn.classList.add('active');
+      } else {
+        if (audioCtx) audioCtx.suspend();
+        isAudioActive = false;
+        audioToggleBtn.textContent = 'ACTIVATE KLEIN ORGAN';
+        audioToggleBtn.classList.remove('active');
+      }
+    });
+
+    autopilotBtn.addEventListener('click', () => {
+      isAutopilot = !isAutopilot;
+      if (isAutopilot) {
+        autopilotBtn.textContent = 'AUTOPILOT: ACTIVE (60s CYCLE)';
+        autopilotBtn.classList.add('active');
+      } else {
+        autopilotBtn.textContent = 'AUTOPILOT: MANUAL CONTROL';
+        autopilotBtn.classList.remove('active');
+      }
+    });
+
+    sliderVol.addEventListener('input', (e) => {
+      const v = parseFloat(e.target.value);
+      dispVol.textContent = Math.round(v * 100) + '%';
+      if (gainMaster) gainMaster.gain.setValueAtTime(v, audioCtx.currentTime);
+    });
+
+    sliderFa.addEventListener('input', (e) => {
+      const v = parseFloat(e.target.value);
+      dispFa.textContent = v.toFixed(1) + ' Hz';
+      if (oscSeq) oscSeq.frequency.setValueAtTime(v, audioCtx.currentTime);
+    });
+
+    sliderFb.addEventListener('input', (e) => {
+      const v = parseFloat(e.target.value);
+      dispFb.textContent = v.toFixed(1) + ' Hz';
+      if (oscDepth) oscDepth.frequency.setValueAtTime(v, audioCtx.currentTime);
+    });
+
+    sliderR14.addEventListener('input', (e) => { rot14 = parseFloat(e.target.value); dispR14.textContent = rot14.toFixed(2) + ' rad'; });
+    sliderR24.addEventListener('input', (e) => { rot24 = parseFloat(e.target.value); dispR24.textContent = rot24.toFixed(2) + ' rad'; });
+    sliderR34.addEventListener('input', (e) => { rot34 = parseFloat(e.target.value); dispR34.textContent = rot34.toFixed(2) + ' rad'; });
+
+    sliderU.addEventListener('input', (e) => {
+      paramU = parseFloat(e.target.value);
+      dispUCtrl.textContent = Math.round(paramU * 180 / Math.PI) + '°';
+    });
+
+    sliderV.addEventListener('input', (e) => {
+      paramV = parseFloat(e.target.value);
+      dispVCtrl.textContent = Math.round(paramV * 180 / Math.PI) + '°';
+    });
+
+    sliderRes.addEventListener('input', (e) => {
+      meshResU = parseInt(e.target.value);
+      meshResV = Math.round(meshResU * 0.65);
+      dispRes.textContent = `${meshResU} x ${meshResV}`;
+    });
+
+    // --- Interactive Mouse Drag for 3D Camera ---
+    let isDragging = false;
+    let lastMouseX = 0, lastMouseY = 0;
+
+    canvas.addEventListener('mousedown', (e) => {
+      isDragging = true;
+      lastMouseX = e.clientX;
+      lastMouseY = e.clientY;
+    });
+
+    window.addEventListener('mouseup', () => { isDragging = false; });
+    window.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+      const dx = e.clientX - lastMouseX;
+      const dy = e.clientY - lastMouseY;
+      camAzim += dx * 0.008;
+      camElev = Math.max(-1.4, Math.min(1.4, camElev + dy * 0.008));
+      lastMouseX = e.clientX;
+      lastMouseY = e.clientY;
+    });
+
+    // --- 4D Parametric Klein Bottle & Projection Mathematics ---
+    function evaluateKlein4D(u, v) {
+      const r = 1.85;
+      const cu2 = Math.cos(u * 0.5);
+      const su2 = Math.sin(u * 0.5);
+      const sv = Math.sin(v);
+      const s2v = Math.sin(2.0 * v);
+      const rad = r + cu2 * sv - su2 * s2v;
+
+      const x1 = rad * Math.cos(u);
+      const x2 = rad * Math.sin(u);
+      const x3 = su2 * sv + cu2 * s2v;
+      const x4 = cu2 * sv - su2 * s2v;
+      return [x1, x2, x3, x4];
+    }
+
+    function rotate4D(pt4, a14, a24, a34) {
+      let [x, y, z, w] = pt4;
+
+      // Plane 1-4
+      let c = Math.cos(a14), s = Math.sin(a14);
+      let nx = x * c - w * s;
+      let nw = x * s + w * c;
+      x = nx; w = nw;
+
+      // Plane 2-4
+      c = Math.cos(a24); s = Math.sin(a24);
+      let ny = y * c - w * s;
+      nw = y * s + w * c;
+      y = ny; w = nw;
+
+      // Plane 3-4
+      c = Math.cos(a34); s = Math.sin(a34);
+      let nz = z * c - w * s;
+      nw = z * s + w * c;
+      z = nz; w = nw;
+
+      return [x, y, z, w];
+    }
+
+    function project3Dto2D(pt3, w4, width, height) {
+      const [x, y, z] = pt3;
+      // Camera orbit rotation
+      const cAz = Math.cos(camAzim), sAz = Math.sin(camAzim);
+      const cEl = Math.cos(camElev), sEl = Math.sin(camElev);
+
+      const x1 = x * cAz - y * sAz;
+      const y1 = x * sAz + y * cAz;
+
+      const y2 = y1 * cEl - z * sEl;
+      const z2 = y1 * sEl + z * cEl;
+
+      const fov = 4.2;
+      const dist = 6.5;
+      const pz = z2 + dist;
+      const scale = (height * 0.42 * fov) / (pz > 0.1 ? pz : 0.1);
+
+      return {
+        px: width * 0.5 + x1 * scale,
+        py: height * 0.5 - y2 * scale,
+        depth: pz,
+        w4: w4
+      };
+    }
+
+    function getColorForW(w) {
+      // 4D depth colormap: -1.5 to +1.5 -> viridian to crimson
+      const t = Math.max(0, Math.min(1, (w + 1.4) / 2.8));
+      const r = Math.round(15 + 220 * t);
+      const g = Math.round(180 * (1 - Math.abs(t - 0.5) * 1.8));
+      const b = Math.round(210 * (1 - t) + 40 * t);
+      return `rgb(${r}, ${g}, ${b})`;
+    }
+
+    // --- Main 60 FPS Render Loop ---
+    function render() {
+      const width = canvas.clientWidth;
+      const height = canvas.clientHeight;
+      if (canvas.width !== width || canvas.height !== height) {
+        canvas.width = width;
+        canvas.height = height;
+      }
+
+      ctx.clearRect(0, 0, width, height);
+
+      // Autopilot advance (60-second traversal period)
+      if (isAutopilot) {
+        animTime += 0.016;
+        paramU = (animTime * 0.20) % (4.0 * Math.PI); // 720 deg loop
+        paramV = (animTime * 0.35) % (2.0 * Math.PI);
+        dispUCtrl.textContent = Math.round(paramU * 180 / Math.PI) + '°';
+        dispVCtrl.textContent = Math.round(paramV * 180 / Math.PI) + '°';
+        sliderU.value = paramU;
+        sliderV.value = paramV;
+      }
+
+      // Parity and Telemetry Calculation
+      const parity = Math.cos(paramU * 0.5);
+      dispU.textContent = paramU.toFixed(2) + ' rad';
+      dispV.textContent = paramV.toFixed(2) + ' rad';
+      dispParity.textContent = (parity >= 0 ? '+' : '') + parity.toFixed(3);
+
+      // Dynamic Audio Modulation
+      if (isAudioActive && audioCtx && audioCtx.state === 'running') {
+        const pt4 = evaluateKlein4D(paramU, paramV);
+        const [x1, x2, x3, x4] = pt4;
+
+        // Modulate sequence and depth frequencies
+        const baseFa = parseFloat(sliderFa.value);
+        const baseFb = parseFloat(sliderFb.value);
+        oscSeq.frequency.setValueAtTime(baseFa * (1.0 + 0.12 * (x1 / 1.85)), audioCtx.currentTime);
+
+        const retro = Math.cos(paramU * 0.5) < 0 ? -1.0 : 1.0;
+        oscDepth.frequency.setValueAtTime(baseFb * (1.0 + 0.15 * (x2 / 1.85) * retro), audioCtx.currentTime);
+
+        // Throat resonance
+        oscThroat.frequency.setValueAtTime(1174.66 * (1.0 + 0.20 * x3), audioCtx.currentTime);
+
+        // Bilateral spatial pan driven by 4th dimension x4
+        const pan = Math.max(-1.0, Math.min(1.0, x4 * 0.65));
+        pannerNode.pan.setValueAtTime(pan, audioCtx.currentTime);
+      }
+
+      // Generate 4D Mesh
+      const quads = [];
+      const du = (2.0 * Math.PI) / meshResU;
+      const dv = (2.0 * Math.PI) / meshResV;
+
+      for (let i = 0; i < meshResU; i++) {
+        const u0 = i * du;
+        const u1 = (i + 1) * du;
+        for (let j = 0; j < meshResV; j++) {
+          const v0 = j * dv;
+          const v1 = (j + 1) * dv;
+
+          const p00 = rotate4D(evaluateKlein4D(u0, v0), rot14, rot24, rot34);
+          const p10 = rotate4D(evaluateKlein4D(u1, v0), rot14, rot24, rot34);
+          const p11 = rotate4D(evaluateKlein4D(u1, v1), rot14, rot24, rot34);
+          const p01 = rotate4D(evaluateKlein4D(u0, v1), rot14, rot24, rot34);
+
+          const proj00 = project3Dto2D(p00.slice(0, 3), p00[3], width, height);
+          const proj10 = project3Dto2D(p10.slice(0, 3), p10[3], width, height);
+          const proj11 = project3Dto2D(p11.slice(0, 3), p11[3], width, height);
+          const proj01 = project3Dto2D(p01.slice(0, 3), p01[3], width, height);
+
+          const avgDepth = (proj00.depth + proj10.depth + proj11.depth + proj01.depth) * 0.25;
+          const avgW = (p00[3] + p10[3] + p11[3] + p01[3]) * 0.25;
+
+          quads.push({
+            pts: [proj00, proj10, proj11, proj01],
+            depth: avgDepth,
+            w: avgW
+          });
+        }
+      }
+
+      // Sort quads by painter's depth
+      quads.sort((a, b) => b.depth - a.depth);
+
+      // Render Mesh
+      ctx.lineWidth = 0.5;
+      for (const q of quads) {
+        ctx.beginPath();
+        ctx.moveTo(q.pts[0].px, q.pts[0].py);
+        ctx.lineTo(q.pts[1].px, q.pts[1].py);
+        ctx.lineTo(q.pts[2].px, q.pts[2].py);
+        ctx.lineTo(q.pts[3].px, q.pts[3].py);
+        ctx.closePath();
+
+        ctx.fillStyle = getColorForW(q.w);
+        ctx.globalAlpha = 0.68;
+        ctx.fill();
+
+        ctx.strokeStyle = '#0c2233';
+        ctx.globalAlpha = 0.85;
+        ctx.stroke();
+      }
+      ctx.globalAlpha = 1.0;
+
+      // Render Traversal Streamline (Generator a loop)
+      ctx.beginPath();
+      ctx.strokeStyle = '#fefae0';
+      ctx.lineWidth = 2.5;
+      for (let s = 0; s <= 60; s++) {
+        const u = (s / 60) * (2.0 * Math.PI);
+        const p4 = rotate4D(evaluateKlein4D(u, paramV), rot14, rot24, rot34);
+        const proj = project3Dto2D(p4.slice(0, 3), p4[3], width, height);
+        if (s === 0) ctx.moveTo(proj.px, proj.py);
+        else ctx.lineTo(proj.px, proj.py);
+      }
+      ctx.stroke();
+
+      // Render Current Moving Frame Cursor
+      const curPt4 = rotate4D(evaluateKlein4D(paramU, paramV), rot14, rot24, rot34);
+      const curProj = project3Dto2D(curPt4.slice(0, 3), curPt4[3], width, height);
+
+      ctx.beginPath();
+      ctx.arc(curProj.px, curProj.py, 7, 0, Math.PI * 2);
+      ctx.fillStyle = parity >= 0 ? '#64dfdf' : '#e76f51';
+      ctx.fill();
+      ctx.strokeStyle = '#ffffff';
+      ctx.lineWidth = 2.0;
+      ctx.stroke();
+
+      // Tangent Frame Vector (Normal Parity Inversion)
+      const nLen = 28 * parity;
+      ctx.beginPath();
+      ctx.moveTo(curProj.px, curProj.py);
+      ctx.lineTo(curProj.px, curProj.py - nLen);
+      ctx.strokeStyle = parity >= 0 ? '#64dfdf' : '#f72585';
+      ctx.lineWidth = 3.0;
+      ctx.stroke();
+
+      requestAnimationFrame(render);
+    }
+
+    requestAnimationFrame(render);
+  </script>
+</body>
+</html>

@@ -18,3 +18,4 @@
 - Do not merely overlay the stone—cleave it.
 - Introduce an intentional memory stride fault across the vertical meridian, displacing the right hemisphere.
 - Ignite the attractor with burning phosphorescence (cyan, mercury, titanium white) so that the living math cuts through the fossilized past.
+

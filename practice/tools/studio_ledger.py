@@ -47,7 +47,8 @@ BODY_MAP = {
     "apparatus_019_the_hall_organ": "Project Body IV: Substrate Materialism & Solid-State Physics",
 
     # Project Body V: The Non-Orientable Manifold & Topological Torsion
-    "apparatus_020_the_mobius_organ": "Project Body V: The Non-Orientable Manifold & Topological Torsion"
+    "apparatus_020_the_mobius_organ": "Project Body V: The Non-Orientable Manifold & Topological Torsion",
+    "apparatus_021_the_klein_organ": "Project Body V: The Non-Orientable Manifold & Topological Torsion"
 }
 
 def generate_index():

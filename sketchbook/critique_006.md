@@ -18,3 +18,4 @@
 
 ### Imperative for Study 007:
 - Inject discrete quantization snapping, catastrophic sub-bass shockwaves, and seismic memory stride faults directly into the acoustic synthesis curve.
+

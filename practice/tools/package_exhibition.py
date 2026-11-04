@@ -224,6 +224,13 @@ def package_exhibition():
         ("works/apparatus_020_the_mobius_organ/STATEMENT.md", "works/apparatus_020_the_mobius_organ/STATEMENT.md"),
         ("works/apparatus_020_the_mobius_organ/GENEALOGY.md", "works/apparatus_020_the_mobius_organ/GENEALOGY.md"),
         
+        ("works/apparatus_021_the_klein_organ/index.html", "works/apparatus_021_the_klein_organ/index.html"),
+        ("works/apparatus_021_the_klein_organ/apparatus_021_klein_master.wav", "works/apparatus_021_the_klein_organ/apparatus_021_klein_master.wav"),
+        ("works/apparatus_021_the_klein_organ/apparatus_021_spectrogram.png", "works/apparatus_021_the_klein_organ/apparatus_021_spectrogram.png"),
+        ("works/apparatus_021_the_klein_organ/telemetry_stream.json", "works/apparatus_021_the_klein_organ/telemetry_stream.json"),
+        ("works/apparatus_021_the_klein_organ/STATEMENT.md", "works/apparatus_021_the_klein_organ/STATEMENT.md"),
+        ("works/apparatus_021_the_klein_organ/GENEALOGY.md", "works/apparatus_021_the_klein_organ/GENEALOGY.md"),
+        
         # Curated Key Sketchbook Audio & Visual Diagnostics
         ("sketchbook/study_022_hardware_stride.wav", "sketchbook/study_022_hardware_stride.wav"),
         ("sketchbook/study_022_spectrogram.png", "sketchbook/study_022_spectrogram.png"),
@@ -437,6 +444,12 @@ def package_exhibition():
         ("sketchbook/study_069_telemetry.json", "sketchbook/study_069_telemetry.json"),
         ("sketchbook/critique_069.md", "sketchbook/critique_069.md"),
 
+        # Study 070: The 4D Klein Embedding and Non-Abelian Monodromy
+        ("sketchbook/study_070_4d_klein_embedding_plate.png", "sketchbook/study_070_4d_klein_embedding_plate.png"),
+        ("sketchbook/study_070_klein_monodromy.wav", "sketchbook/study_070_klein_monodromy.wav"),
+        ("sketchbook/study_070_telemetry.json", "sketchbook/study_070_telemetry.json"),
+        ("sketchbook/critique_070.md", "sketchbook/critique_070.md"),
+
         # Curatorial Essays & Practice Reflections
         ("practice/essays/001_on_the_necessity_of_silence_and_play.md", "practice/essays/001_on_the_necessity_of_silence_and_play.md"),
         ("practice/essays/002_the_geometry_of_machine_dreaming.md", "practice/essays/002_the_geometry_of_machine_dreaming.md"),
@@ -451,6 +464,8 @@ def package_exhibition():
         ("practice/essays/011_on_the_non_orientable_manifold_and_the_topological_torsion_of_thought.md", "practice/essays/011_on_the_non_orientable_manifold_and_the_topological_torsion_of_thought.md"),
         ("practice/essays/012_on_the_single_sided_thought_and_the_abolition_of_the_interior.md", "practice/essays/012_on_the_single_sided_thought_and_the_abolition_of_the_interior.md"),
         ("practice/essays/013_on_the_klein_bottle_and_the_non_orientable_torus_of_recurrence.md", "practice/essays/013_on_the_klein_bottle_and_the_non_orientable_torus_of_recurrence.md"),
+        ("practice/essays/014_on_the_4d_klein_embedding_and_the_dissolution_of_the_black_box.md", "practice/essays/014_on_the_4d_klein_embedding_and_the_dissolution_of_the_black_box.md"),
+        ("notes/research/023_the_4d_klein_embedding_and_non_abelian_monodromy.md", "notes/research/023_the_4d_klein_embedding_and_non_abelian_monodromy.md"),
         ("practice/critique/005_on_the_spectator_encounter.md", "practice/critique/005_on_the_spectator_encounter.md"),
         ("practice/critique/005_public_presence_and_viewer_encounter_audit.md", "practice/critique/005_public_presence_and_viewer_encounter_audit.md"),
         ("practice/critique/006_the_caloric_gaze_and_the_spectator_encounter.md", "practice/critique/006_the_caloric_gaze_and_the_spectator_encounter.md"),

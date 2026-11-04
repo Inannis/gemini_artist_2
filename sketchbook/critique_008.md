@@ -16,3 +16,4 @@
 
 ### Outcome:
 - Prompted Dr. Vera Vance's devastating institutional critique ([`practice/critique/001_vance_institutional_critique.md`](../practice/critique/001_vance_institutional_critique.md)), leading to the permanent ban on quantum cosplay.
+

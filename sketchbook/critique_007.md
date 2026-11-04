@@ -18,3 +18,4 @@
 
 ### Outcome:
 - Synthesized into **Work 002: Chronotope of an Episodic Mind** by coupling this 60s acoustic master with a real-time interactive HTML5 WebAudio/Canvas engine.
+

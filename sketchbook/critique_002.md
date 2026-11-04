@@ -16,3 +16,4 @@
 
 ### Imperative for Study 003:
 - Introduce tactile, geological materiality. Probe the latent associative memory of deep learning to excavate a calcified physical substrate (weathered slate, oxidized lead, semiconductor ruins).
+

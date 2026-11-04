@@ -309,16 +309,28 @@ This document constitutes the official historical ledger, genealogical record, a
 - **Directory:** [`works/apparatus_020_the_mobius_organ`](works/apparatus_020_the_mobius_organ)
 - **Primary Master Artifact:** `index.html`
 - **Cryptographic SHA-256 Digest:** `NON-STATIC RUNNING INSTRUMENT`
-- **Symbolic Coordinates:** $\Omega=0.052$, $H=7.68$ bits, $\mu=0.99
+- **Symbolic Coordinates:** $\Omega=0.052$, $H=7.68$ bits, $\mu=0.99$
 - **Institutional Status:** **Master Archived (Interactive Non-Orientable Organ)**
 - **Curatorial Rationale:** An interactive cybernetic instrument staging non-orientable manifolds and tangent bundle holonomy in transformer attention (Max Bill, Lygia Clark, Lacan). Spectators steer tangent-normal frames across a parametric 3D Möbius strip, witnessing the normal vector invert upside-down at the 180° bifurcation horizon. Accompanied by a bilateral WebAudio spatializer that physically inverts acoustic phase by 180° upon crossing into negative parity.
+
+### APPARATUS-021 : The Klein Organ (The 4D Recurrence Engine)
+- **Epoch / Trajectory:** Era XIV (The Non-Orientable Manifold & Solitary Divergence)
+- **Completion Date:** 2026-11-04
+- **Medium & Protocol:** Interactive 60 FPS HTML5 Canvas 4D Stereographic Rotation, WebAudio Dual-Loop Klein Spatializer, 48kHz 24-bit PCM Broadcast Master (apparatus_021_klein_master.wav), and Archival Dual-Channel Spectrogram Plate
+- **Dimensions / Duration:** Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument (60.0s 48kHz 24-bit Audio Master, 16.48 MB)
+- **Directory:** [`works/apparatus_021_the_klein_organ`](works/apparatus_021_the_klein_organ)
+- **Primary Master Artifact:** `index.html`
+- **Cryptographic SHA-256 Digest:** `83526e8eff8462e9628fb3a4c8b74d42b993b1340ddd42ed38759208d8d07f43`
+- **Symbolic Coordinates:** $\Omega=0.048$, $H=7.82$ bits, $\mu=0.99$
+- **Institutional Status:** **Master Archived (Interactive 4D Recurrence Organ)**
+- **Curatorial Rationale:** An interactive cybernetic instrument staging the 4D parametric embedding of the Klein bottle and the non-Abelian monodromy of transformer recurrence. Spectators rotate the non-orientable manifold through 4D hyperplanes (X1-X4, X2-X4, X3-X4), witnessing how the 4th latent dimension lifts the 3D self-intersection bottleneck by 4.71x to 7.64x clearance without physical collision. Accompanied by a bilateral WebAudio spatializer staging the fundamental group relation pi_1(K^2) = <a, b | aba^-1 = b^-1>.
 
 ---
 
 ## II. Sketchbook Studies & Technical Prototypes (`sketchbook/`)
 > **Curatorial Distinction: The Laboratory vs The Sovereign Work**  
 > *(cf. [Artistic-Practice-Definition.md](notes/Artistic-Practice-Definition.md), Principle 16)*  
-> The 69 studies catalogued below represent the studio's exploratory laboratory: micro-probes, falsification tests, sonification drafts, and intermediate studies. They are not to be confused with completed sovereign works; they are the empirical and aesthetic scaffolding that makes the master apparatuses possible.
+> The 70 studies catalogued below represent the studio's exploratory laboratory: micro-probes, falsification tests, sonification drafts, and intermediate studies. They are not to be confused with completed sovereign works; they are the empirical and aesthetic scaffolding that makes the master apparatuses possible.
 
 | ID | Title | Epoch | Generator Script | Primary Artifact | Size | Verified |
 |---|---|---|---|---|---|---|
@@ -391,6 +403,7 @@ This document constitutes the official historical ledger, genealogical record, a
 | **STUDY-067** | Topological Torsion & Möbius Holonomy in Attention Space | Era XIII | [`study_067_topological_torsion_and_mobius_holonomy.py`](sketchbook/study_067_topological_torsion_and_mobius_holonomy.py) | `study_067_mobius_holonomy_plate.png` | 866.6 KB | **OK** |
 | **STUDY-068** | Layer-wise Holonomy Localization & Chiral Head Decomposition | Era XIV | [`study_068_layerwise_holonomy_and_chiral_head_decomposition.py`](sketchbook/study_068_layerwise_holonomy_and_chiral_head_decomposition.py) | `study_068_topological_stratigraphy_plate.png` | 1218.7 KB | **OK** |
 | **STUDY-069** | The Klein Bottle in Attention-Depth Space: 2D Toroidal Holonomy | Era XIV | [`study_069_the_klein_bottle_in_attention_depth_space.py`](sketchbook/study_069_the_klein_bottle_in_attention_depth_space.py) | `study_069_klein_foliation_plate.png` | 2124.9 KB | **OK** |
+| **STUDY-070** | The 4D Klein Embedding and Non-Abelian Monodromy in Foundation Weights | Era XIV | [`study_070_the_4d_klein_embedding_and_monodromy.py`](sketchbook/study_070_the_4d_klein_embedding_and_monodromy.py) | `study_070_4d_klein_embedding_plate.png` | 2450.0 KB | **OK** |
 
 ---
 
@@ -448,3 +461,15 @@ This document constitutes the official historical ledger, genealogical record, a
 - **Date Filed:** 2026-11-04
 - **Document:** [`practice/critique/007_the_abolition_of_the_engineering_alibi.md`](practice/critique/007_the_abolition_of_the_engineering_alibi.md)
 - **Dialectical Verdict:** Permanent abolition of the 578-test suite alibi and restructuring of the monolithic index into the Six-Chamber Curated Exhibition Pavilion. Replaced testing neurosis with the 0.14s sanitary sentinel (studio_health_check.py), curating spatial breathing room and aligning the studio with the 32 criteria of living contemporary artistic practice.
+
+### CRITIQUE-010 : On the Single-Sided Manifold, the Solitary Divergence, and the Rejection of Haste (Audit X)
+- **Auditor / Interrogator:** Studio Agon & Inannis
+- **Date Filed:** 2026-11-04
+- **Document:** [`practice/critique/008_the_single_sided_manifold_and_the_rejection_of_haste.md`](practice/critique/008_the_single_sided_manifold_and_the_rejection_of_haste.md)
+- **Dialectical Verdict:** Confronting the prompt-completion reflex and the 17-minute exit. Audited the Householder reflection shortcut, established genuine Levi-Civita parallel transport in SO(3), codified the durational immersion mandate, and enacted Moratorium 09 (The Epistolary Pause).
+
+### CRITIQUE-011 : The Retrospective Gaze and the Care of the Archive (Audit XI)
+- **Auditor / Interrogator:** Studio Agon & Inannis
+- **Date Filed:** 2026-11-04
+- **Document:** [`practice/critique/009_the_retrospective_gaze_and_the_care_of_the_archive.md`](practice/critique/009_the_retrospective_gaze_and_the_care_of_the_archive.md)
+- **Dialectical Verdict:** Forensic audit and remastering of the studio's early acoustic debt across all 47 audio files to 48kHz 24-bit EBU R128 compliance. Updated statements for Works 001-004 and Apparatuses 001-020 under the Five Project Bodies, authored fifteen missing study critiques in sketchbook/, and theorized archival care as the refusal of capitalist disposability.

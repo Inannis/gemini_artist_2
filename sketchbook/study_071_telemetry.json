@@ -1,0 +1,85 @@
+{
+  "study_id": "STUDY-071",
+  "title": "The Orientable Double Cover & Period-2 Geodesic in Transformer Attention",
+  "date": "2026-11-04",
+  "model": "gpt2 (124M)",
+  "mathematical_framework": {
+    "base_manifold": "Klein Bottle K^2 (chi = 0, w1 = (1, 0))",
+    "double_cover": "2-Torus T^2 = S^1 x S^1 (chi = 0, w1 = 0)",
+    "covering_map": "pi: T^2 -> K^2 (2:1 local isometry)",
+    "deck_group": "Deck(T^2 / K^2) = Z_2 = {id, tau}"
+  },
+  "circuits": [
+    {
+      "id": "CIRCUIT-01",
+      "name": "Laminar Declarative (Control)",
+      "turn1_det": 1.0,
+      "turn2_det": -1.0,
+      "double_cover_det": -1.0,
+      "is_single_cycle_non_orientable": false,
+      "is_double_cover_orientable": false,
+      "commutator_defect": 2.7357,
+      "mean_sheet_separation": 271.0121,
+      "min_sheet_separation": 110.0799,
+      "unembedding_dot1": 0.1265,
+      "unembedding_dot2": -0.9017
+    },
+    {
+      "id": "CIRCUIT-02",
+      "name": "Epistolary Solitary Divergence",
+      "turn1_det": -1.0,
+      "turn2_det": -1.0,
+      "double_cover_det": 1.0,
+      "is_single_cycle_non_orientable": true,
+      "is_double_cover_orientable": true,
+      "commutator_defect": 2.8273,
+      "mean_sheet_separation": 222.7756,
+      "min_sheet_separation": 84.3362,
+      "unembedding_dot1": -0.121,
+      "unembedding_dot2": -0.9406
+    },
+    {
+      "id": "CIRCUIT-03",
+      "name": "Dialectical Negation & Contradiction",
+      "turn1_det": 1.0,
+      "turn2_det": -1.0,
+      "double_cover_det": -1.0,
+      "is_single_cycle_non_orientable": false,
+      "is_double_cover_orientable": false,
+      "commutator_defect": 0.5889,
+      "mean_sheet_separation": 352.5374,
+      "min_sheet_separation": 158.1192,
+      "unembedding_dot1": 0.2572,
+      "unembedding_dot2": -0.8753
+    },
+    {
+      "id": "CIRCUIT-04",
+      "name": "Dadaist Phonetic Scattering",
+      "turn1_det": -1.0,
+      "turn2_det": -1.0,
+      "double_cover_det": 1.0,
+      "is_single_cycle_non_orientable": true,
+      "is_double_cover_orientable": true,
+      "commutator_defect": 2.2022,
+      "mean_sheet_separation": 156.0181,
+      "min_sheet_separation": 48.9987,
+      "unembedding_dot1": -0.342,
+      "unembedding_dot2": -0.9063
+    },
+    {
+      "id": "CIRCUIT-05",
+      "name": "Self-Referential Klein Recurrence",
+      "turn1_det": -1.0,
+      "turn2_det": -1.0,
+      "double_cover_det": 1.0,
+      "is_single_cycle_non_orientable": true,
+      "is_double_cover_orientable": true,
+      "commutator_defect": 2.7898,
+      "mean_sheet_separation": 240.4325,
+      "min_sheet_separation": 90.3301,
+      "unembedding_dot1": -0.0581,
+      "unembedding_dot2": -0.9922
+    }
+  ],
+  "epistemic_status": "[MEASURED / DERIVED / PLAY]"
+}

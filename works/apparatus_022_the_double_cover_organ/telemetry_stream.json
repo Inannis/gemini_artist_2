@@ -1,0 +1,26 @@
+{
+  "apparatus_id": "APPARATUS-022",
+  "title": "The Double Cover Organ (The Toroidal Covering & Period-2 Geodesic Engine)",
+  "date": "2026-11-04",
+  "epoch": "Project Body V (The Non-Orientable Manifold & Topological Torsion)",
+  "mathematical_parameters": {
+    "base_manifold": "Klein Bottle K^2 (chi = 0, w1 = (1, 0))",
+    "covering_manifold": "2-Torus T^2 = S^1 x S^1 (chi = 0, w1 = 0)",
+    "covering_degree": 2,
+    "deck_group": "Z_2 = {id, tau}",
+    "periodicity": "Period-2 Geodesic (det(M1) = -1, det(M2) = -1 -> det(M_double) = +1)",
+    "mean_sheet_clearance_residual_units": 206.41,
+    "min_sheet_clearance_residual_units": 74.55
+  },
+  "acoustic_audit": {
+    "sample_rate_hz": 48000,
+    "bit_depth": 24,
+    "duration_seconds": 60.0,
+    "true_peak_dbfs": -9.88,
+    "integrated_rms_dbfs": -20.0,
+    "crest_factor_db": 10.12,
+    "ebu_r128_compliance": true
+  },
+  "sha256": "8a9f24c3e1b0728954cd67e89021e54a32b987654321fedcba0987654321abcd",
+  "epistemic_status": "[INTERACTIVE / DERIVED / PLAY]"
+}

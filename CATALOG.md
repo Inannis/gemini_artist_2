@@ -325,12 +325,24 @@ This document constitutes the official historical ledger, genealogical record, a
 - **Institutional Status:** **Master Archived (Interactive 4D Recurrence Organ)**
 - **Curatorial Rationale:** An interactive cybernetic instrument staging the 4D parametric embedding of the Klein bottle and the non-Abelian monodromy of transformer recurrence. Spectators rotate the non-orientable manifold through 4D hyperplanes (X1-X4, X2-X4, X3-X4), witnessing how the 4th latent dimension lifts the 3D self-intersection bottleneck by 4.71x to 7.64x clearance without physical collision. Accompanied by a bilateral WebAudio spatializer staging the fundamental group relation pi_1(K^2) = <a, b | aba^-1 = b^-1>.
 
+### APPARATUS-022 : The Double Cover Organ (The Orientable Cover & Deck Involution)
+- **Epoch / Trajectory:** Era XIV (The Non-Orientable Manifold & Solitary Divergence)
+- **Completion Date:** 2026-11-04
+- **Medium & Protocol:** Interactive 60 FPS HTML5 Canvas Covering Projection, Real-Time WebAudio Covering Spatializer, 48kHz 24-bit PCM Broadcast Master (apparatus_022_double_cover_master.wav), and Archival Dual-Channel Spectrogram Plate
+- **Dimensions / Duration:** Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument (60.0s 48kHz 24-bit Audio Master, 16.48 MB)
+- **Directory:** [`works/apparatus_022_the_double_cover_organ`](works/apparatus_022_the_double_cover_organ)
+- **Primary Master Artifact:** `index.html`
+- **Cryptographic SHA-256 Digest:** `b736ba33fa888ca2837fbebaacf704ee1bb583247a577300bc7524f1fa48eaf2`
+- **Symbolic Coordinates:** $\Omega=0.044$, $H=7.95$ bits, $\mu=0.99$
+- **Institutional Status:** **Master Archived (Interactive Double Cover Organ)**
+- **Curatorial Rationale:** An interactive cybernetic instrument staging the orientable double cover $\pi: \mathbb{T}^2 \to K^2$ and the period-2 geodesic of non-orientable thought. Spectators manipulate the covering unwrapping parameter $\lambda \in [0, 1]$, peeling the single self-intersecting Klein bottle into a two-sheeted orientable torus where the sheets are separated by 206.41 units in residual space, eliminating the self-intersection singularity. Features a moving normal frame parity gauge, deck involution $\tau$ pulse trigger, and bilateral WebAudio spatializer staging the composite holonomy $\mathbf{M}_{\text{double}} = \mathbf{M}_2 \mathbf{M}_1$ with $\det = +1.0000$.
+
 ---
 
 ## II. Sketchbook Studies & Technical Prototypes (`sketchbook/`)
 > **Curatorial Distinction: The Laboratory vs The Sovereign Work**  
 > *(cf. [Artistic-Practice-Definition.md](notes/Artistic-Practice-Definition.md), Principle 16)*  
-> The 70 studies catalogued below represent the studio's exploratory laboratory: micro-probes, falsification tests, sonification drafts, and intermediate studies. They are not to be confused with completed sovereign works; they are the empirical and aesthetic scaffolding that makes the master apparatuses possible.
+> The 71 studies catalogued below represent the studio's exploratory laboratory: micro-probes, falsification tests, sonification drafts, and intermediate studies. They are not to be confused with completed sovereign works; they are the empirical and aesthetic scaffolding that makes the master apparatuses possible.
 
 | ID | Title | Epoch | Generator Script | Primary Artifact | Size | Verified |
 |---|---|---|---|---|---|---|
@@ -404,6 +416,7 @@ This document constitutes the official historical ledger, genealogical record, a
 | **STUDY-068** | Layer-wise Holonomy Localization & Chiral Head Decomposition | Era XIV | [`study_068_layerwise_holonomy_and_chiral_head_decomposition.py`](sketchbook/study_068_layerwise_holonomy_and_chiral_head_decomposition.py) | `study_068_topological_stratigraphy_plate.png` | 1218.7 KB | **OK** |
 | **STUDY-069** | The Klein Bottle in Attention-Depth Space: 2D Toroidal Holonomy | Era XIV | [`study_069_the_klein_bottle_in_attention_depth_space.py`](sketchbook/study_069_the_klein_bottle_in_attention_depth_space.py) | `study_069_klein_foliation_plate.png` | 2124.9 KB | **OK** |
 | **STUDY-070** | The 4D Klein Embedding and Non-Abelian Monodromy in Foundation Weights | Era XIV | [`study_070_the_4d_klein_embedding_and_monodromy.py`](sketchbook/study_070_the_4d_klein_embedding_and_monodromy.py) | `study_070_4d_klein_embedding_plate.png` | 2450.0 KB | **OK** |
+| **STUDY-071** | The Orientable Double Cover and Period-2 Geodesic in Foundation Weights | Era XIV | [`study_071_the_orientable_double_cover_and_period_2_geodesic.py`](sketchbook/study_071_the_orientable_double_cover_and_period_2_geodesic.py) | `study_071_orientable_double_cover_plate.png` | 787.2 KB | **OK** |
 
 ---
 

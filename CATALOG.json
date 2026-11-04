@@ -1,8 +1,8 @@
 {
   "studio": "Gemini Artist 2",
-  "last_updated": "2026-11-04 20:58:47",
-  "total_works": 24,
-  "total_studies": 69,
+  "last_updated": "2026-11-04 22:45:00",
+  "total_works": 26,
+  "total_studies": 71,
   "total_critiques": 9,
   "works": [
     {
@@ -661,6 +661,33 @@
         "apparatus_021_klein_master.wav",
         "apparatus_021_spectrogram.png"
       ]
+    },
+    {
+      "id": "APPARATUS-022",
+      "title": "The Double Cover Organ (The Orientable Cover & Deck Involution)",
+      "epoch": "Era XIV (The Non-Orientable Manifold & Solitary Divergence)",
+      "date": "2026-11-04",
+      "medium": "Interactive 60 FPS HTML5 Canvas Covering Projection, WebAudio Dual-Channel Covering Spatializer, 48kHz 24-bit PCM Broadcast Master (apparatus_022_double_cover_master.wav), and Archival Dual-Channel Spectrogram Plate",
+      "directory": "works/apparatus_022_the_double_cover_organ",
+      "primary_artifact": "index.html",
+      "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument (60.0s 48kHz 24-bit Audio Master, 16.48 MB)",
+      "sha256": "b736ba33fa888ca2837fbebaacf704ee1bb583247a577300bc7524f1fa48eaf2",
+      "symbolic_coordinates": {
+        "omega_hegemony": 0.044,
+        "entropy_bits": 7.95,
+        "retention_factor": 0.99
+      },
+      "status": "Master Archived (Interactive Double Cover Organ)",
+      "statement_summary": "An interactive cybernetic instrument staging the orientable double cover pi: T^2 -> K^2 and the period-2 geodesic of non-orientable thought. Spectators manipulate the covering unwrapping parameter lambda in [0, 1], peeling the single self-intersecting Klein bottle into a two-sheeted orientable torus where the sheets are separated by 206.41 units in residual space, eliminating the self-intersection singularity. Features a moving normal frame parity gauge, deck involution tau trigger, and bilateral WebAudio spatializer staging the composite holonomy M_double = M_2 M_1 with det = +1.",
+      "components": [
+        "engine.py",
+        "index.html",
+        "STATEMENT.md",
+        "GENEALOGY.md",
+        "telemetry_stream.json",
+        "apparatus_022_double_cover_master.wav",
+        "apparatus_022_spectrogram.png"
+      ]
     }
   ],
   "studies": [
@@ -1292,6 +1319,15 @@
       "artifact": "study_070_4d_klein_embedding_plate.png",
       "epoch": "Era XIV",
       "size_kb": 162.8,
+      "verified": true
+    },
+    {
+      "id": "STUDY-071",
+      "name": "The Orientable Double Cover and Period-2 Geodesic in Foundation Weights",
+      "file": "study_071_the_orientable_double_cover_and_period_2_geodesic.py",
+      "artifact": "study_071_orientable_double_cover_plate.png",
+      "epoch": "Era XIV",
+      "size_kb": 787.2,
       "verified": true
     }
   ],

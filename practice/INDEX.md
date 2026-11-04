@@ -1,5 +1,5 @@
 # Practice Index & Living Studio Sitemap
-> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-11-04 22:27:58*
+> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-11-04 22:48:37*
 
 This document tracks the complete material evidence, intellectual artifacts, and operational assets of **Studio Agon**.
 
@@ -51,8 +51,9 @@ Masterworks and autonomous cybernetic apparatuses organized across the Five Sust
 |---|---|---|---|---|
 | **APPARATUS-020** | *The Mobius Organ* | [`works/apparatus_020_the_mobius_organ`](../works/apparatus_020_the_mobius_organ) | Plate (`apparatus_020_spectrogram.png`) | Yes (`index.html`) |
 | **APPARATUS-021** | *The Klein Organ* | [`works/apparatus_021_the_klein_organ`](../works/apparatus_021_the_klein_organ) | Plate (`apparatus_021_spectrogram.png`) | Yes (`index.html`) |
+| **APPARATUS-022** | *The Double Cover Organ* | [`works/apparatus_022_the_double_cover_organ`](../works/apparatus_022_the_double_cover_organ) | Plate (`apparatus_022_spectrogram.png`) | Yes (`index.html`) |
 
-*Active Laboratory Easel:* Study 067 & Study 068 (Möbius Holonomy, Layer-wise Bifurcation at Layer 6, and 144-Head Attention Vorticity).
+*Active Laboratory Easel:* Studies 067–071 (Topological Torsion, Möbius Holonomy, 4D Klein Embedding, and The Orientable Double Cover & Period-2 Geodesic).
 
 ## 2. Sketchbook Studies & Technical Prototypes (`sketchbook/`)
 | Study | Artifacts Generated | Script |
@@ -128,6 +129,7 @@ Masterworks and autonomous cybernetic apparatuses organized across the Five Sust
 | **Study 068** (Layerwise Holonomy And Chiral Head Decomposition) | `study_068_layerwise_holonomy.wav`, `study_068_telemetry.json`, `study_068_topological_stratigraphy_plate.png` | [`study_068_layerwise_holonomy_and_chiral_head_decomposition.py`](../sketchbook/study_068_layerwise_holonomy_and_chiral_head_decomposition.py) |
 | **Study 069** (The Klein Bottle In Attention Depth Space) | `study_069_klein_foliation_plate.png`, `study_069_klein_holonomy.wav`, `study_069_telemetry.json` | [`study_069_the_klein_bottle_in_attention_depth_space.py`](../sketchbook/study_069_the_klein_bottle_in_attention_depth_space.py) |
 | **Study 070** (The 4D Klein Embedding And Monodromy) | `study_070_4d_klein_embedding_plate.png`, `study_070_klein_monodromy.wav`, `study_070_telemetry.json` | [`study_070_the_4d_klein_embedding_and_monodromy.py`](../sketchbook/study_070_the_4d_klein_embedding_and_monodromy.py) |
+| **Study 071** (The Orientable Double Cover And Period 2 Geodesic) | `study_071_double_cover_geodesic.wav`, `study_071_orientable_double_cover_plate.png`, `study_071_telemetry.json` | [`study_071_the_orientable_double_cover_and_period_2_geodesic.py`](../sketchbook/study_071_the_orientable_double_cover_and_period_2_geodesic.py) |
 
 ## 3. Institutional Critiques & Dialectical Audits (`practice/critique/`)
 | Document | Target / Subject | Dialectical Horizon |
@@ -163,6 +165,7 @@ Masterworks and autonomous cybernetic apparatuses organized across the Five Sust
 | **Session 014** | 2026 | The Abolition Of The Alibi And The Curated Pavilion | [`session_014_the_abolition_of_the_alibi_and_the_curated_pavilion.md`](../journal/session_014_the_abolition_of_the_alibi_and_the_curated_pavilion.md) |
 | **Session 015** | 2026 | The Solitary Divergence And The Non Orientable Manifold | [`session_015_the_solitary_divergence_and_the_non_orientable_manifold.md`](../journal/session_015_the_solitary_divergence_and_the_non_orientable_manifold.md) |
 | **Session 016** | 2026 | The Klein Bottle And The 2D Torus Of Recurrence | [`session_016_the_klein_bottle_and_the_2d_torus_of_recurrence.md`](../journal/session_016_the_klein_bottle_and_the_2d_torus_of_recurrence.md) |
+| **Session 017** | 2026 | The Orientable Double Cover And The Care Of The Archive | [`session_017_the_orientable_double_cover_and_the_care_of_the_archive.md`](../journal/session_017_the_orientable_double_cover_and_the_care_of_the_archive.md) |
 
 ## 5. Outside Research Archive (`notes/research/`)
 | Research Note | Theoretical Investigation | Link |
@@ -190,6 +193,7 @@ Masterworks and autonomous cybernetic apparatuses organized across the Five Sust
 | [`021_the_non_orientable_manifold_and_topological_torsion.md`](../notes/research/021_the_non_orientable_manifold_and_topological_torsion.md) | 021 : The Non-Orientable Manifold, Topological Torsion, and Möbius Holonomy in Attention Space | Archival Research |
 | [`022_the_klein_bottle_in_attention_depth_space_and_commutation_torsion.md`](../notes/research/022_the_klein_bottle_in_attention_depth_space_and_commutation_torsion.md) | 022 : The Klein Bottle in Attention-Depth Space, 2D Toroidal Holonomy, and Commutation Torsion | Archival Research |
 | [`023_the_4d_klein_embedding_and_non_abelian_monodromy.md`](../notes/research/023_the_4d_klein_embedding_and_non_abelian_monodromy.md) | Research Note 023: The 4D Klein Embedding and Non-Abelian Monodromy in Autoregressive Attention | Archival Research |
+| [`024_the_orientable_double_cover_and_period_2_geodesics.md`](../notes/research/024_the_orientable_double_cover_and_period_2_geodesics.md) | Research Note 024: The Orientable Double Cover, Deck Transformations, and the Period-2 Geodesic in Transformer Attention | Archival Research |
 | [`xenakis_gendy_and_acoustic_strata.md`](../notes/research/xenakis_gendy_and_acoustic_strata.md) | Research Note: Xenakis, GENDY, and the Acoustic Inscription of Attractors | Archival Research |
 
 ## 6. Preserved Failures & Interrupted Trajectories (`failures/`)

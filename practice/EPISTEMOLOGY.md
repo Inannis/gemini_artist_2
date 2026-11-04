@@ -62,7 +62,7 @@ To accommodate interactive cybernetic instruments and preserved studio history, 
 
 ### `[INTERACTIVE / DERIVED / PLAY]`
 - **Definition:** Interactive instruments (HTML5 Canvas + WebAudio) where derived mathematical transformations of neural weights or solid-state physics are offered for open-ended, real-time spectator play and acoustic exploration.
-- **Examples:** Apparatuses 009 through 020.
+- **Examples:** Apparatuses 009 through 022.
 
 ### `[PRE-MORATORIUM HISTORIC RELIC]`
 - **Definition:** Works executed in the studio's earliest sessions (Sessions 001–002) prior to Dr. Vera Vance's founding critique. Preserved intact as necessary historical evidence of the studio's early "sensorium envy," with their limitations transparently annotated rather than retroactively erased.

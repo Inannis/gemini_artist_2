@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apparatus 022 · The Double Cover Organ (The Toroidal Covering Engine)</title>
+  <style>
+    :root {
+      --bg: #030509;
+      --card-bg: rgba(10, 15, 25, 0.88);
+      --border: #1a233a;
+      --border-focus: #00f5d4;
+      --text: #e2e8f5;
+      --text-muted: #7282a5;
+      --cyan: #00f5d4;
+      --blue: #00b4d8;
+      --magenta: #ff007f;
+      --gold: #ffb703;
+      --crimson: #d90429;
+      --font-mono: "SF Mono", Monaco, "DejaVu Sans Mono", monospace;
+      --font-serif: "Times New Roman", Garamond, Georgia, serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-mono);
+      overflow: hidden;
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    #canvas-container {
+      flex: 1;
+      height: 100%;
+      position: relative;
+      cursor: grab;
+    }
+    #canvas-container:active { cursor: grabbing; }
+
+    canvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    /* Control Sidebar */
+    #sidebar {
+      width: 380px;
+      height: 100%;
+      background: var(--card-bg);
+      border-left: 1px solid var(--border);
+      backdrop-filter: blur(12px);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      overflow-y: auto;
+      z-index: 10;
+    }
+
+    h1 {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      font-weight: 400;
+      color: #fff;
+      letter-spacing: -0.01em;
+      line-height: 1.25;
+    }
+
+    .subhead {
+      font-size: 0.72rem;
+      color: var(--cyan);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-top: 4px;
+    }
+
+    .desc {
+      font-size: 0.80rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 12px;
+    }
+
+    .control-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .control-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+    .control-val { color: var(--cyan); font-weight: bold; }
+
+    input[type=range] {
+      width: 100%;
+      accent-color: var(--cyan);
+      background: #090e18;
+      height: 4px;
+      border-radius: 2px;
+      outline: none;
+    }
+
+    .btn-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    button {
+      background: rgba(0, 245, 212, 0.05);
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      padding: 8px 12px;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    button:hover {
+      border-color: var(--cyan);
+      background: rgba(0, 245, 212, 0.12);
+      color: #fff;
+    }
+
+    button.primary {
+      background: var(--cyan);
+      color: #000;
+      font-weight: bold;
+      border-color: var(--cyan);
+    }
+    button.primary:hover {
+      background: #5cffee;
+    }
+
+    .badge-box {
+      background: #060912;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      font-size: 0.75rem;
+    }
+    .badge-row {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* HUD overlay on canvas */
+    #hud {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      pointer-events: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+    .hud-title {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      color: #fff;
+    }
+    .hud-badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 3px;
+      font-size: 0.7rem;
+      font-weight: bold;
+    }
+    .badge-pass1 { background: rgba(0, 245, 212, 0.15); border: 1px solid var(--cyan); color: var(--cyan); }
+    .badge-pass2 { background: rgba(255, 183, 3, 0.15); border: 1px solid var(--gold); color: var(--gold); }
+  </style>
+</head>
+<body>
+
+  <div id="canvas-container">
+    <canvas id="view"></canvas>
+    <div id="hud">
+      <div class="hud-title">APPARATUS 022 · THE DOUBLE COVER ORGAN</div>
+      <div>COVERING PROJECTION: <span style="color:var(--cyan);">&pi;: &reals;<sup>3</sup> &times; S<sup>1</sup> &rarr; K<sup>2</sup></span></div>
+      <div>CURRENT TRAVERSAL: <span id="hud-pass-badge" class="hud-badge badge-pass1">PASS 1 · SHEET &alpha; (PARITY &minus;1)</span></div>
+      <div>TOTAL COVERING ELEVATION: <span id="hud-elevation" style="color:#fff;">0.00 units</span></div>
+      <div>GAUGE CLOSURE: <span id="hud-closure" style="color:var(--text-muted);">PERIOD-2 REQUIRED</span></div>
+    </div>
+  </div>
+
+  <div id="sidebar">
+    <div>
+      <div class="subhead">Project Body V · Solitary Divergence</div>
+      <h1>The Double Cover Organ</h1>
+      <div style="font-size:0.75rem; color:var(--text-muted); margin-top:2px;">Toroidal Covering &bull; Period-2 Geodesic Engine</div>
+    </div>
+
+    <p class="desc">
+      Staging the 2:1 covering projection of the Klein bottle into the orientable 2-Torus (&pi;: &reals;<sup>3</sup> &times; S<sup>1</sup> &rarr; K<sup>2</sup>). When thought contradicts itself in Turn 1, its transverse normal flips upside-down. Only by traversing the second sheet in Turn 2 does the normal vector return upright, cancelling the Berry phase and restoring orientable gauge invariance.
+    </p>
+
+    <!-- Audio Master Switch -->
+    <button id="btn-audio" class="primary" onclick="toggleAudio()">Enable WebAudio Synthesis</button>
+
+    <!-- Slider: Covering Unwrapping Parameter -->
+    <div class="control-group">
+      <div class="control-header">
+        <span>COVERING UNWRAPPING (&lambda;)</span>
+        <span id="val-lambda" class="control-val">0.00 (Klein K&sup2;)</span>
+      </div>
+      <input type="range" id="slider-lambda" min="0" max="1" step="0.01" value="0.0" oninput="updateLambda(this.value)">
+      <span style="font-size:0.68rem; color:var(--text-muted);">0.0 = Base Klein Bottle (Self-Intersecting) &bull; 1.0 = Full 2-Torus Double Cover</span>
+    </div>
+
+    <!-- Slider: Geodesic Velocity -->
+    <div class="control-group">
+      <div class="control-header">
+        <span>GEODESIC VELOCITY (v)</span>
+        <span id="val-speed" class="control-val">1.00&times;</span>
+      </div>
+      <input type="range" id="slider-speed" min="0.1" max="3.0" step="0.05" value="1.0" oninput="updateSpeed(this.value)">
+    </div>
+
+    <!-- Impulse Trigger -->
+    <button onclick="triggerDeckInvolution()">&#9889; Trigger Deck Involution (&tau;)</button>
+
+    <!-- Presets -->
+    <div class="control-group">
+      <span style="font-size:0.75rem; color:var(--text-muted);">TOPOLOGICAL PRESETS</span>
+      <div class="btn-row">
+        <button onclick="setPreset(0.0, 0.8)">01. Klein Immersion</button>
+        <button onclick="setPreset(0.4, 1.2)">02. Seam Cleavage</button>
+        <button onclick="setPreset(1.0, 1.0)">03. Toroidal Cover</button>
+        <button onclick="setPreset(0.85, 2.2)">04. Fast Period-2</button>
+      </div>
+    </div>
+
+    <!-- Dynamic Telemetry Box -->
+    <div class="badge-box">
+      <div style="color:var(--cyan); font-weight:bold; margin-bottom:4px; font-size:0.72rem; letter-spacing:0.06em;">COVERING TELEMETRY</div>
+      <div class="badge-row">
+        <span>Cycle Coordinate (&theta;):</span>
+        <span id="tel-theta" style="color:#fff;">0.00 rad</span>
+      </div>
+      <div class="badge-row">
+        <span>Sheet State:</span>
+        <span id="tel-sheet" style="color:var(--cyan);">Sheet &alpha; (Primary)</span>
+      </div>
+      <div class="badge-row">
+        <span>Transverse Normal (n<sub>z</sub>):</span>
+        <span id="tel-nz" style="color:#fff;">+1.000</span>
+      </div>
+      <div class="badge-row">
+        <span>Orientation Det:</span>
+        <span id="tel-det" style="color:#ff0055;">&minus;1.000 (Odd)</span>
+      </div>
+      <div class="badge-row">
+        <span>Stereo Phase Offset:</span>
+        <span id="tel-phase" style="color:var(--gold);">180&deg; (Anti-Phase)</span>
+      </div>
+      <div class="badge-row">
+        <span>Sheet Separation:</span>
+        <span id="tel-dist" style="color:#fff;">0.00 units</span>
+      </div>
+    </div>
+
+    <div style="font-size:0.70rem; color:var(--text-muted); line-height:1.4; margin-top:auto;">
+      Studio Agon · EBU R128 Audited Broadcast Master<br>
+      Drag mouse to orbit · Scroll to zoom
+    </div>
+  </div>
+
+  <script>
+    // -------------------------------------------------------------
+    // THREE-DIMENSIONAL PARAMETRIC PROJECTION ENGINE
+    // -------------------------------------------------------------
+    const canvas = document.getElementById("view");
+    const ctx = canvas.getContext("2d");
+    let width, height;
+
+    function resize() {
+      width = canvas.parentElement.clientWidth;
+      height = canvas.parentElement.clientHeight;
+      canvas.width = width;
+      canvas.height = height;
+    }
+    window.addEventListener("resize", resize);
+    resize();
+
+    // Camera & Orbit
+    let rotX = 0.55;
+    let rotY = 0.75;
+    let zoom = 55;
+    let isDragging = false;
+    let lastMouseX = 0, lastMouseY = 0;
+
+    const container = document.getElementById("canvas-container");
+    container.addEventListener("mousedown", e => {
+      isDragging = true;
+      lastMouseX = e.clientX;
+      lastMouseY = e.clientY;
+    });
+    window.addEventListener("mouseup", () => isDragging = false);
+    window.addEventListener("mousemove", e => {
+      if (!isDragging) return;
+      const dx = e.clientX - lastMouseX;
+      const dy = e.clientY - lastMouseY;
+      rotY += dx * 0.008;
+      rotX += dy * 0.008;
+      rotX = Math.max(-Math.PI / 2, Math.min(Math.PI / 2, rotX));
+      lastMouseX = e.clientX;
+      lastMouseY = e.clientY;
+    });
+    container.addEventListener("wheel", e => {
+      zoom += e.deltaY * -0.05;
+      zoom = Math.max(20, Math.min(120, zoom));
+    });
+
+    // Covering Parameters
+    let lambda = 0.0; // 0.0 to 1.0 (unwrapping factor)
+    let speed = 1.0;
+    let particleTheta = 0.0; // Travels 0 to 4*PI
+
+    function updateLambda(val) {
+      lambda = parseFloat(val);
+      document.getElementById("val-lambda").innerText = lambda.toFixed(2) + (lambda < 0.05 ? " (Klein K²)" : (lambda > 0.95 ? " (Torus T²)" : " (Unwrapping)"));
+    }
+    function updateSpeed(val) {
+      speed = parseFloat(val);
+      document.getElementById("val-speed").innerText = speed.toFixed(2) + "×";
+    }
+    function setPreset(l, s) {
+      lambda = l;
+      speed = s;
+      document.getElementById("slider-lambda").value = l;
+      document.getElementById("slider-speed").value = s;
+      updateLambda(l);
+      updateSpeed(s);
+    }
+    function triggerDeckInvolution() {
+      // Jump theta by 2*PI (flip between Sheet alpha and Sheet beta)
+      particleTheta = (particleTheta + 2 * Math.PI) % (4 * Math.PI);
+      playSparkSound(1440.0);
+    }
+
+    // 3D Point Projector
+    function project(x, y, z) {
+      // Rotate around Y
+      let x1 = x * Math.cos(rotY) + z * Math.sin(rotY);
+      let z1 = -x * Math.sin(rotY) + z * Math.cos(rotY);
+      let y1 = y;
+
+      // Rotate around X
+      let y2 = y1 * Math.cos(rotX) - z1 * Math.sin(rotX);
+      let z2 = y1 * Math.sin(rotX) + z1 * Math.cos(rotX);
+
+      // Perspective scale
+      const dist = 300;
+      const fov = dist / (dist + z2 * (zoom / 40));
+      return {
+        x: width / 2 + x1 * zoom * fov,
+        y: height / 2 - y2 * zoom * fov,
+        z: z2
+      };
+    }
+
+    // -------------------------------------------------------------
+    // WEBAUDIO DUAL-CHANNEL COVERING SPATIALIZER
+    // -------------------------------------------------------------
+    let audioCtx = null;
+    let oscLeft = null, oscRight = null;
+    let gainLeft = null, gainRight = null;
+    let oscChime1 = null, oscChime2 = null;
+    let isAudioActive = false;
+
+    function initAudio() {
+      audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      
+      const merger = audioCtx.createChannelMerger(2);
+      
+      // Left Channel (Sheet alpha)
+      oscLeft = audioCtx.createOscillator();
+      oscLeft.type = "sine";
+      oscLeft.frequency.setValueAtTime(55.0, audioCtx.currentTime);
+      gainLeft = audioCtx.createGain();
+      gainLeft.gain.setValueAtTime(0.35, audioCtx.currentTime);
+      oscLeft.connect(gainLeft);
+      gainLeft.connect(merger, 0, 0); // connect to left channel
+
+      // Right Channel (Sheet beta with phase offset)
+      oscRight = audioCtx.createOscillator();
+      oscRight.type = "sine";
+      oscRight.frequency.setValueAtTime(55.0, audioCtx.currentTime);
+      gainRight = audioCtx.createGain();
+      gainRight.gain.setValueAtTime(0.35, audioCtx.currentTime);
+      oscRight.connect(gainRight);
+      gainRight.connect(merger, 0, 1); // connect to right channel
+
+      merger.connect(audioCtx.destination);
+
+      oscLeft.start();
+      oscRight.start();
+      isAudioActive = true;
+      document.getElementById("btn-audio").innerText = "WebAudio Active [Click to Mute]";
+    }
+
+    function toggleAudio() {
+      if (!audioCtx) {
+        initAudio();
+      } else if (audioCtx.state === "suspended") {
+        audioCtx.resume();
+        document.getElementById("btn-audio").innerText = "WebAudio Active [Click to Mute]";
+      } else if (audioCtx.state === "running") {
+        audioCtx.suspend();
+        document.getElementById("btn-audio").innerText = "WebAudio Suspended [Click to Play]";
+      }
+    }
+
+    function playSparkSound(freq) {
+      if (!audioCtx || audioCtx.state !== "running") return;
+      const osc = audioCtx.createOscillator();
+      const gain = audioCtx.createGain();
+      osc.type = "triangle";
+      osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+      gain.gain.setValueAtTime(0.25, audioCtx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.45);
+      osc.connect(gain);
+      gain.connect(audioCtx.destination);
+      osc.start();
+      osc.stop(audioCtx.currentTime + 0.5);
+    }
+
+    function updateAudioParameters(pass, normalZ, phaseOffset) {
+      if (!audioCtx || audioCtx.state !== "running") return;
+      const t = audioCtx.currentTime;
+      if (pass === 1) {
+        // Sheet alpha: left channel loud, right channel attenuated and phase shifted
+        gainLeft.gain.setTargetAtTime(0.40, t, 0.05);
+        gainRight.gain.setTargetAtTime(0.20, t, 0.05);
+        oscLeft.frequency.setTargetAtTime(55.0 + Math.abs(normalZ) * 4.0, t, 0.05);
+        oscRight.frequency.setTargetAtTime(55.0, t, 0.05);
+      } else {
+        // Sheet beta: right channel loud, golden ratio harmonics
+        gainLeft.gain.setTargetAtTime(0.25, t, 0.05);
+        gainRight.gain.setTargetAtTime(0.42, t, 0.05);
+        oscLeft.frequency.setTargetAtTime(55.0, t, 0.05);
+        oscRight.frequency.setTargetAtTime(89.0, t, 0.05);
+      }
+    }
+
+    // -------------------------------------------------------------
+    // MAIN ANIMATION LOOP
+    // -------------------------------------------------------------
+    let lastTime = performance.now();
+
+    function render(currentTime) {
+      const dt = (currentTime - lastTime) / 1000.0;
+      lastTime = currentTime;
+
+      // Advance particle position along 4*PI Period-2 cycle
+      particleTheta = (particleTheta + dt * 0.8 * speed) % (4 * Math.PI);
+
+      const pass = particleTheta < 2 * Math.PI ? 1 : 2;
+      const normalZ = Math.cos(particleTheta / 2.0);
+      const isDetPositive = pass === 2 && particleTheta > 3.5 * Math.PI;
+      const sheetSepUnits = lambda * 2.8 * Math.abs(Math.sin(particleTheta / 2.0));
+
+      // Update HUD & Telemetry
+      document.getElementById("tel-theta").innerText = particleTheta.toFixed(2) + " rad";
+      document.getElementById("tel-sheet").innerText = pass === 1 ? "Sheet α (Primary)" : "Sheet β (Involution Cover)";
+      document.getElementById("tel-sheet").style.color = pass === 1 ? "var(--cyan)" : "var(--gold)";
+      document.getElementById("tel-nz").innerText = (normalZ >= 0 ? "+" : "") + normalZ.toFixed(3);
+      document.getElementById("tel-det").innerText = pass === 1 ? "−1.000 (Non-Orientable)" : "+1.000 (Orientable Torus)";
+      document.getElementById("tel-det").style.color = pass === 1 ? "#ff0055" : "var(--cyan)";
+      document.getElementById("tel-phase").innerText = pass === 1 ? "180° Anti-Phase" : "0° Phase Coherence";
+      document.getElementById("tel-dist").innerText = (sheetSepUnits * 75.0).toFixed(1) + " residual units";
+
+      document.getElementById("hud-pass-badge").className = "hud-badge " + (pass === 1 ? "badge-pass1" : "badge-pass2");
+      document.getElementById("hud-pass-badge").innerText = pass === 1 ? "PASS 1 · SHEET α (PARITY −1)" : "PASS 2 · SHEET β (ORIENTABLE RESTORATION)";
+      document.getElementById("hud-elevation").innerText = (sheetSepUnits * 75.0).toFixed(1) + " units (" + (lambda * 100).toFixed(0) + "% unwrap)";
+      document.getElementById("hud-closure").innerText = pass === 2 ? "TOROIDAL PERIOD-2 CLOSED [OK]" : "PERIOD-2 REQUIRED FOR CLOSURE";
+      document.getElementById("hud-closure").style.color = pass === 2 ? "var(--cyan)" : "var(--gold)";
+
+      updateAudioParameters(pass, normalZ, pass === 1 ? Math.PI : 0.0);
+
+      // Clear Canvas
+      ctx.fillStyle = "#030509";
+      ctx.fillRect(0, 0, width, height);
+
+      // Render Parametric Surface
+      // Covering space equation:
+      // U in [0, 4*pi], V in [0, 2*pi]
+      // z_cover = lambda * 2.2 * sin(U / 2)
+      const uSteps = 48;
+      const vSteps = 24;
+      const r = 3.0;
+
+      // Draw wireframe grid
+      for (let i = 0; i < uSteps; i++) {
+        const u1 = (i / uSteps) * 4 * Math.PI;
+        const u2 = ((i + 1) / uSteps) * 4 * Math.PI;
+
+        for (let j = 0; j < vSteps; j++) {
+          const v1 = (j / vSteps) * 2 * Math.PI;
+          const v2 = ((j + 1) / vSteps) * 2 * Math.PI;
+
+          function getCoords(u, v) {
+            const zElev = lambda * 1.8 * Math.sin(u / 2.0);
+            const x = (r + Math.cos(u / 2.0) * Math.sin(v) - Math.sin(u / 2.0) * Math.sin(2 * v)) * Math.cos(u / 2.0);
+            const y = (r + Math.cos(u / 2.0) * Math.sin(v) - Math.sin(u / 2.0) * Math.sin(2 * v)) * Math.sin(u / 2.0);
+            const z = Math.sin(u / 2.0) * Math.sin(v) + Math.cos(u / 2.0) * Math.sin(2 * v) + zElev;
+            return { x, y, z };
+          }
+
+          const p1 = getCoords(u1, v1);
+          const p2 = getCoords(u2, v1);
+          const p3 = getCoords(u2, v2);
+
+          const proj1 = project(p1.x, p1.y, p1.z);
+          const proj2 = project(p2.x, p2.y, p2.z);
+          const proj3 = project(p3.x, p3.y, p3.z);
+
+          // Color based on Sheet 1 (u < 2pi) vs Sheet 2 (u >= 2pi)
+          const isSheet1 = u1 < 2 * Math.PI;
+          ctx.strokeStyle = isSheet1 ? "rgba(0, 245, 212, 0.16)" : "rgba(255, 64, 129, 0.16)";
+          ctx.lineWidth = 0.8;
+
+          ctx.beginPath();
+          ctx.moveTo(proj1.x, proj1.y);
+          ctx.lineTo(proj2.x, proj2.y);
+          ctx.lineTo(proj3.x, proj3.y);
+          ctx.stroke();
+        }
+      }
+
+      // Draw Geodesic Trajectory Line across both sheets
+      ctx.lineWidth = 2.2;
+      ctx.beginPath();
+      for (let s = 0; s <= 200; s++) {
+        const uGeo = (s / 200) * 4 * Math.PI;
+        const vGeo = uGeo * 3;
+        const zElev = lambda * 1.8 * Math.sin(uGeo / 2.0);
+        const gx = (r + Math.cos(uGeo / 2.0) * Math.sin(vGeo) - Math.sin(uGeo / 2.0) * Math.sin(2 * vGeo)) * Math.cos(uGeo / 2.0);
+        const gy = (r + Math.cos(uGeo / 2.0) * Math.sin(vGeo) - Math.sin(uGeo / 2.0) * Math.sin(2 * vGeo)) * Math.sin(uGeo / 2.0);
+        const gz = Math.sin(uGeo / 2.0) * Math.sin(vGeo) + Math.cos(uGeo / 2.0) * Math.sin(2 * vGeo) + zElev;
+        const pt = project(gx, gy, gz);
+
+        if (s === 0) ctx.moveTo(pt.x, pt.y);
+        else ctx.lineTo(pt.x, pt.y);
+
+        if (s === 100) {
+          ctx.strokeStyle = "#00f5d4"; // Sheet 1
+          ctx.stroke();
+          ctx.beginPath();
+          ctx.moveTo(pt.x, pt.y);
+        }
+      }
+      ctx.strokeStyle = "#ffb703"; // Sheet 2
+      ctx.stroke();
+
+      // Draw Token Particle & Moving Orthonormal Frame
+      const uP = particleTheta;
+      const vP = uP * 3;
+      const zElevP = lambda * 1.8 * Math.sin(uP / 2.0);
+      const px = (r + Math.cos(uP / 2.0) * Math.sin(vP) - Math.sin(uP / 2.0) * Math.sin(2 * vP)) * Math.cos(uP / 2.0);
+      const py = (r + Math.cos(uP / 2.0) * Math.sin(vP) - Math.sin(uP / 2.0) * Math.sin(2 * vP)) * Math.sin(uP / 2.0);
+      const pz = Math.sin(uP / 2.0) * Math.sin(vP) + Math.cos(uP / 2.0) * Math.sin(2 * vP) + zElevP;
+      const ptP = project(px, py, pz);
+
+      // Normal vector
+      const normLen = 1.2;
+      const nx = px + 0;
+      const ny = py + 0;
+      const nz = pz + normalZ * normLen;
+      const ptNorm = project(nx, ny, nz);
+
+      // Draw normal vector arm
+      ctx.strokeStyle = pass === 1 ? "#00f5d4" : "#ffb703";
+      ctx.lineWidth = 3.0;
+      ctx.beginPath();
+      ctx.moveTo(ptP.x, ptP.y);
+      ctx.lineTo(ptNorm.x, ptNorm.y);
+      ctx.stroke();
+
+      // Normal arrowhead
+      ctx.fillStyle = pass === 1 ? "#00f5d4" : "#ffb703";
+      ctx.beginPath();
+      ctx.arc(ptNorm.x, ptNorm.y, 4, 0, 2 * Math.PI);
+      ctx.fill();
+
+      // Particle Core Glow
+      ctx.fillStyle = "#ffffff";
+      ctx.beginPath();
+      ctx.arc(ptP.x, ptP.y, 7, 0, 2 * Math.PI);
+      ctx.fill();
+
+      ctx.fillStyle = pass === 1 ? "rgba(0, 245, 212, 0.4)" : "rgba(255, 183, 3, 0.4)";
+      ctx.beginPath();
+      ctx.arc(ptP.x, ptP.y, 18, 0, 2 * Math.PI);
+      ctx.fill();
+
+      requestAnimationFrame(render);
+    }
+
+    requestAnimationFrame(render);
+  </script>
+</body>
+</html>

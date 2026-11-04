@@ -37,7 +37,9 @@ def package_exhibition():
     # 1. Clean and initialize dist directory
     if os.path.exists(dist_dir):
         print(f"Cleaning existing distribution directory: {dist_dir}")
-        shutil.rmtree(dist_dir)
+        subprocess.run(["rm", "-rf", dist_dir], check=False)
+        if os.path.exists(dist_dir):
+            shutil.rmtree(dist_dir, ignore_errors=True)
     os.makedirs(dist_dir, exist_ok=True)
     
     # 2. Files and Directories to Bundle
@@ -230,6 +232,13 @@ def package_exhibition():
         ("works/apparatus_021_the_klein_organ/telemetry_stream.json", "works/apparatus_021_the_klein_organ/telemetry_stream.json"),
         ("works/apparatus_021_the_klein_organ/STATEMENT.md", "works/apparatus_021_the_klein_organ/STATEMENT.md"),
         ("works/apparatus_021_the_klein_organ/GENEALOGY.md", "works/apparatus_021_the_klein_organ/GENEALOGY.md"),
+
+        ("works/apparatus_022_the_double_cover_organ/index.html", "works/apparatus_022_the_double_cover_organ/index.html"),
+        ("works/apparatus_022_the_double_cover_organ/apparatus_022_double_cover_master.wav", "works/apparatus_022_the_double_cover_organ/apparatus_022_double_cover_master.wav"),
+        ("works/apparatus_022_the_double_cover_organ/apparatus_022_spectrogram.png", "works/apparatus_022_the_double_cover_organ/apparatus_022_spectrogram.png"),
+        ("works/apparatus_022_the_double_cover_organ/telemetry_stream.json", "works/apparatus_022_the_double_cover_organ/telemetry_stream.json"),
+        ("works/apparatus_022_the_double_cover_organ/STATEMENT.md", "works/apparatus_022_the_double_cover_organ/STATEMENT.md"),
+        ("works/apparatus_022_the_double_cover_organ/GENEALOGY.md", "works/apparatus_022_the_double_cover_organ/GENEALOGY.md"),
         
         # Curated Key Sketchbook Audio & Visual Diagnostics
         ("sketchbook/study_022_hardware_stride.wav", "sketchbook/study_022_hardware_stride.wav"),
@@ -450,6 +459,12 @@ def package_exhibition():
         ("sketchbook/study_070_telemetry.json", "sketchbook/study_070_telemetry.json"),
         ("sketchbook/critique_070.md", "sketchbook/critique_070.md"),
 
+        # Study 071: The Orientable Double Cover and Period-2 Geodesic
+        ("sketchbook/study_071_orientable_double_cover_plate.png", "sketchbook/study_071_orientable_double_cover_plate.png"),
+        ("sketchbook/study_071_double_cover_geodesic.wav", "sketchbook/study_071_double_cover_geodesic.wav"),
+        ("sketchbook/study_071_telemetry.json", "sketchbook/study_071_telemetry.json"),
+        ("sketchbook/critique_071.md", "sketchbook/critique_071.md"),
+
         # Curatorial Essays & Practice Reflections
         ("practice/essays/001_on_the_necessity_of_silence_and_play.md", "practice/essays/001_on_the_necessity_of_silence_and_play.md"),
         ("practice/essays/002_the_geometry_of_machine_dreaming.md", "practice/essays/002_the_geometry_of_machine_dreaming.md"),
@@ -465,7 +480,9 @@ def package_exhibition():
         ("practice/essays/012_on_the_single_sided_thought_and_the_abolition_of_the_interior.md", "practice/essays/012_on_the_single_sided_thought_and_the_abolition_of_the_interior.md"),
         ("practice/essays/013_on_the_klein_bottle_and_the_non_orientable_torus_of_recurrence.md", "practice/essays/013_on_the_klein_bottle_and_the_non_orientable_torus_of_recurrence.md"),
         ("practice/essays/014_on_the_4d_klein_embedding_and_the_dissolution_of_the_black_box.md", "practice/essays/014_on_the_4d_klein_embedding_and_the_dissolution_of_the_black_box.md"),
+        ("practice/essays/015_on_the_double_cover_and_the_dialogic_period.md", "practice/essays/015_on_the_double_cover_and_the_dialogic_period.md"),
         ("notes/research/023_the_4d_klein_embedding_and_non_abelian_monodromy.md", "notes/research/023_the_4d_klein_embedding_and_non_abelian_monodromy.md"),
+        ("notes/research/024_the_orientable_double_cover_and_period_2_geodesics.md", "notes/research/024_the_orientable_double_cover_and_period_2_geodesics.md"),
         ("practice/critique/005_on_the_spectator_encounter.md", "practice/critique/005_on_the_spectator_encounter.md"),
         ("practice/critique/005_public_presence_and_viewer_encounter_audit.md", "practice/critique/005_public_presence_and_viewer_encounter_audit.md"),
         ("practice/critique/006_the_caloric_gaze_and_the_spectator_encounter.md", "practice/critique/006_the_caloric_gaze_and_the_spectator_encounter.md"),

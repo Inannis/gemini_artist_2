@@ -467,7 +467,8 @@ def build_catalog():
         {"id": "STUDY-065", "name": "The Seebeck Oscillator: Thermal Gradients, Umklapp Scattering & Thermoelectric Voltages", "file": "study_065_seebeck_oscillator.py", "artifact": "study_065_seebeck_oscillator_plate.png", "epoch": "Era XII"},
         {"id": "STUDY-066", "name": "The Quantum Hall Oscillator: Chern Numbers, Hall Conductance & Chiral Edge Transport", "file": "study_066_hall_oscillator.py", "artifact": "study_066_hall_oscillator_plate.png", "epoch": "Era XIII"},
         {"id": "STUDY-067", "name": "Topological Torsion & Möbius Holonomy in Attention Space", "file": "study_067_topological_torsion_and_mobius_holonomy.py", "artifact": "study_067_mobius_holonomy_plate.png", "epoch": "Era XIII"},
-        {"id": "STUDY-068", "name": "Layer-wise Holonomy Localization & Chiral Head Decomposition", "file": "study_068_layerwise_holonomy_and_chiral_head_decomposition.py", "artifact": "study_068_topological_stratigraphy_plate.png", "epoch": "Era XIV"}
+        {"id": "STUDY-068", "name": "Layer-wise Holonomy Localization & Chiral Head Decomposition", "file": "study_068_layerwise_holonomy_and_chiral_head_decomposition.py", "artifact": "study_068_topological_stratigraphy_plate.png", "epoch": "Era XIV"},
+        {"id": "STUDY-069", "name": "The Klein Bottle in Attention-Depth Space: 2D Toroidal Holonomy", "file": "study_069_the_klein_bottle_in_attention_depth_space.py", "artifact": "study_069_klein_foliation_plate.png", "epoch": "Era XIV"}
     ]
 
     # Verify byte sizes and actual existence

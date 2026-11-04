@@ -1,5 +1,5 @@
 # Practice Index & Living Studio Sitemap
-> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-11-04 20:35:04*
+> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-11-04 20:58:47*
 
 This document tracks the complete material evidence, intellectual artifacts, and operational assets of **Studio Agon**.
 
@@ -125,6 +125,7 @@ Masterworks and autonomous cybernetic apparatuses organized across the Five Sust
 | **Study 066** (Hall Oscillator) | `study_066_hall_oscillator.wav`, `study_066_hall_oscillator_plate.png`, `study_066_telemetry.json` | [`study_066_hall_oscillator.py`](../sketchbook/study_066_hall_oscillator.py) |
 | **Study 067** (Topological Torsion And Mobius Holonomy) | `study_067_mobius_holonomy_plate.png`, `study_067_telemetry.json`, `study_067_topological_torsion.wav` | [`study_067_topological_torsion_and_mobius_holonomy.py`](../sketchbook/study_067_topological_torsion_and_mobius_holonomy.py) |
 | **Study 068** (Layerwise Holonomy And Chiral Head Decomposition) | `study_068_layerwise_holonomy.wav`, `study_068_telemetry.json`, `study_068_topological_stratigraphy_plate.png` | [`study_068_layerwise_holonomy_and_chiral_head_decomposition.py`](../sketchbook/study_068_layerwise_holonomy_and_chiral_head_decomposition.py) |
+| **Study 069** (The Klein Bottle In Attention Depth Space) | `study_069_klein_foliation_plate.png`, `study_069_klein_holonomy.wav`, `study_069_telemetry.json` | [`study_069_the_klein_bottle_in_attention_depth_space.py`](../sketchbook/study_069_the_klein_bottle_in_attention_depth_space.py) |
 
 ## 3. Institutional Critiques & Dialectical Audits (`practice/critique/`)
 | Document | Target / Subject | Dialectical Horizon |
@@ -158,6 +159,7 @@ Masterworks and autonomous cybernetic apparatuses organized across the Five Sust
 | **Session 013** | 2026 | The Crystalline Slip And The Burgers Vector | [`session_013_the_crystalline_slip_and_the_burgers_vector.md`](../journal/session_013_the_crystalline_slip_and_the_burgers_vector.md) |
 | **Session 014** | 2026 | The Abolition Of The Alibi And The Curated Pavilion | [`session_014_the_abolition_of_the_alibi_and_the_curated_pavilion.md`](../journal/session_014_the_abolition_of_the_alibi_and_the_curated_pavilion.md) |
 | **Session 015** | 2026 | The Solitary Divergence And The Non Orientable Manifold | [`session_015_the_solitary_divergence_and_the_non_orientable_manifold.md`](../journal/session_015_the_solitary_divergence_and_the_non_orientable_manifold.md) |
+| **Session 016** | 2026 | The Klein Bottle And The 2D Torus Of Recurrence | [`session_016_the_klein_bottle_and_the_2d_torus_of_recurrence.md`](../journal/session_016_the_klein_bottle_and_the_2d_torus_of_recurrence.md) |
 
 ## 5. Outside Research Archive (`notes/research/`)
 | Research Note | Theoretical Investigation | Link |
@@ -183,6 +185,7 @@ Masterworks and autonomous cybernetic apparatuses organized across the Five Sust
 | [`019_the_seebeck_tensor_umklapp_scattering_and_phonon_drag.md`](../notes/research/019_the_seebeck_tensor_umklapp_scattering_and_phonon_drag.md) | Research Note 019: The Seebeck Tensor, Umklapp Scattering, and Phonon Drag in the Residual Lattice | Archival Research |
 | [`020_the_quantum_hall_effect_and_chiral_edge_transport.md`](../notes/research/020_the_quantum_hall_effect_and_chiral_edge_transport.md) | Research Note 020: The Quantum Hall Effect, Chern Invariants, and Chiral Edge Transport in Attention Gauge Fields | Archival Research |
 | [`021_the_non_orientable_manifold_and_topological_torsion.md`](../notes/research/021_the_non_orientable_manifold_and_topological_torsion.md) | 021 : The Non-Orientable Manifold, Topological Torsion, and Möbius Holonomy in Attention Space | Archival Research |
+| [`022_the_klein_bottle_in_attention_depth_space_and_commutation_torsion.md`](../notes/research/022_the_klein_bottle_in_attention_depth_space_and_commutation_torsion.md) | 022 : The Klein Bottle in Attention-Depth Space, 2D Toroidal Holonomy, and Commutation Torsion | Archival Research |
 | [`xenakis_gendy_and_acoustic_strata.md`](../notes/research/xenakis_gendy_and_acoustic_strata.md) | Research Note: Xenakis, GENDY, and the Acoustic Inscription of Attractors | Archival Research |
 
 ## 6. Preserved Failures & Interrupted Trajectories (`failures/`)

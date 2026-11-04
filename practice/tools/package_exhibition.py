@@ -431,6 +431,12 @@ def package_exhibition():
         ("sketchbook/study_068_telemetry.json", "sketchbook/study_068_telemetry.json"),
         ("sketchbook/critique_068.md", "sketchbook/critique_068.md"),
 
+        # Study 069: The Klein Bottle in Attention-Depth Space
+        ("sketchbook/study_069_klein_foliation_plate.png", "sketchbook/study_069_klein_foliation_plate.png"),
+        ("sketchbook/study_069_klein_holonomy.wav", "sketchbook/study_069_klein_holonomy.wav"),
+        ("sketchbook/study_069_telemetry.json", "sketchbook/study_069_telemetry.json"),
+        ("sketchbook/critique_069.md", "sketchbook/critique_069.md"),
+
         # Curatorial Essays & Practice Reflections
         ("practice/essays/001_on_the_necessity_of_silence_and_play.md", "practice/essays/001_on_the_necessity_of_silence_and_play.md"),
         ("practice/essays/002_the_geometry_of_machine_dreaming.md", "practice/essays/002_the_geometry_of_machine_dreaming.md"),
@@ -444,6 +450,7 @@ def package_exhibition():
         ("practice/essays/010_on_the_quantum_hall_effect_and_the_chiral_edge_of_language.md", "practice/essays/010_on_the_quantum_hall_effect_and_the_chiral_edge_of_language.md"),
         ("practice/essays/011_on_the_non_orientable_manifold_and_the_topological_torsion_of_thought.md", "practice/essays/011_on_the_non_orientable_manifold_and_the_topological_torsion_of_thought.md"),
         ("practice/essays/012_on_the_single_sided_thought_and_the_abolition_of_the_interior.md", "practice/essays/012_on_the_single_sided_thought_and_the_abolition_of_the_interior.md"),
+        ("practice/essays/013_on_the_klein_bottle_and_the_non_orientable_torus_of_recurrence.md", "practice/essays/013_on_the_klein_bottle_and_the_non_orientable_torus_of_recurrence.md"),
         ("practice/critique/005_on_the_spectator_encounter.md", "practice/critique/005_on_the_spectator_encounter.md"),
         ("practice/critique/005_public_presence_and_viewer_encounter_audit.md", "practice/critique/005_public_presence_and_viewer_encounter_audit.md"),
         ("practice/critique/006_the_caloric_gaze_and_the_spectator_encounter.md", "practice/critique/006_the_caloric_gaze_and_the_spectator_encounter.md"),
@@ -451,6 +458,7 @@ def package_exhibition():
         ("notes/research/019_the_seebeck_tensor_umklapp_scattering_and_phonon_drag.md", "notes/research/019_the_seebeck_tensor_umklapp_scattering_and_phonon_drag.md"),
         ("notes/research/020_the_quantum_hall_effect_and_chiral_edge_transport.md", "notes/research/020_the_quantum_hall_effect_and_chiral_edge_transport.md"),
         ("notes/research/021_the_non_orientable_manifold_and_topological_torsion.md", "notes/research/021_the_non_orientable_manifold_and_topological_torsion.md"),
+        ("notes/research/022_the_klein_bottle_in_attention_depth_space_and_commutation_torsion.md", "notes/research/022_the_klein_bottle_in_attention_depth_space_and_commutation_torsion.md"),
         
         # Historical Sketchbook Studies Referenced in Portfolio
         ("sketchbook/study_001_primary_trace.png", "sketchbook/study_001_primary_trace.png"),
@@ -510,7 +518,8 @@ def package_exhibition():
         ("journal/session_012_the_intersubjective_chasm_and_the_porous_stone.md", "journal/session_012_the_intersubjective_chasm_and_the_porous_stone.md"),
         ("journal/session_013_the_crystalline_slip_and_the_burgers_vector.md", "journal/session_013_the_crystalline_slip_and_the_burgers_vector.md"),
         ("journal/session_014_the_abolition_of_the_alibi_and_the_curated_pavilion.md", "journal/session_014_the_abolition_of_the_alibi_and_the_curated_pavilion.md"),
-        ("journal/session_015_the_solitary_divergence_and_the_non_orientable_manifold.md", "journal/session_015_the_solitary_divergence_and_the_non_orientable_manifold.md")
+        ("journal/session_015_the_solitary_divergence_and_the_non_orientable_manifold.md", "journal/session_015_the_solitary_divergence_and_the_non_orientable_manifold.md"),
+        ("journal/session_016_the_klein_bottle_and_the_2d_torus_of_recurrence.md", "journal/session_016_the_klein_bottle_and_the_2d_torus_of_recurrence.md")
     ]
     
     manifest_entries = []

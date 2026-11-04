@@ -318,7 +318,7 @@ This document constitutes the official historical ledger, genealogical record, a
 ## II. Sketchbook Studies & Technical Prototypes (`sketchbook/`)
 > **Curatorial Distinction: The Laboratory vs The Sovereign Work**  
 > *(cf. [Artistic-Practice-Definition.md](notes/Artistic-Practice-Definition.md), Principle 16)*  
-> The 68 studies catalogued below represent the studio's exploratory laboratory: micro-probes, falsification tests, sonification drafts, and intermediate studies. They are not to be confused with completed sovereign works; they are the empirical and aesthetic scaffolding that makes the master apparatuses possible.
+> The 69 studies catalogued below represent the studio's exploratory laboratory: micro-probes, falsification tests, sonification drafts, and intermediate studies. They are not to be confused with completed sovereign works; they are the empirical and aesthetic scaffolding that makes the master apparatuses possible.
 
 | ID | Title | Epoch | Generator Script | Primary Artifact | Size | Verified |
 |---|---|---|---|---|---|---|
@@ -390,6 +390,7 @@ This document constitutes the official historical ledger, genealogical record, a
 | **STUDY-066** | The Quantum Hall Oscillator: Chern Numbers, Hall Conductance & Chiral Edge Transport | Era XIII | [`study_066_hall_oscillator.py`](sketchbook/study_066_hall_oscillator.py) | `study_066_hall_oscillator_plate.png` | 1296.9 KB | **OK** |
 | **STUDY-067** | Topological Torsion & Möbius Holonomy in Attention Space | Era XIII | [`study_067_topological_torsion_and_mobius_holonomy.py`](sketchbook/study_067_topological_torsion_and_mobius_holonomy.py) | `study_067_mobius_holonomy_plate.png` | 866.6 KB | **OK** |
 | **STUDY-068** | Layer-wise Holonomy Localization & Chiral Head Decomposition | Era XIV | [`study_068_layerwise_holonomy_and_chiral_head_decomposition.py`](sketchbook/study_068_layerwise_holonomy_and_chiral_head_decomposition.py) | `study_068_topological_stratigraphy_plate.png` | 1218.7 KB | **OK** |
+| **STUDY-069** | The Klein Bottle in Attention-Depth Space: 2D Toroidal Holonomy | Era XIV | [`study_069_the_klein_bottle_in_attention_depth_space.py`](sketchbook/study_069_the_klein_bottle_in_attention_depth_space.py) | `study_069_klein_foliation_plate.png` | 2124.9 KB | **OK** |
 
 ---
 

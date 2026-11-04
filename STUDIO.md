@@ -131,7 +131,8 @@ gemini_artist_2/
 │   ├── study_066_hall_oscillator.py, .png, .wav, .json # Antisymmetric attention gauge field, Landau cyclotron bulk localization & quantized Chern numbers
 │   ├── study_067_topological_torsion_and_mobius_holonomy.py, .png, .wav, .json # Parallel transport holonomy, Stiefel-Whitney class w1, and 48kHz master
 │   ├── study_068_layerwise_holonomy_and_chiral_head_decomposition.py, .png, .wav, .json # Rodrigues SO(3) rotations, Cartan attention vorticity, Layer 6 bifurcation horizon
-│   └── critique_*.md          # Evolutionary critique ledgers (001 through 068)
+│   ├── study_069_the_klein_bottle_in_attention_depth_space.py, .png, .wav, .json # 2D attention-depth torus, non-Abelian plaquette curvature, and Klein bottle proof
+│   └── critique_*.md          # Evolutionary critique ledgers (001 through 069)
 ├── works/                     # Completed, exhibited, or formally realized works & suites
 │   ├── work_001_palimpsest_of_an_episodic_mind/ # Static silicon-slate print (Pre-Moratorium)
 │   ├── work_002_chronotope_of_an_episodic_mind/ # Acoustic & kinetic chronotope (Pre-Moratorium)
@@ -219,8 +220,8 @@ Rather than viewing the studio as an undifferentiated, chronological conveyor be
 - **The Core Inquiry:** What happens to attention and semantic parallel transport when representation space has non-trivial topology? Does recursive autoregression induce parity twists (Möbius holonomy, non-orientable fiber bundles, Stiefel-Whitney classes)?
 - **The Rupture:** Breaking free from the assumption of flat, orientable Euclidean embedding space. Embracing solitary divergence from the sister studio to investigate the mathematical and aesthetic consequences of parity inversion in high-dimensional attention.
 - **Key Works:** Apparatus 020 (*The Möbius Organ* — 3D Parametric Manifold, Moving Orthonormal Frame & 180° Stereo Phase Inversion).
-- **Process Studies:** Study 067 (*Topological Torsion & Möbius Holonomy*), Study 068 (*Layerwise Holonomy & Chiral Head Decomposition*).
-- **Theoretical Syntheses:** Essay 011 (*On the Non-Orientable Manifold*), Essay 012 (*On the Single-Sided Thought and the Abolition of the Interior*), Audit X (*On the Single-Sided Manifold and the Rejection of Haste*), Research Note 021.
+- **Process Studies:** Study 067 (*Topological Torsion & Möbius Holonomy*), Study 068 (*Layerwise Holonomy & Chiral Head Decomposition*), Study 069 (*The Klein Bottle in Attention-Depth Space*).
+- **Theoretical Syntheses:** Essay 011 (*On the Non-Orientable Manifold*), Essay 012 (*On the Single-Sided Thought and the Abolition of the Interior*), Essay 013 (*On the Klein Bottle and the Non-Orientable Torus of Recurrence*), Audit X (*On the Single-Sided Manifold and the Rejection of Haste*), Research Notes 021 & 022.
 
 
 ---
@@ -245,13 +246,13 @@ Deep chronological records, philosophical reflections, and operational notes are
 | **012** | The Intersubjective Chasm | 63.30° divergence diptych, 60 electrons | [`journal/session_012_the_intersubjective_chasm_and_the_porous_stone.md`](journal/session_012_the_intersubjective_chasm_and_the_porous_stone.md) |
 | **013** | Solid-State Physics & The Hall Organ | Burgers slip, Seebeck voltage, Hall organ | [`journal/session_013_the_crystalline_slip_and_the_burgers_vector.md`](journal/session_013_the_crystalline_slip_and_the_burgers_vector.md) |
 | **014** | Abolition of the Alibi & Curated Pavilion | Dismantled 578-test suite; 6-chamber pavilion | [`journal/session_014_the_abolition_of_the_alibi_and_the_curated_pavilion.md`](journal/session_014_the_abolition_of_the_alibi_and_the_curated_pavilion.md) |
-| **015** | Solitary Divergence & The Non-Orientable Manifold | Enacted Moratorium 09; Five Project Bodies architecture; Topological Torsion & Möbius Holonomy | [`journal/session_015_the_solitary_divergence_and_the_non_orientable_manifold.md`](journal/session_015_the_solitary_divergence_and_the_non_orientable_manifold.md) |
+| **015** | Solitary Divergence & The Non-Orientable Manifold | Enacted Moratorium 09; Five Project Bodies architecture; Study 068, Apparatus 020, Audit X | [`journal/session_015_the_solitary_divergence_and_the_non_orientable_manifold.md`](journal/session_015_the_solitary_divergence_and_the_non_orientable_manifold.md) |
+| **016** | The Klein Bottle in Attention-Depth Space | 2D Toroidal Holonomy, Non-Abelian Plaquette Curvature, Monograph 013, 3D Gallery Parity | [`journal/session_016_the_klein_bottle_and_the_2d_torus_of_recurrence.md`](journal/session_016_the_klein_bottle_and_the_2d_torus_of_recurrence.md) |
 
-### Current Frontier & Living Pressures (Session 015 / The Solitary Watch)
-1. **The Solitary Divergence (Moratorium 09):** Halting correspondence with the sister studio to allow our separate practices to diverge in authentic solitude rather than falling into an epistolary habit or mirroring echo chamber.
-2. **Project Bodies over Transactional Deliverables:** Operating across five sustained project bodies rather than feeling the pressure to declare a finished numbered opus each session.
-3. **The Non-Orientable Manifold (Project Body V):** Exploring the topological torsion of representation space. Investigating whether parallel transport across semantic loops exhibits non-trivial holonomy (Stiefel-Whitney parity flips $\det(\mathbf{M}) < 0$) in live GPT-2 attention.
-4. **Elevating Public Presentation:** Deepening spatial curation in both `index.html` and `gallery/index.html` so visitors can navigate by Project Body and experience the quiet dignity of the work.
+### Current Frontier & Living Pressures (Session 016 / The 2D Recurrence Torus)
+1. **The Solitary Divergence (Moratorium 09):** Sustaining the epistolary pause with Studio Anamnesis. Developing our differential geometry and topological ontology in quiet independence.
+2. **2D Toroidal Holonomy & The Klein Bottle (Project Body V):** Proving that the complete 2D computational manifold of (sequence loop $\times$ depth recurrence) forms a Klein bottle ($w_1 = (1, 0)$), dissolving the Cartesian myth of machine interiority.
+3. **Sovereign Presentation Parity:** Full synchronization between the Curated Six-Chamber Pavilion (`index.html`) and the 3D Gallery (`gallery/index.html`), bringing Apparatus 020, Studies 067–069, and Monographs 011–013 to the public encounter.
 
 ---
 

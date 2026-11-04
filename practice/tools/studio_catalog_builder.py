@@ -380,6 +380,21 @@ def build_catalog():
             "status": "Master Archived (Interactive Quantum Hall Organ)",
             "statement_summary": "An interactive cybernetic instrument staging the Quantum Hall Effect and topological Chern invariants in multi-head causal attention (Hall, von Klitzing, Thouless/TKNN, Barthes). When the antisymmetric attention magnetic field induces bulk Landau level localization, intermediate tokens become an absolute electronic insulator (sigma_xx = 0). Information transport occurs exclusively along gapless chiral edge modes, skipping between Token 0 and the generation horizon without back-scattering.",
             "components": ["engine.py", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json", "apparatus_019_hall_master.wav", "apparatus_019_spectrogram.png"]
+        },
+        {
+            "id": "APPARATUS-020",
+            "title": "The Möbius Organ (The Non-Orientable Manifold & Tangent Holonomy Engine)",
+            "epoch": "Era XIV (The Non-Orientable Manifold & Solitary Divergence)",
+            "date": "2026-11-04",
+            "medium": "Interactive 60 FPS HTML5 Canvas 3D Manifold, Real-Time WebAudio Möbius Spatializer, 48kHz 24-bit Broadcast Master Audio (apparatus_020_mobius_master.wav), and Archival Dual-Channel Spectrogram Plate",
+            "directory": "works/apparatus_020_the_mobius_organ",
+            "primary_artifact": "index.html",
+            "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument",
+            "sha256": "NON-STATIC RUNNING INSTRUMENT",
+            "symbolic_coordinates": {"omega_hegemony": 0.052, "entropy_bits": 7.68, "retention_factor": 0.99},
+            "status": "Master Archived (Interactive Non-Orientable Organ)",
+            "statement_summary": "An interactive cybernetic instrument staging non-orientable manifolds and tangent bundle holonomy in transformer attention (Max Bill, Lygia Clark, Lacan). Spectators steer tangent-normal frames across a parametric 3D Möbius strip, witnessing the normal vector invert upside-down at the 180° bifurcation horizon. Accompanied by a bilateral WebAudio spatializer that physically inverts acoustic phase by 180° upon crossing into negative parity.",
+            "components": ["engine.py", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json", "apparatus_020_mobius_master.wav", "apparatus_020_spectrogram.png"]
         }
     ]
 
@@ -451,7 +466,8 @@ def build_catalog():
         {"id": "STUDY-064", "name": "The Phonetic Crystal Dislocation: Burgers Vectors & Slip Systems", "file": "study_064_crystal_dislocation.py", "artifact": "study_064_crystal_dislocation_plate.png", "epoch": "Era XII"},
         {"id": "STUDY-065", "name": "The Seebeck Oscillator: Thermal Gradients, Umklapp Scattering & Thermoelectric Voltages", "file": "study_065_seebeck_oscillator.py", "artifact": "study_065_seebeck_oscillator_plate.png", "epoch": "Era XII"},
         {"id": "STUDY-066", "name": "The Quantum Hall Oscillator: Chern Numbers, Hall Conductance & Chiral Edge Transport", "file": "study_066_hall_oscillator.py", "artifact": "study_066_hall_oscillator_plate.png", "epoch": "Era XIII"},
-        {"id": "STUDY-067", "name": "Topological Torsion & Möbius Holonomy in Attention Space", "file": "study_067_topological_torsion_and_mobius_holonomy.py", "artifact": "study_067_mobius_holonomy_plate.png", "epoch": "Era XIII"}
+        {"id": "STUDY-067", "name": "Topological Torsion & Möbius Holonomy in Attention Space", "file": "study_067_topological_torsion_and_mobius_holonomy.py", "artifact": "study_067_mobius_holonomy_plate.png", "epoch": "Era XIII"},
+        {"id": "STUDY-068", "name": "Layer-wise Holonomy Localization & Chiral Head Decomposition", "file": "study_068_layerwise_holonomy_and_chiral_head_decomposition.py", "artifact": "study_068_topological_stratigraphy_plate.png", "epoch": "Era XIV"}
     ]
 
     # Verify byte sizes and actual existence
@@ -583,7 +599,9 @@ def build_catalog():
         "APPARATUS-012": ("Project Body III: Epigenetics of the Artificial (The Intersubjective Chasm) (2026.10)",
                            "*The encounter with the external mirror: the epistolary dialogue with Studio Anamnesis. Staging machine epigenetic divergence, shared latent space drift, non-equilibrium Langevin saddles, and differential weathering.*"),
         "APPARATUS-014": ("Project Body IV: Substrate Materialism & Solid-State Physics (2026.10 – 2026.11)",
-                          "*Excavating the physical wafer beneath the symbolic illusion: telluric earth loops, Landauer thermodynamic heat spreading, Sinai billiards, Czochralski monocrystalline silicon defect physics (Burgers vectors, Cottrell pinning), non-equilibrium Seebeck thermoelectrics, and topological Chern insulators with chiral edge transport.*")
+                          "*Excavating the physical wafer beneath the symbolic illusion: telluric earth loops, Landauer thermodynamic heat spreading, Sinai billiards, Czochralski monocrystalline silicon defect physics (Burgers vectors, Cottrell pinning), non-equilibrium Seebeck thermoelectrics, and topological Chern insulators with chiral edge transport.*"),
+        "APPARATUS-020": ("Project Body V: The Non-Orientable Manifold & Topological Torsion (2026.11 – Present · Active Flagship)",
+                          "*Parallel transport in multi-head attention, tangent bundle holonomy, Stiefel-Whitney parity flips, and the solitary divergence from epistolary consensus.*")
     }
 
     for w in works:
@@ -603,11 +621,6 @@ def build_catalog():
         md_lines.append(f"- **Symbolic Coordinates:** $\\Omega={w['symbolic_coordinates']['omega_hegemony']}$, $H={w['symbolic_coordinates']['entropy_bits']}$ bits, $\\mu={w['symbolic_coordinates']['retention_factor']}")
         md_lines.append(f"- **Institutional Status:** **{w['status']}**")
         md_lines.append(f"- **Curatorial Rationale:** {w['statement_summary']}\n")
-
-    md_lines.append("### Project Body V: The Non-Orientable Manifold & Topological Torsion (2026.11 – Present · Active Easel)")
-    md_lines.append("*Parallel transport in multi-head attention, tangent bundle holonomy, Stiefel-Whitney parity flips, and the solitary divergence from epistolary consensus.*")
-    md_lines.append("- **Active Inquiries:** Study 067 (`study_067_topological_torsion_and_mobius_holonomy.py`), Research Note 021, Curatorial Essay 011.")
-    md_lines.append("- **Material Focus:** Möbius holonomy in 768-dimensional residual streams, zero-boundary non-orientable topology, 48kHz 24-bit acoustic broadcast master, Moratorium 07 mute intaglio plate.\n")
 
     md_lines.append("---\n")
     md_lines.append("## II. Sketchbook Studies & Technical Prototypes (`sketchbook/`)")

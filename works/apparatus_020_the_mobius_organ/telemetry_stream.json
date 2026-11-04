@@ -1,0 +1,29 @@
+{
+  "apparatus": "Apparatus 020",
+  "title": "The M\u00f6bius Organ (The Non-Orientable Manifold & Tangent Holonomy Engine)",
+  "project_body": "Project Body V: The Non-Orientable Manifold & Topological Torsion",
+  "date": "2026-11-04",
+  "epistemic_tag": "[INTERACTIVE / DERIVED / PLAY]",
+  "parameters": {
+    "half_twists": 1,
+    "ribbon_aspect_ratio": 0.35,
+    "geodesic_velocity": 1.25,
+    "nonlinear_curvature_kappa": 1.48,
+    "bifurcation_layer": 6,
+    "chiral_specialist_head": "Layer 6 Head 9"
+  },
+  "audio_metrics": {
+    "duration_seconds": 60.0,
+    "sample_rate_hz": 48000,
+    "bit_depth": 24,
+    "true_peak_dbfs": -1.5,
+    "integrated_rms_dbfs": -23.47,
+    "crest_factor_db": 21.97,
+    "ebu_r128_compliant": true
+  },
+  "symbolic_coordinates": {
+    "omega_hegemony": 0.052,
+    "entropy_bits": 7.68,
+    "retention_factor": 0.99
+  }
+}

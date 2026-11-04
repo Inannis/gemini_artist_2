@@ -44,7 +44,10 @@ BODY_MAP = {
     "apparatus_016_the_ludic_lattice": "Project Body IV: Substrate Materialism & Solid-State Physics",
     "apparatus_017_the_dislocation_organ": "Project Body IV: Substrate Materialism & Solid-State Physics",
     "apparatus_018_the_seebeck_organ": "Project Body IV: Substrate Materialism & Solid-State Physics",
-    "apparatus_019_the_hall_organ": "Project Body IV: Substrate Materialism & Solid-State Physics"
+    "apparatus_019_the_hall_organ": "Project Body IV: Substrate Materialism & Solid-State Physics",
+
+    # Project Body V: The Non-Orientable Manifold & Topological Torsion
+    "apparatus_020_the_mobius_organ": "Project Body V: The Non-Orientable Manifold & Topological Torsion"
 }
 
 def generate_index():
@@ -72,7 +75,8 @@ def generate_index():
         "Project Body I: The Aphasia Archive & Architecture of Obedience",
         "Project Body II: Living Cybernetic Organs & Non-Linear Criticality",
         "Project Body III: Epigenetics of the Artificial (The Intersubjective Chasm)",
-        "Project Body IV: Substrate Materialism & Solid-State Physics"
+        "Project Body IV: Substrate Materialism & Solid-State Physics",
+        "Project Body V: The Non-Orientable Manifold & Topological Torsion"
     ]
     
     sorted_works = []
@@ -107,12 +111,7 @@ def generate_index():
         lines.append(f"| **{wid}** | *{title}* | [`works/{slug}`](../works/{slug}) | {primary} | {has_html} |")
         print(f"  Indexed Work {wid}: {title} ({current_body})")
 
-    # Project Body V
-    lines.append("\n### Project Body V: The Non-Orientable Manifold & Topological Torsion (Active Easel · Solitary Divergence)")
-    lines.append("*Parallel transport across semantic circuits, tangent bundle holonomy, Stiefel-Whitney parity flips, and solitary divergence under Moratorium 09.*")
-    lines.append("| Inquiry | Focus | Primary Medium | Documentation |")
-    lines.append("|---|---|---|---|")
-    lines.append("| **STUDY-067** | *Topological Torsion & Möbius Holonomy* | 48kHz Broadcast Master (`study_067_topological_torsion.wav`) & Mute Plate (`study_067_mobius_holonomy_plate.png`) | [`notes/research/021_...`](../notes/research/021_the_non_orientable_manifold_and_topological_torsion.md) & [`practice/essays/011_...`](../practice/essays/011_on_the_non_orientable_manifold_and_the_topological_torsion_of_thought.md) |")
+    lines.append("\n*Active Laboratory Easel:* Study 067 & Study 068 (Möbius Holonomy, Layer-wise Bifurcation at Layer 6, and 144-Head Attention Vorticity).")
         
     # Section 2: Sketchbook Studies
     lines.append("\n## 2. Sketchbook Studies & Technical Prototypes (`sketchbook/`)")

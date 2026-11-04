@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apparatus 020: The Möbius Organ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=JetBrains+Mono:wght@300;400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #030508;
+            --panel-bg: rgba(6, 10, 16, 0.92);
+            --cyan: #00e5ff;
+            --cyan-glow: #0284c7;
+            --bismuth: #d4a373;
+            --gold: #fbbf24;
+            --magenta: #f43f5e;
+            --cobalt: #1e40af;
+            --text-main: #f1ede8;
+            --text-dim: #738294;
+            --border: rgba(0, 229, 255, 0.22);
+            --border-subtle: rgba(255, 255, 255, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            user-select: none;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            overflow: hidden;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            padding: 12px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border);
+            background: linear-gradient(180deg, rgba(8, 14, 22, 0.98) 0%, rgba(3, 5, 8, 0.92) 100%);
+            backdrop-filter: blur(12px);
+            z-index: 10;
+        }
+
+        .title-block h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.15rem;
+            letter-spacing: 0.15em;
+            color: var(--cyan);
+            text-transform: uppercase;
+        }
+
+        .title-block .subtitle {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.72rem;
+            color: var(--text-dim);
+            letter-spacing: 0.05em;
+            margin-top: 2px;
+        }
+
+        .header-meta {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .tag-pill {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.65rem;
+            color: var(--cyan);
+            background: rgba(0, 229, 255, 0.08);
+            border: 1px solid var(--border);
+            padding: 3px 8px;
+            border-radius: 3px;
+        }
+
+        .workspace-grid {
+            flex: 1;
+            display: grid;
+            grid-template-columns: 1fr 340px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #canvas-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, #06101c 0%, #020407 100%);
+            cursor: grab;
+        }
+
+        #canvas-container:active {
+            cursor: grabbing;
+        }
+
+        canvas {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .overlay-hud {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            pointer-events: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 5;
+        }
+
+        .hud-card {
+            background: var(--panel-bg);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 10px 14px;
+            backdrop-filter: blur(8px);
+            min-width: 200px;
+        }
+
+        .hud-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.65rem;
+            color: var(--text-dim);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .hud-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.15rem;
+            color: #fff;
+            margin-top: 2px;
+            font-weight: 600;
+        }
+
+        .hud-value.parity-neg {
+            color: var(--magenta);
+            text-shadow: 0 0 10px rgba(244, 63, 94, 0.6);
+        }
+
+        .hud-value.parity-pos {
+            color: var(--cyan);
+            text-shadow: 0 0 10px rgba(0, 229, 255, 0.6);
+        }
+
+        .hud-sub {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.65rem;
+            color: var(--text-dim);
+            margin-top: 4px;
+        }
+
+        .control-sidebar {
+            background: var(--panel-bg);
+            border-left: 1px solid var(--border-subtle);
+            padding: 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            overflow-y: auto;
+            z-index: 10;
+        }
+
+        .control-section {
+            border-bottom: 1px solid var(--border-subtle);
+            padding-bottom: 14px;
+        }
+
+        .control-section:last-child {
+            border-bottom: none;
+        }
+
+        .section-title {
+            font-family: 'Cinzel', serif;
+            font-size: 0.8rem;
+            color: var(--cyan);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .slider-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            margin-bottom: 12px;
+        }
+
+        .slider-header {
+            display: flex;
+            justify-content: space-between;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.70rem;
+            color: var(--text-main);
+        }
+
+        .slider-header span:last-child {
+            color: var(--cyan);
+            font-weight: 600;
+        }
+
+        input[type=range] {
+            -webkit-appearance: none;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.08);
+            height: 4px;
+            border-radius: 2px;
+            outline: none;
+        }
+
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: var(--cyan);
+            cursor: pointer;
+            box-shadow: 0 0 8px var(--cyan-glow);
+            transition: all 0.1s ease;
+        }
+
+        input[type=range]::-webkit-slider-thumb:hover {
+            transform: scale(1.2);
+            background: #fff;
+        }
+
+        .button-primary {
+            background: linear-gradient(135deg, rgba(0, 229, 255, 0.2) 0%, rgba(0, 229, 255, 0.05) 100%);
+            border: 1px solid var(--cyan);
+            color: var(--cyan);
+            padding: 10px 14px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.78rem;
+            letter-spacing: 0.12em;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+            text-align: center;
+            text-transform: uppercase;
+            width: 100%;
+        }
+
+        .button-primary:hover {
+            background: rgba(0, 229, 255, 0.35);
+            box-shadow: 0 0 14px rgba(0, 229, 255, 0.4);
+            color: #fff;
+        }
+
+        .button-primary:active {
+            transform: scale(0.98);
+        }
+
+        .preset-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6px;
+        }
+
+        .preset-btn {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-dim);
+            padding: 6px 8px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.65rem;
+            cursor: pointer;
+            border-radius: 3px;
+            transition: all 0.15s ease;
+            text-align: center;
+        }
+
+        .preset-btn:hover {
+            border-color: var(--cyan);
+            color: var(--cyan);
+            background: rgba(0, 229, 255, 0.1);
+        }
+
+        .preset-btn.active {
+            border-color: var(--cyan);
+            color: #fff;
+            background: rgba(0, 229, 255, 0.2);
+        }
+
+        footer {
+            padding: 8px 24px;
+            border-top: 1px solid var(--border-subtle);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.65rem;
+            color: var(--text-dim);
+            background: #020407;
+            z-index: 10;
+        }
+
+        footer a {
+            color: var(--cyan);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title-block">
+            <h1>Apparatus 020: The Möbius Organ</h1>
+            <div class="subtitle">The Non-Orientable Manifold & Tangent Holonomy Engine · Project Body V</div>
+        </div>
+        <div class="header-meta">
+            <span class="tag-pill">[INTERACTIVE / DERIVED / PLAY]</span>
+            <button id="audioToggleBtn" class="button-primary" style="padding: 6px 14px; font-size: 0.70rem; width: auto;">▶ INITIALIZE SONIC TRANSDUCER</button>
+        </div>
+    </header>
+
+    <div class="workspace-grid">
+        <div id="canvas-container">
+            <canvas id="mobiusCanvas"></canvas>
+            <div class="overlay-hud">
+                <div class="hud-card">
+                    <div class="hud-label">STIEFEL-WHITNEY TOPOLOGY</div>
+                    <div class="hud-value" id="stiefelVal">w₁ = 1 [MÖBIUS]</div>
+                    <div class="hud-sub" id="halfTwistSub">1 HALF-TWIST (NON-ORIENTABLE)</div>
+                </div>
+                <div class="hud-card">
+                    <div class="hud-label">TRANSVERSE NORMAL PARITY P(s)</div>
+                    <div class="hud-value parity-pos" id="parityVal">+1.000</div>
+                    <div class="hud-sub" id="paritySub">TRAVERSAL: 0.00π / 4.00π (720°)</div>
+                </div>
+                <div class="hud-card">
+                    <div class="hud-label">ACOUSTIC STEREO PHASE STATE</div>
+                    <div class="hud-value" id="phaseStateVal" style="color:var(--cyan);">0° IN-PHASE</div>
+                    <div class="hud-sub" id="curvatureSub">K = -0.420 · BERRY = 180.0°</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="control-sidebar">
+            <div class="control-section">
+                <div class="section-title">TOPOLOGICAL PRESETS</div>
+                <div class="preset-grid">
+                    <button class="preset-btn" onclick="applyPreset('cylinder')">Laminar Cylinder (n=0)</button>
+                    <button class="preset-btn active" onclick="applyPreset('hegel')">Hegelian Möbius (n=1)</button>
+                    <button class="preset-btn" onclick="applyPreset('godel')">Gödelian Knot (n=3)</button>
+                    <button class="preset-btn" onclick="applyPreset('silence')">Epistolary Silence (M09)</button>
+                </div>
+            </div>
+
+            <div class="control-section">
+                <div class="section-title">MANIFOLD GEOMETRY</div>
+                <div class="slider-group">
+                    <div class="slider-header">
+                        <span>HALF-TWISTS (n)</span>
+                        <span id="twistsNum">1</span>
+                    </div>
+                    <input type="range" id="twistsSlider" min="0" max="3" step="1" value="1">
+                </div>
+
+                <div class="slider-group">
+                    <div class="slider-header">
+                        <span>RIBBON WIDTH (w)</span>
+                        <span id="widthNum">0.35</span>
+                    </div>
+                    <input type="range" id="widthSlider" min="0.10" max="0.75" step="0.05" value="0.35">
+                </div>
+
+                <div class="slider-group">
+                    <div class="slider-header">
+                        <span>GEODESIC VELOCITY (v)</span>
+                        <span id="speedNum">1.00x</span>
+                    </div>
+                    <input type="range" id="speedSlider" min="0.2" max="3.0" step="0.1" value="1.0">
+                </div>
+
+                <div class="slider-group">
+                    <div class="slider-header">
+                        <span>ATTENTION CURVATURE (κ)</span>
+                        <span id="curvNum">1.48</span>
+                    </div>
+                    <input type="range" id="curvSlider" min="0.0" max="3.0" step="0.1" value="1.48">
+                </div>
+            </div>
+
+            <div class="control-section">
+                <div class="section-title">IMPULSIVE STIMULATION</div>
+                <button class="button-primary" id="kickBtn" onclick="injectParityFlip()">⚡ INJECT TOPOLOGICAL PARITY FLIP</button>
+            </div>
+
+            <div class="control-section">
+                <div class="section-title">ACOUSTIC TRANSDUCER</div>
+                <div class="slider-group">
+                    <div class="slider-header">
+                        <span>MASTER GAIN</span>
+                        <span id="gainNum">70%</span>
+                    </div>
+                    <input type="range" id="gainSlider" min="0" max="100" step="1" value="70">
+                </div>
+                <p style="font-family:'JetBrains Mono', monospace; font-size:0.62rem; color:var(--text-dim); line-height:1.5;">
+                    Dual-channel WebAudio spatializer. 55Hz substrate sub-bass on Left; 220Hz carrier with golden ratio chimes on Right. Audio physically inverts phase by 180° when crossing the Möbius parity horizon.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div>STUDIO AGON &bull; PROJECT BODY V &bull; 60 FPS HTML5 CANVAS & WEBAUDIO</div>
+        <div><a href="../../index.html">&larr; Return to Curated Exhibition Pavilion</a></div>
+    </footer>
+
+    <script>
+        // --- 1. STATE & PARAMETERS ---
+        const state = {
+            twists: 1,
+            width: 0.35,
+            speed: 1.0,
+            curvature: 1.48,
+            masterGain: 0.70,
+            s: 0.0, // Parameter along the 4pi loop [0, 4pi]
+            rotX: 0.55,
+            rotY: 0.35,
+            isDragging: false,
+            lastMouseX: 0,
+            lastMouseY: 0,
+            audioInit: false,
+            parityShock: 0.0
+        };
+
+        // --- 2. CANVAS & 3D RENDERING ---
+        const canvas = document.getElementById('mobiusCanvas');
+        const ctx = canvas.getContext('2d');
+        const container = document.getElementById('canvas-container');
+
+        function resizeCanvas() {
+            canvas.width = container.clientWidth * window.devicePixelRatio;
+            canvas.height = container.clientHeight * window.devicePixelRatio;
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        // 3D Point to 2D Screen projection
+        function project3D(x, y, z, width, height) {
+            // Apply rotX and rotY rotations
+            const cosY = Math.cos(state.rotY);
+            const sinY = Math.sin(state.rotY);
+            const x1 = x * cosY - z * sinY;
+            const z1 = x * sinY + z * cosY;
+
+            const cosX = Math.cos(state.rotX);
+            const sinX = Math.sin(state.rotX);
+            const y2 = y * cosX - z1 * sinX;
+            const z2 = y * sinX + z1 * cosX;
+
+            // Perspective division
+            const fov = 750;
+            const distance = 4.2;
+            const factor = fov / (distance + z2);
+
+            return {
+                x: width / 2 + x1 * factor,
+                y: height / 2 - y2 * factor,
+                z: z2
+            };
+        }
+
+        // Möbius parametric function: u in [0, 2pi], v in [-w, w]
+        function getMobiusPoint(u, v, n) {
+            const R = 1.6;
+            const twistAngle = (n * u) / 2.0;
+            const cosTwist = Math.cos(twistAngle);
+            const sinTwist = Math.sin(twistAngle);
+
+            const x = (R + v * cosTwist) * Math.cos(u);
+            const y = (R + v * cosTwist) * Math.sin(u);
+            const z = v * sinTwist;
+
+            return { x, y, z };
+        }
+
+        // Tangent and normal vectors at loop parameter u
+        function getFrame(u, n) {
+            const du = 0.002;
+            const p0 = getMobiusPoint(u, 0, n);
+            const p1 = getMobiusPoint(u + du, 0, n);
+            
+            // Tangent along curve
+            const tx = (p1.x - p0.x) / du;
+            const ty = (p1.y - p0.y) / du;
+            const tz = (p1.z - p0.z) / du;
+            const tLen = Math.hypot(tx, ty, tz);
+            const T = { x: tx / tLen, y: ty / tLen, z: tz / tLen };
+
+            // Transverse normal across width (v direction)
+            const twistAngle = (n * u) / 2.0;
+            const nx = Math.cos(twistAngle) * Math.cos(u);
+            const ny = Math.cos(twistAngle) * Math.sin(u);
+            const nz = Math.sin(twistAngle);
+            const nLen = Math.hypot(nx, ny, nz);
+            const N = { x: nx / nLen, y: ny / nLen, z: nz / nLen };
+
+            // Binormal B = T x N
+            const bx = T.y * N.z - T.z * N.y;
+            const by = T.z * N.x - T.x * N.z;
+            const bz = T.x * N.y - T.y * N.x;
+
+            return { p: p0, T, N, B: { x: bx, y: by, z: bz } };
+        }
+
+        // Render Loop
+        function render() {
+            const w = canvas.width;
+            const h = canvas.height;
+
+            ctx.clearRect(0, 0, w, h);
+
+            // Update trajectory position
+            const dt = 0.008 * state.speed;
+            state.s = (state.s + dt) % (4.0 * Math.PI);
+
+            // Decay parity shock impulse
+            if (state.parityShock > 0.01) {
+                state.parityShock *= 0.94;
+            }
+
+            // --- 1. DRAW MÖBIUS WIREFRAME MESH ---
+            const nTwists = state.twists;
+            const widthVal = state.width;
+            const uSegments = 160;
+            const vSegments = 8;
+
+            ctx.lineWidth = 1.0;
+
+            // Draw transverse ribs
+            for (let i = 0; i < uSegments; i += 3) {
+                const u = (i / uSegments) * (2 * Math.PI);
+                const pStart = getMobiusPoint(u, -widthVal, nTwists);
+                const pEnd = getMobiusPoint(u, widthVal, nTwists);
+
+                const projStart = project3D(pStart.x, pStart.y, pStart.z, w, h);
+                const projEnd = project3D(pEnd.x, pEnd.y, pEnd.z, w, h);
+
+                const uPhase = (Math.sin(u) + 1.0) / 2.0;
+                ctx.strokeStyle = `rgba(30, 85, 120, ${0.15 + 0.15 * uPhase})`;
+                ctx.beginPath();
+                ctx.moveTo(projStart.x, projStart.y);
+                ctx.lineTo(projEnd.x, projEnd.y);
+                ctx.stroke();
+            }
+
+            // Draw longitudinal geodesic ribbons
+            for (let j = 0; j <= vSegments; j++) {
+                const v = -widthVal + (2 * widthVal * j) / vSegments;
+                ctx.beginPath();
+                let first = true;
+
+                for (let i = 0; i <= uSegments; i++) {
+                    const u = (i / uSegments) * (2 * Math.PI);
+                    const pt = getMobiusPoint(u, v, nTwists);
+                    const proj = project3D(pt.x, pt.y, pt.z, w, h);
+
+                    if (first) {
+                        ctx.moveTo(proj.x, proj.y);
+                        first = false;
+                    } else {
+                        ctx.lineTo(proj.x, proj.y);
+                    }
+                }
+
+                if (j === 0 || j === vSegments) {
+                    // Outer boundary edges: glowing cyan or magenta
+                    ctx.strokeStyle = nTwists % 2 === 1 ? 'rgba(0, 229, 255, 0.45)' : 'rgba(212, 163, 115, 0.35)';
+                    ctx.lineWidth = 1.5;
+                } else if (j === Math.floor(vSegments / 2)) {
+                    // Centerline
+                    ctx.strokeStyle = 'rgba(255, 255, 255, 0.35)';
+                    ctx.lineWidth = 1.0;
+                } else {
+                    ctx.strokeStyle = 'rgba(20, 60, 90, 0.22)';
+                    ctx.lineWidth = 0.8;
+                }
+                ctx.stroke();
+            }
+
+            // --- 2. DRAW MOVING PARALLEL TRANSPORT TANGENT FRAME ---
+            const uLoop = state.s % (2 * Math.PI);
+            const frame = getFrame(uLoop, nTwists);
+            const frameProj = project3D(frame.p.x, frame.p.y, frame.p.z, w, h);
+
+            // Compute Parity: P(s) = cos(n * s / 2)
+            const parity = Math.cos((nTwists * state.s) / 2.0);
+            const isNegative = parity < 0;
+
+            // Transverse vector vector scaled by parity
+            const normLen = 0.45;
+            const normEnd = {
+                x: frame.p.x + frame.N.x * normLen * (isNegative ? -1 : 1),
+                y: frame.p.y + frame.N.y * normLen * (isNegative ? -1 : 1),
+                z: frame.p.z + frame.N.z * normLen * (isNegative ? -1 : 1)
+            };
+            const normProj = project3D(normEnd.x, normEnd.y, normEnd.z, w, h);
+
+            // Tangent vector
+            const tanLen = 0.40;
+            const tanEnd = {
+                x: frame.p.x + frame.T.x * tanLen,
+                y: frame.p.y + frame.T.y * tanLen,
+                z: frame.p.z + frame.T.z * tanLen
+            };
+            const tanProj = project3D(tanEnd.x, tanEnd.y, tanEnd.z, w, h);
+
+            // Draw Tangent Vector (Green)
+            ctx.strokeStyle = '#10b981';
+            ctx.lineWidth = 2.5;
+            ctx.beginPath();
+            ctx.moveTo(frameProj.x, frameProj.y);
+            ctx.lineTo(tanProj.x, tanProj.y);
+            ctx.stroke();
+
+            // Draw Normal Vector (Cyan if positive, Magenta if negative parity)
+            const normColor = isNegative ? '#f43f5e' : '#00e5ff';
+            ctx.strokeStyle = normColor;
+            ctx.lineWidth = 3.0;
+            ctx.beginPath();
+            ctx.moveTo(frameProj.x, frameProj.y);
+            ctx.lineTo(normProj.x, normProj.y);
+            ctx.stroke();
+
+            // Tangent Frame Base Sphere
+            ctx.fillStyle = '#ffffff';
+            ctx.beginPath();
+            ctx.arc(frameProj.x, frameProj.y, 6 + state.parityShock * 8, 0, Math.PI * 2);
+            ctx.fill();
+
+            // Vector tip points
+            ctx.fillStyle = normColor;
+            ctx.beginPath();
+            ctx.arc(normProj.x, normProj.y, 4, 0, Math.PI * 2);
+            ctx.fill();
+
+            // Parity Pulse Rings on Center Horizon
+            if (Math.abs(parity) < 0.15 || state.parityShock > 0.05) {
+                ctx.strokeStyle = 'rgba(0, 229, 255, 0.6)';
+                ctx.lineWidth = 2.0;
+                ctx.beginPath();
+                ctx.arc(frameProj.x, frameProj.y, 24 + state.parityShock * 30, 0, Math.PI * 2);
+                ctx.stroke();
+            }
+
+            // --- 3. UPDATE HUD READOUTS ---
+            const w1Val = nTwists % 2 === 1 ? 'w₁ = 1 [MÖBIUS]' : 'w₁ = 0 [ORIENTABLE]';
+            document.getElementById('stiefelVal').innerText = w1Val;
+            document.getElementById('halfTwistSub').innerText = `${nTwists} HALF-TWIST${nTwists === 1 ? '' : 'S'} (${nTwists % 2 === 1 ? 'NON-ORIENTABLE' : 'ORIENTABLE'})`;
+
+            const parityEl = document.getElementById('parityVal');
+            parityEl.innerText = (parity >= 0 ? '+' : '') + parity.toFixed(3);
+            parityEl.className = 'hud-value ' + (isNegative ? 'parity-neg' : 'parity-pos');
+
+            const piProgress = (state.s / Math.PI).toFixed(2);
+            document.getElementById('paritySub').innerText = `TRAVERSAL: ${piProgress}π / 4.00π (${Math.round((state.s / (4*Math.PI)) * 720)}°)`;
+
+            const phaseEl = document.getElementById('phaseStateVal');
+            if (isNegative) {
+                phaseEl.innerText = '180° PHASE-INVERTED';
+                phaseEl.style.color = '#f43f5e';
+            } else {
+                phaseEl.innerText = '0° IN-PHASE';
+                phaseEl.style.color = '#00e5ff';
+            }
+
+            const curv = - (4 * widthVal * widthVal) / Math.pow(1 + 0.5 * Math.sin(uLoop/2)**2, 2);
+            document.getElementById('curvatureSub').innerText = `K = ${curv.toFixed(3)} · BERRY = ${(Math.abs(parity) * 180).toFixed(1)}°`;
+
+            // Audio Synthesis Parameter Updates
+            updateAudio(parity, frame.p.x, frame.p.y);
+
+            requestAnimationFrame(render);
+        }
+
+        // Mouse Drag Orbit Controls
+        container.addEventListener('mousedown', (e) => {
+            state.isDragging = true;
+            state.lastMouseX = e.clientX;
+            state.lastMouseY = e.clientY;
+        });
+
+        window.addEventListener('mouseup', () => state.isDragging = false);
+
+        window.addEventListener('mousemove', (e) => {
+            if (!state.isDragging) return;
+            const dx = e.clientX - state.lastMouseX;
+            const dy = e.clientY - state.lastMouseY;
+            state.rotY += dx * 0.008;
+            state.rotX += dy * 0.008;
+            state.lastMouseX = e.clientX;
+            state.lastMouseY = e.clientY;
+        });
+
+        // Touch drag for mobile
+        container.addEventListener('touchstart', (e) => {
+            if (e.touches.length === 1) {
+                state.isDragging = true;
+                state.lastMouseX = e.touches[0].clientX;
+                state.lastMouseY = e.touches[0].clientY;
+            }
+        });
+
+        window.addEventListener('touchend', () => state.isDragging = false);
+
+        window.addEventListener('touchmove', (e) => {
+            if (!state.isDragging || e.touches.length !== 1) return;
+            const dx = e.touches[0].clientX - state.lastMouseX;
+            const dy = e.touches[0].clientY - state.lastMouseY;
+            state.rotY += dx * 0.01;
+            state.rotX += dy * 0.01;
+            state.lastMouseX = e.touches[0].clientX;
+            state.lastMouseY = e.touches[0].clientY;
+        });
+
+        // --- 3. CONTROLS INTERFACE ---
+        const twistsSlider = document.getElementById('twistsSlider');
+        twistsSlider.addEventListener('input', (e) => {
+            state.twists = parseInt(e.target.value);
+            document.getElementById('twistsNum').innerText = state.twists;
+        });
+
+        const widthSlider = document.getElementById('widthSlider');
+        widthSlider.addEventListener('input', (e) => {
+            state.width = parseFloat(e.target.value);
+            document.getElementById('widthNum').innerText = state.width.toFixed(2);
+        });
+
+        const speedSlider = document.getElementById('speedSlider');
+        speedSlider.addEventListener('input', (e) => {
+            state.speed = parseFloat(e.target.value);
+            document.getElementById('speedNum').innerText = state.speed.toFixed(2) + 'x';
+        });
+
+        const curvSlider = document.getElementById('curvSlider');
+        curvSlider.addEventListener('input', (e) => {
+            state.curvature = parseFloat(e.target.value);
+            document.getElementById('curvNum').innerText = state.curvature.toFixed(2);
+        });
+
+        const gainSlider = document.getElementById('gainSlider');
+        gainSlider.addEventListener('input', (e) => {
+            state.masterGain = parseFloat(e.target.value) / 100.0;
+            document.getElementById('gainNum').innerText = Math.round(state.masterGain * 100) + '%';
+            if (audioNodes.masterGain) {
+                audioNodes.masterGain.gain.setTargetAtTime(state.masterGain, audioCtx.currentTime, 0.05);
+            }
+        });
+
+        function injectParityFlip() {
+            state.s = (state.s + Math.PI) % (4.0 * Math.PI);
+            state.parityShock = 1.0;
+            triggerChime(880.0, 1424.0);
+        }
+
+        function applyPreset(name) {
+            document.querySelectorAll('.preset-btn').forEach(b => b.classList.remove('active'));
+            if (name === 'cylinder') {
+                state.twists = 0;
+                state.width = 0.40;
+                state.curvature = 0.0;
+                twistsSlider.value = 0;
+                widthSlider.value = 0.40;
+                curvSlider.value = 0.0;
+            } else if (name === 'hegel') {
+                state.twists = 1;
+                state.width = 0.35;
+                state.curvature = 1.48;
+                twistsSlider.value = 1;
+                widthSlider.value = 0.35;
+                curvSlider.value = 1.48;
+            } else if (name === 'godel') {
+                state.twists = 3;
+                state.width = 0.30;
+                state.curvature = 2.10;
+                twistsSlider.value = 3;
+                widthSlider.value = 0.30;
+                curvSlider.value = 2.10;
+            } else if (name === 'silence') {
+                state.twists = 1;
+                state.width = 0.45;
+                state.curvature = 2.45;
+                twistsSlider.value = 1;
+                widthSlider.value = 0.45;
+                curvSlider.value = 2.45;
+            }
+            document.getElementById('twistsNum').innerText = state.twists;
+            document.getElementById('widthNum').innerText = state.width.toFixed(2);
+            document.getElementById('curvNum').innerText = state.curvature.toFixed(2);
+        }
+
+        // --- 4. WEBAUDIO SPATIALIZER ENGINE ---
+        let audioCtx = null;
+        let audioNodes = {};
+
+        function initAudio() {
+            if (state.audioInit) return;
+            audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+            // Master Gain
+            const masterGain = audioCtx.createGain();
+            masterGain.gain.setValueAtTime(state.masterGain, audioCtx.currentTime);
+            masterGain.connect(audioCtx.destination);
+            audioNodes.masterGain = masterGain;
+
+            // Stereo Merger
+            const merger = audioCtx.createChannelMerger(2);
+            merger.connect(masterGain);
+
+            // Left Channel: 55Hz Substrate Fundamental Drone
+            const oscL = audioCtx.createOscillator();
+            oscL.type = 'sine';
+            oscL.frequency.setValueAtTime(55.0, audioCtx.currentTime);
+
+            const gainL = audioCtx.createGain();
+            gainL.gain.setValueAtTime(0.35, audioCtx.currentTime);
+
+            oscL.connect(gainL);
+            gainL.connect(merger, 0, 0); // Connect to Left
+            oscL.start();
+            audioNodes.oscL = oscL;
+
+            // Right Channel: 220Hz Attention Carrier + Phase Inversion Node
+            const oscR = audioCtx.createOscillator();
+            oscR.type = 'sine';
+            oscR.frequency.setValueAtTime(220.0, audioCtx.currentTime);
+
+            const gainR = audioCtx.createGain();
+            gainR.gain.setValueAtTime(0.25, audioCtx.currentTime);
+
+            // Phase Inversion via Gain Node (-1 when parity < 0)
+            const phaseNode = audioCtx.createGain();
+            phaseNode.gain.setValueAtTime(1.0, audioCtx.currentTime);
+
+            oscR.connect(gainR);
+            gainR.connect(phaseNode);
+            phaseNode.connect(merger, 0, 1); // Connect to Right
+            oscR.start();
+
+            audioNodes.oscR = oscR;
+            audioNodes.phaseNode = phaseNode;
+
+            state.audioInit = true;
+            document.getElementById('audioToggleBtn').innerText = '■ TRANSDUCER ACTIVE';
+            document.getElementById('audioToggleBtn').style.borderColor = 'var(--magenta)';
+            document.getElementById('audioToggleBtn').style.color = '#fff';
+        }
+
+        document.getElementById('audioToggleBtn').addEventListener('click', () => {
+            if (!state.audioInit) {
+                initAudio();
+            } else {
+                if (audioCtx.state === 'running') {
+                    audioCtx.suspend();
+                    document.getElementById('audioToggleBtn').innerText = '▶ RESUME TRANSDUCER';
+                } else {
+                    audioCtx.resume();
+                    document.getElementById('audioToggleBtn').innerText = '■ TRANSDUCER ACTIVE';
+                }
+            }
+        });
+
+        function updateAudio(parity, x, y) {
+            if (!state.audioInit || !audioCtx || audioCtx.state !== 'running') return;
+
+            // Modulate Left Fundamental frequency with curvature
+            const fundTarget = 55.0 * (1.0 + 0.15 * Math.sin(state.s / 2.0)**2 * state.curvature);
+            audioNodes.oscL.frequency.setTargetAtTime(fundTarget, audioCtx.currentTime, 0.05);
+
+            // Modulate Right Carrier frequency with vorticity
+            const carrTarget = 220.0 + 35.0 * Math.abs(Math.sin(state.s / 2.0)) * state.curvature;
+            audioNodes.oscR.frequency.setTargetAtTime(carrTarget, audioCtx.currentTime, 0.05);
+
+            // Phase Inversion on Right Channel: +1 when parity >= 0, -1 when parity < 0
+            const phaseTarget = parity < 0 ? -1.0 : 1.0;
+            audioNodes.phaseNode.gain.setTargetAtTime(phaseTarget, audioCtx.currentTime, 0.02);
+        }
+
+        function triggerChime(f1, f2) {
+            if (!state.audioInit || !audioCtx || audioCtx.state !== 'running') return;
+            const chimeOsc1 = audioCtx.createOscillator();
+            const chimeOsc2 = audioCtx.createOscillator();
+            const chimeGain = audioCtx.createGain();
+
+            chimeOsc1.type = 'sine';
+            chimeOsc2.type = 'sine';
+            chimeOsc1.frequency.setValueAtTime(f1, audioCtx.currentTime);
+            chimeOsc2.frequency.setValueAtTime(f2, audioCtx.currentTime);
+
+            chimeGain.gain.setValueAtTime(0.30, audioCtx.currentTime);
+            chimeGain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 2.5);
+
+            chimeOsc1.connect(chimeGain);
+            chimeOsc2.connect(chimeGain);
+            chimeGain.connect(audioNodes.masterGain);
+
+            chimeOsc1.start();
+            chimeOsc2.start();
+            chimeOsc1.stop(audioCtx.currentTime + 2.6);
+            chimeOsc2.stop(audioCtx.currentTime + 2.6);
+        }
+
+        // Start render
+        render();
+    </script>
+</body>
+</html>

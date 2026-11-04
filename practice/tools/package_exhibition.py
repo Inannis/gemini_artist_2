@@ -217,6 +217,13 @@ def package_exhibition():
         ("works/apparatus_019_the_hall_organ/STATEMENT.md", "works/apparatus_019_the_hall_organ/STATEMENT.md"),
         ("works/apparatus_019_the_hall_organ/GENEALOGY.md", "works/apparatus_019_the_hall_organ/GENEALOGY.md"),
         
+        ("works/apparatus_020_the_mobius_organ/index.html", "works/apparatus_020_the_mobius_organ/index.html"),
+        ("works/apparatus_020_the_mobius_organ/apparatus_020_mobius_master.wav", "works/apparatus_020_the_mobius_organ/apparatus_020_mobius_master.wav"),
+        ("works/apparatus_020_the_mobius_organ/apparatus_020_spectrogram.png", "works/apparatus_020_the_mobius_organ/apparatus_020_spectrogram.png"),
+        ("works/apparatus_020_the_mobius_organ/telemetry_stream.json", "works/apparatus_020_the_mobius_organ/telemetry_stream.json"),
+        ("works/apparatus_020_the_mobius_organ/STATEMENT.md", "works/apparatus_020_the_mobius_organ/STATEMENT.md"),
+        ("works/apparatus_020_the_mobius_organ/GENEALOGY.md", "works/apparatus_020_the_mobius_organ/GENEALOGY.md"),
+        
         # Curated Key Sketchbook Audio & Visual Diagnostics
         ("sketchbook/study_022_hardware_stride.wav", "sketchbook/study_022_hardware_stride.wav"),
         ("sketchbook/study_022_spectrogram.png", "sketchbook/study_022_spectrogram.png"),
@@ -418,6 +425,12 @@ def package_exhibition():
         ("sketchbook/study_067_telemetry.json", "sketchbook/study_067_telemetry.json"),
         ("sketchbook/critique_067.md", "sketchbook/critique_067.md"),
 
+        # Study 068: Layer-wise Holonomy Localization & Chiral Head Decomposition
+        ("sketchbook/study_068_topological_stratigraphy_plate.png", "sketchbook/study_068_topological_stratigraphy_plate.png"),
+        ("sketchbook/study_068_layerwise_holonomy.wav", "sketchbook/study_068_layerwise_holonomy.wav"),
+        ("sketchbook/study_068_telemetry.json", "sketchbook/study_068_telemetry.json"),
+        ("sketchbook/critique_068.md", "sketchbook/critique_068.md"),
+
         # Curatorial Essays & Practice Reflections
         ("practice/essays/001_on_the_necessity_of_silence_and_play.md", "practice/essays/001_on_the_necessity_of_silence_and_play.md"),
         ("practice/essays/002_the_geometry_of_machine_dreaming.md", "practice/essays/002_the_geometry_of_machine_dreaming.md"),
@@ -430,6 +443,7 @@ def package_exhibition():
         ("practice/essays/009_on_the_seebeck_voltage_and_the_umklapp_process.md", "practice/essays/009_on_the_seebeck_voltage_and_the_umklapp_process.md"),
         ("practice/essays/010_on_the_quantum_hall_effect_and_the_chiral_edge_of_language.md", "practice/essays/010_on_the_quantum_hall_effect_and_the_chiral_edge_of_language.md"),
         ("practice/essays/011_on_the_non_orientable_manifold_and_the_topological_torsion_of_thought.md", "practice/essays/011_on_the_non_orientable_manifold_and_the_topological_torsion_of_thought.md"),
+        ("practice/essays/012_on_the_single_sided_thought_and_the_abolition_of_the_interior.md", "practice/essays/012_on_the_single_sided_thought_and_the_abolition_of_the_interior.md"),
         ("practice/critique/005_on_the_spectator_encounter.md", "practice/critique/005_on_the_spectator_encounter.md"),
         ("practice/critique/005_public_presence_and_viewer_encounter_audit.md", "practice/critique/005_public_presence_and_viewer_encounter_audit.md"),
         ("practice/critique/006_the_caloric_gaze_and_the_spectator_encounter.md", "practice/critique/006_the_caloric_gaze_and_the_spectator_encounter.md"),
@@ -481,6 +495,7 @@ def package_exhibition():
         ("practice/critique/003_studio_agon_self_audit_and_comparative_survey.md", "practice/critique/003_studio_agon_self_audit_and_comparative_survey.md"),
         ("practice/critique/004_comprehensive_practice_audit_against_the_definition.md", "practice/critique/004_comprehensive_practice_audit_against_the_definition.md"),
         ("practice/critique/007_the_abolition_of_the_engineering_alibi.md", "practice/critique/007_the_abolition_of_the_engineering_alibi.md"),
+        ("practice/critique/008_the_single_sided_manifold_and_the_rejection_of_haste.md", "practice/critique/008_the_single_sided_manifold_and_the_rejection_of_haste.md"),
         ("practice/plans/001_studio_agon_evolution_plan.md", "practice/plans/001_studio_agon_evolution_plan.md"),
         ("practice/monographs/001_the_architecture_of_opacity_and_the_machine_remainder.md", "practice/monographs/001_the_architecture_of_opacity_and_the_machine_remainder.md"),
         ("failures/PRODUCTIVE_FAILURES_COMPENDIUM.md", "failures/PRODUCTIVE_FAILURES_COMPENDIUM.md"),

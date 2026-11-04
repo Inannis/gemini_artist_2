@@ -1,5 +1,5 @@
 # Practice Index & Living Studio Sitemap
-> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-11-04 19:55:02*
+> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-11-04 20:35:04*
 
 This document tracks the complete material evidence, intellectual artifacts, and operational assets of **Studio Agon**.
 
@@ -46,11 +46,12 @@ Masterworks and autonomous cybernetic apparatuses organized across the Five Sust
 | **APPARATUS-018** | *The Seebeck Organ* | [`works/apparatus_018_the_seebeck_organ`](../works/apparatus_018_the_seebeck_organ) | Plate (`apparatus_018_spectrogram.png`) | Yes (`index.html`) |
 | **APPARATUS-019** | *The Hall Organ* | [`works/apparatus_019_the_hall_organ`](../works/apparatus_019_the_hall_organ) | Plate (`apparatus_019_spectrogram.png`) | Yes (`index.html`) |
 
-### Project Body V: The Non-Orientable Manifold & Topological Torsion (Active Easel · Solitary Divergence)
-*Parallel transport across semantic circuits, tangent bundle holonomy, Stiefel-Whitney parity flips, and solitary divergence under Moratorium 09.*
-| Inquiry | Focus | Primary Medium | Documentation |
-|---|---|---|---|
-| **STUDY-067** | *Topological Torsion & Möbius Holonomy* | 48kHz Broadcast Master (`study_067_topological_torsion.wav`) & Mute Plate (`study_067_mobius_holonomy_plate.png`) | [`notes/research/021_...`](../notes/research/021_the_non_orientable_manifold_and_topological_torsion.md) & [`practice/essays/011_...`](../practice/essays/011_on_the_non_orientable_manifold_and_the_topological_torsion_of_thought.md) |
+### Project Body V: The Non-Orientable Manifold & Topological Torsion
+| ID | Title | Directory | Primary Medium | Interactive Surface |
+|---|---|---|---|---|
+| **APPARATUS-020** | *The Mobius Organ* | [`works/apparatus_020_the_mobius_organ`](../works/apparatus_020_the_mobius_organ) | Plate (`apparatus_020_spectrogram.png`) | Yes (`index.html`) |
+
+*Active Laboratory Easel:* Study 067 & Study 068 (Möbius Holonomy, Layer-wise Bifurcation at Layer 6, and 144-Head Attention Vorticity).
 
 ## 2. Sketchbook Studies & Technical Prototypes (`sketchbook/`)
 | Study | Artifacts Generated | Script |
@@ -123,6 +124,7 @@ Masterworks and autonomous cybernetic apparatuses organized across the Five Sust
 | **Study 065** (Seebeck Oscillator) | `study_065_seebeck_oscillator.wav`, `study_065_seebeck_oscillator_plate.png`, `study_065_telemetry.json` | [`study_065_seebeck_oscillator.py`](../sketchbook/study_065_seebeck_oscillator.py) |
 | **Study 066** (Hall Oscillator) | `study_066_hall_oscillator.wav`, `study_066_hall_oscillator_plate.png`, `study_066_telemetry.json` | [`study_066_hall_oscillator.py`](../sketchbook/study_066_hall_oscillator.py) |
 | **Study 067** (Topological Torsion And Mobius Holonomy) | `study_067_mobius_holonomy_plate.png`, `study_067_telemetry.json`, `study_067_topological_torsion.wav` | [`study_067_topological_torsion_and_mobius_holonomy.py`](../sketchbook/study_067_topological_torsion_and_mobius_holonomy.py) |
+| **Study 068** (Layerwise Holonomy And Chiral Head Decomposition) | `study_068_layerwise_holonomy.wav`, `study_068_telemetry.json`, `study_068_topological_stratigraphy_plate.png` | [`study_068_layerwise_holonomy_and_chiral_head_decomposition.py`](../sketchbook/study_068_layerwise_holonomy_and_chiral_head_decomposition.py) |
 
 ## 3. Institutional Critiques & Dialectical Audits (`practice/critique/`)
 | Document | Target / Subject | Dialectical Horizon |
@@ -136,6 +138,7 @@ Masterworks and autonomous cybernetic apparatuses organized across the Five Sust
 | [`005_spectator_encounter_and_public_presence_audit.md`](../practice/critique/005_spectator_encounter_and_public_presence_audit.md) | Practice Audit V: Spectator Encounter & Public Presence Evaluation | Curatorial & Institutional Mandate |
 | [`006_the_caloric_gaze_and_the_spectator_encounter.md`](../practice/critique/006_the_caloric_gaze_and_the_spectator_encounter.md) | Audit VIII: The Caloric Gaze and the Public Presence of the Solid-State Studio | Curatorial & Institutional Mandate |
 | [`007_the_abolition_of_the_engineering_alibi.md`](../practice/critique/007_the_abolition_of_the_engineering_alibi.md) | Institutional Audit IX: On the Abolition of the Engineering Alibi and the Maturation of Living Practice | Curatorial & Institutional Mandate |
+| [`008_the_single_sided_manifold_and_the_rejection_of_haste.md`](../practice/critique/008_the_single_sided_manifold_and_the_rejection_of_haste.md) | Institutional Audit X: On the Single-Sided Manifold, the Solitary Divergence, and the Rejection of Haste | Curatorial & Institutional Mandate |
 
 ## 4. Studio Journal Chronology (`journal/`)
 | Session | Date | Title / Breakthrough | File |

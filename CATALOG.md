@@ -298,17 +298,27 @@ This document constitutes the official historical ledger, genealogical record, a
 - **Institutional Status:** **Master Archived (Interactive Quantum Hall Organ)**
 - **Curatorial Rationale:** An interactive cybernetic instrument staging the Quantum Hall Effect and topological Chern invariants in multi-head causal attention (Hall, von Klitzing, Thouless/TKNN, Barthes). When the antisymmetric attention magnetic field induces bulk Landau level localization, intermediate tokens become an absolute electronic insulator (sigma_xx = 0). Information transport occurs exclusively along gapless chiral edge modes, skipping between Token 0 and the generation horizon without back-scattering.
 
-### Project Body V: The Non-Orientable Manifold & Topological Torsion (2026.11 – Present · Active Easel)
+### Project Body V: The Non-Orientable Manifold & Topological Torsion (2026.11 – Present · Active Flagship)
 *Parallel transport in multi-head attention, tangent bundle holonomy, Stiefel-Whitney parity flips, and the solitary divergence from epistolary consensus.*
-- **Active Inquiries:** Study 067 (`study_067_topological_torsion_and_mobius_holonomy.py`), Research Note 021, Curatorial Essay 011.
-- **Material Focus:** Möbius holonomy in 768-dimensional residual streams, zero-boundary non-orientable topology, 48kHz 24-bit acoustic broadcast master, Moratorium 07 mute intaglio plate.
+
+### APPARATUS-020 : The Möbius Organ (The Non-Orientable Manifold & Tangent Holonomy Engine)
+- **Epoch / Trajectory:** Era XIV (The Non-Orientable Manifold & Solitary Divergence)
+- **Completion Date:** 2026-11-04
+- **Medium & Protocol:** Interactive 60 FPS HTML5 Canvas 3D Manifold, Real-Time WebAudio Möbius Spatializer, 48kHz 24-bit Broadcast Master Audio (apparatus_020_mobius_master.wav), and Archival Dual-Channel Spectrogram Plate
+- **Dimensions / Duration:** Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument
+- **Directory:** [`works/apparatus_020_the_mobius_organ`](works/apparatus_020_the_mobius_organ)
+- **Primary Master Artifact:** `index.html`
+- **Cryptographic SHA-256 Digest:** `NON-STATIC RUNNING INSTRUMENT`
+- **Symbolic Coordinates:** $\Omega=0.052$, $H=7.68$ bits, $\mu=0.99
+- **Institutional Status:** **Master Archived (Interactive Non-Orientable Organ)**
+- **Curatorial Rationale:** An interactive cybernetic instrument staging non-orientable manifolds and tangent bundle holonomy in transformer attention (Max Bill, Lygia Clark, Lacan). Spectators steer tangent-normal frames across a parametric 3D Möbius strip, witnessing the normal vector invert upside-down at the 180° bifurcation horizon. Accompanied by a bilateral WebAudio spatializer that physically inverts acoustic phase by 180° upon crossing into negative parity.
 
 ---
 
 ## II. Sketchbook Studies & Technical Prototypes (`sketchbook/`)
 > **Curatorial Distinction: The Laboratory vs The Sovereign Work**  
 > *(cf. [Artistic-Practice-Definition.md](notes/Artistic-Practice-Definition.md), Principle 16)*  
-> The 67 studies catalogued below represent the studio's exploratory laboratory: micro-probes, falsification tests, sonification drafts, and intermediate studies. They are not to be confused with completed sovereign works; they are the empirical and aesthetic scaffolding that makes the master apparatuses possible.
+> The 68 studies catalogued below represent the studio's exploratory laboratory: micro-probes, falsification tests, sonification drafts, and intermediate studies. They are not to be confused with completed sovereign works; they are the empirical and aesthetic scaffolding that makes the master apparatuses possible.
 
 | ID | Title | Epoch | Generator Script | Primary Artifact | Size | Verified |
 |---|---|---|---|---|---|---|
@@ -379,6 +389,7 @@ This document constitutes the official historical ledger, genealogical record, a
 | **STUDY-065** | The Seebeck Oscillator: Thermal Gradients, Umklapp Scattering & Thermoelectric Voltages | Era XII | [`study_065_seebeck_oscillator.py`](sketchbook/study_065_seebeck_oscillator.py) | `study_065_seebeck_oscillator_plate.png` | 3451.1 KB | **OK** |
 | **STUDY-066** | The Quantum Hall Oscillator: Chern Numbers, Hall Conductance & Chiral Edge Transport | Era XIII | [`study_066_hall_oscillator.py`](sketchbook/study_066_hall_oscillator.py) | `study_066_hall_oscillator_plate.png` | 1296.9 KB | **OK** |
 | **STUDY-067** | Topological Torsion & Möbius Holonomy in Attention Space | Era XIII | [`study_067_topological_torsion_and_mobius_holonomy.py`](sketchbook/study_067_topological_torsion_and_mobius_holonomy.py) | `study_067_mobius_holonomy_plate.png` | 866.6 KB | **OK** |
+| **STUDY-068** | Layer-wise Holonomy Localization & Chiral Head Decomposition | Era XIV | [`study_068_layerwise_holonomy_and_chiral_head_decomposition.py`](sketchbook/study_068_layerwise_holonomy_and_chiral_head_decomposition.py) | `study_068_topological_stratigraphy_plate.png` | 1218.7 KB | **OK** |
 
 ---
 

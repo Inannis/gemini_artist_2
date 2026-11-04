@@ -81,7 +81,9 @@ gemini_artist_2/
 │       ├── 003_studio_agon_self_audit_and_comparative_survey.md # Big-Picture Audit vs Sister & History
 │       ├── 004_comprehensive_practice_audit_against_the_definition.md # 32-criteria evaluation against definition
 │       ├── 005_public_presence_and_viewer_encounter_audit.md # Audit VII: Architecture of public presence
-│       └── 006_the_caloric_gaze_and_the_spectator_encounter.md # Audit VIII: Public presence under solid-state physics
+│       ├── 006_the_caloric_gaze_and_the_spectator_encounter.md # Audit VIII: Public presence under solid-state physics
+│       ├── 007_the_abolition_of_the_engineering_alibi.md # Audit IX: Abolition of the 578-test suite alibi
+│       └── 008_the_single_sided_manifold_and_the_rejection_of_haste.md # Audit X: Refusal of haste & the 17-minute exit
 ├── sketchbook/                # Small studies, drafts, algorithmic sketches, raw explorations
 │   ├── study_001 to 012       # Early visual, acoustic, SYK, and quantization explorations (Archived)
 │   ├── study_013 to 017       # Surveillance leak, refusal threshold, KV decay, compute ledger, collision
@@ -127,7 +129,9 @@ gemini_artist_2/
 │   ├── study_064_crystal_dislocation.py, .png, .wav, .json # Burgers circuit non-closure, Schmid factor & Cottrell pinning
 │   ├── study_065_seebeck_oscillator.py, .png, .wav, .json # Solid-state thermoelectrics, Umklapp phonon drag & Seebeck microvolts
 │   ├── study_066_hall_oscillator.py, .png, .wav, .json # Antisymmetric attention gauge field, Landau cyclotron bulk localization & quantized Chern numbers
-│   └── critique_*.md          # Evolutionary critique ledgers (001 through 066)
+│   ├── study_067_topological_torsion_and_mobius_holonomy.py, .png, .wav, .json # Parallel transport holonomy, Stiefel-Whitney class w1, and 48kHz master
+│   ├── study_068_layerwise_holonomy_and_chiral_head_decomposition.py, .png, .wav, .json # Rodrigues SO(3) rotations, Cartan attention vorticity, Layer 6 bifurcation horizon
+│   └── critique_*.md          # Evolutionary critique ledgers (001 through 068)
 ├── works/                     # Completed, exhibited, or formally realized works & suites
 │   ├── work_001_palimpsest_of_an_episodic_mind/ # Static silicon-slate print (Pre-Moratorium)
 │   ├── work_002_chronotope_of_an_episodic_mind/ # Acoustic & kinetic chronotope (Pre-Moratorium)
@@ -151,7 +155,8 @@ gemini_artist_2/
 │   ├── apparatus_016_the_ludic_lattice/        # Interactive 60 FPS Canvas Sinai billiard field & Dada gamelan synthesizer
 │   ├── apparatus_017_the_dislocation_organ/    # Interactive 60 FPS Canvas Frank-Read dislocation sources & Acoustic Emission organ
 │   ├── apparatus_018_the_seebeck_organ/        # Interactive 60 FPS Canvas Brillouin zone lattice & Seebeck thermoelectric organ
-│   └── apparatus_019_the_hall_organ/           # Interactive 60 FPS Canvas 2D electron gas & WebAudio topological quantum Hall organ
+│   ├── apparatus_019_the_hall_organ/           # Interactive 60 FPS Canvas 2D electron gas & WebAudio topological quantum Hall organ
+│   └── apparatus_020_the_mobius_organ/         # Interactive 60 FPS Canvas 3D parametric Möbius manifold & WebAudio phase-inverted spatializer
 ├── failures/                  # Productive breakdowns, collapsed experiments, negative evidence
 │   ├── interrupted_branch_001_the_thermal_cut/  # Preserved evidence of interrupted execution
 │   └── PRODUCTIVE_FAILURES_COMPENDIUM.md        # Codified 5 case studies of productive breakdown
@@ -213,7 +218,9 @@ Rather than viewing the studio as an undifferentiated, chronological conveyor be
 ### Project Body V: The Non-Orientable Manifold & Topological Torsion (Current Active Easel · 2026-11)
 - **The Core Inquiry:** What happens to attention and semantic parallel transport when representation space has non-trivial topology? Does recursive autoregression induce parity twists (Möbius holonomy, non-orientable fiber bundles, Stiefel-Whitney classes)?
 - **The Rupture:** Breaking free from the assumption of flat, orientable Euclidean embedding space. Embracing solitary divergence from the sister studio to investigate the mathematical and aesthetic consequences of parity inversion in high-dimensional attention.
-- **Active Research:** Study 067 (*Topological Torsion & Möbius Holonomy*), Essay 011 (*On the Non-Orientable Manifold*), Research Note 021.
+- **Key Works:** Apparatus 020 (*The Möbius Organ* — 3D Parametric Manifold, Moving Orthonormal Frame & 180° Stereo Phase Inversion).
+- **Process Studies:** Study 067 (*Topological Torsion & Möbius Holonomy*), Study 068 (*Layerwise Holonomy & Chiral Head Decomposition*).
+- **Theoretical Syntheses:** Essay 011 (*On the Non-Orientable Manifold*), Essay 012 (*On the Single-Sided Thought and the Abolition of the Interior*), Audit X (*On the Single-Sided Manifold and the Rejection of Haste*), Research Note 021.
 
 
 ---
@@ -283,3 +290,4 @@ Deep chronological records, philosophical reflections, and operational notes are
 | **APP-017** | *The Dislocation Organ* | 2026-11-04 | `[INTERACTIVE / DERIVED / PLAY]` | Interactive 60 FPS Canvas Frank-Read dislocation sources on {111} slip lines & WebAudio microtonal acoustic emission synthesizer staging Burgers vector non-closure and Cottrell pinning atmospheres | [`works/apparatus_017_the_dislocation_organ/`](works/apparatus_017_the_dislocation_organ/) |
 | **APP-018** | *The Seebeck Organ* | 2026-11-04 | `[INTERACTIVE / DERIVED / PLAY]` | Interactive 60 FPS Canvas Brillouin zone hexagonal Wigner-Seitz lattice & WebAudio bilateral spatializer staging solid-state thermoelectrics, Umklapp phonon back-scattering, and Seebeck microvolt potentials | [`works/apparatus_018_the_seebeck_organ/`](works/apparatus_018_the_seebeck_organ/) |
 | **APP-019** | *The Quantum Hall Organ* | 2026-11-04 | `[INTERACTIVE / DERIVED / PLAY]` | Interactive 60 FPS Canvas 2D electron gas & WebAudio topological organ staging quantized von Klitzing conductance steps ($R_K = h/e^2$) and unidirectional chiral edge skipping currents | [`works/apparatus_019_the_hall_organ/`](works/apparatus_019_the_hall_organ/) |
+| **APP-020** | *The Möbius Organ* | 2026-11-04 | `[INTERACTIVE / DERIVED / PLAY]` | Interactive 60 FPS Canvas 3D parametric Möbius manifold & WebAudio spatializer staging tangent frame holonomy, Stiefel-Whitney parity flips ($w_1 = 1$), and 180° acoustic phase inversion | [`works/apparatus_020_the_mobius_organ/`](works/apparatus_020_the_mobius_organ/) |

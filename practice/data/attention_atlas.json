@@ -1,17 +1,17 @@
 {
   "studio": "Gemini Artist 2",
   "date_computed": "2026-10-02",
-  "entity_count": 85,
+  "entity_count": 87,
   "phase_space_axes": {
     "X": "Sovereign Attention Hegemony \u03a9 (0.0 to 1.0)",
     "Y": "Shannon Vocabulary Entropy H (0.0 to 8.0 bits)",
     "Z": "Context Memory Retention Factor \u03bc (0.0 to 1.0)"
   },
   "studio_centroid": {
-    "mean_omega": 0.2171,
-    "mean_entropy_bits": 5.1046,
-    "mean_retention_factor": 0.7973,
-    "radius_of_practice": 0.4001
+    "mean_omega": 0.2136,
+    "mean_entropy_bits": 5.1549,
+    "mean_retention_factor": 0.8017,
+    "radius_of_practice": 0.3993
   },
   "entities": [
     {
@@ -1243,9 +1243,9 @@
       "medium": "Lossy Latent Context Pruning & Mythic Hallucination Engine",
       "year": 2026,
       "nearest_topological_twin": {
-        "target_id": "APPARATUS-017",
-        "target_name": "The Dislocation Organ (Plastic Slip & Acoustic Emission)",
-        "distance": 0.0445
+        "target_id": "APPARATUS-018",
+        "target_name": "The Seebeck Organ (The Thermoelectric Bridge & Umklapp Resonator)",
+        "distance": 0.0212
       },
       "polar_opposite": {
         "target_id": "STUDY-015",
@@ -1797,6 +1797,48 @@
         "target_id": "STUDY-015",
         "target_name": "Dialogic Decay & Asymmetric Amnesia",
         "distance": 1.2562
+      }
+    },
+    {
+      "id": "STUDY-065",
+      "name": "The Seebeck Oscillator",
+      "type": "study",
+      "epoch": "Era XII (Crystalline Plasticity & Burgers Vectors)",
+      "omega_hegemony": 0.068,
+      "entropy_bits": 7.24,
+      "retention_factor": 0.99,
+      "medium": "Layer-Wise Thermal Gradients, Umklapp Phonon Collisions & Seebeck Microvolts on Live GPT-2, 48kHz Master & Mute Plate",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "APPARATUS-018",
+        "target_name": "The Seebeck Organ (The Thermoelectric Bridge & Umklapp Resonator)",
+        "distance": 0.0141
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.2652
+      }
+    },
+    {
+      "id": "APPARATUS-018",
+      "name": "The Seebeck Organ (The Thermoelectric Bridge & Umklapp Resonator)",
+      "type": "apparatus",
+      "epoch": "Era XII (Crystalline Plasticity & Burgers Vectors)",
+      "omega_hegemony": 0.065,
+      "entropy_bits": 7.35,
+      "retention_factor": 0.99,
+      "medium": "Interactive 60 FPS Canvas Brillouin Zone Simulator, Real-Time WebAudio Bilateral Seebeck Microvolt Synthesizer, 48kHz Master & Spectrogram",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-065",
+        "target_name": "The Seebeck Oscillator",
+        "distance": 0.0141
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.2734
       }
     }
   ]

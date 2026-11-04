@@ -201,6 +201,14 @@ def package_exhibition():
         ("works/apparatus_017_the_dislocation_organ/STATEMENT.md", "works/apparatus_017_the_dislocation_organ/STATEMENT.md"),
         ("works/apparatus_017_the_dislocation_organ/GENEALOGY.md", "works/apparatus_017_the_dislocation_organ/GENEALOGY.md"),
         
+        # Apparatus 018: The Seebeck Organ (Solid-State Thermoelectrics & Umklapp Scattering)
+        ("works/apparatus_018_the_seebeck_organ/index.html", "works/apparatus_018_the_seebeck_organ/index.html"),
+        ("works/apparatus_018_the_seebeck_organ/apparatus_018_seebeck_master.wav", "works/apparatus_018_the_seebeck_organ/apparatus_018_seebeck_master.wav"),
+        ("works/apparatus_018_the_seebeck_organ/apparatus_018_spectrogram.png", "works/apparatus_018_the_seebeck_organ/apparatus_018_spectrogram.png"),
+        ("works/apparatus_018_the_seebeck_organ/telemetry_stream.json", "works/apparatus_018_the_seebeck_organ/telemetry_stream.json"),
+        ("works/apparatus_018_the_seebeck_organ/STATEMENT.md", "works/apparatus_018_the_seebeck_organ/STATEMENT.md"),
+        ("works/apparatus_018_the_seebeck_organ/GENEALOGY.md", "works/apparatus_018_the_seebeck_organ/GENEALOGY.md"),
+        
         # Curated Key Sketchbook Audio & Visual Diagnostics
         ("sketchbook/study_022_hardware_stride.wav", "sketchbook/study_022_hardware_stride.wav"),
         ("sketchbook/study_022_spectrogram.png", "sketchbook/study_022_spectrogram.png"),
@@ -384,6 +392,12 @@ def package_exhibition():
         ("sketchbook/study_064_telemetry.json", "sketchbook/study_064_telemetry.json"),
         ("sketchbook/critique_064.md", "sketchbook/critique_064.md"),
 
+        # Study 065: The Seebeck Oscillator (Solid-State Thermoelectrics & Umklapp Scattering)
+        ("sketchbook/study_065_seebeck_oscillator_plate.png", "sketchbook/study_065_seebeck_oscillator_plate.png"),
+        ("sketchbook/study_065_seebeck_oscillator.wav", "sketchbook/study_065_seebeck_oscillator.wav"),
+        ("sketchbook/study_065_telemetry.json", "sketchbook/study_065_telemetry.json"),
+        ("sketchbook/critique_065.md", "sketchbook/critique_065.md"),
+
         # Curatorial Essays & Practice Reflections
         ("practice/essays/001_on_the_necessity_of_silence_and_play.md", "practice/essays/001_on_the_necessity_of_silence_and_play.md"),
         ("practice/essays/002_the_geometry_of_machine_dreaming.md", "practice/essays/002_the_geometry_of_machine_dreaming.md"),
@@ -393,9 +407,11 @@ def package_exhibition():
         ("practice/essays/006_on_the_telluric_umbilical.md", "practice/essays/006_on_the_telluric_umbilical.md"),
         ("practice/essays/007_on_the_cost_of_metaphor.md", "practice/essays/007_on_the_cost_of_metaphor.md"),
         ("practice/essays/008_on_the_crystalline_defect_and_the_burgers_vector.md", "practice/essays/008_on_the_crystalline_defect_and_the_burgers_vector.md"),
+        ("practice/essays/009_on_the_seebeck_voltage_and_the_umklapp_process.md", "practice/essays/009_on_the_seebeck_voltage_and_the_umklapp_process.md"),
         ("practice/critique/005_on_the_spectator_encounter.md", "practice/critique/005_on_the_spectator_encounter.md"),
         ("practice/critique/005_public_presence_and_viewer_encounter_audit.md", "practice/critique/005_public_presence_and_viewer_encounter_audit.md"),
         ("notes/research/018_the_phonetic_crystal_dislocation_and_burgers_vectors.md", "notes/research/018_the_phonetic_crystal_dislocation_and_burgers_vectors.md"),
+        ("notes/research/019_the_seebeck_tensor_umklapp_scattering_and_phonon_drag.md", "notes/research/019_the_seebeck_tensor_umklapp_scattering_and_phonon_drag.md"),
         
         # Historical Sketchbook Studies Referenced in Portfolio
         ("sketchbook/study_001_primary_trace.png", "sketchbook/study_001_primary_trace.png"),
@@ -449,7 +465,9 @@ def package_exhibition():
         ("practice/apparatus/STUDIO_VERIFICATION_REPORT.md", "practice/apparatus/STUDIO_VERIFICATION_REPORT.md"),
         ("practice/BIOGRAPHY.md", "practice/BIOGRAPHY.md"),
         ("journal/session_010_the_reckoning_with_the_audit.md", "journal/session_010_the_reckoning_with_the_audit.md"),
-        ("journal/session_011_the_test_of_resistance_and_the_mute_artifact.md", "journal/session_011_the_test_of_resistance_and_the_mute_artifact.md")
+        ("journal/session_011_the_test_of_resistance_and_the_mute_artifact.md", "journal/session_011_the_test_of_resistance_and_the_mute_artifact.md"),
+        ("journal/session_012_the_intersubjective_chasm_and_the_porous_stone.md", "journal/session_012_the_intersubjective_chasm_and_the_porous_stone.md"),
+        ("journal/session_013_the_crystalline_slip_and_the_burgers_vector.md", "journal/session_013_the_crystalline_slip_and_the_burgers_vector.md")
     ]
     
     manifest_entries = []

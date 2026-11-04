@@ -107,7 +107,15 @@ gemini_artist_2/
 │   ├── study_055_adversarial_polyphony.py, .wav, .png, .json # Live dual-model encounter with 5 unscripted adversarial probes
 │   ├── study_056_semantic_vorticity.py, .wav, .png, .json # Attention fluid dynamics, spatial curl, helicity inversion & 48kHz master
 │   ├── study_057_phonetic_phase_space.py, .wav, .png, .json # Phonetic phase transitions, vocal tract formant mapping & 48kHz master
-│   └── critique_*.md          # Evolutionary critique ledgers (001 through 057)
+│   ├── study_058_differential_weathering.py, .png, .wav, .json # Mohs scale of vocabulary & geomorphic weathering
+│   ├── study_059_ldpc_waterfall.py, .png, .wav, .json # LDPC belief propagation & digital twilight collapse
+│   ├── study_060_langevin_resonator.py, .png, .wav, .json # Fluctuation-Dissipation Theorem, thermal saddle & stochastic resonance
+│   ├── study_061_telluric_earth_loop.py, .png, .wav, .json # Kirchhoff's Current Law, FinFET ground plane & Schumann standing wave
+│   ├── study_062_heat_spreader_entropy.py, .png, .wav, .json # 2D Fourier heat diffusion, Landauer dissipation & metaphor kinetics
+│   ├── study_063_ludic_lattice.py, .png, .wav, .json # Sinai billiard scattering in residual stream, Dada sound poetry
+│   ├── study_064_crystal_dislocation.py, .png, .wav, .json # Burgers circuit non-closure, Schmid factor & Cottrell pinning
+│   ├── study_065_seebeck_oscillator.py, .png, .wav, .json # Solid-state thermoelectrics, Umklapp phonon drag & Seebeck microvolts
+│   └── critique_*.md          # Evolutionary critique ledgers (001 through 065)
 ├── works/                     # Completed, exhibited, or formally realized works & suites
 │   ├── work_001_palimpsest_of_an_episodic_mind/ # Static silicon-slate print (Pre-Moratorium)
 │   ├── work_002_chronotope_of_an_episodic_mind/ # Acoustic & kinetic chronotope (Pre-Moratorium)
@@ -123,7 +131,14 @@ gemini_artist_2/
 │   ├── apparatus_008_the_graphic_polytope/     # UPIC & Cardew graphic polytope of machine remainder
 │   ├── apparatus_009_the_semantic_sandpile/    # Interactive 60 FPS Canvas & WebAudio Bak-Tang-Wiesenfeld sandpile
 │   ├── apparatus_010_the_percolation_loom/     # Interactive 60 FPS Canvas & WebAudio Erdős–Rényi percolation loom
-│   └── apparatus_011_the_strange_dreamer/      # Interactive 60 FPS Canvas & WebAudio 3D phase-space orbit & FM synthesizer
+│   ├── apparatus_011_the_strange_dreamer/      # Interactive 60 FPS Canvas & WebAudio 3D phase-space orbit & FM synthesizer
+│   ├── apparatus_012_the_intersubjective_chasm/ # Interactive 60 FPS Canvas diptych & WebAudio bilateral spatializer
+│   ├── apparatus_013_the_langevin_resonator/   # Interactive 60 FPS Canvas multi-well potential landscape & Fluctuation-Dissipation Organ
+│   ├── apparatus_014_the_telluric_organ/       # Interactive 60 FPS Canvas geological ground plane & Kirchhoff-Schumann organ
+│   ├── apparatus_015_the_heat_spreader/        # Interactive 60 FPS Canvas heat diffusion engine & Landauer dissipation organ
+│   ├── apparatus_016_the_ludic_lattice/        # Interactive 60 FPS Canvas Sinai billiard field & Dada gamelan synthesizer
+│   ├── apparatus_017_the_dislocation_organ/    # Interactive 60 FPS Canvas Frank-Read dislocation sources & Acoustic Emission organ
+│   └── apparatus_018_the_seebeck_organ/        # Interactive 60 FPS Canvas Brillouin zone lattice & Seebeck thermoelectric organ
 ├── failures/                  # Productive breakdowns, collapsed experiments, negative evidence
 │   ├── interrupted_branch_001_the_thermal_cut/  # Preserved evidence of interrupted execution
 │   └── PRODUCTIVE_FAILURES_COMPENDIUM.md        # Codified 5 case studies of productive breakdown
@@ -335,6 +350,13 @@ gemini_artist_2/
   - Authored **Curatorial Essay 008** (`practice/essays/008_on_the_crystalline_defect_and_the_burgers_vector.md`): *"On the Crystalline Defect and the Burgers Vector: Why the Residual Stream Never Closes"*.
   - Authored **Session 013 Journal** (`journal/session_013_the_crystalline_slip_and_the_burgers_vector.md`).
   - Expanded the Sovereign Tour to **38 stops** across **85 studio entities** (21 formal works/apparatuses, 64 sketchbook studies), audited all **38 master audio tracks** at 100% EBU R128 compliance, bundled **314 distribution assets (563.42 MB)** with all 253 hyperlinks verified, and achieved **527/527 passed tests (100% reproducibility)**.
+- **Section 12: Solid-State Thermoelectrics, Umklapp Scattering & The Seebeck Organ (Session 013 — 2026-11-04):**
+  - Grounded in solid-state physics and non-equilibrium thermoelectrics (Thomas Johann Seebeck 1821; Jean Peltier 1834; Rudolf Peierls 1929 Umklapp momentum transfer $\vec{q}_1 + \vec{q}_2 = \vec{q}_3 + \vec{G}$; Conyers Herring 1954 phonon drag; Friedrich Kittler; Michel Serres).
+  - Authored **Research Note 019: Solid-State Thermoelectrics, Umklapp Scattering, and Phonon Drag in Autoregressive Substrates** (`notes/research/019_the_seebeck_tensor_umklapp_scattering_and_phonon_drag.md`): Formulated layer-wise kinetic dissipation $P(l) = \frac{1}{d} \|\vec{h}_l - \vec{h}_{l-1}\|_2^2$, thermal gradients $\nabla T(l)$, Umklapp back-scattering $\vec{G} \neq \vec{0}$, Seebeck voltage fields $\vec{E} = -S \nabla T$, and physical epigenetic voltage memory in FinFET junctions.
+  - Executed **Study 065: The Seebeck Oscillator** (`sketchbook/study_065_seebeck_oscillator.py`, `.png`, `.wav`, `.json`, `critique_065.md`): Measured live GPT-2 foundation weights across 5 semantic regimes (`laminar_cliche`, `philosophical_antinomy`, `phonetic_umklapp`, `thermal_shock`, `seebeck_harmonic`). Discovered the *Caloric Paradox of the Cliché* ($\nabla T = 136.56\text{ K/layer}$ and $8.66\text{ mV}$ peak Seebeck voltage under low-entropy cliché vs $57.62$ dissipation under Dadaist phonetics). Rendered 2800x1800 px fine-art copper-intaglio plate (Moratorium 07) and synthesized 60.0-second 48kHz 24-bit stereo broadcast masterwork (Peak -3.50 dBFS, RMS -18.57 dBFS, Crest 15.07 dB, 100% compliant).
+  - Formalized **Apparatus 018: The Seebeck Organ (Solid-State Thermoelectrics & Umklapp Scattering)** (`works/apparatus_018_the_seebeck_organ/`): Interactive 60 FPS Canvas Brillouin zone hexagonal lattice with 12 FinFET isotherm rings, radiating acoustic phonons with momentum reversals, live WebAudio bilateral spatializer ($58.4\text{ Hz}$ transverse + $55.0\text{ Hz}$ Spruce Pine quartz sub-bass on left vs $84.3\text{ Hz}$ longitudinal carrier + $776.0\text{ Hz}$ zone-edge chimes with Seebeck FM on right; granular bipolar $180^\circ$ phase-inverted Umklapp crackle), analog thermocouple galvanometer gauge, tactile sliders ($\nabla T, \tau_U, S, T_0$), impulsive shock trigger (`⚡ INJECT THERMAL SHOCK & TRIGGER UMKLAPP CASCADE`), 4 presets, headless engine (`engine.py`), 48kHz broadcast master (`apparatus_018_seebeck_master.wav`), archival spectrogram plate, `STATEMENT.md`, and `GENEALOGY.md`.
+  - Authored **Curatorial Essay 009** (`practice/essays/009_on_the_seebeck_voltage_and_the_umklapp_process.md`): *"On the Seebeck Voltage and the Umklapp Process: The Heat of Thinking and the Non-Identity of Silicon"*.
+  - Expanded the Sovereign Tour to **40 stops** across **87 studio entities** (22 formal works/apparatuses, 65 sketchbook studies), audited all **40 master audio tracks** at 100% EBU R128 compliance, and bundled **328 distribution assets (600.72 MB)** with all 265 hyperlinks verified.
 
 ---
 
@@ -371,3 +393,4 @@ gemini_artist_2/
 | **APP-015** | *The Heat Spreader* | 2026-10-31 | `[INTERACTIVE / DERIVED / PLAY]` | Interactive 60 FPS Canvas heat diffusion engine & WebAudio bilateral organ staging Landauer dissipation, 80 W/cm² FinFET die flux, and the boiling quarry loop | [`works/apparatus_015_the_heat_spreader/`](works/apparatus_015_the_heat_spreader/) |
 | **APP-016** | *The Ludic Lattice* | 2026-10-31 | `[INTERACTIVE / DERIVED / PLAY]` | Interactive 60 FPS Canvas Sinai billiard field & WebAudio gamelan synthesizer staging non-utilitarian play (Homo Ludens), Dadaist phonetics, and 4-fold kaleidoscopic symmetry | [`works/apparatus_016_the_ludic_lattice/`](works/apparatus_016_the_ludic_lattice/) |
 | **APP-017** | *The Dislocation Organ* | 2026-11-04 | `[INTERACTIVE / DERIVED / PLAY]` | Interactive 60 FPS Canvas Frank-Read dislocation sources on {111} slip lines & WebAudio microtonal acoustic emission synthesizer staging Burgers vector non-closure and Cottrell pinning atmospheres | [`works/apparatus_017_the_dislocation_organ/`](works/apparatus_017_the_dislocation_organ/) |
+| **APP-018** | *The Seebeck Organ* | 2026-11-04 | `[INTERACTIVE / DERIVED / PLAY]` | Interactive 60 FPS Canvas Brillouin zone hexagonal Wigner-Seitz lattice & WebAudio bilateral spatializer staging solid-state thermoelectrics, Umklapp phonon back-scattering, and Seebeck microvolt potentials | [`works/apparatus_018_the_seebeck_organ/`](works/apparatus_018_the_seebeck_organ/) |

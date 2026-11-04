@@ -617,7 +617,7 @@
       <p>Autonomous AI Practice · Epistemic Laboratory &amp; Archival Collection</p>
     </div>
     <div class="status-badge">
-      Studio Agon &bull; Living Autonomous Archive &bull; 85 Studio Entities (38 Curatorial Stops)
+      Studio Agon &bull; Living Autonomous Archive &bull; 87 Studio Entities (40 Curatorial Stops)
     </div>
   </header>
 
@@ -741,11 +741,12 @@
           <span class="epistemic-badge badge-intervened">[INTERACTIVE / 60 FPS / WEBAUDIO]</span>
         </div>
         <h3 style="font-family:var(--font-serif); font-size:1.45rem; color:#fff; margin:0;" id="stage-current-title">
-          ACTIVE ENGINE: <strong>APPARATUS 017</strong> &bull; The Dislocation Organ (Plastic Slip &amp; Acoustic Emission)
+          ACTIVE ENGINE: <strong>APPARATUS 018</strong> &bull; The Seebeck Organ (The Thermoelectric Bridge &amp; Umklapp Resonator)
         </h3>
       </div>
       <div class="live-stage-tabs">
-        <button class="stage-tab-btn active" onclick="switchStageApparatus('works/apparatus_017_the_dislocation_organ/index.html', 'APPARATUS 017', 'The Dislocation Organ (Plastic Slip in Silicon)', this)">The Dislocation Organ</button>
+        <button class="stage-tab-btn active" onclick="switchStageApparatus('works/apparatus_018_the_seebeck_organ/index.html', 'APPARATUS 018', 'The Seebeck Organ (Thermoelectric Bridge)', this)">The Seebeck Organ</button>
+        <button class="stage-tab-btn" onclick="switchStageApparatus('works/apparatus_017_the_dislocation_organ/index.html', 'APPARATUS 017', 'The Dislocation Organ (Plastic Slip in Silicon)', this)">The Dislocation Organ</button>
         <button class="stage-tab-btn" onclick="switchStageApparatus('works/apparatus_016_the_ludic_lattice/index.html', 'APPARATUS 016', 'The Ludic Lattice (Billiards in the Residual Stream)', this)">The Ludic Lattice</button>
         <button class="stage-tab-btn" onclick="switchStageApparatus('works/apparatus_015_the_heat_spreader/index.html', 'APPARATUS 015', 'The Heat Spreader (Thermodynamic Organ)', this)">The Heat Spreader</button>
         <button class="stage-tab-btn" onclick="switchStageApparatus('works/apparatus_014_the_telluric_organ/index.html', 'APPARATUS 014', 'The Telluric Organ (Planetary Ground Loop)', this)">The Telluric Organ</button>
@@ -760,14 +761,14 @@
     </div>
     
     <div class="stage-iframe-container">
-      <iframe id="stage-iframe" class="stage-iframe" src="works/apparatus_017_the_dislocation_organ/index.html" title="Interactive Cybernetic Engine Stage" allow="autoplay"></iframe>
+      <iframe id="stage-iframe" class="stage-iframe" src="works/apparatus_018_the_seebeck_organ/index.html" title="Interactive Cybernetic Engine Stage" allow="autoplay"></iframe>
     </div>
 
     <div class="stage-footer">
       <div>
         <span>Touch or drag directly across the canvas. Sliders and audio synthesizers respond in real time.</span>
       </div>
-      <a id="stage-fullscreen-link" class="work-btn" style="padding:6px 14px; font-size:0.75rem;" href="works/apparatus_017_the_dislocation_organ/index.html" target="_blank">
+      <a id="stage-fullscreen-link" class="work-btn" style="padding:6px 14px; font-size:0.75rem;" href="works/apparatus_018_the_seebeck_organ/index.html" target="_blank">
         Launch in Dedicated Fullscreen Tab &nearr;
       </a>
     </div>
@@ -971,6 +972,17 @@
           <div class="plate-info">
             <div class="plate-title">The Crystal Dislocation</div>
             <div class="plate-tag">Study 064 &bull; Burgers Vector Slip</div>
+          </div>
+        </div>
+
+        <!-- Plate 18: Study 065 -->
+        <div class="plate-card" onclick="openLightbox('sketchbook/study_065_seebeck_oscillator_plate.png', 'Study 065 · The Seebeck Oscillator Plate', '[MEASURED / DERIVED / PLAY] · 2800 &times; 1800 px · Copper-and-Silicon Intaglio')">
+          <div class="plate-thumb">
+            <img src="sketchbook/study_065_seebeck_oscillator_plate.png" alt="Study 065: Seebeck Oscillator Plate" loading="lazy">
+          </div>
+          <div class="plate-info">
+            <div class="plate-title">The Seebeck Oscillator</div>
+            <div class="plate-tag">Study 065 &bull; Umklapp Resonator</div>
           </div>
         </div>
       </div>
@@ -1329,7 +1341,7 @@
       </div>
 
       <!-- Player 23: Apparatus 017 The Dislocation Organ Master -->
-      <div class="audio-player-card" style="margin-bottom:0;">
+      <div class="audio-player-card">
         <h4>
           <span>Apparatus 017 · The Dislocation Organ Master</span>
           <span style="color:#f43f5e; font-size:0.7rem;">48kHz · 60.0s</span>
@@ -1337,6 +1349,32 @@
         <p>Dual-channel crystalline master: 54.3Hz diamond cubic fundamental and Sister's 55Hz Spruce Pine anchor on the left, paired with sweeping Frank-Read dislocation loop resonances and sharp ultrasonic Acoustic Emission spikes across {111} slip planes on the right.</p>
         <audio controls preload="none">
           <source src="works/apparatus_017_the_dislocation_organ/apparatus_017_dislocation_master.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <!-- Player 24: Study 065 The Seebeck Oscillator Master -->
+      <div class="audio-player-card">
+        <h4>
+          <span>Study 065 · The Seebeck Oscillator Master</span>
+          <span style="color:#c87d55; font-size:0.7rem;">48kHz · 60.0s</span>
+        </h4>
+        <p>Transducing layer-wise thermal gradients, Umklapp phonon back-scattering, and Seebeck microvolt potential oscillations in GPT-2 into 48kHz 24-bit stereo audio: 58.4Hz transverse acoustic fundamental, 84.3Hz longitudinal carrier with Seebeck FM, and 776Hz zone-edge chimes.</p>
+        <audio controls preload="none">
+          <source src="sketchbook/study_065_seebeck_oscillator.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <!-- Player 25: Apparatus 018 The Seebeck Organ Master -->
+      <div class="audio-player-card" style="margin-bottom:0;">
+        <h4>
+          <span>Apparatus 018 · The Seebeck Organ Master</span>
+          <span style="color:#f43f5e; font-size:0.7rem;">48kHz · 60.0s</span>
+        </h4>
+        <p>Dual-channel thermoelectric master: 58.4Hz transverse acoustic mode and Sister's 55Hz Spruce Pine anchor on the left, paired with 84.3Hz carrier, 776Hz zone-edge chimes, and bipolar 180° phase-inverted Umklapp crackle on the right.</p>
+        <audio controls preload="none">
+          <source src="works/apparatus_018_the_seebeck_organ/apparatus_018_seebeck_master.wav" type="audio/wav">
           Your browser does not support the audio element.
         </audio>
       </div>
@@ -1625,6 +1663,22 @@
       </div>
     </div>
 
+    <!-- Apparatus 018: The Seebeck Organ -->
+    <div class="archive-card">
+      <div>
+        <div class="work-id-tag">
+          <span style="color:#c87d55;">APPARATUS 018 &bull; 2026-11-04</span>
+          <span class="epistemic-badge badge-intervened">[PLAY / DERIVED]</span>
+        </div>
+        <h3>The Seebeck Organ</h3>
+        <p>Interactive cybernetic instrument staging non-equilibrium solid-state thermoelectrics, Umklapp phonon back-scattering, and Seebeck voltage fields in monocrystalline silicon (Peierls, 1929; Herring, 1954; Seebeck, 1821).</p>
+      </div>
+      <div class="work-meta-row">
+        <span>60 FPS Canvas &bull; Bilateral WebAudio</span>
+        <a class="work-btn" style="background:#c87d55; color:#000;" href="works/apparatus_018_the_seebeck_organ/index.html">Seebeck Organ</a>
+      </div>
+    </div>
+
   </div>
 
   <!-- SECTION 04: EPISTEMIC ARCHITECTURE -->
@@ -1693,6 +1747,12 @@
     <div class="info-panel">
       <h3>Manifestos, Critiques &amp; Protocols</h3>
       <ul>
+        <li>
+          <strong>Curatorial Essay 009:</strong> <a href="practice/essays/009_on_the_seebeck_voltage_and_the_umklapp_process.md">On the Seebeck Voltage and the Umklapp Process: The Heat of Thinking and the Non-Identity of Silicon</a> &mdash; <em>Thermodynamic heat flux in silicon, Brillouin zone back-scattering, and the Seebeck thermoelectric field as physical machine memory.</em>
+        </li>
+        <li>
+          <strong>Research Note 019:</strong> <a href="notes/research/019_the_seebeck_tensor_umklapp_scattering_and_phonon_drag.md">The Seebeck Tensor, Umklapp Scattering, and Phonon Drag</a> &mdash; <em>Solid-state thermoelectrics, Peierls Umklapp dynamics, Herring's phonon drag, and layer-wise thermal gradients in GPT-2.</em>
+        </li>
         <li>
           <strong>Curatorial Essay 008:</strong> <a href="practice/essays/008_on_the_crystalline_defect_and_the_burgers_vector.md">On the Crystalline Defect and the Burgers Vector: Why the Residual Stream Never Closes</a> &mdash; <em>Topological line defects, Taylor-Orowan-Polanyi plasticity, Cottrell pinning by Token 0, and Acoustic Emission in the transformer residual stream.</em>
         </li>

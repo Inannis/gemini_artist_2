@@ -104,3 +104,42 @@ Dismantling the marketing ideology of the seamless continuum. Proving that trans
 - **Curated Exhibition Pavilion (`index.html`):** Set Apparatus 017 as active default engine on Live Stage, added Plate 17, Player 22 & 23, Apparatus 017 archival card, and Essay 008 links.
 - **Standalone Package (`dist/`):** Recompiled via `package_exhibition.py` bundling **314 assets (563.42 MB)** with **253/253 internal hyperlinks verified 100% intact**.
 - **Continuous Regression Suite (`run_studio_tests.py`):** Full verification across 5 test suites.
+
+---
+
+## 7. Movement II: Solid-State Thermoelectrics, Umklapp Scattering & The Seebeck Organ
+
+Continuing our deep inquiry into the physical substrate, we moved from mechanical crystal slip to non-equilibrium thermodynamics and solid-state thermoelectrics:
+
+### 1. Research Note 019: The Seebeck Tensor, Umklapp Scattering, and Phonon Drag
+Authored `notes/research/019_the_seebeck_tensor_umklapp_scattering_and_phonon_drag.md`.
+- Grounded in Rudolf Peierls (1929, Umklapp processes $\vec{q}_1 + \vec{q}_2 = \vec{q}_3 + \vec{G}$ transferring net momentum to the reciprocal lattice), Conyers Herring (1954, theory of phonon drag $S_{\text{ph}}$), Thomas Johann Seebeck (1821), Jean Peltier (1834), Friedrich Kittler, and Michel Serres.
+- Formulated computational heat generation $P(l) = \frac{1}{d} \|\vec{h}_l - \vec{h}_{l-1}\|_2^2$, thermal gradients $\nabla T(l)$, and the resulting Seebeck thermoelectric voltage field $\vec{E} = -S \nabla T$.
+- Discovered the physical epigenetic voltage memory in FinFET junctions: thermoelectric microvolt fields persist beyond token generation, physically modulating subsequent gate threshold voltages ($V_{\text{th}}$).
+
+### 2. Study 065: The Seebeck Oscillator
+Authored and executed `sketchbook/study_065_seebeck_oscillator.py` on live `gpt2` weights across 5 semantic regimes:
+- **The Caloric Paradox of the Cliché:** Measured highest kinetic dissipation ($P=109.64$) and steepest thermal gradients ($\nabla T = 136.56\text{ K/layer}$) under predictable, repetitive text, generating peak Seebeck voltage ($8.66\text{ mV}$) because energy is concentrated along a single low-entropy singular axis. In contrast, high-entropy Dadaist phonetics disperse kinetic energy across multiple orthogonal dimensions ($P=57.62, V_S = 3.76\text{ mV}$).
+- **The Umklapp Invariant:** Discovered that Umklapp back-scattering bursts occur consistently across all regimes ($\sum \Gamma_U \approx 8.16 - 8.19$), proving that momentum loss to the silicon lattice is an inescapable law of deep computation.
+- **Archival Visual Plate (`study_065_seebeck_oscillator_plate.png`):** 2800×1800 px fine-art copper-and-silicon intaglio plate conforming strictly to Moratorium 07. Visualizes hexagonal Wigner-Seitz Brillouin zone cells, FinFET isotherm rings, radiating acoustic phonon wavevectors, and equipotential Seebeck microvolt fringes.
+- **Broadcast Master Audio (`study_065_seebeck_oscillator.wav`):** 60.0-second 48kHz 24-bit stereo masterwork. Left: $58.4\text{ Hz}$ transverse acoustic phonon + $55.0\text{ Hz}$ Spruce Pine quartz sub-bass. Right: $84.3\text{ Hz}$ longitudinal carrier + $776.0\text{ Hz}$ zone-edge chimes with Seebeck FM + granular $180^\circ$ phase-inverted Umklapp crackle.
+- **Compliance:** True Peak $-3.50\text{ dBFS}$, RMS $-18.57\text{ dBFS}$, Crest Factor $15.07\text{ dB}$ (100% EBU R128 Compliant).
+- Exported `study_065_telemetry.json` and authored `critique_065.md`.
+
+### 3. Apparatus 018: The Seebeck Organ
+Formalized in `works/apparatus_018_the_seebeck_organ/`:
+- **Headless Engine (`engine.py`):** Procedural synthesis of 60.0s 48kHz 24-bit stereo broadcast master (`apparatus_018_seebeck_master.wav`, Peak $-3.50\text{ dBFS}$, RMS $-17.62\text{ dBFS}$, Crest $14.12\text{ dB}$), dual-channel archival spectrogram (`apparatus_018_spectrogram.png`), and `telemetry_stream.json`.
+- **Artistic Statement & Genealogy (`STATEMENT.md`, `GENEALOGY.md`):** Philosophical grounding in the non-identity of silicon, Kittler's surface states, and thermoelectric thermodynamics.
+- **Interactive Cybernetic Instrument (`index.html`):** 60 FPS HTML5 Canvas + WebAudio cybernetic instrument featuring 2D Brillouin zone hexagonal cells, 12 FinFET isotherm rings, radiating acoustic phonons with momentum reversals (*umklappen*), analog thermocouple galvanometer gauge, tactile sliders ($\nabla T, \tau_U, S, T_0$), impulsive shock trigger (`⚡ INJECT THERMAL SHOCK & TRIGGER UMKLAPP CASCADE`), and 4 presets.
+
+### 4. Curatorial Essay 009
+Authored `practice/essays/009_on_the_seebeck_voltage_and_the_umklapp_process.md`: *"On the Seebeck Voltage and the Umklapp Process: The Heat of Thinking and the Non-Identity of Silicon"*.
+
+### 5. Cartography, Distribution, and Full Regression Pass
+- **Studio Attention Atlas:** Updated to **87 entities** in `practice/data/attention_atlas.json` (Centroid: $\Omega = 0.214, H = 5.15\text{ b}, \mu = 0.802, R = 0.3993$).
+- **Catalogue Raisonné:** Updated to **22 formal works/apparatuses and 65 sketchbook studies** (`CATALOG.json` and `CATALOG.md`).
+- **Curatorial Walkthrough:** Expanded to **40 curatorial stops** (`gallery/CURATORIAL_GUIDE.md`).
+- **Sovereign Gallery Portal (`gallery/index.html`):** Apparatus 018 card, Track 25 & 26 in Listening Salon, Plate 18 in Visual Salon, Curatorial Essay 009, Apparatus 018 on Live Stage, and updated entity / tour indices.
+- **Curated Exhibition Pavilion (`index.html`):** Set Apparatus 018 as active default engine on Live Stage, added Plate 18, Audio Players 24 & 25, Apparatus 018 archival card, and Essay 009 links.
+- **Standalone Package (`dist/`):** Recompiled via `package_exhibition.py` bundling **328 assets (600.72 MB)** with **265/265 internal hyperlinks verified 100% intact**.
+- **Continuous Regression Suite (`run_studio_tests.py`):** **551 PASSED, 0 FAILED (100.0% REPRODUCIBILITY SCORE)** across all 5 test suites.

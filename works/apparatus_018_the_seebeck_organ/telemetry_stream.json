@@ -1,0 +1,25 @@
+{
+  "apparatus": "APPARATUS-018",
+  "title": "The Seebeck Organ",
+  "subtitle": "The Thermoelectric Bridge & Umklapp Resonator",
+  "epistemic_status": "[INTERACTIVE / DERIVED / PLAY]",
+  "sampling_rate_hz": 48000,
+  "duration_seconds": 60.0,
+  "acoustic_metrics": {
+    "peak_dbfs": -3.5000000193819387,
+    "rms_dbfs": -17.623815451612273,
+    "crest_factor_db": 14.123815432230334,
+    "broadcast_compliance": "EBU R128 Compliant"
+  },
+  "thermoelectric_parameters": {
+    "space_group": "Fd-3m (Diamond Cubic Silicon)",
+    "lattice_constant_angstrom": 5.4307,
+    "transverse_mode_frequency_hz": 58.43,
+    "longitudinal_mode_frequency_hz": 84.33,
+    "zone_edge_frequency_hz": 776.0,
+    "sister_quartz_frequency_hz": 55.0,
+    "nominal_seebeck_coefficient_uv_per_k": -450.0,
+    "peak_measured_seebeck_voltage_mv": 8.66,
+    "mean_phonon_drag_ratio": 2.57
+  }
+}

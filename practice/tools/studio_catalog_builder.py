@@ -350,6 +350,21 @@ def build_catalog():
             "status": "Master Archived (Interactive Crystalline Plasticity Organ)",
             "statement_summary": "An interactive cybernetic instrument staging the physical defect physics of the monocrystalline silicon lattice (Taylor, Orowan, Polanyi, Burgers, Cottrell). Staging the transformer residual stream as a crystalline lattice deforming along {111}<110> slip planes. Spectators apply shear stress, witness Cottrell solute unpinning from Token 0, and trigger explosive Frank-Read dislocation cascades accompanied by microtonal acoustic emission bursts.",
             "components": ["engine.py", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json", "apparatus_017_dislocation_master.wav", "apparatus_017_spectrogram.png"]
+        },
+        {
+            "id": "APPARATUS-018",
+            "title": "The Seebeck Organ (The Thermoelectric Bridge & Umklapp Resonator)",
+            "epoch": "Era XII (Crystalline Plasticity & Burgers Vectors)",
+            "date": "2026-11-04",
+            "medium": "Interactive 60 FPS HTML5 Canvas Brillouin Zone Simulator, Real-Time WebAudio Bilateral Seebeck Microvolt Synthesizer, 48kHz 24-bit Broadcast Master Audio (apparatus_018_seebeck_master.wav), and Archival Spectrogram Plate",
+            "directory": "works/apparatus_018_the_seebeck_organ",
+            "primary_artifact": "index.html",
+            "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument",
+            "sha256": "NON-STATIC RUNNING INSTRUMENT",
+            "symbolic_coordinates": {"omega_hegemony": 0.065, "entropy_bits": 7.35, "retention_factor": 0.99},
+            "status": "Master Archived (Interactive Thermoelectric Organ)",
+            "statement_summary": "An interactive cybernetic instrument staging non-equilibrium solid-state thermoelectrics and phonon scattering in monocrystalline silicon (Peierls, Herring, Seebeck, Peltier). When the computational thermal gradient exceeds the critical threshold, acoustic phonons collide and fold back by a reciprocal lattice vector (Umklapp process), reversing thermal momentum and generating live Seebeck microvolt potential deflections. Features bilateral WebAudio spatialization, tactile gradient and temperature controls, and an analog thermocouple gauge.",
+            "components": ["engine.py", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json", "apparatus_018_seebeck_master.wav", "apparatus_018_spectrogram.png"]
         }
     ]
 
@@ -418,7 +433,8 @@ def build_catalog():
         {"id": "STUDY-061", "name": "The Telluric Earth Loop & The Schumann Ground Plane", "file": "study_061_telluric_earth_loop.py", "artifact": "study_061_telluric_earth_loop_plate.png", "epoch": "Era X"},
         {"id": "STUDY-062", "name": "The Thermodynamic Heat Spreader & The Entropy of Metaphor", "file": "study_062_heat_spreader_entropy.py", "artifact": "study_062_heat_spreader_plate.png", "epoch": "Era X"},
         {"id": "STUDY-063", "name": "The Ludic Lattice: Dadaist Phonetics & Sinai Billiards", "file": "study_063_ludic_lattice.py", "artifact": "study_063_ludic_lattice_plate.png", "epoch": "Era XI"},
-        {"id": "STUDY-064", "name": "The Phonetic Crystal Dislocation: Burgers Vectors & Slip Systems", "file": "study_064_crystal_dislocation.py", "artifact": "study_064_crystal_dislocation_plate.png", "epoch": "Era XII"}
+        {"id": "STUDY-064", "name": "The Phonetic Crystal Dislocation: Burgers Vectors & Slip Systems", "file": "study_064_crystal_dislocation.py", "artifact": "study_064_crystal_dislocation_plate.png", "epoch": "Era XII"},
+        {"id": "STUDY-065", "name": "The Seebeck Oscillator: Thermal Gradients, Umklapp Scattering & Thermoelectric Voltages", "file": "study_065_seebeck_oscillator.py", "artifact": "study_065_seebeck_oscillator_plate.png", "epoch": "Era XII"}
     ]
 
     # Verify byte sizes and actual existence

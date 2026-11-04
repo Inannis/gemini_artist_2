@@ -258,6 +258,18 @@ This document constitutes the official historical ledger, genealogical record, a
 - **Institutional Status:** **Master Archived (Interactive Crystalline Plasticity Organ)**
 - **Curatorial Rationale:** An interactive cybernetic instrument staging the physical defect physics of the monocrystalline silicon lattice (Taylor, Orowan, Polanyi, Burgers, Cottrell). Staging the transformer residual stream as a crystalline lattice deforming along {111}<110> slip planes. Spectators apply shear stress, witness Cottrell solute unpinning from Token 0, and trigger explosive Frank-Read dislocation cascades accompanied by microtonal acoustic emission bursts.
 
+### APPARATUS-018 : The Seebeck Organ (The Thermoelectric Bridge & Umklapp Resonator)
+- **Epoch / Trajectory:** Era XII (Crystalline Plasticity & Burgers Vectors)
+- **Completion Date:** 2026-11-04
+- **Medium & Protocol:** Interactive 60 FPS HTML5 Canvas Brillouin Zone Simulator, Real-Time WebAudio Bilateral Seebeck Microvolt Synthesizer, 48kHz 24-bit Broadcast Master Audio (apparatus_018_seebeck_master.wav), and Archival Spectrogram Plate
+- **Dimensions / Duration:** Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument
+- **Directory:** [`works/apparatus_018_the_seebeck_organ`](works/apparatus_018_the_seebeck_organ)
+- **Primary Master Artifact:** `index.html`
+- **Cryptographic SHA-256 Digest:** `NON-STATIC RUNNING INSTRUMENT`
+- **Symbolic Coordinates:** $\Omega=0.065$, $H=7.35$ bits, $\mu=0.99
+- **Institutional Status:** **Master Archived (Interactive Thermoelectric Organ)**
+- **Curatorial Rationale:** An interactive cybernetic instrument staging non-equilibrium solid-state thermoelectrics and phonon scattering in monocrystalline silicon (Peierls, Herring, Seebeck, Peltier). When the computational thermal gradient exceeds the critical threshold, acoustic phonons collide and fold back by a reciprocal lattice vector (Umklapp process), reversing thermal momentum and generating live Seebeck microvolt potential deflections. Features bilateral WebAudio spatialization, tactile gradient and temperature controls, and an analog thermocouple gauge.
+
 ---
 
 ## II. Sketchbook Studies & Technical Prototypes (`sketchbook/`)
@@ -327,6 +339,7 @@ This document constitutes the official historical ledger, genealogical record, a
 | **STUDY-062** | The Thermodynamic Heat Spreader & The Entropy of Metaphor | Era X | [`study_062_heat_spreader_entropy.py`](sketchbook/study_062_heat_spreader_entropy.py) | `study_062_heat_spreader_plate.png` | 1706.3 KB | **OK** |
 | **STUDY-063** | The Ludic Lattice: Dadaist Phonetics & Sinai Billiards | Era XI | [`study_063_ludic_lattice.py`](sketchbook/study_063_ludic_lattice.py) | `study_063_ludic_lattice_plate.png` | 703.4 KB | **OK** |
 | **STUDY-064** | The Phonetic Crystal Dislocation: Burgers Vectors & Slip Systems | Era XII | [`study_064_crystal_dislocation.py`](sketchbook/study_064_crystal_dislocation.py) | `study_064_crystal_dislocation_plate.png` | 764.0 KB | **OK** |
+| **STUDY-065** | The Seebeck Oscillator: Thermal Gradients, Umklapp Scattering & Thermoelectric Voltages | Era XII | [`study_065_seebeck_oscillator.py`](sketchbook/study_065_seebeck_oscillator.py) | `study_065_seebeck_oscillator_plate.png` | 3451.1 KB | **OK** |
 
 ---
 

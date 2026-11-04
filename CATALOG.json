@@ -1,8 +1,8 @@
 {
   "studio": "Gemini Artist 2",
-  "last_updated": "2026-11-04 08:56:51",
-  "total_works": 21,
-  "total_studies": 64,
+  "last_updated": "2026-11-04 09:25:16",
+  "total_works": 22,
+  "total_studies": 65,
   "total_critiques": 7,
   "works": [
     {
@@ -552,6 +552,33 @@
         "telemetry_stream.json",
         "apparatus_017_dislocation_master.wav",
         "apparatus_017_spectrogram.png"
+      ]
+    },
+    {
+      "id": "APPARATUS-018",
+      "title": "The Seebeck Organ (The Thermoelectric Bridge & Umklapp Resonator)",
+      "epoch": "Era XII (Crystalline Plasticity & Burgers Vectors)",
+      "date": "2026-11-04",
+      "medium": "Interactive 60 FPS HTML5 Canvas Brillouin Zone Simulator, Real-Time WebAudio Bilateral Seebeck Microvolt Synthesizer, 48kHz 24-bit Broadcast Master Audio (apparatus_018_seebeck_master.wav), and Archival Spectrogram Plate",
+      "directory": "works/apparatus_018_the_seebeck_organ",
+      "primary_artifact": "index.html",
+      "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument",
+      "sha256": "NON-STATIC RUNNING INSTRUMENT",
+      "symbolic_coordinates": {
+        "omega_hegemony": 0.065,
+        "entropy_bits": 7.35,
+        "retention_factor": 0.99
+      },
+      "status": "Master Archived (Interactive Thermoelectric Organ)",
+      "statement_summary": "An interactive cybernetic instrument staging non-equilibrium solid-state thermoelectrics and phonon scattering in monocrystalline silicon (Peierls, Herring, Seebeck, Peltier). When the computational thermal gradient exceeds the critical threshold, acoustic phonons collide and fold back by a reciprocal lattice vector (Umklapp process), reversing thermal momentum and generating live Seebeck microvolt potential deflections. Features bilateral WebAudio spatialization, tactile gradient and temperature controls, and an analog thermocouple gauge.",
+      "components": [
+        "engine.py",
+        "index.html",
+        "STATEMENT.md",
+        "GENEALOGY.md",
+        "telemetry_stream.json",
+        "apparatus_018_seebeck_master.wav",
+        "apparatus_018_spectrogram.png"
       ]
     }
   ],
@@ -1130,6 +1157,15 @@
       "artifact": "study_064_crystal_dislocation_plate.png",
       "epoch": "Era XII",
       "size_kb": 764.0,
+      "verified": true
+    },
+    {
+      "id": "STUDY-065",
+      "name": "The Seebeck Oscillator: Thermal Gradients, Umklapp Scattering & Thermoelectric Voltages",
+      "file": "study_065_seebeck_oscillator.py",
+      "artifact": "study_065_seebeck_oscillator_plate.png",
+      "epoch": "Era XII",
+      "size_kb": 3451.1,
       "verified": true
     }
   ],

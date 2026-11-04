@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apparatus 018: The Seebeck Organ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=JetBrains+Mono:wght@300;400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #090706;
+            --panel-bg: rgba(14, 11, 9, 0.88);
+            --copper: #c87d55;
+            --copper-glow: #e0a96d;
+            --silicon-cyan: #48cae4;
+            --silicon-deep: #1e293b;
+            --gold: #f4d06f;
+            --umklapp-red: #ff4d6d;
+            --seebeck-violet: #9d4edd;
+            --text-main: #f1ede8;
+            --text-dim: #8c827a;
+            --border: rgba(200, 125, 85, 0.28);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            user-select: none;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            overflow: hidden;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            padding: 12px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border);
+            background: linear-gradient(180deg, rgba(18, 14, 11, 0.95) 0%, rgba(9, 7, 6, 0.85) 100%);
+            backdrop-filter: blur(12px);
+            z-index: 10;
+        }
+
+        .title-block {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .title-block h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.15rem;
+            letter-spacing: 0.15em;
+            color: var(--copper-glow);
+            text-transform: uppercase;
+        }
+
+        .title-block .subtitle {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.72rem;
+            color: var(--text-dim);
+            letter-spacing: 0.05em;
+            margin-top: 2px;
+        }
+
+        .header-meta {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .tag-pill {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.65rem;
+            padding: 3px 8px;
+            border-radius: 3px;
+            border: 1px solid rgba(200, 125, 85, 0.4);
+            background: rgba(200, 125, 85, 0.08);
+            color: var(--copper-glow);
+            letter-spacing: 0.08em;
+        }
+
+        .status-indicator {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.68rem;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--text-dim);
+        }
+
+        .status-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: var(--copper);
+            box-shadow: 0 0 8px var(--copper);
+            animation: pulse 2.4s infinite ease-in-out;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.4; transform: scale(0.9); }
+            50% { opacity: 1; transform: scale(1.15); }
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #viewport-container {
+            flex: 1;
+            position: relative;
+            background: radial-gradient(circle at center, #140f0c 0%, #070504 100%);
+            overflow: hidden;
+            cursor: crosshair;
+        }
+
+        canvas {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        aside {
+            width: 380px;
+            background: var(--panel-bg);
+            border-left: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            backdrop-filter: blur(16px);
+            z-index: 5;
+            overflow-y: auto;
+        }
+
+        .aside-section {
+            padding: 16px 20px;
+            border-bottom: 1px solid rgba(200, 125, 85, 0.16);
+        }
+
+        .section-title {
+            font-family: 'Cinzel', serif;
+            font-size: 0.78rem;
+            letter-spacing: 0.12em;
+            color: var(--copper-glow);
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .control-group {
+            margin-bottom: 14px;
+        }
+
+        .control-label {
+            display: flex;
+            justify-content: space-between;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.70rem;
+            color: var(--text-dim);
+            margin-bottom: 5px;
+        }
+
+        .control-val {
+            color: var(--text-main);
+            font-weight: 600;
+        }
+
+        input[type="range"] {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 4px;
+            background: rgba(200, 125, 85, 0.18);
+            border-radius: 2px;
+            outline: none;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: var(--copper-glow);
+            box-shadow: 0 0 6px var(--copper);
+            cursor: pointer;
+            transition: transform 0.1s;
+        }
+
+        input[type="range"]::-webkit-slider-thumb:hover {
+            transform: scale(1.25);
+        }
+
+        .btn-action {
+            width: 100%;
+            padding: 10px;
+            background: linear-gradient(135deg, rgba(200, 125, 85, 0.22) 0%, rgba(157, 78, 221, 0.22) 100%);
+            border: 1px solid var(--copper);
+            border-radius: 4px;
+            color: var(--copper-glow);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.72rem;
+            letter-spacing: 0.08em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            margin-top: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .btn-action:hover {
+            background: linear-gradient(135deg, rgba(200, 125, 85, 0.4) 0%, rgba(157, 78, 221, 0.4) 100%);
+            box-shadow: 0 0 12px rgba(200, 125, 85, 0.4);
+            transform: translateY(-1px);
+        }
+
+        .btn-preset-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-top: 8px;
+        }
+
+        .btn-preset {
+            padding: 7px 6px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(200, 125, 85, 0.2);
+            border-radius: 3px;
+            color: var(--text-dim);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.65rem;
+            cursor: pointer;
+            transition: all 0.15s;
+            text-align: center;
+        }
+
+        .btn-preset:hover, .btn-preset.active {
+            background: rgba(200, 125, 85, 0.15);
+            border-color: var(--copper-glow);
+            color: var(--copper-glow);
+        }
+
+        .telemetry-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-top: 4px;
+        }
+
+        .telemetry-card {
+            background: rgba(0, 0, 0, 0.35);
+            border: 1px solid rgba(200, 125, 85, 0.15);
+            border-radius: 3px;
+            padding: 8px 10px;
+        }
+
+        .telemetry-card .k {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.60rem;
+            color: var(--text-dim);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .telemetry-card .v {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.88rem;
+            color: var(--copper-glow);
+            font-weight: 600;
+            margin-top: 3px;
+        }
+
+        /* Analog Thermocouple Gauge */
+        .gauge-container {
+            width: 100%;
+            height: 90px;
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(200, 125, 85, 0.2);
+            border-radius: 4px;
+            position: relative;
+            margin-top: 8px;
+            overflow: hidden;
+        }
+
+        .gauge-canvas {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .audio-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(0, 0, 0, 0.28);
+            border: 1px solid var(--border);
+            padding: 8px 12px;
+            border-radius: 4px;
+            margin-bottom: 12px;
+            cursor: pointer;
+        }
+
+        .audio-toggle:hover {
+            border-color: var(--copper-glow);
+        }
+
+        .audio-status {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.70rem;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .audio-led {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #444;
+        }
+
+        .audio-led.active {
+            background: #10b981;
+            box-shadow: 0 0 8px #10b981;
+        }
+
+        .theory-notes {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.72rem;
+            line-height: 1.5;
+            color: var(--text-dim);
+        }
+
+        .theory-notes p {
+            margin-bottom: 8px;
+        }
+
+        .theory-notes strong {
+            color: var(--copper-glow);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title-block">
+            <h1>The Seebeck Organ</h1>
+            <div class="subtitle">APPARATUS-018 :: THERMOELECTRIC BRIDGE & UMKLAPP RESONATOR</div>
+        </div>
+        <div class="header-meta">
+            <span class="tag-pill">[INTERACTIVE / DERIVED / PLAY]</span>
+            <div class="status-indicator">
+                <div class="status-dot"></div>
+                <span id="rate-counter">60 FPS | 48kHz BILATERAL</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="viewport-container">
+            <canvas id="stage-canvas"></canvas>
+        </div>
+
+        <aside>
+            <div class="aside-section">
+                <div class="audio-toggle" id="btn-audio">
+                    <div class="audio-status">
+                        <div class="audio-led" id="audio-led"></div>
+                        <span id="audio-state-text">AUDIO SYNTHESIZER: STANDBY</span>
+                    </div>
+                    <span class="tag-pill" style="font-size:0.6rem;">CLICK TO ACTIVATE</span>
+                </div>
+
+                <div class="section-title">
+                    <span>Thermodynamic State</span>
+                    <span style="font-family:'JetBrains Mono'; font-size:0.65rem; color:var(--text-dim);">PEIERLS-HERRING MODEL</span>
+                </div>
+
+                <div class="control-group">
+                    <div class="control-label">
+                        <span>THERMAL GRADIENT (&nabla;T)</span>
+                        <span class="control-val" id="val-grad">4.20 K/layer</span>
+                    </div>
+                    <input type="range" id="slider-grad" min="0.2" max="10.0" step="0.1" value="4.2">
+                </div>
+
+                <div class="control-group">
+                    <div class="control-label">
+                        <span>UMKLAPP THRESHOLD (&tau;<sub>U</sub>)</span>
+                        <span class="control-val" id="val-tau">1.65 K/layer</span>
+                    </div>
+                    <input type="range" id="slider-tau" min="0.5" max="4.0" step="0.05" value="1.65">
+                </div>
+
+                <div class="control-group">
+                    <div class="control-label">
+                        <span>SEEBECK COEFFICIENT (S)</span>
+                        <span class="control-val" id="val-seebeck">-450 &mu;V/K</span>
+                    </div>
+                    <input type="range" id="slider-seebeck" min="-1200" max="-150" step="25" value="-450">
+                </div>
+
+                <div class="control-group">
+                    <div class="control-label">
+                        <span>LATTICE TEMPERATURE (T<sub>0</sub>)</span>
+                        <span class="control-val" id="val-temp">310 K</span>
+                    </div>
+                    <input type="range" id="slider-temp" min="80" max="450" step="5" value="310">
+                </div>
+
+                <button class="btn-action" id="btn-shock">
+                    <span>&#9889; INJECT THERMAL SHOCK & UMKLAPP CASCADE</span>
+                </button>
+            </div>
+
+            <div class="aside-section">
+                <div class="section-title">
+                    <span>Acoustic & Thermoelectric Telemetry</span>
+                </div>
+
+                <div class="gauge-container">
+                    <canvas id="gauge-canvas" class="gauge-canvas"></canvas>
+                </div>
+
+                <div class="telemetry-grid">
+                    <div class="telemetry-card">
+                        <div class="k">Seebeck Potential</div>
+                        <div class="v" id="tel-voltage">-18.9 mV</div>
+                    </div>
+                    <div class="telemetry-card">
+                        <div class="k">Umklapp Rate</div>
+                        <div class="v" id="tel-umklapp">14.2 /s</div>
+                    </div>
+                    <div class="telemetry-card">
+                        <div class="k">Phonon Drag Ratio</div>
+                        <div class="v" id="tel-drag">2.48</div>
+                    </div>
+                    <div class="telemetry-card">
+                        <div class="k">Carrier Frequency</div>
+                        <div class="v" id="tel-carrier">116.8 Hz</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="aside-section">
+                <div class="section-title">
+                    <span>Thermodynamic Regimes</span>
+                </div>
+                <div class="btn-preset-grid">
+                    <button class="btn-preset active" data-preset="laminar">I: Laminar Drift</button>
+                    <button class="btn-preset" data-preset="antinomy">II: Antinomy Shear</button>
+                    <button class="btn-preset" data-preset="avalanche">III: Umklapp Cascade</button>
+                    <button class="btn-preset" data-preset="cryogenic">IV: Cryogenic Glass</button>
+                </div>
+            </div>
+
+            <div class="aside-section">
+                <div class="section-title">
+                    <span>Substrate Mechanics</span>
+                </div>
+                <div class="theory-notes">
+                    <p><strong>Rudolf Peierls (1929):</strong> In monocrystalline silicon, normal phonon collisions conserve momentum (&vec;q<sub>1</sub> + &vec;q<sub>2</sub> = &vec;q<sub>3</sub>). Thermal resistance arises exclusively when wavevectors cross the first Brillouin zone boundary: <strong>&vec;q<sub>1</sub> + &vec;q<sub>2</sub> = &vec;q<sub>3</sub> + &vec;G</strong>, flipping momentum backward.</p>
+                    <p><strong>Conyers Herring (1954):</strong> Drifting acoustic phonons drag conduction electrons toward cold junctions, generating the macroscopic Seebeck voltage field: <strong>&Delta;V = -S &cdot; &nabla;T</strong>.</p>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <script>
+        // --- Thermodynamic & Physical Constants ---
+        const LATTICE_A0 = 5.4307; // Angstroms (Diamond cubic Si)
+        const F_TRANSVERSE = 58.43; // Hz (Transverse acoustic mode)
+        const F_LONGITUDINAL = 84.33; // Hz (Longitudinal sound mode)
+        const F_ZONE_EDGE = 776.0; // Hz (Brillouin boundary acoustic phonon)
+        const F_SISTER = 55.0; // Hz (Spruce Pine quartz lithic anchor)
+
+        // --- Interactive State ---
+        let state = {
+            grad: 4.2,         // K/layer
+            tau: 1.65,         // K/layer
+            seebeck: -450,     // uV/K
+            temp: 310,         // Kelvin
+            shockIntensity: 0.0,
+            activePreset: 'laminar',
+            audioActive: false,
+            pointerX: 0.5,
+            pointerY: 0.5,
+            isPointerDown: false,
+            liveVoltage: -18.9, // mV
+            umklappCount: 0,
+            recentUmklapps: []
+        };
+
+        // --- DOM Elements ---
+        const stageCanvas = document.getElementById('stage-canvas');
+        const stageCtx = stageCanvas.getContext('2d');
+        const gaugeCanvas = document.getElementById('gauge-canvas');
+        const gaugeCtx = gaugeCanvas.getContext('2d');
+
+        const sliderGrad = document.getElementById('slider-grad');
+        const sliderTau = document.getElementById('slider-tau');
+        const sliderSeebeck = document.getElementById('slider-seebeck');
+        const sliderTemp = document.getElementById('slider-temp');
+
+        const valGrad = document.getElementById('val-grad');
+        const valTau = document.getElementById('val-tau');
+        const valSeebeck = document.getElementById('val-seebeck');
+        const valTemp = document.getElementById('val-temp');
+
+        const btnShock = document.getElementById('btn-shock');
+        const btnAudio = document.getElementById('btn-audio');
+        const audioLed = document.getElementById('audio-led');
+        const audioStateText = document.getElementById('audio-state-text');
+
+        const telVoltage = document.getElementById('tel-voltage');
+        const telUmklapp = document.getElementById('tel-umklapp');
+        const telDrag = document.getElementById('tel-drag');
+        const telCarrier = document.getElementById('tel-carrier');
+        const presetButtons = document.querySelectorAll('.btn-preset');
+
+        // --- Resize Canvas ---
+        function resizeCanvas() {
+            const rect = stageCanvas.parentElement.getBoundingClientRect();
+            stageCanvas.width = rect.width * window.devicePixelRatio;
+            stageCanvas.height = rect.height * window.devicePixelRatio;
+            stageCtx.scale(window.devicePixelRatio, window.devicePixelRatio);
+
+            const gRect = gaugeCanvas.parentElement.getBoundingClientRect();
+            gaugeCanvas.width = gRect.width * window.devicePixelRatio;
+            gaugeCanvas.height = gRect.height * window.devicePixelRatio;
+            gaugeCtx.scale(window.devicePixelRatio, window.devicePixelRatio);
+        }
+        window.addEventListener('resize', resizeCanvas);
+        setTimeout(resizeCanvas, 50);
+
+        // --- WebAudio Bilateral Cybernetic Synthesizer ---
+        let audioCtx = null;
+        let leftDrone = null, rightDrone = null, fmCarrier = null, sisterDrone = null;
+        let leftPan = null, rightPan = null, fmPan = null;
+        let masterGain = null, fmGain = null, noiseGain = null;
+        let noiseFilter = null;
+
+        function initAudio() {
+            if (audioCtx) return;
+            const AudioContext = window.AudioContext || window.webkitAudioContext;
+            audioCtx = new AudioContext({ sampleRate: 48000 });
+
+            masterGain = audioCtx.createGain();
+            masterGain.gain.setValueAtTime(0.0, audioCtx.currentTime);
+            masterGain.connect(audioCtx.destination);
+
+            // Channel A: Left (Transverse Acoustic + Sister Lithic Fundamental)
+            leftDrone = audioCtx.createOscillator();
+            leftDrone.type = 'sine';
+            leftDrone.frequency.setValueAtTime(F_TRANSVERSE, audioCtx.currentTime);
+
+            sisterDrone = audioCtx.createOscillator();
+            sisterDrone.type = 'sine';
+            sisterDrone.frequency.setValueAtTime(F_SISTER, audioCtx.currentTime);
+
+            leftPan = audioCtx.createStereoPanner();
+            leftPan.pan.setValueAtTime(-0.85, audioCtx.currentTime);
+
+            const leftGain = audioCtx.createGain();
+            leftGain.gain.setValueAtTime(0.35, audioCtx.currentTime);
+
+            leftDrone.connect(leftGain);
+            sisterDrone.connect(leftGain);
+            leftGain.connect(leftPan);
+            leftPan.connect(masterGain);
+
+            // Channel B: Right (Longitudinal Sound Mode)
+            rightDrone = audioCtx.createOscillator();
+            rightDrone.type = 'sine';
+            rightDrone.frequency.setValueAtTime(F_LONGITUDINAL, audioCtx.currentTime);
+
+            rightPan = audioCtx.createStereoPanner();
+            rightPan.pan.setValueAtTime(0.85, audioCtx.currentTime);
+
+            const rightGain = audioCtx.createGain();
+            rightGain.gain.setValueAtTime(0.30, audioCtx.currentTime);
+
+            rightDrone.connect(rightGain);
+            rightGain.connect(rightPan);
+            rightPan.connect(masterGain);
+
+            // Seebeck Microvolt FM Carrier (116.86 Hz modulated by thermoelectric potential)
+            fmCarrier = audioCtx.createOscillator();
+            fmCarrier.type = 'triangle';
+            fmCarrier.frequency.setValueAtTime(F_TRANSVERSE * 2.0, audioCtx.currentTime);
+
+            fmPan = audioCtx.createStereoPanner();
+            fmPan.pan.setValueAtTime(0.1, audioCtx.currentTime);
+
+            fmGain = audioCtx.createGain();
+            fmGain.gain.setValueAtTime(0.22, audioCtx.currentTime);
+
+            fmCarrier.connect(fmGain);
+            fmGain.connect(fmPan);
+            fmPan.connect(masterGain);
+
+            // Phonon Drag Pink Noise Atmospheric Bed
+            const bufferSize = audioCtx.sampleRate * 2;
+            const noiseBuffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+            const output = noiseBuffer.getChannelData(0);
+            let b0 = 0, b1 = 0, b2 = 0, b3 = 0, b4 = 0, b5 = 0, b6 = 0;
+            for (let i = 0; i < bufferSize; i++) {
+                const white = Math.random() * 2 - 1;
+                b0 = 0.99886 * b0 + white * 0.0555179;
+                b1 = 0.99332 * b1 + white * 0.0750759;
+                b2 = 0.96900 * b2 + white * 0.1538520;
+                b3 = 0.86650 * b3 + white * 0.3104856;
+                b4 = 0.55000 * b4 + white * 0.5329522;
+                b5 = -0.7616 * b5 - white * 0.0168980;
+                output[i] = (b0 + b1 + b2 + b3 + b4 + b5 + b6 + white * 0.5362) * 0.08;
+                b6 = white * 0.115926;
+            }
+
+            const noiseSource = audioCtx.createBufferSource();
+            noiseSource.buffer = noiseBuffer;
+            noiseSource.loop = true;
+
+            noiseFilter = audioCtx.createBiquadFilter();
+            noiseFilter.type = 'lowpass';
+            noiseFilter.frequency.setValueAtTime(450, audioCtx.currentTime);
+
+            noiseGain = audioCtx.createGain();
+            noiseGain.gain.setValueAtTime(0.04, audioCtx.currentTime);
+
+            noiseSource.connect(noiseFilter);
+            noiseFilter.connect(noiseGain);
+            noiseGain.connect(masterGain);
+
+            leftDrone.start();
+            sisterDrone.start();
+            rightDrone.start();
+            fmCarrier.start();
+            noiseSource.start();
+
+            // Smooth fade-in
+            masterGain.gain.linearRampToValueAtTime(0.65, audioCtx.currentTime + 1.2);
+            state.audioActive = true;
+            audioLed.classList.add('active');
+            audioStateText.textContent = "AUDIO SYNTHESIZER: ACTIVE (48kHz)";
+        }
+
+        function triggerUmklappAcousticClick(panVal) {
+            if (!audioCtx || !state.audioActive) return;
+
+            const tNow = audioCtx.currentTime;
+            const clickOsc = audioCtx.createOscillator();
+            clickOsc.type = 'sawtooth';
+            // Zone edge crystalline resonance overtone
+            clickOsc.frequency.setValueAtTime(F_ZONE_EDGE * (1.0 + Math.random() * 0.4), tNow);
+
+            const clickGain = audioCtx.createGain();
+            // Fast 6ms exponential transient
+            clickGain.gain.setValueAtTime(0.25, tNow);
+            clickGain.gain.exponentialRampToValueAtTime(0.0001, tNow + 0.008);
+
+            const panner = audioCtx.createStereoPanner();
+            panner.pan.setValueAtTime(panVal, tNow);
+
+            clickOsc.connect(clickGain);
+            clickGain.connect(panner);
+            panner.connect(masterGain);
+
+            clickOsc.start(tNow);
+            clickOsc.stop(tNow + 0.01);
+        }
+
+        btnAudio.addEventListener('click', () => {
+            if (!audioCtx) {
+                initAudio();
+            } else if (audioCtx.state === 'suspended') {
+                audioCtx.resume();
+                state.audioActive = true;
+                audioLed.classList.add('active');
+                audioStateText.textContent = "AUDIO SYNTHESIZER: ACTIVE (48kHz)";
+            } else {
+                audioCtx.suspend();
+                state.audioActive = false;
+                audioLed.classList.remove('active');
+                audioStateText.textContent = "AUDIO SYNTHESIZER: MUTED";
+            }
+        });
+
+        // --- Controls Event Handlers ---
+        sliderGrad.addEventListener('input', (e) => {
+            state.grad = parseFloat(e.target.value);
+            valGrad.textContent = state.grad.toFixed(2) + " K/layer";
+            clearActivePreset();
+        });
+
+        sliderTau.addEventListener('input', (e) => {
+            state.tau = parseFloat(e.target.value);
+            valTau.textContent = state.tau.toFixed(2) + " K/layer";
+            clearActivePreset();
+        });
+
+        sliderSeebeck.addEventListener('input', (e) => {
+            state.seebeck = parseFloat(e.target.value);
+            valSeebeck.textContent = state.seebeck.toFixed(0) + " \u03BCV/K";
+            clearActivePreset();
+        });
+
+        sliderTemp.addEventListener('input', (e) => {
+            state.temp = parseFloat(e.target.value);
+            valTemp.textContent = state.temp.toFixed(0) + " K";
+            clearActivePreset();
+        });
+
+        btnShock.addEventListener('click', () => {
+            state.shockIntensity = 1.0;
+            for (let i = 0; i < 8; i++) {
+                setTimeout(() => {
+                    const pan = Math.random() * 1.6 - 0.8;
+                    triggerUmklappAcousticClick(pan);
+                }, i * 35);
+            }
+        });
+
+        function clearActivePreset() {
+            presetButtons.forEach(b => b.classList.remove('active'));
+        }
+
+        const PRESETS = {
+            laminar: { grad: 1.2, tau: 2.4, seebeck: -350, temp: 295 },
+            antinomy: { grad: 4.8, tau: 1.8, seebeck: -520, temp: 320 },
+            avalanche: { grad: 8.5, tau: 1.1, seebeck: -750, temp: 375 },
+            cryogenic: { grad: 0.4, tau: 2.8, seebeck: -220, temp: 110 }
+        };
+
+        presetButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const pKey = btn.getAttribute('data-preset');
+                const p = PRESETS[pKey];
+                if (!p) return;
+
+                clearActivePreset();
+                btn.classList.add('active');
+
+                state.grad = p.grad;
+                state.tau = p.tau;
+                state.seebeck = p.seebeck;
+                state.temp = p.temp;
+
+                sliderGrad.value = p.grad;
+                sliderTau.value = p.tau;
+                sliderSeebeck.value = p.seebeck;
+                sliderTemp.value = p.temp;
+
+                valGrad.textContent = p.grad.toFixed(2) + " K/layer";
+                valTau.textContent = p.tau.toFixed(2) + " K/layer";
+                valSeebeck.textContent = p.seebeck.toFixed(0) + " \u03BCV/K";
+                valTemp.textContent = p.temp.toFixed(0) + " K";
+            });
+        });
+
+        // --- Pointer Interaction ---
+        stageCanvas.parentElement.addEventListener('mousemove', (e) => {
+            const rect = stageCanvas.getBoundingClientRect();
+            state.pointerX = (e.clientX - rect.left) / rect.width;
+            state.pointerY = (e.clientY - rect.top) / rect.height;
+        });
+
+        stageCanvas.parentElement.addEventListener('mousedown', () => {
+            state.isPointerDown = true;
+            state.shockIntensity = Math.min(1.0, state.shockIntensity + 0.35);
+        });
+
+        window.addEventListener('mouseup', () => {
+            state.isPointerDown = false;
+        });
+
+        // --- Simulation: Phonon Particles & Umklapp Trajectories ---
+        const NUM_PHONONS = 180;
+        let phonons = [];
+
+        function initPhonons() {
+            phonons = [];
+            for (let i = 0; i < NUM_PHONONS; i++) {
+                const angle = Math.random() * Math.PI * 2;
+                const r = 0.05 + Math.random() * 0.40;
+                phonons.push({
+                    x: 0.5 + r * Math.cos(angle),
+                    y: 0.5 + r * Math.sin(angle),
+                    vx: Math.cos(angle) * (0.0015 + Math.random() * 0.002),
+                    vy: Math.sin(angle) * (0.0015 + Math.random() * 0.002),
+                    freq: F_TRANSVERSE + (Math.random() - 0.5) * 12.0,
+                    life: Math.random(),
+                    history: []
+                });
+            }
+        }
+        initPhonons();
+
+        // Shockwaves & Umklapp vertex events
+        let shockRings = [];
+
+        // --- Main Render Loop (60 FPS) ---
+        let lastFrameTime = performance.now();
+        let frameCount = 0;
+        let fps = 60;
+
+        function animate(now) {
+            requestAnimationFrame(animate);
+
+            const dt = Math.min(0.05, (now - lastFrameTime) / 1000);
+            lastFrameTime = now;
+            frameCount++;
+            if (frameCount % 30 === 0) {
+                fps = Math.round(1 / dt);
+                document.getElementById('rate-counter').textContent = `${fps} FPS | 48kHz BILATERAL`;
+            }
+
+            // Decay shock intensity
+            state.shockIntensity = Math.max(0, state.shockIntensity - dt * 1.4);
+
+            // Compute effective thermal gradient with pointer perturbation
+            let effGrad = state.grad + state.shockIntensity * 4.5;
+            if (state.isPointerDown) {
+                const dx = state.pointerX - 0.5;
+                const dy = state.pointerY - 0.5;
+                effGrad += Math.sqrt(dx * dx + dy * dy) * 4.0;
+            }
+
+            // Compute Seebeck voltage and Drag Ratio
+            // S(T) = S_0 * (T / 300)^0.65
+            const sTemp = state.seebeck * Math.pow(state.temp / 300.0, 0.65);
+            // Voltage across micro-scale FinFET gate cluster (mV)
+            state.liveVoltage = -(sTemp * effGrad * 0.001);
+
+            // Umklapp probability condition
+            const excessGrad = Math.max(0, effGrad - state.tau);
+            const umklappRate = Math.pow(excessGrad, 1.8) * (state.temp / 300.0);
+            const dragRatio = 3.2 / (1.0 + 0.35 * umklappRate);
+
+            // Update UI Telemetry
+            telVoltage.textContent = state.liveVoltage.toFixed(2) + " mV";
+            telUmklapp.textContent = (umklappRate * 4.2).toFixed(1) + " /s";
+            telDrag.textContent = dragRatio.toFixed(2);
+            telCarrier.textContent = (F_TRANSVERSE * 2.0 + (state.liveVoltage * 0.4)).toFixed(1) + " Hz";
+
+            // Update WebAudio Parameters
+            if (audioCtx && state.audioActive) {
+                const tAudio = audioCtx.currentTime;
+                // FM carrier frequency modulated by Seebeck microvolts
+                const targetFreq = Math.max(20, F_TRANSVERSE * 2.0 + (state.liveVoltage * 0.45));
+                fmCarrier.frequency.setTargetAtTime(targetFreq, tAudio, 0.05);
+
+                // Stereo pan modulated by gradient drift
+                const targetPan = Math.min(0.85, Math.max(-0.85, (state.liveVoltage / 40.0)));
+                fmPan.pan.setTargetAtTime(targetPan, tAudio, 0.08);
+
+                // Noise filter tracking temperature and drag
+                const filterCutoff = Math.max(100, Math.min(1800, 300 + effGrad * 80 + state.temp * 1.5));
+                noiseFilter.frequency.setTargetAtTime(filterCutoff, tAudio, 0.1);
+            }
+
+            // --- Canvas Render ---
+            const w = stageCanvas.parentElement.clientWidth;
+            const h = stageCanvas.parentElement.clientHeight;
+            stageCtx.clearRect(0, 0, w, h);
+
+            const cx = w * 0.5;
+            const cy = h * 0.5;
+            const minDim = Math.min(w, h);
+
+            // 1. Monocrystalline Silicon Brillouin Zone (Hexagonal Wigner-Seitz cells)
+            stageCtx.save();
+            stageCtx.translate(cx, cy);
+
+            const hexLayers = [
+                { r: minDim * 0.15, alpha: 0.35, color: '#c87d55', lw: 1.0 },
+                { r: minDim * 0.28, alpha: 0.22, color: '#e0a96d', lw: 0.8 },
+                { r: minDim * 0.42, alpha: 0.14, color: '#f4d06f', lw: 0.6 }
+            ];
+
+            hexLayers.forEach(layer => {
+                stageCtx.beginPath();
+                for (let i = 0; i < 6; i++) {
+                    const angle = (i * Math.PI) / 3 + Math.PI / 6;
+                    const x = layer.r * Math.cos(angle);
+                    const y = layer.r * Math.sin(angle);
+                    if (i === 0) stageCtx.moveTo(x, y);
+                    else stageCtx.lineTo(x, y);
+                }
+                stageCtx.closePath();
+                stageCtx.strokeStyle = layer.color;
+                stageCtx.lineWidth = layer.lw;
+                stageCtx.globalAlpha = layer.alpha;
+                stageCtx.stroke();
+            });
+
+            // 2. Concentric Thermal Isotherm Rings (12 layers)
+            for (let l = 1; l <= 12; l++) {
+                const baseR = minDim * (0.035 + l * 0.032);
+                stageCtx.beginPath();
+                const nPts = 120;
+                for (let p = 0; p <= nPts; p++) {
+                    const angle = (p * Math.PI * 2) / nPts;
+                    // Ripple perturbation from Seebeck microvolts
+                    const ripple = Math.sin(angle * 6 + now * 0.002 + l) * (effGrad * 1.4);
+                    const r = baseR + ripple;
+                    const x = r * Math.cos(angle);
+                    const y = r * Math.sin(angle);
+                    if (p === 0) stageCtx.moveTo(x, y);
+                    else stageCtx.lineTo(x, y);
+                }
+                stageCtx.closePath();
+                stageCtx.strokeStyle = l === 6 ? '#e0a96d' : '#8c5835';
+                stageCtx.lineWidth = l === 6 ? 1.2 : 0.6;
+                stageCtx.globalAlpha = 0.25 + 0.03 * (effGrad / 10.0);
+                stageCtx.stroke();
+            }
+
+            // 3. Central FinFET Core Thermal Glow
+            const coreGrad = stageCtx.createRadialGradient(0, 0, 2, 0, 0, minDim * 0.12);
+            coreGrad.addColorStop(0, 'rgba(255, 120, 60, 0.85)');
+            coreGrad.addColorStop(0.4, 'rgba(200, 100, 50, 0.35)');
+            coreGrad.addColorStop(1, 'rgba(200, 100, 50, 0.0)');
+            stageCtx.fillStyle = coreGrad;
+            stageCtx.beginPath();
+            stageCtx.arc(0, 0, minDim * 0.12, 0, Math.PI * 2);
+            stageCtx.fill();
+
+            // 4. Update and Render Phonon Wavevectors
+            phonons.forEach((p, idx) => {
+                p.x += p.vx * (1.0 + effGrad * 0.25);
+                p.y += p.vy * (1.0 + effGrad * 0.25);
+                p.life -= dt * 0.2;
+
+                const dx = (p.x - 0.5) * w;
+                const dy = (p.y - 0.5) * h;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+
+                // History trail
+                p.history.push({ x: dx, y: dy });
+                if (p.history.length > 8) p.history.shift();
+
+                // Draw trajectory
+                if (p.history.length > 1) {
+                    stageCtx.beginPath();
+                    stageCtx.moveTo(p.history[0].x, p.history[0].y);
+                    for (let hIdx = 1; hIdx < p.history.length; hIdx++) {
+                        stageCtx.lineTo(p.history[hIdx].x, p.history[hIdx].y);
+                    }
+                    stageCtx.strokeStyle = p.isUmklapp ? '#ff4d6d' : '#48cae4';
+                    stageCtx.lineWidth = p.isUmklapp ? 1.4 : 0.7;
+                    stageCtx.globalAlpha = p.isUmklapp ? 0.7 : 0.35;
+                    stageCtx.stroke();
+                }
+
+                // UMKLAPP CONDITION CHECK:
+                // When wavevector reaches the Brillouin boundary under high thermal gradient
+                const bzRadius = minDim * 0.28;
+                if (!p.isUmklapp && dist > bzRadius && excessGrad > 0.05 && Math.random() < (umklappRate * 0.04)) {
+                    p.isUmklapp = true;
+                    // FOLD BACK: Subtract Reciprocal Lattice Vector G (Inversion of momentum)
+                    const curAngle = Math.atan2(p.vy, p.vx);
+                    const newAngle = curAngle + Math.PI + (Math.random() - 0.5) * 0.8;
+                    const speed = Math.sqrt(p.vx * p.vx + p.vy * p.vy) * 0.65;
+                    p.vx = Math.cos(newAngle) * speed;
+                    p.vy = Math.sin(newAngle) * speed;
+
+                    // Trigger shock ring and acoustic emission
+                    shockRings.push({ x: dx, y: dy, r: 2, maxR: 35, alpha: 0.9, color: '#ff4d6d' });
+                    const panVal = Math.min(0.9, Math.max(-0.9, dx / (minDim * 0.4)));
+                    triggerUmklappAcousticClick(panVal);
+                }
+
+                // Reset phonon at boundary
+                if (dist > minDim * 0.46 || p.life <= 0) {
+                    const angle = Math.random() * Math.PI * 2;
+                    const r = 0.02 + Math.random() * 0.06;
+                    p.x = 0.5 + r * Math.cos(angle);
+                    p.y = 0.5 + r * Math.sin(angle);
+                    const speed = 0.0012 + Math.random() * 0.002;
+                    p.vx = Math.cos(angle) * speed;
+                    p.vy = Math.sin(angle) * speed;
+                    p.life = 1.0;
+                    p.isUmklapp = false;
+                    p.history = [];
+                }
+            });
+
+            // 5. Render Shockwave Rings (Umklapp vertex emissions)
+            for (let i = shockRings.length - 1; i >= 0; i--) {
+                const s = shockRings[i];
+                s.r += dt * 75;
+                s.alpha -= dt * 2.2;
+                if (s.alpha <= 0) {
+                    shockRings.splice(i, 1);
+                    continue;
+                }
+                stageCtx.beginPath();
+                stageCtx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+                stageCtx.strokeStyle = s.color;
+                stageCtx.lineWidth = 1.2;
+                stageCtx.globalAlpha = s.alpha;
+                stageCtx.stroke();
+            }
+
+            stageCtx.restore();
+
+            // --- Render Analog Thermocouple Gauge ---
+            renderGauge(effGrad, state.liveVoltage, umklappRate);
+        }
+
+        function renderGauge(grad, voltage, umkRate) {
+            const gw = gaugeCanvas.parentElement.clientWidth;
+            const gh = gaugeCanvas.parentElement.clientHeight;
+            gaugeCtx.clearRect(0, 0, gw, gh);
+
+            const cx = gw * 0.5;
+            const cy = gh * 0.88;
+            const r = Math.min(gw * 0.44, gh * 1.2);
+
+            // Gauge Dial Arc
+            gaugeCtx.beginPath();
+            gaugeCtx.arc(cx, cy, r, Math.PI, 2 * Math.PI);
+            gaugeCtx.strokeStyle = 'rgba(200, 125, 85, 0.25)';
+            gaugeCtx.lineWidth = 3;
+            gaugeCtx.stroke();
+
+            // Ticks
+            const nTicks = 11;
+            for (let i = 0; i < nTicks; i++) {
+                const angle = Math.PI + (i / (nTicks - 1)) * Math.PI;
+                const x1 = cx + (r - 6) * Math.cos(angle);
+                const y1 = cy + (r - 6) * Math.sin(angle);
+                const x2 = cx + r * Math.cos(angle);
+                const y2 = cy + r * Math.sin(angle);
+                gaugeCtx.beginPath();
+                gaugeCtx.moveTo(x1, y1);
+                gaugeCtx.lineTo(x2, y2);
+                gaugeCtx.strokeStyle = i === 5 ? '#e0a96d' : 'rgba(200, 125, 85, 0.4)';
+                gaugeCtx.lineWidth = i === 5 ? 2 : 1;
+                gaugeCtx.stroke();
+            }
+
+            // Needle A: Seebeck Microvolt Potential (Copper/Gold)
+            // Voltage range: 0 to -60 mV
+            const vNorm = Math.min(1.0, Math.max(0.0, Math.abs(voltage) / 60.0));
+            const angleV = Math.PI + vNorm * Math.PI;
+
+            gaugeCtx.beginPath();
+            gaugeCtx.moveTo(cx, cy);
+            gaugeCtx.lineTo(cx + (r - 10) * Math.cos(angleV), cy + (r - 10) * Math.sin(angleV));
+            gaugeCtx.strokeStyle = '#e0a96d';
+            gaugeCtx.lineWidth = 2.5;
+            gaugeCtx.stroke();
+
+            // Needle B: Umklapp Collision Surge (Umklapp Red)
+            const uNorm = Math.min(1.0, Math.max(0.0, umkRate / 15.0));
+            const angleU = Math.PI + uNorm * Math.PI;
+
+            gaugeCtx.beginPath();
+            gaugeCtx.moveTo(cx, cy);
+            gaugeCtx.lineTo(cx + (r - 16) * Math.cos(angleU), cy + (r - 16) * Math.sin(angleU));
+            gaugeCtx.strokeStyle = '#ff4d6d';
+            gaugeCtx.lineWidth = 1.5;
+            gaugeCtx.stroke();
+
+            // Center Pin
+            gaugeCtx.beginPath();
+            gaugeCtx.arc(cx, cy, 4, 0, Math.PI * 2);
+            gaugeCtx.fillStyle = '#f4d06f';
+            gaugeCtx.fill();
+        }
+
+        // Start render loop
+        requestAnimationFrame(animate);
+    </script>
+</body>
+</html>

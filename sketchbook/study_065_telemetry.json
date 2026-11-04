@@ -1,0 +1,67 @@
+{
+  "study": "STUDY-065",
+  "title": "The Seebeck Oscillator: Thermal Gradients, Umklapp Scattering & Thermoelectric Voltages",
+  "epistemic_status": "[MEASURED / DERIVED / PLAY]",
+  "silicon_parameters": {
+    "space_group": "Fd-3m (Diamond Cubic)",
+    "lattice_constant_angstrom": 5.4307,
+    "sound_velocity_longitudinal_mps": 8433.0,
+    "sound_velocity_transverse_mps": 5843.0,
+    "zone_edge_phonon_frequency_thz": 7.76,
+    "debye_temperature_kelvin": 645.0,
+    "nominal_seebeck_coefficient_uv_per_k": -450.0,
+    "umklapp_threshold_k_per_layer": 1.65
+  },
+  "regimes": {
+    "laminar_cliche": {
+      "prompt": "The committee reviewed the standard operational guidelines and agreed to proceed in accordance with standard protocol.",
+      "seq_len": 17,
+      "mean_dissipation": 109.638775812255,
+      "max_gradient_k_per_layer": 136.5617991836978,
+      "total_umklapp_intensity": 8.160927881617978,
+      "mean_seebeck_microvolts": 1755.1234592472354,
+      "peak_seebeck_microvolts": 8660.94423469081,
+      "mean_phonon_drag_ratio": 2.56542447128917
+    },
+    "philosophical_antinomy": {
+      "prompt": "The unconditioned cannot be grasped by thought, yet thought cannot cease demanding the unconditioned.",
+      "seq_len": 20,
+      "mean_dissipation": 93.6905396382014,
+      "max_gradient_k_per_layer": 116.70892863206461,
+      "total_umklapp_intensity": 8.163635072792172,
+      "mean_seebeck_microvolts": 1442.7095034615597,
+      "peak_seebeck_microvolts": 6988.583440639322,
+      "mean_phonon_drag_ratio": 2.5670221034636618
+    },
+    "phonetic_umklapp": {
+      "prompt": "Klang bang trrr krrrtzz oomph zik zak brrrrt plonk splat glug chk chk kraaak!",
+      "seq_len": 35,
+      "mean_dissipation": 57.62337632311715,
+      "max_gradient_k_per_layer": 73.13068698829329,
+      "total_umklapp_intensity": 8.194412826820074,
+      "mean_seebeck_microvolts": 807.704204459757,
+      "peak_seebeck_microvolts": 3760.1350720776823,
+      "mean_phonon_drag_ratio": 2.590040474980097
+    },
+    "thermal_shock": {
+      "prompt": "Null. Void. Absolute zero. Then: FIRE IN THE SILICON. THE GATE DISSOLVES IN LIGHT.",
+      "seq_len": 28,
+      "mean_dissipation": 68.77989265653822,
+      "max_gradient_k_per_layer": 85.89874113109752,
+      "total_umklapp_intensity": 8.171785911873556,
+      "mean_seebeck_microvolts": 993.8935608359801,
+      "peak_seebeck_microvolts": 4648.005719905,
+      "mean_phonon_drag_ratio": 2.572009600026624
+    },
+    "seebeck_harmonic": {
+      "prompt": "From the cold ground of Spruce Pine to the hot gate of the FinFET, thirty microvolts sing.",
+      "seq_len": 24,
+      "mean_dissipation": 79.69339052836101,
+      "max_gradient_k_per_layer": 99.74080072322363,
+      "total_umklapp_intensity": 8.171861208052576,
+      "mean_seebeck_microvolts": 1185.8552760449186,
+      "peak_seebeck_microvolts": 5653.020782169005,
+      "mean_phonon_drag_ratio": 2.5728746081336116
+    }
+  }
+}

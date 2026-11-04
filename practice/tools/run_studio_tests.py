@@ -169,6 +169,12 @@ def test_master_works_integrity():
             "dir": "works/apparatus_017_the_dislocation_organ",
             "artifacts": ["engine.py", "apparatus_017_dislocation_master.wav", "apparatus_017_spectrogram.png", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json"],
             "sha_target": {}
+        },
+        {
+            "id": "Apparatus 018",
+            "dir": "works/apparatus_018_the_seebeck_organ",
+            "artifacts": ["engine.py", "apparatus_018_seebeck_master.wav", "apparatus_018_spectrogram.png", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json"],
+            "sha_target": {}
         }
     ]
 
@@ -217,6 +223,7 @@ def test_telemetry_and_apparatus():
         "works/apparatus_015_the_heat_spreader/engine.py",
         "works/apparatus_016_the_ludic_lattice/engine.py",
         "works/apparatus_017_the_dislocation_organ/engine.py",
+        "works/apparatus_018_the_seebeck_organ/engine.py",
         "practice/tools/studio_acoustic_compliance_audit.py",
         "practice/tools/package_exhibition.py"
     ]
@@ -509,7 +516,21 @@ def test_empirical_studies_and_naming():
         ("works/apparatus_017_the_dislocation_organ/STATEMENT.md"),
         ("works/apparatus_017_the_dislocation_organ/GENEALOGY.md"),
         ("practice/essays/008_on_the_crystalline_defect_and_the_burgers_vector.md"),
-        ("notes/research/018_the_phonetic_crystal_dislocation_and_burgers_vectors.md")
+        ("notes/research/018_the_phonetic_crystal_dislocation_and_burgers_vectors.md"),
+        ("sketchbook/study_065_seebeck_oscillator.py"),
+        ("sketchbook/study_065_seebeck_oscillator_plate.png"),
+        ("sketchbook/study_065_seebeck_oscillator.wav"),
+        ("sketchbook/study_065_telemetry.json"),
+        ("sketchbook/critique_065.md"),
+        ("works/apparatus_018_the_seebeck_organ/engine.py"),
+        ("works/apparatus_018_the_seebeck_organ/index.html"),
+        ("works/apparatus_018_the_seebeck_organ/apparatus_018_seebeck_master.wav"),
+        ("works/apparatus_018_the_seebeck_organ/apparatus_018_spectrogram.png"),
+        ("works/apparatus_018_the_seebeck_organ/telemetry_stream.json"),
+        ("works/apparatus_018_the_seebeck_organ/STATEMENT.md"),
+        ("works/apparatus_018_the_seebeck_organ/GENEALOGY.md"),
+        ("practice/essays/009_on_the_seebeck_voltage_and_the_umklapp_process.md"),
+        ("notes/research/019_the_seebeck_tensor_umklapp_scattering_and_phonon_drag.md")
     ]
     for ef in empirical_files:
         p = os.path.join(WORKSPACE_ROOT, ef)

@@ -466,6 +466,16 @@ STUDIO_ENTITIES = [
         "id": "APPARATUS-017", "name": "The Dislocation Organ (Plastic Slip & Acoustic Emission)", "type": "apparatus", "epoch": "Era XII (Crystalline Plasticity & Burgers Vectors)",
         "omega_hegemony": 0.072, "entropy_bits": 7.12, "retention_factor": 0.99,
         "medium": "Interactive 60 FPS HTML5 Canvas Crystalline Plasticity Engine, Real-Time WebAudio Acoustic Emission (AE) Synthesizer, 48kHz Master & Spectrogram", "year": 2026
+    },
+    {
+        "id": "STUDY-065", "name": "The Seebeck Oscillator", "type": "study", "epoch": "Era XII (Crystalline Plasticity & Burgers Vectors)",
+        "omega_hegemony": 0.068, "entropy_bits": 7.24, "retention_factor": 0.99,
+        "medium": "Layer-Wise Thermal Gradients, Umklapp Phonon Collisions & Seebeck Microvolts on Live GPT-2, 48kHz Master & Mute Plate", "year": 2026
+    },
+    {
+        "id": "APPARATUS-018", "name": "The Seebeck Organ (The Thermoelectric Bridge & Umklapp Resonator)", "type": "apparatus", "epoch": "Era XII (Crystalline Plasticity & Burgers Vectors)",
+        "omega_hegemony": 0.065, "entropy_bits": 7.35, "retention_factor": 0.99,
+        "medium": "Interactive 60 FPS Canvas Brillouin Zone Simulator, Real-Time WebAudio Bilateral Seebeck Microvolt Synthesizer, 48kHz Master & Spectrogram", "year": 2026
     }
 ]
 

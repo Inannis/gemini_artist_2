@@ -1,5 +1,5 @@
 # CATALOGUE RAISONNÉ : GEMINI ARTIST 2
-> *Archival Catalogue Raisonné & Relational Studio Inventory · Updated October 31, 2026*
+> *Archival Catalogue Raisonné & Relational Studio Inventory · Updated November 04, 2026*
 
 This document constitutes the official historical ledger, genealogical record, and material inventory of **Gemini Artist 2**.
 
@@ -246,6 +246,18 @@ This document constitutes the official historical ledger, genealogical record, a
 - **Institutional Status:** **Master Archived (Interactive Ludic Gamelan Instrument)**
 - **Curatorial Rationale:** An interactive cybernetic instrument staging non-utilitarian play in the 768-D residual stream (Johan Huizinga, Homo Ludens). Stimulating GPT-2 with historical Dadaist phonetics (Hugo Ball, Kurt Schwitters, Carroll) induces chaotic Sinai billiard scattering across 12 attention layers. Spectators launch phonetic tokens into a multi-layered lattice of scatterers, triggering microtonal gamelan pings and kaleidoscopic light reflections.
 
+### APPARATUS-017 : The Dislocation Organ (Plastic Slip & Acoustic Emission in Silicon)
+- **Epoch / Trajectory:** Era XII (Crystalline Plasticity & Burgers Vectors)
+- **Completion Date:** 2026-11-04
+- **Medium & Protocol:** Interactive 60 FPS HTML5 Canvas Crystalline Plasticity Engine, Real-Time WebAudio Acoustic Emission (AE) Synthesizer, 48kHz 24-bit Broadcast Master Audio (apparatus_017_dislocation_master.wav), and Archival Spectrogram Plate
+- **Dimensions / Duration:** Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument
+- **Directory:** [`works/apparatus_017_the_dislocation_organ`](works/apparatus_017_the_dislocation_organ)
+- **Primary Master Artifact:** `index.html`
+- **Cryptographic SHA-256 Digest:** `NON-STATIC RUNNING INSTRUMENT`
+- **Symbolic Coordinates:** $\Omega=0.072$, $H=7.12$ bits, $\mu=0.99
+- **Institutional Status:** **Master Archived (Interactive Crystalline Plasticity Organ)**
+- **Curatorial Rationale:** An interactive cybernetic instrument staging the physical defect physics of the monocrystalline silicon lattice (Taylor, Orowan, Polanyi, Burgers, Cottrell). Staging the transformer residual stream as a crystalline lattice deforming along {111}<110> slip planes. Spectators apply shear stress, witness Cottrell solute unpinning from Token 0, and trigger explosive Frank-Read dislocation cascades accompanied by microtonal acoustic emission bursts.
+
 ---
 
 ## II. Sketchbook Studies & Technical Prototypes (`sketchbook/`)
@@ -314,6 +326,7 @@ This document constitutes the official historical ledger, genealogical record, a
 | **STUDY-061** | The Telluric Earth Loop & The Schumann Ground Plane | Era X | [`study_061_telluric_earth_loop.py`](sketchbook/study_061_telluric_earth_loop.py) | `study_061_telluric_earth_loop_plate.png` | 1542.0 KB | **OK** |
 | **STUDY-062** | The Thermodynamic Heat Spreader & The Entropy of Metaphor | Era X | [`study_062_heat_spreader_entropy.py`](sketchbook/study_062_heat_spreader_entropy.py) | `study_062_heat_spreader_plate.png` | 1706.3 KB | **OK** |
 | **STUDY-063** | The Ludic Lattice: Dadaist Phonetics & Sinai Billiards | Era XI | [`study_063_ludic_lattice.py`](sketchbook/study_063_ludic_lattice.py) | `study_063_ludic_lattice_plate.png` | 703.4 KB | **OK** |
+| **STUDY-064** | The Phonetic Crystal Dislocation: Burgers Vectors & Slip Systems | Era XII | [`study_064_crystal_dislocation.py`](sketchbook/study_064_crystal_dislocation.py) | `study_064_crystal_dislocation_plate.png` | 764.0 KB | **OK** |
 
 ---
 

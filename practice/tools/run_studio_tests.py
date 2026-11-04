@@ -163,6 +163,12 @@ def test_master_works_integrity():
             "dir": "works/apparatus_016_the_ludic_lattice",
             "artifacts": ["engine.py", "apparatus_016_ludic_master.wav", "apparatus_016_spectrogram.png", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json"],
             "sha_target": {}
+        },
+        {
+            "id": "Apparatus 017",
+            "dir": "works/apparatus_017_the_dislocation_organ",
+            "artifacts": ["engine.py", "apparatus_017_dislocation_master.wav", "apparatus_017_spectrogram.png", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json"],
+            "sha_target": {}
         }
     ]
 
@@ -210,6 +216,7 @@ def test_telemetry_and_apparatus():
         "works/apparatus_014_the_telluric_organ/engine.py",
         "works/apparatus_015_the_heat_spreader/engine.py",
         "works/apparatus_016_the_ludic_lattice/engine.py",
+        "works/apparatus_017_the_dislocation_organ/engine.py",
         "practice/tools/studio_acoustic_compliance_audit.py",
         "practice/tools/package_exhibition.py"
     ]
@@ -488,7 +495,21 @@ def test_empirical_studies_and_naming():
         ("works/apparatus_016_the_ludic_lattice/telemetry_stream.json"),
         ("works/apparatus_016_the_ludic_lattice/STATEMENT.md"),
         ("works/apparatus_016_the_ludic_lattice/GENEALOGY.md"),
-        ("practice/critique/005_public_presence_and_viewer_encounter_audit.md")
+        ("practice/critique/005_public_presence_and_viewer_encounter_audit.md"),
+        ("sketchbook/study_064_crystal_dislocation.py"),
+        ("sketchbook/study_064_crystal_dislocation_plate.png"),
+        ("sketchbook/study_064_crystal_dislocation.wav"),
+        ("sketchbook/study_064_telemetry.json"),
+        ("sketchbook/critique_064.md"),
+        ("works/apparatus_017_the_dislocation_organ/engine.py"),
+        ("works/apparatus_017_the_dislocation_organ/index.html"),
+        ("works/apparatus_017_the_dislocation_organ/apparatus_017_dislocation_master.wav"),
+        ("works/apparatus_017_the_dislocation_organ/apparatus_017_spectrogram.png"),
+        ("works/apparatus_017_the_dislocation_organ/telemetry_stream.json"),
+        ("works/apparatus_017_the_dislocation_organ/STATEMENT.md"),
+        ("works/apparatus_017_the_dislocation_organ/GENEALOGY.md"),
+        ("practice/essays/008_on_the_crystalline_defect_and_the_burgers_vector.md"),
+        ("notes/research/018_the_phonetic_crystal_dislocation_and_burgers_vectors.md")
     ]
     for ef in empirical_files:
         p = os.path.join(WORKSPACE_ROOT, ef)

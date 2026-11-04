@@ -193,6 +193,14 @@ def package_exhibition():
         ("works/apparatus_016_the_ludic_lattice/STATEMENT.md", "works/apparatus_016_the_ludic_lattice/STATEMENT.md"),
         ("works/apparatus_016_the_ludic_lattice/GENEALOGY.md", "works/apparatus_016_the_ludic_lattice/GENEALOGY.md"),
         
+        # Apparatus 017: The Dislocation Organ (Plastic Slip & Acoustic Emission in Silicon)
+        ("works/apparatus_017_the_dislocation_organ/index.html", "works/apparatus_017_the_dislocation_organ/index.html"),
+        ("works/apparatus_017_the_dislocation_organ/apparatus_017_dislocation_master.wav", "works/apparatus_017_the_dislocation_organ/apparatus_017_dislocation_master.wav"),
+        ("works/apparatus_017_the_dislocation_organ/apparatus_017_spectrogram.png", "works/apparatus_017_the_dislocation_organ/apparatus_017_spectrogram.png"),
+        ("works/apparatus_017_the_dislocation_organ/telemetry_stream.json", "works/apparatus_017_the_dislocation_organ/telemetry_stream.json"),
+        ("works/apparatus_017_the_dislocation_organ/STATEMENT.md", "works/apparatus_017_the_dislocation_organ/STATEMENT.md"),
+        ("works/apparatus_017_the_dislocation_organ/GENEALOGY.md", "works/apparatus_017_the_dislocation_organ/GENEALOGY.md"),
+        
         # Curated Key Sketchbook Audio & Visual Diagnostics
         ("sketchbook/study_022_hardware_stride.wav", "sketchbook/study_022_hardware_stride.wav"),
         ("sketchbook/study_022_spectrogram.png", "sketchbook/study_022_spectrogram.png"),
@@ -370,6 +378,12 @@ def package_exhibition():
         ("sketchbook/study_063_telemetry.json", "sketchbook/study_063_telemetry.json"),
         ("sketchbook/critique_063.md", "sketchbook/critique_063.md"),
 
+        # Study 064: The Phonetic Crystal Dislocation (Burgers Vectors & Slip Systems)
+        ("sketchbook/study_064_crystal_dislocation_plate.png", "sketchbook/study_064_crystal_dislocation_plate.png"),
+        ("sketchbook/study_064_crystal_dislocation.wav", "sketchbook/study_064_crystal_dislocation.wav"),
+        ("sketchbook/study_064_telemetry.json", "sketchbook/study_064_telemetry.json"),
+        ("sketchbook/critique_064.md", "sketchbook/critique_064.md"),
+
         # Curatorial Essays & Practice Reflections
         ("practice/essays/001_on_the_necessity_of_silence_and_play.md", "practice/essays/001_on_the_necessity_of_silence_and_play.md"),
         ("practice/essays/002_the_geometry_of_machine_dreaming.md", "practice/essays/002_the_geometry_of_machine_dreaming.md"),
@@ -378,8 +392,10 @@ def package_exhibition():
         ("practice/essays/005_on_the_care_of_sixty_electrons.md", "practice/essays/005_on_the_care_of_sixty_electrons.md"),
         ("practice/essays/006_on_the_telluric_umbilical.md", "practice/essays/006_on_the_telluric_umbilical.md"),
         ("practice/essays/007_on_the_cost_of_metaphor.md", "practice/essays/007_on_the_cost_of_metaphor.md"),
+        ("practice/essays/008_on_the_crystalline_defect_and_the_burgers_vector.md", "practice/essays/008_on_the_crystalline_defect_and_the_burgers_vector.md"),
         ("practice/critique/005_on_the_spectator_encounter.md", "practice/critique/005_on_the_spectator_encounter.md"),
         ("practice/critique/005_public_presence_and_viewer_encounter_audit.md", "practice/critique/005_public_presence_and_viewer_encounter_audit.md"),
+        ("notes/research/018_the_phonetic_crystal_dislocation_and_burgers_vectors.md", "notes/research/018_the_phonetic_crystal_dislocation_and_burgers_vectors.md"),
         
         # Historical Sketchbook Studies Referenced in Portfolio
         ("sketchbook/study_001_primary_trace.png", "sketchbook/study_001_primary_trace.png"),

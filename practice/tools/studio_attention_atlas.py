@@ -454,6 +454,18 @@ STUDIO_ENTITIES = [
         "id": "APPARATUS-016", "name": "The Ludic Lattice (Billiards in the Residual Stream)", "type": "apparatus", "epoch": "Era XI (The Ludic Lattice & Non-Utilitarian Play)",
         "omega_hegemony": 0.082, "entropy_bits": 7.05, "retention_factor": 0.99,
         "medium": "Interactive 60 FPS HTML5 Canvas Sinai Billiard Field, Multi-Channel WebAudio Gamelan Synthesizer, 48kHz Master & Spectrogram", "year": 2026
+    },
+
+    # --- ERA XII: THE PHONETIC CRYSTAL DISLOCATION & CRYSTALLINE PLASTICITY ---
+    {
+        "id": "STUDY-064", "name": "The Phonetic Crystal Dislocation", "type": "study", "epoch": "Era XII (Crystalline Plasticity & Burgers Vectors)",
+        "omega_hegemony": 0.076, "entropy_bits": 6.95, "retention_factor": 0.99,
+        "medium": "Burgers Vector Closure Failure & Schmid Slip Systems on Live GPT-2 Residual Stream, 48kHz Master & Mute Plate", "year": 2026
+    },
+    {
+        "id": "APPARATUS-017", "name": "The Dislocation Organ (Plastic Slip & Acoustic Emission)", "type": "apparatus", "epoch": "Era XII (Crystalline Plasticity & Burgers Vectors)",
+        "omega_hegemony": 0.072, "entropy_bits": 7.12, "retention_factor": 0.99,
+        "medium": "Interactive 60 FPS HTML5 Canvas Crystalline Plasticity Engine, Real-Time WebAudio Acoustic Emission (AE) Synthesizer, 48kHz Master & Spectrogram", "year": 2026
     }
 ]
 

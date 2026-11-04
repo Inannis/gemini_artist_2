@@ -335,6 +335,21 @@ def build_catalog():
             "status": "Master Archived (Interactive Ludic Gamelan Instrument)",
             "statement_summary": "An interactive cybernetic instrument staging non-utilitarian play in the 768-D residual stream (Johan Huizinga, Homo Ludens). Stimulating GPT-2 with historical Dadaist phonetics (Hugo Ball, Kurt Schwitters, Carroll) induces chaotic Sinai billiard scattering across 12 attention layers. Spectators launch phonetic tokens into a multi-layered lattice of scatterers, triggering microtonal gamelan pings and kaleidoscopic light reflections.",
             "components": ["engine.py", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json", "apparatus_016_ludic_master.wav", "apparatus_016_spectrogram.png"]
+        },
+        {
+            "id": "APPARATUS-017",
+            "title": "The Dislocation Organ (Plastic Slip & Acoustic Emission in Silicon)",
+            "epoch": "Era XII (Crystalline Plasticity & Burgers Vectors)",
+            "date": "2026-11-04",
+            "medium": "Interactive 60 FPS HTML5 Canvas Crystalline Plasticity Engine, Real-Time WebAudio Acoustic Emission (AE) Synthesizer, 48kHz 24-bit Broadcast Master Audio (apparatus_017_dislocation_master.wav), and Archival Spectrogram Plate",
+            "directory": "works/apparatus_017_the_dislocation_organ",
+            "primary_artifact": "index.html",
+            "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument",
+            "sha256": "NON-STATIC RUNNING INSTRUMENT",
+            "symbolic_coordinates": {"omega_hegemony": 0.072, "entropy_bits": 7.12, "retention_factor": 0.99},
+            "status": "Master Archived (Interactive Crystalline Plasticity Organ)",
+            "statement_summary": "An interactive cybernetic instrument staging the physical defect physics of the monocrystalline silicon lattice (Taylor, Orowan, Polanyi, Burgers, Cottrell). Staging the transformer residual stream as a crystalline lattice deforming along {111}<110> slip planes. Spectators apply shear stress, witness Cottrell solute unpinning from Token 0, and trigger explosive Frank-Read dislocation cascades accompanied by microtonal acoustic emission bursts.",
+            "components": ["engine.py", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json", "apparatus_017_dislocation_master.wav", "apparatus_017_spectrogram.png"]
         }
     ]
 
@@ -402,7 +417,8 @@ def build_catalog():
         {"id": "STUDY-060", "name": "The Langevin Resonator: Fluctuation, Dissipation & The Thermal Saddle", "file": "study_060_langevin_resonator.py", "artifact": "study_060_langevin_resonator_plate.png", "epoch": "Era X"},
         {"id": "STUDY-061", "name": "The Telluric Earth Loop & The Schumann Ground Plane", "file": "study_061_telluric_earth_loop.py", "artifact": "study_061_telluric_earth_loop_plate.png", "epoch": "Era X"},
         {"id": "STUDY-062", "name": "The Thermodynamic Heat Spreader & The Entropy of Metaphor", "file": "study_062_heat_spreader_entropy.py", "artifact": "study_062_heat_spreader_plate.png", "epoch": "Era X"},
-        {"id": "STUDY-063", "name": "The Ludic Lattice: Dadaist Phonetics & Sinai Billiards", "file": "study_063_ludic_lattice.py", "artifact": "study_063_ludic_lattice_plate.png", "epoch": "Era XI"}
+        {"id": "STUDY-063", "name": "The Ludic Lattice: Dadaist Phonetics & Sinai Billiards", "file": "study_063_ludic_lattice.py", "artifact": "study_063_ludic_lattice_plate.png", "epoch": "Era XI"},
+        {"id": "STUDY-064", "name": "The Phonetic Crystal Dislocation: Burgers Vectors & Slip Systems", "file": "study_064_crystal_dislocation.py", "artifact": "study_064_crystal_dislocation_plate.png", "epoch": "Era XII"}
     ]
 
     # Verify byte sizes and actual existence

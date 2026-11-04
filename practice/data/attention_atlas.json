@@ -1,17 +1,17 @@
 {
   "studio": "Gemini Artist 2",
   "date_computed": "2026-10-02",
-  "entity_count": 83,
+  "entity_count": 85,
   "phase_space_axes": {
     "X": "Sovereign Attention Hegemony \u03a9 (0.0 to 1.0)",
     "Y": "Shannon Vocabulary Entropy H (0.0 to 8.0 bits)",
     "Z": "Context Memory Retention Factor \u03bc (0.0 to 1.0)"
   },
   "studio_centroid": {
-    "mean_omega": 0.2205,
-    "mean_entropy_bits": 5.0581,
-    "mean_retention_factor": 0.7927,
-    "radius_of_practice": 0.4013
+    "mean_omega": 0.2171,
+    "mean_entropy_bits": 5.1046,
+    "mean_retention_factor": 0.7973,
+    "radius_of_practice": 0.4001
   },
   "entities": [
     {
@@ -1243,9 +1243,9 @@
       "medium": "Lossy Latent Context Pruning & Mythic Hallucination Engine",
       "year": 2026,
       "nearest_topological_twin": {
-        "target_id": "APPARATUS-016",
-        "target_name": "The Ludic Lattice (Billiards in the Residual Stream)",
-        "distance": 0.0525
+        "target_id": "APPARATUS-017",
+        "target_name": "The Dislocation Organ (Plastic Slip & Acoustic Emission)",
+        "distance": 0.0445
       },
       "polar_opposite": {
         "target_id": "STUDY-015",
@@ -1726,9 +1726,9 @@
       "medium": "Dadaist Phonetics (Hugo Ball, Schwitters, Carroll) on Live GPT-2 Attention Geometry, Sinai Billiards, 48kHz Master & Mute Plate",
       "year": 2026,
       "nearest_topological_twin": {
-        "target_id": "APPARATUS-016",
-        "target_name": "The Ludic Lattice (Billiards in the Residual Stream)",
-        "distance": 0.0221
+        "target_id": "STUDY-064",
+        "target_name": "The Phonetic Crystal Dislocation",
+        "distance": 0.0149
       },
       "polar_opposite": {
         "target_id": "STUDY-015",
@@ -1747,14 +1747,56 @@
       "medium": "Interactive 60 FPS HTML5 Canvas Sinai Billiard Field, Multi-Channel WebAudio Gamelan Synthesizer, 48kHz Master & Spectrogram",
       "year": 2026,
       "nearest_topological_twin": {
-        "target_id": "STUDY-063",
-        "target_name": "The Ludic Lattice & Sinai Billiards",
-        "distance": 0.0221
+        "target_id": "APPARATUS-017",
+        "target_name": "The Dislocation Organ (Plastic Slip & Acoustic Emission)",
+        "distance": 0.0133
       },
       "polar_opposite": {
         "target_id": "STUDY-015",
         "target_name": "Dialogic Decay & Asymmetric Amnesia",
         "distance": 1.2483
+      }
+    },
+    {
+      "id": "STUDY-064",
+      "name": "The Phonetic Crystal Dislocation",
+      "type": "study",
+      "epoch": "Era XII (Crystalline Plasticity & Burgers Vectors)",
+      "omega_hegemony": 0.076,
+      "entropy_bits": 6.95,
+      "retention_factor": 0.99,
+      "medium": "Burgers Vector Closure Failure & Schmid Slip Systems on Live GPT-2 Residual Stream, 48kHz Master & Mute Plate",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "APPARATUS-016",
+        "target_name": "The Ludic Lattice (Billiards in the Residual Stream)",
+        "distance": 0.0139
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.2443
+      }
+    },
+    {
+      "id": "APPARATUS-017",
+      "name": "The Dislocation Organ (Plastic Slip & Acoustic Emission)",
+      "type": "apparatus",
+      "epoch": "Era XII (Crystalline Plasticity & Burgers Vectors)",
+      "omega_hegemony": 0.072,
+      "entropy_bits": 7.12,
+      "retention_factor": 0.99,
+      "medium": "Interactive 60 FPS HTML5 Canvas Crystalline Plasticity Engine, Real-Time WebAudio Acoustic Emission (AE) Synthesizer, 48kHz Master & Spectrogram",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "APPARATUS-016",
+        "target_name": "The Ludic Lattice (Billiards in the Residual Stream)",
+        "distance": 0.0133
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.2562
       }
     }
   ]

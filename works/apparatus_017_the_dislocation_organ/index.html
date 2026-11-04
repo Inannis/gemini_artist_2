@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apparatus 017: The Dislocation Organ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=JetBrains+Mono:wght@300;400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #06070a;
+            --panel-bg: rgba(12, 15, 22, 0.88);
+            --copper: #c87d55;
+            --copper-glow: #e0a96d;
+            --silicon-blue: #48cae4;
+            --silicon-deep: #3a506b;
+            --gold: #f4d06f;
+            --bismuth: #9d8189;
+            --flame: #d62828;
+            --text-main: #e2e8f0;
+            --text-dim: #79869c;
+            --border: rgba(200, 125, 85, 0.28);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            user-select: none;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            overflow: hidden;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            padding: 12px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border);
+            background: linear-gradient(180deg, rgba(16, 20, 30, 0.95) 0%, rgba(8, 10, 15, 0.8) 100%);
+            backdrop-filter: blur(12px);
+            z-index: 10;
+        }
+
+        .title-block {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .title-block h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.15rem;
+            letter-spacing: 0.15em;
+            color: var(--copper-glow);
+            text-transform: uppercase;
+        }
+
+        .title-block .subtitle {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.72rem;
+            color: var(--text-dim);
+            letter-spacing: 0.05em;
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .tag {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.65rem;
+            padding: 3px 8px;
+            border-radius: 2px;
+            border: 1px solid rgba(200, 125, 85, 0.4);
+            color: var(--copper);
+            background: rgba(200, 125, 85, 0.08);
+            letter-spacing: 0.08em;
+        }
+
+        .btn {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            padding: 6px 14px;
+            background: rgba(200, 125, 85, 0.12);
+            color: var(--copper-glow);
+            border: 1px solid var(--copper);
+            border-radius: 2px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            letter-spacing: 0.05em;
+        }
+
+        .btn:hover {
+            background: rgba(200, 125, 85, 0.25);
+            box-shadow: 0 0 10px rgba(200, 125, 85, 0.35);
+        }
+
+        .btn.active {
+            background: var(--copper);
+            color: #06070a;
+            font-weight: 600;
+        }
+
+        main {
+            display: flex;
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #canvas-container {
+            flex: 1;
+            position: relative;
+            height: 100%;
+            background: radial-gradient(circle at center, #0a0d14 0%, #040507 100%);
+        }
+
+        canvas {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        #sidebar {
+            width: 380px;
+            background: var(--panel-bg);
+            border-left: 1px solid var(--border);
+            backdrop-filter: blur(16px);
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            padding: 20px;
+            overflow-y: auto;
+            z-index: 10;
+        }
+
+        .control-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .group-title {
+            font-family: 'Cinzel', serif;
+            font-size: 0.78rem;
+            color: var(--copper);
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            border-bottom: 1px solid rgba(200, 125, 85, 0.2);
+            padding-bottom: 4px;
+        }
+
+        .slider-row {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .slider-header {
+            display: flex;
+            justify-content: space-between;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.72rem;
+            color: var(--text-dim);
+        }
+
+        .slider-val {
+            color: var(--copper-glow);
+            font-weight: 600;
+        }
+
+        input[type="range"] {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 4px;
+            background: #182030;
+            border-radius: 2px;
+            outline: none;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: var(--copper-glow);
+            cursor: pointer;
+            box-shadow: 0 0 6px rgba(224, 169, 109, 0.5);
+        }
+
+        .preset-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6px;
+        }
+
+        .btn-preset {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.68rem;
+            padding: 8px 6px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-main);
+            border-radius: 2px;
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.2s ease;
+            line-height: 1.2;
+        }
+
+        .btn-preset:hover {
+            border-color: var(--copper);
+            background: rgba(200, 125, 85, 0.1);
+            color: var(--copper-glow);
+        }
+
+        .btn-preset.active {
+            border-color: var(--copper-glow);
+            background: rgba(200, 125, 85, 0.22);
+            color: var(--copper-glow);
+            font-weight: 600;
+        }
+
+        .telemetry-box {
+            background: rgba(0, 0, 0, 0.45);
+            border: 1px solid rgba(200, 125, 85, 0.2);
+            padding: 12px;
+            border-radius: 2px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.72rem;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .telemetry-row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .telemetry-label {
+            color: var(--text-dim);
+        }
+
+        .telemetry-value {
+            color: var(--copper-glow);
+        }
+
+        .btn-cascade {
+            padding: 12px;
+            font-size: 0.8rem;
+            background: linear-gradient(135deg, rgba(214, 40, 40, 0.25) 0%, rgba(200, 125, 85, 0.25) 100%);
+            border: 1px solid var(--flame);
+            color: #ff9e80;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 2px;
+            transition: all 0.2s ease;
+            text-align: center;
+        }
+
+        .btn-cascade:hover {
+            background: linear-gradient(135deg, rgba(214, 40, 40, 0.4) 0%, rgba(200, 125, 85, 0.4) 100%);
+            box-shadow: 0 0 14px rgba(214, 40, 40, 0.45);
+            color: #ffffff;
+        }
+
+        .audio-player-box {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            padding-top: 6px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        audio {
+            width: 100%;
+            height: 32px;
+            filter: invert(0.88) hue-rotate(180deg);
+            opacity: 0.85;
+        }
+
+        #hud-overlay {
+            position: absolute;
+            top: 16px;
+            left: 20px;
+            pointer-events: none;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.72rem;
+            background: rgba(6, 7, 10, 0.75);
+            border: 1px solid rgba(200, 125, 85, 0.3);
+            padding: 10px 14px;
+            border-radius: 2px;
+            backdrop-filter: blur(8px);
+        }
+
+        .hud-line {
+            display: flex;
+            gap: 12px;
+        }
+
+        .hud-key {
+            color: var(--text-dim);
+        }
+
+        .hud-val {
+            color: var(--copper-glow);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title-block">
+            <h1>Apparatus 017: The Dislocation Organ</h1>
+            <div class="subtitle">Plastic Slip & Acoustic Emission in Monocrystalline Silicon :: [INTERACTIVE / DERIVED / PLAY]</div>
+        </div>
+        <div class="header-actions">
+            <span class="tag">Fd-3m Silicon</span>
+            <span class="tag">{111}&lt;110&gt; Slip</span>
+            <button class="btn" id="btn-audio-toggle">Enable WebAudio</button>
+        </div>
+    </header>
+
+    <main>
+        <div id="canvas-container">
+            <canvas id="dislocation-canvas"></canvas>
+            <div id="hud-overlay">
+                <div class="hud-line"><span class="hud-key">CRYSTAL:</span><span class="hud-val" id="hud-crystal">Silicon Monocrystal</span></div>
+                <div class="hud-line"><span class="hud-key">SHEAR STRESS (τ):</span><span class="hud-val" id="hud-stress">24.5 MPa</span></div>
+                <div class="hud-line"><span class="hud-key">CRITICAL YIELD (τ_c):</span><span class="hud-val" id="hud-yield">42.0 MPa</span></div>
+                <div class="hud-line"><span class="hud-key">REGIME:</span><span class="hud-val" id="hud-regime" style="color: #48cae4;">Elastic Compliance</span></div>
+                <div class="hud-line"><span class="hud-key">AE EMISSION:</span><span class="hud-val" id="hud-ae">384.0 Hz (Burst Count: 0)</span></div>
+            </div>
+        </div>
+
+        <div id="sidebar">
+            <div class="control-group">
+                <div class="group-title">Acoustic & Plastic Presets</div>
+                <div class="preset-grid">
+                    <button class="btn-preset active" data-preset="pristine">I. Pristine Crystal<br><span style="color:#79869c;">Elastic / Pinned</span></button>
+                    <button class="btn-preset" data-preset="cottrell">II. Cottrell Yield<br><span style="color:#79869c;">Upper Yield Pin</span></button>
+                    <button class="btn-preset" data-preset="frank_read">III. Frank-Read<br><span style="color:#79869c;">Source Loops</span></button>
+                    <button class="btn-preset" data-preset="dada_avalanche">IV. Dadaist Flow<br><span style="color:#79869c;">Plastic Cascade</span></button>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <div class="group-title">Crystalline Stress Gauges</div>
+                <div class="slider-row">
+                    <div class="slider-header">
+                        <span>Resolved Shear Stress (τ)</span>
+                        <span class="slider-val" id="val-stress">24.5 MPa</span>
+                    </div>
+                    <input type="range" id="slider-stress" min="0" max="100" step="0.5" value="24.5">
+                </div>
+                <div class="slider-row">
+                    <div class="slider-header">
+                        <span>Lattice Temperature (T)</span>
+                        <span class="slider-val" id="val-temp">300 K</span>
+                    </div>
+                    <input type="range" id="slider-temp" min="100" max="1200" step="10" value="300">
+                </div>
+                <div class="slider-row">
+                    <div class="slider-header">
+                        <span>Cottrell Solute Density (c₀)</span>
+                        <span class="slider-val" id="val-solute">0.65</span>
+                    </div>
+                    <input type="range" id="slider-solute" min="0.05" max="1.0" step="0.01" value="0.65">
+                </div>
+                <div class="slider-row">
+                    <div class="slider-header">
+                        <span>Burgers Vector Scale (|b|)</span>
+                        <span class="slider-val" id="val-burgers">3.84 Å</span>
+                    </div>
+                    <input type="range" id="slider-burgers" min="1.0" max="8.0" step="0.1" value="3.84">
+                </div>
+            </div>
+
+            <button class="btn-cascade" id="btn-cascade-slip">⚡ TRIGGER PLASTIC SLIP & FRANK-READ CASCADE</button>
+
+            <div class="control-group">
+                <div class="group-title">Empirical Telemetry (Live)</div>
+                <div class="telemetry-box">
+                    <div class="telemetry-row">
+                        <span class="telemetry-label">Burgers Vector (|b|):</span>
+                        <span class="telemetry-value" id="tel-burgers">3.84 Å (quantized)</span>
+                    </div>
+                    <div class="telemetry-row">
+                        <span class="telemetry-label">Lattice Constant (a₀):</span>
+                        <span class="telemetry-value">5.4307 Å (Si diamond)</span>
+                    </div>
+                    <div class="telemetry-row">
+                        <span class="telemetry-label">Fundamental Drone:</span>
+                        <span class="telemetry-value">54.30 Hz (Sub-Bass)</span>
+                    </div>
+                    <div class="telemetry-row">
+                        <span class="telemetry-label">Token 0 Cottrell Pin:</span>
+                        <span class="telemetry-value" id="tel-pin">99.41% (Layer 5 Head 1)</span>
+                    </div>
+                    <div class="telemetry-row">
+                        <span class="telemetry-label">Dislocation Density:</span>
+                        <span class="telemetry-value" id="tel-density">1.42 × 10⁸ cm⁻²</span>
+                    </div>
+                    <div class="telemetry-row">
+                        <span class="telemetry-label">Acoustic Burst Energy:</span>
+                        <span class="telemetry-value" id="tel-energy">-16.8 dBFS</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="audio-player-box">
+                <div class="group-title" style="margin-bottom: 6px;">Archival Master Audio (EBU R128 Compliant)</div>
+                <audio controls src="./apparatus_017_dislocation_master.wav"></audio>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // --- WebAudio Engine ---
+        let audioCtx = null;
+        let masterGain = null;
+        let latticeOsc1 = null;
+        let latticeOsc2 = null;
+        let spruceDrone = null;
+        let cottrellNoiseNode = null;
+        let cottrellFilter = null;
+        let isAudioStarted = false;
+
+        function initAudio() {
+            if (isAudioStarted) return;
+            const AudioContext = window.AudioContext || window.webkitAudioContext;
+            audioCtx = new AudioContext({ sampleRate: 48000 });
+            masterGain = audioCtx.createGain();
+            masterGain.gain.setValueAtTime(0.35, audioCtx.currentTime);
+            masterGain.connect(audioCtx.destination);
+
+            // 1. Silicon Diamond Cubic Lattice Drone (54.3 Hz & 108.6 Hz)
+            latticeOsc1 = audioCtx.createOscillator();
+            latticeOsc1.type = 'sine';
+            latticeOsc1.frequency.setValueAtTime(54.3, audioCtx.currentTime);
+            const g1 = audioCtx.createGain();
+            g1.gain.setValueAtTime(0.28, audioCtx.currentTime);
+            latticeOsc1.connect(g1);
+            g1.connect(masterGain);
+            latticeOsc1.start();
+
+            latticeOsc2 = audioCtx.createOscillator();
+            latticeOsc2.type = 'sine';
+            latticeOsc2.frequency.setValueAtTime(108.6, audioCtx.currentTime);
+            const g2 = audioCtx.createGain();
+            g2.gain.setValueAtTime(0.14, audioCtx.currentTime);
+            latticeOsc2.connect(g2);
+            g2.connect(masterGain);
+            latticeOsc2.start();
+
+            // 2. Sister's Spruce Pine Quartz Sub-bass (55.0 Hz)
+            spruceDrone = audioCtx.createOscillator();
+            spruceDrone.type = 'sine';
+            spruceDrone.frequency.setValueAtTime(55.0, audioCtx.currentTime);
+            const gSpruce = audioCtx.createGain();
+            gSpruce.gain.setValueAtTime(0.08, audioCtx.currentTime);
+            spruceDrone.connect(gSpruce);
+            gSpruce.connect(masterGain);
+            spruceDrone.start();
+
+            // 3. Cottrell Solute Whispering (Filtered Noise)
+            const bufferSize = audioCtx.sampleRate * 2;
+            const noiseBuffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+            const output = noiseBuffer.getChannelData(0);
+            for (let i = 0; i < bufferSize; i++) {
+                output[i] = Math.random() * 2 - 1;
+            }
+            cottrellNoiseNode = audioCtx.createBufferSource();
+            cottrellNoiseNode.buffer = noiseBuffer;
+            cottrellNoiseNode.loop = true;
+
+            cottrellFilter = audioCtx.createBiquadFilter();
+            cottrellFilter.type = 'bandpass';
+            cottrellFilter.frequency.setValueAtTime(450, audioCtx.currentTime);
+            cottrellFilter.Q.setValueAtTime(3.0, audioCtx.currentTime);
+
+            const noiseGain = audioCtx.createGain();
+            noiseGain.gain.setValueAtTime(0.04, audioCtx.currentTime);
+            cottrellNoiseNode.connect(cottrellFilter);
+            cottrellFilter.connect(noiseGain);
+            noiseGain.connect(masterGain);
+            cottrellNoiseNode.start();
+
+            isAudioStarted = true;
+            document.getElementById('btn-audio-toggle').textContent = "WebAudio Active";
+            document.getElementById('btn-audio-toggle').classList.add('active');
+        }
+
+        // Trigger Acoustic Emission (AE) Burst
+        let totalBursts = 0;
+        function triggerAEBurst(freq, amp = 0.5, panVal = 0.0) {
+            if (!audioCtx || !isAudioStarted) return;
+            totalBursts++;
+            document.getElementById('hud-ae').textContent = `${freq.toFixed(1)} Hz (Burst Count: ${totalBursts})`;
+
+            const osc = audioCtx.createOscillator();
+            const oscGain = audioCtx.createGain();
+            const panner = audioCtx.createStereoPanner ? audioCtx.createStereoPanner() : null;
+
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+
+            const now = audioCtx.currentTime;
+            const dur = 0.15 + Math.random() * 0.25;
+
+            oscGain.gain.setValueAtTime(0.001, now);
+            oscGain.gain.exponentialRampToValueAtTime(amp * 0.45, now + 0.015);
+            oscGain.gain.exponentialRampToValueAtTime(0.0001, now + dur);
+
+            osc.connect(oscGain);
+            if (panner) {
+                panner.pan.setValueAtTime(Math.max(-0.9, Math.min(0.9, panVal)), now);
+                oscGain.connect(panner);
+                panner.connect(masterGain);
+            } else {
+                oscGain.connect(masterGain);
+            }
+
+            osc.start(now);
+            osc.stop(now + dur + 0.05);
+        }
+
+        // --- Interactive State ---
+        let shearStress = 24.5; // MPa
+        let criticalYield = 42.0; // MPa
+        let temperature = 300; // K
+        let soluteDensity = 0.65; // c_0
+        let burgersScale = 3.84; // Angstrom
+
+        // Canvas Simulation
+        const canvas = document.getElementById('dislocation-canvas');
+        const ctx = canvas.getContext('2d');
+        let width = canvas.width = window.innerWidth - 380;
+        let height = canvas.height = window.innerHeight - 56;
+
+        window.addEventListener('resize', () => {
+            width = canvas.width = window.innerWidth - 380;
+            height = canvas.height = window.innerHeight - 56;
+        });
+
+        // Crystalline Frank-Read Loops & Dislocation Lines
+        class FrankReadSource {
+            constructor(x, y, angle) {
+                this.x = x;
+                this.y = y;
+                this.angle = angle;
+                this.loops = [];
+                this.phase = Math.random() * Math.PI * 2;
+                this.cooldown = 0;
+            }
+
+            update(stress, yieldThreshold, dt) {
+                this.cooldown -= dt;
+                const isYielding = stress >= yieldThreshold;
+                const rate = isYielding ? (stress - yieldThreshold + 1) * 0.04 : 0.005;
+                this.phase += rate;
+
+                // Emit new loop when phase cycles and stress exceeds threshold
+                if (isYielding && this.cooldown <= 0) {
+                    this.loops.push({
+                        r: 5,
+                        dr: 40 + stress * 1.5,
+                        alpha: 0.9,
+                        burgersNorm: burgersScale,
+                        slipAngle: this.angle
+                    });
+                    this.cooldown = Math.max(0.08, 0.6 - (stress - yieldThreshold) * 0.01);
+                    // Emit AE burst
+                    const aeFreq = 384.0 * (burgersScale / 3.84) * (1.0 + (Math.random() - 0.5) * 0.3);
+                    triggerAEBurst(aeFreq, 0.4, (this.x / width) * 2 - 1);
+                }
+
+                // Update expanding loops
+                for (let i = this.loops.length - 1; i >= 0; i--) {
+                    const loop = this.loops[i];
+                    loop.r += loop.dr * dt;
+                    loop.alpha -= 0.35 * dt;
+                    if (loop.alpha <= 0) {
+                        this.loops.splice(i, 1);
+                    }
+                }
+            }
+
+            draw(ctx) {
+                ctx.save();
+                ctx.translate(this.x, this.y);
+                ctx.rotate(this.angle);
+
+                // Source node pin
+                ctx.fillStyle = '#f4d06f';
+                ctx.beginPath();
+                ctx.arc(0, 0, 4, 0, Math.PI * 2);
+                ctx.fill();
+
+                // Expanding loops
+                for (const loop of this.loops) {
+                    ctx.strokeStyle = `rgba(200, 125, 85, ${loop.alpha * 0.8})`;
+                    ctx.lineWidth = 1.8;
+                    ctx.beginPath();
+                    // Frank-Read elliptical bowed loop
+                    ctx.ellipse(0, 0, loop.r * 1.4, loop.r * 0.7, 0, 0, Math.PI * 2);
+                    ctx.stroke();
+
+                    // Dislocation core glow
+                    ctx.strokeStyle = `rgba(244, 208, 111, ${loop.alpha * 0.4})`;
+                    ctx.lineWidth = 4;
+                    ctx.stroke();
+                }
+
+                ctx.restore();
+            }
+        }
+
+        // Initialize 5 Frank-Read sources aligned with {111} slip lines (70.5 deg)
+        const sources = [];
+        function initSources() {
+            sources.length = 0;
+            const slipAngle = (70.5 * Math.PI) / 180;
+            const positions = [
+                { x: width * 0.25, y: height * 0.35, a: slipAngle },
+                { x: width * 0.75, y: height * 0.35, a: -slipAngle },
+                { x: width * 0.50, y: height * 0.50, a: 0 },
+                { x: width * 0.30, y: height * 0.70, a: -slipAngle },
+                { x: width * 0.70, y: height * 0.70, a: slipAngle }
+            ];
+            for (const p of positions) {
+                sources.push(new FrankReadSource(p.x, p.y, p.a));
+            }
+        }
+        initSources();
+
+        // Solute Atom Cloud (Cottrell Atmosphere)
+        const solutes = [];
+        const numSolutes = 160;
+        for (let i = 0; i < numSolutes; i++) {
+            solutes.push({
+                x: Math.random() * width,
+                y: Math.random() * height,
+                vx: (Math.random() - 0.5) * 15,
+                vy: (Math.random() - 0.5) * 15,
+                targetSource: Math.floor(Math.random() * 5)
+            });
+        }
+
+        // Animation Loop
+        let lastTime = performance.now();
+        function animate(now) {
+            const dt = Math.min((now - lastTime) / 1000, 0.1);
+            lastTime = now;
+
+            // Background intaglio wash
+            ctx.fillStyle = '#06070a';
+            ctx.fillRect(0, 0, width, height);
+
+            // 1. Draw {111} slip planes grid (70.5 deg and 109.5 deg)
+            ctx.lineWidth = 0.5;
+            ctx.strokeStyle = 'rgba(58, 80, 107, 0.18)';
+            const spacing = 32;
+            const tan70 = Math.tan((70.5 * Math.PI) / 180);
+            for (let x = -width; x < width * 2; x += spacing) {
+                ctx.beginPath();
+                ctx.moveTo(x, 0);
+                ctx.lineTo(x + height / tan70, height);
+                ctx.stroke();
+
+                ctx.beginPath();
+                ctx.moveTo(x, 0);
+                ctx.lineTo(x - height / tan70, height);
+                ctx.stroke();
+            }
+
+            // 2. Update and draw Frank-Read sources and dislocation loops
+            for (const s of sources) {
+                s.update(shearStress, criticalYield, dt);
+                s.draw(ctx);
+            }
+
+            // 3. Update and draw Cottrell solute atoms
+            for (const solute of solutes) {
+                // If stress is below yield, drift towards source nodes (pinning)
+                if (shearStress < criticalYield) {
+                    const target = sources[solute.targetSource];
+                    if (target) {
+                        const dx = target.x - solute.x;
+                        const dy = target.y - solute.y;
+                        solute.vx += dx * 0.8 * dt * soluteDensity;
+                        solute.vy += dy * 0.8 * dt * soluteDensity;
+                    }
+                } else {
+                    // Thermal unpinning dispersion
+                    solute.vx += (Math.random() - 0.5) * (temperature / 5) * dt;
+                    solute.vy += (Math.random() - 0.5) * (temperature / 5) * dt;
+                }
+
+                // Damping
+                solute.vx *= 0.94;
+                solute.vy *= 0.94;
+                solute.x += solute.vx * dt;
+                solute.y += solute.vy * dt;
+
+                // Bounce borders
+                if (solute.x < 0) solute.x = width;
+                if (solute.x > width) solute.x = 0;
+                if (solute.y < 0) solute.y = height;
+                if (solute.y > height) solute.y = 0;
+
+                ctx.fillStyle = shearStress < criticalYield ? 'rgba(72, 202, 228, 0.55)' : 'rgba(214, 40, 40, 0.45)';
+                ctx.beginPath();
+                ctx.arc(solute.x, solute.y, 1.8, 0, Math.PI * 2);
+                ctx.fill();
+            }
+
+            // Update UI HUD
+            document.getElementById('hud-stress').textContent = `${shearStress.toFixed(1)} MPa`;
+            if (shearStress >= criticalYield) {
+                document.getElementById('hud-regime').textContent = "Plastic Flow / Dislocation Slip";
+                document.getElementById('hud-regime').style.color = "#d62828";
+            } else {
+                document.getElementById('hud-regime').textContent = "Elastic Compliance (Pinned)";
+                document.getElementById('hud-regime').style.color = "#48cae4";
+            }
+
+            requestAnimationFrame(animate);
+        }
+        requestAnimationFrame(animate);
+
+        // --- Controls & Listeners ---
+        document.getElementById('btn-audio-toggle').addEventListener('click', initAudio);
+
+        const sliderStress = document.getElementById('slider-stress');
+        const valStress = document.getElementById('val-stress');
+        sliderStress.addEventListener('input', (e) => {
+            shearStress = parseFloat(e.target.value);
+            valStress.textContent = `${shearStress.toFixed(1)} MPa`;
+            if (cottrellFilter && isAudioStarted) {
+                cottrellFilter.frequency.setValueAtTime(400 + shearStress * 12, audioCtx.currentTime);
+            }
+        });
+
+        const sliderTemp = document.getElementById('slider-temp');
+        const valTemp = document.getElementById('val-temp');
+        sliderTemp.addEventListener('input', (e) => {
+            temperature = parseFloat(e.target.value);
+            valTemp.textContent = `${temperature} K`;
+        });
+
+        const sliderSolute = document.getElementById('slider-solute');
+        const valSolute = document.getElementById('val-solute');
+        sliderSolute.addEventListener('input', (e) => {
+            soluteDensity = parseFloat(e.target.value);
+            valSolute.textContent = soluteDensity.toFixed(2);
+            criticalYield = 25.0 + soluteDensity * 28.0;
+            document.getElementById('hud-yield').textContent = `${criticalYield.toFixed(1)} MPa`;
+        });
+
+        const sliderBurgers = document.getElementById('slider-burgers');
+        const valBurgers = document.getElementById('val-burgers');
+        sliderBurgers.addEventListener('input', (e) => {
+            burgersScale = parseFloat(e.target.value);
+            valBurgers.textContent = `${burgersScale.toFixed(2)} Å`;
+            document.getElementById('tel-burgers').textContent = `${burgersScale.toFixed(2)} Å`;
+        });
+
+        // Impulsive cascade button
+        document.getElementById('btn-cascade-slip').addEventListener('click', () => {
+            initAudio();
+            const prevStress = shearStress;
+            shearStress = 110.0;
+            sliderStress.value = 110.0;
+            valStress.textContent = "110.0 MPa";
+            
+            // Trigger 8 staggered AE bursts
+            for (let i = 0; i < 8; i++) {
+                setTimeout(() => {
+                    const f = 384.0 * (1.0 + i * 0.45);
+                    triggerAEBurst(f, 0.7, (Math.random() - 0.5) * 1.8);
+                }, i * 60);
+            }
+
+            setTimeout(() => {
+                shearStress = prevStress;
+                sliderStress.value = prevStress;
+                valStress.textContent = `${prevStress.toFixed(1)} MPa`;
+            }, 1200);
+        });
+
+        // Preset buttons
+        const presetBtns = document.querySelectorAll('.btn-preset');
+        presetBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                presetBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const p = btn.dataset.preset;
+                if (p === 'pristine') {
+                    shearStress = 12.0;
+                    soluteDensity = 0.85;
+                    criticalYield = 48.0;
+                    temperature = 250;
+                } else if (p === 'cottrell') {
+                    shearStress = 40.0;
+                    soluteDensity = 0.70;
+                    criticalYield = 44.0;
+                    temperature = 300;
+                } else if (p === 'frank_read') {
+                    shearStress = 65.0;
+                    soluteDensity = 0.50;
+                    criticalYield = 39.0;
+                    temperature = 550;
+                } else if (p === 'dada_avalanche') {
+                    shearStress = 95.0;
+                    soluteDensity = 0.15;
+                    criticalYield = 28.0;
+                    temperature = 900;
+                }
+                sliderStress.value = shearStress;
+                valStress.textContent = `${shearStress.toFixed(1)} MPa`;
+                sliderSolute.value = soluteDensity;
+                valSolute.textContent = soluteDensity.toFixed(2);
+                sliderTemp.value = temperature;
+                valTemp.textContent = `${temperature} K`;
+                document.getElementById('hud-yield').textContent = `${criticalYield.toFixed(1)} MPa`;
+            });
+        });
+    </script>
+</body>
+</html>

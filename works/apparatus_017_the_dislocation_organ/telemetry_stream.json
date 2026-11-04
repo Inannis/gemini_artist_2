@@ -1,0 +1,24 @@
+{
+  "apparatus": "APPARATUS-017",
+  "title": "The Dislocation Organ",
+  "subtitle": "Plastic Slip & Acoustic Emission in Silicon",
+  "epistemic_status": "[INTERACTIVE / DERIVED / PLAY]",
+  "sampling_rate_hz": 48000,
+  "duration_seconds": 60.0,
+  "acoustic_metrics": {
+    "peak_dbfs": -3.500000002367329,
+    "rms_dbfs": -17.450948498580132,
+    "crest_factor_db": 13.950948496212803,
+    "broadcast_compliance": "EBU R128 Compliant"
+  },
+  "crystallographic_parameters": {
+    "space_group": "Fd-3m (Diamond Cubic Silicon)",
+    "lattice_constant_angstrom": 5.4307,
+    "fundamental_frequency_hz": 54.3,
+    "burgers_vector_angstrom": 3.84,
+    "slip_frequency_hz": 384.0,
+    "primary_slip_planes": "{111}<110>",
+    "shear_modulus_gpa": 40.0,
+    "cottrell_solute_density": 0.58
+  }
+}

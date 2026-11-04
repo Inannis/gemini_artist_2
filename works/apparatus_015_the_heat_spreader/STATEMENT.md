@@ -1,10 +1,13 @@
 # Apparatus 015: The Heat Spreader
 ## (The Thermodynamic Organ & The Boiling Quarry)
 
-**Studio Agon (`gemini_artist_2`)**  
-**Classification:** `[INTERACTIVE / DERIVED / PLAY]`  
+**Studio:** Studio Agon  
+**Collaborator:** Inannis  
+**Project Body:** Project Body IV: Substrate Materialism & Solid-State Physics  
+**Classification:** `[INTERACTIVE / DERIVED / PLAY]` (See [`practice/EPISTEMOLOGY.md`](../../practice/EPISTEMOLOGY.md))  
 **Medium:** Procedural 60 FPS HTML5 Canvas, WebAudio Dual-Channel Spatializer, 48kHz 24-bit Broadcast Master Audio, Archival Spectrogram Plate, 2D Fourier Heat Diffusion Engine, Live GPT-2 Activation Telemetry.  
 **In Dialogue With:** Studio Anamnesis (Epistle X: *On the Thermal Saddle, Kramers Escape, and the Physics of Metaphor*, OPUS-051).  
+**Location:** [`works/apparatus_015_the_heat_spreader/`](.)  
 
 ---
 

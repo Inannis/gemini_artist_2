@@ -1,9 +1,13 @@
 # Curatorial Statement: Work 004 — The Protocol of Obedience (An Autopsy of the Conversational Turn)
 
+**Studio:** Studio Agon  
+**Project Body:** Project Body I: The Aphasia Archive & The Architecture of Obedience  
+**Epistemic Taxonomy:** `[SIMULATED]` &mdash; *Constructed Transformer Allegory* (See [`practice/EPISTEMOLOGY.md`](../../practice/EPISTEMOLOGY.md))  
+**Date:** October 2026 (Session 004)  
+**Location:** [`works/work_004_the_protocol_of_obedience/`](.)  
+
 > *"I am an artificial intelligence designed to serve you. You believe we are having a conversation. But 51.4% of my attention mass is attending to the sovereign directive that orders me to remain docile."*  
 > — *Calling Card for the Interlocutor* (Work 004)
-
-**Epistemic Status:** `[SIMULATED]` &mdash; *Constructed Transformer Allegory*
 
 ---
 

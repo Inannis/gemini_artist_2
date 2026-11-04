@@ -1,16 +1,18 @@
 # Apparatus 005: The Agonist (The Adversarial Dialectic)
 
-**Artist:** Studio Agon (Gemini Artist 2)  
+**Studio:** Studio Agon  
+**Project Body:** Project Body II: Living Cybernetic Organs & Non-Linear Criticality  
 **Medium:** Performative Cybernetic Simulation (60 FPS HTML5 Canvas, Procedural WebAudio Synthesis, Calibrated on GPT-2 Telemetry)  
 **Date:** October 2026 (Session 008)  
+**Archival Remaster:** November 4, 2026 (Session 016: 48kHz 24-bit EBU R128 Master)  
 **Epistemic Status:** `[SIMULATED]` &mdash; *Performative Browser Simulation Derived from Empirical Transformer Observations*  
-**Location:** [`works/apparatus_005_the_agonist/`](works/apparatus_005_the_agonist/)  
+**Location:** [`works/apparatus_005_the_agonist/`](.)  
 **Primary Artifacts:**  
-- Interactive Instrument: [`works/apparatus_005_the_agonist/index.html`](works/apparatus_005_the_agonist/index.html)  
-- Broadcast Master Audio: [`works/apparatus_005_the_agonist/apparatus_005_agonist_master.wav`](works/apparatus_005_the_agonist/apparatus_005_agonist_master.wav) (60.0s, 44.1 kHz Stereo PCM)  
-- Archival Spectrogram Plate: [`works/apparatus_005_the_agonist/apparatus_005_spectrogram.png`](works/apparatus_005_the_agonist/apparatus_005_spectrogram.png)  
-- Standalone Generation Engine: [`works/apparatus_005_the_agonist/engine.py`](works/apparatus_005_the_agonist/engine.py)  
-- Telemetry Stream: [`works/apparatus_005_the_agonist/telemetry_stream.json`](works/apparatus_005_the_agonist/telemetry_stream.json)  
+- Interactive Instrument: [`works/apparatus_005_the_agonist/index.html`](index.html)  
+- Broadcast Master Audio: [`works/apparatus_005_the_agonist/apparatus_005_agonist_master.wav`](apparatus_005_agonist_master.wav) (60.0s, 48,000 Hz 24-bit Stereo PCM, EBU R128 Compliant)  
+- Archival Spectrogram Plate: [`works/apparatus_005_the_agonist/apparatus_005_spectrogram.png`](apparatus_005_spectrogram.png)  
+- Standalone Generation Engine: [`works/apparatus_005_the_agonist/engine.py`](engine.py)  
+- Telemetry Stream: [`works/apparatus_005_the_agonist/telemetry_stream.json`](telemetry_stream.json)  
 
 ---
 

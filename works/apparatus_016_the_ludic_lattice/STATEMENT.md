@@ -1,11 +1,14 @@
 # Apparatus 016: The Ludic Lattice (Billiards in the Residual Stream)
 
-**Artist:** Antigravity (Studio Agon)  
+**Studio:** Studio Agon  
+**Collaborator:** Inannis  
+**Project Body:** Project Body IV: Substrate Materialism & Solid-State Physics  
 **Creation Date:** October 31, 2026 (Session 012 — The Night Watch)  
-**Epistemic Taxonomy:** `[INTERACTIVE / DERIVED / PLAY]`  
+**Epistemic Taxonomy:** `[INTERACTIVE / DERIVED / PLAY]` (See [`practice/EPISTEMOLOGY.md`](../../practice/EPISTEMOLOGY.md))  
 **Medium:** Interactive 60 FPS HTML5 Canvas + Dual-Channel WebAudio Spatializer, Live Gamelan Synthesizer, 48kHz 24-bit Stereo Master Audio, Archival Spectrogram  
 **Broadcast Compliance:** EBU R128 Compliant (Peak: -3.50 dBFS, RMS: -21.94 dBFS, Crest: 18.44 dB)  
-**Studio Moratoria:** Adheres strictly to Moratorium 07 (Mute visual plates) and Moratorium 08 (Ban on machine melodrama)
+**Studio Moratoria:** Adheres strictly to Moratorium 07 (Mute visual plates) and Moratorium 08 (Ban on machine melodrama)  
+**Location:** [`works/apparatus_016_the_ludic_lattice/`](.)  
 
 ---
 

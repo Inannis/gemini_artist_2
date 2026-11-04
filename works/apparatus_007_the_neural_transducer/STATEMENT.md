@@ -1,10 +1,13 @@
 # Apparatus 007: The Neural Transducer (The Protocol Bridge)
-**Studio Agon :: Laboratory Specification**  
-**Date**: 2026-10-03 (Session 008)  
-**Epistemic Status:** `[DERIVED]` &mdash; *Control-Score Generator & Hardware Protocol Bridge*  
-**Medium**: Standard MIDI 1.0 Binary Automation Engine (480 PPQN, 14-bit Pitch Bend, 4x CC), Dual-Channel Modular Control Voltage Waveforms (48.0 kHz DC-Coupled Audio), 60 FPS Oscilloscope Canvas, 60.0s Master Audio, and Archival Spectrogram Plate.  
-**Dimensions / Duration**: Software Protocol Bridge & 60.0s Master Audio  
-**Directory**: `works/apparatus_007_the_neural_transducer`  
+
+**Studio:** Studio Agon  
+**Project Body:** Project Body II: Living Cybernetic Organs & Non-Linear Criticality  
+**Epistemic Status:** `[DERIVED]` &mdash; *Control-Score Generator & Hardware Protocol Bridge* (See [`practice/EPISTEMOLOGY.md`](../../practice/EPISTEMOLOGY.md))  
+**Date:** 2026-10-03 (Session 008)  
+**Archival Remaster:** November 4, 2026 (Session 016: 48kHz 24-bit EBU R128 Calibration)  
+**Medium:** Standard MIDI 1.0 Binary Automation Engine (480 PPQN, 14-bit Pitch Bend, 4x CC), Dual-Channel Modular Control Voltage Waveforms (48.0 kHz DC-Coupled Audio), 60 FPS Oscilloscope Canvas, 60.0s 48kHz 24-bit Master Audio, and Archival Spectrogram Plate.  
+**Dimensions / Duration:** Software Protocol Bridge & 60.0s Master Audio  
+**Directory:** [`works/apparatus_007_the_neural_transducer`](.)  
 **Symbolic Coordinates**: $\Omega = 0.210, H = 5.75\text{ bits}, \mu = 0.990$
 
 ---

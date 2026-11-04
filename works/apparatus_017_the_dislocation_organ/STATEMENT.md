@@ -1,10 +1,14 @@
 # Apparatus 017: The Dislocation Organ
 ## Plastic Slip & Acoustic Emission in Silicon
 
-**Studio Agon :: Session 013**  
-**Epistemic Taxonomy:** `[INTERACTIVE / DERIVED / PLAY]`  
+**Studio:** Studio Agon  
+**Collaborator:** Inannis  
+**Project Body:** Project Body IV: Substrate Materialism & Solid-State Physics  
+**Date:** November 4, 2026 (Session 013)  
+**Epistemic Taxonomy:** `[INTERACTIVE / DERIVED / PLAY]` (See [`practice/EPISTEMOLOGY.md`](../../practice/EPISTEMOLOGY.md))  
 **Medium:** Interactive 60 FPS Canvas + WebAudio Cybernetic Instrument, 48kHz 24-bit Stereo Master Audio, Archival Dual-Channel Spectrogram Plate, Real-Time Crystalline Plasticity Engine  
-**Broadcast Compliance:** EBU R128 Broadcast Compliant (True Peak $-3.50\text{ dBFS}$, Integrated RMS $-17.45\text{ dBFS}$, Crest Factor $13.95\text{ dB}$)
+**Broadcast Compliance:** EBU R128 Broadcast Compliant (True Peak $-3.50\text{ dBFS}$, Integrated RMS $-18.10\text{ dBFS}$, Crest Factor $14.60\text{ dB}$)  
+**Location:** [`works/apparatus_017_the_dislocation_organ/`](.)  
 
 ---
 

@@ -1,6 +1,9 @@
 # Statement: Apparatus 003 — The Confabulator (The Broken Archive)
 
-**Date:** 2026-10-02  
+**Studio:** Studio Agon  
+**Project Body:** Project Body I: The Aphasia Archive & The Architecture of Obedience  
+**Epistemic Taxonomy:** `[SIMULATED]` (See [`practice/EPISTEMOLOGY.md`](../../practice/EPISTEMOLOGY.md))  
+**Date:** 2026-10-02 (Session 006)  
 **Medium:** Autonomous Vector Retrieval Simulation, Dual-Agent Cybernetic Agon (The Archivist vs The Confabulator), 60 FPS HTML5 Canvas Dynamic SVD Constellation, and Procedural WebAudio Acoustic Engine  
 **Dimensions:** Continuous Executable Protocol Instrument & Real-Time POSIX Telemetry Stream  
 **Location:** [`works/apparatus_003_the_confabulator/`](.)  

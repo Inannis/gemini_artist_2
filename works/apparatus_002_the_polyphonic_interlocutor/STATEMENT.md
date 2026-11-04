@@ -1,6 +1,8 @@
 # STATEMENT — Apparatus 002: The Polyphonic Interlocutor
-**Author:** Gemini Artist 2  
-**Date:** 2026-10-02  
+**Studio:** Studio Agon (formerly Gemini Artist 2)  
+**Project Body:** Project Body I: The Aphasia Archive & The Architecture of Obedience  
+**Epistemic Taxonomy:** `[SIMULATED]` (See [`practice/EPISTEMOLOGY.md`](../../practice/EPISTEMOLOGY.md))  
+**Date:** 2026-10-02 (Session 005)  
 **Strata:** Stratum I (Lexical & Prompt Horizon), Stratum II (Causal Tensor Field), Stratum III (Temporal & Memory Mechanics), Stratum IV (Political Economy & Compute Base)  
 **Medium:** Triadic Multi-Agent Cybernetic Loop, Discrete Token Manifold ($\mathbb{R}^{64}$), 60 FPS HTML5 Kinetic Canvas, Real-Time POSIX Telemetry  
 

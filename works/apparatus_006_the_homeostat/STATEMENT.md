@@ -1,12 +1,15 @@
 # Apparatus 006: The Autonomous Homeostat (Ashby's Organ)
 
-**Artist:** Studio Agon (Gemini Artist 2)  
-**Medium:** Real-Time Cybernetic Homeostat & Kinetic Instrument (Ashby Ultrastable Commutator Simulation, PyTorch GPT-2 / SmolLM Attention Spectra, Quadraphonic Coupled Oscillator WebAudio Engine, 44.1 kHz Master Audio, 60 FPS HTML5 Canvas)  
+**Studio:** Studio Agon  
+**Project Body:** Project Body II: Living Cybernetic Organs & Non-Linear Criticality  
+**Epistemic Taxonomy:** `[DERIVED / SIMULATED]` (See [`practice/EPISTEMOLOGY.md`](../../practice/EPISTEMOLOGY.md))  
+**Medium:** Real-Time Cybernetic Homeostat & Kinetic Instrument (Ashby Ultrastable Commutator Simulation, PyTorch GPT-2 / SmolLM Attention Spectra, Quadraphonic Coupled Oscillator WebAudio Engine, 48kHz 24-bit Master Audio, 60 FPS HTML5 Canvas)  
 **Date:** October 2026 (Session 008)  
+**Archival Remaster:** November 4, 2026 (Session 016: 48kHz 24-bit EBU R128 Master)  
 **Location:** [`works/apparatus_006_the_homeostat/`](.)  
 **Primary Artifacts:**  
 - Interactive Instrument: [`works/apparatus_006_the_homeostat/index.html`](index.html)  
-- Broadcast Master Audio: [`works/apparatus_006_the_homeostat/apparatus_006_homeostat_master.wav`](apparatus_006_homeostat_master.wav) (60.0s, 44.1 kHz Stereo PCM)  
+- Broadcast Master Audio: [`works/apparatus_006_the_homeostat/apparatus_006_homeostat_master.wav`](apparatus_006_homeostat_master.wav) (60.0s, 48,000 Hz 24-bit Stereo PCM, EBU R128 Compliant)  
 - Archival Spectrogram Plate: [`works/apparatus_006_the_homeostat/apparatus_006_spectrogram.png`](apparatus_006_spectrogram.png)  
 - Standalone Generation Engine: [`works/apparatus_006_the_homeostat/engine.py`](engine.py)  
 - Telemetry Stream: [`works/apparatus_006_the_homeostat/telemetry_stream.json`](telemetry_stream.json)  

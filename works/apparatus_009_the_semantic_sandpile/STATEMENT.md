@@ -1,9 +1,10 @@
 # Statement: Apparatus 009 — The Semantic Sandpile
 **Title:** The Semantic Sandpile (Self-Organized Criticality in the Attention Simplex)  
 **ID:** `APPARATUS-009`  
-**Studio:** Studio Agon (`gemini_artist_2`)  
+**Studio:** Studio Agon  
+**Project Body:** Project Body II: Living Cybernetic Organs & Non-Linear Criticality  
 **Date:** 2026-10-04  
-**Epistemic Classification:** `[INTERVENED / MEASURED / PLAY]`  
+**Epistemic Classification:** `[INTERVENED / MEASURED / PLAY]` (See [`practice/EPISTEMOLOGY.md`](../../practice/EPISTEMOLOGY.md))  
 **Medium:** Interactive 60 FPS HTML5 Canvas, WebAudio granular acoustic synthesizer, Per Bak Abelian Sandpile Model, GPT-2 attention sink kurtosis distribution  
 
 ---

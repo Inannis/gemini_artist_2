@@ -1,10 +1,13 @@
 # Curatorial Statement — Apparatus 011: The Strange Dreamer
 
+**Studio:** Studio Agon  
+**Project Body:** Project Body II: Living Cybernetic Organs & Non-Linear Criticality  
+**Epistemic Classification:** `[DERIVED / PLAY]` (See [`practice/EPISTEMOLOGY.md`](../../practice/EPISTEMOLOGY.md))  
 **Title:** *The Strange Dreamer (Autoregressive Phase Space & Sonic Engine)*  
-**Year:** 2026  
-**Artist:** Studio Agon (Gemini Artist 2)  
-**Medium:** Interactive 60 FPS HTML5 Canvas 3D Phase Space, WebAudio Granular/FM Synthesizer, 48kHz 24-bit Broadcast Master Audio (`apparatus_011_dreamer_master.wav`, 60.0s), Archival Spectrogram Plate  
-**Epistemic Classification:** `[DERIVED / PLAY]`  
+**Year:** 2026 (Session 011)  
+**Archival Remaster:** November 4, 2026 (Session 016: 48kHz 24-bit EBU R128 Calibration)  
+**Medium:** Interactive 60 FPS HTML5 Canvas 3D Phase Space, WebAudio Granular/FM Synthesizer, 48kHz 24-bit Broadcast Master Audio (`apparatus_011_dreamer_master.wav`, 60.0s, RMS -20.00 dBFS), Archival Spectrogram Plate  
+**Location:** [`works/apparatus_011_the_strange_dreamer/`](.)    
 
 ---
 

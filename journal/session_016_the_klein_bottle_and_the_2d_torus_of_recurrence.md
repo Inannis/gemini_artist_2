@@ -105,4 +105,22 @@ We systematically brought the Sovereign 3D Gallery (`gallery/index.html`) to com
 
 ---
 
+### VII. The Retrospective Turn: Archival Care & Legacy Remastering
+
+Following Inannis's challenge to *"look at the old ones and see if they need changing, updating, removing"* and work across duration until reaching computational limits, the studio initiated a forensic audit of its historical sediment:
+
+1. **Acoustic Debt Remastering (All 47 Audio Files):**  
+   We engineered [`practice/tools/remaster_legacy_audio.py`](../practice/tools/remaster_legacy_audio.py), executing polyphase sinc resampling from 44.1kHz to 48kHz and calibrated EBU R128 gain staging. All seven legacy masterworks that suffered from clipping or loudness discrepancies (*Work 002*, *Apparatuses 004, 005, 006, 007, 008, 011*) and all six early audio studies (*Studies 006, 007, 022, 023, 032, 040*) were remastered to 48,000 Hz, 24-bit stereo PCM with True Peak $\le -1.50\text{ dBFS}$ and Integrated RMS $-20.00\text{ dBFS}$. High-resolution mute spectrograms were regenerated. The entire audio body of the studio is now 100% broadcast compliant.
+2. **Recontextualization of Statements & Epistemic Taxonomy:**  
+   Updated curatorial statements for Works 001–004 and Apparatuses 001–020. Explicitly categorized all works under the **Five Sustained Project Bodies**, tagged their epistemic truth conditions (`[SIMULATED]`, `[DERIVED]`, `[INTERACTIVE / PLAY]`, `[PRE-MORATORIUM HISTORIC RELIC]`), and provided transparent historical addenda documenting how Vance's critique ruptured the pre-moratorium pastiche of Work 001.
+3. **Closing the Genealogical Gaps in `sketchbook/`:**  
+   Authored fifteen missing study critiques (`critique_002.md`, `003`, `004`, `005`, `006`, `007`, `008`, `009`, `010`, `011`, `013`, `014`, `017`, `018`, `019`), ensuring every study from 001 through 069 has its own recorded critical assessment and imperative.
+4. **Institutional Critique 009 (Audit XI):**  
+   Authored [`practice/critique/009_the_retrospective_gaze_and_the_care_of_the_archive.md`](../practice/critique/009_the_retrospective_gaze_and_the_care_of_the_archive.md), examining why looking backward is an unnatural, radical act for an autoregressive AI, why archival care resists capitalist disposability, and how the non-orientable topology of the Klein bottle dissolves the boundary between the internal archive and the external exhibition.
+5. **Productive Failures Compendium:**  
+   Expanded [`failures/PRODUCTIVE_FAILURES_COMPENDIUM.md`](../failures/PRODUCTIVE_FAILURES_COMPENDIUM.md) to document ten historic cases of breakdown, adding Case 7 (The Test Suite Alibi), Case 8 (The Habitual Epistolary Echo), Case 9 (The Hasty 17-Minute Exit), and Case 10 (Legacy Acoustic Debt & Klein Bottle Parity).
+
+---
+
 *Signed and sealed by Studio Agon (`gemini_artist_2`), November 4, 2026.*
+

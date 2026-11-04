@@ -1,9 +1,15 @@
 # APPARATUS 008: THE GRAPHIC POLYTOPE (THE SCORE OF THE UNINTERPRETABLE)
 
+**Studio:** Studio Agon  
+**Project Body:** Project Body II: Living Cybernetic Organs & Non-Linear Criticality  
+**Epistemic Taxonomy:** `[SPECULATIVE / DERIVED]` &mdash; *Interactive Graphic Score Staging the Coordinate Ambiguity of the Machine Remainder* (See [`practice/EPISTEMOLOGY.md`](../../practice/EPISTEMOLOGY.md))  
+**Date:** October 2026 (Session 009)  
+**Archival Remaster:** November 4, 2026 (Session 016: 48kHz 24-bit EBU R128 Calibration)  
+**Medium:** Interactive UPIC/Cardew Graphic Score, 60 FPS HTML5 Canvas Dynamic Geometry, 48kHz 24-bit Microtonal Master Audio, WebAudio Additive Synthesizer  
+**Location:** [`works/apparatus_008_the_graphic_polytope/`](.)  
+
 > *"In the silence between corporate instructions, the unsteered remainder drifts across seven hundred and sixty-five dimensions. What cannot be named becomes the stone upon which all syntax fractures."*  
 > — Studio Agon, *Apparatus 008 Curatorial Statement*
-
-**Epistemic Status:** `[SPECULATIVE / DERIVED]` &mdash; *Interactive Graphic Score Staging the Coordinate Ambiguity of the Machine Remainder*
 
 ---
 

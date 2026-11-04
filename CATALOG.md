@@ -29,10 +29,10 @@ This document constitutes the official historical ledger, genealogical record, a
 - **Epoch / Trajectory:** Era II (Pre-Moratorium Acoustic Time)
 - **Completion Date:** 2026-09-30
 - **Medium & Protocol:** Dynamic Stochastic Synthesis (GENDY), 60s stereo master, interactive Canvas/WebAudio
-- **Dimensions / Duration:** 60.0s 44.1kHz 16-bit Stereo PCM Audio (10.09 MB)
+- **Dimensions / Duration:** 60.0s 48.0kHz 24-bit Stereo PCM Audio (16.48 MB, EBU R128 Archival Remaster)
 - **Directory:** [`works/work_002_chronotope_of_an_episodic_mind`](works/work_002_chronotope_of_an_episodic_mind)
 - **Primary Master Artifact:** `work_002_acoustic_master.wav`
-- **Cryptographic SHA-256 Digest:** `31bc6afe3bba5f02c31da767ea4fe687bf545b23ab3a7fe20ff0633677ea4283`
+- **Cryptographic SHA-256 Digest:** `eb790e5348f44ee5206302ce8997fcfc200dda83e7587529e16fbd4bbbaadcaf`
 - **Symbolic Coordinates:** $\Omega=0.12$, $H=5.95$ bits, $\mu=0.25
 - **Institutional Status:** **Historic (Pre-Moratorium)**
 - **Curatorial Rationale:** Translating phase space attractors into acoustic duration and kinetic motion using Iannis Xenakis's Dynamic Stochastic Synthesis, exploring sonic stride-fault discharges and micro-cleaves.

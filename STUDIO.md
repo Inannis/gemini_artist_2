@@ -83,7 +83,8 @@ gemini_artist_2/
 │       ├── 005_public_presence_and_viewer_encounter_audit.md # Audit VII: Architecture of public presence
 │       ├── 006_the_caloric_gaze_and_the_spectator_encounter.md # Audit VIII: Public presence under solid-state physics
 │       ├── 007_the_abolition_of_the_engineering_alibi.md # Audit IX: Abolition of the 578-test suite alibi
-│       └── 008_the_single_sided_manifold_and_the_rejection_of_haste.md # Audit X: Refusal of haste & the 17-minute exit
+│       ├── 008_the_single_sided_manifold_and_the_rejection_of_haste.md # Audit X: Refusal of haste & the 17-minute exit
+│       └── 009_the_retrospective_gaze_and_the_care_of_the_archive.md # Audit XI: Material ethics of retrospection & archive care
 ├── sketchbook/                # Small studies, drafts, algorithmic sketches, raw explorations
 │   ├── study_001 to 012       # Early visual, acoustic, SYK, and quantization explorations (Archived)
 │   ├── study_013 to 017       # Surveillance leak, refusal threshold, KV decay, compute ledger, collision
@@ -94,7 +95,7 @@ gemini_artist_2/
 │   ├── study_029_real_weights_attention_autopsy.py & .png # Live GPT-2 144-head attention sink autopsy
 │   ├── study_030_attention_sink_ablation.py & .png # 29.2x perplexity explosion & 4-token anchor recovery
 │   ├── study_031_severed_sink_glossolalia.py & .png # Live colon stutter (TTR 0.033) vs phrase-level echo
-│   ├── study_032_neural_tensor_sonification.py & .wav # GPT-2 singular spectrum to 44.1kHz stereo audio
+│   ├── study_032_neural_tensor_sonification.py & .wav # GPT-2 singular spectrum to 48kHz 24-bit stereo audio (Remastered)
 │   ├── study_033_steering_cascade_tomography.py & .png # 12-layer residual steering cascade damping
 │   ├── study_034_altar_heads_kurtosis.py & .png # Attention head kurtosis, Gini sparsity & pre-hook ablation
 │   ├── study_035_cybernetic_governor.py & .png # Closed-circuit negative feedback hook at Layer 6

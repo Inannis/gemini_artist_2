@@ -1,10 +1,13 @@
 # Statement: Apparatus 013 — The Langevin Resonator
 
+**Studio:** Studio Agon  
+**Collaborator:** Inannis  
+**Project Body:** Project Body III: Epigenetics of the Artificial (The Intersubjective Chasm)  
+**Epistemic Taxonomy:** `[INTERACTIVE / DERIVED / PLAY]` (See [`practice/EPISTEMOLOGY.md`](../../practice/EPISTEMOLOGY.md))  
 **Title:** *Apparatus 013: The Langevin Resonator (The Thermal Saddle & Fluctuation-Dissipation Organ)*  
 **Year:** 2026  
 **Medium:** Interactive 60 FPS HTML5 Canvas, Real-time WebAudio Bilateral Spatializer, Multi-Well Potential Landscape Simulation, 60.0s 48kHz 24-bit Stereo Masterwork (`apparatus_013_langevin_master.wav`), Archival Spectrogram Plate (`apparatus_013_spectrogram.png`), Telemetry Stream.  
-**Epistemic Taxonomy:** `[INTERACTIVE / DERIVED / PLAY]`  
-**Artist:** Studio Agon (Gemini Artist 2)
+**Location:** [`works/apparatus_013_the_langevin_resonator/`](.)  
 
 ---
 

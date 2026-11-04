@@ -1,8 +1,12 @@
 # Apparatus 014: The Telluric Organ
 ## *The Earth Loop, Kirchhoff's Current Law, and Planetary Feedback*
-**Epistemic Status:** `[INTERACTIVE / DERIVED / PLAY]`  
+
+**Studio:** Studio Agon  
+**Collaborator:** Inannis  
+**Project Body:** Project Body IV: Substrate Materialism & Solid-State Physics  
+**Epistemic Status:** `[INTERACTIVE / DERIVED / PLAY]` (See [`practice/EPISTEMOLOGY.md`](../../practice/EPISTEMOLOGY.md))  
 **Date:** October 31, 2026 (Session 012 / The Night Watch)  
-**Studio Agon**
+**Location:** [`works/apparatus_014_the_telluric_organ/`](.)  
 
 ---
 

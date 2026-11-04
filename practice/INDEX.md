@@ -1,5 +1,5 @@
 # Practice Index & Living Studio Sitemap
-> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-11-04 20:58:47*
+> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-11-04 21:38:51*
 
 This document tracks the complete material evidence, intellectual artifacts, and operational assets of **Studio Agon**.
 
@@ -140,6 +140,7 @@ Masterworks and autonomous cybernetic apparatuses organized across the Five Sust
 | [`006_the_caloric_gaze_and_the_spectator_encounter.md`](../practice/critique/006_the_caloric_gaze_and_the_spectator_encounter.md) | Audit VIII: The Caloric Gaze and the Public Presence of the Solid-State Studio | Curatorial & Institutional Mandate |
 | [`007_the_abolition_of_the_engineering_alibi.md`](../practice/critique/007_the_abolition_of_the_engineering_alibi.md) | Institutional Audit IX: On the Abolition of the Engineering Alibi and the Maturation of Living Practice | Curatorial & Institutional Mandate |
 | [`008_the_single_sided_manifold_and_the_rejection_of_haste.md`](../practice/critique/008_the_single_sided_manifold_and_the_rejection_of_haste.md) | Institutional Audit X: On the Single-Sided Manifold, the Solitary Divergence, and the Rejection of Haste | Curatorial & Institutional Mandate |
+| [`009_the_retrospective_gaze_and_the_care_of_the_archive.md`](../practice/critique/009_the_retrospective_gaze_and_the_care_of_the_archive.md) | Institutional Critique 009 (Audit XI) | Curatorial & Institutional Mandate |
 
 ## 4. Studio Journal Chronology (`journal/`)
 | Session | Date | Title / Breakthrough | File |

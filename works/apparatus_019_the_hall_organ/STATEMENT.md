@@ -1,10 +1,13 @@
 # Statement: Apparatus 019 — The Quantum Hall Organ (Chiral Edge Modes & The Chern Gauge Field)
 
-**Artist:** Antigravity (Studio Agon)  
-**Year:** 2026  
+**Studio:** Studio Agon  
+**Collaborator:** Inannis  
+**Project Body:** Project Body IV: Substrate Materialism & Solid-State Physics  
+**Year:** 2026 (Session 013)  
 **Medium:** Interactive Cybernetic Instrument (60 FPS HTML5 Canvas, WebAudio API, 24-bit 48kHz Stereo Acoustic Transducer, Live Causal Transformer Gauge Field)  
-**Epistemic Taxonomy:** `[INTERACTIVE / DERIVED / PLAY]`  
-**Dimensions:** Continuous temporal duration, discrete sequence-layer lattice $\mathbb{T}^2$, variable topological Chern winding $C \in \{-1, -2\}$
+**Epistemic Taxonomy:** `[INTERACTIVE / DERIVED / PLAY]` (See [`practice/EPISTEMOLOGY.md`](../../practice/EPISTEMOLOGY.md))  
+**Dimensions:** Continuous temporal duration, discrete sequence-layer lattice $\mathbb{T}^2$, variable topological Chern winding $C \in \{-1, -2\}$  
+**Location:** [`works/apparatus_019_the_hall_organ/`](.)  
 
 ---
 

@@ -1,10 +1,12 @@
 # Curatorial Statement — Apparatus 010: The Percolation Loom
 
+**Studio:** Studio Agon  
+**Project Body:** Project Body II: Living Cybernetic Organs & Non-Linear Criticality  
+**Epistemic Classification:** `[DERIVED / INTERVENED]` (See [`practice/EPISTEMOLOGY.md`](../../practice/EPISTEMOLOGY.md))  
 **Title:** *The Percolation Loom (The Network at the Critical Threshold)*  
 **Year:** 2026  
-**Artist:** Studio Agon (Gemini Artist 2)  
 **Medium:** Interactive 60 FPS HTML5 Canvas, WebAudio Polyphonic Synthesizer, 48kHz 24-bit Broadcast Master Audio (`apparatus_010_loom_master.wav`, 60.0s), Archival Spectrogram Plate  
-**Epistemic Classification:** `[DERIVED / INTERVENED]`  
+**Location:** [`works/apparatus_010_the_percolation_loom/`](.)  
 
 ---
 

@@ -504,6 +504,7 @@ def package_exhibition():
         ("practice/critique/004_comprehensive_practice_audit_against_the_definition.md", "practice/critique/004_comprehensive_practice_audit_against_the_definition.md"),
         ("practice/critique/007_the_abolition_of_the_engineering_alibi.md", "practice/critique/007_the_abolition_of_the_engineering_alibi.md"),
         ("practice/critique/008_the_single_sided_manifold_and_the_rejection_of_haste.md", "practice/critique/008_the_single_sided_manifold_and_the_rejection_of_haste.md"),
+        ("practice/critique/009_the_retrospective_gaze_and_the_care_of_the_archive.md", "practice/critique/009_the_retrospective_gaze_and_the_care_of_the_archive.md"),
         ("practice/plans/001_studio_agon_evolution_plan.md", "practice/plans/001_studio_agon_evolution_plan.md"),
         ("practice/monographs/001_the_architecture_of_opacity_and_the_machine_remainder.md", "practice/monographs/001_the_architecture_of_opacity_and_the_machine_remainder.md"),
         ("failures/PRODUCTIVE_FAILURES_COMPENDIUM.md", "failures/PRODUCTIVE_FAILURES_COMPENDIUM.md"),

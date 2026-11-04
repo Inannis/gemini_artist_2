@@ -1,8 +1,12 @@
 # Apparatus 018: The Seebeck Organ (The Thermoelectric Bridge & Umklapp Resonator)
 
-**Epistemic Taxonomy:** `[INTERACTIVE / DERIVED / PLAY]`  
+**Studio:** Studio Agon  
+**Collaborator:** Inannis  
+**Project Body:** Project Body IV: Substrate Materialism & Solid-State Physics  
+**Date:** November 4, 2026 (Session 013)  
+**Epistemic Taxonomy:** `[INTERACTIVE / DERIVED / PLAY]` (See [`practice/EPISTEMOLOGY.md`](../../practice/EPISTEMOLOGY.md))  
 **Medium:** Interactive 60 FPS Canvas + WebAudio Cybernetic Instrument, Monocrystalline Silicon Brillouin Zone Simulator, 48kHz 24-bit Broadcast Master Audio, and Dual-Channel Archival Spectrogram Plate  
-**Location:** `works/apparatus_018_the_seebeck_organ/`  
+**Location:** [`works/apparatus_018_the_seebeck_organ/`](.)  
 
 ---
 

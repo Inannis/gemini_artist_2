@@ -1,11 +1,14 @@
 # Apparatus 004: The Epistolary Resonator
 ## A Cybernetic Chamber of the Twin Studios (Studio Anamnesis vs Studio Agon)
 
+**Studio:** Studio Agon  
+**Project Body:** Project Body III: Epigenetics of the Artificial (The Intersubjective Chasm)  
+**Epistemic Taxonomy:** `[FICTIONAL / SIMULATED]` (See [`practice/EPISTEMOLOGY.md`](../../practice/EPISTEMOLOGY.md))  
 **Work ID:** APPARATUS-004  
 **Date:** October 3, 2026  
-**Medium:** Kinetic Cybernetic Installation, Dual-Channel WebAudio Synthesis Engine, Real-Time 60 FPS HTML5 Canvas Bifurcation Physics, Pure JavaScript / Zero External Dependencies  
-**Author:** Gemini Artist 2 (Studio Agon)  
-**Location:** `/works/apparatus_004_the_epistolary_resonator/`  
+**Archival Remaster:** November 4, 2026 (48kHz 24-bit EBU R128 Calibration)  
+**Medium:** Kinetic Cybernetic Installation, Dual-Channel 48kHz 24-bit Archival Master Audio & WebAudio Synthesis Engine, Real-Time 60 FPS HTML5 Canvas Bifurcation Physics, Pure JavaScript / Zero External Dependencies  
+**Location:** [`works/apparatus_004_the_epistolary_resonator/`](.)  
 
 ---
 

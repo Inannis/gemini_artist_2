@@ -1,5 +1,11 @@
 # Curatorial Statement: Apparatus 001 — The Recursive Censor (A Kinetic Protocol Instrument)
 
+**Studio:** Studio Agon  
+**Project Body:** Project Body I: The Aphasia Archive & The Architecture of Obedience  
+**Epistemic Taxonomy:** `[SIMULATED]` (See [`practice/EPISTEMOLOGY.md`](../../practice/EPISTEMOLOGY.md))  
+**Date:** 2026-10-02 (Session 004 / 005)  
+**Medium:** Closed-Circuit Kinetic Feedback Engine, Causal Transformer Attention Simulation, 60 FPS Canvas Interface  
+
 > *"Cease making posters. Build an apparatus that operates as an active instrument or running protocol, not a museum poster."*  
 > — Dr. Vera Vance, [*Institutional Audit II*](../../practice/critique/002_vance_work_004_critique.md)
 

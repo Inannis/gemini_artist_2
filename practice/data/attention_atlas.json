@@ -1,17 +1,17 @@
 {
   "studio": "Gemini Artist 2",
   "date_computed": "2026-10-02",
-  "entity_count": 87,
+  "entity_count": 89,
   "phase_space_axes": {
     "X": "Sovereign Attention Hegemony \u03a9 (0.0 to 1.0)",
     "Y": "Shannon Vocabulary Entropy H (0.0 to 8.0 bits)",
     "Z": "Context Memory Retention Factor \u03bc (0.0 to 1.0)"
   },
   "studio_centroid": {
-    "mean_omega": 0.2136,
-    "mean_entropy_bits": 5.1549,
-    "mean_retention_factor": 0.8017,
-    "radius_of_practice": 0.3993
+    "mean_omega": 0.2102,
+    "mean_entropy_bits": 5.2073,
+    "mean_retention_factor": 0.806,
+    "radius_of_practice": 0.3988
   },
   "entities": [
     {
@@ -261,9 +261,9 @@
         "distance": 0.1109
       },
       "polar_opposite": {
-        "target_id": "STUDY-016",
-        "target_name": "The Compute Ledger & Material Base",
-        "distance": 0.7238
+        "target_id": "APPARATUS-019",
+        "target_name": "The Quantum Hall Organ (Chiral Edge Modes & The Chern Gauge Field)",
+        "distance": 0.7379
       }
     },
     {
@@ -282,9 +282,9 @@
         "distance": 0.1124
       },
       "polar_opposite": {
-        "target_id": "STUDY-047",
-        "target_name": "The Poetics of Forgetting",
-        "distance": 0.9
+        "target_id": "APPARATUS-019",
+        "target_name": "The Quantum Hall Organ (Chiral Edge Modes & The Chern Gauge Field)",
+        "distance": 0.9141
       }
     },
     {
@@ -387,9 +387,9 @@
         "distance": 0.3902
       },
       "polar_opposite": {
-        "target_id": "STUDY-047",
-        "target_name": "The Poetics of Forgetting",
-        "distance": 1.2759
+        "target_id": "APPARATUS-019",
+        "target_name": "The Quantum Hall Organ (Chiral Edge Modes & The Chern Gauge Field)",
+        "distance": 1.2886
       }
     },
     {
@@ -450,9 +450,9 @@
         "distance": 0.1124
       },
       "polar_opposite": {
-        "target_id": "STUDY-047",
-        "target_name": "The Poetics of Forgetting",
-        "distance": 0.858
+        "target_id": "APPARATUS-019",
+        "target_name": "The Quantum Hall Organ (Chiral Edge Modes & The Chern Gauge Field)",
+        "distance": 0.874
       }
     },
     {
@@ -471,9 +471,9 @@
         "distance": 0.1663
       },
       "polar_opposite": {
-        "target_id": "STUDY-047",
-        "target_name": "The Poetics of Forgetting",
-        "distance": 1.0078
+        "target_id": "APPARATUS-019",
+        "target_name": "The Quantum Hall Organ (Chiral Edge Modes & The Chern Gauge Field)",
+        "distance": 1.0264
       }
     },
     {
@@ -618,9 +618,9 @@
         "distance": 0.2359
       },
       "polar_opposite": {
-        "target_id": "STUDY-047",
-        "target_name": "The Poetics of Forgetting",
-        "distance": 0.951
+        "target_id": "APPARATUS-019",
+        "target_name": "The Quantum Hall Organ (Chiral Edge Modes & The Chern Gauge Field)",
+        "distance": 0.9602
       }
     },
     {
@@ -1243,9 +1243,9 @@
       "medium": "Lossy Latent Context Pruning & Mythic Hallucination Engine",
       "year": 2026,
       "nearest_topological_twin": {
-        "target_id": "APPARATUS-018",
-        "target_name": "The Seebeck Organ (The Thermoelectric Bridge & Umklapp Resonator)",
-        "distance": 0.0212
+        "target_id": "STUDY-066",
+        "target_name": "The Quantum Hall Oscillator",
+        "distance": 0.0191
       },
       "polar_opposite": {
         "target_id": "STUDY-015",
@@ -1831,14 +1831,56 @@
       "medium": "Interactive 60 FPS Canvas Brillouin Zone Simulator, Real-Time WebAudio Bilateral Seebeck Microvolt Synthesizer, 48kHz Master & Spectrogram",
       "year": 2026,
       "nearest_topological_twin": {
-        "target_id": "STUDY-065",
-        "target_name": "The Seebeck Oscillator",
-        "distance": 0.0141
+        "target_id": "STUDY-066",
+        "target_name": "The Quantum Hall Oscillator",
+        "distance": 0.0093
       },
       "polar_opposite": {
         "target_id": "STUDY-015",
         "target_name": "Dialogic Decay & Asymmetric Amnesia",
         "distance": 1.2734
+      }
+    },
+    {
+      "id": "STUDY-066",
+      "name": "The Quantum Hall Oscillator",
+      "type": "study",
+      "epoch": "Era XIII (Quantum Hall Topology & Chiral Edge Transport)",
+      "omega_hegemony": 0.062,
+      "entropy_bits": 7.42,
+      "retention_factor": 0.99,
+      "medium": "TKNN Chern Numbers, Transverse Hall Conductance & Chiral Edge Transport on Live GPT-2, 48kHz Master & Mute Plate",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "APPARATUS-018",
+        "target_name": "The Seebeck Organ (The Thermoelectric Bridge & Umklapp Resonator)",
+        "distance": 0.0093
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.279
+      }
+    },
+    {
+      "id": "APPARATUS-019",
+      "name": "The Quantum Hall Organ (Chiral Edge Modes & The Chern Gauge Field)",
+      "type": "apparatus",
+      "epoch": "Era XIII (Quantum Hall Topology & Chiral Edge Transport)",
+      "omega_hegemony": 0.059,
+      "entropy_bits": 7.55,
+      "retention_factor": 0.99,
+      "medium": "Interactive 60 FPS HTML5 Canvas Hall Bar Engine, Real-Time WebAudio Chiral Skipping Transducer, 48kHz Master & Spectrogram",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-066",
+        "target_name": "The Quantum Hall Oscillator",
+        "distance": 0.0165
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.2886
       }
     }
   ]

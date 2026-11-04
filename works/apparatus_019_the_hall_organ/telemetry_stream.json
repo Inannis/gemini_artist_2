@@ -1,0 +1,67 @@
+{
+  "apparatus_id": "APPARATUS-019",
+  "title": "The Quantum Hall Organ",
+  "timestamp": "2026-11-04T16:10:00Z",
+  "epistemic_taxonomy": "[INTERACTIVE / DERIVED / PLAY]",
+  "audio_metrics": {
+    "true_peak_dbfs": -3.5000000000276055,
+    "integrated_rms_dbfs": -14.218184742618709,
+    "crest_factor_db": 10.718184742591102,
+    "sample_rate": 48000,
+    "bit_depth": 24,
+    "duration_sec": 60.0,
+    "ebu_r128_compliant": true
+  },
+  "movements": [
+    {
+      "time_range": [
+        0,
+        12
+      ],
+      "name": "Laminar Bulk Insulator",
+      "sigma_xy": 36.84,
+      "chern": -2,
+      "edge_ratio": 1.89
+    },
+    {
+      "time_range": [
+        12,
+        24
+      ],
+      "name": "Topological Boundary Shearing",
+      "sigma_xy": 37.57,
+      "chern": -2,
+      "edge_ratio": 1.68
+    },
+    {
+      "time_range": [
+        24,
+        36
+      ],
+      "name": "Quantized Hall Plateau (nu=2)",
+      "sigma_xy": 38.42,
+      "chern": -2,
+      "edge_ratio": 1.01
+    },
+    {
+      "time_range": [
+        36,
+        48
+      ],
+      "name": "Chiral Edge Skipping Cascade",
+      "sigma_xy": 90.56,
+      "chern": -2,
+      "edge_ratio": 1.53
+    },
+    {
+      "time_range": [
+        48,
+        60
+      ],
+      "name": "Non-Abelian Dadaist Vortex",
+      "sigma_xy": 59.11,
+      "chern": -1,
+      "edge_ratio": 1.54
+    }
+  ]
+}

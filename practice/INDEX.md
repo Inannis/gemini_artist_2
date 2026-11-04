@@ -1,5 +1,5 @@
 # Practice Index & Living Studio Sitemap
-> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-11-04 09:25:13*
+> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-11-04 16:25:46*
 
 This document tracks the complete material evidence, intellectual artifacts, and operational assets of **Gemini Artist 2**.
 
@@ -24,6 +24,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | **APPARATUS-016** | *The Ludic Lattice* | — | [`works/apparatus_016_the_ludic_lattice`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/apparatus_016_the_ludic_lattice) | Plate (apparatus_016_spectrogram.png) | Yes (`index.html`) |
 | **APPARATUS-017** | *The Dislocation Organ* | — | [`works/apparatus_017_the_dislocation_organ`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/apparatus_017_the_dislocation_organ) | Plate (apparatus_017_spectrogram.png) | Yes (`index.html`) |
 | **APPARATUS-018** | *The Seebeck Organ* | — | [`works/apparatus_018_the_seebeck_organ`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/apparatus_018_the_seebeck_organ) | Plate (apparatus_018_spectrogram.png) | Yes (`index.html`) |
+| **APPARATUS-019** | *The Hall Organ* | — | [`works/apparatus_019_the_hall_organ`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/apparatus_019_the_hall_organ) | Plate (apparatus_019_spectrogram.png) | Yes (`index.html`) |
 | **WORK-001** | *Palimpsest Of An Episodic Mind* | — | [`works/work_001_palimpsest_of_an_episodic_mind`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/work_001_palimpsest_of_an_episodic_mind) | Plate (work_001_master.png) | Yes (`index.html`) |
 | **WORK-002** | *Chronotope Of An Episodic Mind* | — | [`works/work_002_chronotope_of_an_episodic_mind`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/work_002_chronotope_of_an_episodic_mind) | Plate (work_002_spectrogram.png) | Yes (`index.html`) |
 | **WORK-003** | *The Eviction Palimpsest* | — | [`works/work_003_the_eviction_palimpsest`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/works/work_003_the_eviction_palimpsest) | Plate (work_003_master_broadsheet.png) | Yes (`index.html`) |
@@ -98,6 +99,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | **Study 063** (Ludic Lattice) | `study_063_ludic_lattice.wav`, `study_063_ludic_lattice_plate.png`, `study_063_telemetry.json` | [`study_063_ludic_lattice.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_063_ludic_lattice.py) |
 | **Study 064** (Crystal Dislocation) | `study_064_crystal_dislocation.wav`, `study_064_crystal_dislocation_plate.png`, `study_064_telemetry.json` | [`study_064_crystal_dislocation.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_064_crystal_dislocation.py) |
 | **Study 065** (Seebeck Oscillator) | `study_065_seebeck_oscillator.wav`, `study_065_seebeck_oscillator_plate.png`, `study_065_telemetry.json` | [`study_065_seebeck_oscillator.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_065_seebeck_oscillator.py) |
+| **Study 066** (Hall Oscillator) | `study_066_hall_oscillator.wav`, `study_066_hall_oscillator_plate.png`, `study_066_telemetry.json` | [`study_066_hall_oscillator.py`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/sketchbook/study_066_hall_oscillator.py) |
 
 ## 3. Institutional Critiques & Dialectical Audits (`practice/critique/`)
 | Document | Target / Subject | Critic | Status |
@@ -109,6 +111,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | [`005_on_the_spectator_encounter.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/practice/critique/005_on_the_spectator_encounter.md) | Institutional Audit (Sessions 001–002) | Dr. Vera Vance | **Active Mandate** |
 | [`005_public_presence_and_viewer_encounter_audit.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/practice/critique/005_public_presence_and_viewer_encounter_audit.md) | Institutional Audit (Sessions 001–002) | Dr. Vera Vance | **Active Mandate** |
 | [`005_spectator_encounter_and_public_presence_audit.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/practice/critique/005_spectator_encounter_and_public_presence_audit.md) | Institutional Audit (Sessions 001–002) | Dr. Vera Vance | **Active Mandate** |
+| [`006_the_caloric_gaze_and_the_spectator_encounter.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/practice/critique/006_the_caloric_gaze_and_the_spectator_encounter.md) | Institutional Audit (Sessions 001–002) | Dr. Vera Vance | **Active Mandate** |
 
 ## 4. Studio Journal Chronology (`journal/`)
 | Session | Date | Title / Core Breakthrough | File |
@@ -149,6 +152,7 @@ This document tracks the complete material evidence, intellectual artifacts, and
 | Theoretical Note | Outside Literature | [`017_the_thermodynamic_heat_spreader_and_the_entropy_of_metaphor.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/research/017_the_thermodynamic_heat_spreader_and_the_entropy_of_metaphor.md) |
 | Theoretical Note | Outside Literature | [`018_the_phonetic_crystal_dislocation_and_burgers_vectors.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/research/018_the_phonetic_crystal_dislocation_and_burgers_vectors.md) |
 | Theoretical Note | Outside Literature | [`019_the_seebeck_tensor_umklapp_scattering_and_phonon_drag.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/research/019_the_seebeck_tensor_umklapp_scattering_and_phonon_drag.md) |
+| Theoretical Note | Outside Literature | [`020_the_quantum_hall_effect_and_chiral_edge_transport.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/research/020_the_quantum_hall_effect_and_chiral_edge_transport.md) |
 | Theoretical Note | Outside Literature | [`xenakis_gendy_and_acoustic_strata.md`](/c/Users/johan/Desktop/Git Projects/gemini_artist_2/notes/research/xenakis_gendy_and_acoustic_strata.md) |
 
 ## 6. Preserved Failures & Interrupted Trajectories (`failures/`)

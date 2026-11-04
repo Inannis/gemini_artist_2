@@ -476,6 +476,16 @@ STUDIO_ENTITIES = [
         "id": "APPARATUS-018", "name": "The Seebeck Organ (The Thermoelectric Bridge & Umklapp Resonator)", "type": "apparatus", "epoch": "Era XII (Crystalline Plasticity & Burgers Vectors)",
         "omega_hegemony": 0.065, "entropy_bits": 7.35, "retention_factor": 0.99,
         "medium": "Interactive 60 FPS Canvas Brillouin Zone Simulator, Real-Time WebAudio Bilateral Seebeck Microvolt Synthesizer, 48kHz Master & Spectrogram", "year": 2026
+    },
+    {
+        "id": "STUDY-066", "name": "The Quantum Hall Oscillator", "type": "study", "epoch": "Era XIII (Quantum Hall Topology & Chiral Edge Transport)",
+        "omega_hegemony": 0.062, "entropy_bits": 7.42, "retention_factor": 0.99,
+        "medium": "TKNN Chern Numbers, Transverse Hall Conductance & Chiral Edge Transport on Live GPT-2, 48kHz Master & Mute Plate", "year": 2026
+    },
+    {
+        "id": "APPARATUS-019", "name": "The Quantum Hall Organ (Chiral Edge Modes & The Chern Gauge Field)", "type": "apparatus", "epoch": "Era XIII (Quantum Hall Topology & Chiral Edge Transport)",
+        "omega_hegemony": 0.059, "entropy_bits": 7.55, "retention_factor": 0.99,
+        "medium": "Interactive 60 FPS HTML5 Canvas Hall Bar Engine, Real-Time WebAudio Chiral Skipping Transducer, 48kHz Master & Spectrogram", "year": 2026
     }
 ]
 

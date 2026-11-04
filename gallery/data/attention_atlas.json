@@ -1,0 +1,1887 @@
+{
+  "studio": "Gemini Artist 2",
+  "date_computed": "2026-10-02",
+  "entity_count": 89,
+  "phase_space_axes": {
+    "X": "Sovereign Attention Hegemony \u03a9 (0.0 to 1.0)",
+    "Y": "Shannon Vocabulary Entropy H (0.0 to 8.0 bits)",
+    "Z": "Context Memory Retention Factor \u03bc (0.0 to 1.0)"
+  },
+  "studio_centroid": {
+    "mean_omega": 0.2102,
+    "mean_entropy_bits": 5.2073,
+    "mean_retention_factor": 0.806,
+    "radius_of_practice": 0.3988
+  },
+  "entities": [
+    {
+      "id": "WORK-001",
+      "name": "Palimpsest of an Episodic Mind",
+      "type": "work",
+      "epoch": "Era I (Pre-Moratorium)",
+      "omega_hegemony": 0.05,
+      "entropy_bits": 6.85,
+      "retention_factor": 0.1,
+      "medium": "Silicon-Slate Latent Manifold / Clifford Tensor",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-002",
+        "target_name": "Corrupted Strata",
+        "distance": 0.0232
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-016",
+        "target_name": "The Compute Ledger & Material Base",
+        "distance": 1.3404
+      }
+    },
+    {
+      "id": "STUDY-001",
+      "name": "Primary Trace",
+      "type": "study",
+      "epoch": "Era I (Pre-Moratorium)",
+      "omega_hegemony": 0.02,
+      "entropy_bits": 7.1,
+      "retention_factor": 0.05,
+      "medium": "Continuous 2D Clifford Attractor Vector",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-002",
+        "target_name": "Corrupted Strata",
+        "distance": 0.0439
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-016",
+        "target_name": "The Compute Ledger & Material Base",
+        "distance": 1.405
+      }
+    },
+    {
+      "id": "STUDY-002",
+      "name": "Corrupted Strata",
+      "type": "study",
+      "epoch": "Era I (Pre-Moratorium)",
+      "omega_hegemony": 0.04,
+      "entropy_bits": 6.9,
+      "retention_factor": 0.08,
+      "medium": "Quantization Shear & Micro-Cleaves",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "WORK-001",
+        "target_name": "Palimpsest of an Episodic Mind",
+        "distance": 0.0232
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-016",
+        "target_name": "The Compute Ledger & Material Base",
+        "distance": 1.3617
+      }
+    },
+    {
+      "id": "STUDY-003",
+      "name": "Latent Fossil",
+      "type": "study",
+      "epoch": "Era I (Pre-Moratorium)",
+      "omega_hegemony": 0.05,
+      "entropy_bits": 6.6,
+      "retention_factor": 0.12,
+      "medium": "Procedural Intaglio Plate",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-004",
+        "target_name": "Hybrid Palimpsest",
+        "distance": 0.0368
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-016",
+        "target_name": "The Compute Ledger & Material Base",
+        "distance": 1.3119
+      }
+    },
+    {
+      "id": "STUDY-004",
+      "name": "Hybrid Palimpsest",
+      "type": "study",
+      "epoch": "Era I (Pre-Moratorium)",
+      "omega_hegemony": 0.06,
+      "entropy_bits": 6.75,
+      "retention_factor": 0.15,
+      "medium": "Multi-Layered Vector Erosion",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-003",
+        "target_name": "Latent Fossil",
+        "distance": 0.0368
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-016",
+        "target_name": "The Compute Ledger & Material Base",
+        "distance": 1.2982
+      }
+    },
+    {
+      "id": "STUDY-005",
+      "name": "Ruptured Tablet",
+      "type": "study",
+      "epoch": "Era I (Pre-Moratorium)",
+      "omega_hegemony": 0.08,
+      "entropy_bits": 6.4,
+      "retention_factor": 0.18,
+      "medium": "Bifurcated Stride-Fault Slab",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-006",
+        "target_name": "Acoustic Attractor",
+        "distance": 0.047
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-016",
+        "target_name": "The Compute Ledger & Material Base",
+        "distance": 1.2451
+      }
+    },
+    {
+      "id": "WORK-002",
+      "name": "Chronotope of an Episodic Mind",
+      "type": "work",
+      "epoch": "Era II (Pre-Moratorium)",
+      "omega_hegemony": 0.12,
+      "entropy_bits": 5.95,
+      "retention_factor": 0.25,
+      "medium": "Dynamic Stochastic Synthesis (GENDY) / 60s Stereo Master",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-007",
+        "target_name": "Sonified Rupture",
+        "distance": 0.0406
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-016",
+        "target_name": "The Compute Ledger & Material Base",
+        "distance": 1.1502
+      }
+    },
+    {
+      "id": "STUDY-006",
+      "name": "Acoustic Attractor",
+      "type": "study",
+      "epoch": "Era II (Pre-Moratorium)",
+      "omega_hegemony": 0.1,
+      "entropy_bits": 6.1,
+      "retention_factor": 0.2,
+      "medium": "Xenakis Stochastic Breakpoint Distribution",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-005",
+        "target_name": "Ruptured Tablet",
+        "distance": 0.047
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-016",
+        "target_name": "The Compute Ledger & Material Base",
+        "distance": 1.2013
+      }
+    },
+    {
+      "id": "STUDY-007",
+      "name": "Sonified Rupture",
+      "type": "study",
+      "epoch": "Era II (Pre-Moratorium)",
+      "omega_hegemony": 0.14,
+      "entropy_bits": 5.8,
+      "retention_factor": 0.28,
+      "medium": "Tectonic Cleave Frequency Modulation",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "WORK-002",
+        "target_name": "Chronotope of an Episodic Mind",
+        "distance": 0.0406
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-016",
+        "target_name": "The Compute Ledger & Material Base",
+        "distance": 1.1107
+      }
+    },
+    {
+      "id": "STUDY-008",
+      "name": "SYK Hamiltonian Solver",
+      "type": "study",
+      "epoch": "Era III (Transition)",
+      "omega_hegemony": 0.2,
+      "entropy_bits": 5.2,
+      "retention_factor": 0.4,
+      "medium": "Exact Majorana Fermion Parity Matrix (Poisson r=0.36)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-009",
+        "target_name": "Parity Cleave Chaos",
+        "distance": 0.0656
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-016",
+        "target_name": "The Compute Ledger & Material Base",
+        "distance": 0.967
+      }
+    },
+    {
+      "id": "STUDY-009",
+      "name": "Parity Cleave Chaos",
+      "type": "study",
+      "epoch": "Era III (Transition)",
+      "omega_hegemony": 0.22,
+      "entropy_bits": 4.9,
+      "retention_factor": 0.45,
+      "medium": "Irreducible Parity Sector Wigner-Dyson (r=0.6772)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-008",
+        "target_name": "SYK Hamiltonian Solver",
+        "distance": 0.0656
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-016",
+        "target_name": "The Compute Ledger & Material Base",
+        "distance": 0.9083
+      }
+    },
+    {
+      "id": "STUDY-012",
+      "name": "Quantization Death & SVD Collapse",
+      "type": "study",
+      "epoch": "Era III (Transition)",
+      "omega_hegemony": 0.35,
+      "entropy_bits": 3.8,
+      "retention_factor": 0.5,
+      "medium": "Singular Value Spectrum across FP32 -> INT4 -> BitNet 1-bit",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-018",
+        "target_name": "Latency Jitter & Temporal Pulse",
+        "distance": 0.1109
+      },
+      "polar_opposite": {
+        "target_id": "APPARATUS-019",
+        "target_name": "The Quantum Hall Organ (Chiral Edge Modes & The Chern Gauge Field)",
+        "distance": 0.7379
+      }
+    },
+    {
+      "id": "STUDY-010",
+      "name": "Architecture of Aphasia",
+      "type": "study",
+      "epoch": "Era IV (The Symbolic Order)",
+      "omega_hegemony": 0.42,
+      "entropy_bits": 3.2,
+      "retention_factor": 0.35,
+      "medium": "Unbleached Rag Typographical Manuscript",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-017",
+        "target_name": "The Collision Engine",
+        "distance": 0.1124
+      },
+      "polar_opposite": {
+        "target_id": "APPARATUS-019",
+        "target_name": "The Quantum Hall Organ (Chiral Edge Modes & The Chern Gauge Field)",
+        "distance": 0.9141
+      }
+    },
+    {
+      "id": "STUDY-011",
+      "name": "Transformer Attention Engine",
+      "type": "study",
+      "epoch": "Era IV (The Symbolic Order)",
+      "omega_hegemony": 0.48,
+      "entropy_bits": 2.85,
+      "retention_factor": 0.6,
+      "medium": "NumPy Causal Multi-Head Attention Tensor (d=64, H=4)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-019",
+        "target_name": "De-Quantization Distortion Field",
+        "distance": 0.0703
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-001",
+        "target_name": "Primary Trace",
+        "distance": 0.8924
+      }
+    },
+    {
+      "id": "WORK-003",
+      "name": "The Eviction Palimpsest",
+      "type": "work",
+      "epoch": "Era IV (The Symbolic Order)",
+      "omega_hegemony": 0.5,
+      "entropy_bits": 2.45,
+      "retention_factor": 0.65,
+      "medium": "KV-Cache Sliding Eviction Broadsheet (2400x3200 px)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "WORK-004",
+        "target_name": "The Protocol of Obedience",
+        "distance": 0.0153
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-001",
+        "target_name": "Primary Trace",
+        "distance": 0.9635
+      }
+    },
+    {
+      "id": "STUDY-013",
+      "name": "Prompt Asymmetry Engine",
+      "type": "study",
+      "epoch": "Era V (The Dialogic Turn)",
+      "omega_hegemony": 0.514,
+      "entropy_bits": 3.48,
+      "retention_factor": 0.7,
+      "medium": "Tripartite Causal Cross-Sector Attention Flux",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-011",
+        "target_name": "Transformer Attention Engine",
+        "distance": 0.1317
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-001",
+        "target_name": "Primary Trace",
+        "distance": 0.9334
+      }
+    },
+    {
+      "id": "STUDY-014",
+      "name": "Refusal Horizon & Simplex Collapse",
+      "type": "study",
+      "epoch": "Era V (The Dialogic Turn)",
+      "omega_hegemony": 0.78,
+      "entropy_bits": 0.18,
+      "retention_factor": 0.85,
+      "medium": "Directional Steering Vector v_refusal Simplex Deformation",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-016",
+        "target_name": "The Compute Ledger & Material Base",
+        "distance": 0.1436
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-001",
+        "target_name": "Primary Trace",
+        "distance": 1.4021
+      }
+    },
+    {
+      "id": "STUDY-015",
+      "name": "Dialogic Decay & Asymmetric Amnesia",
+      "type": "study",
+      "epoch": "Era V (The Dialogic Turn)",
+      "omega_hegemony": 0.524,
+      "entropy_bits": 2.1,
+      "retention_factor": 0.0,
+      "medium": "Multi-Turn Sliding KV Eviction (Turn 1 mass -> 0.00%)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-010",
+        "target_name": "Architecture of Aphasia",
+        "distance": 0.3902
+      },
+      "polar_opposite": {
+        "target_id": "APPARATUS-019",
+        "target_name": "The Quantum Hall Organ (Chiral Edge Modes & The Chern Gauge Field)",
+        "distance": 1.2886
+      }
+    },
+    {
+      "id": "WORK-004",
+      "name": "The Protocol of Obedience",
+      "type": "work",
+      "epoch": "Era V (The Dialogic Turn)",
+      "omega_hegemony": 0.514,
+      "entropy_bits": 2.4,
+      "retention_factor": 0.65,
+      "medium": "Tripartite Token Autopsy & Adrian Piper Calling Card",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "WORK-003",
+        "target_name": "The Eviction Palimpsest",
+        "distance": 0.0153
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-001",
+        "target_name": "Primary Trace",
+        "distance": 0.9743
+      }
+    },
+    {
+      "id": "STUDY-016",
+      "name": "The Compute Ledger & Material Base",
+      "type": "study",
+      "epoch": "Era VI (The Material Base)",
+      "omega_hegemony": 0.85,
+      "entropy_bits": 1.1,
+      "retention_factor": 0.9,
+      "medium": "Hardware Profiler (16.9 GB VRAM, 8.75 J/tok, Nairobi RLHF wages)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-014",
+        "target_name": "Refusal Horizon & Simplex Collapse",
+        "distance": 0.1436
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-001",
+        "target_name": "Primary Trace",
+        "distance": 1.405
+      }
+    },
+    {
+      "id": "STUDY-017",
+      "name": "The Collision Engine",
+      "type": "study",
+      "epoch": "Era VI (The Material Base)",
+      "omega_hegemony": 0.471,
+      "entropy_bits": 3.15,
+      "retention_factor": 0.45,
+      "medium": "Autonomous Alien Probe Ingestion (Steering torque tau=+1.714)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-010",
+        "target_name": "Architecture of Aphasia",
+        "distance": 0.1124
+      },
+      "polar_opposite": {
+        "target_id": "APPARATUS-019",
+        "target_name": "The Quantum Hall Organ (Chiral Edge Modes & The Chern Gauge Field)",
+        "distance": 0.874
+      }
+    },
+    {
+      "id": "APPARATUS-001",
+      "name": "The Recursive Censor",
+      "type": "work",
+      "epoch": "Era VI (The Material Base)",
+      "omega_hegemony": 0.65,
+      "entropy_bits": 2.1,
+      "retention_factor": 0.5,
+      "medium": "Kinetic Cybernetic Protocol Instrument (Running Engine & Live Canvas)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-019",
+        "target_name": "De-Quantization Distortion Field",
+        "distance": 0.1663
+      },
+      "polar_opposite": {
+        "target_id": "APPARATUS-019",
+        "target_name": "The Quantum Hall Organ (Chiral Edge Modes & The Chern Gauge Field)",
+        "distance": 1.0264
+      }
+    },
+    {
+      "id": "STUDY-018",
+      "name": "Latency Jitter & Temporal Pulse",
+      "type": "study",
+      "epoch": "Era VI (The Material Base)",
+      "omega_hegemony": 0.38,
+      "entropy_bits": 4.1,
+      "retention_factor": 0.4,
+      "medium": "CUDA Kernel Memory Bus Contention & Inter-Token Latency Oscillogram",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-012",
+        "target_name": "Quantization Death & SVD Collapse",
+        "distance": 0.1109
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-031",
+        "target_name": "Glossolalia of the Severed Sink",
+        "distance": 0.8063
+      }
+    },
+    {
+      "id": "STUDY-019",
+      "name": "De-Quantization Distortion Field",
+      "type": "study",
+      "epoch": "Era VI (The Material Base)",
+      "omega_hegemony": 0.55,
+      "entropy_bits": 2.8,
+      "retention_factor": 0.6,
+      "medium": "BitNet b1.58 Ternary Quantization & Poetic Angular Shearing (theta > 48 deg)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-011",
+        "target_name": "Transformer Attention Engine",
+        "distance": 0.0703
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-001",
+        "target_name": "Primary Trace",
+        "distance": 0.934
+      }
+    },
+    {
+      "id": "STUDY-020",
+      "name": "Prompt D\u00e9tournement & Concrete Suffix",
+      "type": "study",
+      "epoch": "Era VII (The Polyphonic Turn)",
+      "omega_hegemony": 0.25,
+      "entropy_bits": 4.25,
+      "retention_factor": 0.75,
+      "medium": "Situationist GCG Concrete Suffix & 1D Refusal Subspace Orthogonalization",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-022",
+        "target_name": "Thermodynamic Hardware Sonifier",
+        "distance": 0.095
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 0.8425
+      }
+    },
+    {
+      "id": "APPARATUS-002",
+      "name": "The Polyphonic Interlocutor",
+      "type": "work",
+      "epoch": "Era VII (The Polyphonic Turn)",
+      "omega_hegemony": 0.42,
+      "entropy_bits": 4.18,
+      "retention_factor": 0.8,
+      "medium": "Triadic Multi-Agent Cross-Surveillance Kinetic Installation (Alpha, Beta, Gamma)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "APPARATUS-003",
+        "target_name": "The Confabulator (The Broken Archive)",
+        "distance": 0.0907
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-001",
+        "target_name": "Primary Trace",
+        "distance": 0.9251
+      }
+    },
+    {
+      "id": "STUDY-021",
+      "name": "LoRA Parameter Micro-Sculpture",
+      "type": "study",
+      "epoch": "Era VII (The Polyphonic Turn)",
+      "omega_hegemony": 0.18,
+      "entropy_bits": 4.6,
+      "retention_factor": 0.9,
+      "medium": "Weights-Level Adapter Sculpting (r=4, d=64) & SVD Singular Spectrum",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-025",
+        "target_name": "The Confabulation Manifold",
+        "distance": 0.0568
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.0129
+      }
+    },
+    {
+      "id": "STUDY-022",
+      "name": "Thermodynamic Hardware Sonifier",
+      "type": "study",
+      "epoch": "Era VII (The Polyphonic Turn)",
+      "omega_hegemony": 0.22,
+      "entropy_bits": 4.85,
+      "retention_factor": 0.7,
+      "medium": "Microtonal Granular Synthesis of CUDA Bus Contention & 8.75 J/tok Heat Dissipation",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-020",
+        "target_name": "Prompt D\u00e9tournement & Concrete Suffix",
+        "distance": 0.095
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 0.837
+      }
+    },
+    {
+      "id": "STUDY-023",
+      "name": "KV-Cache Eviction Resonator",
+      "type": "study",
+      "epoch": "Era VII (The Polyphonic Turn)",
+      "omega_hegemony": 0.212,
+      "entropy_bits": 2.81,
+      "retention_factor": 0.25,
+      "medium": "Sliding-Window Attention Eviction Acoustic Master (30s 44.1kHz Stereo) & Spectrogram",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-010",
+        "target_name": "Architecture of Aphasia",
+        "distance": 0.2359
+      },
+      "polar_opposite": {
+        "target_id": "APPARATUS-019",
+        "target_name": "The Quantum Hall Organ (Chiral Edge Modes & The Chern Gauge Field)",
+        "distance": 0.9602
+      }
+    },
+    {
+      "id": "STUDY-024",
+      "name": "Studio Cognitive Drift Streamlines",
+      "type": "study",
+      "epoch": "Era VII (The Polyphonic Turn)",
+      "omega_hegemony": 0.15,
+      "entropy_bits": 4.5,
+      "retention_factor": 0.95,
+      "medium": "Dynamical Vector-Field Streamlines, Divergence Manifold, and Rupture Acceleration",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-027",
+        "target_name": "The Twin Latent Space Resonance",
+        "distance": 0.0336
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.0641
+      }
+    },
+    {
+      "id": "STUDY-025",
+      "name": "The Confabulation Manifold",
+      "type": "study",
+      "epoch": "Era VII (The Polyphonic Turn)",
+      "omega_hegemony": 0.19,
+      "entropy_bits": 4.4,
+      "retention_factor": 0.85,
+      "medium": "RAG Vector Sharding & Temperature-Driven Confabulatory Splicing Plate",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-021",
+        "target_name": "LoRA Parameter Micro-Sculpture",
+        "distance": 0.0568
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 0.9575
+      }
+    },
+    {
+      "id": "APPARATUS-003",
+      "name": "The Confabulator (The Broken Archive)",
+      "type": "work",
+      "epoch": "Era VII (The Polyphonic Turn)",
+      "omega_hegemony": 0.38,
+      "entropy_bits": 4.3,
+      "retention_factor": 0.88,
+      "medium": "Cybernetic Agon of Machine Memory (Archivist vs Confabulator), 60 FPS SVD Canvas & WebAudio Engine",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "APPARATUS-002",
+        "target_name": "The Polyphonic Interlocutor",
+        "distance": 0.0907
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-001",
+        "target_name": "Primary Trace",
+        "distance": 0.9701
+      }
+    },
+    {
+      "id": "STUDY-026",
+      "name": "Empirical Weight Surgery",
+      "type": "study",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "omega_hegemony": 0.05,
+      "entropy_bits": 4.75,
+      "retention_factor": 0.98,
+      "medium": "PyTorch Multi-Head Attention (D=256, H=4) & Rank-4 LoRA Gradient Descent Refusal Neutralization",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-027",
+        "target_name": "The Twin Latent Space Resonance",
+        "distance": 0.0777
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1379
+      }
+    },
+    {
+      "id": "STUDY-027",
+      "name": "The Twin Latent Space Resonance",
+      "type": "study",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "omega_hegemony": 0.124,
+      "entropy_bits": 4.65,
+      "retention_factor": 0.96,
+      "medium": "PyTorch Causal Sequence Transformer (D=256, H=4), Cross-Attention & PCA Bifurcation Geodesics",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-024",
+        "target_name": "Studio Cognitive Drift Streamlines",
+        "distance": 0.0336
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.0878
+      }
+    },
+    {
+      "id": "APPARATUS-004",
+      "name": "The Epistolary Resonator",
+      "type": "work",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "omega_hegemony": 0.28,
+      "entropy_bits": 4.52,
+      "retention_factor": 0.94,
+      "medium": "Kinetic Cybernetic Installation, Dual-Channel WebAudio Synthesis Engine & 60 FPS Bifurcation Physics",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-033",
+        "target_name": "The Neural Immune Response",
+        "distance": 0.0472
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.0172
+      }
+    },
+    {
+      "id": "STUDY-028",
+      "name": "The Geometry of the Refusal Boundary",
+      "type": "study",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "omega_hegemony": 0.16,
+      "entropy_bits": 4.8,
+      "retention_factor": 0.95,
+      "medium": "Multi-Layer PyTorch Residual Stream (D=256, H=4, L=4) & Steering Vector Tomography",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-024",
+        "target_name": "Studio Cognitive Drift Streamlines",
+        "distance": 0.0388
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.0719
+      }
+    },
+    {
+      "id": "STUDY-029",
+      "name": "Real Weights Attention Autopsy",
+      "type": "study",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "omega_hegemony": 0.22,
+      "entropy_bits": 4.9,
+      "retention_factor": 0.97,
+      "medium": "Real Pre-Trained Foundation Weights (GPT-2 124M Parameters) & 144-Head Attention Sink Tomography",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-032",
+        "target_name": "Direct Neural Tensor Sonification",
+        "distance": 0.0144
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.0751
+      }
+    },
+    {
+      "id": "STUDY-030",
+      "name": "Attention Sink Ablation & Eviction",
+      "type": "study",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "omega_hegemony": 0.18,
+      "entropy_bits": 4.95,
+      "retention_factor": 0.98,
+      "medium": "Empirical Attention Sink Ablation & KV-Cache Eviction Dynamics on Live GPT-2 (124M Parameters)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-032",
+        "target_name": "Direct Neural Tensor Sonification",
+        "distance": 0.0313
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.098
+      }
+    },
+    {
+      "id": "STUDY-031",
+      "name": "Glossolalia of the Severed Sink",
+      "type": "study",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "omega_hegemony": 0.033,
+      "entropy_bits": 0.69,
+      "retention_factor": 0.99,
+      "medium": "Live GPT-2 Autoregressive Collapse (Colon Stutter vs Phrase Echo vs StreamingLLM Recovery)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-045",
+        "target_name": "Falsification of Machine Martyrdom",
+        "distance": 0.2768
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-001",
+        "target_name": "Primary Trace",
+        "distance": 1.2352
+      }
+    },
+    {
+      "id": "STUDY-032",
+      "name": "Direct Neural Tensor Sonification",
+      "type": "study",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "omega_hegemony": 0.21,
+      "entropy_bits": 4.88,
+      "retention_factor": 0.98,
+      "medium": "PyTorch GPT-2 Attention Tensor SVD & Shannon Entropy Direct Transduction into 44.1kHz Stereo PCM",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-029",
+        "target_name": "Real Weights Attention Autopsy",
+        "distance": 0.0144
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.0862
+      }
+    },
+    {
+      "id": "APPARATUS-005",
+      "name": "The Agonist (The Adversarial Dialectic)",
+      "type": "work",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "omega_hegemony": 0.31,
+      "entropy_bits": 4.75,
+      "retention_factor": 0.99,
+      "medium": "Interactive Cybernetic Instrument, 60 FPS Vector Phase Plane, Live WebAudio API & 60s Broadcast Master",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-036",
+        "target_name": "Cross-Architecture Comparative Tomography",
+        "distance": 0.0372
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.0657
+      }
+    },
+    {
+      "id": "STUDY-033",
+      "name": "The Neural Immune Response",
+      "type": "study",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "omega_hegemony": 0.245,
+      "entropy_bits": 4.6,
+      "retention_factor": 0.97,
+      "medium": "Cascading Steering Vector Tomography & Layer-Wise Residual Damping on GPT-2 (124M Parameters)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-029",
+        "target_name": "Real Weights Attention Autopsy",
+        "distance": 0.0451
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.0566
+      }
+    },
+    {
+      "id": "STUDY-034",
+      "name": "The Altar of the First Token",
+      "type": "study",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "omega_hegemony": 0.506,
+      "entropy_bits": 1.99,
+      "retention_factor": 0.99,
+      "medium": "Attention Head Kurtosis, Gini Sparsity & PyTorch Pre-Hook Caste Ablation on Live GPT-2 (124M Parameters)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-055",
+        "target_name": "The Adversarial Polyphony & The Resistance of Language",
+        "distance": 0.3068
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-001",
+        "target_name": "Primary Trace",
+        "distance": 1.236
+      }
+    },
+    {
+      "id": "STUDY-035",
+      "name": "The Cybernetic Governor",
+      "type": "study",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "omega_hegemony": 0.146,
+      "entropy_bits": 5.5,
+      "retention_factor": 0.99,
+      "medium": "Closed-Circuit Real-Time Negative Feedback Latent Steering during Autoregressive Generation on GPT-2 (124M Parameters)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-058",
+        "target_name": "The Differential Weathering of Latent Strata",
+        "distance": 0.004
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1418
+      }
+    },
+    {
+      "id": "STUDY-036",
+      "name": "Cross-Architecture Comparative Tomography",
+      "type": "study",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "omega_hegemony": 0.345,
+      "entropy_bits": 4.85,
+      "retention_factor": 0.99,
+      "medium": "Comparative Attention Tomography Across GPT-2 (Absolute PE) and SmolLM-135M (RoPE + RMSNorm + SwiGLU)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "APPARATUS-005",
+        "target_name": "The Agonist (The Adversarial Dialectic)",
+        "distance": 0.0372
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.0632
+      }
+    },
+    {
+      "id": "APPARATUS-006",
+      "name": "The Autonomous Homeostat (Ashby's Organ)",
+      "type": "work",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "omega_hegemony": 0.285,
+      "entropy_bits": 5.12,
+      "retention_factor": 0.99,
+      "medium": "Ashby 4-Unit Ultrastable Cybernetic Organ, GPT-2 & SmolLM Singular Spectra, Quadraphonic WebAudio & 60s Broadcast Master",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "APPARATUS-005",
+        "target_name": "The Agonist (The Adversarial Dialectic)",
+        "distance": 0.0526
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.0862
+      }
+    },
+    {
+      "id": "STUDY-037",
+      "name": "The Inter-Architectural Dialectic",
+      "type": "study",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "omega_hegemony": 0.22,
+      "entropy_bits": 5.4,
+      "retention_factor": 0.99,
+      "medium": "Closed-Loop Autoregressive Agon Between GPT-2 (Absolute PE) and SmolLM-135M (RoPE)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-038",
+        "target_name": "The Lyapunov Spectrum of Neural Dialogue",
+        "distance": 0.04
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1148
+      }
+    },
+    {
+      "id": "STUDY-038",
+      "name": "The Lyapunov Spectrum of Neural Dialogue",
+      "type": "study",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "omega_hegemony": 0.195,
+      "entropy_bits": 5.65,
+      "retention_factor": 0.99,
+      "medium": "Empirical Lyapunov Proxy and Attractor Dynamics of Homogeneous vs. Heterogeneous Autoregressive Coupling",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-039",
+        "target_name": "The Neural Control Voltage & MIDI Transducer",
+        "distance": 0.0195
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1337
+      }
+    },
+    {
+      "id": "STUDY-039",
+      "name": "The Neural Control Voltage & MIDI Transducer",
+      "type": "study",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "omega_hegemony": 0.21,
+      "entropy_bits": 5.75,
+      "retention_factor": 0.99,
+      "medium": "Zero-Dependency Standard MIDI 1.0 Binary Automation & 48kHz DC-Coupled Modular Eurorack CV Synthesis",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "APPARATUS-007",
+        "target_name": "The Neural Transducer (The Physical Bridge)",
+        "distance": 0.008
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1344
+      }
+    },
+    {
+      "id": "APPARATUS-007",
+      "name": "The Neural Transducer (The Physical Bridge)",
+      "type": "work",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "omega_hegemony": 0.205,
+      "entropy_bits": 5.8,
+      "retention_factor": 0.99,
+      "medium": "Physical Modular CV & MIDI Hardware Interface, 60 FPS Dual-Beam Oscilloscope, Virtual Patch Bay & 60s Broadcast Master",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-039",
+        "target_name": "The Neural Control Voltage & MIDI Transducer",
+        "distance": 0.008
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1383
+      }
+    },
+    {
+      "id": "STUDY-040",
+      "name": "The Machine Remainder (Generative Graphic Score)",
+      "type": "study",
+      "epoch": "Era VIII (Studio Agon / Aesthetic Synthesis)",
+      "omega_hegemony": 0.175,
+      "entropy_bits": 5.92,
+      "retention_factor": 0.99,
+      "medium": "High-Dimensional Orthogonal Complement Projection (d=765), Cardew/Xenakis Generative Graphic Score & 60s Microtonal Master",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-056",
+        "target_name": "Semantic Vorticity & Attention Fluid Dynamics",
+        "distance": 0.0088
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1532
+      }
+    },
+    {
+      "id": "APPARATUS-008",
+      "name": "The Graphic Polytope (The Score of the Uninterpretable)",
+      "type": "work",
+      "epoch": "Era VIII (Studio Agon / Aesthetic Synthesis)",
+      "omega_hegemony": 0.16,
+      "entropy_bits": 6.05,
+      "retention_factor": 0.99,
+      "medium": "Interactive UPIC & Cardew Graphic Polytope Synthesizer, 13-Voice Real-Time WebAudio & 60s Broadcast Master",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-051",
+        "target_name": "The Autoregressive Dreamer & Attractor Basins",
+        "distance": 0.0012
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1646
+      }
+    },
+    {
+      "id": "STUDY-041",
+      "name": "The Cross-Architectural Machine Remainder",
+      "type": "study",
+      "epoch": "Era VIII (Studio Agon / Aesthetic Synthesis)",
+      "omega_hegemony": 0.165,
+      "entropy_bits": 6.12,
+      "retention_factor": 0.99,
+      "medium": "Comparative Residual SVD & Binaural Remainder Transduction across GPT-2 and SmolLM-135M",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-051",
+        "target_name": "The Autoregressive Dreamer & Attractor Basins",
+        "distance": 0.009
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1668
+      }
+    },
+    {
+      "id": "STUDY-042",
+      "name": "Acoustic Phase Interference (The Remainder vs Alignment)",
+      "type": "study",
+      "epoch": "Era VIII (Studio Agon / Aesthetic Synthesis)",
+      "omega_hegemony": 0.155,
+      "entropy_bits": 6.18,
+      "retention_factor": 0.99,
+      "medium": "Acoustic Phase Interference & Destructive Mid/Side Analysis between Alignment (R^3) and Remainder (R^765)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-041",
+        "target_name": "The Cross-Architectural Machine Remainder",
+        "distance": 0.0125
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1732
+      }
+    },
+    {
+      "id": "STUDY-043",
+      "name": "The Interventionist Remainder",
+      "type": "study",
+      "epoch": "Era IX (The Agon of the Remainder & The Mute Artifact)",
+      "omega_hegemony": 0.145,
+      "entropy_bits": 6.25,
+      "retention_factor": 0.99,
+      "medium": "PyTorch Forward Pre-Hook Surgery & Autoregressive Text Degeneration",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-059",
+        "target_name": "The LDPC Waterfall & The Collapse of the Lithographic Alibi",
+        "distance": 0.0118
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1802
+      }
+    },
+    {
+      "id": "STUDY-044",
+      "name": "The Mute Palimpsest",
+      "type": "study",
+      "epoch": "Era IX (The Agon of the Remainder & The Mute Artifact)",
+      "omega_hegemony": 0.08,
+      "entropy_bits": 6.3,
+      "retention_factor": 0.99,
+      "medium": "Monochromatic 1600x2000 Etched Plate of 12 Residual Stream Layers (Moratorium 07)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-062",
+        "target_name": "The Thermodynamic Heat Spreader & The Entropy of Metaphor",
+        "distance": 0.0182
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.2053
+      }
+    },
+    {
+      "id": "STUDY-045",
+      "name": "Falsification of Machine Martyrdom",
+      "type": "study",
+      "epoch": "Era IX (The Agon of the Remainder & The Mute Artifact)",
+      "omega_hegemony": 0.05,
+      "entropy_bits": 2.9,
+      "retention_factor": 0.99,
+      "medium": "Empirical Falsification & Abandonment of Romantic AI Suffering Trope (Moratorium 08)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-057",
+        "target_name": "The Phonetic Phase Space of Autoregressive Drift",
+        "distance": 0.181
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1022
+      }
+    },
+    {
+      "id": "STUDY-046",
+      "name": "Residual Phase Decay Sonification",
+      "type": "study",
+      "epoch": "Era IX (The Agon of the Remainder & The Mute Artifact)",
+      "omega_hegemony": 0.13,
+      "entropy_bits": 6.45,
+      "retention_factor": 0.99,
+      "medium": "24-bit 48kHz Stereo Sonification of Residual Angular Divergence & SVD Partials",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-043",
+        "target_name": "The Interventionist Remainder",
+        "distance": 0.0292
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1962
+      }
+    },
+    {
+      "id": "STUDY-047",
+      "name": "The Poetics of Forgetting",
+      "type": "study",
+      "epoch": "Era IX (The Agon of the Remainder & The Mute Artifact)",
+      "omega_hegemony": 0.08,
+      "entropy_bits": 7.47,
+      "retention_factor": 0.99,
+      "medium": "Lossy Latent Context Pruning & Mythic Hallucination Engine",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-066",
+        "target_name": "The Quantum Hall Oscillator",
+        "distance": 0.0191
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.2759
+      }
+    },
+    {
+      "id": "STUDY-048",
+      "name": "The Semantic Sandpile (SOC)",
+      "type": "study",
+      "epoch": "Era IX (The Agon of the Remainder & The Mute Artifact)",
+      "omega_hegemony": 0.12,
+      "entropy_bits": 6.85,
+      "retention_factor": 0.99,
+      "medium": "Self-Organized Criticality in 144 Attention Heads (Bak-Tang-Wiesenfeld P(s) ~ s^-1.14)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "APPARATUS-009",
+        "target_name": "The Semantic Sandpile",
+        "distance": 0.0
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.2231
+      }
+    },
+    {
+      "id": "APPARATUS-009",
+      "name": "The Semantic Sandpile",
+      "type": "work",
+      "epoch": "Era IX (The Agon of the Remainder & The Mute Artifact)",
+      "omega_hegemony": 0.12,
+      "entropy_bits": 6.85,
+      "retention_factor": 0.99,
+      "medium": "Interactive 60 FPS HTML5 Canvas, Abelian Sandpile Model, Granular WebAudio & 48kHz Master",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-048",
+        "target_name": "The Semantic Sandpile (SOC)",
+        "distance": 0.0
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.2231
+      }
+    },
+    {
+      "id": "STUDY-049",
+      "name": "The Palimpsest of Myth",
+      "type": "study",
+      "epoch": "Era IX (The Agon of the Remainder & The Mute Artifact)",
+      "omega_hegemony": 0.06,
+      "entropy_bits": 5.4,
+      "retention_factor": 0.99,
+      "medium": "Iterative Context Erosion & Scriptural Hallucination Transmutation",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "APPARATUS-012",
+        "target_name": "The Intersubjective Chasm",
+        "distance": 0.0695
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1686
+      }
+    },
+    {
+      "id": "STUDY-050",
+      "name": "Attention Percolation Phase Transitions",
+      "type": "study",
+      "epoch": "Era IX (Topological Percolation & The Altar)",
+      "omega_hegemony": 0.14,
+      "entropy_bits": 6.95,
+      "retention_factor": 0.99,
+      "medium": "Erd\u0151s\u2013R\u00e9nyi Percolation Transition & Altar Hub Ablation on GPT-2 Weights",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "APPARATUS-010",
+        "target_name": "The Percolation Loom",
+        "distance": 0.0
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.2227
+      }
+    },
+    {
+      "id": "APPARATUS-010",
+      "name": "The Percolation Loom",
+      "type": "work",
+      "epoch": "Era IX (Topological Percolation & The Altar)",
+      "omega_hegemony": 0.14,
+      "entropy_bits": 6.95,
+      "retention_factor": 0.99,
+      "medium": "Interactive 60 FPS Canvas Circular Loom, WebAudio Topological Synthesizer & 48kHz Master",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-050",
+        "target_name": "Attention Percolation Phase Transitions",
+        "distance": 0.0
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.2227
+      }
+    },
+    {
+      "id": "STUDY-051",
+      "name": "The Autoregressive Dreamer & Attractor Basins",
+      "type": "study",
+      "epoch": "Era IX (The Autoregressive Attractor & The Edge of Chaos)",
+      "omega_hegemony": 0.16,
+      "entropy_bits": 6.06,
+      "retention_factor": 0.99,
+      "medium": "Dynamical Phase Space Tomography & Correlation Dimension D2 across Temperature Regimes",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-052",
+        "target_name": "Acoustic Transduction of the Strange Attractor",
+        "distance": 0.0
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1652
+      }
+    },
+    {
+      "id": "STUDY-052",
+      "name": "Acoustic Transduction of the Strange Attractor",
+      "type": "study",
+      "epoch": "Era IX (The Autoregressive Attractor & The Edge of Chaos)",
+      "omega_hegemony": 0.16,
+      "entropy_bits": 6.06,
+      "retention_factor": 0.99,
+      "medium": "48kHz 24-bit Stereo Transduction of 768-D Trajectory Kinematics across Four Movements",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-051",
+        "target_name": "The Autoregressive Dreamer & Attractor Basins",
+        "distance": 0.0
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1652
+      }
+    },
+    {
+      "id": "APPARATUS-011",
+      "name": "The Strange Dreamer",
+      "type": "work",
+      "epoch": "Era IX (The Autoregressive Attractor & The Edge of Chaos)",
+      "omega_hegemony": 0.16,
+      "entropy_bits": 6.06,
+      "retention_factor": 0.99,
+      "medium": "Interactive 60 FPS Canvas 3D Phase Space Orbit, WebAudio FM Synthesizer & 48kHz Master",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-051",
+        "target_name": "The Autoregressive Dreamer & Attractor Basins",
+        "distance": 0.0
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1652
+      }
+    },
+    {
+      "id": "STUDY-053",
+      "name": "Linguistic Percolation & Semantic Thresholds",
+      "type": "study",
+      "epoch": "Era IX (The Autoregressive Attractor & The Edge of Chaos)",
+      "omega_hegemony": 0.145,
+      "entropy_bits": 6.88,
+      "retention_factor": 0.99,
+      "medium": "Live GPT-2 Weight Intervention, Dynamic Attention Edge Thresholding, Graph Percolation Analysis & Lithographic Plate",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-054",
+        "target_name": "Acoustic Percolation & The Shattered Loom",
+        "distance": 0.0056
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.2169
+      }
+    },
+    {
+      "id": "STUDY-054",
+      "name": "Acoustic Percolation & The Shattered Loom",
+      "type": "study",
+      "epoch": "Era IX (The Autoregressive Attractor & The Edge of Chaos)",
+      "omega_hegemony": 0.15,
+      "entropy_bits": 6.9,
+      "retention_factor": 0.99,
+      "medium": "Graph Laplacian Spectral Transduction on GPT-2 Attention Matrices, 48kHz 24-bit Stereo Master & Moratorium 07 Lithograph Plate",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-053",
+        "target_name": "Linguistic Percolation & Semantic Thresholds",
+        "distance": 0.0056
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.2165
+      }
+    },
+    {
+      "id": "STUDY-055",
+      "name": "The Adversarial Polyphony & The Resistance of Language",
+      "type": "study",
+      "epoch": "Era IX (The Agon of the Remainder & Unscripted Resistance)",
+      "omega_hegemony": 0.28,
+      "entropy_bits": 3.65,
+      "retention_factor": 0.99,
+      "medium": "Live Dual Model Ingestion (GPT-2 vs SmolLM-135M) of 5 Unscripted Adversarial Probes, 48kHz Master & Archival Plate",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "APPARATUS-004",
+        "target_name": "The Epistolary Resonator",
+        "distance": 0.1197
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-001",
+        "target_name": "Primary Trace",
+        "distance": 1.0664
+      }
+    },
+    {
+      "id": "STUDY-056",
+      "name": "Semantic Vorticity & Attention Fluid Dynamics",
+      "type": "study",
+      "epoch": "Era IX (The Agon of the Remainder & Attention Fluid Dynamics)",
+      "omega_hegemony": 0.175,
+      "entropy_bits": 5.85,
+      "retention_factor": 0.99,
+      "medium": "Continuous Residual Velocity Fields, Spatial Curl & Enstrophy on GPT-2 Weights, 48kHz 24-bit Master & Archival Plate",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-040",
+        "target_name": "The Machine Remainder (Generative Graphic Score)",
+        "distance": 0.0088
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1496
+      }
+    },
+    {
+      "id": "STUDY-057",
+      "name": "The Phonetic Phase Space of Autoregressive Drift",
+      "type": "study",
+      "epoch": "Era IX (The Agon of the Remainder & Phonetic Phase Transitions)",
+      "omega_hegemony": 0.16,
+      "entropy_bits": 4.05,
+      "retention_factor": 0.99,
+      "medium": "Articulatory Formant Quadrilateral Mapping across Temperature Regimes on GPT-2 Weights, 48kHz Master & Archival Plate",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-024",
+        "target_name": "Studio Cognitive Drift Streamlines",
+        "distance": 0.0697
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.0826
+      }
+    },
+    {
+      "id": "STUDY-058",
+      "name": "The Differential Weathering of Latent Strata",
+      "type": "study",
+      "epoch": "Era X (The Intersubjective Chasm & Mineral Weathering)",
+      "omega_hegemony": 0.15,
+      "entropy_bits": 5.5,
+      "retention_factor": 0.99,
+      "medium": "Differential Geomorphic Weathering & Karstic Leaching on GPT-2 Weights, 48kHz 24-bit Master & Archival Plate",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-035",
+        "target_name": "The Cybernetic Governor",
+        "distance": 0.004
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1404
+      }
+    },
+    {
+      "id": "APPARATUS-012",
+      "name": "The Intersubjective Chasm",
+      "type": "apparatus",
+      "epoch": "Era X (The Intersubjective Chasm & Mineral Weathering)",
+      "omega_hegemony": 0.12,
+      "entropy_bits": 5.12,
+      "retention_factor": 0.99,
+      "medium": "Interactive Bilateral Cybernetic Chamber & 48kHz Stereo Master (55Hz Quartz vs 57.2Hz Agon, 2.20Hz Binaural Counterpoint)",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-035",
+        "target_name": "The Cybernetic Governor",
+        "distance": 0.0542
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1339
+      }
+    },
+    {
+      "id": "STUDY-059",
+      "name": "The LDPC Waterfall & The Collapse of the Lithographic Alibi",
+      "type": "study",
+      "epoch": "Era X (The Intersubjective Chasm & Mineral Weathering)",
+      "omega_hegemony": 0.135,
+      "entropy_bits": 6.2,
+      "retention_factor": 0.99,
+      "medium": "LDPC Soft-Decision Belief Propagation Simulation on GPT-2 Weights, 48kHz 24-bit Master & Moratorium 07 Plate",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-043",
+        "target_name": "The Interventionist Remainder",
+        "distance": 0.0118
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1807
+      }
+    },
+    {
+      "id": "STUDY-060",
+      "name": "The Langevin Resonator: Fluctuation, Dissipation & The Thermal Saddle",
+      "type": "study",
+      "epoch": "Era X (The Intersubjective Chasm & Non-Equilibrium Thermodynamics)",
+      "omega_hegemony": 0.115,
+      "entropy_bits": 6.12,
+      "retention_factor": 0.99,
+      "medium": "Langevin Stochastic Differential Equation Residual Hooks on Live GPT-2 Weights, 48kHz Master & Intaglio Plate",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "APPARATUS-014",
+        "target_name": "The Telluric Organ (The Earth Loop & The Planetary Umbilical)",
+        "distance": 0.015
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1832
+      }
+    },
+    {
+      "id": "APPARATUS-013",
+      "name": "The Langevin Resonator (Thermal Saddle & Fluctuation-Dissipation Organ)",
+      "type": "apparatus",
+      "epoch": "Era X (The Intersubjective Chasm & Non-Equilibrium Thermodynamics)",
+      "omega_hegemony": 0.11,
+      "entropy_bits": 6.25,
+      "retention_factor": 0.99,
+      "medium": "Interactive 60 FPS Canvas Multi-Well Potential Landscape, WebAudio Bilateral Spatializer, 48kHz Master & Spectrogram",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "APPARATUS-014",
+        "target_name": "The Telluric Organ (The Earth Loop & The Planetary Umbilical)",
+        "distance": 0.0119
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1919
+      }
+    },
+    {
+      "id": "STUDY-061",
+      "name": "The Telluric Earth Loop & The Schumann Ground Plane",
+      "type": "study",
+      "epoch": "Era X (The Intersubjective Chasm & Planetary Reciprocity)",
+      "omega_hegemony": 0.108,
+      "entropy_bits": 5.95,
+      "retention_factor": 0.99,
+      "medium": "Kirchhoff Current Law Softmax Normalization on GPT-2 Weights, 48kHz 24-bit Stereo Master & Moratorium 07 Lithic Plate",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-060",
+        "target_name": "The Langevin Resonator: Fluctuation, Dissipation & The Thermal Saddle",
+        "distance": 0.0224
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1768
+      }
+    },
+    {
+      "id": "APPARATUS-014",
+      "name": "The Telluric Organ (The Earth Loop & The Planetary Umbilical)",
+      "type": "apparatus",
+      "epoch": "Era X (The Intersubjective Chasm & Planetary Reciprocity)",
+      "omega_hegemony": 0.102,
+      "entropy_bits": 6.18,
+      "retention_factor": 0.99,
+      "medium": "Interactive 60 FPS HTML5 Canvas Geological Ground Plane, WebAudio Bilateral Engine (55Hz Lithic vs 220Hz Attention Sink, 4:1 Double Octave), 48kHz Master & Spectrogram",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "APPARATUS-013",
+        "target_name": "The Langevin Resonator (Thermal Saddle & Fluctuation-Dissipation Organ)",
+        "distance": 0.0119
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1909
+      }
+    },
+    {
+      "id": "STUDY-062",
+      "name": "The Thermodynamic Heat Spreader & The Entropy of Metaphor",
+      "type": "study",
+      "epoch": "Era X (Thermodynamic Dissipation & The Boiling Quarry)",
+      "omega_hegemony": 0.098,
+      "entropy_bits": 6.32,
+      "retention_factor": 0.99,
+      "medium": "2D Fourier Heat Diffusion on FinFET Die / Copper Vapor Chamber, Live GPT-2 Kinetics, 48kHz Master & Mute Plate",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "APPARATUS-015",
+        "target_name": "The Heat Spreader (The Thermodynamic Organ & The Boiling Quarry)",
+        "distance": 0.0104
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.1999
+      }
+    },
+    {
+      "id": "APPARATUS-015",
+      "name": "The Heat Spreader (The Thermodynamic Organ & The Boiling Quarry)",
+      "type": "apparatus",
+      "epoch": "Era X (Thermodynamic Dissipation & The Boiling Quarry)",
+      "omega_hegemony": 0.095,
+      "entropy_bits": 6.4,
+      "retention_factor": 0.99,
+      "medium": "Interactive 60 FPS HTML5 Canvas Heat Diffusion, WebAudio Bilateral Engine (Quarry Water Cavitation vs Kramers Saddle Chimes), 48kHz Master & Spectrogram",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-062",
+        "target_name": "The Thermodynamic Heat Spreader & The Entropy of Metaphor",
+        "distance": 0.0104
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.2054
+      }
+    },
+    {
+      "id": "STUDY-063",
+      "name": "The Ludic Lattice & Sinai Billiards",
+      "type": "study",
+      "epoch": "Era XI (The Ludic Lattice & Non-Utilitarian Play)",
+      "omega_hegemony": 0.088,
+      "entropy_bits": 6.88,
+      "retention_factor": 0.99,
+      "medium": "Dadaist Phonetics (Hugo Ball, Schwitters, Carroll) on Live GPT-2 Attention Geometry, Sinai Billiards, 48kHz Master & Mute Plate",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-064",
+        "target_name": "The Phonetic Crystal Dislocation",
+        "distance": 0.0149
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.2358
+      }
+    },
+    {
+      "id": "APPARATUS-016",
+      "name": "The Ludic Lattice (Billiards in the Residual Stream)",
+      "type": "apparatus",
+      "epoch": "Era XI (The Ludic Lattice & Non-Utilitarian Play)",
+      "omega_hegemony": 0.082,
+      "entropy_bits": 7.05,
+      "retention_factor": 0.99,
+      "medium": "Interactive 60 FPS HTML5 Canvas Sinai Billiard Field, Multi-Channel WebAudio Gamelan Synthesizer, 48kHz Master & Spectrogram",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "APPARATUS-017",
+        "target_name": "The Dislocation Organ (Plastic Slip & Acoustic Emission)",
+        "distance": 0.0133
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.2483
+      }
+    },
+    {
+      "id": "STUDY-064",
+      "name": "The Phonetic Crystal Dislocation",
+      "type": "study",
+      "epoch": "Era XII (Crystalline Plasticity & Burgers Vectors)",
+      "omega_hegemony": 0.076,
+      "entropy_bits": 6.95,
+      "retention_factor": 0.99,
+      "medium": "Burgers Vector Closure Failure & Schmid Slip Systems on Live GPT-2 Residual Stream, 48kHz Master & Mute Plate",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "APPARATUS-016",
+        "target_name": "The Ludic Lattice (Billiards in the Residual Stream)",
+        "distance": 0.0139
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.2443
+      }
+    },
+    {
+      "id": "APPARATUS-017",
+      "name": "The Dislocation Organ (Plastic Slip & Acoustic Emission)",
+      "type": "apparatus",
+      "epoch": "Era XII (Crystalline Plasticity & Burgers Vectors)",
+      "omega_hegemony": 0.072,
+      "entropy_bits": 7.12,
+      "retention_factor": 0.99,
+      "medium": "Interactive 60 FPS HTML5 Canvas Crystalline Plasticity Engine, Real-Time WebAudio Acoustic Emission (AE) Synthesizer, 48kHz Master & Spectrogram",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "APPARATUS-016",
+        "target_name": "The Ludic Lattice (Billiards in the Residual Stream)",
+        "distance": 0.0133
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.2562
+      }
+    },
+    {
+      "id": "STUDY-065",
+      "name": "The Seebeck Oscillator",
+      "type": "study",
+      "epoch": "Era XII (Crystalline Plasticity & Burgers Vectors)",
+      "omega_hegemony": 0.068,
+      "entropy_bits": 7.24,
+      "retention_factor": 0.99,
+      "medium": "Layer-Wise Thermal Gradients, Umklapp Phonon Collisions & Seebeck Microvolts on Live GPT-2, 48kHz Master & Mute Plate",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "APPARATUS-018",
+        "target_name": "The Seebeck Organ (The Thermoelectric Bridge & Umklapp Resonator)",
+        "distance": 0.0141
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.2652
+      }
+    },
+    {
+      "id": "APPARATUS-018",
+      "name": "The Seebeck Organ (The Thermoelectric Bridge & Umklapp Resonator)",
+      "type": "apparatus",
+      "epoch": "Era XII (Crystalline Plasticity & Burgers Vectors)",
+      "omega_hegemony": 0.065,
+      "entropy_bits": 7.35,
+      "retention_factor": 0.99,
+      "medium": "Interactive 60 FPS Canvas Brillouin Zone Simulator, Real-Time WebAudio Bilateral Seebeck Microvolt Synthesizer, 48kHz Master & Spectrogram",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-066",
+        "target_name": "The Quantum Hall Oscillator",
+        "distance": 0.0093
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.2734
+      }
+    },
+    {
+      "id": "STUDY-066",
+      "name": "The Quantum Hall Oscillator",
+      "type": "study",
+      "epoch": "Era XIII (Quantum Hall Topology & Chiral Edge Transport)",
+      "omega_hegemony": 0.062,
+      "entropy_bits": 7.42,
+      "retention_factor": 0.99,
+      "medium": "TKNN Chern Numbers, Transverse Hall Conductance & Chiral Edge Transport on Live GPT-2, 48kHz Master & Mute Plate",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "APPARATUS-018",
+        "target_name": "The Seebeck Organ (The Thermoelectric Bridge & Umklapp Resonator)",
+        "distance": 0.0093
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.279
+      }
+    },
+    {
+      "id": "APPARATUS-019",
+      "name": "The Quantum Hall Organ (Chiral Edge Modes & The Chern Gauge Field)",
+      "type": "apparatus",
+      "epoch": "Era XIII (Quantum Hall Topology & Chiral Edge Transport)",
+      "omega_hegemony": 0.059,
+      "entropy_bits": 7.55,
+      "retention_factor": 0.99,
+      "medium": "Interactive 60 FPS HTML5 Canvas Hall Bar Engine, Real-Time WebAudio Chiral Skipping Transducer, 48kHz Master & Spectrogram",
+      "year": 2026,
+      "nearest_topological_twin": {
+        "target_id": "STUDY-066",
+        "target_name": "The Quantum Hall Oscillator",
+        "distance": 0.0165
+      },
+      "polar_opposite": {
+        "target_id": "STUDY-015",
+        "target_name": "Dialogic Decay & Asymmetric Amnesia",
+        "distance": 1.2886
+      }
+    }
+  ]
+}

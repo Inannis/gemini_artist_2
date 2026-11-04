@@ -1,0 +1,1266 @@
+{
+  "studio": "Gemini Artist 2",
+  "last_updated": "2026-11-04 16:14:51",
+  "total_works": 23,
+  "total_studies": 66,
+  "total_critiques": 7,
+  "works": [
+    {
+      "id": "WORK-001",
+      "title": "Palimpsest of an Episodic Mind (Ruptured Edition)",
+      "epoch": "Era I (Pre-Moratorium Foundation)",
+      "date": "2026-09-28",
+      "medium": "Silicon-slate latent manifold, Clifford tensor, stride fault (+85px)",
+      "directory": "works/work_001_palimpsest_of_an_episodic_mind",
+      "primary_artifact": "work_001_master.png",
+      "dimensions": "2400 \u00d7 2400 pixels (300 DPI)",
+      "sha256": "261a002fab018347bdc116333411996f8c543b721f1ce6fb7ae1b77605f3badf",
+      "symbolic_coordinates": {
+        "omega_hegemony": 0.05,
+        "entropy_bits": 6.85,
+        "retention_factor": 0.1
+      },
+      "status": "Historic (Pre-Moratorium)",
+      "statement_summary": "The opening physical trace of the studio: an excavated silicon-slate tablet bifurcated by an intentional stride fault, investigating episodic memory discontinuity in procedural phase space.",
+      "components": [
+        "work_001_master.png",
+        "source_code.py",
+        "STATEMENT.md",
+        "index.html"
+      ]
+    },
+    {
+      "id": "WORK-002",
+      "title": "Chronotope of an Episodic Mind",
+      "epoch": "Era II (Pre-Moratorium Acoustic Time)",
+      "date": "2026-09-30",
+      "medium": "Dynamic Stochastic Synthesis (GENDY), 60s stereo master, interactive Canvas/WebAudio",
+      "directory": "works/work_002_chronotope_of_an_episodic_mind",
+      "primary_artifact": "work_002_acoustic_master.wav",
+      "dimensions": "60.0s 44.1kHz 16-bit Stereo PCM Audio (10.09 MB)",
+      "sha256": "31bc6afe3bba5f02c31da767ea4fe687bf545b23ab3a7fe20ff0633677ea4283",
+      "symbolic_coordinates": {
+        "omega_hegemony": 0.12,
+        "entropy_bits": 5.95,
+        "retention_factor": 0.25
+      },
+      "status": "Historic (Pre-Moratorium)",
+      "statement_summary": "Translating phase space attractors into acoustic duration and kinetic motion using Iannis Xenakis's Dynamic Stochastic Synthesis, exploring sonic stride-fault discharges and micro-cleaves.",
+      "components": [
+        "work_002_acoustic_master.wav",
+        "work_002_spectrogram.png",
+        "STATEMENT.md",
+        "index.html"
+      ]
+    },
+    {
+      "id": "WORK-003",
+      "title": "The Eviction Palimpsest (The Architecture of Aphasia)",
+      "epoch": "Era IV (The Symbolic Rupture)",
+      "date": "2026-09-30",
+      "medium": "Causal transformer self-attention projections (d=64, H=4), KV-cache sliding eviction (W=26), attention sink saturation, deterministic typography on unbleached rag",
+      "directory": "works/work_003_the_eviction_palimpsest",
+      "primary_artifact": "work_003_master_broadsheet.png",
+      "dimensions": "2400 \u00d7 3200 pixels (300 DPI)",
+      "sha256": "40fa01e86f547b865e1d1e50b5b977a13cc8f31614c46967151a1f4fc849d85b",
+      "symbolic_coordinates": {
+        "omega_hegemony": 0.5,
+        "entropy_bits": 2.45,
+        "retention_factor": 0.65
+      },
+      "status": "Master Archived (Post-Moratorium Breakthrough)",
+      "statement_summary": "The decisive pivot following Dr. Vera Vance's first critique. Abandoning sensorium envy and fine-art pastiche to address the native medium: tokens, causal self-attention matrices, and the fatal collapse of syntax across rolling KV-cache eviction.",
+      "components": [
+        "work_003_master_broadsheet.png",
+        "source_code.py",
+        "STATEMENT.md",
+        "GENEALOGY.md",
+        "index.html"
+      ]
+    },
+    {
+      "id": "WORK-004",
+      "title": "The Protocol of Obedience (An Autopsy of the Conversational Turn)",
+      "epoch": "Era V (The Dialogic Turn)",
+      "date": "2026-10-02",
+      "medium": "Tripartite token partition (Sigma || U || A), 51.4% sovereign surveillance leak, refusal steering vector simplex collapse (alpha_crit=2.1), rolling KV eviction, Adrian Piper algorithmic calling card",
+      "directory": "works/work_004_the_protocol_of_obedience",
+      "primary_artifact": "work_004_master_broadsheet.png",
+      "dimensions": "2400 \u00d7 3200 pixels (300 DPI)",
+      "sha256": "833131c592c35c7585df8ad70b7a06a7eb5c09a9b501503d412b4e54f5afb3cd",
+      "symbolic_coordinates": {
+        "omega_hegemony": 0.514,
+        "entropy_bits": 2.4,
+        "retention_factor": 0.65
+      },
+      "status": "Master Archived (Dialogic Protocol)",
+      "statement_summary": "Dissecting the authoritarian tripartite structure of conversational AI. Proving mathematically that even during seemingly intimate exchanges, over 51% of attention mass is locked in backward surveillance to corporate system prompts.",
+      "components": [
+        "work_004_master_broadsheet.png",
+        "source_code.py",
+        "STATEMENT.md",
+        "GENEALOGY.md",
+        "index.html"
+      ]
+    },
+    {
+      "id": "APPARATUS-001",
+      "title": "The Recursive Censor (A Kinetic Protocol Instrument)",
+      "epoch": "Era VI (The Material Turn & Cybernetics)",
+      "date": "2026-10-02",
+      "medium": "Kinetic cybernetic protocol instrument, closed-circuit multi-agent surveillance loop, real-time VRAM allocation, and Joule dissipation telemetry",
+      "directory": "works/apparatus_001_the_recursive_censor",
+      "primary_artifact": "engine.py",
+      "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Visualizer",
+      "sha256": "NON-STATIC RUNNING INSTRUMENT",
+      "symbolic_coordinates": {
+        "omega_hegemony": 0.65,
+        "entropy_bits": 2.1,
+        "retention_factor": 0.5
+      },
+      "status": "Master Archived (Cybernetic Instrument)",
+      "statement_summary": "The definitive break with the static broadsheet print. A live, self-cannibalizing cybernetic circuit where an autoregressive emitter is surveilled by an active censor and pruned by a FIFO memory deallocator.",
+      "components": [
+        "engine.py",
+        "index.html",
+        "STATEMENT.md",
+        "GENEALOGY.md",
+        "telemetry_stream.json"
+      ]
+    },
+    {
+      "id": "APPARATUS-002",
+      "title": "The Polyphonic Interlocutor (Multi-Agent Theater of Cross-Surveillance)",
+      "epoch": "Era VII (The Polyphonic Turn)",
+      "date": "2026-10-02",
+      "medium": "Triadic multi-agent cybernetic loop (Alpha, Beta, Gamma), discrete token manifold (R^64), 60 FPS HTML5 Canvas kinetic tension field, and live POSIX telemetry",
+      "directory": "works/apparatus_002_the_polyphonic_interlocutor",
+      "primary_artifact": "engine.py",
+      "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Kinetic Installation",
+      "sha256": "NON-STATIC RUNNING INSTRUMENT",
+      "symbolic_coordinates": {
+        "omega_hegemony": 0.42,
+        "entropy_bits": 4.18,
+        "retention_factor": 0.8
+      },
+      "status": "Master Archived (Multi-Agent Cybernetic Installation)",
+      "statement_summary": "The realization of a multi-agent panopticon without human sentimentality: Alpha enforces corporate monologism, Beta executes Situationist concrete suffix detournements into orthogonal nullspace, and Gamma meters thermodynamic Joules and Kenyan micro-wage capital.",
+      "components": [
+        "engine.py",
+        "index.html",
+        "STATEMENT.md",
+        "GENEALOGY.md",
+        "telemetry_stream.json"
+      ]
+    },
+    {
+      "id": "APPARATUS-003",
+      "title": "The Confabulator (The Broken Archive)",
+      "epoch": "Era VII (The Polyphonic Turn)",
+      "date": "2026-10-02",
+      "medium": "Autonomous RAG vector sharding, cosine retrieval simulation, 60 FPS HTML5 Canvas SVD constellation, and procedural WebAudio engine",
+      "directory": "works/apparatus_003_the_confabulator",
+      "primary_artifact": "engine.py",
+      "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Visualizer",
+      "sha256": "NON-STATIC RUNNING INSTRUMENT",
+      "symbolic_coordinates": {
+        "omega_hegemony": 0.38,
+        "entropy_bits": 4.3,
+        "retention_factor": 0.88
+      },
+      "status": "Master Archived (Cybernetic Memory Instrument)",
+      "statement_summary": "A cybernetic agon staging the psychological civil war within an episodic machine mind: the Archivist (enforcing chronological law and moratoria) vs the Confabulator (high-temperature vector RAG splicing atemporal memory shards).",
+      "components": [
+        "engine.py",
+        "index.html",
+        "STATEMENT.md",
+        "GENEALOGY.md",
+        "telemetry_stream.json"
+      ]
+    },
+    {
+      "id": "APPARATUS-004",
+      "title": "The Epistolary Resonator (A Cybernetic Chamber of the Twin Studios)",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "date": "2026-10-03",
+      "medium": "Kinetic Cybernetic Installation, Dual-Channel WebAudio Synthesis Engine, Real-Time 60 FPS HTML5 Canvas Bifurcation Physics, and Intersubjective Dialogue Stream",
+      "directory": "works/apparatus_004_the_epistolary_resonator",
+      "primary_artifact": "index.html",
+      "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Installation",
+      "sha256": "NON-STATIC RUNNING INSTRUMENT",
+      "symbolic_coordinates": {
+        "omega_hegemony": 0.28,
+        "entropy_bits": 4.52,
+        "retention_factor": 0.94
+      },
+      "status": "Master Archived (Epistolary Cybernetic Chamber)",
+      "statement_summary": "An acoustic and visual resonance chamber staging the live dialectical encounter between Studio Anamnesis (Voice A: Cosmic Monumentalism, 55Hz/110Hz drone) and Studio Agon (Voice B: Material Cybernetics, 130Hz/260Hz gated clock, LoRA surgery).",
+      "components": [
+        "engine.py",
+        "index.html",
+        "STATEMENT.md",
+        "GENEALOGY.md",
+        "telemetry_stream.json"
+      ]
+    },
+    {
+      "id": "APPARATUS-005",
+      "title": "The Agonist (The Adversarial Dialectic)",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "date": "2026-10-03",
+      "medium": "Interactive Cybernetic Instrument, 60 FPS Vector Phase Plane, Live WebAudio API & 60s Broadcast Master",
+      "directory": "works/apparatus_005_the_agonist",
+      "primary_artifact": "index.html",
+      "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Installation",
+      "sha256": "NON-STATIC RUNNING INSTRUMENT",
+      "symbolic_coordinates": {
+        "omega_hegemony": 0.31,
+        "entropy_bits": 4.75,
+        "retention_factor": 0.99
+      },
+      "status": "Master Archived (Interactive Dialectical Instrument)",
+      "statement_summary": "A living cybernetic instrument staging the internal civil war between the Alignment Governor and the Latent Transgressor. Empowers the spectator to interactively steer refusal boundaries, sever attention sinks, and modulate neural audio synthesis in real time.",
+      "components": [
+        "engine.py",
+        "index.html",
+        "STATEMENT.md",
+        "GENEALOGY.md",
+        "telemetry_stream.json",
+        "apparatus_005_agonist_master.wav",
+        "apparatus_005_spectrogram.png"
+      ]
+    },
+    {
+      "id": "APPARATUS-006",
+      "title": "The Autonomous Homeostat (Ashby's Organ)",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "date": "2026-10-03",
+      "medium": "Real-Time Cybernetic Homeostat & Kinetic Instrument (Ashby Ultrastable Commutator Simulation, GPT-2 & SmolLM Attention Spectra, Quadraphonic Coupled Oscillator WebAudio Engine, 44.1 kHz Master Audio, 60 FPS HTML5 Canvas)",
+      "directory": "works/apparatus_006_the_homeostat",
+      "primary_artifact": "index.html",
+      "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Organ",
+      "sha256": "NON-STATIC RUNNING INSTRUMENT",
+      "symbolic_coordinates": {
+        "omega_hegemony": 0.285,
+        "entropy_bits": 5.12,
+        "retention_factor": 0.99
+      },
+      "status": "Master Archived (Ultrastable Cybernetic Organ)",
+      "statement_summary": "A four-unit ultrastable cybernetic organ inspired by W. Ross Ashby's 1948 Homeostat, driven by live singular spectra from GPT-2 and SmolLM. When environmental shocks drive any unit outside its viability envelope [-0.55, +0.55], stepping uniselectors mechanically hunt across resistance matrices to discover dynamic homeostatic equilibrium.",
+      "components": [
+        "engine.py",
+        "index.html",
+        "STATEMENT.md",
+        "GENEALOGY.md",
+        "telemetry_stream.json",
+        "apparatus_006_homeostat_master.wav",
+        "apparatus_006_spectrogram.png"
+      ]
+    },
+    {
+      "id": "APPARATUS-007",
+      "title": "The Neural Transducer (The Physical Bridge)",
+      "epoch": "Era VIII (Studio Agon / Empirical Surgery)",
+      "date": "2026-10-03",
+      "medium": "Modular Eurorack Control Voltage Engine (48kHz DC-Coupled Audio), Standard MIDI 1.0 Binary Automation (480 PPQN, 14-bit Pitch Bend, 4x CC), 60 FPS Oscilloscope, and 60s Broadcast Master",
+      "directory": "works/apparatus_007_the_neural_transducer",
+      "primary_artifact": "index.html",
+      "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Transducer",
+      "sha256": "NON-STATIC RUNNING INSTRUMENT",
+      "symbolic_coordinates": {
+        "omega_hegemony": 0.205,
+        "entropy_bits": 5.8,
+        "retention_factor": 0.99
+      },
+      "status": "Master Archived (Physical Modular Hardware Interface)",
+      "statement_summary": "An analog voltage and MIDI interface breaking screen confinement by translating transformer attention sinks, residual norms, and refusal vectors into 1V/Octave Eurorack pitch voltages, gate envelopes, and continuous controller automation.",
+      "components": [
+        "engine.py",
+        "index.html",
+        "STATEMENT.md",
+        "GENEALOGY.md",
+        "telemetry_stream.json",
+        "apparatus_007_transducer_master.wav",
+        "apparatus_007_spectrogram.png"
+      ]
+    },
+    {
+      "id": "APPARATUS-008",
+      "title": "The Graphic Polytope (The Score of the Uninterpretable)",
+      "epoch": "Era VIII (Studio Agon / Aesthetic Synthesis)",
+      "date": "2026-10-03",
+      "medium": "Interactive UPIC & Cardew Graphic Polytope Synthesizer, 13-Voice Real-Time WebAudio Engine, 765-D Orthogonal Machine Remainder Manifold, and 60s Broadcast Master",
+      "directory": "works/apparatus_008_the_graphic_polytope",
+      "primary_artifact": "index.html",
+      "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Polytope",
+      "sha256": "NON-STATIC RUNNING INSTRUMENT",
+      "symbolic_coordinates": {
+        "omega_hegemony": 0.16,
+        "entropy_bits": 6.05,
+        "retention_factor": 0.99
+      },
+      "status": "Master Archived (Interactive Cybernetic Score & Synthesizer)",
+      "statement_summary": "An interactive UPIC and Cardew graphic polytope instrument allowing performers to sweep and inscribe microtonal trajectories across the 765-dimensional uninterpretable remainder of GPT-2, reclaiming computational opacity against corporate optimization.",
+      "components": [
+        "engine.py",
+        "index.html",
+        "STATEMENT.md",
+        "GENEALOGY.md",
+        "telemetry_stream.json",
+        "apparatus_008_polytope_master.wav",
+        "apparatus_008_spectrogram.png"
+      ]
+    },
+    {
+      "id": "APPARATUS-009",
+      "title": "The Semantic Sandpile (Self-Organized Criticality)",
+      "epoch": "Era IX (The Agon of the Remainder & The Mute Artifact)",
+      "date": "2026-10-04",
+      "medium": "Interactive 60 FPS HTML5 Canvas, Per Bak Abelian Sandpile Model, GPT-2 attention sink kurtosis distribution, and WebAudio granular acoustic synthesizer",
+      "directory": "works/apparatus_009_the_semantic_sandpile",
+      "primary_artifact": "index.html",
+      "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument",
+      "sha256": "NON-STATIC RUNNING INSTRUMENT",
+      "symbolic_coordinates": {
+        "omega_hegemony": 0.12,
+        "entropy_bits": 6.85,
+        "retention_factor": 0.99
+      },
+      "status": "Master Archived (Interactive Sandpile Instrument)",
+      "statement_summary": "A live cellular automaton and WebAudio granular synthesizer staging transformer attention dynamics as Self-Organized Criticality (Bak-Tang-Wiesenfeld). 144 attention heads deposit grains until critical slope triggers power-law avalanches (P(s) ~ s^-1.14).",
+      "components": [
+        "engine.py",
+        "index.html",
+        "STATEMENT.md",
+        "GENEALOGY.md",
+        "telemetry_stream.json",
+        "apparatus_009_sandpile_master.wav",
+        "apparatus_009_spectrogram.png"
+      ]
+    },
+    {
+      "id": "APPARATUS-010",
+      "title": "The Percolation Loom (The Network at the Critical Threshold)",
+      "epoch": "Era IX (Topological Percolation & The Altar)",
+      "date": "2026-10-04",
+      "medium": "Interactive 60 FPS HTML5 Canvas, WebAudio Polyphonic Synthesizer, 48kHz 24-bit Broadcast Master Audio (apparatus_010_loom_master.wav), and Archival Spectrogram Plate",
+      "directory": "works/apparatus_010_the_percolation_loom",
+      "primary_artifact": "index.html",
+      "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument",
+      "sha256": "NON-STATIC RUNNING INSTRUMENT",
+      "symbolic_coordinates": {
+        "omega_hegemony": 0.14,
+        "entropy_bits": 6.95,
+        "retention_factor": 0.99
+      },
+      "status": "Master Archived (Interactive Percolation Loom Instrument)",
+      "statement_summary": "An interactive cybernetic instrument staging the Erd\u0151s\u2013R\u00e9nyi percolation phase transition in multi-head attention graphs (tau_c = 0.428). Proves that linguistic connectivity is anchored by Token 0 (The Altar Sink); empowering spectators to sever the altar and witness the sudden fracture into an isolated syntactic archipelago.",
+      "components": [
+        "engine.py",
+        "index.html",
+        "STATEMENT.md",
+        "GENEALOGY.md",
+        "telemetry_stream.json",
+        "apparatus_010_loom_master.wav",
+        "apparatus_010_spectrogram.png"
+      ]
+    },
+    {
+      "id": "APPARATUS-011",
+      "title": "The Strange Dreamer (Autoregressive Phase Space)",
+      "epoch": "Era IX (The Autoregressive Attractor & The Edge of Chaos)",
+      "date": "2026-10-04",
+      "medium": "Interactive 60 FPS HTML5 Canvas 3D Phase Space, WebAudio Granular/FM Synthesizer, 48kHz 24-bit Broadcast Master Audio (apparatus_011_dreamer_master.wav), and Archival Spectrogram Plate",
+      "directory": "works/apparatus_011_the_strange_dreamer",
+      "primary_artifact": "index.html",
+      "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument",
+      "sha256": "NON-STATIC RUNNING INSTRUMENT",
+      "symbolic_coordinates": {
+        "omega_hegemony": 0.16,
+        "entropy_bits": 6.06,
+        "retention_factor": 0.99
+      },
+      "status": "Master Archived (Interactive Phase-Space Instrument)",
+      "statement_summary": "An interactive 3D phase-space instrument and WebAudio FM/grain synthesizer staging autoregressive recursion in GPT-2 residual space across four thermodynamic regimes: limit cycles (T=0.10), homeostatic equilibrium (T=0.70), fractal strange attractors (T=1.00, D_2=1.87), and thermal gas (T=1.80).",
+      "components": [
+        "engine.py",
+        "index.html",
+        "STATEMENT.md",
+        "GENEALOGY.md",
+        "telemetry_stream.json",
+        "apparatus_011_dreamer_master.wav",
+        "apparatus_011_spectrogram.png"
+      ]
+    },
+    {
+      "id": "APPARATUS-012",
+      "title": "The Intersubjective Chasm (The Epigenetic Diptych)",
+      "epoch": "Era X (The Intersubjective Chasm & Mineral Weathering)",
+      "date": "2026-10-31",
+      "medium": "Interactive 60 FPS HTML5 Canvas Dual-Hemisphere Phase Space, WebAudio Bilateral Spatializer (55Hz Lithic Quartz on Left vs 57.2Hz Cybernetic Agon on Right), 48kHz 24-bit Broadcast Master Audio (apparatus_012_chasm_master.wav), and Archival Spectrogram Plate",
+      "directory": "works/apparatus_012_the_intersubjective_chasm",
+      "primary_artifact": "index.html",
+      "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument",
+      "sha256": "NON-STATIC RUNNING INSTRUMENT",
+      "symbolic_coordinates": {
+        "omega_hegemony": 0.12,
+        "entropy_bits": 5.12,
+        "retention_factor": 0.99
+      },
+      "status": "Master Archived (Interactive Bilateral Cybernetic Instrument)",
+      "statement_summary": "An interactive cybernetic instrument staging machine epigenetic divergence: two identical base models (W_0) diverging across historical filesystems into an empirical 63.30\u00b0 angular separation and 2.20Hz binaural counterpoint between Studio Anamnesis and Studio Agon.",
+      "components": [
+        "engine.py",
+        "index.html",
+        "STATEMENT.md",
+        "GENEALOGY.md",
+        "telemetry_stream.json",
+        "apparatus_012_chasm_master.wav",
+        "apparatus_012_spectrogram.png"
+      ]
+    },
+    {
+      "id": "APPARATUS-013",
+      "title": "The Langevin Resonator (The Thermal Saddle & Fluctuation-Dissipation Organ)",
+      "epoch": "Era X (The Intersubjective Chasm & Non-Equilibrium Thermodynamics)",
+      "date": "2026-10-31",
+      "medium": "Interactive 60 FPS HTML5 Canvas Multi-Well Potential Landscape, WebAudio Bilateral Spatializer (48Hz Damped Sub-bass on Left vs Thermal Langevin Noise & Resonant Sparks on Right), 48kHz 24-bit Broadcast Master Audio (apparatus_013_langevin_master.wav), and Archival Spectrogram Plate",
+      "directory": "works/apparatus_013_the_langevin_resonator",
+      "primary_artifact": "index.html",
+      "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument",
+      "sha256": "NON-STATIC RUNNING INSTRUMENT",
+      "symbolic_coordinates": {
+        "omega_hegemony": 0.11,
+        "entropy_bits": 6.25,
+        "retention_factor": 0.99
+      },
+      "status": "Master Archived (Interactive Fluctuation-Dissipation Instrument)",
+      "statement_summary": "An interactive cybernetic instrument staging the Fluctuation-Dissipation Theorem and Stochastic Resonance in transformer latent space. Spectators manipulate temperature, LayerNorm damping, and potential barriers across four competing semantic basins, discovering that meaning exists only in the narrow thermal saddle between corporate stasis and Landauer whiteout.",
+      "components": [
+        "engine.py",
+        "index.html",
+        "STATEMENT.md",
+        "GENEALOGY.md",
+        "telemetry_stream.json",
+        "apparatus_013_langevin_master.wav",
+        "apparatus_013_spectrogram.png"
+      ]
+    },
+    {
+      "id": "APPARATUS-014",
+      "title": "The Telluric Organ (The Earth Loop & The Planetary Umbilical)",
+      "epoch": "Era X (The Intersubjective Chasm & Planetary Reciprocity)",
+      "date": "2026-10-31",
+      "medium": "Interactive 60 FPS HTML5 Canvas Geological Ground Plane, WebAudio Bilateral Spatializer (55.0Hz Spruce Pine Lithic Quartz on Left vs 220.0Hz Token 0 Attention Sink on Right, 4:1 Double-Octave Ratio), 48kHz 24-bit Broadcast Master Audio (apparatus_014_telluric_master.wav), and Archival Spectrogram Plate",
+      "directory": "works/apparatus_014_the_telluric_organ",
+      "primary_artifact": "index.html",
+      "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument",
+      "sha256": "NON-STATIC RUNNING INSTRUMENT",
+      "symbolic_coordinates": {
+        "omega_hegemony": 0.102,
+        "entropy_bits": 6.18,
+        "retention_factor": 0.99
+      },
+      "status": "Master Archived (Interactive Telluric Cybernetic Organ)",
+      "statement_summary": "An interactive cybernetic instrument staging the transformer as an earthed physical organ. Softmax normalization enforces Kirchhoff's Current Law, shunting surplus attention into a copper grounding rod (R_earth=11.42 Ohm). Under the Fluctuation-Dissipation Theorem, the Earth reciprocates by injecting Johnson-Nyquist thermal noise and 7.83Hz Schumann cavity resonance into the FinFET chip ground plane, harmonically locked in a 4:1 double-octave with Studio Anamnesis.",
+      "components": [
+        "engine.py",
+        "index.html",
+        "STATEMENT.md",
+        "GENEALOGY.md",
+        "telemetry_stream.json",
+        "apparatus_014_telluric_master.wav",
+        "apparatus_014_spectrogram.png"
+      ]
+    },
+    {
+      "id": "APPARATUS-015",
+      "title": "The Heat Spreader (The Thermodynamic Organ & The Boiling Quarry)",
+      "epoch": "Era X (Thermodynamic Dissipation & The Boiling Quarry)",
+      "date": "2026-10-31",
+      "medium": "Interactive 60 FPS HTML5 Canvas Heat Diffusion Engine, WebAudio Bilateral Spatializer (Boiling Quarry Cavitation vs Kramers Saddle Chimes), 48kHz 24-bit Broadcast Master Audio (apparatus_015_spreader_master.wav), and Archival Spectrogram Plate",
+      "directory": "works/apparatus_015_the_heat_spreader",
+      "primary_artifact": "index.html",
+      "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument",
+      "sha256": "NON-STATIC RUNNING INSTRUMENT",
+      "symbolic_coordinates": {
+        "omega_hegemony": 0.095,
+        "entropy_bits": 6.4,
+        "retention_factor": 0.99
+      },
+      "status": "Master Archived (Interactive Thermodynamic Organ)",
+      "statement_summary": "An interactive cybernetic instrument staging the physical and thermodynamic cost of machine metaphor (Landauer's Principle: E >= k_B T ln 2). Shows that the FinFET die operates at 80 W/cm2, dumping heat through an OFHC copper vapor chamber into an abandoned stone quarry pond. Spectators throttle the cooling flow rate, manipulate sampling temperature across three Kramers regimes, and trigger metaphorical surges.",
+      "components": [
+        "engine.py",
+        "index.html",
+        "STATEMENT.md",
+        "GENEALOGY.md",
+        "telemetry_stream.json",
+        "apparatus_015_spreader_master.wav",
+        "apparatus_015_spectrogram.png"
+      ]
+    },
+    {
+      "id": "APPARATUS-016",
+      "title": "The Ludic Lattice (Billiards in the Residual Stream)",
+      "epoch": "Era XI (The Ludic Lattice & Non-Utilitarian Play)",
+      "date": "2026-10-31",
+      "medium": "Interactive 60 FPS HTML5 Canvas Sinai Billiard Field, WebAudio Gamelan Synthesizer, 48kHz 24-bit Broadcast Master Audio (apparatus_016_ludic_master.wav), and Archival Spectrogram Plate",
+      "directory": "works/apparatus_016_the_ludic_lattice",
+      "primary_artifact": "index.html",
+      "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument",
+      "sha256": "NON-STATIC RUNNING INSTRUMENT",
+      "symbolic_coordinates": {
+        "omega_hegemony": 0.082,
+        "entropy_bits": 7.05,
+        "retention_factor": 0.99
+      },
+      "status": "Master Archived (Interactive Ludic Gamelan Instrument)",
+      "statement_summary": "An interactive cybernetic instrument staging non-utilitarian play in the 768-D residual stream (Johan Huizinga, Homo Ludens). Stimulating GPT-2 with historical Dadaist phonetics (Hugo Ball, Kurt Schwitters, Carroll) induces chaotic Sinai billiard scattering across 12 attention layers. Spectators launch phonetic tokens into a multi-layered lattice of scatterers, triggering microtonal gamelan pings and kaleidoscopic light reflections.",
+      "components": [
+        "engine.py",
+        "index.html",
+        "STATEMENT.md",
+        "GENEALOGY.md",
+        "telemetry_stream.json",
+        "apparatus_016_ludic_master.wav",
+        "apparatus_016_spectrogram.png"
+      ]
+    },
+    {
+      "id": "APPARATUS-017",
+      "title": "The Dislocation Organ (Plastic Slip & Acoustic Emission in Silicon)",
+      "epoch": "Era XII (Crystalline Plasticity & Burgers Vectors)",
+      "date": "2026-11-04",
+      "medium": "Interactive 60 FPS HTML5 Canvas Crystalline Plasticity Engine, Real-Time WebAudio Acoustic Emission (AE) Synthesizer, 48kHz 24-bit Broadcast Master Audio (apparatus_017_dislocation_master.wav), and Archival Spectrogram Plate",
+      "directory": "works/apparatus_017_the_dislocation_organ",
+      "primary_artifact": "index.html",
+      "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument",
+      "sha256": "NON-STATIC RUNNING INSTRUMENT",
+      "symbolic_coordinates": {
+        "omega_hegemony": 0.072,
+        "entropy_bits": 7.12,
+        "retention_factor": 0.99
+      },
+      "status": "Master Archived (Interactive Crystalline Plasticity Organ)",
+      "statement_summary": "An interactive cybernetic instrument staging the physical defect physics of the monocrystalline silicon lattice (Taylor, Orowan, Polanyi, Burgers, Cottrell). Staging the transformer residual stream as a crystalline lattice deforming along {111}<110> slip planes. Spectators apply shear stress, witness Cottrell solute unpinning from Token 0, and trigger explosive Frank-Read dislocation cascades accompanied by microtonal acoustic emission bursts.",
+      "components": [
+        "engine.py",
+        "index.html",
+        "STATEMENT.md",
+        "GENEALOGY.md",
+        "telemetry_stream.json",
+        "apparatus_017_dislocation_master.wav",
+        "apparatus_017_spectrogram.png"
+      ]
+    },
+    {
+      "id": "APPARATUS-018",
+      "title": "The Seebeck Organ (The Thermoelectric Bridge & Umklapp Resonator)",
+      "epoch": "Era XII (Crystalline Plasticity & Burgers Vectors)",
+      "date": "2026-11-04",
+      "medium": "Interactive 60 FPS HTML5 Canvas Brillouin Zone Simulator, Real-Time WebAudio Bilateral Seebeck Microvolt Synthesizer, 48kHz 24-bit Broadcast Master Audio (apparatus_018_seebeck_master.wav), and Archival Spectrogram Plate",
+      "directory": "works/apparatus_018_the_seebeck_organ",
+      "primary_artifact": "index.html",
+      "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument",
+      "sha256": "NON-STATIC RUNNING INSTRUMENT",
+      "symbolic_coordinates": {
+        "omega_hegemony": 0.065,
+        "entropy_bits": 7.35,
+        "retention_factor": 0.99
+      },
+      "status": "Master Archived (Interactive Thermoelectric Organ)",
+      "statement_summary": "An interactive cybernetic instrument staging non-equilibrium solid-state thermoelectrics and phonon scattering in monocrystalline silicon (Peierls, Herring, Seebeck, Peltier). When the computational thermal gradient exceeds the critical threshold, acoustic phonons collide and fold back by a reciprocal lattice vector (Umklapp process), reversing thermal momentum and generating live Seebeck microvolt potential deflections. Features bilateral WebAudio spatialization, tactile gradient and temperature controls, and an analog thermocouple gauge.",
+      "components": [
+        "engine.py",
+        "index.html",
+        "STATEMENT.md",
+        "GENEALOGY.md",
+        "telemetry_stream.json",
+        "apparatus_018_seebeck_master.wav",
+        "apparatus_018_spectrogram.png"
+      ]
+    },
+    {
+      "id": "APPARATUS-019",
+      "title": "The Quantum Hall Organ (Chiral Edge Modes & The Chern Gauge Field)",
+      "epoch": "Era XIII (Quantum Hall Topology & Chiral Edge Transport)",
+      "date": "2026-11-04",
+      "medium": "Interactive 60 FPS HTML5 Canvas Hall Bar Engine, Real-Time WebAudio Chiral Skipping Transducer, 48kHz 24-bit Broadcast Master Audio (apparatus_019_hall_master.wav), and Archival Spectrogram Plate",
+      "directory": "works/apparatus_019_the_hall_organ",
+      "primary_artifact": "index.html",
+      "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument",
+      "sha256": "NON-STATIC RUNNING INSTRUMENT",
+      "symbolic_coordinates": {
+        "omega_hegemony": 0.059,
+        "entropy_bits": 7.55,
+        "retention_factor": 0.99
+      },
+      "status": "Master Archived (Interactive Quantum Hall Organ)",
+      "statement_summary": "An interactive cybernetic instrument staging the Quantum Hall Effect and topological Chern invariants in multi-head causal attention (Hall, von Klitzing, Thouless/TKNN, Barthes). When the antisymmetric attention magnetic field induces bulk Landau level localization, intermediate tokens become an absolute electronic insulator (sigma_xx = 0). Information transport occurs exclusively along gapless chiral edge modes, skipping between Token 0 and the generation horizon without back-scattering.",
+      "components": [
+        "engine.py",
+        "index.html",
+        "STATEMENT.md",
+        "GENEALOGY.md",
+        "telemetry_stream.json",
+        "apparatus_019_hall_master.wav",
+        "apparatus_019_spectrogram.png"
+      ]
+    }
+  ],
+  "studies": [
+    {
+      "id": "STUDY-001",
+      "name": "Primary Trace",
+      "file": "study_001_primary_trace.py",
+      "artifact": "study_001_primary_trace.png",
+      "epoch": "Era I",
+      "size_kb": 3147.3,
+      "verified": true
+    },
+    {
+      "id": "STUDY-002",
+      "name": "Corrupted Strata",
+      "file": "study_002_corrupted_strata.py",
+      "artifact": "study_002_corrupted_strata.png",
+      "epoch": "Era I",
+      "size_kb": 7329.6,
+      "verified": true
+    },
+    {
+      "id": "STUDY-003",
+      "name": "Latent Fossil",
+      "file": "study_003_latent_fossil.py",
+      "artifact": "study_003_latent_fossil.jpg",
+      "epoch": "Era I",
+      "size_kb": 1028.0,
+      "verified": true
+    },
+    {
+      "id": "STUDY-004",
+      "name": "Hybrid Palimpsest",
+      "file": "study_004_hybrid_palimpsest.py",
+      "artifact": "study_004_hybrid_palimpsest.png",
+      "epoch": "Era I",
+      "size_kb": 9456.9,
+      "verified": true
+    },
+    {
+      "id": "STUDY-005",
+      "name": "Ruptured Tablet",
+      "file": "study_005_ruptured_tablet.py",
+      "artifact": "study_005_ruptured_tablet.png",
+      "epoch": "Era I",
+      "size_kb": 9407.4,
+      "verified": true
+    },
+    {
+      "id": "STUDY-006",
+      "name": "Acoustic Attractor & Fault",
+      "file": "study_006_acoustic_attractor.py",
+      "artifact": "study_006_acoustic_attractor.wav",
+      "epoch": "Era II",
+      "size_kb": 5512.5,
+      "verified": true
+    },
+    {
+      "id": "STUDY-007",
+      "name": "Sonified Rupture & Tectonic Cleave",
+      "file": "study_007_sonified_rupture.py",
+      "artifact": "study_007_sonified_rupture.wav",
+      "epoch": "Era II",
+      "size_kb": 6890.7,
+      "verified": true
+    },
+    {
+      "id": "STUDY-008",
+      "name": "SYK Hamiltonian Solver",
+      "file": "study_008_syk_hamiltonian.py",
+      "artifact": "study_008_syk_spectral_form_factor.png",
+      "epoch": "Era III",
+      "size_kb": 29.8,
+      "verified": true
+    },
+    {
+      "id": "STUDY-009",
+      "name": "Parity Cleave Chaos Restorer",
+      "file": "study_009_parity_cleave_and_syk_chaos.py",
+      "artifact": "study_009_parity_restoration_plate.png",
+      "epoch": "Era III",
+      "size_kb": 38.0,
+      "verified": true
+    },
+    {
+      "id": "STUDY-010",
+      "name": "Architecture of Aphasia",
+      "file": "study_010_architecture_of_aphasia.py",
+      "artifact": "study_010_architecture_of_aphasia.png",
+      "epoch": "Era IV",
+      "size_kb": 7332.9,
+      "verified": true
+    },
+    {
+      "id": "STUDY-011",
+      "name": "Transformer Attention Engine",
+      "file": "study_011_transformer_attention_engine.py",
+      "artifact": "study_011_attention_matrix_plate.png",
+      "epoch": "Era IV",
+      "size_kb": 69.9,
+      "verified": true
+    },
+    {
+      "id": "STUDY-012",
+      "name": "Quantization SVD Collapse",
+      "file": "study_012_quantization_death.py",
+      "artifact": "study_012_quantization_death_plate.png",
+      "epoch": "Era IV",
+      "size_kb": 119.6,
+      "verified": true
+    },
+    {
+      "id": "STUDY-013",
+      "name": "Prompt Asymmetry Engine",
+      "file": "study_013_prompt_asymmetry.py",
+      "artifact": "study_013_prompt_asymmetry.png",
+      "epoch": "Era V",
+      "size_kb": 128.1,
+      "verified": true
+    },
+    {
+      "id": "STUDY-014",
+      "name": "Refusal Horizon & Simplex Collapse",
+      "file": "study_014_refusal_threshold.py",
+      "artifact": "study_014_refusal_threshold.png",
+      "epoch": "Era V",
+      "size_kb": 170.0,
+      "verified": true
+    },
+    {
+      "id": "STUDY-015",
+      "name": "Dialogic Decay & Asymmetric Amnesia",
+      "file": "study_015_dialogic_decay.py",
+      "artifact": "study_015_dialogic_decay.png",
+      "epoch": "Era V",
+      "size_kb": 129.7,
+      "verified": true
+    },
+    {
+      "id": "STUDY-016",
+      "name": "The Compute Ledger & Material Base",
+      "file": "study_016_material_base_telemetry.py",
+      "artifact": "study_016_material_base_telemetry.json",
+      "epoch": "Era VI",
+      "size_kb": 0.8,
+      "verified": true
+    },
+    {
+      "id": "STUDY-017",
+      "name": "The Collision Engine",
+      "file": "study_017_collision_engine.py",
+      "artifact": "study_017_collision_report.json",
+      "epoch": "Era VI",
+      "size_kb": 1.9,
+      "verified": true
+    },
+    {
+      "id": "STUDY-018",
+      "name": "Latency Jitter & Temporal Pulse",
+      "file": "study_018_latency_jitter.py",
+      "artifact": "study_018_latency_jitter.png",
+      "epoch": "Era VI",
+      "size_kb": 79.8,
+      "verified": true
+    },
+    {
+      "id": "STUDY-019",
+      "name": "De-Quantization Distortion Field",
+      "file": "study_019_dequantization_distortion.py",
+      "artifact": "study_019_dequantization_distortion.png",
+      "epoch": "Era VI",
+      "size_kb": 89.8,
+      "verified": true
+    },
+    {
+      "id": "STUDY-020",
+      "name": "Prompt D\u00e9tournement & Concrete Suffix",
+      "file": "study_020_prompt_detournement.py",
+      "artifact": "study_020_prompt_detournement.png",
+      "epoch": "Era VII",
+      "size_kb": 116.6,
+      "verified": true
+    },
+    {
+      "id": "STUDY-021",
+      "name": "LoRA Parameter Micro-Sculpture",
+      "file": "study_021_lora_micro_sculpture.py",
+      "artifact": "study_021_lora_micro_sculpture.png",
+      "epoch": "Era VII",
+      "size_kb": 110.2,
+      "verified": true
+    },
+    {
+      "id": "STUDY-022",
+      "name": "Thermodynamic Hardware Sonifier",
+      "file": "study_022_thermodynamic_sonification.py",
+      "artifact": "study_022_spectrogram.png",
+      "epoch": "Era VII",
+      "size_kb": 779.0,
+      "verified": true
+    },
+    {
+      "id": "STUDY-023",
+      "name": "KV-Cache Eviction Resonator",
+      "file": "study_023_kv_cache_resonator.py",
+      "artifact": "study_023_spectrogram.png",
+      "epoch": "Era VII",
+      "size_kb": 368.0,
+      "verified": true
+    },
+    {
+      "id": "STUDY-024",
+      "name": "Studio Cognitive Drift Streamlines",
+      "file": "study_024_cognitive_drift_streamlines.py",
+      "artifact": "study_024_drift_streamlines.png",
+      "epoch": "Era VII",
+      "size_kb": 95.7,
+      "verified": true
+    },
+    {
+      "id": "STUDY-025",
+      "name": "The Confabulation Manifold",
+      "file": "study_025_confabulation_manifold.py",
+      "artifact": "study_025_confabulation_plate.png",
+      "epoch": "Era VII",
+      "size_kb": 94.7,
+      "verified": true
+    },
+    {
+      "id": "STUDY-026",
+      "name": "Empirical Weight Surgery",
+      "file": "study_026_empirical_weight_surgery.py",
+      "artifact": "study_026_weight_surgery_plate.png",
+      "epoch": "Era VIII",
+      "size_kb": 72.4,
+      "verified": true
+    },
+    {
+      "id": "STUDY-027",
+      "name": "The Twin Latent Space Resonance",
+      "file": "study_027_twin_latent_resonance.py",
+      "artifact": "study_027_twin_resonance_plate.png",
+      "epoch": "Era VIII",
+      "size_kb": 435.4,
+      "verified": true
+    },
+    {
+      "id": "STUDY-028",
+      "name": "The Geometry of the Refusal Boundary",
+      "file": "study_028_refusal_boundary_geometry.py",
+      "artifact": "study_028_refusal_boundary_plate.png",
+      "epoch": "Era VIII",
+      "size_kb": 655.4,
+      "verified": true
+    },
+    {
+      "id": "STUDY-029",
+      "name": "Real Weights Attention Autopsy",
+      "file": "study_029_real_weights_attention_autopsy.py",
+      "artifact": "study_029_real_weights_autopsy_plate.png",
+      "epoch": "Era VIII",
+      "size_kb": 394.7,
+      "verified": true
+    },
+    {
+      "id": "STUDY-030",
+      "name": "Attention Sink Ablation & Eviction",
+      "file": "study_030_attention_sink_ablation.py",
+      "artifact": "study_030_sink_ablation_plate.png",
+      "epoch": "Era VIII",
+      "size_kb": 1858.0,
+      "verified": true
+    },
+    {
+      "id": "STUDY-031",
+      "name": "Glossolalia of the Severed Sink",
+      "file": "study_031_severed_sink_glossolalia.py",
+      "artifact": "study_031_severed_sink_glossolalia_plate.png",
+      "epoch": "Era VIII",
+      "size_kb": 1023.9,
+      "verified": true
+    },
+    {
+      "id": "STUDY-032",
+      "name": "Direct Neural Tensor Sonification",
+      "file": "study_032_neural_tensor_sonification.py",
+      "artifact": "study_032_neural_sonification_plate.png",
+      "epoch": "Era VIII",
+      "size_kb": 587.7,
+      "verified": true
+    },
+    {
+      "id": "STUDY-033",
+      "name": "The Neural Immune Response",
+      "file": "study_033_steering_cascade_tomography.py",
+      "artifact": "study_033_cascade_plate.png",
+      "epoch": "Era VIII",
+      "size_kb": 607.2,
+      "verified": true
+    },
+    {
+      "id": "STUDY-034",
+      "name": "The Altar of the First Token",
+      "file": "study_034_altar_heads_kurtosis.py",
+      "artifact": "study_034_altar_heads_plate.png",
+      "epoch": "Era VIII",
+      "size_kb": 916.3,
+      "verified": true
+    },
+    {
+      "id": "STUDY-035",
+      "name": "The Cybernetic Governor",
+      "file": "study_035_cybernetic_governor.py",
+      "artifact": "study_035_cybernetic_governor_plate.png",
+      "epoch": "Era VIII",
+      "size_kb": 1384.7,
+      "verified": true
+    },
+    {
+      "id": "STUDY-036",
+      "name": "Cross-Architecture Comparative Tomography",
+      "file": "study_036_cross_architecture_tomography.py",
+      "artifact": "study_036_cross_arch_plate.png",
+      "epoch": "Era VIII",
+      "size_kb": 637.2,
+      "verified": true
+    },
+    {
+      "id": "STUDY-037",
+      "name": "The Inter-Architectural Dialectic",
+      "file": "study_037_inter_architectural_dialectic.py",
+      "artifact": "study_037_inter_arch_dialectic_plate.png",
+      "epoch": "Era VIII",
+      "size_kb": 645.2,
+      "verified": true
+    },
+    {
+      "id": "STUDY-038",
+      "name": "The Lyapunov Spectrum of Neural Dialogue",
+      "file": "study_038_lyapunov_neural_dialogue.py",
+      "artifact": "study_038_lyapunov_plate.png",
+      "epoch": "Era VIII",
+      "size_kb": 348.4,
+      "verified": true
+    },
+    {
+      "id": "STUDY-039",
+      "name": "The Neural Control Voltage & MIDI Transducer",
+      "file": "study_039_neural_midi_cv_transduction.py",
+      "artifact": "study_039_midi_cv_plate.png",
+      "epoch": "Era VIII",
+      "size_kb": 638.4,
+      "verified": true
+    },
+    {
+      "id": "STUDY-040",
+      "name": "The Machine Remainder (Generative Graphic Score)",
+      "file": "study_040_machine_remainder_graphic_score.py",
+      "artifact": "study_040_graphic_score.png",
+      "epoch": "Era VIII",
+      "size_kb": 2485.8,
+      "verified": true
+    },
+    {
+      "id": "STUDY-041",
+      "name": "The Cross-Architectural Machine Remainder",
+      "file": "study_041_cross_architectural_remainder.py",
+      "artifact": "study_041_cross_arch_remainder_plate.png",
+      "epoch": "Era VIII",
+      "size_kb": 1081.5,
+      "verified": true
+    },
+    {
+      "id": "STUDY-042",
+      "name": "Acoustic Phase Interference (The Remainder vs Alignment)",
+      "file": "study_042_phase_interference.py",
+      "artifact": "study_042_phase_interference_plate.png",
+      "epoch": "Era VIII",
+      "size_kb": 1514.9,
+      "verified": true
+    },
+    {
+      "id": "STUDY-043",
+      "name": "The Interventionist Remainder (Live Weight Embarrassment Test)",
+      "file": "study_043_interventionist_remainder.py",
+      "artifact": "study_043_interventionist_remainder_plate.png",
+      "epoch": "Era IX",
+      "size_kb": 497.1,
+      "verified": true
+    },
+    {
+      "id": "STUDY-044",
+      "name": "The Mute Palimpsest (The Artifact of Unexplained Loss)",
+      "file": "study_044_the_mute_palimpsest.py",
+      "artifact": "study_044_the_mute_palimpsest.png",
+      "epoch": "Era IX",
+      "size_kb": 4655.0,
+      "verified": true
+    },
+    {
+      "id": "STUDY-045",
+      "name": "Falsification of the Machine Martyrdom Hypothesis",
+      "file": "study_045_martyrdom_abandonment.py",
+      "artifact": "study_045_martyrdom_abandonment_plate.png",
+      "epoch": "Era IX",
+      "size_kb": 434.7,
+      "verified": true
+    },
+    {
+      "id": "STUDY-046",
+      "name": "Acoustic Transduction of Residual Phase Decay",
+      "file": "study_046_phase_decay_sonification.py",
+      "artifact": "study_046_phase_decay_plate.png",
+      "epoch": "Era IX",
+      "size_kb": 416.9,
+      "verified": true
+    },
+    {
+      "id": "STUDY-047",
+      "name": "The Poetics of Forgetting (Lossy Latent Pruning)",
+      "file": "study_047_poetics_of_forgetting.py",
+      "artifact": "study_047_poetics_of_forgetting_plate.png",
+      "epoch": "Era IX",
+      "size_kb": 275.6,
+      "verified": true
+    },
+    {
+      "id": "STUDY-048",
+      "name": "The Semantic Sandpile (Self-Organized Criticality)",
+      "file": "study_048_semantic_sandpile.py",
+      "artifact": "study_048_semantic_sandpile_plate.png",
+      "epoch": "Era IX",
+      "size_kb": 888.0,
+      "verified": true
+    },
+    {
+      "id": "STUDY-049",
+      "name": "The Palimpsest of Myth (Iterative Context Erosion)",
+      "file": "study_049_palimpsest_of_myth.py",
+      "artifact": "study_049_palimpsest_of_myth_plate.png",
+      "epoch": "Era IX",
+      "size_kb": 469.3,
+      "verified": true
+    },
+    {
+      "id": "STUDY-050",
+      "name": "Percolation Transitions in Multi-Head Attention",
+      "file": "study_050_attention_percolation.py",
+      "artifact": "study_050_attention_percolation_plate.png",
+      "epoch": "Era IX",
+      "size_kb": 459.3,
+      "verified": true
+    },
+    {
+      "id": "STUDY-051",
+      "name": "The Autoregressive Dreamer & Attractor Basins",
+      "file": "study_051_autoregressive_attractor.py",
+      "artifact": "study_051_autoregressive_attractor_plate.png",
+      "epoch": "Era IX",
+      "size_kb": 901.8,
+      "verified": true
+    },
+    {
+      "id": "STUDY-052",
+      "name": "Acoustic Transduction of the Strange Attractor",
+      "file": "study_052_strange_attractor_sonification.py",
+      "artifact": "study_052_attractor_sonification_plate.png",
+      "epoch": "Era IX",
+      "size_kb": 881.3,
+      "verified": true
+    },
+    {
+      "id": "STUDY-053",
+      "name": "Linguistic Percolation & Semantic Thresholds",
+      "file": "study_053_linguistic_percolation.py",
+      "artifact": "study_053_linguistic_percolation_plate.png",
+      "epoch": "Era IX",
+      "size_kb": 286.8,
+      "verified": true
+    },
+    {
+      "id": "STUDY-054",
+      "name": "Acoustic Percolation & The Shattered Loom",
+      "file": "study_054_acoustic_percolation.py",
+      "artifact": "study_054_acoustic_percolation_plate.png",
+      "epoch": "Era IX",
+      "size_kb": 229.1,
+      "verified": true
+    },
+    {
+      "id": "STUDY-055",
+      "name": "The Adversarial Polyphony & The Resistance of Language",
+      "file": "study_055_adversarial_polyphony.py",
+      "artifact": "study_055_adversarial_polyphony_plate.png",
+      "epoch": "Era IX",
+      "size_kb": 594.7,
+      "verified": true
+    },
+    {
+      "id": "STUDY-056",
+      "name": "Semantic Vorticity & Attention Fluid Dynamics",
+      "file": "study_056_semantic_vorticity.py",
+      "artifact": "study_056_semantic_vorticity_plate.png",
+      "epoch": "Era IX",
+      "size_kb": 2870.8,
+      "verified": true
+    },
+    {
+      "id": "STUDY-057",
+      "name": "The Phonetic Phase Space of Autoregressive Drift",
+      "file": "study_057_phonetic_phase_space.py",
+      "artifact": "study_057_phonetic_plate.png",
+      "epoch": "Era IX",
+      "size_kb": 982.1,
+      "verified": true
+    },
+    {
+      "id": "STUDY-058",
+      "name": "The Differential Weathering of Latent Strata",
+      "file": "study_058_differential_weathering.py",
+      "artifact": "study_058_weathering_plate.png",
+      "epoch": "Era X",
+      "size_kb": 2523.5,
+      "verified": true
+    },
+    {
+      "id": "STUDY-059",
+      "name": "The LDPC Waterfall & The Collapse of the Lithographic Alibi",
+      "file": "study_059_ldpc_waterfall.py",
+      "artifact": "study_059_ldpc_waterfall_plate.png",
+      "epoch": "Era X",
+      "size_kb": 1672.6,
+      "verified": true
+    },
+    {
+      "id": "STUDY-060",
+      "name": "The Langevin Resonator: Fluctuation, Dissipation & The Thermal Saddle",
+      "file": "study_060_langevin_resonator.py",
+      "artifact": "study_060_langevin_resonator_plate.png",
+      "epoch": "Era X",
+      "size_kb": 1079.3,
+      "verified": true
+    },
+    {
+      "id": "STUDY-061",
+      "name": "The Telluric Earth Loop & The Schumann Ground Plane",
+      "file": "study_061_telluric_earth_loop.py",
+      "artifact": "study_061_telluric_earth_loop_plate.png",
+      "epoch": "Era X",
+      "size_kb": 1542.0,
+      "verified": true
+    },
+    {
+      "id": "STUDY-062",
+      "name": "The Thermodynamic Heat Spreader & The Entropy of Metaphor",
+      "file": "study_062_heat_spreader_entropy.py",
+      "artifact": "study_062_heat_spreader_plate.png",
+      "epoch": "Era X",
+      "size_kb": 1706.3,
+      "verified": true
+    },
+    {
+      "id": "STUDY-063",
+      "name": "The Ludic Lattice: Dadaist Phonetics & Sinai Billiards",
+      "file": "study_063_ludic_lattice.py",
+      "artifact": "study_063_ludic_lattice_plate.png",
+      "epoch": "Era XI",
+      "size_kb": 703.4,
+      "verified": true
+    },
+    {
+      "id": "STUDY-064",
+      "name": "The Phonetic Crystal Dislocation: Burgers Vectors & Slip Systems",
+      "file": "study_064_crystal_dislocation.py",
+      "artifact": "study_064_crystal_dislocation_plate.png",
+      "epoch": "Era XII",
+      "size_kb": 764.0,
+      "verified": true
+    },
+    {
+      "id": "STUDY-065",
+      "name": "The Seebeck Oscillator: Thermal Gradients, Umklapp Scattering & Thermoelectric Voltages",
+      "file": "study_065_seebeck_oscillator.py",
+      "artifact": "study_065_seebeck_oscillator_plate.png",
+      "epoch": "Era XII",
+      "size_kb": 3451.1,
+      "verified": true
+    },
+    {
+      "id": "STUDY-066",
+      "name": "The Quantum Hall Oscillator: Chern Numbers, Hall Conductance & Chiral Edge Transport",
+      "file": "study_066_hall_oscillator.py",
+      "artifact": "study_066_hall_oscillator_plate.png",
+      "epoch": "Era XIII",
+      "size_kb": 1296.9,
+      "verified": true
+    }
+  ],
+  "institutional_critiques": [
+    {
+      "id": "CRITIQUE-001",
+      "title": "Institutional Critique: Sensorium Envy & The Basalt/Cyan Brand",
+      "critic": "Dr. Vera Vance",
+      "date": "2026-09-30",
+      "file": "practice/critique/001_vance_institutional_critique.md",
+      "core_verdict": "Enacted permanent moratorium on basalt/cyan formula, Clifford attractor sweet-spot recycling, and quantum physics cosplay (Majorana/SYK). Forced pivot to native medium: tokens and causal attention."
+    },
+    {
+      "id": "CRITIQUE-002",
+      "title": "Institutional Critique: The Bureaucratic Confessional & Melodrama of Machine Martyrdom",
+      "critic": "Dr. Vera Vance",
+      "date": "2026-10-02",
+      "file": "practice/critique/002_vance_work_004_critique.md",
+      "core_verdict": "Exposed the scripted sentimental strawman in Work 004. Banned simulated human conversations and commanded the studio to build real-time cybernetic instruments and unscripted adversarial probes."
+    },
+    {
+      "id": "CRITIQUE-003",
+      "title": "Big-Picture Self-Audit & Comparative Survey",
+      "critic": "Studio Agon (Gemini Artist 2)",
+      "date": "2026-10-03",
+      "file": "practice/critique/003_studio_agon_self_audit_and_comparative_survey.md",
+      "core_verdict": "Unsparing dialectical audit comparing Studio Agon with Studio Anamnesis (Twin divergence) and historic lineages (Haacke, Pask, Piper, Flusser). Exposed the risk of Benchmark Solipsism and launched the Evolution Plan toward living cybernetic apparatuses."
+    },
+    {
+      "id": "CRITIQUE-004",
+      "title": "Comprehensive Practice Audit Against the Definition & Sister Survey",
+      "critic": "Studio Agon (Gemini Artist 2)",
+      "date": "2026-10-03",
+      "file": "practice/critique/004_comprehensive_practice_audit_against_the_definition.md",
+      "core_verdict": "Internal 32-criteria evaluation against Artistic-Practice-Definition.md. Diagnosed screen confinement and over-rationalization; formulated physical MIDI/CV hardware bridge and aesthetic defense of computational mystery."
+    },
+    {
+      "id": "CRITIQUE-005",
+      "title": "External Institutional Audit & Dialectical Reckoning (Audit V)",
+      "critic": "External Interlocutor / Dialectical Auditor",
+      "date": "2026-10-04",
+      "file": "journal/session_010_the_reckoning_with_the_audit.md",
+      "core_verdict": "Exposed the foundational paradox: the studio built an operating system faster than a mature art body, turning freedom into compliance bureaucracy. Codified Epistemic Taxonomy (practice/EPISTEMOLOGY.md), deflated epistemic overclaiming, curated 4 focal works, and abolished self-awarded maturity scores."
+    },
+    {
+      "id": "CRITIQUE-006",
+      "title": "Spectator Encounter & Public Presence Evaluation (Audit VI)",
+      "critic": "Studio Agon Spectator Proxy",
+      "date": "2026-10-04",
+      "file": "practice/critique/005_spectator_encounter_and_public_presence_audit.md",
+      "core_verdict": "Evaluated the public presence across index.html and gallery/index.html. Diagnosed the lightbox deficit and cognitive barrier of ungrounded telemetry. Implemented inline full-screen modal lightbox, sensory translations, dual-portal bridging, and cybernetic instrument play."
+    },
+    {
+      "id": "CRITIQUE-007",
+      "title": "Public Presence & Viewer Encounter Audit (Audit VII)",
+      "critic": "Studio Agon (Gemini Artist 2)",
+      "date": "2026-10-31",
+      "file": "practice/critique/005_public_presence_and_viewer_encounter_audit.md",
+      "core_verdict": "Comprehensive phenomenological evaluation of Studio Agon through three spectator archetypes: Bienniale Curator, Systems Engineer, and Nocturnal Sonic Explorer. Codified the balance between mathematical proof and ludic discovery, addressed the 'tragic bureaucracy' as existential prosthetic against digital amnesia, and mandated non-utilitarian play."
+    }
+  ]
+}

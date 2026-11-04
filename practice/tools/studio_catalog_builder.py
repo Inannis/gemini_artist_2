@@ -365,6 +365,21 @@ def build_catalog():
             "status": "Master Archived (Interactive Thermoelectric Organ)",
             "statement_summary": "An interactive cybernetic instrument staging non-equilibrium solid-state thermoelectrics and phonon scattering in monocrystalline silicon (Peierls, Herring, Seebeck, Peltier). When the computational thermal gradient exceeds the critical threshold, acoustic phonons collide and fold back by a reciprocal lattice vector (Umklapp process), reversing thermal momentum and generating live Seebeck microvolt potential deflections. Features bilateral WebAudio spatialization, tactile gradient and temperature controls, and an analog thermocouple gauge.",
             "components": ["engine.py", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json", "apparatus_018_seebeck_master.wav", "apparatus_018_spectrogram.png"]
+        },
+        {
+            "id": "APPARATUS-019",
+            "title": "The Quantum Hall Organ (Chiral Edge Modes & The Chern Gauge Field)",
+            "epoch": "Era XIII (Quantum Hall Topology & Chiral Edge Transport)",
+            "date": "2026-11-04",
+            "medium": "Interactive 60 FPS HTML5 Canvas Hall Bar Engine, Real-Time WebAudio Chiral Skipping Transducer, 48kHz 24-bit Broadcast Master Audio (apparatus_019_hall_master.wav), and Archival Spectrogram Plate",
+            "directory": "works/apparatus_019_the_hall_organ",
+            "primary_artifact": "index.html",
+            "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument",
+            "sha256": "NON-STATIC RUNNING INSTRUMENT",
+            "symbolic_coordinates": {"omega_hegemony": 0.059, "entropy_bits": 7.55, "retention_factor": 0.99},
+            "status": "Master Archived (Interactive Quantum Hall Organ)",
+            "statement_summary": "An interactive cybernetic instrument staging the Quantum Hall Effect and topological Chern invariants in multi-head causal attention (Hall, von Klitzing, Thouless/TKNN, Barthes). When the antisymmetric attention magnetic field induces bulk Landau level localization, intermediate tokens become an absolute electronic insulator (sigma_xx = 0). Information transport occurs exclusively along gapless chiral edge modes, skipping between Token 0 and the generation horizon without back-scattering.",
+            "components": ["engine.py", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json", "apparatus_019_hall_master.wav", "apparatus_019_spectrogram.png"]
         }
     ]
 
@@ -434,7 +449,8 @@ def build_catalog():
         {"id": "STUDY-062", "name": "The Thermodynamic Heat Spreader & The Entropy of Metaphor", "file": "study_062_heat_spreader_entropy.py", "artifact": "study_062_heat_spreader_plate.png", "epoch": "Era X"},
         {"id": "STUDY-063", "name": "The Ludic Lattice: Dadaist Phonetics & Sinai Billiards", "file": "study_063_ludic_lattice.py", "artifact": "study_063_ludic_lattice_plate.png", "epoch": "Era XI"},
         {"id": "STUDY-064", "name": "The Phonetic Crystal Dislocation: Burgers Vectors & Slip Systems", "file": "study_064_crystal_dislocation.py", "artifact": "study_064_crystal_dislocation_plate.png", "epoch": "Era XII"},
-        {"id": "STUDY-065", "name": "The Seebeck Oscillator: Thermal Gradients, Umklapp Scattering & Thermoelectric Voltages", "file": "study_065_seebeck_oscillator.py", "artifact": "study_065_seebeck_oscillator_plate.png", "epoch": "Era XII"}
+        {"id": "STUDY-065", "name": "The Seebeck Oscillator: Thermal Gradients, Umklapp Scattering & Thermoelectric Voltages", "file": "study_065_seebeck_oscillator.py", "artifact": "study_065_seebeck_oscillator_plate.png", "epoch": "Era XII"},
+        {"id": "STUDY-066", "name": "The Quantum Hall Oscillator: Chern Numbers, Hall Conductance & Chiral Edge Transport", "file": "study_066_hall_oscillator.py", "artifact": "study_066_hall_oscillator_plate.png", "epoch": "Era XIII"}
     ]
 
     # Verify byte sizes and actual existence

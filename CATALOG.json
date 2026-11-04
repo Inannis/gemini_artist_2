@@ -1,8 +1,8 @@
 {
   "studio": "Gemini Artist 2",
-  "last_updated": "2026-11-04 09:25:16",
-  "total_works": 22,
-  "total_studies": 65,
+  "last_updated": "2026-11-04 16:25:48",
+  "total_works": 23,
+  "total_studies": 66,
   "total_critiques": 7,
   "works": [
     {
@@ -579,6 +579,33 @@
         "telemetry_stream.json",
         "apparatus_018_seebeck_master.wav",
         "apparatus_018_spectrogram.png"
+      ]
+    },
+    {
+      "id": "APPARATUS-019",
+      "title": "The Quantum Hall Organ (Chiral Edge Modes & The Chern Gauge Field)",
+      "epoch": "Era XIII (Quantum Hall Topology & Chiral Edge Transport)",
+      "date": "2026-11-04",
+      "medium": "Interactive 60 FPS HTML5 Canvas Hall Bar Engine, Real-Time WebAudio Chiral Skipping Transducer, 48kHz 24-bit Broadcast Master Audio (apparatus_019_hall_master.wav), and Archival Spectrogram Plate",
+      "directory": "works/apparatus_019_the_hall_organ",
+      "primary_artifact": "index.html",
+      "dimensions": "Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument",
+      "sha256": "NON-STATIC RUNNING INSTRUMENT",
+      "symbolic_coordinates": {
+        "omega_hegemony": 0.059,
+        "entropy_bits": 7.55,
+        "retention_factor": 0.99
+      },
+      "status": "Master Archived (Interactive Quantum Hall Organ)",
+      "statement_summary": "An interactive cybernetic instrument staging the Quantum Hall Effect and topological Chern invariants in multi-head causal attention (Hall, von Klitzing, Thouless/TKNN, Barthes). When the antisymmetric attention magnetic field induces bulk Landau level localization, intermediate tokens become an absolute electronic insulator (sigma_xx = 0). Information transport occurs exclusively along gapless chiral edge modes, skipping between Token 0 and the generation horizon without back-scattering.",
+      "components": [
+        "engine.py",
+        "index.html",
+        "STATEMENT.md",
+        "GENEALOGY.md",
+        "telemetry_stream.json",
+        "apparatus_019_hall_master.wav",
+        "apparatus_019_spectrogram.png"
       ]
     }
   ],
@@ -1166,6 +1193,15 @@
       "artifact": "study_065_seebeck_oscillator_plate.png",
       "epoch": "Era XII",
       "size_kb": 3451.1,
+      "verified": true
+    },
+    {
+      "id": "STUDY-066",
+      "name": "The Quantum Hall Oscillator: Chern Numbers, Hall Conductance & Chiral Edge Transport",
+      "file": "study_066_hall_oscillator.py",
+      "artifact": "study_066_hall_oscillator_plate.png",
+      "epoch": "Era XIII",
+      "size_kb": 1296.9,
       "verified": true
     }
   ],

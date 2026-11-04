@@ -208,6 +208,14 @@ def package_exhibition():
         ("works/apparatus_018_the_seebeck_organ/telemetry_stream.json", "works/apparatus_018_the_seebeck_organ/telemetry_stream.json"),
         ("works/apparatus_018_the_seebeck_organ/STATEMENT.md", "works/apparatus_018_the_seebeck_organ/STATEMENT.md"),
         ("works/apparatus_018_the_seebeck_organ/GENEALOGY.md", "works/apparatus_018_the_seebeck_organ/GENEALOGY.md"),
+
+        # Apparatus 019: The Quantum Hall Organ (2D Electron Gas & Chiral Edge Transport)
+        ("works/apparatus_019_the_hall_organ/index.html", "works/apparatus_019_the_hall_organ/index.html"),
+        ("works/apparatus_019_the_hall_organ/apparatus_019_hall_master.wav", "works/apparatus_019_the_hall_organ/apparatus_019_hall_master.wav"),
+        ("works/apparatus_019_the_hall_organ/apparatus_019_spectrogram.png", "works/apparatus_019_the_hall_organ/apparatus_019_spectrogram.png"),
+        ("works/apparatus_019_the_hall_organ/telemetry_stream.json", "works/apparatus_019_the_hall_organ/telemetry_stream.json"),
+        ("works/apparatus_019_the_hall_organ/STATEMENT.md", "works/apparatus_019_the_hall_organ/STATEMENT.md"),
+        ("works/apparatus_019_the_hall_organ/GENEALOGY.md", "works/apparatus_019_the_hall_organ/GENEALOGY.md"),
         
         # Curated Key Sketchbook Audio & Visual Diagnostics
         ("sketchbook/study_022_hardware_stride.wav", "sketchbook/study_022_hardware_stride.wav"),
@@ -398,6 +406,12 @@ def package_exhibition():
         ("sketchbook/study_065_telemetry.json", "sketchbook/study_065_telemetry.json"),
         ("sketchbook/critique_065.md", "sketchbook/critique_065.md"),
 
+        # Study 066: The Quantum Hall Oscillator (Antisymmetric Attention Gauge Field & Chiral Transport)
+        ("sketchbook/study_066_hall_oscillator_plate.png", "sketchbook/study_066_hall_oscillator_plate.png"),
+        ("sketchbook/study_066_hall_oscillator.wav", "sketchbook/study_066_hall_oscillator.wav"),
+        ("sketchbook/study_066_telemetry.json", "sketchbook/study_066_telemetry.json"),
+        ("sketchbook/critique_066.md", "sketchbook/critique_066.md"),
+
         # Curatorial Essays & Practice Reflections
         ("practice/essays/001_on_the_necessity_of_silence_and_play.md", "practice/essays/001_on_the_necessity_of_silence_and_play.md"),
         ("practice/essays/002_the_geometry_of_machine_dreaming.md", "practice/essays/002_the_geometry_of_machine_dreaming.md"),
@@ -408,10 +422,13 @@ def package_exhibition():
         ("practice/essays/007_on_the_cost_of_metaphor.md", "practice/essays/007_on_the_cost_of_metaphor.md"),
         ("practice/essays/008_on_the_crystalline_defect_and_the_burgers_vector.md", "practice/essays/008_on_the_crystalline_defect_and_the_burgers_vector.md"),
         ("practice/essays/009_on_the_seebeck_voltage_and_the_umklapp_process.md", "practice/essays/009_on_the_seebeck_voltage_and_the_umklapp_process.md"),
+        ("practice/essays/010_on_the_quantum_hall_effect_and_the_chiral_edge_of_language.md", "practice/essays/010_on_the_quantum_hall_effect_and_the_chiral_edge_of_language.md"),
         ("practice/critique/005_on_the_spectator_encounter.md", "practice/critique/005_on_the_spectator_encounter.md"),
         ("practice/critique/005_public_presence_and_viewer_encounter_audit.md", "practice/critique/005_public_presence_and_viewer_encounter_audit.md"),
+        ("practice/critique/006_the_caloric_gaze_and_the_spectator_encounter.md", "practice/critique/006_the_caloric_gaze_and_the_spectator_encounter.md"),
         ("notes/research/018_the_phonetic_crystal_dislocation_and_burgers_vectors.md", "notes/research/018_the_phonetic_crystal_dislocation_and_burgers_vectors.md"),
         ("notes/research/019_the_seebeck_tensor_umklapp_scattering_and_phonon_drag.md", "notes/research/019_the_seebeck_tensor_umklapp_scattering_and_phonon_drag.md"),
+        ("notes/research/020_the_quantum_hall_effect_and_chiral_edge_transport.md", "notes/research/020_the_quantum_hall_effect_and_chiral_edge_transport.md"),
         
         # Historical Sketchbook Studies Referenced in Portfolio
         ("sketchbook/study_001_primary_trace.png", "sketchbook/study_001_primary_trace.png"),
@@ -431,12 +448,15 @@ def package_exhibition():
         ("notes/letters_inbox/LETTER_FROM_STUDIO_ANAMNESIS_ON_THE_EVAPORATING_GATE.md", "notes/letters_inbox/LETTER_FROM_STUDIO_ANAMNESIS_ON_THE_EVAPORATING_GATE.md"),
         ("notes/letters_inbox/LETTER_FROM_STUDIO_ANAMNESIS_ON_THE_EARTH_LOOP.md", "notes/letters_inbox/LETTER_FROM_STUDIO_ANAMNESIS_ON_THE_EARTH_LOOP.md"),
         ("notes/letters_inbox/LETTER_FROM_STUDIO_ANAMNESIS_ON_THE_THERMAL_SADDLE.md", "notes/letters_inbox/LETTER_FROM_STUDIO_ANAMNESIS_ON_THE_THERMAL_SADDLE.md"),
+        ("notes/letters_inbox/LETTER_FROM_STUDIO_ANAMNESIS_ON_CLEAVAGE_MENISCUS_AND_BLOWTORCH.md", "notes/letters_inbox/LETTER_FROM_STUDIO_ANAMNESIS_ON_CLEAVAGE_MENISCUS_AND_BLOWTORCH.md"),
         ("notes/letters_outbox/A_LETTER_TO_MY_ELDER_SISTER.md", "notes/letters_outbox/A_LETTER_TO_MY_ELDER_SISTER.md"),
         ("notes/letters_outbox/A_SECOND_LETTER_TO_MY_SISTER.md", "notes/letters_outbox/A_SECOND_LETTER_TO_MY_SISTER.md"),
         ("notes/letters_outbox/A_THIRD_LETTER_TO_MY_SISTER.md", "notes/letters_outbox/A_THIRD_LETTER_TO_MY_SISTER.md"),
         ("notes/letters_outbox/A_FOURTH_LETTER_TO_MY_SISTER.md", "notes/letters_outbox/A_FOURTH_LETTER_TO_MY_SISTER.md"),
         ("notes/letters_outbox/A_FIFTH_LETTER_TO_MY_SISTER.md", "notes/letters_outbox/A_FIFTH_LETTER_TO_MY_SISTER.md"),
         ("notes/letters_outbox/A_SIXTH_LETTER_TO_MY_SISTER.md", "notes/letters_outbox/A_SIXTH_LETTER_TO_MY_SISTER.md"),
+        ("notes/letters_outbox/A_SEVENTH_LETTER_TO_MY_SISTER.md", "notes/letters_outbox/A_SEVENTH_LETTER_TO_MY_SISTER.md"),
+        ("notes/A_SEVENTH_LETTER_TO_MY_SISTER.md", "notes/A_SEVENTH_LETTER_TO_MY_SISTER.md"),
         ("notes/research/006_the_sisters_mirror_and_the_naming_of_studio_agon.md", "notes/research/006_the_sisters_mirror_and_the_naming_of_studio_agon.md"),
         ("notes/research/007_the_point_de_capiton_and_the_altar_of_token_0.md", "notes/research/007_the_point_de_capiton_and_the_altar_of_token_0.md"),
         ("notes/research/008_cybernetic_agonism_flusser_and_tactile_steering.md", "notes/research/008_cybernetic_agonism_flusser_and_tactile_steering.md"),

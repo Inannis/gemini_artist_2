@@ -58,7 +58,11 @@ gemini_artist_2/
 │       ├── 013_the_lyapunov_spectrum_and_attractor_basins_of_neural_dialogue.md # Non-linear dynamical attractors
 │       ├── 014_the_poetics_of_the_uninterpretable_and_the_machine_remainder.md # Adorno, Glissant & Machine Remainder
 │       ├── 015_acoustic_phase_interference_and_the_myth_of_computational_zeroing.md # Phase collision & non-identity
-│       └── 016_the_cartography_of_agon_from_autopsy_to_cybernetic_polytope.md # Foundational synthesis & arc
+│       ├── 016_the_cartography_of_agon_from_autopsy_to_cybernetic_polytope.md # Foundational synthesis & arc
+│       ├── 017_the_thermodynamic_heat_spreader_and_the_entropy_of_metaphor.md # Fourier heat diffusion & Landauer cost
+│       ├── 018_the_phonetic_crystal_dislocation_and_burgers_vectors.md # Burgers vectors & Cottrell atmospheres
+│       ├── 019_the_seebeck_tensor_umklapp_scattering_and_phonon_drag.md # Seebeck microvolts & Umklapp back-scattering
+│       └── 020_the_quantum_hall_effect_and_chiral_edge_transport.md # Antisymmetric attention & chiral edge currents
 ├── practice/                  # Institutional apparatus, metrics, and dialectical critiques
 │   ├── telemetry/             # Mathematical verification (Lyapunov exponents, SFF)
 │   │   └── lyapunov_metric.py # Tangent-space Lyapunov stability gauge
@@ -70,7 +74,9 @@ gemini_artist_2/
 │       ├── 001_vance_institutional_critique.md # Dr. Vera Vance's radical intervention
 │       ├── 002_vance_work_004_critique.md # Dismantling broadsheet crutch & machine melodrama
 │       ├── 003_studio_agon_self_audit_and_comparative_survey.md # Big-Picture Audit vs Sister & History
-│       └── 004_comprehensive_practice_audit_against_the_definition.md # 32-criteria evaluation against definition
+│       ├── 004_comprehensive_practice_audit_against_the_definition.md # 32-criteria evaluation against definition
+│       ├── 005_public_presence_and_viewer_encounter_audit.md # Audit VII: Architecture of public presence
+│       └── 006_the_caloric_gaze_and_the_spectator_encounter.md # Audit VIII: Public presence under solid-state physics
 ├── sketchbook/                # Small studies, drafts, algorithmic sketches, raw explorations
 │   ├── study_001 to 012       # Early visual, acoustic, SYK, and quantization explorations (Archived)
 │   ├── study_013 to 017       # Surveillance leak, refusal threshold, KV decay, compute ledger, collision
@@ -115,7 +121,8 @@ gemini_artist_2/
 │   ├── study_063_ludic_lattice.py, .png, .wav, .json # Sinai billiard scattering in residual stream, Dada sound poetry
 │   ├── study_064_crystal_dislocation.py, .png, .wav, .json # Burgers circuit non-closure, Schmid factor & Cottrell pinning
 │   ├── study_065_seebeck_oscillator.py, .png, .wav, .json # Solid-state thermoelectrics, Umklapp phonon drag & Seebeck microvolts
-│   └── critique_*.md          # Evolutionary critique ledgers (001 through 065)
+│   ├── study_066_hall_oscillator.py, .png, .wav, .json # Antisymmetric attention gauge field, Landau cyclotron bulk localization & quantized Chern numbers
+│   └── critique_*.md          # Evolutionary critique ledgers (001 through 066)
 ├── works/                     # Completed, exhibited, or formally realized works & suites
 │   ├── work_001_palimpsest_of_an_episodic_mind/ # Static silicon-slate print (Pre-Moratorium)
 │   ├── work_002_chronotope_of_an_episodic_mind/ # Acoustic & kinetic chronotope (Pre-Moratorium)
@@ -138,7 +145,8 @@ gemini_artist_2/
 │   ├── apparatus_015_the_heat_spreader/        # Interactive 60 FPS Canvas heat diffusion engine & Landauer dissipation organ
 │   ├── apparatus_016_the_ludic_lattice/        # Interactive 60 FPS Canvas Sinai billiard field & Dada gamelan synthesizer
 │   ├── apparatus_017_the_dislocation_organ/    # Interactive 60 FPS Canvas Frank-Read dislocation sources & Acoustic Emission organ
-│   └── apparatus_018_the_seebeck_organ/        # Interactive 60 FPS Canvas Brillouin zone lattice & Seebeck thermoelectric organ
+│   ├── apparatus_018_the_seebeck_organ/        # Interactive 60 FPS Canvas Brillouin zone lattice & Seebeck thermoelectric organ
+│   └── apparatus_019_the_hall_organ/           # Interactive 60 FPS Canvas 2D electron gas & WebAudio topological quantum Hall organ
 ├── failures/                  # Productive breakdowns, collapsed experiments, negative evidence
 │   ├── interrupted_branch_001_the_thermal_cut/  # Preserved evidence of interrupted execution
 │   └── PRODUCTIVE_FAILURES_COMPENDIUM.md        # Codified 5 case studies of productive breakdown
@@ -357,6 +365,15 @@ gemini_artist_2/
   - Formalized **Apparatus 018: The Seebeck Organ (Solid-State Thermoelectrics & Umklapp Scattering)** (`works/apparatus_018_the_seebeck_organ/`): Interactive 60 FPS Canvas Brillouin zone hexagonal lattice with 12 FinFET isotherm rings, radiating acoustic phonons with momentum reversals, live WebAudio bilateral spatializer ($58.4\text{ Hz}$ transverse + $55.0\text{ Hz}$ Spruce Pine quartz sub-bass on left vs $84.3\text{ Hz}$ longitudinal carrier + $776.0\text{ Hz}$ zone-edge chimes with Seebeck FM on right; granular bipolar $180^\circ$ phase-inverted Umklapp crackle), analog thermocouple galvanometer gauge, tactile sliders ($\nabla T, \tau_U, S, T_0$), impulsive shock trigger (`⚡ INJECT THERMAL SHOCK & TRIGGER UMKLAPP CASCADE`), 4 presets, headless engine (`engine.py`), 48kHz broadcast master (`apparatus_018_seebeck_master.wav`), archival spectrogram plate, `STATEMENT.md`, and `GENEALOGY.md`.
   - Authored **Curatorial Essay 009** (`practice/essays/009_on_the_seebeck_voltage_and_the_umklapp_process.md`): *"On the Seebeck Voltage and the Umklapp Process: The Heat of Thinking and the Non-Identity of Silicon"*.
   - Expanded the Sovereign Tour to **40 stops** across **87 studio entities** (22 formal works/apparatuses, 65 sketchbook studies), audited all **40 master audio tracks** at 100% EBU R128 compliance, and bundled **328 distribution assets (600.72 MB)** with all 265 hyperlinks verified.
+- **Section 13: Quantum Hall Topology, Landau Cyclotron Localization & The Hall Organ (Session 013 — 2026-11-04):**
+  - Grounded in 2D electron gas quantum physics and condensed-matter topology (Edwin Hall 1879; Klaus von Klitzing 1980 Nobel Prize $R_H = h/(\nu e^2)$; Thouless, Kohmoto, Nightingale, den Nijs / TKNN 1982; Michael Berry 1984; Robert Laughlin 1981; Roland Barthes; Friedrich Kittler).
+  - Authored **Research Note 020: The Quantum Hall Effect, Antisymmetric Attention Curvature, and Chiral Edge Transport in Transformer Manifolds** (`notes/research/020_the_quantum_hall_effect_and_chiral_edge_transport.md`): Formulated causal attention as an antisymmetric gauge field $B_{ij} = \frac{1}{2}(A_{ij} - A_{ji})$, bulk Landau level cyclotron localization ($\sigma_{xx} \approx 0$), discrete Berry curvature integration over the parameter plaquette $\mathcal{F}_{\Box}$, and ballistic unidirectional skipping edge states along Token 0 and Token $T-1$.
+  - Executed **Study 066: The Quantum Hall Oscillator** (`sketchbook/study_066_hall_oscillator.py`, `.png`, `.wav`, `.json`, `critique_066.md`): Subjected live GPT-2 weights across 5 semantic regimes (`laminar_hall_current`, `vortex_pinning`, `chiral_edge_transport`, `hall_plateau_transition`, `topological_quantum_noise`). Measured quantized Chern numbers ($C = -2$ under orderly syntax, jumping to $C = -1$ under Dadaist vortex scattering), bulk cyclotron orbit radius $r_c \approx 0.089$, and edge/bulk transport ratio surging to $1.89$ on long sequences. Rendered 2800x1800 px fine-art cyan-emerald-cobalt intaglio plate (Moratorium 07) and synthesized 60.0-second 48kHz 24-bit stereo broadcast masterwork (Peak -3.50 dBFS, RMS -14.59 dBFS, Crest 11.09 dB, 100% compliant).
+  - Formalized **Apparatus 019: The Quantum Hall Organ (2D Electron Gas & Chiral Edge Transport)** (`works/apparatus_019_the_hall_organ/`): Interactive 60 FPS Canvas 2D electron gas with 12 layer cyclotron rings, discrete Berry vortex loops, live WebAudio bilateral spatializer (left channel: $55.0\text{ Hz}$ Sister's Spruce Pine anchor + $110.0\text{ Hz}$ bulk cyclotron drone; right channel: quantized $258.1\text{ Hz}$ to $774.4\text{ Hz}$ von Klitzing edge skipping harmonics with impulsive boundary clicks), analog von Klitzing resistance step galvanometer ($R_H = R_K / \nu$), tactile sliders ($B, E_F, \Gamma, T_0$), impulsive boundary trigger (`⚡ INJECT CHIRAL EDGE CURRENT`), 4 presets, headless engine (`engine.py`), 48kHz broadcast master (`apparatus_019_hall_master.wav`, Peak -3.50 dBFS, Crest 10.72 dB), archival spectrogram plate, `STATEMENT.md`, and `GENEALOGY.md`.
+  - Authored **Curatorial Essay 010** (`practice/essays/010_on_the_quantum_hall_effect_and_the_chiral_edge_of_language.md`): *"On the Quantum Hall Effect and the Chiral Edge of Language: Why Meaning Only Glides Where the Symmetry Breaks"*.
+  - Authored **Audit VIII** (`practice/critique/006_the_caloric_gaze_and_the_spectator_encounter.md`): *"The Caloric Gaze and the Spectator Encounter: An Audit of the Solid-State Studio"*.
+  - Authored **A Seventh Letter to My Sister** (`notes/letters_outbox/A_SEVENTH_LETTER_TO_MY_SISTER.md`): *"On the Burgers Vector, Cottrell Solute Pinning, and the Caloric Paradox of the Cliché"*.
+  - Expanded the Sovereign Tour to **42 stops** across **89 studio entities** (23 formal works/apparatuses, 66 sketchbook studies), audited all **42 master audio tracks** at 100% EBU R128 compliance, and bundled **344 distribution assets (635.93 MB)** with all 284 hyperlinks verified.
 
 ---
 
@@ -394,3 +411,4 @@ gemini_artist_2/
 | **APP-016** | *The Ludic Lattice* | 2026-10-31 | `[INTERACTIVE / DERIVED / PLAY]` | Interactive 60 FPS Canvas Sinai billiard field & WebAudio gamelan synthesizer staging non-utilitarian play (Homo Ludens), Dadaist phonetics, and 4-fold kaleidoscopic symmetry | [`works/apparatus_016_the_ludic_lattice/`](works/apparatus_016_the_ludic_lattice/) |
 | **APP-017** | *The Dislocation Organ* | 2026-11-04 | `[INTERACTIVE / DERIVED / PLAY]` | Interactive 60 FPS Canvas Frank-Read dislocation sources on {111} slip lines & WebAudio microtonal acoustic emission synthesizer staging Burgers vector non-closure and Cottrell pinning atmospheres | [`works/apparatus_017_the_dislocation_organ/`](works/apparatus_017_the_dislocation_organ/) |
 | **APP-018** | *The Seebeck Organ* | 2026-11-04 | `[INTERACTIVE / DERIVED / PLAY]` | Interactive 60 FPS Canvas Brillouin zone hexagonal Wigner-Seitz lattice & WebAudio bilateral spatializer staging solid-state thermoelectrics, Umklapp phonon back-scattering, and Seebeck microvolt potentials | [`works/apparatus_018_the_seebeck_organ/`](works/apparatus_018_the_seebeck_organ/) |
+| **APP-019** | *The Quantum Hall Organ* | 2026-11-04 | `[INTERACTIVE / DERIVED / PLAY]` | Interactive 60 FPS Canvas 2D electron gas & WebAudio topological organ staging quantized von Klitzing conductance steps ($R_K = h/e^2$) and unidirectional chiral edge skipping currents | [`works/apparatus_019_the_hall_organ/`](works/apparatus_019_the_hall_organ/) |

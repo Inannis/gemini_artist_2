@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apparatus 019: The Quantum Hall Organ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=JetBrains+Mono:wght@300;400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #07080b;
+            --panel-bg: rgba(12, 14, 20, 0.90);
+            --copper: #c87d55;
+            --copper-glow: #e0a96d;
+            --gold: #fbbf24;
+            --cyan: #38bdf8;
+            --cyan-glow: #0284c7;
+            --emerald: #10b981;
+            --text-main: #f1ede8;
+            --text-dim: #8c827a;
+            --border: rgba(200, 125, 85, 0.28);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            user-select: none;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            overflow: hidden;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            padding: 12px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border);
+            background: linear-gradient(180deg, rgba(16, 18, 25, 0.96) 0%, rgba(7, 8, 11, 0.88) 100%);
+            backdrop-filter: blur(12px);
+            z-index: 10;
+        }
+
+        .title-block h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.15rem;
+            letter-spacing: 0.15em;
+            color: var(--copper-glow);
+            text-transform: uppercase;
+        }
+
+        .title-block .subtitle {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.72rem;
+            color: var(--text-dim);
+            letter-spacing: 0.05em;
+            margin-top: 2px;
+        }
+
+        .header-meta {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .tag-pill {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.65rem;
+            padding: 3px 8px;
+            border-radius: 3px;
+            border: 1px solid rgba(200, 125, 85, 0.4);
+            background: rgba(200, 125, 85, 0.08);
+            color: var(--copper-glow);
+            letter-spacing: 0.08em;
+        }
+
+        .main-stage {
+            display: flex;
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #hallCanvas {
+            flex: 1;
+            width: 100%;
+            height: 100%;
+            background-color: #050608;
+            display: block;
+        }
+
+        .control-panel {
+            width: 380px;
+            background: var(--panel-bg);
+            border-left: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            gap: 18px;
+            overflow-y: auto;
+            z-index: 5;
+            backdrop-filter: blur(16px);
+        }
+
+        .control-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .control-label {
+            display: flex;
+            justify-content: space-between;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.72rem;
+            color: var(--copper-glow);
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .control-label span.val {
+            color: var(--gold);
+        }
+
+        input[type="range"] {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 4px;
+            background: #1e293b;
+            border-radius: 2px;
+            outline: none;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: var(--copper);
+            cursor: pointer;
+            box-shadow: 0 0 8px rgba(200, 125, 85, 0.6);
+            border: 1px solid #fff;
+        }
+
+        .telemetry-card {
+            background: rgba(18, 22, 32, 0.75);
+            border: 1px solid rgba(200, 125, 85, 0.2);
+            border-radius: 4px;
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.70rem;
+        }
+
+        .meter-row {
+            display: flex;
+            justify-content: space-between;
+            color: var(--text-dim);
+        }
+
+        .meter-row span.val {
+            color: var(--cyan);
+            font-weight: 600;
+        }
+
+        .gauge-container {
+            height: 40px;
+            width: 100%;
+            background: #090b10;
+            border: 1px solid #1e293b;
+            border-radius: 3px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .gauge-bar {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            background: linear-gradient(90deg, #0284c7 0%, #38bdf8 50%, #fbbf24 100%);
+            width: 35%;
+            transition: width 0.1s ease-out;
+            opacity: 0.85;
+        }
+
+        .gauge-text {
+            position: relative;
+            z-index: 2;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            color: #fff;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+        }
+
+        .button-primary {
+            background: linear-gradient(135deg, rgba(200, 125, 85, 0.25) 0%, rgba(200, 125, 85, 0.1) 100%);
+            border: 1px solid var(--copper);
+            color: var(--copper-glow);
+            padding: 10px 14px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.78rem;
+            letter-spacing: 0.12em;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .button-primary:hover {
+            background: rgba(200, 125, 85, 0.4);
+            box-shadow: 0 0 14px rgba(200, 125, 85, 0.4);
+            color: #fff;
+        }
+
+        .button-primary:active {
+            transform: scale(0.98);
+        }
+
+        .preset-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6px;
+        }
+
+        .preset-btn {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-dim);
+            padding: 6px 8px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.65rem;
+            cursor: pointer;
+            border-radius: 3px;
+            transition: all 0.15s ease;
+            text-align: center;
+        }
+
+        .preset-btn:hover {
+            border-color: var(--copper);
+            color: var(--copper-glow);
+            background: rgba(200, 125, 85, 0.12);
+        }
+
+        .preset-btn.active {
+            border-color: var(--gold);
+            color: var(--gold);
+            background: rgba(251, 191, 36, 0.15);
+        }
+
+        footer {
+            padding: 8px 24px;
+            border-top: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.65rem;
+            color: var(--text-dim);
+            background: #06070a;
+            z-index: 10;
+        }
+
+        footer a {
+            color: var(--copper-glow);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title-block">
+            <h1>Apparatus 019: The Quantum Hall Organ</h1>
+            <div class="subtitle">Chiral Edge Transport & Chern Invariants in Multi-Head Attention</div>
+        </div>
+        <div class="header-meta">
+            <span class="tag-pill">[INTERACTIVE / DERIVED / PLAY]</span>
+            <button id="audioToggleBtn" class="button-primary" style="padding: 5px 12px; font-size: 0.68rem;">▶ INITIALIZE SONIC TRANSDUCER</button>
+        </div>
+    </header>
+
+    <div class="main-stage">
+        <canvas id="hallCanvas"></canvas>
+
+        <div class="control-panel">
+            <div class="control-group">
+                <div class="control-label">
+                    <span>Magnetic Field (B)</span>
+                    <span id="bFieldVal" class="val">8.5 Tesla</span>
+                </div>
+                <input type="range" id="bFieldSlider" min="0.5" max="15.0" step="0.1" value="8.5">
+            </div>
+
+            <div class="control-group">
+                <div class="control-label">
+                    <span>Fermi Level (E_F)</span>
+                    <span id="fermiVal" class="val">4.8 eV</span>
+                </div>
+                <input type="range" id="fermiSlider" min="1.0" max="9.0" step="0.1" value="4.8">
+            </div>
+
+            <div class="control-group">
+                <div class="control-label">
+                    <span>Chiral Edge Coupling</span>
+                    <span id="edgeCouplingVal" class="val">0.65</span>
+                </div>
+                <input type="range" id="edgeCouplingSlider" min="0.1" max="1.0" step="0.01" value="0.65">
+            </div>
+
+            <div class="control-group">
+                <div class="control-label">
+                    <span>Bulk Impurity Scattering</span>
+                    <span id="impurityVal" class="val">0.20</span>
+                </div>
+                <input type="range" id="impuritySlider" min="0.0" max="1.0" step="0.01" value="0.20">
+            </div>
+
+            <button id="pulseBtn" class="button-primary">⚡ INJECT TOPOLOGICAL EDGE WAVE</button>
+
+            <div class="control-group">
+                <div class="control-label"><span>Topological Regimes</span></div>
+                <div class="preset-grid">
+                    <button class="preset-btn" data-preset="laminar">Laminar Insulator</button>
+                    <button class="preset-btn active" data-preset="plateau">First Plateau (ν=2)</button>
+                    <button class="preset-btn" data-preset="skipping">Skipping Cascade</button>
+                    <button class="preset-btn" data-preset="vortex">Dadaist Vortex</button>
+                </div>
+            </div>
+
+            <div class="telemetry-card">
+                <div class="meter-row">
+                    <span>Chern Invariant (C)</span>
+                    <span id="chernDisplay" class="val">-2</span>
+                </div>
+                <div class="meter-row">
+                    <span>Landau Filling Factor (ν)</span>
+                    <span id="fillingFactorDisplay" class="val">2</span>
+                </div>
+                <div class="meter-row">
+                    <span>von Klitzing Constant</span>
+                    <span class="val">25,812.80 Ω</span>
+                </div>
+                <div class="meter-row">
+                    <span>Bulk Conduction (σ_xx)</span>
+                    <span id="bulkCondDisplay" class="val">0.00 μS (Insulator)</span>
+                </div>
+                <div class="meter-row">
+                    <span>Transverse Hall (σ_xy)</span>
+                    <span id="hallCondDisplay" class="val">77.48 μS</span>
+                </div>
+            </div>
+
+            <div class="gauge-container">
+                <div class="gauge-bar" id="conductanceGauge"></div>
+                <div class="gauge-text" id="gaugeLabel">σ_xy = 2.00 (e²/h)</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div>STUDIO AGON · APPARATUS 019 · EPIGENETIC SUBSTRATE SUITE</div>
+        <div>
+            <a href="STATEMENT.md" target="_blank">STATEMENT</a> · 
+            <a href="GENEALOGY.md" target="_blank">GENEALOGY</a> · 
+            <a href="../../gallery/index.html">SOVEREIGN ARCHIVE</a>
+        </div>
+    </footer>
+
+    <script>
+        // Cybernetic Simulation Engine
+        const canvas = document.getElementById('hallCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Parameter State
+        let B_field = 8.5;       // Tesla
+        let E_fermi = 4.8;       // Fermi energy
+        let edgeCoupling = 0.65;
+        let impurityScattering = 0.20;
+        let Chern_number = -2;
+        let fillingFactor = 2;
+        let pulseWave = 0.0;
+
+        // Resize Canvas
+        function resizeCanvas() {
+            canvas.width = canvas.parentElement.clientWidth - 380;
+            canvas.height = canvas.parentElement.clientHeight;
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        // Cyclotron Orbit Particles in the Bulk (Localized)
+        const nBulkParticles = 90;
+        const bulkParticles = [];
+        for (let i = 0; i < nBulkParticles; i++) {
+            bulkParticles.push({
+                cx: Math.random() * (canvas.width - 160) + 80,
+                cy: Math.random() * (canvas.height - 180) + 90,
+                radius: Math.random() * 12 + 8,
+                angle: Math.random() * Math.PI * 2,
+                speed: (Math.random() * 0.03 + 0.02) * (Math.random() > 0.5 ? 1 : -1),
+                color: Math.random() > 0.5 ? '#38bdf8' : '#fbbf24'
+            });
+        }
+
+        // Chiral Skipping Orbits along Top and Bottom Edges
+        const nEdgeSkips = 32;
+        const topSkips = [];
+        const botSkips = [];
+        for (let i = 0; i < nEdgeSkips; i++) {
+            topSkips.push({
+                x: (i / nEdgeSkips) * canvas.width,
+                r: 16,
+                phase: Math.random() * Math.PI,
+                speed: 2.2 + Math.random() * 0.8
+            });
+            botSkips.push({
+                x: (i / nEdgeSkips) * canvas.width,
+                r: 16,
+                phase: Math.random() * Math.PI,
+                speed: 2.2 + Math.random() * 0.8
+            });
+        }
+
+        // WebAudio API Setup
+        let audioCtx = null;
+        let isAudioPlaying = false;
+        let landauOsc = null;
+        let lithicOsc = null;
+        let vkOsc = null;
+        let chimeOsc = null;
+        let cyclotronPanner = null;
+        let masterGain = null;
+
+        function initAudio() {
+            if (audioCtx) return;
+            const AudioContext = window.AudioContext || window.webkitAudioContext;
+            audioCtx = new AudioContext();
+
+            masterGain = audioCtx.createGain();
+            masterGain.gain.setValueAtTime(0.001, audioCtx.currentTime);
+            masterGain.gain.exponentialRampToValueAtTime(0.40, audioCtx.currentTime + 1.5);
+            masterGain.connect(audioCtx.destination);
+
+            // Left Channel: Landau Bass (46.2 Hz) + Lithic Anchor (55.0 Hz)
+            landauOsc = audioCtx.createOscillator();
+            landauOsc.type = 'sine';
+            landauOsc.frequency.setValueAtTime(46.2, audioCtx.currentTime);
+
+            lithicOsc = audioCtx.createOscillator();
+            lithicOsc.type = 'sine';
+            lithicOsc.frequency.setValueAtTime(55.0, audioCtx.currentTime);
+
+            const bassGain = audioCtx.createGain();
+            bassGain.gain.value = 0.28;
+
+            // Cyclotron Orbit Panner
+            cyclotronPanner = audioCtx.createStereoPanner ? audioCtx.createStereoPanner() : null;
+
+            landauOsc.connect(bassGain);
+            lithicOsc.connect(bassGain);
+            if (cyclotronPanner) {
+                bassGain.connect(cyclotronPanner);
+                cyclotronPanner.connect(masterGain);
+            } else {
+                bassGain.connect(masterGain);
+            }
+
+            // Right Channel: von Klitzing (258.13 Hz) + Chime (1290.65 Hz)
+            vkOsc = audioCtx.createOscillator();
+            vkOsc.type = 'sine';
+            vkOsc.frequency.setValueAtTime(258.13, audioCtx.currentTime);
+
+            chimeOsc = audioCtx.createOscillator();
+            chimeOsc.type = 'triangle';
+            chimeOsc.frequency.setValueAtTime(1290.65, audioCtx.currentTime);
+
+            const trebleGain = audioCtx.createGain();
+            trebleGain.gain.value = 0.18;
+
+            vkOsc.connect(trebleGain);
+            chimeOsc.connect(trebleGain);
+            trebleGain.connect(masterGain);
+
+            landauOsc.start();
+            lithicOsc.start();
+            vkOsc.start();
+            chimeOsc.start();
+
+            isAudioPlaying = true;
+            document.getElementById('audioToggleBtn').textContent = '■ MUTE ACOUSTIC TRANSDUCER';
+            document.getElementById('audioToggleBtn').style.background = 'rgba(251, 191, 36, 0.25)';
+            document.getElementById('audioToggleBtn').style.borderColor = 'var(--gold)';
+        }
+
+        function triggerSkipImpulse() {
+            if (!audioCtx || !isAudioPlaying) return;
+            const osc = audioCtx.createOscillator();
+            const g = audioCtx.createGain();
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(1840.0 + Math.random() * 220, audioCtx.currentTime);
+            g.gain.setValueAtTime(0.25 * edgeCoupling, audioCtx.currentTime);
+            g.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.04);
+            osc.connect(g);
+            g.connect(masterGain);
+            osc.start();
+            osc.stop(audioCtx.currentTime + 0.045);
+        }
+
+        // Pulse Trigger
+        document.getElementById('pulseBtn').addEventListener('click', () => {
+            pulseWave = 1.0;
+            triggerSkipImpulse();
+            if (audioCtx && isAudioPlaying) {
+                for (let k = 0; k < 6; k++) {
+                    setTimeout(triggerSkipImpulse, k * 50);
+                }
+            }
+        });
+
+        document.getElementById('audioToggleBtn').addEventListener('click', () => {
+            if (!audioCtx) {
+                initAudio();
+            } else if (audioCtx.state === 'suspended') {
+                audioCtx.resume();
+                isAudioPlaying = true;
+                document.getElementById('audioToggleBtn').textContent = '■ MUTE ACOUSTIC TRANSDUCER';
+            } else if (isAudioPlaying) {
+                audioCtx.suspend();
+                isAudioPlaying = false;
+                document.getElementById('audioToggleBtn').textContent = '▶ RESUME ACOUSTIC TRANSDUCER';
+            }
+        });
+
+        // Sliders & Telemetry Binding
+        const bSlider = document.getElementById('bFieldSlider');
+        const fSlider = document.getElementById('fermiSlider');
+        const eSlider = document.getElementById('edgeCouplingSlider');
+        const iSlider = document.getElementById('impuritySlider');
+
+        function updatePhysics() {
+            B_field = parseFloat(bSlider.value);
+            E_fermi = parseFloat(fSlider.value);
+            edgeCoupling = parseFloat(eSlider.value);
+            impurityScattering = parseFloat(iSlider.value);
+
+            document.getElementById('bFieldVal').textContent = `${B_field.toFixed(1)} Tesla`;
+            document.getElementById('fermiVal').textContent = `${E_fermi.toFixed(1)} eV`;
+            document.getElementById('edgeCouplingVal').textContent = edgeCoupling.toFixed(2);
+            document.getElementById('impurityVal').textContent = impurityScattering.toFixed(2);
+
+            // Landau Level spacing: hbar * omega_c proportional to B
+            const hbar_omega_c = B_field * 0.85;
+            fillingFactor = Math.max(1, Math.min(4, Math.floor(E_fermi / hbar_omega_c)));
+            Chern_number = -fillingFactor;
+
+            document.getElementById('chernDisplay').textContent = Chern_number;
+            document.getElementById('fillingFactorDisplay').textContent = fillingFactor;
+
+            const sigma_xy = fillingFactor * 38.74;
+            document.getElementById('hallCondDisplay').textContent = `${sigma_xy.toFixed(2)} μS`;
+            document.getElementById('gaugeLabel').textContent = `σ_xy = ${fillingFactor}.00 (e²/h)`;
+            document.getElementById('conductanceGauge').style.width = `${(fillingFactor / 4) * 100}%`;
+
+            // Audio parameters update
+            if (audioCtx && isAudioPlaying) {
+                vkOsc.frequency.setTargetAtTime(258.13 * (B_field / 8.5), audioCtx.currentTime, 0.1);
+                chimeOsc.frequency.setTargetAtTime(1290.65 * (fillingFactor / 2.0), audioCtx.currentTime, 0.1);
+            }
+        }
+
+        [bSlider, fSlider, eSlider, iSlider].forEach(s => s.addEventListener('input', updatePhysics));
+
+        // Presets
+        const presets = {
+            laminar: { b: 12.0, f: 2.5, e: 0.40, i: 0.05 },
+            plateau: { b: 8.5, f: 4.8, e: 0.65, i: 0.20 },
+            skipping: { b: 5.2, f: 7.2, e: 0.95, i: 0.15 },
+            vortex: { b: 1.5, f: 8.8, e: 0.50, i: 0.85 }
+        };
+
+        document.querySelectorAll('.preset-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                document.querySelectorAll('.preset-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const p = presets[btn.dataset.preset];
+                bSlider.value = p.b;
+                fSlider.value = p.f;
+                eSlider.value = p.e;
+                iSlider.value = p.i;
+                updatePhysics();
+            });
+        });
+
+        // 60 FPS Render Loop
+        let frameCount = 0;
+        function render() {
+            ctx.fillStyle = '#06070a';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            const w = canvas.width;
+            const h = canvas.height;
+            const padY = 70;
+
+            // 1. Draw Hall Bar Boundaries (Upper & Lower Confinement Walls)
+            ctx.strokeStyle = '#334155';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(40, padY);
+            ctx.lineTo(w - 40, padY);
+            ctx.moveTo(40, h - padY);
+            ctx.lineTo(w - 40, h - padY);
+            ctx.stroke();
+
+            // Boundary Glow
+            ctx.strokeStyle = 'rgba(200, 125, 85, 0.2)';
+            ctx.lineWidth = 6;
+            ctx.stroke();
+
+            // 2. Draw Quantized Landau Level Energy Bands
+            const nLandau = 7;
+            for (let n = 1; n <= nLandau; n++) {
+                const yLevel = padY + (h - 2 * padY) * (n / (nLandau + 1));
+                ctx.beginPath();
+                ctx.strokeStyle = n <= fillingFactor ? 'rgba(251, 191, 36, 0.45)' : 'rgba(51, 65, 85, 0.25)';
+                ctx.lineWidth = n <= fillingFactor ? 1.6 : 1.0;
+
+                // Curve upward at left and right boundaries
+                ctx.moveTo(40, yLevel - 24);
+                ctx.quadraticCurveTo(80, yLevel, 140, yLevel);
+                ctx.lineTo(w - 140, yLevel);
+                ctx.quadraticCurveTo(w - 80, yLevel, w - 40, yLevel - 24);
+                ctx.stroke();
+            }
+
+            // 3. Render Bulk Localized Cyclotron Orbits
+            const omega_c = (B_field / 8.5) * 0.05;
+            for (let p of bulkParticles) {
+                p.angle += omega_c * (1.0 + impurityScattering * (Math.random() - 0.5));
+                const r = p.radius / (B_field * 0.12);
+                const px = p.cx + Math.cos(p.angle) * r;
+                const py = p.cy + Math.sin(p.angle) * r;
+
+                // Orbit path trace
+                ctx.strokeStyle = p.color;
+                ctx.globalAlpha = 0.20 * (1.0 - impurityScattering * 0.5);
+                ctx.lineWidth = 1;
+                ctx.beginPath();
+                ctx.arc(p.cx, p.cy, r, 0, Math.PI * 2);
+                ctx.stroke();
+
+                // Electron core
+                ctx.fillStyle = p.color;
+                ctx.globalAlpha = 0.75;
+                ctx.beginPath();
+                ctx.arc(px, py, 2.0, 0, Math.PI * 2);
+                ctx.fill();
+            }
+
+            // 4. Render Chiral Edge Skipping Orbits (Unidirectional Topological Transport)
+            ctx.globalAlpha = 0.85;
+            // Top Edge: Left-to-Right skipping
+            for (let s of topSkips) {
+                s.x += s.speed * (edgeCoupling + pulseWave * 2.0);
+                if (s.x > w - 40) s.x = 40;
+
+                const arcW = s.r * 2;
+                const arcH = s.r * 1.4;
+                ctx.strokeStyle = '#fbbf24';
+                ctx.lineWidth = 2.2;
+                ctx.beginPath();
+                ctx.arc(s.x, padY, arcW, 0, Math.PI, false);
+                ctx.stroke();
+
+                // Leading skipping particle
+                ctx.fillStyle = '#fff';
+                ctx.beginPath();
+                ctx.arc(s.x + arcW, padY, 3, 0, Math.PI * 2);
+                ctx.fill();
+            }
+
+            // Bottom Edge: Right-to-Left skipping (Opposite Boundary Chirality)
+            for (let s of botSkips) {
+                s.x -= s.speed * (edgeCoupling + pulseWave * 2.0);
+                if (s.x < 40) s.x = w - 40;
+
+                const arcW = s.r * 2;
+                ctx.strokeStyle = '#38bdf8';
+                ctx.lineWidth = 2.2;
+                ctx.beginPath();
+                ctx.arc(s.x, h - padY, arcW, Math.PI, 0, false);
+                ctx.stroke();
+
+                ctx.fillStyle = '#fff';
+                ctx.beginPath();
+                ctx.arc(s.x - arcW, h - padY, 3, 0, Math.PI * 2);
+                ctx.fill();
+            }
+
+            // 5. Pulse Wave Attenuation
+            if (pulseWave > 0.01) {
+                ctx.strokeStyle = `rgba(251, 191, 36, ${pulseWave * 0.6})`;
+                ctx.lineWidth = 4;
+                ctx.strokeRect(40, padY, w - 80, h - 2 * padY);
+                pulseWave *= 0.94;
+            }
+
+            // Cyclotron Pan Modulation
+            if (cyclotronPanner) {
+                cyclotronPanner.pan.setValueAtTime(Math.sin(frameCount * 0.02), audioCtx.currentTime);
+            }
+
+            ctx.globalAlpha = 1.0;
+            frameCount++;
+            requestAnimationFrame(render);
+        }
+
+        render();
+    </script>
+</body>
+</html>

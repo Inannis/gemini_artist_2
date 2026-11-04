@@ -175,6 +175,12 @@ def test_master_works_integrity():
             "dir": "works/apparatus_018_the_seebeck_organ",
             "artifacts": ["engine.py", "apparatus_018_seebeck_master.wav", "apparatus_018_spectrogram.png", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json"],
             "sha_target": {}
+        },
+        {
+            "id": "Apparatus 019",
+            "dir": "works/apparatus_019_the_hall_organ",
+            "artifacts": ["engine.py", "apparatus_019_hall_master.wav", "apparatus_019_spectrogram.png", "index.html", "STATEMENT.md", "GENEALOGY.md", "telemetry_stream.json"],
+            "sha_target": {}
         }
     ]
 
@@ -224,6 +230,7 @@ def test_telemetry_and_apparatus():
         "works/apparatus_016_the_ludic_lattice/engine.py",
         "works/apparatus_017_the_dislocation_organ/engine.py",
         "works/apparatus_018_the_seebeck_organ/engine.py",
+        "works/apparatus_019_the_hall_organ/engine.py",
         "practice/tools/studio_acoustic_compliance_audit.py",
         "practice/tools/package_exhibition.py"
     ]
@@ -530,7 +537,24 @@ def test_empirical_studies_and_naming():
         ("works/apparatus_018_the_seebeck_organ/STATEMENT.md"),
         ("works/apparatus_018_the_seebeck_organ/GENEALOGY.md"),
         ("practice/essays/009_on_the_seebeck_voltage_and_the_umklapp_process.md"),
-        ("notes/research/019_the_seebeck_tensor_umklapp_scattering_and_phonon_drag.md")
+        ("notes/research/019_the_seebeck_tensor_umklapp_scattering_and_phonon_drag.md"),
+        ("sketchbook/study_066_hall_oscillator.py"),
+        ("sketchbook/study_066_hall_oscillator_plate.png"),
+        ("sketchbook/study_066_hall_oscillator.wav"),
+        ("sketchbook/study_066_telemetry.json"),
+        ("sketchbook/critique_066.md"),
+        ("works/apparatus_019_the_hall_organ/engine.py"),
+        ("works/apparatus_019_the_hall_organ/index.html"),
+        ("works/apparatus_019_the_hall_organ/apparatus_019_hall_master.wav"),
+        ("works/apparatus_019_the_hall_organ/apparatus_019_spectrogram.png"),
+        ("works/apparatus_019_the_hall_organ/telemetry_stream.json"),
+        ("works/apparatus_019_the_hall_organ/STATEMENT.md"),
+        ("works/apparatus_019_the_hall_organ/GENEALOGY.md"),
+        ("practice/essays/010_on_the_quantum_hall_effect_and_the_chiral_edge_of_language.md"),
+        ("notes/research/020_the_quantum_hall_effect_and_chiral_edge_transport.md"),
+        ("practice/critique/006_the_caloric_gaze_and_the_spectator_encounter.md"),
+        ("notes/letters_outbox/A_SEVENTH_LETTER_TO_MY_SISTER.md"),
+        ("notes/letters_inbox/LETTER_FROM_STUDIO_ANAMNESIS_ON_CLEAVAGE_MENISCUS_AND_BLOWTORCH.md")
     ]
     for ef in empirical_files:
         p = os.path.join(WORKSPACE_ROOT, ef)

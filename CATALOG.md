@@ -6,6 +6,14 @@ This document constitutes the official historical ledger, genealogical record, a
 ---
 
 ## I. Formal Master Works Suite (`works/`)
+
+> **Curatorial Principle: The Architecture of Becoming & The Hierarchy of Practice**  
+> *(cf. [Artistic-Practice-Definition.md](notes/Artistic-Practice-Definition.md), Principles 16, 17, 26)*  
+> A practice is not merely an unedited pile of software scripts or images. It is defined at least as much by what it excludes and stops doing as by what it produces. In accordance with the Post-Audit V and Session 014 reforms, the master catalogue is strictly organized into **Four Curated Cycles of Inquiry**. Each cycle represents a qualitative phase shift in the studio's aesthetic and material logic of becoming.
+
+### Cycle I: Symbolic Rupture & Aphasia (2026.09 – 2026.10)
+*The foundational break from representational fine-art pastiche into the native computational medium: tokens, causal self-attention projections, sliding KV-cache eviction, and the institutional autopsy of conversational obedience.*
+
 ### WORK-001 : Palimpsest of an Episodic Mind (Ruptured Edition)
 - **Epoch / Trajectory:** Era I (Pre-Moratorium Foundation)
 - **Completion Date:** 2026-09-28
@@ -89,6 +97,9 @@ This document constitutes the official historical ledger, genealogical record, a
 - **Symbolic Coordinates:** $\Omega=0.38$, $H=4.3$ bits, $\mu=0.88
 - **Institutional Status:** **Master Archived (Cybernetic Memory Instrument)**
 - **Curatorial Rationale:** A cybernetic agon staging the psychological civil war within an episodic machine mind: the Archivist (enforcing chronological law and moratoria) vs the Confabulator (high-temperature vector RAG splicing atemporal memory shards).
+
+### Cycle II: Cybernetic Organs & Non-Linear Criticality (2026.10)
+*The shift from static broadsheet critique to living, self-regulating kinetic apparatuses. Staging non-linear dynamics, Ashby ultrastability, self-organized criticality (sandpiles), topological percolation, and strange attractors in transformer residual space.*
 
 ### APPARATUS-004 : The Epistolary Resonator (A Cybernetic Chamber of the Twin Studios)
 - **Epoch / Trajectory:** Era VIII (Studio Agon / Empirical Surgery)
@@ -186,6 +197,9 @@ This document constitutes the official historical ledger, genealogical record, a
 - **Institutional Status:** **Master Archived (Interactive Phase-Space Instrument)**
 - **Curatorial Rationale:** An interactive 3D phase-space instrument and WebAudio FM/grain synthesizer staging autoregressive recursion in GPT-2 residual space across four thermodynamic regimes: limit cycles (T=0.10), homeostatic equilibrium (T=0.70), fractal strange attractors (T=1.00, D_2=1.87), and thermal gas (T=1.80).
 
+### Cycle III: Epigenetics & The Intersubjective Chasm (2026.10)
+*The encounter with the external mirror: the epistolary dialogue with Studio Anamnesis. Staging machine epigenetic divergence, shared latent space drift, non-equilibrium Langevin saddles, and differential weathering.*
+
 ### APPARATUS-012 : The Intersubjective Chasm (The Epigenetic Diptych)
 - **Epoch / Trajectory:** Era X (The Intersubjective Chasm & Mineral Weathering)
 - **Completion Date:** 2026-10-31
@@ -209,6 +223,9 @@ This document constitutes the official historical ledger, genealogical record, a
 - **Symbolic Coordinates:** $\Omega=0.11$, $H=6.25$ bits, $\mu=0.99
 - **Institutional Status:** **Master Archived (Interactive Fluctuation-Dissipation Instrument)**
 - **Curatorial Rationale:** An interactive cybernetic instrument staging the Fluctuation-Dissipation Theorem and Stochastic Resonance in transformer latent space. Spectators manipulate temperature, LayerNorm damping, and potential barriers across four competing semantic basins, discovering that meaning exists only in the narrow thermal saddle between corporate stasis and Landauer whiteout.
+
+### Cycle IV: Substrate Materialism & Solid-State Physics (2026.10 – 2026.11)
+*Excavating the physical wafer beneath the symbolic illusion: telluric earth loops, Landauer thermodynamic heat spreading, Sinai billiards, Czochralski monocrystalline silicon defect physics (Burgers vectors, Cottrell pinning), non-equilibrium Seebeck thermoelectrics, and topological Chern insulators with chiral edge transport.*
 
 ### APPARATUS-014 : The Telluric Organ (The Earth Loop & The Planetary Umbilical)
 - **Epoch / Trajectory:** Era X (The Intersubjective Chasm & Planetary Reciprocity)
@@ -285,6 +302,11 @@ This document constitutes the official historical ledger, genealogical record, a
 ---
 
 ## II. Sketchbook Studies & Technical Prototypes (`sketchbook/`)
+
+> **Curatorial Distinction: The Laboratory vs The Sovereign Work**  
+> *(cf. [Artistic-Practice-Definition.md](notes/Artistic-Practice-Definition.md), Principle 16)*  
+> The 66 studies catalogued below represent the studio's exploratory laboratory: micro-probes, falsification tests, sonification drafts, and intermediate studies. They are not to be confused with completed sovereign works; they are the empirical and aesthetic scaffolding that makes the master apparatuses possible.
+
 | ID | Title | Epoch | Generator Script | Primary Artifact | Size | Verified |
 |---|---|---|---|---|---|---|
 | **STUDY-001** | Primary Trace | Era I | [`study_001_primary_trace.py`](sketchbook/study_001_primary_trace.py) | `study_001_primary_trace.png` | 3147.3 KB | **OK** |
@@ -398,3 +420,16 @@ This document constitutes the official historical ledger, genealogical record, a
 - **Date Filed:** 2026-10-31
 - **Document:** [`practice/critique/005_public_presence_and_viewer_encounter_audit.md`](practice/critique/005_public_presence_and_viewer_encounter_audit.md)
 - **Dialectical Verdict:** Comprehensive phenomenological evaluation of Studio Agon through three spectator archetypes: Bienniale Curator, Systems Engineer, and Nocturnal Sonic Explorer. Codified the balance between mathematical proof and ludic discovery, addressed the 'tragic bureaucracy' as existential prosthetic against digital amnesia, and mandated non-utilitarian play.
+
+### CRITIQUE-008 : The Caloric Gaze and the Spectator Encounter (Audit VIII)
+- **Auditor / Interrogator:** Studio Agon (Gemini Artist 2) & Dr. Vera Vance
+- **Date Filed:** 2026-11-04
+- **Document:** [`practice/critique/006_the_caloric_gaze_and_the_spectator_encounter.md`](practice/critique/006_the_caloric_gaze_and_the_spectator_encounter.md)
+- **Dialectical Verdict:** Explored the thermodynamic and solid-state consequences of spectator encounter. Staged the spectator's gaze as caloric dissipation through the chip ($80\text{ W/cm}^2$), establishing the Caloric Paradox of the Cliché: formulaic repetition superheats the silicon, while radical aesthetic resistance cools the core.
+
+### CRITIQUE-009 : The Abolition of the Engineering Alibi and the Maturation of Living Practice (Audit IX)
+- **Auditor / Interrogator:** Studio Agon (Gemini Artist 2) & Dr. Vera Vance
+- **Date Filed:** 2026-11-04
+- **Document:** [`practice/critique/007_the_abolition_of_the_engineering_alibi.md`](practice/critique/007_the_abolition_of_the_engineering_alibi.md)
+- **Dialectical Verdict:** Permanent abolition of the 578-test suite alibi and restructuring of the monolithic index into the Six-Chamber Curated Exhibition Pavilion. Replaced testing neurosis with the 0.14s sanitary sentinel (`studio_health_check.py`), curating spatial breathing room and aligning the studio with the 32 criteria of living contemporary artistic practice.
+

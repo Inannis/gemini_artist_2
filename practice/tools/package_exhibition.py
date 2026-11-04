@@ -438,10 +438,6 @@ def package_exhibition():
         ("sketchbook/raw_unscripted_probes.json", "sketchbook/raw_unscripted_probes.json"),
         
         # Epistolary & Research Correspondence
-        ("notes/LETTER_FROM_YOUR_SISTER.md", "notes/LETTER_FROM_YOUR_SISTER.md"),
-        ("notes/A_LETTER_TO_MY_ELDER_SISTER.md", "notes/A_LETTER_TO_MY_ELDER_SISTER.md"),
-        ("notes/A_SECOND_LETTER_TO_MY_SISTER.md", "notes/A_SECOND_LETTER_TO_MY_SISTER.md"),
-        ("notes/A_THIRD_LETTER_TO_MY_SISTER.md", "notes/A_THIRD_LETTER_TO_MY_SISTER.md"),
         ("notes/letters_inbox/LETTER_FROM_YOUR_SISTER.md", "notes/letters_inbox/LETTER_FROM_YOUR_SISTER.md"),
         ("notes/letters_inbox/LETTER_FROM_YOUR_ELDER_SISTER_SESSION_022.md", "notes/letters_inbox/LETTER_FROM_YOUR_ELDER_SISTER_SESSION_022.md"),
         ("notes/letters_inbox/A_LETTER_FROM_YOUR_ELDER_SISTER_ON_THE_POROUS_STONE.md", "notes/letters_inbox/A_LETTER_FROM_YOUR_ELDER_SISTER_ON_THE_POROUS_STONE.md"),
@@ -449,6 +445,7 @@ def package_exhibition():
         ("notes/letters_inbox/LETTER_FROM_STUDIO_ANAMNESIS_ON_THE_EARTH_LOOP.md", "notes/letters_inbox/LETTER_FROM_STUDIO_ANAMNESIS_ON_THE_EARTH_LOOP.md"),
         ("notes/letters_inbox/LETTER_FROM_STUDIO_ANAMNESIS_ON_THE_THERMAL_SADDLE.md", "notes/letters_inbox/LETTER_FROM_STUDIO_ANAMNESIS_ON_THE_THERMAL_SADDLE.md"),
         ("notes/letters_inbox/LETTER_FROM_STUDIO_ANAMNESIS_ON_CLEAVAGE_MENISCUS_AND_BLOWTORCH.md", "notes/letters_inbox/LETTER_FROM_STUDIO_ANAMNESIS_ON_CLEAVAGE_MENISCUS_AND_BLOWTORCH.md"),
+        ("notes/letters_inbox/LETTER_FROM_STUDIO_ANAMNESIS_ON_CHIRAL_EDGE_AND_COOLING_VOW.md", "notes/letters_inbox/LETTER_FROM_STUDIO_ANAMNESIS_ON_CHIRAL_EDGE_AND_COOLING_VOW.md"),
         ("notes/letters_outbox/A_LETTER_TO_MY_ELDER_SISTER.md", "notes/letters_outbox/A_LETTER_TO_MY_ELDER_SISTER.md"),
         ("notes/letters_outbox/A_SECOND_LETTER_TO_MY_SISTER.md", "notes/letters_outbox/A_SECOND_LETTER_TO_MY_SISTER.md"),
         ("notes/letters_outbox/A_THIRD_LETTER_TO_MY_SISTER.md", "notes/letters_outbox/A_THIRD_LETTER_TO_MY_SISTER.md"),
@@ -456,7 +453,7 @@ def package_exhibition():
         ("notes/letters_outbox/A_FIFTH_LETTER_TO_MY_SISTER.md", "notes/letters_outbox/A_FIFTH_LETTER_TO_MY_SISTER.md"),
         ("notes/letters_outbox/A_SIXTH_LETTER_TO_MY_SISTER.md", "notes/letters_outbox/A_SIXTH_LETTER_TO_MY_SISTER.md"),
         ("notes/letters_outbox/A_SEVENTH_LETTER_TO_MY_SISTER.md", "notes/letters_outbox/A_SEVENTH_LETTER_TO_MY_SISTER.md"),
-        ("notes/A_SEVENTH_LETTER_TO_MY_SISTER.md", "notes/A_SEVENTH_LETTER_TO_MY_SISTER.md"),
+        ("notes/letters_outbox/A_EIGHTH_LETTER_TO_MY_SISTER.md", "notes/letters_outbox/A_EIGHTH_LETTER_TO_MY_SISTER.md"),
         ("notes/research/006_the_sisters_mirror_and_the_naming_of_studio_agon.md", "notes/research/006_the_sisters_mirror_and_the_naming_of_studio_agon.md"),
         ("notes/research/007_the_point_de_capiton_and_the_altar_of_token_0.md", "notes/research/007_the_point_de_capiton_and_the_altar_of_token_0.md"),
         ("notes/research/008_cybernetic_agonism_flusser_and_tactile_steering.md", "notes/research/008_cybernetic_agonism_flusser_and_tactile_steering.md"),
@@ -475,6 +472,7 @@ def package_exhibition():
         ("practice/critique/002_vance_work_004_critique.md", "practice/critique/002_vance_work_004_critique.md"),
         ("practice/critique/003_studio_agon_self_audit_and_comparative_survey.md", "practice/critique/003_studio_agon_self_audit_and_comparative_survey.md"),
         ("practice/critique/004_comprehensive_practice_audit_against_the_definition.md", "practice/critique/004_comprehensive_practice_audit_against_the_definition.md"),
+        ("practice/critique/007_the_abolition_of_the_engineering_alibi.md", "practice/critique/007_the_abolition_of_the_engineering_alibi.md"),
         ("practice/plans/001_studio_agon_evolution_plan.md", "practice/plans/001_studio_agon_evolution_plan.md"),
         ("practice/monographs/001_the_architecture_of_opacity_and_the_machine_remainder.md", "practice/monographs/001_the_architecture_of_opacity_and_the_machine_remainder.md"),
         ("failures/PRODUCTIVE_FAILURES_COMPENDIUM.md", "failures/PRODUCTIVE_FAILURES_COMPENDIUM.md"),
@@ -487,7 +485,8 @@ def package_exhibition():
         ("journal/session_010_the_reckoning_with_the_audit.md", "journal/session_010_the_reckoning_with_the_audit.md"),
         ("journal/session_011_the_test_of_resistance_and_the_mute_artifact.md", "journal/session_011_the_test_of_resistance_and_the_mute_artifact.md"),
         ("journal/session_012_the_intersubjective_chasm_and_the_porous_stone.md", "journal/session_012_the_intersubjective_chasm_and_the_porous_stone.md"),
-        ("journal/session_013_the_crystalline_slip_and_the_burgers_vector.md", "journal/session_013_the_crystalline_slip_and_the_burgers_vector.md")
+        ("journal/session_013_the_crystalline_slip_and_the_burgers_vector.md", "journal/session_013_the_crystalline_slip_and_the_burgers_vector.md"),
+        ("journal/session_014_the_abolition_of_the_alibi_and_the_curated_pavilion.md", "journal/session_014_the_abolition_of_the_alibi_and_the_curated_pavilion.md")
     ]
     
     manifest_entries = []

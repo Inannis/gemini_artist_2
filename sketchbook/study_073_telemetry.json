@@ -1,0 +1,76 @@
+{
+  "study_id": "STUDY-073",
+  "title": "The Real Projective Plane RP^2, Boy's Surface Immersion, and Z_2 Homotopy",
+  "epoch": "Era XIV (The Non-Orientable Manifold & Solitary Divergence)",
+  "epistemic_status": "[MEASURED / DERIVED / PLAY]",
+  "foundation_model": "gpt2 (124M parameters)",
+  "num_layers": 12,
+  "residual_dim": 768,
+  "euler_characteristic": 1,
+  "fundamental_group": "pi_1(RP^2) = Z_2",
+  "antipodal_line_invariance": 1.0,
+  "triple_point_telemetry": {
+    "triad_tokens": [
+      "triadic_encounter_5",
+      "dialectical_negation_1",
+      "dialectical_negation_19"
+    ],
+    "projective_proximity": 0.9886,
+    "pairwise_tangent_angles_deg": [
+      120.3,
+      117.9,
+      113.0
+    ],
+    "mean_dihedral_angle_deg": 117.07
+  },
+  "projective_metrics_by_circuit": {
+    "laminar_continuum": {
+      "mean_d_rp_rad": 0.1713,
+      "max_d_rp_rad": 0.3521,
+      "min_d_rp_rad": 0.0412
+    },
+    "dialectical_negation": {
+      "mean_d_rp_rad": 0.1464,
+      "max_d_rp_rad": 0.3129,
+      "min_d_rp_rad": 0.0381
+    },
+    "triadic_encounter": {
+      "mean_d_rp_rad": 0.1957,
+      "max_d_rp_rad": 0.4102,
+      "min_d_rp_rad": 0.0524
+    },
+    "z2_projective_loop": {
+      "mean_d_rp_rad": 0.1492,
+      "max_d_rp_rad": 0.3245,
+      "min_d_rp_rad": 0.0418
+    },
+    "dada_zaum_dispersion": {
+      "mean_d_rp_rad": 0.1225,
+      "max_d_rp_rad": 0.2874,
+      "min_d_rp_rad": 0.0298
+    }
+  },
+  "parallel_transport_z2": {
+    "det_turn_1": -1.0,
+    "det_turn_2": -1.0,
+    "det_composite": 1.0,
+    "stiefel_whitney_class_w1": 1,
+    "covering_sphere_homotopy_trivial": true
+  },
+  "acoustic_master": {
+    "file": "sketchbook/study_073_projective_triple_point.wav",
+    "duration_sec": 60.0,
+    "sample_rate": 48000,
+    "bit_depth": 24,
+    "rms_dbfs": -20.0,
+    "true_peak_dbfs": -11.58,
+    "crest_factor_db": 8.42,
+    "compliance": "EBU R128 PASS"
+  },
+  "visual_plate": {
+    "file": "sketchbook/study_073_boys_surface_plate.png",
+    "dimensions": "2800x1800 px",
+    "moratorium_07_compliant": true,
+    "size_kb": 940.5
+  }
+}

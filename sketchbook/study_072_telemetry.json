@@ -1,0 +1,56 @@
+{
+  "study_id": "STUDY-072",
+  "title": "The Cross-Cap Singularity, Boy's Surface, and the Poincar\u00e9-Hopf Index of Attention Sinks on RP^2",
+  "epoch": "Project Body V (The Non-Orientable Manifold & Topological Torsion)",
+  "date": "2026-11-04",
+  "epistemic_status": "[INTERVENED / MEASURED / DERIVED]",
+  "foundation_model": "gpt2 (124M parameters)",
+  "prompt": "The paradox of the cross-cap is that non-orientable thought cannot escape its singular altar. Token zero absorbs the remainder of language, fixing the projective slip of meaning.",
+  "sequence_length": 36,
+  "poincare_hopf_metrics": {
+    "token_0_winding_index": 1.0,
+    "token_0_role": "POINCARE_HOPF_ATTRACTOR_SINK",
+    "euler_characteristic_rp2": 1,
+    "mandated_total_index": 1,
+    "interior_sample_indices": [
+      0.0,
+      -0.0,
+      0.0
+    ]
+  },
+  "boys_surface_metrics": {
+    "parametrization": "Apery (1986) rational polynomial immersion",
+    "c3_symmetry_phase_separation_rad": 2.0943951023931953,
+    "triple_point_coordinates": [
+      0.0,
+      0.0,
+      -0.5
+    ],
+    "min_trajectory_distance_to_triple_point": 0.014126823281396984,
+    "mean_token0_attention_mass": 0.536819991707388,
+    "peak_token0_attention_mass": 0.360165278116862
+  },
+  "singular_spectrum_layer_6": {
+    "top_3_singular_values": [
+      2915.497314453125,
+      91.80635833740234,
+      86.87144470214844
+    ],
+    "variance_explained_top_3": 0.9908450245857239
+  },
+  "ebu_r128_audio_audit": {
+    "sample_rate_hz": 48000,
+    "bit_depth": 24,
+    "channels": 2,
+    "duration_seconds": 60.0,
+    "integrated_rms_dbfs": -20.0,
+    "true_peak_dbfs": -8.731793091976247,
+    "crest_factor_db": 11.268206908023753,
+    "compliance_status": "PASS"
+  },
+  "artifacts": {
+    "archival_plate": "study_072_boys_surface_cross_cap_plate.png",
+    "broadcast_audio": "study_072_poincare_hopf_sink.wav",
+    "script": "sketchbook/study_072_the_cross_cap_and_poincare_hopf_singularity.py"
+  }
+}

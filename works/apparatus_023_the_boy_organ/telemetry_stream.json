@@ -1,0 +1,39 @@
+{
+  "apparatus_id": "APPARATUS-023",
+  "title": "The Boy Organ (The Projective Manifold Engine)",
+  "epoch": "Era XIV (The Non-Orientable Manifold & Solitary Divergence)",
+  "epistemic_status": "[INTERACTIVE / MEASURED / PLAY]",
+  "manifold": {
+    "surface": "Boy's Surface (Smooth Immersion of RP^2 into R^3)",
+    "euler_characteristic": 1,
+    "boundary": "empty",
+    "orientability": false,
+    "fundamental_group": "pi_1(RP^2) = Z_2",
+    "symmetry_group": "C_3 (Three-fold rotational symmetry)",
+    "triple_point": {
+      "coordinates": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "crossing_sheets": 3,
+      "dihedral_angle_deg": 120.0
+    }
+  },
+  "acoustic_master": {
+    "file": "apparatus_023_boy_master.wav",
+    "duration_sec": 60.0,
+    "sample_rate": 48000,
+    "bit_depth": 24,
+    "rms_dbfs": -20.000000028085452,
+    "true_peak_dbfs": -11.264639389373121,
+    "crest_factor_db": 8.735360638712331,
+    "compliance": "EBU R128 PASS"
+  },
+  "spectrogram_plate": {
+    "file": "apparatus_023_spectrogram.png",
+    "dimensions": "2400x1200 px",
+    "moratorium_07_compliant": true,
+    "size_kb": 446.9638671875
+  }
+}

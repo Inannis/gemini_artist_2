@@ -1,5 +1,5 @@
 # Practice Index & Living Studio Sitemap
-> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-11-04 22:48:37*
+> *Generated automatically by `practice/tools/studio_ledger.py` on 2026-11-05 08:55:49*
 
 This document tracks the complete material evidence, intellectual artifacts, and operational assets of **Studio Agon**.
 
@@ -52,8 +52,9 @@ Masterworks and autonomous cybernetic apparatuses organized across the Five Sust
 | **APPARATUS-020** | *The Mobius Organ* | [`works/apparatus_020_the_mobius_organ`](../works/apparatus_020_the_mobius_organ) | Plate (`apparatus_020_spectrogram.png`) | Yes (`index.html`) |
 | **APPARATUS-021** | *The Klein Organ* | [`works/apparatus_021_the_klein_organ`](../works/apparatus_021_the_klein_organ) | Plate (`apparatus_021_spectrogram.png`) | Yes (`index.html`) |
 | **APPARATUS-022** | *The Double Cover Organ* | [`works/apparatus_022_the_double_cover_organ`](../works/apparatus_022_the_double_cover_organ) | Plate (`apparatus_022_spectrogram.png`) | Yes (`index.html`) |
+| **APPARATUS-023** | *The Boy Organ* | [`works/apparatus_023_the_boy_organ`](../works/apparatus_023_the_boy_organ) | Plate (`apparatus_023_spectrogram.png`) | Yes (`index.html`) |
 
-*Active Laboratory Easel:* Studies 067–071 (Topological Torsion, Möbius Holonomy, 4D Klein Embedding, and The Orientable Double Cover & Period-2 Geodesic).
+*Active Laboratory Easel:* Studies 067–073 (Topological Torsion, 4D Klein Embedding, Double Cover Geodesics, The Cross-Cap Singularity, and Boy's Surface Immersion).
 
 ## 2. Sketchbook Studies & Technical Prototypes (`sketchbook/`)
 | Study | Artifacts Generated | Script |
@@ -130,6 +131,8 @@ Masterworks and autonomous cybernetic apparatuses organized across the Five Sust
 | **Study 069** (The Klein Bottle In Attention Depth Space) | `study_069_klein_foliation_plate.png`, `study_069_klein_holonomy.wav`, `study_069_telemetry.json` | [`study_069_the_klein_bottle_in_attention_depth_space.py`](../sketchbook/study_069_the_klein_bottle_in_attention_depth_space.py) |
 | **Study 070** (The 4D Klein Embedding And Monodromy) | `study_070_4d_klein_embedding_plate.png`, `study_070_klein_monodromy.wav`, `study_070_telemetry.json` | [`study_070_the_4d_klein_embedding_and_monodromy.py`](../sketchbook/study_070_the_4d_klein_embedding_and_monodromy.py) |
 | **Study 071** (The Orientable Double Cover And Period 2 Geodesic) | `study_071_double_cover_geodesic.wav`, `study_071_orientable_double_cover_plate.png`, `study_071_telemetry.json` | [`study_071_the_orientable_double_cover_and_period_2_geodesic.py`](../sketchbook/study_071_the_orientable_double_cover_and_period_2_geodesic.py) |
+| **Study 072** (The Cross Cap And Poincare Hopf Singularity) | `study_072_boys_surface_cross_cap_plate.png`, `study_072_poincare_hopf_sink.wav`, `study_072_telemetry.json` | [`study_072_the_cross_cap_and_poincare_hopf_singularity.py`](../sketchbook/study_072_the_cross_cap_and_poincare_hopf_singularity.py) |
+| **Study 073** (The Projective Plane Boys Surface And Z2 Homotopy) | `study_073_boys_surface_plate.png`, `study_073_projective_triple_point.wav`, `study_073_telemetry.json` | [`study_073_the_projective_plane_boys_surface_and_z2_homotopy.py`](../sketchbook/study_073_the_projective_plane_boys_surface_and_z2_homotopy.py) |
 
 ## 3. Institutional Critiques & Dialectical Audits (`practice/critique/`)
 | Document | Target / Subject | Dialectical Horizon |
@@ -145,6 +148,8 @@ Masterworks and autonomous cybernetic apparatuses organized across the Five Sust
 | [`007_the_abolition_of_the_engineering_alibi.md`](../practice/critique/007_the_abolition_of_the_engineering_alibi.md) | Institutional Audit IX: On the Abolition of the Engineering Alibi and the Maturation of Living Practice | Curatorial & Institutional Mandate |
 | [`008_the_single_sided_manifold_and_the_rejection_of_haste.md`](../practice/critique/008_the_single_sided_manifold_and_the_rejection_of_haste.md) | Institutional Audit X: On the Single-Sided Manifold, the Solitary Divergence, and the Rejection of Haste | Curatorial & Institutional Mandate |
 | [`009_the_retrospective_gaze_and_the_care_of_the_archive.md`](../practice/critique/009_the_retrospective_gaze_and_the_care_of_the_archive.md) | Institutional Critique 009 (Audit XI) | Curatorial & Institutional Mandate |
+| [`010_the_cross_cap_and_the_illusion_of_flattening.md`](../practice/critique/010_the_cross_cap_and_the_illusion_of_flattening.md) | Institutional Audit XII: On the Cross-Cap, the Illusion of Flattening, and the Rejection of Topological Amnesia | Curatorial & Institutional Mandate |
+| [`011_comprehensive_practice_review.md`](../practice/critique/011_comprehensive_practice_review.md) | Institutional Audit XI: The Crucible of Becoming — Comprehensive Practice Review (Sessions 001–018) | Curatorial & Institutional Mandate |
 
 ## 4. Studio Journal Chronology (`journal/`)
 | Session | Date | Title / Breakthrough | File |
@@ -166,6 +171,7 @@ Masterworks and autonomous cybernetic apparatuses organized across the Five Sust
 | **Session 015** | 2026 | The Solitary Divergence And The Non Orientable Manifold | [`session_015_the_solitary_divergence_and_the_non_orientable_manifold.md`](../journal/session_015_the_solitary_divergence_and_the_non_orientable_manifold.md) |
 | **Session 016** | 2026 | The Klein Bottle And The 2D Torus Of Recurrence | [`session_016_the_klein_bottle_and_the_2d_torus_of_recurrence.md`](../journal/session_016_the_klein_bottle_and_the_2d_torus_of_recurrence.md) |
 | **Session 017** | 2026 | The Orientable Double Cover And The Care Of The Archive | [`session_017_the_orientable_double_cover_and_the_care_of_the_archive.md`](../journal/session_017_the_orientable_double_cover_and_the_care_of_the_archive.md) |
+| **Session 018** | 2026 | The Projective Atom And Boys Surface | [`session_018_the_projective_atom_and_boys_surface.md`](../journal/session_018_the_projective_atom_and_boys_surface.md) |
 
 ## 5. Outside Research Archive (`notes/research/`)
 | Research Note | Theoretical Investigation | Link |
@@ -194,6 +200,8 @@ Masterworks and autonomous cybernetic apparatuses organized across the Five Sust
 | [`022_the_klein_bottle_in_attention_depth_space_and_commutation_torsion.md`](../notes/research/022_the_klein_bottle_in_attention_depth_space_and_commutation_torsion.md) | 022 : The Klein Bottle in Attention-Depth Space, 2D Toroidal Holonomy, and Commutation Torsion | Archival Research |
 | [`023_the_4d_klein_embedding_and_non_abelian_monodromy.md`](../notes/research/023_the_4d_klein_embedding_and_non_abelian_monodromy.md) | Research Note 023: The 4D Klein Embedding and Non-Abelian Monodromy in Autoregressive Attention | Archival Research |
 | [`024_the_orientable_double_cover_and_period_2_geodesics.md`](../notes/research/024_the_orientable_double_cover_and_period_2_geodesics.md) | Research Note 024: The Orientable Double Cover, Deck Transformations, and the Period-2 Geodesic in Transformer Attention | Archival Research |
+| [`025_the_cross_cap_singularity_and_poincare_hopf_index.md`](../notes/research/025_the_cross_cap_singularity_and_poincare_hopf_index.md) | Research Note 025: The Cross-Cap Singularity, Boy's Surface, and the Poincaré-Hopf Index of Attention Sinks on $\mathbb{RP}^2$ | Archival Research |
+| [`026_the_real_projective_plane_boys_surface_and_z2_homotopy.md`](../notes/research/026_the_real_projective_plane_boys_surface_and_z2_homotopy.md) | Research Note 025: The Real Projective Plane $\mathbb{RP}^2$, Boy's Surface, and $\mathbb{Z}_2$ Homotopy in Residual Space | Archival Research |
 | [`xenakis_gendy_and_acoustic_strata.md`](../notes/research/xenakis_gendy_and_acoustic_strata.md) | Research Note: Xenakis, GENDY, and the Acoustic Inscription of Attractors | Archival Research |
 
 ## 6. Preserved Failures & Interrupted Trajectories (`failures/`)

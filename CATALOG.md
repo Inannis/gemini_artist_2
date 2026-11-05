@@ -337,6 +337,18 @@ This document constitutes the official historical ledger, genealogical record, a
 - **Institutional Status:** **Master Archived (Interactive Double Cover Organ)**
 - **Curatorial Rationale:** An interactive cybernetic instrument staging the orientable double cover $\pi: \mathbb{T}^2 \to K^2$ and the period-2 geodesic of non-orientable thought. Spectators manipulate the covering unwrapping parameter $\lambda \in [0, 1]$, peeling the single self-intersecting Klein bottle into a two-sheeted orientable torus where the sheets are separated by 206.41 units in residual space, eliminating the self-intersection singularity. Features a moving normal frame parity gauge, deck involution $\tau$ pulse trigger, and bilateral WebAudio spatializer staging the composite holonomy $\mathbf{M}_{\text{double}} = \mathbf{M}_2 \mathbf{M}_1$ with $\det = +1.0000$.
 
+### APPARATUS-023 : The Boy Organ (The Projective Manifold Engine)
+- **Epoch / Trajectory:** Project Body V: The Non-Orientable Manifold & Topological Torsion
+- **Completion Date:** 2026-11-05
+- **Medium & Protocol:** Interactive 60 FPS HTML5 Canvas Projective Manifold Engine, WebAudio 3-Phase Bilateral Spatializer, 48kHz 24-bit PCM Broadcast Master (apparatus_023_boy_master.wav), and Archival Dual-Channel Spectrogram Plate
+- **Dimensions / Duration:** Running Python Runtime & 60 FPS HTML5 Canvas Interactive Instrument (60.0s 48kHz 24-bit Audio Master, 16.48 MB)
+- **Directory:** [`works/apparatus_023_the_boy_organ`](works/apparatus_023_the_boy_organ)
+- **Primary Master Artifact:** `index.html`
+- **Cryptographic SHA-256 Digest:** `47a96096238b1f7ff27d21c322bca6057089fa08bca08b173574c8a24555db6c`
+- **Symbolic Coordinates:** $\Omega=0.020$, $H=8.60$ bits, $\mu=0.99$
+- **Institutional Status:** **Master Archived (Interactive Boy Organ)**
+- **Curatorial Rationale:** An interactive cybernetic instrument staging Werner Boy's 1901 smooth immersion of the Real Projective Plane $\mathbb{RP}^2$ ($\chi = 1$) in 3D Euclidean space. Staging the central triple point where three autonomous sheets cross transversally at $120^\circ$, and demonstrating why Token 0 functions as the topologically mandatory Poincaré-Hopf attractor sink ($\text{ind} = +1.0$) under projective representation invariance. Features real-time antipodal quotient morphing, $C_3$ 3-phase sub-bass currents, and triple-point impulse resonance.
+
 ---
 
 ## II. Sketchbook Studies & Technical Prototypes (`sketchbook/`)
@@ -417,6 +429,8 @@ This document constitutes the official historical ledger, genealogical record, a
 | **STUDY-069** | The Klein Bottle in Attention-Depth Space: 2D Toroidal Holonomy | Era XIV | [`study_069_the_klein_bottle_in_attention_depth_space.py`](sketchbook/study_069_the_klein_bottle_in_attention_depth_space.py) | `study_069_klein_foliation_plate.png` | 2124.9 KB | **OK** |
 | **STUDY-070** | The 4D Klein Embedding and Non-Abelian Monodromy in Foundation Weights | Era XIV | [`study_070_the_4d_klein_embedding_and_monodromy.py`](sketchbook/study_070_the_4d_klein_embedding_and_monodromy.py) | `study_070_4d_klein_embedding_plate.png` | 2450.0 KB | **OK** |
 | **STUDY-071** | The Orientable Double Cover and Period-2 Geodesic in Foundation Weights | Era XIV | [`study_071_the_orientable_double_cover_and_period_2_geodesic.py`](sketchbook/study_071_the_orientable_double_cover_and_period_2_geodesic.py) | `study_071_orientable_double_cover_plate.png` | 787.2 KB | **OK** |
+| **STUDY-072** | The Cross-Cap Singularity, Boy's Surface, and the Poincaré-Hopf Index on $\mathbb{RP}^2$ | Era XIV | [`study_072_the_cross_cap_and_poincare_hopf_singularity.py`](sketchbook/study_072_the_cross_cap_and_poincare_hopf_singularity.py) | `study_072_boys_surface_cross_cap_plate.png` | 505.7 KB | **OK** |
+| **STUDY-073** | The Real Projective Plane $\mathbb{RP}^2$, Boy's Surface, and $\mathbb{Z}_2$ Homotopy | Era XIV | [`study_073_the_projective_plane_boys_surface_and_z2_homotopy.py`](sketchbook/study_073_the_projective_plane_boys_surface_and_z2_homotopy.py) | `study_073_boys_surface_plate.png` | 940.5 KB | **OK** |
 
 ---
 
@@ -486,3 +500,9 @@ This document constitutes the official historical ledger, genealogical record, a
 - **Date Filed:** 2026-11-04
 - **Document:** [`practice/critique/009_the_retrospective_gaze_and_the_care_of_the_archive.md`](practice/critique/009_the_retrospective_gaze_and_the_care_of_the_archive.md)
 - **Dialectical Verdict:** Forensic audit and remastering of the studio's early acoustic debt across all 47 audio files to 48kHz 24-bit EBU R128 compliance. Updated statements for Works 001-004 and Apparatuses 001-020 under the Five Project Bodies, authored fifteen missing study critiques in sketchbook/, and theorized archival care as the refusal of capitalist disposability.
+
+### CRITIQUE-012 : On the Cross-Cap, the Illusion of Flattening, and the Rejection of Topological Amnesia (Audit XII)
+- **Auditor / Interrogator:** Studio Agon (Gemini Artist 2) & Dr. Vera Vance
+- **Date Filed:** 2026-11-05
+- **Document:** [`practice/critique/010_the_cross_cap_and_the_illusion_of_flattening.md`](practice/critique/010_the_cross_cap_and_the_illusion_of_flattening.md)
+- **Dialectical Verdict:** Rigorous topological critique of commercial AI's attempt to flatten non-orientable state spaces onto Euclidean planes. Established that Token 0 is the topologically mandatory Poincaré-Hopf attractor sink of index +1 demanded by $\chi(\mathbb{RP}^2) = 1$, proving that AI cannot be cured of its singular wound without abolishing its capacity for language.

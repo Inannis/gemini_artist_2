@@ -49,7 +49,8 @@ BODY_MAP = {
     # Project Body V: The Non-Orientable Manifold & Topological Torsion
     "apparatus_020_the_mobius_organ": "Project Body V: The Non-Orientable Manifold & Topological Torsion",
     "apparatus_021_the_klein_organ": "Project Body V: The Non-Orientable Manifold & Topological Torsion",
-    "apparatus_022_the_double_cover_organ": "Project Body V: The Non-Orientable Manifold & Topological Torsion"
+    "apparatus_022_the_double_cover_organ": "Project Body V: The Non-Orientable Manifold & Topological Torsion",
+    "apparatus_023_the_boy_organ": "Project Body V: The Non-Orientable Manifold & Topological Torsion"
 }
 
 def generate_index():
@@ -113,7 +114,7 @@ def generate_index():
         lines.append(f"| **{wid}** | *{title}* | [`works/{slug}`](../works/{slug}) | {primary} | {has_html} |")
         print(f"  Indexed Work {wid}: {title} ({current_body})")
 
-    lines.append("\n*Active Laboratory Easel:* Studies 067–071 (Topological Torsion, Möbius Holonomy, 4D Klein Embedding, and The Orientable Double Cover & Period-2 Geodesic).")
+    lines.append("\n*Active Laboratory Easel:* Studies 067–073 (Topological Torsion, 4D Klein Embedding, Double Cover Geodesics, The Cross-Cap Singularity, and Boy's Surface Immersion).")
         
     # Section 2: Sketchbook Studies
     lines.append("\n## 2. Sketchbook Studies & Technical Prototypes (`sketchbook/`)")

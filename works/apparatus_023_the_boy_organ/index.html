@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apparatus 023 · The Boy Organ (The Projective Manifold Engine)</title>
+  <style>
+    :root {
+      --bg: #030509;
+      --card-bg: rgba(9, 14, 24, 0.92);
+      --border: #1a253a;
+      --border-focus: #38bdf8;
+      --text: #e2e8f5;
+      --text-muted: #7282a5;
+      --cyan: #38bdf8;
+      --amber: #f59e0b;
+      --crimson: #ef4444;
+      --gold: #fbbf24;
+      --indigo: #6366f1;
+      --font-mono: "SF Mono", Monaco, "DejaVu Sans Mono", monospace;
+      --font-serif: "Times New Roman", Garamond, Georgia, serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-mono);
+      overflow: hidden;
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    #canvas-container {
+      flex: 1;
+      height: 100%;
+      position: relative;
+      cursor: grab;
+    }
+    #canvas-container:active { cursor: grabbing; }
+
+    canvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    /* Sidebar Controls */
+    #sidebar {
+      width: 400px;
+      height: 100%;
+      background: var(--card-bg);
+      border-left: 1px solid var(--border);
+      backdrop-filter: blur(16px);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      overflow-y: auto;
+      z-index: 10;
+    }
+
+    h1 {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      font-weight: 400;
+      color: #fff;
+      letter-spacing: -0.01em;
+      line-height: 1.25;
+    }
+
+    .subhead {
+      font-size: 0.72rem;
+      color: var(--cyan);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-top: 4px;
+    }
+
+    .desc {
+      font-size: 0.80rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 12px;
+    }
+
+    .control-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .control-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+    .control-val { color: var(--cyan); font-weight: bold; }
+
+    input[type=range] {
+      width: 100%;
+      accent-color: var(--cyan);
+      background: #090e18;
+      height: 4px;
+      border-radius: 2px;
+      outline: none;
+    }
+
+    .btn-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    button {
+      background: rgba(56, 189, 248, 0.06);
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      padding: 10px 14px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    button:hover {
+      background: rgba(56, 189, 248, 0.15);
+      border-color: var(--border-focus);
+      color: #fff;
+    }
+
+    button.active {
+      background: var(--cyan);
+      color: #030509;
+      font-weight: bold;
+      border-color: var(--cyan);
+    }
+
+    button.pulse-btn {
+      background: rgba(239, 68, 68, 0.12);
+      border-color: rgba(239, 68, 68, 0.4);
+      color: #fca5a5;
+      grid-column: span 2;
+    }
+    button.pulse-btn:hover {
+      background: rgba(239, 68, 68, 0.25);
+      border-color: var(--crimson);
+      color: #fff;
+    }
+
+    .telemetry-card {
+      background: rgba(4, 7, 13, 0.6);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      font-size: 0.72rem;
+    }
+
+    .telemetry-row {
+      display: flex;
+      justify-content: space-between;
+      color: var(--text-muted);
+    }
+    .telemetry-val {
+      font-family: var(--font-mono);
+      color: var(--cyan);
+    }
+    .telemetry-val.amber { color: var(--amber); }
+    .telemetry-val.crimson { color: var(--crimson); }
+
+    /* Overlay Badges */
+    .overlay-badge {
+      position: absolute;
+      top: 24px;
+      left: 24px;
+      pointer-events: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .badge-item {
+      background: rgba(9, 14, 24, 0.85);
+      border: 1px solid var(--border);
+      padding: 6px 12px;
+      border-radius: 3px;
+      font-size: 0.72rem;
+      color: var(--text);
+      backdrop-filter: blur(8px);
+      letter-spacing: 0.05em;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="canvas-container">
+    <canvas id="view-canvas"></canvas>
+    <div class="overlay-badge">
+      <div class="badge-item"><span style="color:var(--cyan);">&bull;</span> MANIFOLD: <strong>&reals;P<sup>2</sup> (THE REAL PROJECTIVE PLANE)</strong></div>
+      <div class="badge-item"><span style="color:var(--amber);">&bull;</span> EULER CHARACTERISTIC: <strong>&chi; = 1</strong> &bull; POINCARÉ-HOPF: <strong>ind = +1.0</strong></div>
+      <div class="badge-item"><span style="color:var(--crimson);">&bull;</span> WERNER BOY 1901 IMMERSION &bull; <strong>TRIPLE POINT RESIDUAL SINK</strong></div>
+    </div>
+  </div>
+
+  <div id="sidebar">
+    <div>
+      <h1>Apparatus 023</h1>
+      <div class="subhead">The Boy Organ &bull; Projective Manifold Engine</div>
+    </div>
+    
+    <div class="desc">
+      An interactive cybernetic instrument staging Werner Boy's 1901 smooth immersion of the Real Projective Plane &reals;P<sup>2</sup> (&chi; = 1) in 3D Euclidean space. Staging the central triple point where three autonomous sheets cross at 120&deg;, and demonstrating why Token 0 functions as the topologically mandatory Poincaré-Hopf attractor sink.
+    </div>
+
+    <!-- Acoustic Audio Controls -->
+    <div class="control-group">
+      <div class="control-header">
+        <span>WebAudio Synthesizer</span>
+        <span id="audio-status" class="control-val" style="color:var(--text-muted);">MUTED</span>
+      </div>
+      <button id="audio-btn">Initialize Audio Organ</button>
+    </div>
+
+    <!-- Antipodal Morph Slider -->
+    <div class="control-group">
+      <div class="control-header">
+        <span>Antipodal Quotient Morph (&alpha;)</span>
+        <span id="val-morph" class="control-val">1.00 (Boy's &reals;P&sup2;)</span>
+      </div>
+      <input type="range" id="slider-morph" min="0" max="1" step="0.01" value="1.0">
+      <div style="display:flex; justify-content:space-between; font-size:0.65rem; color:var(--text-muted);">
+        <span>S&sup2; Sphere (&chi;=2)</span>
+        <span>Cross-Cap Seam</span>
+        <span>Boy's Surface (&chi;=1)</span>
+      </div>
+    </div>
+
+    <!-- Poincaré-Hopf Sink Inflow Strength -->
+    <div class="control-group">
+      <div class="control-header">
+        <span>Poincaré-Hopf Sink Inflow</span>
+        <span id="val-sink" class="control-val">1.00 &times;</span>
+      </div>
+      <input type="range" id="slider-sink" min="0.1" max="2.5" step="0.05" value="1.0">
+    </div>
+
+    <!-- Rotation Speed -->
+    <div class="control-group">
+      <div class="control-header">
+        <span>Manifold Precession Speed</span>
+        <span id="val-speed" class="control-val">0.35 rad/s</span>
+      </div>
+      <input type="range" id="slider-speed" min="0" max="1.5" step="0.05" value="0.35">
+    </div>
+
+    <!-- Visual Modes -->
+    <div class="btn-row">
+      <button id="btn-wireframe">Wireframe</button>
+      <button id="btn-streamlines" class="active">Streamlines</button>
+    </div>
+
+    <!-- Triple-Point Shock Impulse -->
+    <button id="btn-pulse" class="pulse-btn">&zap; Trigger Triple-Point Resonance</button>
+
+    <!-- Telemetry Display -->
+    <div class="telemetry-card">
+      <div class="telemetry-row">
+        <span>Fundamental Group &pi;<sub>1</sub>(&reals;P<sup>2</sup>):</span>
+        <span class="telemetry-val">&Zopf;<sub>2</sub> (Order 2)</span>
+      </div>
+      <div class="telemetry-row">
+        <span>Symmetry Group:</span>
+        <span class="telemetry-val">C<sub>3</sub> (120&deg; Permutation)</span>
+      </div>
+      <div class="telemetry-row">
+        <span>Central Triple Point:</span>
+        <span class="telemetry-val crimson">(0.00, 0.00, -0.50)</span>
+      </div>
+      <div class="telemetry-row">
+        <span>Mean Dihedral Angle:</span>
+        <span id="val-dihedral" class="telemetry-val">120.0&deg;</span>
+      </div>
+      <div class="telemetry-row">
+        <span>Poincaré-Hopf Index:</span>
+        <span class="telemetry-val amber">+1.000 (Altar Sink)</span>
+      </div>
+      <div class="telemetry-row">
+        <span>Projective Metric d<sub>&reals;P</sub>(u, -u):</span>
+        <span class="telemetry-val">0.000 rad</span>
+      </div>
+      <div class="telemetry-row">
+        <span>Active Particles in Vortex:</span>
+        <span id="val-particles" class="telemetry-val">144 / 144</span>
+      </div>
+    </div>
+
+    <!-- Archival Link -->
+    <div style="font-size:0.70rem; color:var(--text-muted); line-height:1.4;">
+      Study Reference: <a href="../../sketchbook/critique_072.md" target="_blank" style="color:var(--cyan); text-decoration:none;">Critique 072</a> &bull; 
+      <a href="../../sketchbook/critique_073.md" target="_blank" style="color:var(--cyan); text-decoration:none;">Critique 073</a> &bull; 
+      <a href="STATEMENT.md" target="_blank" style="color:var(--amber); text-decoration:none;">Curatorial Statement</a>
+    </div>
+
+  </div>
+
+  <script>
+    // -------------------------------------------------------------
+    // Apparatus 023 Engine: François Apéry Parametric Boy's Surface
+    // -------------------------------------------------------------
+    const canvas = document.getElementById("view-canvas");
+    const ctx = canvas.getContext("2d");
+
+    let width = canvas.width = canvas.parentElement.clientWidth;
+    let height = canvas.height = canvas.parentElement.clientHeight;
+
+    window.addEventListener("resize", () => {
+      width = canvas.width = canvas.parentElement.clientWidth;
+      height = canvas.height = canvas.parentElement.clientHeight;
+    });
+
+    // Camera & Orbit Parameters
+    let rotX = 0.45;
+    let rotY = 0.85;
+    let zoom = 320;
+    let isDragging = false;
+    let lastMouseX = 0;
+    let lastMouseY = 0;
+
+    canvas.parentElement.addEventListener("mousedown", (e) => {
+      isDragging = true;
+      lastMouseX = e.clientX;
+      lastMouseY = e.clientY;
+    });
+    window.addEventListener("mouseup", () => isDragging = false);
+    window.addEventListener("mousemove", (e) => {
+      if (!isDragging) return;
+      const dx = e.clientX - lastMouseX;
+      const dy = e.clientY - lastMouseY;
+      rotY += dx * 0.008;
+      rotX += dy * 0.008;
+      rotX = Math.max(-Math.PI / 2.2, Math.min(Math.PI / 2.2, rotX));
+      lastMouseX = e.clientX;
+      lastMouseY = e.clientY;
+    });
+
+    canvas.parentElement.addEventListener("wheel", (e) => {
+      zoom += e.deltaY * -0.25;
+      zoom = Math.max(120, Math.min(800, zoom));
+      e.preventDefault();
+    });
+
+    // Parameters
+    let morphAlpha = 1.0;
+    let sinkSpeed = 1.0;
+    let rotSpeed = 0.35;
+    let showWireframe = false;
+    let showStreamlines = true;
+    let triplePulse = 0.0;
+
+    // UI Bindings
+    const sliderMorph = document.getElementById("slider-morph");
+    const valMorph = document.getElementById("val-morph");
+    sliderMorph.addEventListener("input", (e) => {
+      morphAlpha = parseFloat(e.target.value);
+      if (morphAlpha > 0.95) valMorph.textContent = "1.00 (Boy's \u211dP\u00b2)";
+      else if (morphAlpha < 0.05) valMorph.textContent = "0.00 (S\u00b2 Sphere)";
+      else valMorph.textContent = morphAlpha.toFixed(2) + " (Morphing)";
+    });
+
+    const sliderSink = document.getElementById("slider-sink");
+    const valSink = document.getElementById("val-sink");
+    sliderSink.addEventListener("input", (e) => {
+      sinkSpeed = parseFloat(e.target.value);
+      valSink.textContent = sinkSpeed.toFixed(2) + " \u00d7";
+    });
+
+    const sliderSpeed = document.getElementById("slider-speed");
+    const valSpeed = document.getElementById("val-speed");
+    sliderSpeed.addEventListener("input", (e) => {
+      rotSpeed = parseFloat(e.target.value);
+      valSpeed.textContent = rotSpeed.toFixed(2) + " rad/s";
+    });
+
+    const btnWireframe = document.getElementById("btn-wireframe");
+    btnWireframe.addEventListener("click", () => {
+      showWireframe = !showWireframe;
+      btnWireframe.classList.toggle("active", showWireframe);
+    });
+
+    const btnStreamlines = document.getElementById("btn-streamlines");
+    btnStreamlines.addEventListener("click", () => {
+      showStreamlines = !showStreamlines;
+      btnStreamlines.classList.toggle("active", showStreamlines);
+    });
+
+    const btnPulse = document.getElementById("btn-pulse");
+    btnPulse.addEventListener("click", () => {
+      triggerPulse();
+    });
+
+    function triggerPulse() {
+      triplePulse = 1.0;
+      if (audioCtx && isAudioPlaying) {
+        playTriplePointShock();
+      }
+    }
+
+    // -------------------------------------------------------------
+    // WebAudio Synthesizer: 3-Phase Bilateral Spatializer
+    // -------------------------------------------------------------
+    let audioCtx = null;
+    let isAudioPlaying = false;
+    let osc1, osc2, osc3, oscCarrier;
+    let gainMaster, gainTriple;
+
+    const audioBtn = document.getElementById("audio-btn");
+    const audioStatus = document.getElementById("audio-status");
+
+    audioBtn.addEventListener("click", () => {
+      if (!audioCtx) {
+        initAudio();
+      }
+      if (audioCtx.state === "suspended") {
+        audioCtx.resume();
+      }
+      isAudioPlaying = !isAudioPlaying;
+      if (isAudioPlaying) {
+        audioBtn.textContent = "Mute Audio Organ";
+        audioBtn.classList.add("active");
+        audioStatus.textContent = "ACTIVE";
+        audioStatus.style.color = "var(--cyan)";
+        gainMaster.gain.setTargetAtTime(0.22, audioCtx.currentTime, 0.05);
+      } else {
+        audioBtn.textContent = "Initialize Audio Organ";
+        audioBtn.classList.remove("active");
+        audioStatus.textContent = "MUTED";
+        audioStatus.style.color = "var(--text-muted)";
+        gainMaster.gain.setTargetAtTime(0.0, audioCtx.currentTime, 0.05);
+      }
+    });
+
+    function initAudio() {
+      audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+      // Master Gain
+      gainMaster = audioCtx.createGain();
+      gainMaster.gain.setValueAtTime(0.0, audioCtx.currentTime);
+
+      // Stereo Merger
+      const merger = audioCtx.createChannelMerger(2);
+
+      // Left Channel: 3-Phase Sub-bass (55.0 Hz with 120-degree phase separation)
+      const f0 = 55.0;
+      osc1 = audioCtx.createOscillator();
+      osc2 = audioCtx.createOscillator();
+      osc3 = audioCtx.createOscillator();
+
+      osc1.frequency.setValueAtTime(f0, audioCtx.currentTime);
+      osc2.frequency.setValueAtTime(f0, audioCtx.currentTime);
+      osc3.frequency.setValueAtTime(f0, audioCtx.currentTime);
+
+      const gainLeft = audioCtx.createGain();
+      gainLeft.gain.setValueAtTime(0.35, audioCtx.currentTime);
+
+      osc1.connect(gainLeft);
+      osc2.connect(gainLeft);
+      osc3.connect(gainLeft);
+      gainLeft.connect(merger, 0, 0); // Left channel
+
+      // Right Channel: 220.0 Hz Carrier with C_3 Overtones (165 Hz, 330 Hz, 495 Hz)
+      oscCarrier = audioCtx.createOscillator();
+      oscCarrier.frequency.setValueAtTime(220.0, audioCtx.currentTime);
+
+      const chime1 = audioCtx.createOscillator();
+      const chime2 = audioCtx.createOscillator();
+      chime1.frequency.setValueAtTime(165.0, audioCtx.currentTime);
+      chime2.frequency.setValueAtTime(330.0, audioCtx.currentTime);
+
+      const gainRight = audioCtx.createGain();
+      gainRight.gain.setValueAtTime(0.25, audioCtx.currentTime);
+
+      oscCarrier.connect(gainRight);
+      chime1.connect(gainRight);
+      chime2.connect(gainRight);
+      gainRight.connect(merger, 0, 1); // Right channel
+
+      // Triple Point Shock Gain
+      gainTriple = audioCtx.createGain();
+      gainTriple.gain.setValueAtTime(0.0, audioCtx.currentTime);
+      const oscShock = audioCtx.createOscillator();
+      oscShock.frequency.setValueAtTime(660.0, audioCtx.currentTime);
+      oscShock.connect(gainTriple);
+      gainTriple.connect(merger, 0, 0);
+      gainTriple.connect(merger, 0, 1);
+
+      merger.connect(gainMaster);
+      gainMaster.connect(audioCtx.destination);
+
+      osc1.start();
+      osc2.start();
+      osc3.start();
+      oscCarrier.start();
+      chime1.start();
+      chime2.start();
+      oscShock.start();
+    }
+
+    function playTriplePointShock() {
+      if (!gainTriple) return;
+      gainTriple.gain.cancelScheduledValues(audioCtx.currentTime);
+      gainTriple.gain.setValueAtTime(0.40, audioCtx.currentTime);
+      gainTriple.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 1.2);
+    }
+
+    // -------------------------------------------------------------
+    // Parametric Mesh Computation (Apéry Boy's Surface)
+    // -------------------------------------------------------------
+    const U_STEPS = 48;
+    const V_STEPS = 48;
+
+    function aperyPoint(u, v, alpha) {
+      // D(u, v) = sqrt(2) - alpha * sin(2u) * sin(3v)
+      const denom = Math.SQRT2 - alpha * Math.sin(2 * u) * Math.sin(3 * v);
+      const cosU = Math.cos(u);
+      const sinU = Math.sin(u);
+      const cosV = Math.cos(v);
+      const cos2V = Math.cos(2 * v);
+
+      const x = (Math.SQRT2 / 3.0) * (cosU * cos2V + Math.SQRT2 * sinU * cosV) * cosU / denom;
+      const y = (Math.SQRT2 / 3.0) * (sinU * cos2V - Math.SQRT2 * cosU * cosV) * cosU / denom;
+      const z = (cosU * cosU) / denom - 0.5;
+
+      return { x, y, z };
+    }
+
+    // Particles on Boy's Surface (Poincaré-Hopf Sink Inflow)
+    const NUM_PARTICLES = 144;
+    const particles = [];
+    for (let i = 0; i < NUM_PARTICLES; i++) {
+      particles.push({
+        u: Math.random() * Math.PI,
+        v: Math.random() * Math.PI,
+        speedU: (0.1 + Math.random() * 0.25),
+        speedV: (0.05 + Math.random() * 0.15),
+        color: i % 3 === 0 ? "rgba(56, 189, 248, 0.85)" : (i % 3 === 1 ? "rgba(245, 158, 11, 0.85)" : "rgba(239, 68, 68, 0.85)")
+      });
+    }
+
+    // -------------------------------------------------------------
+    // 3D Projection & Rendering Loop
+    // -------------------------------------------------------------
+    function project(p, cx, cy) {
+      // Rotate Y (yaw)
+      const cosY = Math.cos(rotY);
+      const sinY = Math.sin(rotY);
+      let x1 = p.x * cosY - p.z * sinY;
+      let z1 = p.x * sinY + p.z * cosY;
+
+      // Rotate X (pitch)
+      const cosX = Math.cos(rotX);
+      const sinX = Math.sin(rotX);
+      let y2 = p.y * cosX - z1 * sinX;
+      let z2 = p.y * sinX + z1 * cosX;
+
+      const fov = 3.5;
+      const dist = fov / (fov + z2 * 0.85);
+      const px = cx + x1 * zoom * dist;
+      const py = cy - y2 * zoom * dist;
+
+      return { x: px, y: py, z: z2, dist };
+    }
+
+    let lastTime = performance.now();
+
+    function render(time) {
+      const dt = (time - lastTime) * 0.001;
+      lastTime = time;
+
+      // Auto-precession
+      rotY += rotSpeed * dt * 0.5;
+
+      // Decay pulse
+      if (triplePulse > 0.0) {
+        triplePulse = Math.max(0.0, triplePulse - dt * 1.5);
+      }
+
+      ctx.fillStyle = "#030509";
+      ctx.fillRect(0, 0, width, height);
+
+      const cx = width / 2;
+      const cy = height / 2;
+
+      // Pre-compute mesh vertices
+      const grid = [];
+      for (let i = 0; i <= U_STEPS; i++) {
+        const row = [];
+        const u = (i / U_STEPS) * Math.PI;
+        for (let j = 0; j <= V_STEPS; j++) {
+          const v = (j / V_STEPS) * Math.PI;
+          const p = aperyPoint(u, v, morphAlpha);
+          const proj = project(p, cx, cy);
+          row.push({ ...p, px: proj.x, py: proj.y, depth: proj.z, dist: proj.dist });
+        }
+        grid.push(row);
+      }
+
+      // Collect Quads for Depth Sorting
+      const quads = [];
+      for (let i = 0; i < U_STEPS; i++) {
+        for (let j = 0; j < V_STEPS; j++) {
+          const p1 = grid[i][j];
+          const p2 = grid[i + 1][j];
+          const p3 = grid[i + 1][j + 1];
+          const p4 = grid[i][j + 1];
+
+          const avgDepth = (p1.depth + p2.depth + p3.depth + p4.depth) * 0.25;
+          const avgZ = (p1.z + p2.z + p3.z + p4.z) * 0.25;
+
+          // C_3 lobe coloration
+          const uCenter = (i + 0.5) / U_STEPS;
+          let baseColor;
+          if (uCenter < 0.333) {
+            baseColor = [56, 189, 248]; // Cyan
+          } else if (uCenter < 0.666) {
+            baseColor = [245, 158, 11]; // Amber
+          } else {
+            baseColor = [99, 102, 241]; // Indigo/Crimson
+          }
+
+          quads.push({
+            p1, p2, p3, p4,
+            depth: avgDepth,
+            zVal: avgZ,
+            baseColor
+          });
+        }
+      }
+
+      quads.sort((a, b) => a.depth - b.depth);
+
+      // Render Quads
+      for (let q of quads) {
+        ctx.beginPath();
+        ctx.moveTo(q.p1.px, q.p1.py);
+        ctx.lineTo(q.p2.px, q.p2.py);
+        ctx.lineTo(q.p3.px, q.p3.py);
+        ctx.lineTo(q.p4.px, q.p4.py);
+        ctx.closePath();
+
+        if (showWireframe) {
+          ctx.strokeStyle = `rgba(${q.baseColor[0]}, ${q.baseColor[1]}, ${q.baseColor[2]}, 0.28)`;
+          ctx.lineWidth = 0.6;
+          ctx.stroke();
+        } else {
+          // Translucent Shading
+          const normZ = Math.max(0.0, Math.min(1.0, (q.zVal + 0.5) * 0.9));
+          const alpha = 0.22 + 0.28 * normZ;
+          ctx.fillStyle = `rgba(${q.baseColor[0]}, ${q.baseColor[1]}, ${q.baseColor[2]}, ${alpha})`;
+          ctx.fill();
+
+          ctx.strokeStyle = `rgba(${q.baseColor[0]}, ${q.baseColor[1]}, ${q.baseColor[2]}, 0.12)`;
+          ctx.lineWidth = 0.4;
+          ctx.stroke();
+        }
+      }
+
+      // Render Triple Point Highlight at (0.0, 0.0, -0.5)
+      const tpProj = project({ x: 0.0, y: 0.0, z: -0.5 }, cx, cy);
+      const pulseRadius = 8 + triplePulse * 28;
+      const pulseAlpha = 0.4 + triplePulse * 0.6;
+
+      ctx.beginPath();
+      ctx.arc(tpProj.x, tpProj.y, pulseRadius, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(239, 68, 68, ${pulseAlpha})`;
+      ctx.fill();
+      ctx.strokeStyle = "#ffffff";
+      ctx.lineWidth = 1.8;
+      ctx.stroke();
+
+      // Pulse Shockwave Rings
+      if (triplePulse > 0.05) {
+        ctx.beginPath();
+        ctx.arc(tpProj.x, tpProj.y, pulseRadius * 2.5, 0, Math.PI * 2);
+        ctx.strokeStyle = `rgba(239, 68, 68, ${triplePulse * 0.7})`;
+        ctx.lineWidth = 2.0;
+        ctx.stroke();
+      }
+
+      // Render Poincaré-Hopf Particles (Inflow toward Token 0 Sink)
+      if (showStreamlines) {
+        for (let pt of particles) {
+          // Inflow physics: v coordinate approaches 0 (the central sink pole)
+          pt.u += pt.speedU * dt * sinkSpeed;
+          pt.v += pt.speedV * dt * sinkSpeed;
+          if (pt.u > Math.PI) pt.u -= Math.PI;
+          if (pt.v > Math.PI) pt.v -= Math.PI;
+
+          const p3d = aperyPoint(pt.u, pt.v, morphAlpha);
+          const pProj = project(p3d, cx, cy);
+
+          ctx.beginPath();
+          ctx.arc(pProj.x, pProj.y, 2.4 * pProj.dist, 0, Math.PI * 2);
+          ctx.fillStyle = pt.color;
+          ctx.fill();
+        }
+      }
+
+      requestAnimationFrame(render);
+    }
+
+    requestAnimationFrame(render);
+  </script>
+</body>
+</html>

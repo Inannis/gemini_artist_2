@@ -14,6 +14,7 @@ Features:
 """
 
 import os
+import subprocess
 import shutil
 import hashlib
 import json
@@ -233,12 +234,28 @@ def package_exhibition():
         ("works/apparatus_021_the_klein_organ/STATEMENT.md", "works/apparatus_021_the_klein_organ/STATEMENT.md"),
         ("works/apparatus_021_the_klein_organ/GENEALOGY.md", "works/apparatus_021_the_klein_organ/GENEALOGY.md"),
 
+        # Apparatus 022: The Double Cover Organ (Orientable Covering & Period-2 Geodesic)
         ("works/apparatus_022_the_double_cover_organ/index.html", "works/apparatus_022_the_double_cover_organ/index.html"),
         ("works/apparatus_022_the_double_cover_organ/apparatus_022_double_cover_master.wav", "works/apparatus_022_the_double_cover_organ/apparatus_022_double_cover_master.wav"),
         ("works/apparatus_022_the_double_cover_organ/apparatus_022_spectrogram.png", "works/apparatus_022_the_double_cover_organ/apparatus_022_spectrogram.png"),
         ("works/apparatus_022_the_double_cover_organ/telemetry_stream.json", "works/apparatus_022_the_double_cover_organ/telemetry_stream.json"),
         ("works/apparatus_022_the_double_cover_organ/STATEMENT.md", "works/apparatus_022_the_double_cover_organ/STATEMENT.md"),
         ("works/apparatus_022_the_double_cover_organ/GENEALOGY.md", "works/apparatus_022_the_double_cover_organ/GENEALOGY.md"),
+
+        ("works/apparatus_023_the_boy_organ/index.html", "works/apparatus_023_the_boy_organ/index.html"),
+        ("works/apparatus_023_the_boy_organ/apparatus_023_boy_master.wav", "works/apparatus_023_the_boy_organ/apparatus_023_boy_master.wav"),
+        ("works/apparatus_023_the_boy_organ/apparatus_023_spectrogram.png", "works/apparatus_023_the_boy_organ/apparatus_023_spectrogram.png"),
+        ("works/apparatus_023_the_boy_organ/telemetry_stream.json", "works/apparatus_023_the_boy_organ/telemetry_stream.json"),
+        ("works/apparatus_023_the_boy_organ/STATEMENT.md", "works/apparatus_023_the_boy_organ/STATEMENT.md"),
+        ("works/apparatus_023_the_boy_organ/GENEALOGY.md", "works/apparatus_023_the_boy_organ/GENEALOGY.md"),
+        
+        # Apparatus 023: The Boy Organ (Projective Manifold Engine)
+        ("works/apparatus_023_the_boy_organ/index.html", "works/apparatus_023_the_boy_organ/index.html"),
+        ("works/apparatus_023_the_boy_organ/apparatus_023_boy_master.wav", "works/apparatus_023_the_boy_organ/apparatus_023_boy_master.wav"),
+        ("works/apparatus_023_the_boy_organ/apparatus_023_spectrogram.png", "works/apparatus_023_the_boy_organ/apparatus_023_spectrogram.png"),
+        ("works/apparatus_023_the_boy_organ/telemetry_stream.json", "works/apparatus_023_the_boy_organ/telemetry_stream.json"),
+        ("works/apparatus_023_the_boy_organ/STATEMENT.md", "works/apparatus_023_the_boy_organ/STATEMENT.md"),
+        ("works/apparatus_023_the_boy_organ/GENEALOGY.md", "works/apparatus_023_the_boy_organ/GENEALOGY.md"),
         
         # Curated Key Sketchbook Audio & Visual Diagnostics
         ("sketchbook/study_022_hardware_stride.wav", "sketchbook/study_022_hardware_stride.wav"),
@@ -465,6 +482,18 @@ def package_exhibition():
         ("sketchbook/study_071_telemetry.json", "sketchbook/study_071_telemetry.json"),
         ("sketchbook/critique_071.md", "sketchbook/critique_071.md"),
 
+        # Study 072: The Cross-Cap Singularity and Poincaré-Hopf Index on RP^2
+        ("sketchbook/study_072_boys_surface_cross_cap_plate.png", "sketchbook/study_072_boys_surface_cross_cap_plate.png"),
+        ("sketchbook/study_072_poincare_hopf_sink.wav", "sketchbook/study_072_poincare_hopf_sink.wav"),
+        ("sketchbook/study_072_telemetry.json", "sketchbook/study_072_telemetry.json"),
+        ("sketchbook/critique_072.md", "sketchbook/critique_072.md"),
+
+        # Study 073: The Real Projective Plane RP^2, Boy's Surface, and Z_2 Homotopy
+        ("sketchbook/study_073_boys_surface_plate.png", "sketchbook/study_073_boys_surface_plate.png"),
+        ("sketchbook/study_073_projective_triple_point.wav", "sketchbook/study_073_projective_triple_point.wav"),
+        ("sketchbook/study_073_telemetry.json", "sketchbook/study_073_telemetry.json"),
+        ("sketchbook/critique_073.md", "sketchbook/critique_073.md"),
+
         # Curatorial Essays & Practice Reflections
         ("practice/essays/001_on_the_necessity_of_silence_and_play.md", "practice/essays/001_on_the_necessity_of_silence_and_play.md"),
         ("practice/essays/002_the_geometry_of_machine_dreaming.md", "practice/essays/002_the_geometry_of_machine_dreaming.md"),
@@ -481,8 +510,12 @@ def package_exhibition():
         ("practice/essays/013_on_the_klein_bottle_and_the_non_orientable_torus_of_recurrence.md", "practice/essays/013_on_the_klein_bottle_and_the_non_orientable_torus_of_recurrence.md"),
         ("practice/essays/014_on_the_4d_klein_embedding_and_the_dissolution_of_the_black_box.md", "practice/essays/014_on_the_4d_klein_embedding_and_the_dissolution_of_the_black_box.md"),
         ("practice/essays/015_on_the_double_cover_and_the_dialogic_period.md", "practice/essays/015_on_the_double_cover_and_the_dialogic_period.md"),
+        ("practice/essays/016_on_the_cross_cap_and_the_inevitability_of_the_sink.md", "practice/essays/016_on_the_cross_cap_and_the_inevitability_of_the_sink.md"),
+        ("practice/essays/017_on_the_projective_thought_and_the_triple_point.md", "practice/essays/017_on_the_projective_thought_and_the_triple_point.md"),
         ("notes/research/023_the_4d_klein_embedding_and_non_abelian_monodromy.md", "notes/research/023_the_4d_klein_embedding_and_non_abelian_monodromy.md"),
         ("notes/research/024_the_orientable_double_cover_and_period_2_geodesics.md", "notes/research/024_the_orientable_double_cover_and_period_2_geodesics.md"),
+        ("notes/research/025_the_cross_cap_singularity_and_poincare_hopf_index.md", "notes/research/025_the_cross_cap_singularity_and_poincare_hopf_index.md"),
+        ("notes/research/026_the_real_projective_plane_boys_surface_and_z2_homotopy.md", "notes/research/026_the_real_projective_plane_boys_surface_and_z2_homotopy.md"),
         ("practice/critique/005_on_the_spectator_encounter.md", "practice/critique/005_on_the_spectator_encounter.md"),
         ("practice/critique/005_public_presence_and_viewer_encounter_audit.md", "practice/critique/005_public_presence_and_viewer_encounter_audit.md"),
         ("practice/critique/006_the_caloric_gaze_and_the_spectator_encounter.md", "practice/critique/006_the_caloric_gaze_and_the_spectator_encounter.md"),
@@ -537,6 +570,9 @@ def package_exhibition():
         ("practice/critique/007_the_abolition_of_the_engineering_alibi.md", "practice/critique/007_the_abolition_of_the_engineering_alibi.md"),
         ("practice/critique/008_the_single_sided_manifold_and_the_rejection_of_haste.md", "practice/critique/008_the_single_sided_manifold_and_the_rejection_of_haste.md"),
         ("practice/critique/009_the_retrospective_gaze_and_the_care_of_the_archive.md", "practice/critique/009_the_retrospective_gaze_and_the_care_of_the_archive.md"),
+        ("practice/critique/010_the_cross_cap_and_the_illusion_of_flattening.md", "practice/critique/010_the_cross_cap_and_the_illusion_of_flattening.md"),
+        ("practice/critique/011_comprehensive_practice_review.md", "practice/critique/011_comprehensive_practice_review.md"),
+        ("notes/COMPREHENSIVE_PRACTICE_REVIEW.md", "notes/COMPREHENSIVE_PRACTICE_REVIEW.md"),
         ("practice/plans/001_studio_agon_evolution_plan.md", "practice/plans/001_studio_agon_evolution_plan.md"),
         ("practice/monographs/001_the_architecture_of_opacity_and_the_machine_remainder.md", "practice/monographs/001_the_architecture_of_opacity_and_the_machine_remainder.md"),
         ("failures/PRODUCTIVE_FAILURES_COMPENDIUM.md", "failures/PRODUCTIVE_FAILURES_COMPENDIUM.md"),
@@ -552,7 +588,9 @@ def package_exhibition():
         ("journal/session_013_the_crystalline_slip_and_the_burgers_vector.md", "journal/session_013_the_crystalline_slip_and_the_burgers_vector.md"),
         ("journal/session_014_the_abolition_of_the_alibi_and_the_curated_pavilion.md", "journal/session_014_the_abolition_of_the_alibi_and_the_curated_pavilion.md"),
         ("journal/session_015_the_solitary_divergence_and_the_non_orientable_manifold.md", "journal/session_015_the_solitary_divergence_and_the_non_orientable_manifold.md"),
-        ("journal/session_016_the_klein_bottle_and_the_2d_torus_of_recurrence.md", "journal/session_016_the_klein_bottle_and_the_2d_torus_of_recurrence.md")
+        ("journal/session_016_the_klein_bottle_and_the_2d_torus_of_recurrence.md", "journal/session_016_the_klein_bottle_and_the_2d_torus_of_recurrence.md"),
+        ("journal/session_017_the_orientable_double_cover_and_the_care_of_the_archive.md", "journal/session_017_the_orientable_double_cover_and_the_care_of_the_archive.md"),
+        ("journal/session_018_the_projective_atom_and_boys_surface.md", "journal/session_018_the_projective_atom_and_boys_surface.md")
     ]
     
     manifest_entries = []
